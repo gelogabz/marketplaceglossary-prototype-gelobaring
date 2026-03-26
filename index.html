@@ -17,14 +17,12 @@
                 scroll-behavior: smooth;
             }
 
-            /* ---------- Highlight ---------- */
             mark {
                 background: #ffe58f;
                 padding: 0 2px;
                 border-radius: 3px;
             }
 
-            /* ---------- Sticky active letter badge (NEW) ---------- */
             .active-letter-badge {
                 position: fixed;
                 right: 20px;
@@ -50,13 +48,12 @@
                 transform: scale(1);
             }
 
-            /* Alphabet nav */
             .alpha-nav {
                 background: #fff;
                 border-bottom: 1px solid #e5e5ea;
                 padding: 0.5rem 2rem;
                 position: sticky;
-                top: 94px;
+                top: 105px;
                 z-index: 9;
             }
 
@@ -74,6 +71,7 @@
                 border-radius: 6px;
                 color: #666;
                 text-decoration: none;
+                cursor: pointer;
             }
 
             .alpha-link:hover {
@@ -86,7 +84,6 @@
                 color: #fff;
             }
 
-            /* Back to top */
             .back-to-top {
                 position: fixed;
                 bottom: 20px;
@@ -98,6 +95,7 @@
                 border-radius: 8px;
                 cursor: pointer;
                 display: none;
+                font-size: 13px;
             }
 
             body {
@@ -108,14 +106,17 @@
                 color: #1a1a1a;
                 min-height: 100vh;
             }
+
             .header {
                 background: #1a1a2e;
                 padding: 2rem 2rem 1.5rem;
             }
+
             .header-inner {
                 max-width: 960px;
                 margin: 0 auto;
             }
+
             .header h1 {
                 font-size: 24px;
                 font-weight: 700;
@@ -123,27 +124,32 @@
                 margin-bottom: 4px;
                 letter-spacing: -0.3px;
             }
+
             .header p {
                 font-size: 14px;
                 color: #aaa;
             }
+
             .header-meta {
                 display: flex;
                 gap: 2rem;
                 margin-top: 1rem;
                 flex-wrap: wrap;
             }
+
             .header-stat .num {
                 font-size: 22px;
                 font-weight: 700;
                 color: #fff;
             }
+
             .header-stat .lbl {
                 font-size: 11px;
                 color: #888;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
             }
+
             .controls {
                 background: #fff;
                 border-bottom: 1px solid #e5e5ea;
@@ -152,6 +158,7 @@
                 top: 0;
                 z-index: 10;
             }
+
             .controls-inner {
                 max-width: 960px;
                 margin: 0 auto;
@@ -159,6 +166,7 @@
                 flex-direction: column;
                 gap: 10px;
             }
+
             .search-bar {
                 width: 100%;
                 padding: 9px 14px;
@@ -169,51 +177,76 @@
                 color: #1a1a1a;
                 outline: none;
             }
+
             .search-bar:focus {
                 border-color: #888;
                 background: #fff;
             }
-            .filters {
+
+            .filter-row {
                 display: flex;
-                gap: 6px;
-                flex-wrap: wrap;
                 align-items: center;
+                gap: 8px;
+                flex-wrap: wrap;
             }
-            .filters-label {
-                font-size: 12px;
-                color: #888;
-                margin-right: 2px;
+
+            .filter-bar {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                flex: 1;
             }
-            .filter-btn {
+
+            .filter-pill {
+                padding: 5px 10px;
+                border-radius: 999px;
+                border: 1px solid #ddd;
                 font-size: 12px;
-                padding: 4px 12px;
-                border-radius: 20px;
-                border: 1px solid #d1d1d6;
-                background: transparent;
-                color: #555;
                 cursor: pointer;
-                transition: all 0.12s;
-                white-space: nowrap;
+                user-select: none;
+                transition:
+                    background 0.1s,
+                    color 0.1s;
             }
-            .filter-btn:hover {
-                background: #f0f0f0;
+
+            .filter-pill:hover {
+                border-color: #999;
             }
-            .filter-btn.active {
+
+            .filter-pill.active {
                 background: #1a1a2e;
-                color: #fff;
+                color: white;
                 border-color: #1a1a2e;
-                font-weight: 500;
             }
+
+            .clear-btn {
+                font-size: 12px;
+                padding: 5px 10px;
+                border-radius: 999px;
+                border: 1px solid #f0c0c0;
+                background: #fff5f5;
+                color: #c0392b;
+                cursor: pointer;
+                white-space: nowrap;
+                display: none;
+            }
+
+            .clear-btn:hover {
+                background: #ffe0e0;
+            }
+
             .body {
                 max-width: 960px;
                 margin: 0 auto;
                 padding: 1.5rem 2rem 3rem;
             }
+
             .count {
                 font-size: 13px;
                 color: #888;
                 margin-bottom: 1rem;
             }
+
             .alpha-header {
                 font-size: 11px;
                 font-weight: 700;
@@ -224,21 +257,42 @@
                 border-top: 1px solid #e5e5ea;
                 margin-top: 0.5rem;
             }
+
             .alpha-first {
                 border-top: none;
                 margin-top: 0;
             }
+
             .term-card {
                 background: #fff;
                 border: 1px solid #e5e5ea;
                 border-radius: 10px;
                 padding: 1rem 1.25rem;
                 margin-bottom: 8px;
-                transition: border-color 0.12s;
+                transition:
+                    border-color 0.12s,
+                    box-shadow 0.12s,
+                    transform 0.12s,
+                    opacity 0.12s,
+                    filter 0.12s;
             }
+
             .term-card:hover {
                 border-color: #c0c0c8;
             }
+
+            .term-card.best-match {
+                box-shadow:
+                    0 0 0 2px #1a1a2e,
+                    0 10px 30px rgba(0, 0, 0, 0.15);
+                transform: scale(1.01);
+            }
+
+            .term-card.dimmed {
+                opacity: 0.25;
+                filter: blur(1px);
+            }
+
             .term-header {
                 display: flex;
                 align-items: flex-start;
@@ -246,6 +300,7 @@
                 margin-bottom: 5px;
                 flex-wrap: wrap;
             }
+
             .term-name {
                 font-size: 15px;
                 font-weight: 600;
@@ -253,19 +308,28 @@
                 flex: 1;
                 min-width: 140px;
             }
+
             .tags {
                 display: flex;
                 gap: 4px;
                 flex-wrap: wrap;
-                padding-top: 2px;
+                padding-top: 6px;
             }
+
             .tag {
                 font-size: 11px;
                 padding: 2px 8px;
                 border-radius: 10px;
                 white-space: nowrap;
                 font-weight: 500;
+                cursor: pointer;
+                transition: outline 0.1s;
             }
+
+            .tag.tag-active {
+                outline: 2px solid #000;
+            }
+
             .tag-suger {
                 background: #ede9ff;
                 color: #3c3489;
@@ -294,23 +358,27 @@
                 background: #e8f4fd;
                 color: #0c4f7a;
             }
+
             .term-def {
                 font-size: 14px;
                 color: #444;
                 line-height: 1.65;
             }
+
             .alias {
                 font-size: 12px;
                 color: #999;
-                margin-top: 5px;
+                margin-top: 6px;
                 font-style: italic;
             }
+
             .no-results {
                 text-align: center;
                 padding: 3rem;
                 color: #888;
                 font-size: 14px;
             }
+
             @media print {
                 .controls {
                     position: static;
@@ -323,6 +391,7 @@
     </head>
     <body>
         <div id="activeLetter" class="active-letter-badge"></div>
+
         <div class="header">
             <div class="header-inner">
                 <h1>Cloud Marketplace Glossary</h1>
@@ -338,18 +407,24 @@
                 </div>
             </div>
         </div>
+
         <div class="controls">
             <div class="controls-inner">
                 <input
                     class="search-bar"
                     type="text"
                     id="search"
-                    placeholder="Search terms, definitions..."
-                    oninput="render()"
+                    placeholder="Search terms, definitions…"
                 />
-                <div class="filters">
-                    <span class="filters-label">Filter:</span>
-                    <div id="filters"></div>
+                <div class="filter-row">
+                    <div id="filterBar" class="filter-bar"></div>
+                    <button
+                        class="clear-btn"
+                        id="clearBtn"
+                        onclick="clearFilters()"
+                    >
+                        ✕ Clear
+                    </button>
                 </div>
             </div>
         </div>
@@ -364,6 +439,7 @@
             <div class="count" id="count"></div>
             <div id="list"></div>
         </div>
+
         <script>
             const terms = [
                 {
@@ -968,37 +1044,29 @@
                 },
             ];
 
-            const categories = [
-                { id: "all", label: "All" },
-                { id: "suger", label: "Suger" },
-                { id: "general", label: "General" },
-                { id: "aws", label: "AWS" },
-                { id: "azure", label: "Azure" },
-                { id: "gcp", label: "GCP" },
-                { id: "snowflake", label: "Snowflake" },
-                { id: "cosell", label: "Co-sell" },
-            ];
+            /* ---- state ---- */
+            let activeFilters = new Set();
+            let debounceTimer;
 
-            const tagLabel = {
-                suger: "Suger",
-                aws: "AWS",
-                azure: "Azure",
-                gcp: "GCP",
-                general: "General",
-                cosell: "Co-sell",
-                snowflake: "Snowflake",
-            };
-            let activeFilter = "all";
-            document.getElementById("total-count").textContent = terms.length;
-
+            /* ---- elements ---- */
             const searchInput = document.getElementById("search");
             const listEl = document.getElementById("list");
             const alphaNavEl = document.getElementById("alpha-nav");
+            const countEl = document.getElementById("count");
+            const clearBtn = document.getElementById("clearBtn");
             const backToTopBtn = document.getElementById("backToTop");
 
-            let debounceTimer;
+            document.getElementById("total-count").textContent = terms.length;
 
-            /* ---------- highlight ---------- */
+            /* ---- keyboard shortcut: / focuses search ---- */
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "/" && document.activeElement !== searchInput) {
+                    e.preventDefault();
+                    searchInput.focus();
+                }
+            });
+
+            /* ---- helpers ---- */
             function highlight(text, q) {
                 if (!q) return text;
                 const regex = new RegExp(
@@ -1008,27 +1076,80 @@
                 return text.replace(regex, "<mark>$1</mark>");
             }
 
-            /* ---------- slug ---------- */
             function slug(text) {
                 return text.toLowerCase().replace(/\s+/g, "-");
             }
 
-            /* ---------- render ---------- */
+            /* ---- clear filters ---- */
+            function clearFilters() {
+                activeFilters.clear();
+                renderPills();
+                render();
+            }
+
+            /* ---- render pills ---- */
+            function renderPills() {
+                const filterBar = document.getElementById("filterBar");
+                const allTags = [
+                    ...new Set(terms.flatMap((t) => t.tags || [])),
+                ].sort();
+
+                filterBar.innerHTML = "";
+                allTags.forEach((tag) => {
+                    const pill = document.createElement("div");
+                    pill.className =
+                        "filter-pill" +
+                        (activeFilters.has(tag) ? " active" : "");
+                    pill.textContent = tag.toUpperCase();
+                    pill.onclick = () => {
+                        activeFilters.has(tag)
+                            ? activeFilters.delete(tag)
+                            : activeFilters.add(tag);
+                        renderPills();
+                        render();
+                    };
+                    filterBar.appendChild(pill);
+                });
+
+                clearBtn.style.display =
+                    activeFilters.size > 0 ? "inline-block" : "none";
+            }
+
+            /* ---- main render ---- */
             function render() {
                 clearTimeout(debounceTimer);
-
                 debounceTimer = setTimeout(() => {
                     const q = searchInput.value.trim().toLowerCase();
 
-                    const filtered = terms.filter(
-                        (t) =>
+                    const filtered = terms.filter((t) => {
+                        const matchesSearch =
                             t.name.toLowerCase().includes(q) ||
                             t.def.toLowerCase().includes(q) ||
-                            (t.alias && t.alias.toLowerCase().includes(q)),
-                    );
+                            (t.alias && t.alias.toLowerCase().includes(q));
+
+                        const matchesFilter =
+                            activeFilters.size === 0 ||
+                            (t.tags &&
+                                t.tags.some((tag) => activeFilters.has(tag)));
+
+                        return matchesSearch && matchesFilter;
+                    });
+
+                    /* count */
+                    countEl.textContent =
+                        filtered.length === terms.length
+                            ? `${terms.length} terms`
+                            : `Showing ${filtered.length} of ${terms.length} terms`;
 
                     listEl.innerHTML = "";
 
+                    if (filtered.length === 0) {
+                        listEl.innerHTML = `<div class="no-results">No terms matched your search.</div>`;
+                        alphaNavEl.innerHTML = "";
+                        return;
+                    }
+
+                    /* group by first letter */
                     const grouped = {};
                     filtered.forEach((t) => {
                         const letter = t.name[0].toUpperCase();
@@ -1036,56 +1157,106 @@
                         grouped[letter].push(t);
                     });
 
-                    /* ---------- build list ---------- */
+                    /* find global best match — title priority: exact > starts-with > contains > def */
+                    function matchScore(t) {
+                        const name = t.name.toLowerCase();
+                        if (name === q) return 4; // exact
+                        if (name.startsWith(q)) return 3; // starts with
+                        if (name.includes(q)) return 2; // title contains
+                        if (t.def.toLowerCase().includes(q)) return 1; // def only
+                        return 0;
+                    }
+                    const bestMatch = q
+                        ? [...filtered].sort(
+                              (a, b) => matchScore(b) - matchScore(a),
+                          )[0]
+                        : null;
+
+                    /* build cards */
+                    let isFirst = true;
                     Object.keys(grouped)
                         .sort()
                         .forEach((letter) => {
                             const header = document.createElement("div");
-                            header.className = "alpha-header";
+                            header.className =
+                                "alpha-header" +
+                                (isFirst ? " alpha-first" : "");
                             header.id = `letter-${letter}`;
                             header.textContent = letter;
                             listEl.appendChild(header);
+                            isFirst = false;
 
-                            grouped[letter].forEach((t, index) => {
+                            grouped[letter].forEach((t) => {
                                 const card = document.createElement("div");
                                 card.className = "term-card";
                                 card.id = `term-${slug(t.name)}`;
 
-                                card.innerHTML = `
-                      <div class="term-header">
-                        <div class="term-name">${highlight(t.name, q)}</div>
-                      </div>
-                      <div class="term-def">${highlight(t.def, q)}</div>
-                      ${t.alias ? `<div class="alias">${highlight(t.alias, q)}</div>` : ""}
-                    `;
-
-                                /* ---------- SPOTLIGHT EFFECT ---------- */
+                                /* spotlight logic — score-based */
                                 if (q) {
-                                    const matchScore = t.name
-                                        .toLowerCase()
-                                        .includes(q)
-                                        ? 2
-                                        : t.def.toLowerCase().includes(q)
-                                          ? 1
-                                          : 0;
-
-                                    if (matchScore === 0) {
-                                        card.style.opacity = "0.25";
-                                        card.style.filter = "blur(1px)";
+                                    const score = matchScore(t);
+                                    if (score === 0) {
+                                        card.classList.add("dimmed");
+                                    } else if (
+                                        bestMatch &&
+                                        t.name === bestMatch.name
+                                    ) {
+                                        card.classList.add("best-match");
                                     }
+                                }
 
-                                    if (index === 0 && matchScore > 0) {
-                                        card.style.boxShadow =
-                                            "0 0 0 2px #1a1a2e, 0 10px 30px rgba(0,0,0,0.15)";
-                                        card.style.transform = "scale(1.01)";
-                                    }
+                                /* term name */
+                                const nameEl = document.createElement("div");
+                                nameEl.className = "term-name";
+                                nameEl.innerHTML = highlight(t.name, q);
+
+                                /* definition */
+                                const defEl = document.createElement("div");
+                                defEl.className = "term-def";
+                                defEl.innerHTML = highlight(t.def, q);
+
+                                card.appendChild(nameEl);
+                                card.appendChild(defEl);
+
+                                /* alias (restored) */
+                                if (t.alias) {
+                                    const aliasEl =
+                                        document.createElement("div");
+                                    aliasEl.className = "alias";
+                                    aliasEl.innerHTML = highlight(t.alias, q);
+                                    card.appendChild(aliasEl);
+                                }
+
+                                /* tags */
+                                if (t.tags && t.tags.length) {
+                                    const tagContainer =
+                                        document.createElement("div");
+                                    tagContainer.className = "tags";
+                                    t.tags.forEach((tag) => {
+                                        const tagEl =
+                                            document.createElement("span");
+                                        tagEl.className =
+                                            `tag tag-${tag}` +
+                                            (activeFilters.has(tag)
+                                                ? " tag-active"
+                                                : "");
+                                        tagEl.textContent = tag.toUpperCase();
+                                        tagEl.onclick = () => {
+                                            activeFilters.has(tag)
+                                                ? activeFilters.delete(tag)
+                                                : activeFilters.add(tag);
+                                            renderPills();
+                                            render();
+                                        };
+                                        tagContainer.appendChild(tagEl);
+                                    });
+                                    card.appendChild(tagContainer);
                                 }
 
                                 listEl.appendChild(card);
                             });
                         });
 
-                    /* ---------- alphabet nav ---------- */
+                    /* rebuild alpha nav */
                     alphaNavEl.innerHTML = "";
                     Object.keys(grouped)
                         .sort()
@@ -1093,7 +1264,6 @@
                             const a = document.createElement("a");
                             a.className = "alpha-link";
                             a.textContent = letter;
-
                             a.onclick = (e) => {
                                 e.preventDefault();
                                 document
@@ -1103,62 +1273,51 @@
                                         block: "start",
                                     });
                             };
-
                             alphaNavEl.appendChild(a);
                         });
 
-                    /* ---------- jump to BEST match (TITLE priority) ---------- */
-                    if (q) {
-                        const best = filtered.find((t) =>
-                            t.name.toLowerCase().includes(q),
-                        );
-
-                        if (best) {
-                            setTimeout(() => {
+                    /* scroll to best match — rAF ensures DOM is painted first */
+                    if (bestMatch) {
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => {
                                 document
-                                    .getElementById(`term-${slug(best.name)}`)
+                                    .getElementById(
+                                        `term-${slug(bestMatch.name)}`,
+                                    )
                                     ?.scrollIntoView({
                                         behavior: "smooth",
-                                        block: "start",
+                                        block: "center",
                                     });
-                            }, 50);
-                        }
+                            });
+                        });
                     }
-                }, 180);
+                }, 100);
             }
 
-            /* ---------- ACTIVE LETTER (scroll spy iOS style) ---------- */
+            /* ---- scroll spy ---- */
             window.addEventListener("scroll", () => {
                 const headers = document.querySelectorAll(".alpha-header");
                 let current = "";
-
                 headers.forEach((h) => {
-                    const top = h.getBoundingClientRect().top;
-                    if (top <= 140) current = h.id.replace("letter-", "");
+                    if (h.getBoundingClientRect().top <= 140)
+                        current = h.id.replace("letter-", "");
                 });
-
                 document.querySelectorAll(".alpha-link").forEach((link) => {
                     link.classList.toggle(
                         "active",
                         link.textContent === current,
                     );
                 });
-            });
-
-            /* ---------- back to top ---------- */
-            window.addEventListener("scroll", () => {
                 backToTopBtn.style.display =
                     window.scrollY > 400 ? "block" : "none";
             });
 
-            backToTopBtn.onclick = () => {
+            backToTopBtn.onclick = () =>
                 window.scrollTo({ top: 0, behavior: "smooth" });
-            };
-
-            /* ---------- search ---------- */
             searchInput.addEventListener("input", render);
 
-            /* ---------- init ---------- */
+            /* ---- init ---- */
+            renderPills();
             render();
         </script>
     </body>
