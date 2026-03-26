@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cloud Marketplace Glossary — Suger</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="header" style="display:none;">
+            <div class="header-inner">
+                <h1>Cloud Marketplace Glossary</h1>
+                <p>Common terms across Suger, AWS, Azure, GCP, and Snowflake marketplaces</p>
+                <div class="header-meta">
+                    <div class="header-stat">
+                        <div class="num" id="total-count">—</div>
+                        <div class="lbl">Total Terms</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="controls-inner">
+                <input class="search-bar" type="text" id="search"
+                    placeholder="Search terms, definitions… (press / to focus)" />
+                <div class="filter-row">
+                    <div id="filterBar" class="filter-bar"></div>
+                    <button class="clear-btn" id="clearBtn" onclick="clearFilters()">✕ Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="alpha-nav" aria-label="Jump to letter">
+            <div class="alpha-nav-inner" id="alpha-nav"></div>
+        </nav>
+
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">↑ Top</button>
+
+        <main class="body">
+            <div class="count" id="count"></div>
+            <div id="list"></div>
+        </main>
+
+        <script type="module" src="main.js"></script>
+    </body>
+
+</html>

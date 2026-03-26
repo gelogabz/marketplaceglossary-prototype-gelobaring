@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: #f5f5f7;
+    color: #1a1a1a;
+    min-height: 100vh;
+}
+
+/* ---- Highlight ----------------------------------------------------------- */
+
+mark {
+    background: #ffe58f;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+/* ---- Header -------------------------------------------------------------- */
+
+.header {
+    background: #1a1a2e;
+    padding: 2rem 2rem 1.5rem;
+}
+
+.header-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+    letter-spacing: -0.3px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.header-meta {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.header-stat .num {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header-stat .lbl {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ---- Controls (sticky) --------------------------------------------------- */
+
+.controls {
+    background: #fff;
+    border-bottom: 1px solid #e5e5ea;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.controls-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 9px 14px;
+    font-size: 15px;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: #1a1a1a;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #888;
+    background: #fff;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex: 1;
+}
+
+.filter-pill {
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.1s, color 0.1s;
+}
+
+.filter-pill:hover {
+    border-color: #999;
+}
+
+.filter-pill.active {
+    background: #1a1a2e;
+    color: white;
+    border-color: #1a1a2e;
+}
+
+.clear-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid #f0c0c0;
+    background: #fff5f5;
+    color: #c0392b;
+    cursor: pointer;
+    white-space: nowrap;
+    display: none;
+}
+
+.clear-btn:hover {
+    background: #ffe0e0;
+}
+
+/* ---- Alphabet nav (sticky below controls) -------------------------------- */
+
+.alpha-nav {
+    background: #fff;
+    border-bottom: 1px solid #e5e5ea;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 94px;
+    z-index: 9;
+}
+
+.alpha-nav-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.alpha-link {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alpha-link:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+
+.alpha-link.active {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+/* ---- Body ---------------------------------------------------------------- */
+
+.body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 3rem;
+}
+
+.count {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+/* ---- Section headers ----------------------------------------------------- */
+
+.alpha-header {
+    font-size: 11px;
+    font-weight: 700;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 0 0.4rem;
+    border-top: 1px solid #e5e5ea;
+    margin-top: 0.5rem;
+}
+
+.alpha-first {
+    border-top: none;
+    margin-top: 0;
+}
+
+/* ---- Term cards ---------------------------------------------------------- */
+
+.term-card {
+    background: #fff;
+    border: 1px solid #e5e5ea;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 8px;
+    transition: border-color 0.12s, box-shadow 0.12s, transform 0.12s, opacity 0.12s, filter 0.12s;
+}
+
+.term-card:hover {
+    border-color: #c0c0c8;
+}
+
+.term-card.best-match {
+    box-shadow: 0 0 0 2px #1a1a2e, 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
+}
+
+.term-card.dimmed {
+    opacity: 0.25;
+    filter: blur(1px);
+}
+
+.term-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.term-def {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.65;
+}
+
+.alias {
+    font-size: 12px;
+    color: #999;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+/* ---- Tags ---------------------------------------------------------------- */
+
+.tags {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    padding-top: 6px;
+}
+
+.tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Tag colors are injected dynamically from data/tags.js via injectTagStyles() */
+
+.tag.tag-active {
+    outline: 2px solid #000;
+}
+
+/* ---- Empty state --------------------------------------------------------- */
+
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: #888;
+    font-size: 14px;
+}
+
+/* ---- Back to top --------------------------------------------------------- */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1a1a2e;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    font-size: 13px;
+}
+
+/* ---- Print --------------------------------------------------------------- */
+
+@media print {
+    .controls { position: static; }
+    .term-card { break-inside: avoid; }
+}
