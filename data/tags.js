@@ -14,5 +14,6 @@ export const tagMeta = {
     gcp:       { label: "GCP",       bg: "#e8f5e9", color: "#1b5e20" },
     snowflake: { label: "Snowflake", bg: "#e8f4fd", color: "#0c4f7a" },
     alibaba:   { label: "Alibaba",   bg: "#fff0e0", color: "#8c3d00" },
+    offers:    { label: "Offers",    bg: "#fff8e8", color: "#7a4f00" },
     cosell:    { label: "Co-sell",   bg: "#fde8f0", color: "#7a1f45" },
 };
