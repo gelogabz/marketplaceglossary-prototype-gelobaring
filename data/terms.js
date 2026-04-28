@@ -1,23 +1,23 @@
 export const terms = [
   {
-    name: "ACE (APN Customer Engagements)",
+    name: "APN Customer Engagements (ACE) — AWS",
     tags: ["aws", "cosell"],
     def: "AWS's co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft's co-sell program or GCP Partner Advantage co-sell.",
     alias:
-      "Related: AWS ACE Integration, Inbound Referral, Outbound Referral, Co-sell Recommendation Score",
+      "Related: AWS Partner Network (APN) — AWS, Inbound Referral — Suger, Outbound Referral — Suger",
   },
   {
-    name: "ABO (Agreement-Based Offer)",
+    name: "Agreement-Based Offer (ABO) — AWS",
     tags: ["aws", "offers"],
     def: "An AWS Marketplace feature that lets sellers create a new offer on top of an existing buyer agreement — used for renewals, upgrades, or amendments without requiring the buyer to start a new subscription from scratch.",
-    alias: "Related: Agreement (AWS), Future Dated Agreement (AWS)",
+    alias: "Related: Agreement — AWS, Future Dated Agreement — AWS",
   },
   {
-    name: "Agreement (AWS)",
+    name: "Agreement — AWS",
     tags: ["aws"],
     def: "The formal contract created when a buyer accepts an AWS Marketplace offer. Equivalent to Entitlement in Suger. Identified by an Agreement ID. Agreements can be renewed or amended via ABOs.",
     alias:
-      "Suger equivalent: Entitlement | Related: ABO (Agreement-Based Offer)",
+      "Suger equivalent: Entitlement — Suger | Related: Agreement-Based Offer (ABO) — AWS",
   },
   {
     name: "Amazon Machine Image (AMI) — AWS",
@@ -27,10 +27,11 @@ export const terms = [
       "Related: Bring Your Own License (BYOL) — General, Contract — AWS, Product Code — AWS",
   },
   {
-    name: "Analytics (Suger)",
+    name: "Suger Analytics — Suger",
     tags: ["suger"],
     def: "Suger's built-in reporting dashboard for tracking marketplace revenue, entitlement status, usage consumption, and co-sell pipeline across all connected marketplaces.",
-    alias: "",
+    alias:
+      "Related: Revenue — Suger, Table Export — Suger, Suger Console — Suger",
   },
   {
     name: "AppSource — Microsoft",
@@ -206,11 +207,11 @@ export const terms = [
       "Also known as: Private Pricing Agreement (PPA) — AWS | Azure equivalent: MACC — Azure | GCP equivalent: CUD — GCP",
   },
   {
-    name: "Entitlement",
+    name: "Entitlement — Suger",
     tags: ["suger"],
     def: "Suger's unified term for the contract/subscription created when a buyer purchases a product on a marketplace. Represents active access rights, billing terms, and the unit for metering.",
     alias:
-      "AWS: Agreement or Subscription | Azure: Subscription | GCP: Entitlement",
+      "AWS: Agreement — AWS | Azure: Subscription — Azure | GCP: Entitlement — GCP",
   },
   {
     name: "End User License Agreement (EULA) — General",
@@ -310,11 +311,11 @@ export const terms = [
       "Related: Transactable Offer — General, Bring Your Own License (BYOL) — General",
   },
   {
-    name: "MACC (Microsoft Azure Consumption Commitment)",
+    name: "Azure Consumption Commitment (MACC) — Azure",
     tags: ["azure", "funding"],
     def: "Microsoft's enterprise committed spend program. Enterprises pre-commit to Azure spend over 1–3 years; purchases of MACC-eligible transactable Marketplace listings count toward that commitment. A core driver of enterprise Azure Marketplace buying.",
     alias:
-      "AWS equivalent: EDP | GCP equivalent: CUD | Related: Transactable Offer",
+      "AWS equivalent: Enterprise Discount Program (EDP) — AWS | GCP equivalent: Committed Use Discount (CUD) — GCP",
   },
   {
     name: "Marketplace Customer Credit Program (MCCP) — GCP",
@@ -375,7 +376,7 @@ export const terms = [
     tags: ["suger", "general", "offers"],
     def: "In Suger, a pricing and terms proposal (public or private) that a buyer can accept to purchase a product. Must be linked to a Product. Maps differently across marketplaces.",
     alias:
-      "AWS: Private Offer | Azure: Plan | GCP: Offer | Related: Private Offer — General",
+      "AWS: Private Offer — GCP | Azure: Plan — Azure | Related: Private Offer — General",
   },
   {
     name: "Offer Expiration Date — AWS",
@@ -583,16 +584,29 @@ export const terms = [
     alias: "Related: Analytics (Suger), Entitlement, Metering Dimension",
   },
   {
+    name: "Suger Console — Suger",
+    tags: ["suger"],
+    def: "The central web-based interface for managing cloud marketplace operations, viewing analytics, configuring integrations, and executing co-sell motions across all connected platforms.",
+    alias:
+      "Related: Suger Analytics — Suger, Entitlement — Suger, Metering Dimension — Suger",
+  },
+  {
     name: "Subscription — AWS",
     tags: ["aws"],
     def: "An AWS Marketplace pay-as-you-go pricing model. Buyers can cancel any time and are billed based on metered usage only, with no upfront commitment. Different from Azure and Snowflake subscriptions, which may be commit-based.",
     alias: "",
   },
   {
-    name: "Subscription — Azure / GCP",
+    name: "Subscription — Azure",
     tags: ["azure", "gcp"],
-    def: "A buyer's active contract for a marketplace offer. In Azure, the Subscription ID is the external identifier for an Entitlement in Suger. In GCP, 'Subscription-based' pricing refers to a flat-rate commit model.",
+    def: "A buyer's active contract for a marketplace offer. In Azure, the Subscription ID is the external identifier for an Entitlement in Suger.",
     alias: "Related: Entitlement — Suger, SaaS Fulfillment API — Azure",
+  },
+  {
+    name: "Subscription — GCP",
+    tags: ["gcp"],
+    def: "A buyer's active contract for a marketplace offer. In GCP, 'Subscription-based' pricing refers to a flat-rate commit model.",
+    alias: "Related: Entitlement — Suger, Procurement API — GCP",
   },
   {
     name: "Transactable Offer — General",
@@ -621,10 +635,11 @@ export const terms = [
       "Related: Metering Dimension — Suger, Billable Metric — Suger, Usage Record — Suger",
   },
   {
-    name: "Usage Record / Usage Record Group — Suger",
+    name: "Usage Record — Suger",
     tags: ["suger"],
     def: "A metering event sent to Suger's API reporting a buyer's consumption of one or more dimensions for a given entitlement. Suger deduplicates by ID, validates, and forwards to the correct marketplace.",
-    alias: "Related: Usage Metering — Suger, Metering Dimension — Suger",
+    alias:
+      "Also known as: Usage Record Group | Related: Usage Metering — Suger, Metering Dimension — Suger",
   },
   {
     name: "Vendor-Metered Tagging — AWS",
@@ -659,10 +674,10 @@ export const terms = [
     alias: "Related: Private Offer, Usage Metering, Entitlement",
   },
   {
-    name: "API Client (Suger)",
+    name: "Suger API Client — Suger",
     tags: ["suger"],
     def: "Suger's authentication mechanism for programmatic access to the Suger API. ISVs generate API client credentials in the Suger Console to authenticate server-to-server calls for metering, entitlement management, and workflow automation.",
-    alias: "",
+    alias: "Related: Suger Console — Suger, Webhook — Suger",
   },
   {
     name: "Billable Metric",
@@ -738,10 +753,11 @@ export const terms = [
     alias: "",
   },
   {
-    name: "Okta SSO",
+    name: "Okta Single Sign-On (SSO) Integration — Suger",
     tags: ["suger", "integrations"],
     def: "Suger's Single Sign-On integration with Okta. Allows organizations to manage Suger Console access through their existing Okta identity provider, enforcing centralized authentication and access policies.",
-    alias: "",
+    alias:
+      "Related: Role-Based Access Control (RBAC) — Suger, Suger Console — Suger",
   },
   {
     name: "Price Model (Suger)",
@@ -823,11 +839,11 @@ export const terms = [
     alias: "",
   },
   {
-    name: "AWS Funding / Partner Funding",
+    name: "AWS Partner Funding — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "AWS's program that provides financial support (credits or cash) to partners pursuing co-sell opportunities. In Suger, funding requests are submitted, tracked, and managed directly from the Co-sell module via the Partner Central Funding Benefits API.",
     alias:
-      "Related: Funding Wallet, MDF, MAP, PIF, POC Funding, Funding Benefits API",
+      "Related: Marketing Development Funds (MDF) — General, Migration Acceleration Program (MAP) — AWS",
   },
   {
     name: "Funding Wallet",
@@ -968,16 +984,18 @@ export const terms = [
     alias: "Also known as: EDP (Enterprise Discount Program)",
   },
   {
-    name: "RPOP (Reseller Private Offer Plan)",
-    tags: ["gcp", "cosell", "suger", "offers"],
+    name: "Reseller Private Offer Plan (RPOP) — GCP",
+    tags: ["gcp", "cosell", "offers"],
     def: "GCP Marketplace's channel reseller mechanism — the equivalent of AWS's CPPO. An ISV creates a plan (single-use or multi-use) with a wholesale discount that an authorized reseller uses to create private offers for end customers. Suger manages the full RPOP lifecycle from the console and Salesforce.",
-    alias: "AWS equivalent: CPPO (Channel Partner Private Offer)",
+    alias:
+      "AWS equivalent: Resale Authorization — AWS | Related: Marketplace Channel Private Offer (MCPO) — GCP",
   },
   {
-    name: "RCMP (Reseller Contract for AWS Marketplace)",
+    name: "Reseller Contract (RCMP) — AWS",
     tags: ["aws", "cosell"],
     def: "AWS's standard contract template governing the relationship between an ISV and a channel partner in a CPPO transaction. ISVs can attach RCMP or a custom reseller contract to a resale authorization.",
-    alias: "",
+    alias:
+      "Related: Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
   },
   {
     name: "Partner Sales Console (GCP)",
@@ -992,11 +1010,11 @@ export const terms = [
     alias: "Also called: Resale Authorization, Opportunity (in AWS API docs)",
   },
   {
-    name: "MCPO (Marketplace Channel Private Offer)",
+    name: "Marketplace Channel Private Offer (MCPO) — GCP",
     tags: ["gcp", "cosell", "offers"],
     def: "GCP Marketplace's channel reseller program — the GCP equivalent of AWS's CPPO. An ISV creates a Reseller Private Offer Plan (RPOP) with a wholesale discount; the reseller uses it to create a private offer with markup for the end customer. MCPO purchases count 100% toward the buyer's CUD committed spend, capped at 25% of total commitment.",
     alias:
-      "Also called: RPOP (Reseller Private Offer Plan) | AWS equivalent: CPPO | Azure equivalent: MPO",
+      "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | Azure equivalent: Multiparty Private Offer (MPO) — Azure",
   },
   {
     name: "Express Private Offer (AWS)",
