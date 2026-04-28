@@ -34,16 +34,20 @@ function render() {
     const filtered = getFiltered(q);
     const bestMatch = getBestMatch(filtered, q);
 
-    countEl.textContent =
-      filtered.length === terms.length
-        ? `${terms.length} terms`
-        : `Showing ${filtered.length} of ${terms.length} terms`;
+    if (countEl) {
+      countEl.textContent =
+        filtered.length === terms.length
+          ? `${terms.length} terms`
+          : `Showing ${filtered.length} of ${terms.length} terms`;
+    }
 
+    if (!listEl) return;
     listEl.innerHTML = "";
 
     if (filtered.length === 0) {
       listEl.innerHTML = `<div class="no-results">No terms matched your search.</div>`;
-      document.getElementById("alpha-nav").innerHTML = "";
+      const alphaNav = document.getElementById("alpha-nav");
+      if (alphaNav) alphaNav.innerHTML = "";
       return;
     }
 
@@ -84,10 +88,19 @@ window.onload = () => {
 
   // Support for deep linking on load
   if (window.location.hash) {
+    // Use a slightly longer timeout to ensure the DOM is fully rendered
+    // and the browser's layout engine has caught up.
     setTimeout(() => {
       const el = document.querySelector(window.location.hash);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 500);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        // Optional: add a temporary highlight class to make it pop
+        el.style.transition = "background-color 1s";
+        const originalBg = el.style.backgroundColor;
+        el.style.backgroundColor = "#fffbe6"; // Light yellow highlight
+        setTimeout(() => (el.style.backgroundColor = originalBg), 2000);
+      }
+    }, 600);
   }
 };
 
