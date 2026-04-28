@@ -17,6 +17,7 @@ export const tagMeta = {
   offers: { label: "Offers", bg: "#fff8e8", color: "#7a4f00" },
   integrations: { label: "Integrations", bg: "#e8f0fe", color: "#1a56cc" },
   cosell: { label: "Co-sell", bg: "#fde8f0", color: "#7a1f45" },
+  funding: { label: "Funding", bg: "#e6fffa", color: "#234e52" },
 };
 
 // label: { label:"label", bg: "#000000", color: "#ffffff" },
