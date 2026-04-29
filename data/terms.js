@@ -33,7 +33,7 @@ export const terms = [
     alias: "Related: Revenue, Table Export, Suger Console",
   },
   {
-    name: "AppSource — Microsoft",
+    name: "AppSource — Azure",
     tags: ["azure"],
     def: "Microsoft's former marketplace storefront for business applications integrating with Microsoft 365, Dynamics 365, and Power Platform. As of September 2025, AppSource has been consolidated into the unified Microsoft Marketplace alongside Azure Marketplace.",
     alias: "Now part of: Microsoft Marketplace — Azure",
@@ -42,7 +42,8 @@ export const terms = [
     name: "AWS Marketplace — AWS",
     tags: ["aws"],
     def: "Amazon's digital catalog where ISVs list and sell software, SaaS, data products, and professional services to AWS customers. Purchases are billed through the customer's AWS account.",
-    alias: "",
+    alias:
+      "Related: AWS Marketplace Management Portal (AMMP) — AWS, AWS Marketplace Catalog API — AWS, AWS Partner Network (APN) — AWS",
   },
   {
     name: "AWS Marketplace Catalog API — AWS",
@@ -65,10 +66,11 @@ export const terms = [
       "Related: APN Customer Engagements (ACE) — AWS, AWS Competency Program — AWS",
   },
   {
-    name: "Azure Marketplace / Microsoft Marketplace",
+    name: "Microsoft Marketplace — Azure",
     tags: ["azure"],
     def: "Microsoft's unified cloud marketplace launched September 2025, merging the previously separate Azure Marketplace and AppSource into a single platform. Covers SaaS, VMs, managed services, AI apps and agents, and professional services. Buyers with MACC-eligible committed spend can purchase transactable offers and draw down their Azure commitment.",
-    alias: "Formerly: Azure Marketplace + AppSource | Related: MACC, MISA",
+    alias:
+      "Formerly: Azure Marketplace, AppSource | Related: Azure Consumption Commitment (MACC) — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
   },
   {
     name: "Billing Integration",
@@ -115,7 +117,7 @@ export const terms = [
     tags: ["azure", "cosell"],
     def: "Tiered Microsoft co-sell statuses. 'Co-sell Ready' meets requirements for joint selling. 'Azure IP Co-sell Eligible' unlocks MACC eligibility — purchases count dollar-for-dollar toward the customer's Azure commitment on Microsoft Marketplace. 'Co-sell Incentivized' means Microsoft sellers earn quota credit for selling your product.",
     alias:
-      "Related: Microsoft Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
+      "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
   },
   {
     name: "Combined Pricing — GCP",
@@ -140,7 +142,7 @@ export const terms = [
     tags: ["general"],
     def: "A pre-negotiated spending commitment an enterprise makes with a cloud provider. Software purchased via transactable marketplace listings typically counts toward drawing down this commitment — a major driver of enterprise marketplace buying.",
     alias:
-      "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Microsoft Azure Consumption Commitment (MACC) — Azure | GCP: Committed Use Discount (CUD) — GCP",
+      "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Azure Consumption Commitment (MACC) — Azure | GCP: CUD (Committed Use Discount) — GCP",
   },
   {
     name: "Contract — AWS",
@@ -153,7 +155,7 @@ export const terms = [
     tags: ["aws", "cosell", "offers"],
     def: "A program where an ISV creates a resale authorization (with a wholesale price) that an authorized channel partner uses to create a private offer — with markup — for an end customer. The channel partner is the seller of record.",
     alias:
-      "GCP equivalent: MCPO / RPOP | Azure equivalent: MPO | Related: Resale Authorization, SPPO",
+      "GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Azure equivalent: Multiparty Private Offer (MPO) — Azure | Related: Resale Authorization — AWS, Solution Provider Private Offer (SPPO) — AWS",
   },
   {
     name: "CRM Integration",
@@ -173,7 +175,8 @@ export const terms = [
     name: "CUD (Committed Use Discount) — GCP",
     tags: ["gcp", "funding"],
     def: "Google Cloud's committed spend program. Enterprises commit to a minimum resource usage over 1–3 years in exchange for discounts. Eligible transactable marketplace purchases count toward CUD drawdown.",
-    alias: "AWS equivalent: EDP | Azure equivalent: MACC",
+    alias:
+      "AWS equivalent: Enterprise Discount Program (EDP) — AWS | Azure equivalent: Azure Consumption Commitment (MACC) — Azure",
   },
   {
     name: "Dimension Conversion",
@@ -185,7 +188,8 @@ export const terms = [
     name: "Disbursement",
     tags: ["general", "aws", "azure", "gcp"],
     def: "The payment a cloud marketplace sends to the seller after collecting from the buyer, net of marketplace fees and taxes. Typically processed monthly. Suger provides disbursement reports for all connected marketplaces.",
-    alias: "Related: Revenue, Disbursement Date, Marketplace Fee",
+    alias:
+      "Related: Revenue, Disbursement Date, Marketplace Fee / Transaction Fee",
   },
   {
     name: "Divide Entitlement Commit",
@@ -198,14 +202,14 @@ export const terms = [
     tags: ["aws", "funding"],
     def: "AWS's committed spend program for enterprises. Requires a minimum $1M spend commitment. Eligible AWS Marketplace transactable listing purchases count toward EDP drawdown — a key enterprise buying incentive.",
     alias:
-      "Also known as: Private Pricing Agreement (PPA) — AWS | Azure equivalent: MACC — Azure | GCP equivalent: CUD — GCP",
+      "Also known as: PPA (Private Pricing Agreement) | Azure equivalent: Azure Consumption Commitment (MACC) — Azure | GCP equivalent: CUD (Committed Use Discount) — GCP",
   },
   {
     name: "Entitlement",
     tags: ["suger"],
     def: "Suger's unified term for the contract/subscription created when a buyer purchases a product on a marketplace. Represents active access rights, billing terms, and the unit for metering.",
     alias:
-      "AWS: Agreement — AWS | Azure: Subscription — Azure | GCP: Entitlement — GCP",
+      "AWS: Agreement — AWS | Azure: Subscription — Azure | GCP: Subscription — GCP",
   },
   {
     name: "End User License Agreement (EULA)",
@@ -344,14 +348,14 @@ export const terms = [
     tags: ["azure", "cosell"],
     def: "Microsoft's partner program for ISVs and services companies. Enrollment is required to publish on Azure Marketplace and access co-sell, partner funding, and Marketplace Rewards.",
     alias:
-      "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, Microsoft Intelligent Security Association (MISA) — Azure",
+      "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
   },
   {
     name: "Multiparty Private Offer (MPO) — Azure",
     tags: ["azure", "cosell", "offers"],
     def: "Microsoft Marketplace's channel reseller mechanism — the Azure equivalent of AWS's CPPO. An ISV and channel partner collaborate to create a single private offer for an end customer. The partner sets their own margin; the purchase counts toward the customer's MACC. As of 2025, Microsoft is also expanding 'Resale-Enabled Offers' — a broader channel motion allowing geographic resale by authorized distributors including Arrow, Crayon, Ingram Micro, Pax8, and TD SYNNEX.",
     alias:
-      "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | GCP equivalent: MCPO — GCP | Related: Resale-Enabled Offer — Azure",
+      "AWS equivalent: CPPO (Channel Partner Private Offer) | GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Related: Resale-Enabled Offer — Azure",
   },
   {
     name: "Managed Service Provider (MSP)",
@@ -387,10 +391,10 @@ export const terms = [
     name: "Overage",
     tags: ["suger", "general"],
     def: "Usage that exceeds a buyer's prepaid commit. Cloud marketplaces bill overage separately via metered usage. Suger can auto-track cumulative usage and report only the portion above the commit.",
-    alias: "Related: Prepaid Commit, Usage Metering, Overage Billing",
+    alias: "Related: Commit / Prepaid Commit, Usage Metering",
   },
   {
-    name: "Partner Center — Microsoft",
+    name: "Partner Center — Azure",
     tags: ["azure"],
     def: "Microsoft's portal where publishers create and manage Azure Marketplace and AppSource offers, co-sell configurations, payout profiles, and partner program enrollments.",
     alias:
@@ -475,13 +479,14 @@ export const terms = [
     tags: ["aws", "cosell", "offers"],
     def: "An ISV-created permission on AWS Marketplace that allows a specific channel partner to create CPPOs for a given product. Also called a 'Selling Authorization' in the AMMP UI. Can be single-use or multi-use, with or without an expiry date.",
     alias:
-      "Also called: Selling Authorization | Related: Channel Partner Private Offer (CPPO) — AWS",
+      "Also called: Selling Authorization — AWS | Related: CPPO (Channel Partner Private Offer)",
   },
   {
     name: "Reseller Program — GCP",
     tags: ["gcp", "cosell"],
     def: "Google Cloud Marketplace's channel program allowing authorized partners to resell ISV products via MCPO/RPOP, create private offers for customers, and leverage CUD committed spend. Partners manage orders via the Partner Sales Console.",
-    alias: "Related: MCPO, RPOP, Partner Sales Console, CUD",
+    alias:
+      "Related: Marketplace Channel Private Offer (MCPO) — GCP, Reseller Private Offer Plan (RPOP) — GCP, Partner Sales Console — GCP, CUD (Committed Use Discount) — GCP",
   },
   {
     name: "Software-as-a-Service (SaaS)",
@@ -493,7 +498,7 @@ export const terms = [
     name: "SaaS Fulfillment API — Azure",
     tags: ["azure"],
     def: "Microsoft's API that ISVs must implement to handle subscription lifecycle events for Azure Marketplace SaaS offers — including activation, plan changes, quantity updates, suspension, and unsubscription.",
-    alias: "Related: Microsoft Marketplace — Azure, Partner Center — Microsoft",
+    alias: "Related: Microsoft Marketplace — Azure, Partner Center — Azure",
   },
   {
     name: "Standard Contract (SCMP) — AWS",
@@ -511,7 +516,7 @@ export const terms = [
     name: "Seller of Record",
     tags: ["general"],
     def: "The legal entity responsible for a marketplace transaction — who invoices and collects from the buyer. In CPPOs and CSP/MPO transactions, the channel partner is the seller of record, not the ISV.",
-    alias: "Related: Channel Partner (CP), Marketplace Fee",
+    alias: "Related: Channel Partner (CP), Marketplace Fee / Transaction Fee",
   },
   {
     name: "Service Account — GCP",
@@ -535,7 +540,7 @@ export const terms = [
     name: "Signup URL Redirect",
     tags: ["suger"],
     def: "A Suger feature where marketplace buyer signup URLs route through Suger first for entitlement provisioning, then redirect to the ISV's own onboarding URL. Decouples marketplace provisioning from product onboarding.",
-    alias: "Related: Entitlement, Landing Page",
+    alias: "Related: Entitlement, Landing Page / Signup URL",
   },
   {
     name: "Snowflake Marketplace — Snowflake",
@@ -549,13 +554,13 @@ export const terms = [
     tags: ["aws", "cosell", "offers"],
     def: "An AWS program enabling pre-vetted Solution Providers to create private offers at pre-negotiated ISV discounts — without needing to negotiate deal-by-deal. ISVs must be enrolled in ISV Accelerate.",
     alias:
-      "Related: Channel Partner Private Offer (CPPO) — AWS, ISV Accelerate — AWS",
+      "Related: CPPO (Channel Partner Private Offer), ISV Accelerate — AWS",
   },
   {
     name: "Suger",
     tags: ["suger"],
     def: "A unified cloud marketplace platform enabling ISVs to list, transact, meter, and co-sell across AWS, Azure, GCP, and Snowflake from a single interface, with integrations into CRM, billing, and communication tools.",
-    alias: "Related: Analytics, Entitlement, Metering Dimension",
+    alias: "Related: Suger Analytics, Entitlement, Metering Dimension",
   },
   {
     name: "Suger Console",
@@ -585,7 +590,8 @@ export const terms = [
     name: "Transactable Offer",
     tags: ["general", "azure"],
     def: "A marketplace listing where the cloud provider handles the complete commerce transaction — payment, invoicing, and disbursement — on behalf of the ISV. Required for committed spend drawdown (EDP, MACC, CUD). Contrasts with BYOL or Contact Me listings.",
-    alias: "Related: Listing, Committed Spend, Bring Your Own License (BYOL)",
+    alias:
+      "Related: Listing, Committed Spend / Cloud Commit, Bring Your Own License (BYOL)",
   },
   {
     name: "Usage-Based Pricing — GCP",
@@ -811,7 +817,7 @@ export const terms = [
     tags: ["aws", "cosell", "funding"],
     def: "AWS's program that provides financial support (credits or cash) to partners pursuing co-sell opportunities. In Suger, funding requests are submitted, tracked, and managed directly from the Co-sell module via the Partner Central Funding Benefits API.",
     alias:
-      "Related: Marketing Development Funds (MDF), Migration Acceleration Program (MAP) — AWS",
+      "Related: MDF (Marketing Development Funds), MAP (Migration Acceleration Program)",
   },
   {
     name: "Funding Wallet",
@@ -820,133 +826,137 @@ export const terms = [
     alias: "",
   },
   {
-    name: "Partner Central 3.0 (PC3.0)",
+    name: "Partner Central 3.0 (PC3.0) — AWS",
     tags: ["aws", "cosell"],
     def: "The latest version of AWS's partner portal. Required for access to the Funding Benefits API — ISVs must complete migration to PC3.0 before AWS Funding can be activated in Suger. Migration status is confirmed via the AWS Partner Manager.",
     alias: "",
   },
   {
-    name: "Funding Benefits API",
+    name: "Funding Benefits API — AWS",
     tags: ["aws", "cosell"],
     def: "The AWS Partner Central API endpoint enabling programmatic submission and tracking of funding requests. Only available after a partner's migration to Partner Central 3.0 is confirmed.",
     alias: "",
   },
   {
-    name: "MDF (Marketing Development Funds)",
+    name: "Marketing Development Funds (MDF) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "AWS co-marketing funding provided to partners to offset demand generation costs — events, campaigns, digital ads, content creation, etc. Partners are reimbursed up to 50% of eligible expenses after submitting proof of performance (receipts). Can also be issued as AWS Promotional Credits. Requested via the AWS Partner Funding Portal. Requires an Amazon Payee Central account for cash disbursement. MDF can stack on top of SCA benefits.",
-    alias: "Related: AWS Funding, POA (Plan of Action), PIF",
+    alias:
+      "Related: AWS Partner Funding — AWS, POA (Plan of Action), PIF (Partner Initiative Funding)",
   },
   {
-    name: "MAP (Migration Acceleration Program)",
+    name: "Migration Acceleration Program (MAP) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS funding program providing credits and cash to partners helping customers migrate and modernize workloads on AWS. As of 2026, now covers generative AI and agentic features built during modernization — not just migrations. Funding scales with deal size.",
     alias: "Related: AWS Funding, ISV Workload Migration Program (WMP)",
   },
   {
-    name: "AWS Partner Funding Portal (APFP)",
+    name: "AWS Partner Funding Portal (APFP) — AWS",
     tags: ["aws", "cosell"],
     def: "The AWS portal where partners submit, track, and manage fund requests across all funding programs (MDF, MAP, POC, PIF, etc.). Accessible via the Funding tab in AWS Partner Central.",
     alias: "",
   },
   {
-    name: "Benefit Allocation",
+    name: "Benefit Allocation — AWS",
     tags: ["aws", "cosell"],
     def: "An approved funding grant issued to a partner through the AWS Benefits API. Can take the form of cash disbursements, AWS credits, consumable wallets, access grants, or recognition. Each allocation has a lifecycle status tracked via the Partner Central API.",
     alias: "",
   },
   {
-    name: "Amazon Payee Central",
+    name: "Amazon Payee Central — AWS",
     tags: ["aws", "cosell"],
     def: "Amazon's payment registration system where partners must set up bank account and tax information before receiving any cash-based AWS funding benefits (MDF, MAP, etc.). Required prerequisite for cash disbursements.",
     alias: "",
   },
   {
-    name: "POC Funding (Proof of Concept)",
+    name: "POC Funding (Proof of Concept) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "AWS funding that offsets up to 10% of the cost of building a proof of concept for a customer, capped at $25,000. Submitted through the AWS Partner Funding Portal. Requires Validated+ stage in any Partner Path. The ACE opportunity must be in Technical Validation stage or beyond.",
-    alias: "Related: AWS Funding, AWS Partner Funding Portal (APFP)",
+    alias:
+      "Related: AWS Partner Funding — AWS, AWS Partner Funding Portal (APFP)",
   },
   {
-    name: "PIF (Partner Initiative Funding)",
+    name: "Partner Initiative Funding (PIF) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS funding type tied to specific partner agreement-based initiatives. The PIF template in the AWS Partner Funding Portal lets eligible partners self-access their initiative funds without requiring their AWS Partner Manager to be involved in every request — reducing friction and accelerating time-to-funding.",
-    alias: "Related: AWS Funding, MDF, APFP",
+    alias:
+      "Related: AWS Partner Funding — AWS, MDF (Marketing Development Funds), AWS Partner Funding Portal (APFP)",
   },
   {
-    name: "ISV Workload Migration Program (WMP)",
+    name: "ISV Workload Migration Program (WMP) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS program providing promotional credits and go-to-market support to ISVs that help migrate customer workloads from on-premises to a SaaS model on AWS. As of 2026, WMP now offers direct credit disbursement to end customers for eligible migrations. Requires: Foundational Technical Review completion, Validated stage status, a SaaS solution on AWS, and a qualified migration use case.",
     alias: "Related: AWS Funding, MAP, FTR (Foundational Technical Review)",
   },
   {
-    name: "AWS Promotional Credits",
+    name: "AWS Promotional Credits — AWS",
     tags: ["aws", "cosell"],
     def: "Non-cash credits applied to an AWS account to offset usage costs. Awarded through programs like Innovation Sandbox, ISV WMP, and MAP. Not redeemable for cash. Subject to AWS Promotional Credit Terms.",
     alias: "",
   },
   {
-    name: "Innovation Sandbox (APN)",
+    name: "Innovation Sandbox (APN) — AWS",
     tags: ["aws", "cosell"],
     def: "An AWS program providing promotional credits to partners to offset AWS usage costs during solution development and testing. Accessible via the Funding tab in AWS Partner Central. For Global Startup Program partners, pre-loaded MDF Wallets are also available.",
-    alias: "Related: AWS Funding, MDF",
+    alias:
+      "Related: AWS Partner Funding — AWS, MDF (Marketing Development Funds)",
   },
   {
-    name: "MCAS (Marketplace Commerce Analytics Service)",
+    name: "MCAS (Marketplace Commerce Analytics Service) — AWS",
     tags: ["aws", "suger", "integrations"],
     def: "An AWS service giving sellers programmatic access to marketplace business data (usage, subscriptions, billing, customer info) via the AWS SDK. Data is delivered to an S3 bucket with SNS notifications. Suger uses MCAS as part of the AWS integration setup.",
     alias: "",
   },
   {
-    name: "MDFS (Marketplace Data Feed Service)",
+    name: "MDFS (Marketplace Data Feed Service) — AWS",
     tags: ["aws", "suger", "integrations"],
     def: "AWS's structured data pipeline that delivers product billing and customer information (company name, address, email domain) to an S3 bucket. Recommended alongside MCAS for complete revenue and buyer data sync in Suger.",
     alias: "",
   },
   {
-    name: "POA (Plan of Action)",
+    name: "POA (Plan of Action) — AWS",
     tags: ["aws", "cosell"],
     def: "A document AWS partners submit alongside MDF fund requests outlining the marketing activity, timeline, expected outcomes, and budget breakdown. Required for MDF claims.",
     alias: "",
   },
   {
-    name: "Funding Dashboard",
+    name: "Funding Dashboard — AWS",
     tags: ["aws", "cosell", "suger"],
     def: "A native AWS Partner Central view providing real-time visibility into fund allocation, utilization, and performance metrics across all funding programs. Also mirrored in Suger's Funding tab.",
     alias: "",
   },
   {
-    name: "Training & Certification Funding",
+    name: "Training & Certification Funding — AWS",
     tags: ["aws", "cosell"],
     def: "An AWS funding benefit offering discounted training to help partner teams prepare for AWS certification exams. Accessible via the Funding tab in AWS Partner Central.",
     alias: "",
   },
   {
-    name: "SCA (Strategic Collaboration Agreement)",
+    name: "SCA (Strategic Collaboration Agreement) — AWS",
     tags: ["aws", "cosell"],
     def: "A formal, multi-year agreement between AWS and a select partner — typically Premier Tier — committing both sides to joint business goals across Build-Market-Sell-Grow motions: co-sell targets, go-to-market investment, training, and funding. Anchored in outcome-driven business plans with defined metrics and milestones. MDF can stack on top of SCA benefits.",
     alias: "",
   },
   {
-    name: "SCB (SaaS Co-sell Benefit)",
+    name: "SCB (SaaS Co-sell Benefit) — AWS",
     tags: ["aws", "cosell"],
     def: "An AWS program where AWS sales reps earn quota retirement credit for co-selling SaaS/PaaS solutions transacted as private offers in AWS Marketplace. Incentivizes AWS sellers to prioritize ISV partners. Available to ISV Accelerate partners.",
     alias: "",
   },
   {
-    name: "Quota Retirement",
+    name: "Quota Retirement — AWS",
     tags: ["aws", "cosell"],
     def: "When an AWS seller earns credit toward their sales quota for a deal transacted through AWS Marketplace. The SCB program grants this to AWS reps on co-sold SaaS private offers — the core mechanic that motivates AWS sellers to co-sell your product.",
     alias: "",
   },
   {
-    name: "PDM (Partner Development Manager)",
+    name: "PDM (Partner Development Manager) — AWS",
     tags: ["aws", "cosell"],
     def: "The AWS-assigned contact responsible for managing a partner's relationship with AWS. Helps with APN program navigation, SCA setup, co-sell strategy, and funding access.",
     alias: "",
   },
   {
-    name: "PPA (Private Pricing Agreement)",
+    name: "PPA (Private Pricing Agreement) — AWS",
     tags: ["aws", "cosell"],
     def: "AWS's committed spend program for enterprises — essentially the same as EDP. A negotiated agreement where a customer commits to a minimum AWS spend over 1–3 years in exchange for discounts. Marketplace transactable purchases count toward PPA drawdown. Can be AWS-led or Partner-led.",
     alias: "Also known as: EDP (Enterprise Discount Program)",
@@ -975,7 +985,8 @@ export const terms = [
     name: "Selling Authorization — AWS",
     tags: ["aws", "cosell", "offers"],
     def: "AWS's term in the AMMP UI for what the API calls a Resale Authorization. An ISV creates this to authorize a specific channel partner to resell a product via CPPO. Can be single-use or reusable. Tracks statuses: Authorized, Authorized (reusable), Authorized (consumed), Expired, Deactivated.",
-    alias: "Also called: Resale Authorization, Opportunity (in AWS API docs)",
+    alias:
+      "Also called: Resale Authorization — AWS, Opportunity (in AWS API docs)",
   },
   {
     name: "Marketplace Channel Private Offer (MCPO) — GCP",
@@ -988,14 +999,15 @@ export const terms = [
     name: "Express Private Offer — AWS",
     tags: ["aws", "offers"],
     def: "An AI-powered AWS Marketplace feature (launched Nov 2025) where sellers pre-configure a rate card and AWS automatically generates and delivers personalized private offers to qualified buyers in minutes — without manual negotiation. Available for SaaS Contract and SaaS Contract with Consumption products.",
-    alias: "Related: Private Offer, ABO (Agreement-Based Offer), MPOPP",
+    alias:
+      "Related: Private Offer, Agreement-Based Offer (ABO) — AWS, MPOPP (Marketplace Private Offer Promotion Program)",
   },
   {
-    name: "MPOPP (Marketplace Private Offer Promotion Program)",
+    name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS program (launched Aug 2025) that issues AWS Promotional Credits to customers as an incentive for accepting private offers from participating ISVs. Credits are based on Total Contract Value (TCV). Self-service requests submitted via the AWS Partner Funding Portal with next-business-day credit delivery.",
     alias:
-      "Related: AWS Promotional Credits, MDF (Marketing Development Funds), Express Private Offer, AWS Partner Funding Portal (APFP)",
+      "Related: AWS Promotional Credits, MDF (Marketing Development Funds), Express Private Offer — AWS, AWS Partner Funding Portal (APFP)",
   },
   {
     name: "Multi-Product Solution — AWS",
@@ -1008,7 +1020,7 @@ export const terms = [
     name: "Agent Mode — AWS",
     tags: ["aws"],
     def: "An AI-powered conversational buyer discovery experience on AWS Marketplace (launched Nov 2025). Buyers describe their needs in natural language, ask follow-up questions, upload requirements documents, and compare products side-by-side. Can generate downloadable procurement proposals. Also accessible via MCP-compatible AI applications.",
-    alias: "Related: Listing, AWS Marketplace",
+    alias: "Related: Listing, AWS Marketplace — AWS",
   },
   {
     name: "Microsoft Marketplace",
@@ -1022,26 +1034,28 @@ export const terms = [
     tags: ["azure", "cosell", "offers"],
     def: "A new Microsoft Marketplace channel motion (launched 2025, broadly available later in 2025) where ISVs designate authorized channel partners to resell their solutions on a geographic basis. Resale-enabled offers that are also Azure benefit-eligible count toward the customer's MACC. Part of Microsoft's broader expansion of partner resale options alongside MPO.",
     alias:
-      "Related: MPO (Multiparty Private Offer), MACC, CSP, Microsoft Marketplace",
+      "Related: Multiparty Private Offer (MPO) — Azure, Azure Consumption Commitment (MACC) — Azure, CSP (Cloud Solution Provider) — Azure, Microsoft Marketplace — Azure",
   },
   {
     name: "AWS ACE Integration",
     tags: ["aws", "cosell", "suger", "integrations"],
     def: "Suger's connection to AWS Partner Central via the Partner Central API. Enables bi-directional sync of co-sell referrals (ACE opportunities), funding requests, and pipeline data between Suger and AWS Partner Central. Requires APN membership and Partner Central 3.0 migration for full functionality including funding.",
     alias:
-      "Related: ACE (APN Customer Engagements), Funding Benefits API, Partner Central 3.0",
+      "Related: APN Customer Engagements (ACE) — AWS, Funding Benefits API (AWS), Partner Central 3.0 (PC3.0)",
   },
   {
     name: "AWS Partner Network Integration (S3)",
     tags: ["aws", "suger", "integrations"],
     def: "Suger's legacy integration with AWS Partner Network using S3-based data delivery for MCAS and MDFS reports. Being deprecated in favor of the API-based AWS Partner Network integration. ISVs still on S3 should migrate to the API integration.",
-    alias: "Related: MCAS, MDFS, AWS Partner Network Integration (API)",
+    alias:
+      "Related: MCAS (Marketplace Commerce Analytics Service), MDFS (Marketplace Data Feed Service), AWS Partner Network Integration (API)",
   },
   {
     name: "AWS Partner Network Integration (API)",
     tags: ["aws", "suger", "integrations"],
     def: "Suger's current API-based integration with AWS Partner Network. Enables programmatic access to co-sell (ACE), funding, MCAS/MDFS data, and marketplace reporting. Replaces the legacy S3-based integration.",
-    alias: "Related: ACE, MCAS, MDFS, AWS Partner Funding Portal",
+    alias:
+      "Related: APN Customer Engagements (ACE) — AWS, MCAS (Marketplace Commerce Analytics Service), MDFS (Marketplace Data Feed Service), AWS Partner Funding Portal (APFP)",
   },
   {
     name: "Lago Integration",
@@ -1115,7 +1129,8 @@ export const terms = [
     name: "Google BigQuery Integration",
     tags: ["suger", "gcp", "integrations"],
     def: "Suger's connection to Google BigQuery that allows Suger to query or update data in BigQuery tables. Used for advanced analytics, custom reporting, and syncing marketplace data into an existing data warehouse.",
-    alias: "Related: Table Export, Google Cloud Storage Integration, Analytics",
+    alias:
+      "Related: Table Export, Google Cloud Storage Integration, Suger Analytics",
   },
   {
     name: "Microsoft Outlook Integration",
@@ -1152,21 +1167,22 @@ export const terms = [
     name: "OAuth 2.0 Integration",
     tags: ["suger", "integrations"],
     def: "Suger's generic OAuth 2.0 connector that allows ISVs to connect any compliant external service — including Salesforce, HubSpot, or custom providers — to the Suger platform using standard OAuth 2.0 authorization flows.",
-    alias: "Related: Salesforce Integration, HubSpot Integration, Okta SSO",
+    alias:
+      "Related: Salesforce Integration, HubSpot Integration, Okta Single Sign-On (SSO) Integration",
   },
   {
     name: "Snowflake Integration",
     tags: ["suger", "snowflake", "integrations"],
     def: "Suger's connection to Snowflake for real-time cloud data streaming. Distinct from Snowflake Marketplace — this integration pipes marketplace data (entitlements, usage, revenue) from Suger directly into a Snowflake data warehouse.",
     alias:
-      "Related: Snowflake Marketplace, Table Export, Google BigQuery Integration",
+      "Related: Snowflake Marketplace — Snowflake, Table Export, Google BigQuery Integration",
   },
   {
-    name: "PRM (Partner Revenue Measurement)",
+    name: "Partner Revenue Measurement (PRM) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS Partner Network capability that measures and quantifies the revenue impact an ISV's product has on AWS service consumption — across both partner-managed and customer-managed accounts. Launched in January 2026. Partners implement PRM via resource tagging to demonstrate their AWS contribution, unlock APN funding benefits, and gain consumption insights.",
     alias:
-      "Related: APN ID Tag, PRM Resource Tagging, Revenue Attribution, AWS Partner Network (APN)",
+      "Related: APN ID Tag (aws-apn-id), PRM Resource Tagging, Revenue Attribution — AWS, AWS Partner Network (APN) — AWS",
   },
   {
     name: "APN ID Tag (aws-apn-id)",
@@ -1187,11 +1203,11 @@ export const terms = [
     alias: "",
   },
   {
-    name: "Revenue Attribution",
+    name: "Revenue Attribution — AWS",
     tags: ["aws"],
     def: "The process by which AWS associates a customer's consumption of AWS services with a specific partner's product, using PRM resource tags. Attribution is maintained as long as the `aws-apn-id` tag remains on the resource. Used by AWS to quantify partner impact and determine APN funding eligibility.",
     alias:
-      "Related: PRM (Partner Revenue Measurement), APN ID Tag (aws-apn-id), Product Code",
+      "Related: PRM (Partner Revenue Measurement), APN ID Tag (aws-apn-id), Product Code — AWS",
   },
   {
     name: "Subsidiary Account Connection",
@@ -1203,7 +1219,7 @@ export const terms = [
     name: "Partner Relationship Management (PRM) System",
     tags: ["suger", "general", "cosell", "aws", "azure", "gcp"],
     def: "A platform that helps companies recruit, onboard, enable, and manage partners, while supporting collaboration, deal tracking, and performance across the partner lifecycle. Suger extends traditional PRM by acting as the execution layer for cloud marketplace and co-sell workflows—automating CPPOs, syncing CRM deal data to AWS, Azure, and GCP, and enabling partners to transact and track deals in a unified system.",
-    alias: "Related: CRM, deals",
+    alias: "Related: CRM Integration, Co-sell",
   },
   {
     name: "Self-service Cancellations and Billing Adjustments (SCABA)",
@@ -1212,62 +1228,62 @@ export const terms = [
     alias: "Related: Agreement, Refund, CRM Integration",
   },
   {
-    name: "SEA (AWS Secure Environment Accelerator)",
+    name: "AWS Secure Environment Accelerator (SEA) — AWS",
     tags: ["aws", "general"],
     def: "An open-source AWS tool designed to help organizations — initially the Government of Canada — deploy and operate secure, multi-account, multi-Region AWS environments. Uses a configuration file to automate compliant architecture deployment without code changes. Built to meet Canadian federal security standards including PBMM (Protected B, Medium Integrity, Medium Availability) and ITSG-33. Note: ASEA has been deprecated in favor of the Landing Zone Accelerator (LZA) as of Q3 2025.",
     alias:
       "Also called: ASEA | Successor: Landing Zone Accelerator (LZA) | Related: AWS Partner Network (APN), Public Sector",
   },
   {
-    name: "LZA (Landing Zone Accelerator)",
+    name: "Landing Zone Accelerator (LZA) — AWS",
     tags: ["aws", "general"],
     def: "AWS's recommended replacement for the Secure Environment Accelerator (ASEA), now generally available. Automates the deployment of high-compliance, multi-account AWS environments. Includes Canadian CCCS Cloud Medium and Trusted Secure Enclave Sensitive Edition sample configurations that deliver similar outcomes to ASEA. Supports automated migration from ASEA.",
     alias:
       "Replaces: SEA / ASEA | Related: SEA (AWS Secure Environment Accelerator)",
   },
   {
-    name: "FTR (Foundational Technical Review)",
+    name: "Foundational Technical Review (FTR) — AWS",
     tags: ["aws", "cosell"],
     def: "An AWS validation process that reviews an ISV's software product against AWS Well-Architected best practices across security, reliability, and operational excellence. Required prerequisite for ISV Accelerate, AWS Specialization, and co-sell eligibility. Valid for 3 years. Upon approval, partners earn a 'Reviewed by AWS' badge and listing in AWS Partner Solutions Finder. As of 2025, can be waived with a recent Well-Architected Framework Review showing no high-risk issues.",
     alias:
-      "Related: ISV Accelerate, AWS Specialization, Well-Architected Framework Review, PDM (Partner Development Manager)",
+      "Related: ISV Accelerate — AWS, AWS Specialization, Well-Architected Framework Review, PDM (Partner Development Manager)",
   },
   {
-    name: "AWS Specialization",
+    name: "AWS Specialization — AWS",
     tags: ["aws", "cosell"],
     def: "AWS's validated expertise program for partners demonstrating deep technical and delivery capability in a specific domain (e.g., AI, Security, Resilience, MSP). Distinct from basic APN membership. Specialization badges appear in AWS Marketplace listings and influence the co-sell recommendation score. As of 2026, renewals require partners to demonstrate launched ACE opportunities tied to their Specialization solutions over a rolling 12-month period.",
     alias:
       "Related: FTR (Foundational Technical Review), ACE (APN Customer Engagements), Co-sell Recommendation Score, AWS Competency",
   },
   {
-    name: "AWS Competency",
+    name: "AWS Competency — AWS",
     tags: ["aws", "cosell"],
     def: "A category of AWS Specialization validating a partner's technical expertise and customer success in a specific technology area or industry (e.g., AI Competency, Security Competency, SMB Competency). Requires Advanced Tier or higher APN status. Partners with Competencies gain increased MDF, Marketplace visibility, and priority in AWS seller recommendations.",
     alias:
       "Related: AWS Specialization, MDF (Marketing Development Funds), SCA (Strategic Collaboration Agreement)",
   },
   {
-    name: "Co-sell Recommendation Score",
+    name: "Co-sell Recommendation Score — AWS",
     tags: ["aws", "cosell"],
     def: "An ML-powered score in AWS Partner Central (Analytics & Insights dashboard) reflecting how likely a partner is to be recommended to an AWS seller for a specific customer opportunity — by region, industry, and segment. Powered by signals including ACE activity, Marketplace listings, Specialization status, validated case studies, and win history. Available to ACE-eligible partners with an AWS Specialization at Validated or Differentiated stage.",
     alias:
-      "Related: ACE (APN Customer Engagements), AWS Specialization, ISV Accelerate, PDM (Partner Development Manager)",
+      "Related: ACE (APN Customer Engagements), AWS Specialization, ISV Accelerate — AWS, PDM (Partner Development Manager)",
   },
   {
-    name: "FVO (First Value Opportunity)",
+    name: "First Value Opportunity (FVO) — AWS",
     tags: ["aws", "cosell"],
     def: "A designation for an ISV's very first launched co-sell opportunity in ACE. FVOs are excluded from ISV Accelerate's minimum launched opportunity count requirements — meaning the first deal doesn't count toward the 5-launch threshold. Ensures the eligibility bar reflects sustained co-sell activity rather than a single deal.",
-    alias: "Related: ACE (APN Customer Engagements), ISV Accelerate",
+    alias: "Related: ACE (APN Customer Engagements), ISV Accelerate — AWS",
   },
   {
-    name: "AWS Solution Provider Program (SPP)",
+    name: "AWS Solution Provider Program (SPP) — AWS",
     tags: ["aws", "cosell"],
     def: "AWS's primary channel reseller program allowing authorized partners to resell AWS services to end customers, with consolidated billing and discounts. Updated significantly in 2026 with streamlined incentives: a new Streamlined Base Benefit, New Customer Incentive, and Partner Growth Incentive replacing several prior discount mechanisms. Distinct from CPPO/SPPO, which are ISV-specific marketplace channel programs.",
     alias:
       "Related: CPPO (Channel Partner Private Offer), SPPO (Solution Provider Private Offer), Channel Partner (CP), PDM (Partner Development Manager)",
   },
   {
-    name: "AWS Partner Central Agents",
+    name: "AWS Partner Central Agents — AWS",
     tags: ["aws", "cosell"],
     def: "Agentic AI capabilities embedded in AWS Partner Central (launched March 2026) that assist partner teams with pipeline insights, sales play recommendations, and automated ACE opportunity management. Can auto-populate opportunity fields from meeting transcripts or emails, recommend funding at the opportunity level, and generate pre-filled fund requests. Available in all commercial AWS Regions.",
     alias:
@@ -1377,38 +1393,41 @@ export const terms = [
     name: "AWS Marketplace Skill",
     tags: ["aws", "cosell"],
     def: "A specific designation for AWS consulting partners who demonstrate expertise in helping customers transform their procurement and governance using AWS Marketplace. Partners with this skill often act as the 'Channel Partner' in CPPO transactions.",
-    alias: "Related: CPPO, AWS Partner Network (APN), Channel Partner (CP)",
+    alias:
+      "Related: CPPO (Channel Partner Private Offer), AWS Partner Network (APN) — AWS, Channel Partner (CP)",
   },
   {
     name: "Build Engagement Model — GCP",
     tags: ["gcp", "cosell"],
     def: "The Google Cloud Partner Advantage engagement model designed for ISVs and SaaS providers who integrate their products with Google Cloud. Requires a technical review and a transactable GCP Marketplace listing to unlock co-sell incentives and Market Development Funds (MDF).",
-    alias: "Related: GCP Partner Advantage, GCP Marketplace, MDF",
+    alias:
+      "Related: Partner Advantage — GCP, GCP Marketplace — GCP, MDF (Marketing Development Funds)",
   },
   {
-    name: "ISV Success Program (Microsoft)",
+    name: "ISV Success Program — Azure",
     tags: ["azure", "cosell", "funding"],
     def: "A Microsoft program (formerly ISV Success Path) that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace.",
-    alias: "Related: Microsoft Marketplace, Marketplace Rewards, MISA",
+    alias:
+      "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
   },
   {
-    name: "MISA (Microsoft Intelligent Security Association)",
+    name: "Microsoft Intelligent Security Association (MISA) — Azure",
     tags: ["azure", "cosell"],
     def: "A nomination-only ecosystem for independent software vendors (ISVs) and managed security service providers (MSSPs) that have integrated their solutions with Microsoft Security products. Requires a transactable marketplace listing.",
     alias:
-      "Related: Microsoft Marketplace, Azure IP co-sell eligible, ISV Success Program (Microsoft)",
+      "Related: Microsoft Marketplace — Azure, Co-sell Eligible / Incentivized — Azure, ISV Success Program — Azure",
   },
   {
     name: "Snowflake Data Appreciation (SDA) — Snowflake",
     tags: ["snowflake", "cosell"],
     def: "A Snowflake partner program that incentivizes data providers to list high-quality data products on the Snowflake Marketplace. Provides marketing support and increased visibility to Snowflake's customer base.",
-    alias: "Related: Snowflake Marketplace, Snowflake Integration",
+    alias: "Related: Snowflake Marketplace — Snowflake, Snowflake Integration",
   },
   {
     name: "Snowflake Data Clean Rooms — Snowflake",
     tags: ["snowflake"],
     def: "A secure environment that allows multiple parties to join and analyze data without exposing the raw underlying data to each other. Often sold as a specialized application or service on the Snowflake Marketplace.",
-    alias: "Related: Snowflake Marketplace, Snowflake Integration",
+    alias: "Related: Snowflake Marketplace — Snowflake, Snowflake Integration",
   },
 
   {
