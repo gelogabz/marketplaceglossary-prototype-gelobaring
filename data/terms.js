@@ -31,7 +31,7 @@ export const terms = [
     tags: ["suger"],
     def: "Suger's built-in reporting dashboard for tracking marketplace revenue, entitlement status, usage consumption, and co-sell pipeline across all connected marketplaces.",
     alias:
-      "Related: Revenue — Suger, Table Export — Suger, Suger Console — Suger",
+      "Related: Revenue (Suger), Table Export (Suger), Suger Console — Suger",
   },
   {
     name: "AppSource — Microsoft",
@@ -40,7 +40,7 @@ export const terms = [
     alias: "Now part of: Microsoft Marketplace — Azure",
   },
   {
-    name: "AWS Marketplace",
+    name: "AWS Marketplace — AWS",
     tags: ["aws"],
     def: "Amazon's digital catalog where ISVs list and sell software, SaaS, data products, and professional services to AWS customers. Purchases are billed through the customer's AWS account.",
     alias: "",
@@ -146,7 +146,7 @@ export const terms = [
       "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Microsoft Azure Consumption Commitment (MACC) — Azure | GCP: Committed Use Discount (CUD) — GCP",
   },
   {
-    name: "Contract (AWS)",
+    name: "Contract — AWS",
     tags: ["aws"],
     def: "An AWS pricing model where a buyer commits upfront to a fixed fee for a defined term (up to 3 years). Can include a consumption/PAYG component for usage above the contract amount. Cannot be cancelled mid-term.",
     alias: "",
@@ -220,7 +220,7 @@ export const terms = [
     alias: "Related: Standard Contract — AWS, Private Offer — General",
   },
   {
-    name: "Flat Rate Pricing (Azure)",
+    name: "Flat Rate Pricing — Azure",
     tags: ["azure"],
     def: "An Azure pricing model with a fixed monthly or annual fee. Can include a metered overage component where usage above the included quantity triggers additional charges.",
     alias: "",
@@ -376,7 +376,7 @@ export const terms = [
     tags: ["suger", "general", "offers"],
     def: "In Suger, a pricing and terms proposal (public or private) that a buyer can accept to purchase a product. Must be linked to a Product. Maps differently across marketplaces.",
     alias:
-      "AWS: Private Offer — GCP | Azure: Plan — Azure | Related: Private Offer — General",
+      "AWS: Private Offer — General | Azure: Plan — Azure | Related: Private Offer — General",
   },
   {
     name: "Offer Expiration Date — AWS",
@@ -411,13 +411,7 @@ export const terms = [
     tags: ["azure"],
     def: "Microsoft's portal where publishers create and manage Azure Marketplace and AppSource offers, co-sell configurations, payout profiles, and partner program enrollments.",
     alias:
-      "AWS: Subscription | GCP: Usage-based | Related: Metered Billing — General",
-  },
-  {
-    name: "Partner Advantage (GCP)",
-    tags: ["gcp", "cosell"],
-    def: "Google Cloud's partner program — the entry point for ISVs wanting to list on GCP Marketplace and access co-sell support. ISVs join under the 'Build' engagement model, comparable to AWS APN or Microsoft MPN.",
-    alias: "",
+      "Related: Azure Marketplace / Microsoft Marketplace, SaaS Fulfillment API — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
   },
   {
     name: "PAYG / Pay-as-you-go",
@@ -476,7 +470,7 @@ export const terms = [
       "Related: Amazon Machine Image (AMI) — AWS, AWS Marketplace Catalog API — AWS",
   },
   {
-    name: "Pub/Sub (GCP)",
+    name: "Pub/Sub — GCP",
     tags: ["gcp"],
     def: "Google Cloud's messaging service used to receive entitlement lifecycle events (creation, activation, cancellation) from GCP Marketplace. ISVs must subscribe to a Pub/Sub topic as part of technical integration.",
     alias: "",
@@ -662,7 +656,7 @@ export const terms = [
       "Related: Webhook — Suger, Integration — Suger, CRM Integration — Suger",
   },
   {
-    name: "Workload Identity Federation (GCP)",
+    name: "Workload Identity Federation — GCP",
     tags: ["gcp", "suger"],
     def: "A GCP mechanism Suger uses to authenticate as the ISV's service account without storing long-lived keys. Allows Suger's AWS-based infrastructure to securely call GCP Marketplace APIs on the ISV's behalf.",
     alias: "",
@@ -998,13 +992,13 @@ export const terms = [
       "Related: Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
   },
   {
-    name: "Partner Sales Console (GCP)",
+    name: "Partner Sales Console — GCP",
     tags: ["gcp", "cosell"],
     def: "The GCP portal used by authorized resellers to view RPOP private offer plans from ISVs, create private offers for end customers, and manage orders. The reseller-side equivalent of the GCP Producer Portal.",
     alias: "",
   },
   {
-    name: "Selling Authorization (AWS)",
+    name: "Selling Authorization — AWS",
     tags: ["aws", "cosell", "offers"],
     def: "AWS's term in the AMMP UI for what the API calls a Resale Authorization. An ISV creates this to authorize a specific channel partner to resell a product via CPPO. Can be single-use or reusable. Tracks statuses: Authorized, Authorized (reusable), Authorized (consumed), Expired, Deactivated.",
     alias: "Also called: Resale Authorization, Opportunity (in AWS API docs)",
@@ -1017,7 +1011,7 @@ export const terms = [
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | Azure equivalent: Multiparty Private Offer (MPO) — Azure",
   },
   {
-    name: "Express Private Offer (AWS)",
+    name: "Express Private Offer — AWS",
     tags: ["aws", "offers"],
     def: "An AI-powered AWS Marketplace feature (launched Nov 2025) where sellers pre-configure a rate card and AWS automatically generates and delivers personalized private offers to qualified buyers in minutes — without manual negotiation. Available for SaaS Contract and SaaS Contract with Consumption products.",
     alias: "Related: Private Offer, ABO (Agreement-Based Offer), MPOPP",
@@ -1030,14 +1024,14 @@ export const terms = [
       "Related: AWS Promotional Credits, MDF (Marketing Development Funds), Express Private Offer, AWS Partner Funding Portal (APFP)",
   },
   {
-    name: "Multi-Product Solution (AWS)",
+    name: "Multi-Product Solution — AWS",
     tags: ["aws"],
     def: "A bundled listing type launched on AWS Marketplace at re:Invent 2025 that lets partners package multiple products and services from multiple providers into a single purchasable solution. One seller of record, one procurement flow, with transparent pricing per component.",
     alias:
       "Related: Listing, Private Offer, Seller of Record, Channel Partner (CP)",
   },
   {
-    name: "Agent Mode (AWS Marketplace)",
+    name: "Agent Mode — AWS",
     tags: ["aws"],
     def: "An AI-powered conversational buyer discovery experience on AWS Marketplace (launched Nov 2025). Buyers describe their needs in natural language, ask follow-up questions, upload requirements documents, and compare products side-by-side. Can generate downloadable procurement proposals. Also accessible via MCP-compatible AI applications.",
     alias: "Related: Listing, AWS Marketplace",
@@ -1050,7 +1044,7 @@ export const terms = [
       "Replaces: Azure Marketplace + AppSource | Related: MACC, MPO, Co-sell, Marketplace Rewards",
   },
   {
-    name: "Resale-Enabled Offer (Azure)",
+    name: "Resale-Enabled Offer — Azure",
     tags: ["azure", "cosell", "offers"],
     def: "A new Microsoft Marketplace channel motion (launched 2025, broadly available later in 2025) where ISVs designate authorized channel partners to resell their solutions on a geographic basis. Resale-enabled offers that are also Azure benefit-eligible count toward the customer's MACC. Part of Microsoft's broader expansion of partner resale options alongside MPO.",
     alias:
@@ -1406,11 +1400,11 @@ export const terms = [
   },
 
   {
-    name: "AWS Competency Program",
+    name: "AWS Competency Program — AWS",
     tags: ["aws", "cosell"],
     def: "A validation program that recognizes AWS partners who have demonstrated technical proficiency and proven customer success in specialized solution areas, industries, or workloads. Achieving a Competency is a prerequisite for higher-tier MDF funding.",
     alias:
-      "Related: AWS Specialization, FTR (Foundational Technical Review), MDF",
+      "Related: AWS Competency — AWS, FTR (Foundational Technical Review), MDF (Marketing Development Funds)",
   },
   {
     name: "AWS Marketplace Skill",
@@ -1419,7 +1413,7 @@ export const terms = [
     alias: "Related: CPPO, AWS Partner Network (APN), Channel Partner (CP)",
   },
   {
-    name: "Build Engagement Model (GCP)",
+    name: "Build Engagement Model — GCP",
     tags: ["gcp", "cosell"],
     def: "The Google Cloud Partner Advantage engagement model designed for ISVs and SaaS providers who integrate their products with Google Cloud. Requires a technical review and a transactable GCP Marketplace listing to unlock co-sell incentives and Market Development Funds (MDF).",
     alias: "Related: GCP Partner Advantage, GCP Marketplace, MDF",
@@ -1438,13 +1432,13 @@ export const terms = [
       "Related: Microsoft Marketplace, Azure IP co-sell eligible, ISV Success Program (Microsoft)",
   },
   {
-    name: "SDA (Snowflake Data Appreciation)",
+    name: "Snowflake Data Appreciation (SDA) — Snowflake",
     tags: ["snowflake", "cosell"],
     def: "A Snowflake partner program that incentivizes data providers to list high-quality data products on the Snowflake Marketplace. Provides marketing support and increased visibility to Snowflake's customer base.",
     alias: "Related: Snowflake Marketplace, Snowflake Integration",
   },
   {
-    name: "Snowflake Data Clean Rooms",
+    name: "Snowflake Data Clean Rooms — Snowflake",
     tags: ["snowflake"],
     def: "A secure environment that allows multiple parties to join and analyze data without exposing the raw underlying data to each other. Often sold as a specialized application or service on the Snowflake Marketplace.",
     alias: "Related: Snowflake Marketplace, Snowflake Integration",
