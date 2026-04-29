@@ -110,7 +110,7 @@ export const terms = [
     tags: ["suger", "cosell"],
     def: "A partnership motion where an ISV and a cloud provider's sales team jointly pursue a customer opportunity. Unlocks pipeline sharing, deal acceleration, and marketplace incentives. Managed in Suger via the Co-sell module.",
     alias:
-      "Related: APN Customer Engagements (ACE) — AWS, Partner Advantage — GCP, MISA (Microsoft Intelligent Security Association)",
+      "Related: APN Customer Engagements (ACE) — AWS, Partner Advantage — GCP, MISA (Microsoft Intelligent Security Association) — Azure",
   },
   {
     name: "Co-sell Eligible / Incentivized — Azure",
@@ -756,7 +756,7 @@ export const terms = [
     name: "Revenue",
     tags: ["suger"],
     def: "Suger's revenue tracking layer that generates per-entitlement revenue records and aggregated reports by product and buyer. Distinct from Disbursement — Revenue tracks what was earned; Disbursement tracks what was paid out by the marketplace.",
-    alias: "Related: Disbursement, Invoice, Analytics",
+    alias: "Related: Disbursement, Invoice, Suger Analytics",
   },
   {
     name: "Salesforce App",
@@ -848,7 +848,8 @@ export const terms = [
     name: "Migration Acceleration Program (MAP) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS funding program providing credits and cash to partners helping customers migrate and modernize workloads on AWS. As of 2026, now covers generative AI and agentic features built during modernization — not just migrations. Funding scales with deal size.",
-    alias: "Related: AWS Funding, ISV Workload Migration Program (WMP)",
+    alias:
+      "Related: AWS Partner Funding — AWS, ISV Workload Migration Program (WMP) — AWS",
   },
   {
     name: "AWS Partner Funding Portal (APFP) — AWS",
@@ -869,24 +870,25 @@ export const terms = [
     alias: "",
   },
   {
-    name: "POC Funding (Proof of Concept) — AWS",
+    name: "Proof of Concept (POC) Funding  — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "AWS funding that offsets up to 10% of the cost of building a proof of concept for a customer, capped at $25,000. Submitted through the AWS Partner Funding Portal. Requires Validated+ stage in any Partner Path. The ACE opportunity must be in Technical Validation stage or beyond.",
     alias:
-      "Related: AWS Partner Funding — AWS, AWS Partner Funding Portal (APFP)",
+      "Related: AWS Partner Funding — AWS, AWS Partner Funding Portal (APFP) — AWS",
   },
   {
     name: "Partner Initiative Funding (PIF) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS funding type tied to specific partner agreement-based initiatives. The PIF template in the AWS Partner Funding Portal lets eligible partners self-access their initiative funds without requiring their AWS Partner Manager to be involved in every request — reducing friction and accelerating time-to-funding.",
     alias:
-      "Related: AWS Partner Funding — AWS, MDF (Marketing Development Funds), AWS Partner Funding Portal (APFP)",
+      "Related: AWS Partner Funding — AWS, Marketing Development Funds (MDF) — AWS, AWS Partner Funding Portal (APFP) — AWS",
   },
   {
     name: "ISV Workload Migration Program (WMP) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "An AWS program providing promotional credits and go-to-market support to ISVs that help migrate customer workloads from on-premises to a SaaS model on AWS. As of 2026, WMP now offers direct credit disbursement to end customers for eligible migrations. Requires: Foundational Technical Review completion, Validated stage status, a SaaS solution on AWS, and a qualified migration use case.",
-    alias: "Related: AWS Funding, MAP, FTR (Foundational Technical Review)",
+    alias:
+      "Related: AWS Partner Funding — AWS, Migration Acceleration Program (MAP) — AWS, Foundational Technical Review (FTR) — AWS",
   },
   {
     name: "AWS Promotional Credits — AWS",
@@ -1041,7 +1043,7 @@ export const terms = [
     tags: ["aws", "cosell", "suger", "integrations"],
     def: "Suger's connection to AWS Partner Central via the Partner Central API. Enables bi-directional sync of co-sell referrals (ACE opportunities), funding requests, and pipeline data between Suger and AWS Partner Central. Requires APN membership and Partner Central 3.0 migration for full functionality including funding.",
     alias:
-      "Related: APN Customer Engagements (ACE) — AWS, Funding Benefits API (AWS), Partner Central 3.0 (PC3.0)",
+      "Related: APN Customer Engagements (ACE) — AWS, Funding Benefits API — AWS, Partner Central 3.0 (PC3.0) — AWS",
   },
   {
     name: "AWS Partner Network Integration (S3)",
@@ -1185,19 +1187,19 @@ export const terms = [
       "Related: APN ID Tag (aws-apn-id), PRM Resource Tagging, Revenue Attribution — AWS, AWS Partner Network (APN) — AWS",
   },
   {
-    name: "APN ID Tag (aws-apn-id)",
+    name: "APN ID Tag (aws-apn-id) — AWS",
     tags: ["aws"],
     def: "The AWS resource tag key used for Partner Revenue Measurement. Partners tag their AWS resources with key `aws-apn-id` and value `pc:<product-code>` (e.g. `pc:5ugbbrmu7ud3u5hsipfzug61p`) to attribute AWS service consumption to their marketplace product. Revenue attribution continues until the tag is removed or the resource is terminated.",
     alias: "",
   },
   {
-    name: "PRM Resource Tagging",
+    name: "PRM Resource Tagging — AWS",
     tags: ["aws"],
     def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect.",
     alias: "",
   },
   {
-    name: "PRM Architecture Patterns",
+    name: "PRM Architecture Patterns — AWS",
     tags: ["aws"],
     def: "The three deployment models supported by AWS Partner Revenue Measurement: Partner Account (all components in the partner's AWS account), Customer Account (all components in the customer's AWS account), and Hybrid (components split across both). Determines where tagging must be applied.",
     alias: "",
@@ -1210,7 +1212,7 @@ export const terms = [
       "Related: PRM (Partner Revenue Measurement), APN ID Tag (aws-apn-id), Product Code — AWS",
   },
   {
-    name: "Subsidiary Account Connection",
+    name: "Subsidiary Account Connection — AWS",
     tags: ["aws"],
     def: "An AWS Partner Central feature allowing partners with multiple AWS Marketplace accounts to link them all under a single primary account. Required for partners managing multiple marketplace storefronts who want unified PRM tracking and APN program management.",
     alias: "",
@@ -1239,7 +1241,7 @@ export const terms = [
     tags: ["aws", "general"],
     def: "AWS's recommended replacement for the Secure Environment Accelerator (ASEA), now generally available. Automates the deployment of high-compliance, multi-account AWS environments. Includes Canadian CCCS Cloud Medium and Trusted Secure Enclave Sensitive Edition sample configurations that deliver similar outcomes to ASEA. Supports automated migration from ASEA.",
     alias:
-      "Replaces: SEA / ASEA | Related: SEA (AWS Secure Environment Accelerator)",
+      "Replaces: SEA / ASEA | Related: AWS Secure Environment Accelerator (SEA) — AWS",
   },
   {
     name: "Foundational Technical Review (FTR) — AWS",
@@ -1253,14 +1255,14 @@ export const terms = [
     tags: ["aws", "cosell"],
     def: "AWS's validated expertise program for partners demonstrating deep technical and delivery capability in a specific domain (e.g., AI, Security, Resilience, MSP). Distinct from basic APN membership. Specialization badges appear in AWS Marketplace listings and influence the co-sell recommendation score. As of 2026, renewals require partners to demonstrate launched ACE opportunities tied to their Specialization solutions over a rolling 12-month period.",
     alias:
-      "Related: FTR (Foundational Technical Review), ACE (APN Customer Engagements), Co-sell Recommendation Score, AWS Competency",
+      "Related: FTR (Foundational Technical Review), ACE (APN Customer Engagements), Co-sell Recommendation Score — AWS, AWS Competency — AWS",
   },
   {
     name: "AWS Competency — AWS",
     tags: ["aws", "cosell"],
     def: "A category of AWS Specialization validating a partner's technical expertise and customer success in a specific technology area or industry (e.g., AI Competency, Security Competency, SMB Competency). Requires Advanced Tier or higher APN status. Partners with Competencies gain increased MDF, Marketplace visibility, and priority in AWS seller recommendations.",
     alias:
-      "Related: AWS Specialization, MDF (Marketing Development Funds), SCA (Strategic Collaboration Agreement)",
+      "Related: AWS Specialization — AWS, MDF (Marketing Development Funds) — AWS, SCA (Strategic Collaboration Agreement) — AWS",
   },
   {
     name: "Co-sell Recommendation Score — AWS",
@@ -1287,7 +1289,7 @@ export const terms = [
     tags: ["aws", "cosell"],
     def: "Agentic AI capabilities embedded in AWS Partner Central (launched March 2026) that assist partner teams with pipeline insights, sales play recommendations, and automated ACE opportunity management. Can auto-populate opportunity fields from meeting transcripts or emails, recommend funding at the opportunity level, and generate pre-filled fund requests. Available in all commercial AWS Regions.",
     alias:
-      "Related: ACE (APN Customer Engagements), AWS Funding / Partner Funding, Partner Central 3.0 (PC3.0)",
+      "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Funding — AWS, Partner Central 3.0 (PC3.0) — AWS",
   },
   {
     name: "Partner Revenue Management (PRM)",
