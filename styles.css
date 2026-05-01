@@ -26,7 +26,13 @@ html {
 }
 
 body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
     background: var(--bg);
     color: var(--gray-900);
     min-height: 100vh;
@@ -116,7 +122,9 @@ mark {
     background: var(--surface);
     color: var(--gray-900);
     outline: none;
-    transition: border-color 0.15s, background 0.15s;
+    transition:
+        border-color 0.15s,
+        background 0.15s;
 }
 
 .search-bar:focus {
@@ -147,7 +155,10 @@ mark {
     font-family: inherit;
     cursor: pointer;
     user-select: none;
-    transition: border-color 0.15s, background 0.15s, color 0.15s;
+    transition:
+        border-color 0.15s,
+        background 0.15s,
+        color 0.15s;
 }
 
 .filter-pill:hover {
@@ -205,7 +216,9 @@ mark {
     color: var(--gray-500);
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.12s, color 0.12s;
+    transition:
+        background 0.12s,
+        color 0.12s;
 }
 
 .alpha-link:hover {
@@ -258,7 +271,12 @@ mark {
     border-radius: 10px;
     padding: 1rem 1.25rem;
     margin-bottom: 8px;
-    transition: border-color 0.12s, box-shadow 0.12s, transform 0.12s, opacity 0.12s, filter 0.12s;
+    transition:
+        border-color 0.12s,
+        box-shadow 0.12s,
+        transform 0.12s,
+        opacity 0.12s,
+        filter 0.12s;
 }
 
 .term-card:hover {
@@ -266,7 +284,9 @@ mark {
 }
 
 .term-card.best-match {
-    box-shadow: 0 0 0 2px var(--navy), 0 10px 30px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        0 0 0 2px var(--navy),
+        0 10px 30px rgba(0, 0, 0, 0.12);
     transform: scale(1.01);
 }
 
@@ -362,6 +382,10 @@ mark {
 /* ---- Print --------------------------------------------------------------- */
 
 @media print {
-    .controls { position: static; }
-    .term-card { break-inside: avoid; }
+    .controls {
+        position: static;
+    }
+    .term-card {
+        break-inside: avoid;
+    }
 }
