@@ -49,9 +49,10 @@ export function renderPills() {
 
   usedTags.forEach((tag) => {
     const meta = tagMeta[tag] || { label: tag };
+    const count = terms.filter((t) => t.tags && t.tags.includes(tag)).length;
     const pill = document.createElement("div");
     pill.className = "filter-pill" + (activeFilters.has(tag) ? " active" : "");
-    pill.textContent = meta.label.toUpperCase();
+    pill.textContent = `${meta.label.toUpperCase()} (${count})`;
     pill.onclick = () => {
       toggleFilter(tag);
       renderPills();

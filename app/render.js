@@ -1,8 +1,35 @@
+import { terms } from "../data/terms.js";
 import { tagMeta } from "../data/tags.js";
 import { getActiveFilters, toggleFilter } from "./filters.js";
 import { renderPills } from "./filters.js";
 
 // ---- Helpers ----------------------------------------------------------------
+
+// Build name→slug map once, sorted longest-first so longer names match before substrings
+let _termMap = null;
+function getTermMap() {
+  if (!_termMap) {
+    _termMap = new Map(
+      [...terms]
+        .sort((a, b) => b.name.length - a.name.length)
+        .map((t) => [t.name, slug(t.name)])
+    );
+  }
+  return _termMap;
+}
+
+export function linkifyAlias(text) {
+  const map = getTermMap();
+  let result = text;
+  for (const [name, termSlug] of map) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    result = result.replace(
+      new RegExp(escaped, "g"),
+      `<a href="#term-${termSlug}" class="alias-link">${name}</a>`
+    );
+  }
+  return result;
+}
 
 export function highlight(text, q) {
   if (!q) return text;
@@ -114,8 +141,19 @@ export function buildCard(t, q, bestMatch) {
   if (t.alias) {
     const aliasEl = document.createElement("div");
     aliasEl.className = "alias";
-    aliasEl.innerHTML = highlight(t.alias, q);
+    aliasEl.innerHTML = highlight(linkifyAlias(t.alias), q);
     card.appendChild(aliasEl);
+  }
+
+  // Source link
+  if (t.source) {
+    const srcEl = document.createElement("a");
+    srcEl.className = "source-link";
+    srcEl.href = t.source;
+    srcEl.target = "_blank";
+    srcEl.rel = "noopener noreferrer";
+    srcEl.textContent = "Source ↗";
+    card.appendChild(srcEl);
   }
 
   // Tags

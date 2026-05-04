@@ -317,6 +317,43 @@ mark {
     font-style: italic;
 }
 
+.alias .alias-link {
+    color: var(--gray-500);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--gray-400);
+    font-style: italic;
+}
+
+.alias .alias-link:hover {
+    color: var(--gray-900);
+    text-decoration-style: solid;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 11px;
+    color: var(--gray-400);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+}
+
+.source-link:hover {
+    color: var(--gray-700);
+    text-decoration: underline;
+}
+
+.reviewed-badge {
+    font-size: 11px;
+    color: var(--gray-400);
+    white-space: nowrap;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--gray-100);
+    background: var(--surface);
+}
+
 /* ---- Tags ---------------------------------------------------------------- */
 
 .tags {

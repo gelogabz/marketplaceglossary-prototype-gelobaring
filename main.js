@@ -1,6 +1,6 @@
 import { terms } from "./data/terms.js";
 import { injectTagStyles, buildCard, slug } from "./app/render.js";
-import { renderPills, clearFilters, onFilterChange } from "./app/filters.js";
+import { renderPills, clearFilters, onFilterChange, getActiveFilters, toggleFilter } from "./app/filters.js";
 import { getFiltered, getBestMatch } from "./app/search.js";
 import {
   buildAlphaNav,
@@ -18,6 +18,24 @@ initScrollSpy();
 
 onFilterChange(render);
 window.clearFilters = clearFilters;
+
+function syncToURL() {
+  const q = searchInput.value.trim();
+  const filters = getActiveFilters();
+  const params = new URLSearchParams();
+  if (q) params.set("q", q);
+  if (filters.size > 0) params.set("f", [...filters].sort().join(","));
+  const qs = params.toString();
+  history.replaceState(null, "", qs ? `?${qs}${window.location.hash}` : window.location.pathname + window.location.hash);
+}
+
+function loadFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get("q");
+  const f = params.get("f");
+  if (q) searchInput.value = q;
+  if (f) f.split(",").filter(Boolean).forEach((tag) => toggleFilter(tag));
+}
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "/" && document.activeElement !== searchInput) {
@@ -78,11 +96,13 @@ function render() {
 
     // Only scroll if we have a search query
     if (q) scrollToBestMatch(bestMatch);
+    syncToURL();
   }, 100);
 }
 
 // Initial Render and Hash Check
 window.onload = () => {
+  loadFromURL();
   renderPills();
   render();
 
