@@ -8,58 +8,54 @@
     </head>
 
     <body>
-        <div class="header" style="display: none">
-            <div class="header-inner">
-                <h1>Cloud Marketplace Glossary</h1>
-                <p>
-                    Common terms across Suger, AWS, Azure, GCP, and Snowflake
-                    marketplaces
-                </p>
-                <div class="header-meta">
-                    <div class="header-stat">
-                        <div class="num" id="total-count">—</div>
-                        <div class="lbl">Total Terms</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="controls">
+        <header class="controls">
             <div class="controls-inner">
-                <input
-                    class="search-bar"
-                    type="text"
-                    id="search"
-                    placeholder="Search terms, definitions… (press / to focus)"
-                />
+                <div class="search-row">
+                    <span class="reviewed-badge">Reviewed May 2026</span>
+                    <label for="search" class="sr-only">Search terms</label>
+                    <input
+                        class="search-bar"
+                        type="search"
+                        id="search"
+                        placeholder="Search terms, definitions… (press / to focus)"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                </div>
                 <div class="filter-row">
-                    <div id="filterBar" class="filter-bar"></div>
+                    <button class="carousel-btn carousel-prev" type="button" aria-label="Scroll filters left">&#8249;</button>
+                    <div
+                        id="filterBar"
+                        class="filter-bar"
+                        role="group"
+                        aria-label="Filter by category"
+                    ></div>
+                    <button class="carousel-btn carousel-next" type="button" aria-label="Scroll filters right">&#8250;</button>
                     <button
                         class="clear-btn"
                         id="clearBtn"
+                        type="button"
                         onclick="clearFilters()"
                     >
                         ✕ Clear
                     </button>
-                    <span class="reviewed-badge">Reviewed May 2026</span>
                 </div>
             </div>
-        </div>
+        </header>
 
         <nav class="alpha-nav" aria-label="Jump to letter">
             <div class="alpha-nav-inner" id="alpha-nav"></div>
         </nav>
 
-        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
             ↑ Top
         </button>
 
         <main class="body">
-            <div class="count" id="count"></div>
+            <p class="count" id="count"></p>
             <div id="list"></div>
         </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/fuse.js@7/dist/fuse.min.js"></script>
         <script type="module" src="main.js"></script>
     </body>
 </html>

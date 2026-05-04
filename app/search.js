@@ -2,22 +2,36 @@ import { terms } from "../data/terms.js";
 import { getActiveFilters } from "./filters.js";
 import { matchScore } from "./render.js";
 
-// Fuse instance (lazy-initialized, loaded as global script in index.html)
-let _fuse = null;
-function getFuse() {
-  if (!_fuse && typeof Fuse !== "undefined") {
-    _fuse = new Fuse(terms, {
-      keys: [
-        { name: "name", weight: 3 },
-        { name: "def", weight: 1 },
-        { name: "alias", weight: 0.5 },
-      ],
-      threshold: 0.35,
-      minMatchCharLength: 2,
-      includeScore: true,
-    });
+// Subsequence fuzzy match — returns a score > 0 if all query chars appear
+// in order within text, rewarding consecutive runs. Returns 0 on no match.
+function fuzzyScore(text, query) {
+  if (!text) return 0;
+  const t = text.toLowerCase();
+  const q = query.toLowerCase();
+  let ti = 0, qi = 0, score = 0, consecutive = 0;
+  while (ti < t.length && qi < q.length) {
+    if (t[ti] === q[qi]) {
+      score += 1 + consecutive;
+      consecutive++;
+      qi++;
+    } else {
+      consecutive = 0;
+    }
+    ti++;
   }
-  return _fuse;
+  return qi === q.length ? score : 0;
+}
+
+function fuzzySearch(q) {
+  const results = [];
+  for (const t of terms) {
+    const score =
+      fuzzyScore(t.name, q) * 3 +
+      fuzzyScore(t.def, q) +
+      fuzzyScore(t.alias, q) * 0.5;
+    if (score > 0) results.push({ item: t, score });
+  }
+  return results.sort((a, b) => b.score - a.score).map((r) => r.item);
 }
 
 // Returns filtered + sorted terms given a query string.
@@ -33,12 +47,7 @@ export function getFiltered(q) {
         t.def.toLowerCase().includes(q) ||
         (t.alias && t.alias.toLowerCase().includes(q)),
     );
-    if (exact.length > 0) {
-      candidates = exact;
-    } else {
-      const fuse = getFuse();
-      candidates = fuse ? fuse.search(q).map((r) => r.item) : [];
-    }
+    candidates = exact.length > 0 ? exact : fuzzySearch(q);
   }
 
   if (activeFilters.size > 0) {

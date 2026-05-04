@@ -1,7 +1,6 @@
 import { terms } from "../data/terms.js";
 import { tagMeta } from "../data/tags.js";
-import { getActiveFilters, toggleFilter } from "./filters.js";
-import { renderPills } from "./filters.js";
+import { getActiveFilters, toggleFilter, renderPills } from "./filters.js";
 
 // ---- Helpers ----------------------------------------------------------------
 
@@ -71,16 +70,11 @@ export function injectTagStyles() {
 // ---- Copy to Clipboard ------------------------------------------------------
 
 function copyToClipboard(text, btn) {
-  const el = document.createElement("textarea");
-  el.value = text;
-  document.body.appendChild(el);
-  el.select();
-  document.execCommand("copy");
-  document.body.removeChild(el);
-
-  const originalText = btn.innerHTML;
-  btn.innerHTML = "✓ Copied";
-  setTimeout(() => (btn.innerHTML = originalText), 2000);
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = "✓ Copied";
+    setTimeout(() => (btn.innerHTML = originalText), 2000);
+  });
 }
 
 // ---- Card builder -----------------------------------------------------------
@@ -163,7 +157,8 @@ export function buildCard(t, q, bestMatch) {
 
     t.tags.forEach((tag) => {
       const meta = tagMeta[tag] || { label: tag };
-      const tagEl = document.createElement("span");
+      const tagEl = document.createElement("button");
+      tagEl.type = "button";
       tagEl.className =
         "tag tag-" + tag + (activeFilters.has(tag) ? " tag-active" : "");
       tagEl.textContent = meta.label.toUpperCase();

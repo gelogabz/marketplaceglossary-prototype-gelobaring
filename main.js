@@ -17,10 +17,73 @@ import {
 const searchInput = document.getElementById("search");
 const listEl = document.getElementById("list");
 const countEl = document.getElementById("count");
+const filterBar = document.getElementById("filterBar");
+const prevBtn = document.querySelector(".carousel-prev");
+const nextBtn = document.querySelector(".carousel-next");
 
-document.getElementById("total-count").textContent = terms.length;
+document.getElementById("total-count")?.remove(); // hidden header stat, no longer needed
 injectTagStyles();
 initScrollSpy();
+
+function updateCarouselArrows() {
+  if (!filterBar) return;
+  const atStart = filterBar.scrollLeft <= 1;
+  const atEnd =
+    filterBar.scrollLeft >= filterBar.scrollWidth - filterBar.clientWidth - 1;
+  prevBtn?.classList.toggle("hidden", atStart);
+  nextBtn?.classList.toggle("hidden", atEnd);
+}
+
+prevBtn?.addEventListener("click", () =>
+  filterBar?.scrollBy({ left: -200, behavior: "smooth" }),
+);
+nextBtn?.addEventListener("click", () =>
+  filterBar?.scrollBy({ left: 200, behavior: "smooth" }),
+);
+filterBar?.addEventListener("scroll", updateCarouselArrows);
+
+// Drag-to-scroll on mobile
+const drag = { active: false, moved: false, startX: 0, scrollLeft: 0 };
+
+filterBar?.addEventListener("pointerdown", (e) => {
+  drag.active = true;
+  drag.moved = false;
+  drag.startX = e.clientX;
+  drag.scrollLeft = filterBar.scrollLeft;
+});
+
+filterBar?.addEventListener("pointermove", (e) => {
+  if (!drag.active) return;
+  const dx = e.clientX - drag.startX;
+  if (Math.abs(dx) > 4) {
+    drag.moved = true;
+    filterBar.classList.add("dragging");
+    filterBar.scrollLeft = drag.scrollLeft - dx;
+    updateCarouselArrows();
+  }
+});
+
+filterBar?.addEventListener("pointerup", () => {
+  drag.active = false;
+  filterBar.classList.remove("dragging");
+});
+
+filterBar?.addEventListener("pointercancel", () => {
+  drag.active = false;
+  filterBar.classList.remove("dragging");
+});
+
+// Prevent pill clicks from firing after a drag
+filterBar?.addEventListener(
+  "click",
+  (e) => {
+    if (drag.moved) {
+      e.stopPropagation();
+      drag.moved = false;
+    }
+  },
+  true,
+);
 
 onFilterChange(render);
 window.clearFilters = clearFilters;
@@ -78,7 +141,7 @@ function render() {
     listEl.innerHTML = "";
 
     if (filtered.length === 0) {
-      listEl.innerHTML = `<div class="no-results">No terms matched your search.</div>`;
+      listEl.innerHTML = `<p class="no-results">No terms matched your search.</p>`;
       const alphaNav = document.getElementById("alpha-nav");
       if (alphaNav) alphaNav.innerHTML = "";
       return;
@@ -95,7 +158,7 @@ function render() {
     Object.keys(grouped)
       .sort()
       .forEach((letter) => {
-        const header = document.createElement("div");
+        const header = document.createElement("h2");
         header.className = "alpha-header" + (isFirst ? " alpha-first" : "");
         header.id = `letter-${letter}`;
         header.textContent = letter;
@@ -109,30 +172,30 @@ function render() {
 
     buildAlphaNav(grouped);
 
-    // Only scroll if we have a search query
-    if (q) scrollToBestMatch(bestMatch);
+    if (q) {
+      scrollToBestMatch(bestMatch);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
     syncToURL();
   }, 100);
 }
 
-// Initial Render and Hash Check
+// Initial render and hash check
 window.onload = () => {
   loadFromURL();
   renderPills();
+  updateCarouselArrows();
   render();
 
-  // Support for deep linking on load
   if (window.location.hash) {
-    // Use a slightly longer timeout to ensure the DOM is fully rendered
-    // and the browser's layout engine has caught up.
     setTimeout(() => {
       const el = document.querySelector(window.location.hash);
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "center" });
-        // Optional: add a temporary highlight class to make it pop
         el.style.transition = "background-color 1s";
         const originalBg = el.style.backgroundColor;
-        el.style.backgroundColor = "#fffbe6"; // Light yellow highlight
+        el.style.backgroundColor = "#fffbe6";
         setTimeout(() => (el.style.backgroundColor = originalBg), 2000);
       }
     }, 600);

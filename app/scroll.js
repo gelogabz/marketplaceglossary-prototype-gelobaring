@@ -40,13 +40,28 @@ export function scrollToBestMatch(bestMatch) {
 
 export function initScrollSpy() {
   const backToTopBtn = document.getElementById("backToTop");
+  const controlsEl = document.querySelector(".controls");
+  const alphaNavEl = document.querySelector(".alpha-nav");
+
+  function stickyHeight() {
+    return (controlsEl?.offsetHeight ?? 0) + (alphaNavEl?.offsetHeight ?? 0);
+  }
+
+  function updateControlsHeight() {
+    const h = controlsEl?.offsetHeight ?? 0;
+    document.documentElement.style.setProperty("--controls-height", h + "px");
+  }
+
+  updateControlsHeight();
+  if (controlsEl) new ResizeObserver(updateControlsHeight).observe(controlsEl);
 
   window.addEventListener("scroll", () => {
     // Active letter badge in alpha nav
+    const threshold = stickyHeight() + 10;
     const headers = document.querySelectorAll(".alpha-header");
     let current = "";
     headers.forEach((h) => {
-      if (h.getBoundingClientRect().top <= 140)
+      if (h.getBoundingClientRect().top <= threshold)
         current = h.id.replace("letter-", "");
     });
     document.querySelectorAll(".alpha-link").forEach((link) => {

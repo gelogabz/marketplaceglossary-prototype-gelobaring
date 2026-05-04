@@ -50,7 +50,8 @@ export function renderPills() {
   usedTags.forEach((tag) => {
     const meta = tagMeta[tag] || { label: tag };
     const count = terms.filter((t) => t.tags && t.tags.includes(tag)).length;
-    const pill = document.createElement("div");
+    const pill = document.createElement("button");
+    pill.type = "button";
     pill.className = "filter-pill" + (activeFilters.has(tag) ? " active" : "");
     pill.textContent = `${meta.label.toUpperCase()} (${count})`;
     pill.onclick = () => {
@@ -60,5 +61,8 @@ export function renderPills() {
     filterBar.appendChild(pill);
   });
 
-  clearBtn.style.display = activeFilters.size > 0 ? "inline-block" : "none";
+  const visible = activeFilters.size > 0;
+  clearBtn.style.visibility = visible ? "visible" : "hidden";
+  clearBtn.style.opacity = visible ? "1" : "0";
+  clearBtn.style.pointerEvents = visible ? "auto" : "none";
 }
