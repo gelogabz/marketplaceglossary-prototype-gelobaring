@@ -8,7 +8,10 @@ function fuzzyScore(text, query) {
   if (!text) return 0;
   const t = text.toLowerCase();
   const q = query.toLowerCase();
-  let ti = 0, qi = 0, score = 0, consecutive = 0;
+  let ti = 0,
+    qi = 0,
+    score = 0,
+    consecutive = 0;
   while (ti < t.length && qi < q.length) {
     if (t[ti] === q[qi]) {
       score += 1 + consecutive;

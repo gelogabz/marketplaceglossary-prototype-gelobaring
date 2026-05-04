@@ -211,7 +211,9 @@ mark {
     flex-shrink: 0;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.15s, background 0.15s;
+    transition:
+        opacity 0.15s,
+        background 0.15s;
 }
 
 .clear-btn:hover {
