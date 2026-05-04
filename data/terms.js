@@ -1231,7 +1231,7 @@ export const terms = [
     alias:
       "Related: Private Offer, Agreement-Based Offer (ABO) — AWS, MPOPP (Marketplace Private Offer Promotion Program)",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/express-private-offers.html",
   },
   {
     name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
