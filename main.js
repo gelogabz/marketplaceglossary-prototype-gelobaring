@@ -1,6 +1,12 @@
 import { terms } from "./data/terms.js";
 import { injectTagStyles, buildCard, slug } from "./app/render.js";
-import { renderPills, clearFilters, onFilterChange, getActiveFilters, toggleFilter } from "./app/filters.js";
+import {
+  renderPills,
+  clearFilters,
+  onFilterChange,
+  getActiveFilters,
+  toggleFilter,
+} from "./app/filters.js";
 import { getFiltered, getBestMatch } from "./app/search.js";
 import {
   buildAlphaNav,
@@ -26,7 +32,13 @@ function syncToURL() {
   if (q) params.set("q", q);
   if (filters.size > 0) params.set("f", [...filters].sort().join(","));
   const qs = params.toString();
-  history.replaceState(null, "", qs ? `?${qs}${window.location.hash}` : window.location.pathname + window.location.hash);
+  history.replaceState(
+    null,
+    "",
+    qs
+      ? `?${qs}${window.location.hash}`
+      : window.location.pathname + window.location.hash,
+  );
 }
 
 function loadFromURL() {
@@ -34,7 +46,10 @@ function loadFromURL() {
   const q = params.get("q");
   const f = params.get("f");
   if (q) searchInput.value = q;
-  if (f) f.split(",").filter(Boolean).forEach((tag) => toggleFilter(tag));
+  if (f)
+    f.split(",")
+      .filter(Boolean)
+      .forEach((tag) => toggleFilter(tag));
 }
 
 document.addEventListener("keydown", (e) => {

@@ -12,7 +12,8 @@ export const terms = [
     tags: ["aws", "offers"],
     def: "An AWS Marketplace feature that lets sellers create a new offer on top of an existing buyer agreement — used for renewals, upgrades, or amendments without requiring the buyer to start a new subscription from scratch.",
     alias: "Related: Agreement — AWS, Future Dated Agreement — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
   },
   {
     name: "Agreement — AWS",
@@ -20,7 +21,8 @@ export const terms = [
     def: "The formal contract created when a buyer accepts an AWS Marketplace offer. Equivalent to Entitlement in Suger. Identified by an Agreement ID. Agreements can be renewed or amended via ABOs.",
     alias:
       "Suger equivalent: Entitlement | Related: Agreement-Based Offer (ABO) — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
   },
   {
     name: "Amazon Machine Image (AMI) — AWS",
@@ -28,7 +30,8 @@ export const terms = [
     def: "A pre-configured virtual machine image listed on AWS Marketplace. ISVs package their software as an AMI for buyers to deploy on EC2 instances. Can be priced hourly, with an annual contract, or as BYOL.",
     alias:
       "Related: Bring Your Own License (BYOL), Contract — AWS, Product Code — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
   },
   {
     name: "Suger Analytics",
@@ -42,7 +45,8 @@ export const terms = [
     tags: ["azure"],
     def: "Microsoft's former marketplace storefront for business applications integrating with Microsoft 365, Dynamics 365, and Power Platform. As of September 2025, AppSource has been consolidated into the unified Microsoft Marketplace alongside Azure Marketplace.",
     alias: "Now part of: Microsoft Marketplace — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
   },
   {
     name: "AWS Marketplace — AWS",
@@ -50,7 +54,8 @@ export const terms = [
     def: "Amazon's digital catalog where ISVs list and sell software, SaaS, data products, and professional services to AWS customers. Purchases are billed through the customer's AWS account.",
     alias:
       "Related: AWS Marketplace Management Portal (AMMP) — AWS, AWS Marketplace Catalog API — AWS, AWS Partner Network (APN) — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
   },
   {
     name: "AWS Marketplace Catalog API — AWS",
@@ -58,14 +63,16 @@ export const terms = [
     def: "The programmatic interface sellers use to manage product listings, offers, and changes in AWS Marketplace without using the seller console. Suger uses this API on sellers' behalf.",
     alias:
       "Related: AWS Marketplace Management Portal (AMMP) — AWS, Suger Console",
-    source: "https://docs.aws.amazon.com/marketplace-catalog/latest/ug/welcome.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace-catalog/latest/ug/welcome.html",
   },
   {
     name: "AWS Marketplace Management Portal (AMMP) — AWS",
     tags: ["aws"],
     def: "The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace.",
     alias: "Related: AWS Marketplace Catalog API — AWS, Suger Console",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/getting-started-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/getting-started-overview.html",
   },
   {
     name: "AWS Partner Network (APN) — AWS",
@@ -81,7 +88,8 @@ export const terms = [
     def: "Microsoft's unified marketplace platform launched September 25, 2025 — merging Azure Marketplace and AppSource into a single destination. Covers cloud solutions, SaaS, AI apps and agents, industry solutions, and professional services. Features a dedicated AI Apps and Agents category with 3,000+ solutions. Deeply integrated with Azure AI Foundry, Microsoft 365 Copilot, Teams, and Dynamics 365. Purchases by MACC-eligible customers count toward their Azure commitment.",
     alias:
       "Formerly: Azure Marketplace, AppSource | Related: Azure Consumption Commitment (MACC) — Azure, MISA (Microsoft Intelligent Security Association) — Azure, Marketplace Rewards — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
   },
   {
     name: "Billing Integration",
@@ -96,7 +104,8 @@ export const terms = [
     tags: ["general", "aws", "azure", "gcp"],
     def: "A marketplace listing model where the buyer has already purchased a license directly from the ISV outside the marketplace. The marketplace handles deployment but not billing. Not eligible for committed spend drawdown.",
     alias: "Related: Transactable Offer, Listing",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
   },
   {
     name: "Buyer",
@@ -112,7 +121,8 @@ export const terms = [
     def: "A reseller, system integrator (SI), or managed service provider (MSP) authorized by an ISV to resell marketplace products to end customers. The channel partner typically becomes the seller of record.",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
   },
   {
     name: "Cloud Go-To-Market (Cloud GTM)",
@@ -135,14 +145,16 @@ export const terms = [
     def: "Tiered Microsoft co-sell statuses. 'Co-sell Ready' meets requirements for joint selling. 'Azure IP Co-sell Eligible' unlocks MACC eligibility — purchases count dollar-for-dollar toward the customer's Azure commitment on Microsoft Marketplace. 'Co-sell Incentivized' means Microsoft sellers earn quota credit for selling your product.",
     alias:
       "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/co-sell-requirements",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/co-sell-requirements",
   },
   {
     name: "Combined Pricing — GCP",
     tags: ["gcp"],
     def: "A GCP pricing model pairing a flat-rate subscription commit with usage-based metering. Buyers pay a base fee plus charges for consumption above the included amount.",
     alias: "Related: Usage Metering, Price Model",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
   },
   {
     name: "Commit / Prepaid Commit",
@@ -164,14 +176,16 @@ export const terms = [
     def: "A pre-negotiated spending commitment an enterprise makes with a cloud provider. Software purchased via transactable marketplace listings typically counts toward drawing down this commitment — a major driver of enterprise marketplace buying.",
     alias:
       "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Azure Consumption Commitment (MACC) — Azure | GCP: Committed Use Discount (CUD) — GCP",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/customer-private-offers-committed-spend.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/customer-private-offers-committed-spend.html",
   },
   {
     name: "Contract — AWS",
     tags: ["aws"],
     def: "An AWS pricing model where a buyer commits upfront to a fixed fee for a defined term (up to 3 years). Can include a consumption/PAYG component for usage above the contract amount. Cannot be cancelled mid-term.",
     alias: "",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/contract-pricing.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/contract-pricing.html",
   },
   {
     name: "Channel Partner Private Offer (CPPO) — AWS",
@@ -179,7 +193,8 @@ export const terms = [
     def: "A program where an ISV creates a resale authorization (with a wholesale price) that an authorized channel partner uses to create a private offer — with markup — for an end customer. The channel partner is the seller of record.",
     alias:
       "GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Azure equivalent: Multiparty Private Offer (MPO) — Azure | Related: Resale Authorization — AWS, Solution Provider Private Offer (SPPO) — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
   },
   {
     name: "CRM Integration",
@@ -248,28 +263,32 @@ export const terms = [
     tags: ["general"],
     def: "The legal terms governing a buyer's use of software purchased on a marketplace. Sellers can use a custom EULA, a marketplace standard contract (AWS SCMP, Azure standard contract), or a combination with addendums.",
     alias: "Related: Standard Contract — AWS, Private Offer",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/seller-customer-agreements.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/seller-customer-agreements.html",
   },
   {
     name: "Flat Rate Pricing — Azure",
     tags: ["azure"],
     def: "An Azure pricing model with a fixed monthly or annual fee. Can include a metered overage component where usage above the included quantity triggers additional charges.",
     alias: "",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
   },
   {
     name: "Flexible Payment Schedule / Installment Plan",
     tags: ["general", "aws", "azure"],
     def: "An option on private offers that splits a contract's total value into multiple payments over time (e.g., quarterly installments on an annual deal), aligning to buyer budget cycles.",
     alias: "Related: Private Offer",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/flexible-payment-scheduler.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/flexible-payment-scheduler.html",
   },
   {
     name: "Free Trial",
     tags: ["general"],
     def: "A marketplace listing option that lets buyers test software at no cost for a set period before converting to a paid subscription. Supported across AWS, Azure, and GCP.",
     alias: "Related: Listing, Transactable Offer",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html",
   },
   {
     name: "Future Dated Agreement — AWS",
@@ -277,7 +296,8 @@ export const terms = [
     def: "An AWS ABO feature letting sellers create a renewal or upgrade offer with a future start date — up to 3 years in advance — ensuring continuous software access without a coverage gap. Also supported in CPPO transactions: ISVs can optionally cap the maximum future start date a channel partner can specify on a resale authorization.",
     alias:
       "Related: Agreement-Based Offer (ABO) — AWS, Resale Authorization — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
   },
   {
     name: "GCP Marketplace — GCP",
@@ -299,7 +319,8 @@ export const terms = [
     tags: ["gcp"],
     def: "The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Advantage enrollment.",
     alias: "Related: GCP Marketplace — GCP, Partner Advantage — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/getting-started",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/getting-started",
   },
   {
     name: "Inbound Referral",
@@ -313,7 +334,8 @@ export const terms = [
     tags: ["azure"],
     def: "In Azure Flat Rate and Per User pricing, the usage amount included in the base subscription price. Any consumption above this triggers metered overage charges.",
     alias: "Related: Flat Rate Pricing — Azure, Overage",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
   },
   {
     name: "Integration",
@@ -327,7 +349,8 @@ export const terms = [
     tags: ["general"],
     def: "A company that builds and sells software products. On cloud marketplaces, ISVs are the sellers/publishers listing their products. Can also co-sell and resell through channel partners.",
     alias: "Related: Seller of Record, Channel Partner (CP)",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
   },
   {
     name: "ISV Accelerate — AWS",
@@ -349,7 +372,8 @@ export const terms = [
     tags: ["general"],
     def: "A product's public page on a cloud marketplace — the discovery and purchase entry point for buyers. Can be free, BYOL, contact me, free trial, or transactable (paid).",
     alias: "Related: Transactable Offer, Bring Your Own License (BYOL)",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
   },
   {
     name: "Azure Consumption Commitment (MACC) — Azure",
@@ -357,7 +381,8 @@ export const terms = [
     def: "Microsoft's enterprise committed spend program. Enterprises pre-commit to Azure spend over 1–3 years; purchases of MACC-eligible transactable Marketplace listings count toward that commitment. A core driver of enterprise Azure Marketplace buying.",
     alias:
       "AWS equivalent: Enterprise Discount Program (EDP) — AWS | GCP equivalent: Committed Use Discount (CUD) — GCP",
-    source: "https://learn.microsoft.com/en-us/marketplace/azure-consumption-commitment-benefit",
+    source:
+      "https://learn.microsoft.com/en-us/marketplace/azure-consumption-commitment-benefit",
   },
   {
     name: "Marketplace Customer Credit Program (MCCP) — GCP",
@@ -365,14 +390,16 @@ export const terms = [
     def: "A GCP incentive offering end customers up to 3% in Google Cloud credits when purchasing eligible ISV solutions through GCP Marketplace for the first time. Applies to both direct and reseller-led deals (MCPOs). ISVs must register the opportunity in Partner Advantage to qualify.",
     alias:
       "Also referred to as: MCCP | Related: Committed Use Discount (CUD) — GCP, Partner Advantage — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/marketplace-customer-credit-program",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/marketplace-customer-credit-program",
   },
   {
     name: "Marketplace Fee / Transaction Fee",
     tags: ["general"],
     def: "The revenue share cloud marketplaces charge ISVs on each transaction — typically 3–20% depending on program tier, deal type, and partner status. Disbursements are paid net of this fee.",
     alias: "Related: Disbursement, Seller of Record",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
   },
   {
     name: "Marketplace Rewards — Azure",
@@ -380,7 +407,8 @@ export const terms = [
     def: "Microsoft's benefits program for transactable Microsoft Marketplace publishers. Provides go-to-market support, co-marketing resources, and technical enablement scaled to the ISV's transact revenue milestones. Partners who activate Rewards see 7x higher sales on average.",
     alias:
       "Related: Microsoft Marketplace — Azure, ISV Success Program — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
   },
   {
     name: "Metered Billing",
@@ -410,7 +438,8 @@ export const terms = [
     def: "Microsoft Marketplace's channel reseller mechanism — the Azure equivalent of AWS's CPPO. An ISV and channel partner collaborate to create a single private offer for an end customer. The partner sets their own margin; the purchase counts toward the customer's MACC. As of 2025, Microsoft is also expanding 'Resale-Enabled Offers' — a broader channel motion allowing geographic resale by authorized distributors including Arrow, Crayon, Ingram Micro, Pax8, and TD SYNNEX.",
     alias:
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Related: Resale-Enabled Offer — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/multiparty-private-offers-for-isvs",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/multiparty-private-offers-for-isvs",
   },
   {
     name: "Managed Service Provider (MSP)",
@@ -431,7 +460,8 @@ export const terms = [
     tags: ["aws", "offers"],
     def: "The date after which a buyer can no longer view or accept a private offer. After 23:59:59 UTC on that date, the offer becomes inaccessible. Set by the seller at offer creation.",
     alias: "Related: Private Offer, Agreement-Based Offer (ABO) — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
   },
   {
     name: "Organization",
@@ -467,28 +497,32 @@ export const terms = [
     tags: ["general", "aws", "gcp"],
     def: "A pricing model with no upfront commitment — buyers are billed only for what they consume. Called 'Subscription' on AWS; 'Usage-based' on GCP.",
     alias: "",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
   },
   {
     name: "Per User Pricing — Azure",
     tags: ["azure"],
     def: "An Azure pricing model billed per named user per month or year. Supports mid-term quantity updates and optional metered overage billing above committed seat count.",
     alias: "Related: Price Model, Included Quantity — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
   },
   {
     name: "Plan — Azure",
     tags: ["azure", "offers"],
     def: "A specific pricing tier or configuration within an Azure Marketplace Offer. A single offer can have multiple plans with different pricing or audiences. Private plans are visible only to designated customers.",
     alias: "Related: Private Offer, Microsoft Marketplace — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
   },
   {
     name: "Private Offer Success Team (POST) — AWS",
     tags: ["aws"],
     def: "AWS's dedicated support team for sellers with questions or issues related to private offer creation, buyer errors, and CPPO transactions. Contactable via the AWS Marketplace support form.",
     alias: "",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
   },
   {
     name: "Private Offer",
@@ -496,21 +530,24 @@ export const terms = [
     def: "A customized, non-public offer extended directly to a specific buyer with negotiated pricing, custom terms, payment schedule, or EULA. Must be based on a public listing.",
     alias:
       "Related: Offer, Agreement-Based Offer (ABO) — AWS, Multiparty Private Offer (MPO) — Azure",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
   },
   {
     name: "Private Plan — Azure",
     tags: ["azure", "offers"],
     def: "A plan within an Azure offer visible only to designated customers (by tenant ID). Distinct from a private offer — a private plan is a listing-level construct; a private offer is a deal-level, time-bound transaction.",
     alias: "Related: Plan — Azure, Private Offer",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer-plans",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer-plans",
   },
   {
     name: "Procurement API — GCP",
     tags: ["gcp"],
     def: "Google Cloud's API that ISVs (producers) use to approve/reject entitlement requests, manage subscription lifecycle events, and validate buyer account status on GCP Marketplace.",
     alias: "Related: GCP Marketplace — GCP, Producer Portal — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
   },
   {
     name: "Product",
@@ -525,14 +562,16 @@ export const terms = [
     def: "The unique identifier for a product listed on AWS Marketplace. Used in API calls, entitlement lookups, and metering. The Suger equivalent is Product External ID.",
     alias:
       "Related: Amazon Machine Image (AMI) — AWS, AWS Marketplace Catalog API — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
   },
   {
     name: "Pub/Sub — GCP",
     tags: ["gcp"],
     def: "Google Cloud's messaging service used to receive entitlement lifecycle events (creation, activation, cancellation) from GCP Marketplace. ISVs must subscribe to a Pub/Sub topic as part of technical integration.",
     alias: "",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
   },
   {
     name: "Role-Based Access Control (RBAC)",
@@ -554,7 +593,8 @@ export const terms = [
     def: "An ISV-created permission on AWS Marketplace that allows a specific channel partner to create CPPOs for a given product. Also called a 'Selling Authorization' in the AMMP UI. Can be single-use or multi-use, with or without an expiry date.",
     alias:
       "Also called: Selling Authorization — AWS | Related: Channel Partner Private Offer (CPPO) — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
   },
   {
     name: "Reseller Program — GCP",
@@ -562,42 +602,48 @@ export const terms = [
     def: "Google Cloud Marketplace's channel program allowing authorized partners to resell ISV products via MCPO/RPOP, create private offers for customers, and leverage CUD committed spend. Partners manage orders via the Partner Sales Console.",
     alias:
       "Related: Marketplace Channel Private Offer (MCPO) — GCP, Reseller Private Offer Plan (RPOP) — GCP, Partner Sales Console — GCP, Committed Use Discount (CUD) — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
   },
   {
     name: "Software-as-a-Service (SaaS)",
     tags: ["general"],
     def: "A software delivery model where the ISV hosts the application and buyers access it over the internet. The most common listing type on all cloud marketplaces; typically requires API integration for subscription lifecycle management.",
     alias: "Related: Transactable Offer, Listing",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-products.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-products.html",
   },
   {
     name: "SaaS Fulfillment API — Azure",
     tags: ["azure"],
     def: "Microsoft's API that ISVs must implement to handle subscription lifecycle events for Azure Marketplace SaaS offers — including activation, plan changes, quantity updates, suspension, and unsubscription.",
     alias: "Related: Microsoft Marketplace — Azure, Partner Center — Azure",
-    source: "https://learn.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2",
+    source:
+      "https://learn.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2",
   },
   {
     name: "Standard Contract (SCMP) — AWS",
     tags: ["aws"],
     def: "AWS's pre-drafted standard EULA for marketplace transactions. Using SCMP reduces buyers' legal review time. Sellers can attach addendums (Enhanced Security, BAA, Federal) for specific requirements.",
     alias: "Related: End User License Agreement (EULA), Agreement — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/standardized-license-terms.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/standardized-license-terms.html",
   },
   {
     name: "Seller / Publisher",
     tags: ["general"],
     def: "The entity listing and selling software on a cloud marketplace. Called 'seller' on AWS, 'publisher' on Azure and GCP. Can be an ISV selling direct or a channel partner reselling via CPPO/CSP.",
     alias: "Related: Seller of Record, Channel Partner (CP)",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
   },
   {
     name: "Seller of Record",
     tags: ["general"],
     def: "The legal entity responsible for a marketplace transaction — who invoices and collects from the buyer. In CPPOs and CSP/MPO transactions, the channel partner is the seller of record, not the ISV.",
     alias: "Related: Channel Partner (CP), Marketplace Fee / Transaction Fee",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
   },
   {
     name: "Service Account — GCP",
@@ -641,7 +687,8 @@ export const terms = [
     def: "An AWS program enabling pre-vetted Solution Providers to create private offers at pre-negotiated ISV discounts — without needing to negotiate deal-by-deal. ISVs must be enrolled in ISV Accelerate.",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, ISV Accelerate — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
   },
   {
     name: "Suger",
@@ -662,21 +709,24 @@ export const terms = [
     tags: ["aws"],
     def: "An AWS Marketplace pay-as-you-go pricing model. Buyers can cancel any time and are billed based on metered usage only, with no upfront commitment. Different from Azure and Snowflake subscriptions, which may be commit-based.",
     alias: "",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
   },
   {
     name: "Subscription — Azure",
     tags: ["azure", "gcp"],
     def: "A buyer's active contract for a marketplace offer. In Azure, the Subscription ID is the external identifier for an Entitlement in Suger.",
     alias: "Related: Entitlement, SaaS Fulfillment API — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer",
   },
   {
     name: "Subscription — GCP",
     tags: ["gcp"],
     def: "A buyer's active contract for a marketplace offer. In GCP, 'Subscription-based' pricing refers to a flat-rate commit model.",
     alias: "Related: Entitlement, Procurement API — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
   },
   {
     name: "Transactable Offer",
@@ -684,14 +734,16 @@ export const terms = [
     def: "A marketplace listing where the cloud provider handles the complete commerce transaction — payment, invoicing, and disbursement — on behalf of the ISV. Required for committed spend drawdown (EDP, MACC, CUD). Contrasts with BYOL or Contact Me listings.",
     alias:
       "Related: Listing, Committed Spend / Cloud Commit, Bring Your Own License (BYOL)",
-    source: "https://learn.microsoft.com/en-us/azure/marketplace/marketplace-commercial-transaction-capabilities-and-considerations",
+    source:
+      "https://learn.microsoft.com/en-us/azure/marketplace/marketplace-commercial-transaction-capabilities-and-considerations",
   },
   {
     name: "Usage-Based Pricing — GCP",
     tags: ["gcp"],
     def: "GCP Marketplace's pay-as-you-go pricing model. Buyers are billed based on metered consumption with no upfront commitment. The GCP equivalent of AWS Subscription pricing.",
     alias: "Related: Pay-As-You-Go (PAYG), GCP Marketplace — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
   },
   {
     name: "Usage Credit",
@@ -720,7 +772,8 @@ export const terms = [
     tags: ["aws", "suger"],
     def: "An AWS feature (supported by Suger) that lets sellers tag metered usage by cost category (e.g., team, department). Tags propagate to the buyer's AWS Billing Console, enabling detailed cost allocation.",
     alias: "Related: Usage Metering, Product Code — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/metering-and-entitlement-apis.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/metering-and-entitlement-apis.html",
   },
   {
     name: "Webhook",
@@ -1051,27 +1104,31 @@ export const terms = [
     tags: ["aws", "suger", "integrations"],
     def: "An AWS service giving sellers programmatic access to marketplace business data (usage, subscriptions, billing, customer info) via the AWS SDK. Data is delivered to an S3 bucket with SNS notifications. Suger uses MCAS as part of the AWS integration setup.",
     alias: "",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html",
   },
   {
     name: "Marketplace Data Feed Service (MDFS) — AWS",
     tags: ["aws", "suger", "integrations"],
     def: "AWS's structured data pipeline that delivers product billing and customer information (company name, address, email domain) to an S3 bucket. Recommended alongside MCAS for complete revenue and buyer data sync in Suger.",
     alias: "",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-service.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-service.html",
   },
   {
     name: "Plan of Action (POA) — AWS",
     tags: ["aws", "cosell"],
     def: "A document AWS partners submit alongside MDF fund requests outlining the marketing activity, timeline, expected outcomes, and budget breakdown. Required for MDF claims.",
-    alias: "Related: Marketing Development Funds (MDF) — AWS | See also: Partner Opportunity Acceleration (POA) — AWS",
+    alias:
+      "Related: Marketing Development Funds (MDF) — AWS | See also: Partner Opportunity Acceleration (POA) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
   },
   {
     name: "Partner Opportunity Acceleration (POA) — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "AWS funding program providing cash reimbursement or promotional credits to accelerate proof-of-concept and migration projects. Available to APN Select tier and above via the AWS Partner Funding Portal. Partners must apply POA benefits to reduce customer costs — benefits may not be retained as additional partner margin. Requires an Amazon Payee Central account.",
-    alias: "Related: Proof of Concept (POC) Funding — AWS, Migration Acceleration Program (MAP) — AWS, AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Amazon Payee Central — AWS",
+    alias:
+      "Related: Proof of Concept (POC) Funding — AWS, Migration Acceleration Program (MAP) — AWS, AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Amazon Payee Central — AWS",
     source: "https://aws.amazon.com/partners/funding/",
   },
   {
@@ -1129,7 +1186,8 @@ export const terms = [
     def: "GCP Marketplace's channel reseller mechanism — the equivalent of AWS's CPPO. An ISV creates a plan (single-use or multi-use) with a wholesale discount that an authorized reseller uses to create private offers for end customers. Suger manages the full RPOP lifecycle from the console and Salesforce.",
     alias:
       "AWS equivalent: Resale Authorization — AWS | Related: Marketplace Channel Private Offer (MCPO) — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/resellers/reseller-private-offer-plans",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/resellers/reseller-private-offer-plans",
   },
   {
     name: "Reseller Contract (RCMP) — AWS",
@@ -1137,14 +1195,16 @@ export const terms = [
     def: "AWS's standard contract template governing the relationship between an ISV and a channel partner in a CPPO transaction. ISVs can attach RCMP or a custom reseller contract to a resale authorization.",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
   },
   {
     name: "Partner Sales Console — GCP",
     tags: ["gcp", "cosell"],
     def: "The GCP portal used by authorized resellers to view RPOP private offer plans from ISVs, create private offers for end customers, and manage orders. The reseller-side equivalent of the GCP Producer Portal.",
     alias: "",
-    source: "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
   },
   {
     name: "Selling Authorization — AWS",
@@ -1152,7 +1212,8 @@ export const terms = [
     def: "AWS's term in the AMMP UI for what the API calls a Resale Authorization. An ISV creates this to authorize a specific channel partner to resell a product via CPPO. Can be single-use or reusable. Tracks statuses: Authorized, Authorized (reusable), Authorized (consumed), Expired, Deactivated.",
     alias:
       "Also called: Resale Authorization — AWS, Opportunity (in AWS API docs)",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
   },
   {
     name: "Marketplace Channel Private Offer (MCPO) — GCP",
@@ -1160,7 +1221,8 @@ export const terms = [
     def: "GCP Marketplace's channel reseller program — the GCP equivalent of AWS's CPPO. An ISV creates a Reseller Private Offer Plan (RPOP) with a wholesale discount; the reseller uses it to create a private offer with markup for the end customer. MCPO purchases count 100% toward the buyer's CUD committed spend, capped at 25% of total commitment.",
     alias:
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | Azure equivalent: Multiparty Private Offer (MPO) — Azure",
-    source: "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
   },
   {
     name: "Express Private Offer — AWS",
@@ -1168,7 +1230,8 @@ export const terms = [
     def: "An AI-powered AWS Marketplace feature (launched Nov 2025) where sellers pre-configure a rate card and AWS automatically generates and delivers personalized private offers to qualified buyers in minutes — without manual negotiation. Available for SaaS Contract and SaaS Contract with Consumption products.",
     alias:
       "Related: Private Offer, Agreement-Based Offer (ABO) — AWS, MPOPP (Marketplace Private Offer Promotion Program)",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
   },
   {
     name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
@@ -1184,7 +1247,8 @@ export const terms = [
     def: "A bundled listing type launched on AWS Marketplace at re:Invent 2025 that lets partners package multiple products and services from multiple providers into a single purchasable solution. One seller of record, one procurement flow, with transparent pricing per component.",
     alias:
       "Related: Listing, Private Offer, Seller of Record, Channel Partner (CP)",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
   },
   {
     name: "Agent Mode — AWS",
@@ -1199,7 +1263,8 @@ export const terms = [
     def: "A new Microsoft Marketplace channel motion (launched 2025, broadly available later in 2025) where ISVs designate authorized channel partners to resell their solutions on a geographic basis. Resale-enabled offers that are also Azure benefit-eligible count toward the customer's MACC. Part of Microsoft's broader expansion of partner resale options alongside MPO.",
     alias:
       "Related: Multiparty Private Offer (MPO) — Azure, Azure Consumption Commitment (MACC) — Azure, Cloud Solution Provider (CSP) — Azure, Microsoft Marketplace — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/multiparty-private-offers-for-isvs",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/multiparty-private-offers-for-isvs",
   },
   {
     name: "AWS ACE Integration",
@@ -1420,7 +1485,8 @@ export const terms = [
     tags: ["suger", "aws"],
     def: "An AWS Marketplace feature integrated into Suger that allows sellers to independently manage refunds and agreement terminations directly from their CRM or the Suger console — without needing to contact AWS support or the buyer.",
     alias: "Related: Agreement, Refund, CRM Integration",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/agreements.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/agreements.html",
   },
   {
     name: "AWS Secure Environment Accelerator (SEA) — AWS",
@@ -1428,7 +1494,8 @@ export const terms = [
     def: "An open-source AWS tool designed to help organizations — initially the Government of Canada — deploy and operate secure, multi-account, multi-Region AWS environments. Uses a configuration file to automate compliant architecture deployment without code changes. Built to meet Canadian federal security standards including PBMM (Protected B, Medium Integrity, Medium Availability) and ITSG-33. Note: ASEA has been deprecated in favor of the Landing Zone Accelerator (LZA) as of Q3 2025.",
     alias:
       "Also called: ASEA | Successor: Landing Zone Accelerator (LZA) | Related: AWS Partner Network (APN), Public Sector",
-    source: "https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/",
+    source:
+      "https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/",
   },
   {
     name: "Landing Zone Accelerator (LZA) — AWS",
@@ -1436,7 +1503,8 @@ export const terms = [
     def: "AWS's recommended replacement for the Secure Environment Accelerator (ASEA), now generally available. Automates the deployment of high-compliance, multi-account AWS environments. Includes Canadian CCCS Cloud Medium and Trusted Secure Enclave Sensitive Edition sample configurations that deliver similar outcomes to ASEA. Supports automated migration from ASEA.",
     alias:
       "Replaces: SEA / ASEA | Related: AWS Secure Environment Accelerator (SEA) — AWS",
-    source: "https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/",
+    source:
+      "https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/",
   },
   {
     name: "Foundational Technical Review (FTR) — AWS",
@@ -1639,7 +1707,8 @@ export const terms = [
     def: "Microsoft funding program where Microsoft pays approved partners to deliver services — deployment, migration, training, or proof of concept — accelerating customer adoption of Microsoft cloud technologies. Provides direct project funding up to $500K (not a percentage-of-revenue rebate). Requires Advanced Specialization as a hard prerequisite and must cover net-new cloud consumption. Field-driven only: initiated through a Partner Development Manager or Microsoft field team with a scoped statement of work, not self-service.",
     alias:
       "Related: ISV Success Program — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
-    source: "https://onefinance.microsoftcrmportals.com/knowledgebase/article/KA-01248/en-us",
+    source:
+      "https://partner.microsoft.com/en-us/partnership/partner-incentives",
   },
   {
     name: "Microsoft Intelligent Security Association (MISA) — Azure",
@@ -1647,7 +1716,8 @@ export const terms = [
     def: "A nomination-only ecosystem for independent software vendors (ISVs) and managed security service providers (MSSPs) that have integrated their solutions with Microsoft Security products. Requires a transactable marketplace listing.",
     alias:
       "Related: Microsoft Marketplace — Azure, Co-sell Eligible / Incentivized — Azure, ISV Success Program — Azure",
-    source: "https://www.microsoft.com/en-us/security/business/intelligent-security-association",
+    source:
+      "https://www.microsoft.com/en-us/security/business/intelligent-security-association",
   },
   {
     name: "Snowflake Data Appreciation (SDA) — Snowflake",
@@ -1670,7 +1740,8 @@ export const terms = [
     def: "A Google Cloud Marketplace feature that allows a partner to send and maintain more than one active private offer for the same product to a single billing account. This enables buyers to purchase separate instances of a product with different terms, such as for different departments or project-specific billing.",
     alias:
       "Related: Private Offer — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/create-private-offer",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/create-private-offer",
   },
   {
     name: "Private Offer — GCP",
@@ -1678,7 +1749,8 @@ export const terms = [
     def: "A custom pricing and terms agreement sent to a specific Google Cloud billing account. In GCP, these can be 'Multiple Offers' allowing for separate project-based contracts for the same product ID.",
     alias:
       "Related: Multiple Offers — GCP, Private Plan — GCP, Producer Portal — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/create-private-offer",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/create-private-offer",
   },
   {
     name: "Private Plan — GCP",
@@ -1686,7 +1758,8 @@ export const terms = [
     def: "A restricted product plan on Google Cloud Marketplace available only to specific billing accounts. While a private offer is a one-time transaction, a private plan allows multiple authorized customers to subscribe to the same custom terms repeatedly.",
     alias:
       "Related: Multiple Offers — GCP, Private Offer — GCP, GCP Marketplace — GCP",
-    source: "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-up-product",
+    source:
+      "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-up-product",
   },
 ];
 

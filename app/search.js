@@ -31,7 +31,7 @@ export function getFiltered(q) {
       (t) =>
         t.name.toLowerCase().includes(q) ||
         t.def.toLowerCase().includes(q) ||
-        (t.alias && t.alias.toLowerCase().includes(q))
+        (t.alias && t.alias.toLowerCase().includes(q)),
     );
     if (exact.length > 0) {
       candidates = exact;
@@ -43,7 +43,7 @@ export function getFiltered(q) {
 
   if (activeFilters.size > 0) {
     candidates = candidates.filter(
-      (t) => t.tags && t.tags.some((tag) => activeFilters.has(tag))
+      (t) => t.tags && t.tags.some((tag) => activeFilters.has(tag)),
     );
   }
 

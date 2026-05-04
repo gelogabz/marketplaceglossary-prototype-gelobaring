@@ -12,7 +12,7 @@ function getTermMap() {
     _termMap = new Map(
       [...terms]
         .sort((a, b) => b.name.length - a.name.length)
-        .map((t) => [t.name, slug(t.name)])
+        .map((t) => [t.name, slug(t.name)]),
     );
   }
   return _termMap;
@@ -25,7 +25,7 @@ export function linkifyAlias(text) {
     const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     result = result.replace(
       new RegExp(escaped, "g"),
-      `<a href="#term-${termSlug}" class="alias-link">${name}</a>`
+      `<a href="#term-${termSlug}" class="alias-link">${name}</a>`,
     );
   }
   return result;
