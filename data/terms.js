@@ -209,8 +209,7 @@ export const terms = [
     tags: ["aws"],
     def: "The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace.",
     alias: "Related: AWS Marketplace Catalog API — AWS, Suger Console",
-    source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/",
+    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -1043,8 +1042,7 @@ export const terms = [
     tags: ["gcp"],
     def: "The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Advantage enrollment.",
     alias: "Related: GCP Marketplace — GCP, Partner Advantage — GCP",
-    source:
-      "https://docs.cloud.google.com/marketplace/docs/partners",
+    source: "https://docs.cloud.google.com/marketplace/docs/partners",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
@@ -1267,8 +1265,7 @@ export const terms = [
     def: "A GCP incentive offering end customers up to 3% in Google Cloud credits when purchasing eligible ISV solutions through GCP Marketplace for the first time. Applies to both direct and reseller-led deals (MCPOs). ISVs must register the opportunity in Partner Advantage to qualify.",
     alias:
       "Also referred to as: MCCP | Related: Committed Use Discount (CUD) — GCP, Partner Advantage — GCP",
-    source:
-      "https://docs.cloud.google.com/marketplace/docs/partners",
+    source: "https://docs.cloud.google.com/marketplace/docs/partners",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "GCP Sales", "Enterprise Buyers"],
@@ -2150,7 +2147,8 @@ export const terms = [
     tags: ["gcp"],
     def: "Google Cloud's API ISVs use to report usage metrics to GCP Marketplace for metered billing. Suger calls this API on the ISV's behalf when usage records are submitted.",
     alias: "",
-    source: "https://docs.cloud.google.com/service-infrastructure/docs/overview",
+    source:
+      "https://docs.cloud.google.com/service-infrastructure/docs/overview",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -2220,7 +2218,8 @@ export const terms = [
     def: "Snowflake's data marketplace for sharing and monetizing data products, apps, and native apps within Snowflake environments. Suger supports Snowflake Marketplace listing and entitlement management.",
     alias:
       "Related: Snowflake Data Clean Rooms — Snowflake, Snowflake Data Appreciation (SDA) — Snowflake",
-    source: "https://docs.snowflake.com/en/collaboration/collaboration-listings-about",
+    source:
+      "https://docs.snowflake.com/en/collaboration/collaboration-listings-about",
     difficulty: "beginner",
     category: "fundamentals",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -2572,7 +2571,8 @@ export const terms = [
     tags: ["gcp", "suger"],
     def: "A GCP mechanism Suger uses to authenticate as the ISV's service account without storing long-lived keys. Allows Suger's AWS-based infrastructure to securely call GCP Marketplace APIs on the ISV's behalf.",
     alias: "",
-    source: "https://docs.cloud.google.com/iam/docs/workload-identity-federation",
+    source:
+      "https://docs.cloud.google.com/iam/docs/workload-identity-federation",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5631,7 +5631,8 @@ export const terms = [
     tags: ["snowflake", "cosell"],
     def: "A Snowflake partner program that incentivizes data providers to list high-quality data products on the Snowflake Marketplace. Provides marketing support and increased visibility to Snowflake's customer base.",
     alias: "Related: Snowflake Marketplace — Snowflake, Snowflake Integration",
-    source: "https://docs.snowflake.com/en/collaboration/collaboration-listings-about",
+    source:
+      "https://docs.snowflake.com/en/collaboration/collaboration-listings-about",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
