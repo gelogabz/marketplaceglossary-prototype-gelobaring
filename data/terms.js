@@ -6,6 +6,20 @@ export const terms = [
     alias:
       "Related: AWS Partner Network (APN) — AWS, Inbound Referral, Outbound Referral",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
+    useCases: [
+      "Registering co-sell opportunities to get AWS field engagement on active deals",
+      "Tracking joint pipeline with AWS sales teams in a shared CRM-like view",
+      "Qualifying for ISV Accelerate co-sell benefits and SaaS Co-sell Benefit (SCB)",
+    ],
+    context: ["AWS Partner Central", "ACE Pipeline Manager", "ISV Accelerate", "Co-sell Motions"],
+    related: [
+      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "Agreement-Based Offer (ABO) — AWS",
@@ -14,6 +28,19 @@ export const terms = [
     alias: "Related: Agreement — AWS, Future Dated Agreement — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    difficulty: "advanced",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Renewing an existing buyer agreement without requiring them to start a new subscription from scratch",
+      "Creating a future-dated upgrade offer on top of an active contract term",
+    ],
+    context: ["AWS Marketplace", "AWS Seller Central", "Private Offer Flows"],
+    related: [
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      { name: "Future Dated Agreement — AWS", slug: "future-dated-agreement-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Agreement — AWS",
@@ -23,6 +50,19 @@ export const terms = [
       "Suger equivalent: Entitlement | Related: Agreement-Based Offer (ABO) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Suger Users"],
+    useCases: [
+      "Tracking the active contract created after a buyer accepts a private offer on AWS",
+      "Referencing an Agreement ID in support requests or API-based lifecycle calls",
+    ],
+    context: ["AWS Marketplace", "Suger Console", "AWS Marketplace Management Portal (AMMP)"],
+    related: [
+      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Amazon Machine Image (AMI) — AWS",
@@ -32,6 +72,19 @@ export const terms = [
       "Related: Bring Your Own License (BYOL), Contract — AWS, Product Code — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
+    difficulty: "intermediate",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a server-side software product on AWS Marketplace for EC2 deployment",
+      "Offering BYOL or hourly-priced software to buyers who manage their own infrastructure",
+    ],
+    context: ["AWS Marketplace", "EC2 Console", "AWS Marketplace Management Portal (AMMP)"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Bring Your Own License (BYOL)", slug: "bring-your-own-license-byol" },
+      { name: "Contract — AWS", slug: "contract-—-aws" },
+    ],
   },
   {
     name: "Suger Analytics",
@@ -39,6 +92,19 @@ export const terms = [
     def: "Suger's built-in reporting dashboard for tracking marketplace revenue, entitlement status, usage consumption, and co-sell pipeline across all connected marketplaces.",
     alias: "Related: Revenue, Table Export, Suger Console",
     source: "https://doc.suger.io/analytics/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reviewing marketplace revenue and entitlement status across all connected platforms",
+      "Tracking usage consumption trends and co-sell pipeline in one view",
+    ],
+    context: ["Suger Console", "Analytics Dashboard"],
+    related: [
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Revenue", slug: "revenue" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "AppSource — Azure",
@@ -47,6 +113,18 @@ export const terms = [
     alias: "Now part of: Microsoft Marketplace — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Understanding the history of Azure's marketplace before the Microsoft Marketplace unification in 2025",
+      "Recognizing that AppSource listings are now unified under Microsoft Marketplace",
+    ],
+    context: ["Microsoft Marketplace — Azure", "Partner Center — Azure"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+    ],
   },
   {
     name: "AWS Marketplace — AWS",
@@ -56,6 +134,19 @@ export const terms = [
       "Related: AWS Marketplace Management Portal (AMMP) — AWS, AWS Marketplace Catalog API — AWS, AWS Partner Network (APN) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "AWS Sales"],
+    useCases: [
+      "Listing software for AWS customers to discover and purchase through their AWS account",
+      "Reaching enterprise buyers who want to apply committed EDP spend through marketplace transactions",
+    ],
+    context: ["AWS Console", "AWS Partner Central", "Suger Console"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+    ],
   },
   {
     name: "AWS Marketplace Catalog API — AWS",
@@ -65,6 +156,19 @@ export const terms = [
       "Related: AWS Marketplace Management Portal (AMMP) — AWS, Suger Console",
     source:
       "https://docs.aws.amazon.com/marketplace-catalog/latest/ug/welcome.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Programmatically creating or updating product listings and offers without using the seller console",
+      "Automating marketplace operations through Suger's built-in API integration with AWS",
+    ],
+    context: ["AWS Marketplace", "Suger Console", "ISV Backend Systems"],
+    related: [
+      { name: "AWS Marketplace Management Portal (AMMP) — AWS", slug: "aws-marketplace-management-portal-ammp-—-aws" },
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+    ],
   },
   {
     name: "AWS Marketplace Management Portal (AMMP) — AWS",
@@ -73,6 +177,19 @@ export const terms = [
     alias: "Related: AWS Marketplace Catalog API — AWS, Suger Console",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/getting-started-overview.html",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Creating and managing product listings, private offers, and agreements on AWS Marketplace",
+      "Reviewing seller revenue reports and monitoring listing performance via the AWS seller UI",
+    ],
+    context: ["AWS Marketplace", "AWS Seller Operations"],
+    related: [
+      { name: "AWS Marketplace Catalog API — AWS", slug: "aws-marketplace-catalog-api-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Suger Console", slug: "suger-console" },
+    ],
   },
   {
     name: "AWS Partner Network (APN) — AWS",
@@ -81,6 +198,19 @@ export const terms = [
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, AWS Competency Program — AWS",
     source: "https://aws.amazon.com/partners/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
+    useCases: [
+      "Enrolling as an APN member to unlock co-sell access, marketplace listing eligibility, and AWS funding programs",
+      "Tracking APN tier progression to qualify for ISV Accelerate and higher-tier MDF benefits",
+    ],
+    context: ["AWS Partner Central", "Co-sell Programs", "ISV Programs"],
+    related: [
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+    ],
   },
   {
     name: "Microsoft Marketplace — Azure",
@@ -90,6 +220,19 @@ export const terms = [
       "Formerly: Azure Marketplace, AppSource | Related: Azure Consumption Commitment (MACC) — Azure, MISA (Microsoft Intelligent Security Association) — Azure, Marketplace Rewards — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Azure Sales"],
+    useCases: [
+      "Listing transactable SaaS or cloud solutions for Microsoft enterprise customers",
+      "Reaching buyers whose MACC commitment can draw down against eligible marketplace purchases",
+    ],
+    context: ["Partner Center — Azure", "Azure Portal", "Microsoft Sales"],
+    related: [
+      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      { name: "Listing", slug: "listing" },
+    ],
   },
   {
     name: "Billing Integration",
@@ -98,6 +241,19 @@ export const terms = [
     alias:
       "Related: SaaS Fulfillment API — Azure, Procurement API — GCP, Signup URL Redirect",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting an ISV's system to a cloud marketplace to automate subscription lifecycle and usage reporting",
+      "Setting up Suger as the billing integration layer to handle entitlement provisioning across AWS, Azure, and GCP",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Landing Page / Signup URL", slug: "landing-page-/-signup-url" },
+      { name: "Usage Metering", slug: "usage-metering" },
+    ],
   },
   {
     name: "Bring Your Own License (BYOL)",
@@ -106,6 +262,19 @@ export const terms = [
     alias: "Related: Transactable Offer, Listing",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing software on marketplace for discoverability when the buyer already has a license purchased directly",
+      "Distinguishing BYOL listings from transactable offers when advising buyers on committed spend eligibility",
+    ],
+    context: ["AWS Marketplace", "GCP Marketplace", "Azure Marketplace", "Listing Types"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Transactable Offer", slug: "transactable-offer" },
+      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+    ],
   },
   {
     name: "Buyer",
@@ -114,6 +283,19 @@ export const terms = [
     alias:
       "AWS: Customer Identifier | Azure: Purchaser PUID | GCP: User Account Id",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Identifying the purchasing entity behind an entitlement in Suger across different marketplace platforms",
+      "Mapping marketplace buyer IDs to internal CRM accounts for deal tracking",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Offer", slug: "offer" },
+      { name: "Buyer Wallet", slug: "buyer-wallet" },
+    ],
   },
   {
     name: "Channel Partner (CP)",
@@ -123,6 +305,19 @@ export const terms = [
       "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "beginner",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Identifying which partners are authorized to transact your product on marketplace on behalf of end customers",
+      "Structuring resale motions where a partner becomes the seller of record in a CPPO or MPO transaction",
+    ],
+    context: ["Channel Programs", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      { name: "Seller of Record", slug: "seller-of-record" },
+    ],
   },
   {
     name: "Cloud Go-To-Market (Cloud GTM)",
@@ -130,6 +325,19 @@ export const terms = [
     def: "A sales and distribution strategy centered on cloud marketplaces — combining listing, transacting, and co-selling to reach enterprise buyers and shorten sales cycles.",
     alias: "Related: Suger Console, Co-sell",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Framing your overall marketplace and co-sell strategy as a unified cloud distribution motion",
+      "Positioning marketplace listing and co-sell as core revenue channels alongside direct sales",
+    ],
+    context: ["Go-to-Market Planning", "Sales Strategy", "Partner Programs"],
+    related: [
+      { name: "Co-sell", slug: "co-sell" },
+      { name: "Listing", slug: "listing" },
+      { name: "Suger Console", slug: "suger-console" },
+    ],
   },
   {
     name: "Co-sell",
@@ -138,6 +346,19 @@ export const terms = [
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, Partner Advantage — GCP, MISA (Microsoft Intelligent Security Association) — Azure",
     source: "https://doc.suger.io/co-sell/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "GCP Sales", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Sharing a qualified deal with AWS, Azure, or GCP sales teams to accelerate the enterprise sales cycle",
+      "Registering opportunities in ACE, Partner Advantage, or Partner Center to unlock co-sell incentives",
+    ],
+    context: ["Suger Console", "AWS Partner Central", "GCP Partner Advantage", "Azure Partner Center"],
+    related: [
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      { name: "Inbound Referral", slug: "inbound-referral" },
+    ],
   },
   {
     name: "Co-sell Eligible / Incentivized — Azure",
@@ -147,6 +368,19 @@ export const terms = [
       "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/co-sell-requirements",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Achieving Azure IP Co-sell status to make your listing MACC-eligible for enterprise buyers",
+      "Qualifying for Co-sell Incentivized status so Microsoft sellers earn quota credit on deals involving your product",
+    ],
+    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Co-sell Programs"],
+    related: [
+      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
+    ],
   },
   {
     name: "Combined Pricing — GCP",
@@ -155,6 +389,19 @@ export const terms = [
     alias: "Related: Usage Metering, Price Model",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Pricing a GCP Marketplace SaaS product with a base subscription plus metered overage for heavy users",
+      "Structuring a deal that includes a predictable floor price alongside flexible consumption billing",
+    ],
+    context: ["GCP Marketplace", "Producer Portal — GCP", "Pricing Configuration"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Overage", slug: "overage" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
   },
   {
     name: "Commit / Prepaid Commit",
@@ -162,6 +409,19 @@ export const terms = [
     def: "An upfront amount or quantity a buyer commits to paying at contract start, regardless of actual usage. Often combined with metered overage billing for usage above the committed amount.",
     alias: "Related: Commit with Additional Usage Metering, Overage",
     source: "https://doc.suger.io/metering/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Suger Users"],
+    useCases: [
+      "Structuring a contract with a guaranteed minimum payment alongside usage-based overage billing",
+      "Configuring prepaid commit amounts in Suger offer price models for AWS, Azure, or GCP listings",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Commit with Additional Usage Metering", slug: "commit-with-additional-usage-metering" },
+      { name: "Overage", slug: "overage" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "Commit with Additional Usage Metering",
@@ -169,6 +429,19 @@ export const terms = [
     def: "A Suger feature that accumulates all reported usage against the entitlement commit. Only usage exceeding the commit is forwarded to the marketplace as billable overage — simplifying ISV-side metering logic.",
     alias: "Related: Commit / Prepaid Commit, Overage, Usage Metering",
     source: "https://doc.suger.io/metering/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Simplifying metering logic by letting Suger track cumulative usage and only forward overage to the marketplace",
+      "Avoiding double-billing by ensuring usage within the commit is absorbed before reporting to AWS or Azure",
+    ],
+    context: ["Suger Console", "Usage Metering Configuration"],
+    related: [
+      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
+      { name: "Overage", slug: "overage" },
+      { name: "Usage Metering", slug: "usage-metering" },
+    ],
   },
   {
     name: "Committed Spend / Cloud Commit",
@@ -178,6 +451,19 @@ export const terms = [
       "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Azure Consumption Commitment (MACC) — Azure | GCP: Committed Use Discount (CUD) — GCP",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/customer-private-offers-committed-spend.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Positioning marketplace transactable listings to enterprise buyers who want to draw down their EDP, MACC, or CUD commitment",
+      "Understanding why enterprise buyers prefer marketplace procurement over direct purchasing",
+    ],
+    context: ["Enterprise Sales", "Marketplace Procurement", "Cloud Budgeting"],
+    related: [
+      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+    ],
   },
   {
     name: "Contract — AWS",
@@ -186,6 +472,19 @@ export const terms = [
     alias: "",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/contract-pricing.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Selling annual or multi-year upfront commitments on AWS Marketplace with optional metered overage",
+      "Structuring an enterprise deal with a fixed-term, non-cancellable commitment via AWS Marketplace",
+    ],
+    context: ["AWS Marketplace", "Private Offer Flows", "Enterprise Procurement"],
+    related: [
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Channel Partner Private Offer (CPPO) — AWS",
@@ -195,6 +494,21 @@ export const terms = [
       "GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Azure equivalent: Multiparty Private Offer (MPO) — Azure | Related: Resale Authorization — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Enabling a channel partner to resell your AWS Marketplace product with a custom markup",
+      "Routing an enterprise deal through a strategic reseller while preserving marketplace attribution",
+      "Applying a committed spend discount for a buyer while a partner manages the relationship",
+    ],
+    context: ["AWS Marketplace", "AWS Seller Central", "Channel Programs", "Co-sell Motions"],
+    related: [
+      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "CRM Integration",
@@ -203,6 +517,19 @@ export const terms = [
     alias:
       "Related: Salesforce Integration, HubSpot Integration, Salesforce App, HubSpot App",
     source: "https://doc.suger.io/integrations/salesforce/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Syncing marketplace entitlement events into Salesforce or HubSpot opportunities automatically",
+      "Surfacing co-sell referral status and deal data inside your CRM without manual exports",
+    ],
+    context: ["Suger Console", "Salesforce", "HubSpot", "Co-sell Workflows"],
+    related: [
+      { name: "Salesforce Integration", slug: "salesforce-integration" },
+      { name: "HubSpot Integration", slug: "hubspot-integration" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "Cloud Solution Provider (CSP) — Azure",
@@ -211,6 +538,19 @@ export const terms = [
     alias:
       "Related: Multiparty Private Offer (MPO) — Azure, Microsoft Marketplace — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/csp-overview",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Enabling authorized CSP partners to resell your Microsoft Marketplace solution to their enterprise customers",
+      "Creating Multiparty Private Offers for CSP partners to set their own margin on your product",
+    ],
+    context: ["Partner Center — Azure", "Microsoft Marketplace", "Channel Programs"],
+    related: [
+      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+    ],
   },
   {
     name: "Committed Use Discount (CUD) — GCP",
@@ -219,6 +559,19 @@ export const terms = [
     alias:
       "AWS equivalent: Enterprise Discount Program (EDP) — AWS | Azure equivalent: Azure Consumption Commitment (MACC) — Azure",
     source: "https://cloud.google.com/docs/cuds",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "GCP Sales"],
+    useCases: [
+      "Positioning GCP Marketplace transactable listings as CUD-eligible to enterprise buyers managing their Google Cloud commitment",
+      "Understanding how marketplace purchases draw down a buyer's CUD balance on GCP",
+    ],
+    context: ["GCP Marketplace", "Enterprise Procurement", "Google Cloud Billing"],
+    related: [
+      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+    ],
   },
   {
     name: "Dimension Conversion",
@@ -226,6 +579,19 @@ export const terms = [
     def: "A Suger setting that maps dimension keys from your internal metering system to marketplace dimension names using a multiplier factor. Avoids needing to rename dimensions in either system.",
     alias: "Related: Metering Dimension, Usage Metering, Billable Metric",
     source: "https://doc.suger.io/metering/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Mapping internal usage metric names to marketplace-specific dimension keys without changing either system",
+      "Applying a multiplier factor to convert raw usage units into the dimension values expected by the marketplace",
+    ],
+    context: ["Suger Console", "Usage Metering Configuration", "Marketplace APIs"],
+    related: [
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Billable Metric", slug: "billable-metric" },
+    ],
   },
   {
     name: "Disbursement",
@@ -234,6 +600,19 @@ export const terms = [
     alias:
       "Related: Revenue, Disbursement Date, Marketplace Fee / Transaction Fee",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reconciling monthly marketplace payouts against revenue records in Suger",
+      "Tracking when marketplace payments are expected to land in your bank account",
+    ],
+    context: ["Suger Console", "Revenue Dashboard", "Marketplace Payouts"],
+    related: [
+      { name: "Revenue", slug: "revenue" },
+      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+    ],
   },
   {
     name: "Divide Entitlement Commit",
@@ -241,6 +620,19 @@ export const terms = [
     def: "A Suger feature that splits a single annual upfront commit into monthly sub-entitlements, enabling monthly overage metering against a fraction of the total commitment.",
     alias: "Related: Commit with Additional Usage Metering, Overage",
     source: "https://doc.suger.io/metering/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Enabling monthly overage billing on an annual upfront deal by dividing the commit into monthly sub-entitlements",
+      "Handling complex billing scenarios where the annual commit must be metered incrementally each month",
+    ],
+    context: ["Suger Console", "Entitlement Configuration", "Usage Metering"],
+    related: [
+      { name: "Commit with Additional Usage Metering", slug: "commit-with-additional-usage-metering" },
+      { name: "Overage", slug: "overage" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Enterprise Discount Program (EDP) — AWS",
@@ -249,6 +641,19 @@ export const terms = [
     alias:
       "Also known as: Private Pricing Agreement (PPA) — AWS | Azure equivalent: Azure Consumption Commitment (MACC) — Azure | GCP equivalent: Committed Use Discount (CUD) — GCP",
     source: "https://aws.amazon.com/pricing/enterprise/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "AWS Sales"],
+    useCases: [
+      "Positioning AWS Marketplace transactable listings as EDP-eligible to accelerate enterprise deal cycles",
+      "Understanding how a buyer's EDP drawdown balance is reduced when they purchase via marketplace",
+    ],
+    context: ["Enterprise Sales", "AWS Marketplace", "AWS Account Management"],
+    related: [
+      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+    ],
   },
   {
     name: "Entitlement",
@@ -257,6 +662,19 @@ export const terms = [
     alias:
       "AWS: Agreement — AWS | Azure: Subscription — Azure | GCP: Subscription — GCP",
     source: "https://doc.suger.io/entitlement/",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Tracking all active buyer contracts and their billing status across connected marketplaces from one view",
+      "Using entitlement state to trigger provisioning, cancellation, and renewal workflows in Suger",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Usage Metering", slug: "usage-metering" },
+    ],
   },
   {
     name: "End User License Agreement (EULA)",
@@ -265,6 +683,19 @@ export const terms = [
     alias: "Related: Standard Contract — AWS, Private Offer",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/seller-customer-agreements.html",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Attaching custom legal terms to a private offer to cover enterprise-specific compliance requirements",
+      "Using the AWS Standard Contract (SCMP) to reduce buyer legal review time on marketplace deals",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "Private Offer Flows", "Legal Review"],
+    related: [
+      { name: "Standard Contract (SCMP) — AWS", slug: "standard-contract-scmp-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+    ],
   },
   {
     name: "Flat Rate Pricing — Azure",
@@ -273,6 +704,19 @@ export const terms = [
     alias: "",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Pricing an Azure Marketplace SaaS offer with a predictable monthly or annual flat fee",
+      "Adding a metered overage component on top of the base flat rate for heavy-usage customers",
+    ],
+    context: ["Partner Center — Azure", "Azure Marketplace", "Pricing Plans"],
+    related: [
+      { name: "Included Quantity — Azure", slug: "included-quantity-—-azure" },
+      { name: "Per User Pricing — Azure", slug: "per-user-pricing-—-azure" },
+      { name: "Overage", slug: "overage" },
+    ],
   },
   {
     name: "Flexible Payment Schedule / Installment Plan",
@@ -281,6 +725,19 @@ export const terms = [
     alias: "Related: Private Offer",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/flexible-payment-scheduler.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Structuring an annual deal with quarterly installment payments to align to the buyer's budget cycle",
+      "Offering flexible payment terms on a private offer without reducing total contract value",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "Private Offer Flows", "Enterprise Procurement"],
+    related: [
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Contract — AWS", slug: "contract-—-aws" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Free Trial",
@@ -289,6 +746,19 @@ export const terms = [
     alias: "Related: Listing, Transactable Offer",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Lowering buyer friction by offering a time-limited free trial before a marketplace subscription converts to paid",
+      "Configuring trial periods on AWS, Azure, or GCP listings to drive product-led growth motions",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Listing Configuration"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Transactable Offer", slug: "transactable-offer" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Future Dated Agreement — AWS",
@@ -298,6 +768,19 @@ export const terms = [
       "Related: Agreement-Based Offer (ABO) — AWS, Resale Authorization — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    difficulty: "advanced",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating a renewal offer that starts the day an existing contract expires, ensuring zero coverage gap",
+      "Locking in a future-dated upgrade agreement to secure multi-year terms early in the renewal cycle",
+    ],
+    context: ["AWS Marketplace", "Private Offer Flows", "Renewal Operations"],
+    related: [
+      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
+      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+    ],
   },
   {
     name: "GCP Marketplace — GCP",
@@ -305,6 +788,19 @@ export const terms = [
     def: "Google Cloud's marketplace for ISVs to list and sell software and services to Google Cloud customers. Integrated with GCP billing; purchases can draw down CUD commitments.",
     alias: "",
     source: "https://cloud.google.com/marketplace/docs",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "GCP Sales"],
+    useCases: [
+      "Listing software on GCP Marketplace to reach Google Cloud customers and draw down their CUD commitments",
+      "Publishing a transactable SaaS offer on GCP to enable billing through Google Cloud accounts",
+    ],
+    context: ["Google Cloud Console", "Producer Portal — GCP", "GCP Billing"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+    ],
   },
   {
     name: "Partner Advantage — GCP",
@@ -313,6 +809,19 @@ export const terms = [
     alias:
       "Related: Build Engagement Model — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
     source: "https://cloud.google.com/partners/become-a-partner",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "GCP Sales", "Partner Managers"],
+    useCases: [
+      "Enrolling in Partner Advantage under the Build engagement model to unlock GCP Marketplace listing and co-sell access",
+      "Leveraging ISV Center of Excellence resources and market development funds through the Partner Advantage program",
+    ],
+    context: ["GCP Partner Portal", "Co-sell Programs", "GCP Marketplace"],
+    related: [
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+      { name: "Build Engagement Model — GCP", slug: "build-engagement-model-—-gcp" },
+      { name: "Producer Portal — GCP", slug: "producer-portal-—-gcp" },
+    ],
   },
   {
     name: "Producer Portal — GCP",
@@ -321,6 +830,19 @@ export const terms = [
     alias: "Related: GCP Marketplace — GCP, Partner Advantage — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/getting-started",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Creating and publishing GCP Marketplace listings and pricing plans from the ISV's producer interface",
+      "Managing integration settings for entitlement webhooks and backend API configuration",
+    ],
+    context: ["GCP Marketplace", "GCP Console"],
+    related: [
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+    ],
   },
   {
     name: "Inbound Referral",
@@ -328,6 +850,19 @@ export const terms = [
     def: "A co-sell opportunity initiated by a cloud provider's sales team and shared with your organization to accept, qualify, and pursue jointly. Managed in Suger's co-sell module with status tracking and CRM sync.",
     alias: "Opposite: Outbound Referral | Related: Co-sell, Referral",
     source: "https://doc.suger.io/co-sell/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Accepting and qualifying a lead shared by an AWS, Azure, or GCP sales rep in Suger's co-sell module",
+      "Tracking the status and ownership of inbound co-sell referrals with CRM sync",
+    ],
+    context: ["Suger Console", "Co-sell Module", "AWS Partner Central", "CRM"],
+    related: [
+      { name: "Outbound Referral", slug: "outbound-referral" },
+      { name: "Referral", slug: "referral" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "Included Quantity — Azure",
@@ -336,6 +871,19 @@ export const terms = [
     alias: "Related: Flat Rate Pricing — Azure, Overage",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Setting the included usage threshold in an Azure flat-rate plan so buyers know when overage kicks in",
+      "Communicating to buyers how much usage is covered by the base subscription price",
+    ],
+    context: ["Partner Center — Azure", "Azure Marketplace", "Pricing Plans"],
+    related: [
+      { name: "Flat Rate Pricing — Azure", slug: "flat-rate-pricing-—-azure" },
+      { name: "Overage", slug: "overage" },
+      { name: "Per User Pricing — Azure", slug: "per-user-pricing-—-azure" },
+    ],
   },
   {
     name: "Integration",
@@ -343,6 +891,19 @@ export const terms = [
     def: "A Suger connection to an external platform — Salesforce, HubSpot, Slack, billing engines (Metronome, Orb, Lago), or marketplaces — that automatically syncs data with your existing workflows.",
     alias: "",
     source: "https://doc.suger.io/integrations/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Suger to CRM, billing, or notification tools to automate marketplace data flows",
+      "Browsing available Suger integrations to identify which external systems can sync with your marketplace operations",
+    ],
+    context: ["Suger Console", "Integrations Catalog"],
+    related: [
+      { name: "CRM Integration", slug: "crm-integration" },
+      { name: "Webhook", slug: "webhook" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "Independent Software Vendor (ISV)",
@@ -351,6 +912,19 @@ export const terms = [
     alias: "Related: Seller of Record, Channel Partner (CP)",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Establishing the role of the ISV as the software builder and primary seller in cloud marketplace contexts",
+      "Distinguishing ISV responsibilities from channel partner and cloud provider roles in a transaction",
+    ],
+    context: ["Cloud Marketplaces", "Partner Programs", "Marketplace Listings"],
+    related: [
+      { name: "Seller / Publisher", slug: "seller-/-publisher" },
+      { name: "Seller of Record", slug: "seller-of-record" },
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+    ],
   },
   {
     name: "ISV Accelerate — AWS",
@@ -359,6 +933,19 @@ export const terms = [
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
+    useCases: [
+      "Enrolling in ISV Accelerate to gain access to AWS seller introductions, co-sell resources, and SPPO eligibility",
+      "Meeting the program requirements (transactable listing + FTR) to unlock ACE co-sell benefits",
+    ],
+    context: ["AWS Partner Central", "Co-sell Programs", "ISV Programs"],
+    related: [
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      { name: "SaaS Co-sell Benefit (SCB) — AWS", slug: "saas-co-sell-benefit-scb-—-aws" },
+    ],
   },
   {
     name: "Landing Page / Signup URL",
@@ -366,6 +953,19 @@ export const terms = [
     def: "The URL a buyer is redirected to after accepting a marketplace offer, to complete account setup with the ISV. Suger can intercept this redirect, provision the entitlement, then forward the buyer to the ISV's onboarding flow.",
     alias: "Related: Signup URL Redirect, Billing Integration",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring the signup URL in Suger to intercept marketplace redirects and auto-provision entitlements before sending buyers to your product",
+      "Decoupling marketplace provisioning from product onboarding using Suger's signup URL redirect feature",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Buyer Onboarding"],
+    related: [
+      { name: "Signup URL Redirect", slug: "signup-url-redirect" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Billing Integration", slug: "billing-integration" },
+    ],
   },
   {
     name: "Listing",
@@ -374,6 +974,19 @@ export const terms = [
     alias: "Related: Transactable Offer, Bring Your Own License (BYOL)",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing a product on AWS, Azure, or GCP marketplace so buyers can discover and purchase it",
+      "Choosing the right listing type (transactable, BYOL, free trial, contact me) for your go-to-market motion",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Snowflake Marketplace"],
+    related: [
+      { name: "Transactable Offer", slug: "transactable-offer" },
+      { name: "Bring Your Own License (BYOL)", slug: "bring-your-own-license-byol" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Azure Consumption Commitment (MACC) — Azure",
@@ -383,6 +996,19 @@ export const terms = [
       "AWS equivalent: Enterprise Discount Program (EDP) — AWS | GCP equivalent: Committed Use Discount (CUD) — GCP",
     source:
       "https://learn.microsoft.com/en-us/marketplace/azure-consumption-commitment-benefit",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Azure Sales"],
+    useCases: [
+      "Achieving Azure IP Co-sell status to make your listing MACC-eligible for enterprise customers managing Azure spend commitments",
+      "Helping enterprise buyers understand that marketplace purchases of MACC-eligible listings count toward their Azure commitment",
+    ],
+    context: ["Microsoft Marketplace", "Enterprise Procurement", "Azure Billing"],
+    related: [
+      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+    ],
   },
   {
     name: "Marketplace Customer Credit Program (MCCP) — GCP",
@@ -392,6 +1018,19 @@ export const terms = [
       "Also referred to as: MCCP | Related: Committed Use Discount (CUD) — GCP, Partner Advantage — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/marketplace-customer-credit-program",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "GCP Sales", "Enterprise Buyers"],
+    useCases: [
+      "Registering a first-time GCP Marketplace deal in Partner Advantage to qualify the buyer for up to 3% Google Cloud credits",
+      "Positioning MCCP as an additional incentive alongside CUD drawdown to accelerate GCP enterprise deals",
+    ],
+    context: ["GCP Partner Portal", "Partner Advantage — GCP", "GCP Marketplace"],
+    related: [
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+    ],
   },
   {
     name: "Marketplace Fee / Transaction Fee",
@@ -400,6 +1039,19 @@ export const terms = [
     alias: "Related: Disbursement, Seller of Record",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Calculating net payout by understanding what percentage the marketplace retains before disbursing to the ISV",
+      "Explaining to partners how revenue splits work across ISV, channel partner, and hyperscaler in a CPPO transaction",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Revenue Reporting"],
+    related: [
+      { name: "Disbursement", slug: "disbursement" },
+      { name: "Seller of Record", slug: "seller-of-record" },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+    ],
   },
   {
     name: "Marketplace Rewards — Azure",
@@ -409,6 +1061,19 @@ export const terms = [
       "Related: Microsoft Marketplace — Azure, ISV Success Program — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Activating Marketplace Rewards to unlock co-marketing budget and technical support as Azure transact revenue grows",
+      "Tracking revenue milestones that unlock higher-tier Rewards benefits in Partner Center",
+    ],
+    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Partner Programs"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+    ],
   },
   {
     name: "Metered Billing",
@@ -416,6 +1081,19 @@ export const terms = [
     def: "A billing mechanism where buyers are charged based on actual consumption of defined usage dimensions. Suger normalizes metered billing across AWS, Azure, and GCP through its unified metering API.",
     alias: "Related: Usage Metering, Billable Metric, Metering Dimension",
     source: "https://doc.suger.io/metering/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Implementing consumption-based billing where customers pay only for what they use",
+      "Using Suger's unified metering API to report usage to AWS, Azure, and GCP from a single integration",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      { name: "Billable Metric", slug: "billable-metric" },
+    ],
   },
   {
     name: "Metering Dimension",
@@ -423,6 +1101,19 @@ export const terms = [
     def: "A specific unit of measure used to track and bill usage (e.g., seats, API calls, GB processed). Each entitlement can have multiple dimensions, referenced by Dimension Key or Dimension Name in Suger's API.",
     alias: "Related: Usage Metering, Billable Metric, Dimension Conversion",
     source: "https://doc.suger.io/metering/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Defining the units of consumption (API calls, GB, seats) that will be tracked and billed for a marketplace offer",
+      "Mapping internal metric names to marketplace dimension keys using Suger's dimension configuration",
+    ],
+    context: ["Suger Console", "Usage Metering Configuration", "Marketplace APIs"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Billable Metric", slug: "billable-metric" },
+      { name: "Dimension Conversion", slug: "dimension-conversion" },
+    ],
   },
   {
     name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
@@ -431,6 +1122,19 @@ export const terms = [
     alias:
       "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/mpn-overview",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Enrolling in the MPN program as a prerequisite for publishing on Microsoft Marketplace and accessing co-sell benefits",
+      "Navigating MPN program requirements to unlock Marketplace Rewards and partner funding eligibility",
+    ],
+    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Partner Programs"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
+      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+    ],
   },
   {
     name: "Multiparty Private Offer (MPO) — Azure",
@@ -440,6 +1144,19 @@ export const terms = [
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Related: Resale-Enabled Offer — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/multiparty-private-offers-for-isvs",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Enabling a CSP or authorized partner to resell your Microsoft Marketplace product with their own margin",
+      "Structuring an enterprise deal where the partner manages the customer relationship and the purchase counts toward MACC",
+    ],
+    context: ["Partner Center — Azure", "Microsoft Marketplace", "Channel Programs"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      { name: "Resale-Enabled Offer — Azure", slug: "resale-enabled-offer-—-azure" },
+    ],
   },
   {
     name: "Managed Service Provider (MSP)",
@@ -447,6 +1164,19 @@ export const terms = [
     def: "A partner providing ongoing management of a customer's cloud environment and software. MSPs often resell ISV products through marketplace channel programs (CPPO on AWS, CSP/MPO on Azure).",
     alias: "Related: Channel Partner (CP), Co-sell",
     source: "https://aws.amazon.com/partners/programs/msp/",
+    difficulty: "beginner",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Identifying MSP partners who manage customer cloud environments and could resell your marketplace product",
+      "Structuring CPPO or MPO resale authorization for MSPs who bundle your software with managed services",
+    ],
+    context: ["Channel Programs", "AWS Marketplace", "Azure Marketplace", "Partner Ecosystem"],
+    related: [
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
+    ],
   },
   {
     name: "Offer",
@@ -454,6 +1184,19 @@ export const terms = [
     def: "In Suger, a pricing and terms proposal (public or private) that a buyer can accept to purchase a product. Must be linked to a Product. Maps differently across marketplaces.",
     alias: "AWS: Private Offer | Azure: Plan — Azure | Related: Private Offer",
     source: "https://doc.suger.io/offer/",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Creating a public or private offer in Suger to present pricing and terms to a specific buyer",
+      "Linking a Suger offer to a product before publishing to a cloud marketplace",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Product", slug: "product" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Offer Expiration Date — AWS",
@@ -462,6 +1205,18 @@ export const terms = [
     alias: "Related: Private Offer, Agreement-Based Offer (ABO) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Setting an expiration date on a private offer to create urgency and close deals before a quarter ends",
+      "Communicating to buyers the deadline by which they must accept an offer before it expires",
+    ],
+    context: ["AWS Marketplace", "AWS Seller Central", "Private Offer Flows"],
+    related: [
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
+    ],
   },
   {
     name: "Organization",
@@ -469,6 +1224,19 @@ export const terms = [
     def: "The top-level account in Suger representing your company. All Products, Offers, Entitlements, and Buyers are scoped to your Organization.",
     alias: "Related: Role-Based Access Control (RBAC), Suger Console",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Understanding the organizational hierarchy in Suger — all products, offers, and entitlements belong to your Organization",
+      "Managing access permissions for team members across different roles within the same Organization",
+    ],
+    context: ["Suger Console", "Account Setup"],
+    related: [
+      { name: "Role-Based Access Control (RBAC)", slug: "role-based-access-control-rbac" },
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Product", slug: "product" },
+    ],
   },
   {
     name: "Outbound Referral",
@@ -476,6 +1244,19 @@ export const terms = [
     def: "A co-sell opportunity your organization originates and shares with a cloud provider's sales team — requesting their resources, deal support, or joint pursuit.",
     alias: "Opposite: Inbound Referral | Related: Co-sell, Referral",
     source: "https://doc.suger.io/co-sell/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Sharing a qualified opportunity with AWS, Azure, or GCP sales to request field support on an active deal",
+      "Initiating a co-sell motion by pushing an outbound referral from Suger to AWS Partner Central",
+    ],
+    context: ["Suger Console", "Co-sell Module", "AWS Partner Central"],
+    related: [
+      { name: "Inbound Referral", slug: "inbound-referral" },
+      { name: "Referral", slug: "referral" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "Overage",
@@ -483,6 +1264,19 @@ export const terms = [
     def: "Usage that exceeds a buyer's prepaid commit. Cloud marketplaces bill overage separately via metered usage. Suger can auto-track cumulative usage and report only the portion above the commit.",
     alias: "Related: Commit / Prepaid Commit, Usage Metering",
     source: "https://doc.suger.io/metering/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Tracking when a buyer's usage exceeds their prepaid commit so overage billing kicks in automatically",
+      "Configuring Suger to only report the portion of usage above the commit as billable to the marketplace",
+    ],
+    context: ["Suger Console", "Usage Metering", "Billing Configuration"],
+    related: [
+      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Commit with Additional Usage Metering", slug: "commit-with-additional-usage-metering" },
+    ],
   },
   {
     name: "Partner Center — Azure",
@@ -491,6 +1285,19 @@ export const terms = [
     alias:
       "Related: Azure Marketplace / Microsoft Marketplace, SaaS Fulfillment API — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/overview",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Creating and managing Azure Marketplace offer listings, plans, and co-sell configurations",
+      "Enrolling in MPN, setting up payout profiles, and tracking Marketplace Rewards milestones",
+    ],
+    context: ["Microsoft Marketplace", "Azure Publisher Operations"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "SaaS Fulfillment API — Azure", slug: "saas-fulfillment-api-—-azure" },
+      { name: "Microsoft AI Cloud Partner Program (MPN) — Azure", slug: "microsoft-ai-cloud-partner-program-mpn-—-azure" },
+    ],
   },
   {
     name: "PAYG / Pay-as-you-go",
@@ -499,6 +1306,19 @@ export const terms = [
     alias: "",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a product with flexible consumption pricing so buyers aren't locked into upfront commitments",
+      "Understanding when PAYG is preferred over contract pricing from a buyer's procurement perspective",
+    ],
+    context: ["AWS Marketplace", "GCP Marketplace", "Pricing Configuration"],
+    related: [
+      { name: "Metered Billing", slug: "metered-billing" },
+      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
+      { name: "Subscription — AWS", slug: "subscription-—-aws" },
+    ],
   },
   {
     name: "Per User Pricing — Azure",
@@ -507,6 +1327,19 @@ export const terms = [
     alias: "Related: Price Model, Included Quantity — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Pricing an Azure Marketplace SaaS offer per seat with mid-term quantity adjustments as headcount changes",
+      "Adding metered overage billing on top of per-user pricing for consumption above included seat usage",
+    ],
+    context: ["Partner Center — Azure", "Azure Marketplace", "Pricing Plans"],
+    related: [
+      { name: "Flat Rate Pricing — Azure", slug: "flat-rate-pricing-—-azure" },
+      { name: "Included Quantity — Azure", slug: "included-quantity-—-azure" },
+      { name: "Overage", slug: "overage" },
+    ],
   },
   {
     name: "Plan — Azure",
@@ -515,6 +1348,19 @@ export const terms = [
     alias: "Related: Private Offer, Microsoft Marketplace — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating multiple pricing tiers within a single Azure Marketplace offer (e.g., Starter, Pro, Enterprise plans)",
+      "Publishing a private plan visible only to specific tenants for custom pricing without a full private offer",
+    ],
+    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Offer Configuration"],
+    related: [
+      { name: "Private Plan — Azure", slug: "private-plan-—-azure" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+    ],
   },
   {
     name: "Private Offer Success Team (POST) — AWS",
@@ -523,6 +1369,18 @@ export const terms = [
     alias: "",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Contacting AWS support when a private offer has errors or a buyer cannot access an offer",
+      "Getting help from AWS's dedicated team when CPPO transactions or resale authorizations have issues",
+    ],
+    context: ["AWS Marketplace", "AWS Seller Support"],
+    related: [
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+    ],
   },
   {
     name: "Private Offer",
@@ -532,6 +1390,19 @@ export const terms = [
       "Related: Offer, Agreement-Based Offer (ABO) — AWS, Multiparty Private Offer (MPO) — Azure",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Closing a custom-priced enterprise deal through marketplace with negotiated terms and payment schedules",
+      "Extending a private offer to a specific buyer account after negotiating pricing off the public list",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    related: [
+      { name: "Offer", slug: "offer" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+    ],
   },
   {
     name: "Private Plan — Azure",
@@ -540,6 +1411,19 @@ export const terms = [
     alias: "Related: Plan — Azure, Private Offer",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer-plans",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Giving a specific enterprise customer access to custom pricing without creating a time-bound private offer",
+      "Restricting a pricing plan to selected tenant IDs in Partner Center for segment-specific pricing",
+    ],
+    context: ["Partner Center — Azure", "Azure Marketplace", "Listing Configuration"],
+    related: [
+      { name: "Plan — Azure", slug: "plan-—-azure" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+    ],
   },
   {
     name: "Procurement API — GCP",
@@ -548,6 +1432,19 @@ export const terms = [
     alias: "Related: GCP Marketplace — GCP, Producer Portal — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Handling GCP Marketplace entitlement lifecycle events — approval, activation, cancellation — via backend API integration",
+      "Validating buyer account status before provisioning access to your product after a marketplace purchase",
+    ],
+    context: ["GCP Marketplace", "ISV Backend Integration", "Suger Console"],
+    related: [
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+      { name: "Pub/Sub — GCP", slug: "pub/sub-—-gcp" },
+      { name: "Service Control API — GCP", slug: "service-control-api-—-gcp" },
+    ],
   },
   {
     name: "Product",
@@ -555,6 +1452,19 @@ export const terms = [
     def: "Suger's top-level entity for a software product or service listed on a marketplace. All Offers and Entitlements link to a Product.",
     alias: "AWS: Product Code | Azure: Offer Id | GCP: Product Id",
     source: "https://doc.suger.io/product/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Creating a Product in Suger as the parent entity before building offers or listing on any marketplace",
+      "Mapping Suger's Product entity to the corresponding Product Code (AWS), Offer ID (Azure), or Product ID (GCP)",
+    ],
+    context: ["Suger Console", "Product Configuration"],
+    related: [
+      { name: "Offer", slug: "offer" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Listing", slug: "listing" },
+    ],
   },
   {
     name: "Product Code — AWS",
@@ -564,6 +1474,19 @@ export const terms = [
       "Related: Amazon Machine Image (AMI) — AWS, AWS Marketplace Catalog API — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Using the AWS Product Code to reference a listing in API calls, metering events, and support tickets",
+      "Mapping the AWS Product Code to Suger's Product External ID during integration setup",
+    ],
+    context: ["AWS Marketplace", "Suger Console", "AWS Marketplace APIs"],
+    related: [
+      { name: "AWS Marketplace Catalog API — AWS", slug: "aws-marketplace-catalog-api-—-aws" },
+      { name: "Product", slug: "product" },
+      { name: "Amazon Machine Image (AMI) — AWS", slug: "amazon-machine-image-ami-—-aws" },
+    ],
   },
   {
     name: "Pub/Sub — GCP",
@@ -572,6 +1495,19 @@ export const terms = [
     alias: "",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Subscribing to GCP Marketplace Pub/Sub notifications to receive real-time entitlement lifecycle events",
+      "Handling entitlement creation and cancellation events pushed by GCP Marketplace to your ISV backend",
+    ],
+    context: ["GCP Marketplace", "ISV Backend Integration"],
+    related: [
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+      { name: "Service Account — GCP", slug: "service-account-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
   },
   {
     name: "Role-Based Access Control (RBAC)",
@@ -579,6 +1515,18 @@ export const terms = [
     def: "A permission model controlling what each user can see and do within Suger. Enables different access levels for sales, finance, and engineering within the same Organization.",
     alias: "Related: Organization, Suger Console",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Setting role-specific access so sales can view entitlements while finance accesses revenue reports",
+      "Restricting engineering users to API and integration configuration without exposing billing data",
+    ],
+    context: ["Suger Console", "Account Administration"],
+    related: [
+      { name: "Organization", slug: "organization" },
+      { name: "Suger Console", slug: "suger-console" },
+    ],
   },
   {
     name: "Referral",
@@ -586,6 +1534,19 @@ export const terms = [
     def: "A shared sales opportunity in a co-sell workflow. Can be outbound (ISV shares with cloud partner) or inbound (cloud partner shares with ISV). Managed in Suger with status tracking and CRM sync.",
     alias: "Related: Inbound Referral, Outbound Referral, Co-sell",
     source: "https://doc.suger.io/co-sell/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Managing co-sell referrals from AWS, Azure, or GCP in a single view with status tracking and CRM sync",
+      "Distinguishing inbound referrals (from cloud partner) vs. outbound referrals (your team shares to cloud partner)",
+    ],
+    context: ["Suger Console", "Co-sell Module", "CRM"],
+    related: [
+      { name: "Inbound Referral", slug: "inbound-referral" },
+      { name: "Outbound Referral", slug: "outbound-referral" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "Resale Authorization — AWS",
@@ -595,6 +1556,19 @@ export const terms = [
       "Also called: Selling Authorization — AWS | Related: Channel Partner Private Offer (CPPO) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Granting a specific channel partner the right to resell your AWS Marketplace product via CPPO",
+      "Configuring wholesale pricing, expiration, and reuse settings on a resale authorization",
+    ],
+    context: ["AWS Marketplace", "AWS Seller Central", "Channel Programs"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Selling Authorization — AWS", slug: "selling-authorization-—-aws" },
+      { name: "Solution Provider Private Offer (SPPO) — AWS", slug: "solution-provider-private-offer-sppo-—-aws" },
+    ],
   },
   {
     name: "Reseller Program — GCP",
@@ -604,6 +1578,19 @@ export const terms = [
       "Related: Marketplace Channel Private Offer (MCPO) — GCP, Reseller Private Offer Plan (RPOP) — GCP, Partner Sales Console — GCP, Committed Use Discount (CUD) — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Enabling authorized GCP resellers to create private offers for your marketplace product using RPOP/MCPO",
+      "Understanding how GCP's channel program compares to AWS CPPO and Azure MPO for resale motions",
+    ],
+    context: ["GCP Marketplace", "Partner Sales Console — GCP", "Channel Programs"],
+    related: [
+      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      { name: "Reseller Private Offer Plan (RPOP) — GCP", slug: "reseller-private-offer-plan-rpop-—-gcp" },
+      { name: "Partner Sales Console — GCP", slug: "partner-sales-console-—-gcp" },
+    ],
   },
   {
     name: "Software-as-a-Service (SaaS)",
@@ -612,6 +1599,19 @@ export const terms = [
     alias: "Related: Transactable Offer, Listing",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-products.html",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a hosted software product on cloud marketplace as a SaaS offer with subscription billing",
+      "Understanding why SaaS is the most common and fully transactable listing type across AWS, Azure, and GCP",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Listing Types"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Transactable Offer", slug: "transactable-offer" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "SaaS Fulfillment API — Azure",
@@ -620,6 +1620,19 @@ export const terms = [
     alias: "Related: Microsoft Marketplace — Azure, Partner Center — Azure",
     source:
       "https://learn.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Implementing the Azure SaaS Fulfillment API to handle subscription activation, plan changes, and cancellations",
+      "Using Suger to abstract SaaS Fulfillment API complexity so your backend receives normalized lifecycle events",
+    ],
+    context: ["Azure Marketplace", "ISV Backend Integration", "Partner Center — Azure"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Standard Contract (SCMP) — AWS",
@@ -628,6 +1641,19 @@ export const terms = [
     alias: "Related: End User License Agreement (EULA), Agreement — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/standardized-license-terms.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Using AWS's standard contract on a private offer to reduce enterprise legal review time",
+      "Attaching addendums to SCMP (BAA, Enhanced Security, Federal) for compliance-specific requirements",
+    ],
+    context: ["AWS Marketplace", "Private Offer Flows", "Legal Review"],
+    related: [
+      { name: "End User License Agreement (EULA)", slug: "end-user-license-agreement-eula" },
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Seller / Publisher",
@@ -636,6 +1662,19 @@ export const terms = [
     alias: "Related: Seller of Record, Channel Partner (CP)",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Understanding who holds the publishing relationship with the marketplace (ISV, partner, or both)",
+      "Distinguishing between the seller/publisher role vs. the seller of record role in a channel transaction",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Seller of Record", slug: "seller-of-record" },
+      { name: "Independent Software Vendor (ISV)", slug: "independent-software-vendor-isv" },
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+    ],
   },
   {
     name: "Seller of Record",
@@ -644,6 +1683,19 @@ export const terms = [
     alias: "Related: Channel Partner (CP), Marketplace Fee / Transaction Fee",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Enterprise Buyers"],
+    useCases: [
+      "Understanding who is legally invoicing the buyer in a CPPO or MPO transaction",
+      "Clarifying tax and compliance implications when the channel partner (not the ISV) is the seller of record",
+    ],
+    context: ["Channel Programs", "AWS Marketplace", "Azure Marketplace"],
+    related: [
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+    ],
   },
   {
     name: "Service Account — GCP",
@@ -651,6 +1703,19 @@ export const terms = [
     def: "A GCP identity (non-human account) used to authenticate API calls between Suger and GCP Marketplace services — including the Procurement API, Pub/Sub, and billing integration.",
     alias: "",
     source: "https://cloud.google.com/iam/docs/service-accounts",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Creating and configuring a GCP Service Account as part of the Suger GCP Marketplace integration setup",
+      "Authenticating Suger's API calls to GCP Marketplace services without using long-lived personal credentials",
+    ],
+    context: ["GCP Marketplace", "Suger Console", "GCP IAM"],
+    related: [
+      { name: "Workload Identity Federation — GCP", slug: "workload-identity-federation-—-gcp" },
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
   },
   {
     name: "Service Control API — GCP",
@@ -658,6 +1723,19 @@ export const terms = [
     def: "Google Cloud's API ISVs use to report usage metrics to GCP Marketplace for metered billing. Suger calls this API on the ISV's behalf when usage records are submitted.",
     alias: "",
     source: "https://cloud.google.com/service-control/docs/overview",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reporting metered usage to GCP Marketplace via the Service Control API to trigger billing",
+      "Using Suger to abstract Service Control API calls so ISVs submit usage through the unified Suger metering API",
+    ],
+    context: ["GCP Marketplace", "Metered Billing", "ISV Backend Integration"],
+    related: [
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
   },
   {
     name: "System Integrator (SI)",
@@ -665,6 +1743,19 @@ export const terms = [
     def: "A partner that implements, customizes, and integrates software for enterprise customers. SIs often transact ISV products through marketplace channel programs and co-sell motions.",
     alias: "Related: Channel Partner (CP), Co-sell",
     source: "https://aws.amazon.com/partners/",
+    difficulty: "beginner",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Identifying SI partners who implement your software and could transact it through marketplace channel programs",
+      "Enabling SI partners as CPPO or MPO resellers for deals where they are the primary customer relationship owner",
+    ],
+    context: ["Partner Ecosystem", "Channel Programs", "Co-sell Motions"],
+    related: [
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+      { name: "Managed Service Provider (MSP)", slug: "managed-service-provider-msp" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "Signup URL Redirect",
@@ -672,6 +1763,19 @@ export const terms = [
     def: "A Suger feature where marketplace buyer signup URLs route through Suger first for entitlement provisioning, then redirect to the ISV's own onboarding URL. Decouples marketplace provisioning from product onboarding.",
     alias: "Related: Entitlement, Landing Page / Signup URL",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Routing post-purchase marketplace redirects through Suger to auto-provision entitlements before sending buyers to your onboarding flow",
+      "Decoupling marketplace provisioning from product onboarding so entitlement state is tracked in Suger before handoff",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Buyer Onboarding"],
+    related: [
+      { name: "Landing Page / Signup URL", slug: "landing-page-/-signup-url" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Billing Integration", slug: "billing-integration" },
+    ],
   },
   {
     name: "Snowflake Marketplace — Snowflake",
@@ -680,6 +1784,19 @@ export const terms = [
     alias:
       "Related: Snowflake Data Clean Rooms — Snowflake, Snowflake Data Appreciation (SDA) — Snowflake",
     source: "https://docs.snowflake.com/en/user-guide/data-marketplace",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing data products, apps, or native apps on Snowflake Marketplace to monetize within Snowflake environments",
+      "Managing Snowflake Marketplace entitlements through Suger alongside AWS, Azure, and GCP listings",
+    ],
+    context: ["Snowflake Environment", "Suger Console"],
+    related: [
+      { name: "Snowflake Data Clean Rooms — Snowflake", slug: "snowflake-data-clean-rooms-—-snowflake" },
+      { name: "Snowflake Data Appreciation (SDA) — Snowflake", slug: "snowflake-data-appreciation-sda-—-snowflake" },
+      { name: "Listing", slug: "listing" },
+    ],
   },
   {
     name: "Solution Provider Private Offer (SPPO) — AWS",
@@ -689,6 +1806,19 @@ export const terms = [
       "Related: Channel Partner Private Offer (CPPO) — AWS, ISV Accelerate — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Enabling pre-vetted Solution Providers to transact at a standing wholesale discount without per-deal authorization",
+      "Scaling channel sales on AWS Marketplace by pre-negotiating SPPO terms with multiple resellers upfront",
+    ],
+    context: ["AWS Marketplace", "Channel Programs", "ISV Accelerate"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+    ],
   },
   {
     name: "Suger",
@@ -696,6 +1826,19 @@ export const terms = [
     def: "A unified cloud marketplace platform enabling ISVs to list, transact, meter, and co-sell across AWS, Azure, GCP, and Snowflake from a single interface, with integrations into CRM, billing, and communication tools.",
     alias: "Related: Suger Analytics, Entitlement, Metering Dimension",
     source: "https://www.suger.io/",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Managing all cloud marketplace operations — listing, transacting, metering, and co-selling — from one platform",
+      "Connecting marketplace entitlements to CRM, billing systems, and co-sell workflows via Suger integrations",
+    ],
+    context: ["Cloud Marketplace Operations", "Suger Console"],
+    related: [
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Suger Analytics", slug: "suger-analytics" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Suger Console",
@@ -703,6 +1846,19 @@ export const terms = [
     def: "The central web-based interface for managing cloud marketplace operations, viewing analytics, configuring integrations, and executing co-sell motions across all connected platforms.",
     alias: "Related: Suger Analytics, Entitlement, Metering Dimension",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Accessing all Suger features — offers, entitlements, metering, co-sell, analytics — from a single web interface",
+      "Configuring marketplace integrations, RBAC permissions, and workflow automations in the Suger Console",
+    ],
+    context: ["Suger Platform", "Daily Operations"],
+    related: [
+      { name: "Suger Analytics", slug: "suger-analytics" },
+      { name: "Organization", slug: "organization" },
+      { name: "Integration", slug: "integration" },
+    ],
   },
   {
     name: "Subscription — AWS",
@@ -711,6 +1867,19 @@ export const terms = [
     alias: "",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a flexible, cancel-anytime product on AWS Marketplace with pure usage-based billing",
+      "Understanding the difference between AWS Subscription pricing vs. AWS Contract pricing for SaaS products",
+    ],
+    context: ["AWS Marketplace", "Pricing Configuration"],
+    related: [
+      { name: "PAYG / Pay-as-you-go", slug: "payg-/-pay-as-you-go" },
+      { name: "Metered Billing", slug: "metered-billing" },
+      { name: "Contract — AWS", slug: "contract-—-aws" },
+    ],
   },
   {
     name: "Subscription — Azure",
@@ -719,6 +1888,19 @@ export const terms = [
     alias: "Related: Entitlement, SaaS Fulfillment API — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Suger Users"],
+    useCases: [
+      "Mapping an Azure Subscription ID to a Suger Entitlement for lifecycle tracking and metering",
+      "Understanding how the Azure Subscription ID appears in SaaS Fulfillment API events",
+    ],
+    context: ["Azure Marketplace", "Suger Console", "SaaS Fulfillment API — Azure"],
+    related: [
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "SaaS Fulfillment API — Azure", slug: "saas-fulfillment-api-—-azure" },
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+    ],
   },
   {
     name: "Subscription — GCP",
@@ -727,6 +1909,19 @@ export const terms = [
     alias: "Related: Entitlement, Procurement API — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Suger Users"],
+    useCases: [
+      "Understanding how GCP Subscription-based pricing maps to flat-rate commit models in Suger",
+      "Tracking GCP subscription lifecycle events via Suger's entitlement management",
+    ],
+    context: ["GCP Marketplace", "Suger Console", "Procurement API — GCP"],
+    related: [
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
   },
   {
     name: "Transactable Offer",
@@ -736,6 +1931,19 @@ export const terms = [
       "Related: Listing, Committed Spend / Cloud Commit, Bring Your Own License (BYOL)",
     source:
       "https://learn.microsoft.com/en-us/azure/marketplace/marketplace-commercial-transaction-capabilities-and-considerations",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing a transactable listing to enable marketplace-billed purchases that draw down EDP, MACC, or CUD",
+      "Distinguishing transactable offers from BYOL or Contact Me listings when configuring a marketplace strategy",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Listing Types"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+      { name: "Bring Your Own License (BYOL)", slug: "bring-your-own-license-byol" },
+    ],
   },
   {
     name: "Usage-Based Pricing — GCP",
@@ -744,6 +1952,19 @@ export const terms = [
     alias: "Related: Pay-As-You-Go (PAYG), GCP Marketplace — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-pricing",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Configuring a GCP Marketplace SaaS offer with pure consumption-based pricing and no upfront commitment",
+      "Understanding GCP Usage-based pricing as the equivalent of AWS Subscription pricing",
+    ],
+    context: ["GCP Marketplace", "Producer Portal — GCP", "Pricing Configuration"],
+    related: [
+      { name: "PAYG / Pay-as-you-go", slug: "payg-/-pay-as-you-go" },
+      { name: "Combined Pricing — GCP", slug: "combined-pricing-—-gcp" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "Usage Credit",
@@ -751,6 +1972,19 @@ export const terms = [
     def: "Credits applied to a buyer's entitlement in Suger that reduce billable usage reported to the marketplace. Used for promotions, trials, service credits, or billing corrections.",
     alias: "Related: Entitlement, Usage Metering",
     source: "https://doc.suger.io/metering/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Applying promotional or service credits to a buyer's entitlement to reduce their next billing cycle",
+      "Issuing a billing correction by adding usage credits that offset over-reported consumption",
+    ],
+    context: ["Suger Console", "Entitlement Management", "Metering"],
+    related: [
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Buyer Wallet", slug: "buyer-wallet" },
+    ],
   },
   {
     name: "Usage Metering",
@@ -758,6 +1992,19 @@ export const terms = [
     def: "The process of tracking and reporting a buyer's consumption of a product in a billing period. Suger provides a unified metering API normalizing reporting across AWS, Azure, and GCP — handling deduplication, validation, and aggregation.",
     alias: "Related: Metering Dimension, Billable Metric, Usage Record",
     source: "https://doc.suger.io/metering/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Submitting usage data to Suger's unified metering API to trigger billing across AWS, Azure, or GCP",
+      "Validating that reported consumption is correctly aggregated and deduplicated before forwarding to the marketplace",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      { name: "Usage Record", slug: "usage-record" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "Usage Record",
@@ -766,6 +2013,19 @@ export const terms = [
     alias:
       "Also known as: Usage Record Group | Related: Usage Metering, Metering Dimension",
     source: "https://doc.suger.io/metering/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Submitting a usage record to Suger's API to report consumption for a specific entitlement and billing period",
+      "Checking usage record status in Suger to confirm a metering event was validated and forwarded to the marketplace",
+    ],
+    context: ["Suger Console", "Suger API", "Usage Metering"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Vendor-Metered Tagging — AWS",
@@ -774,6 +2034,19 @@ export const terms = [
     alias: "Related: Usage Metering, Product Code — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/metering-and-entitlement-apis.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Tagging metered usage by department or team so buyers can allocate costs in their AWS Billing Console",
+      "Using Suger to include cost allocation tags when submitting usage records to AWS Marketplace",
+    ],
+    context: ["AWS Marketplace", "Suger Console", "AWS Billing Console"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      { name: "Product Code — AWS", slug: "product-code-—-aws" },
+    ],
   },
   {
     name: "Webhook",
@@ -781,6 +2054,19 @@ export const terms = [
     def: "An HTTP callback configured in Suger that pushes real-time event notifications — new entitlements, cancellations, plan changes, usage alerts — to an ISV's service endpoint.",
     alias: "Related: Email Notification, Workflow, Integration",
     source: "https://doc.suger.io/webhook/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring a webhook to push real-time entitlement creation and cancellation events to your backend system",
+      "Triggering provisioning or deprovisioning workflows in your product when Suger sends a lifecycle event",
+    ],
+    context: ["Suger Console", "ISV Backend Systems"],
+    related: [
+      { name: "Workflow", slug: "workflow" },
+      { name: "Email Notification", slug: "email-notification" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Workflow",
@@ -788,6 +2074,19 @@ export const terms = [
     def: "An automation rule in Suger that triggers actions (CRM updates, Slack notifications, metering) based on marketplace events such as new entitlement creation or subscription cancellation.",
     alias: "Related: Webhook, Integration, CRM Integration",
     source: "https://doc.suger.io/workflow/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Automating CRM updates, Slack alerts, or metering triggers when a new entitlement is created in Suger",
+      "Building no-code automation rules in Suger to handle marketplace events across connected platforms",
+    ],
+    context: ["Suger Console", "Automation Rules"],
+    related: [
+      { name: "Webhook", slug: "webhook" },
+      { name: "Integration", slug: "integration" },
+      { name: "CRM Integration", slug: "crm-integration" },
+    ],
   },
   {
     name: "Workload Identity Federation — GCP",
@@ -795,6 +2094,19 @@ export const terms = [
     def: "A GCP mechanism Suger uses to authenticate as the ISV's service account without storing long-lived keys. Allows Suger's AWS-based infrastructure to securely call GCP Marketplace APIs on the ISV's behalf.",
     alias: "",
     source: "https://cloud.google.com/iam/docs/workload-identity-federation",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring Workload Identity Federation during Suger GCP integration setup to enable keyless authentication",
+      "Avoiding long-lived GCP service account key storage by delegating authentication to Suger via federation",
+    ],
+    context: ["GCP Marketplace", "Suger Console", "GCP IAM"],
+    related: [
+      { name: "Service Account — GCP", slug: "service-account-—-gcp" },
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
   },
   {
     name: "Alibaba Cloud Marketplace",
@@ -802,6 +2114,19 @@ export const terms = [
     def: "Alibaba Cloud's digital marketplace connecting ISVs and SaaS providers with customers globally and in China. Supports private offers, usage metering, and consolidated billing through Alibaba Cloud accounts.",
     alias: "Related: Private Offer, Usage Metering, Entitlement",
     source: "https://www.alibabacloud.com/marketplace",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a product on Alibaba Cloud Marketplace to reach customers in China and global Alibaba Cloud regions",
+      "Managing Alibaba Cloud Marketplace entitlements alongside AWS, Azure, and GCP listings in Suger",
+    ],
+    context: ["Alibaba Cloud Console", "Suger Console"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Suger API Client",
@@ -809,6 +2134,19 @@ export const terms = [
     def: "Suger's authentication mechanism for programmatic access to the Suger API. ISVs generate API client credentials in the Suger Console to authenticate server-to-server calls for metering, entitlement management, and workflow automation.",
     alias: "Related: Suger Console, Webhook",
     source: "https://doc.suger.io/api/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Generating API client credentials in Suger to authenticate server-to-server calls for programmatic metering",
+      "Using the Suger API Client to automate entitlement queries, usage submissions, and workflow triggers",
+    ],
+    context: ["Suger Console", "Suger API", "Backend Integration"],
+    related: [
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Webhook", slug: "webhook" },
+      { name: "Usage Metering", slug: "usage-metering" },
+    ],
   },
   {
     name: "Billable Metric",
@@ -816,6 +2154,19 @@ export const terms = [
     def: "A named, reusable definition in Suger that specifies what usage to track and how to aggregate it — by COUNT, SUM, MAX, UNIQUE COUNT, or LATEST. Billable metrics are created before offers and referenced in price models to calculate charges. Distinct from Metering Dimension, which is marketplace-specific.",
     alias: "",
     source: "https://doc.suger.io/billable-metric/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Defining what usage to track (API calls, GB processed, transactions) before building an offer price model",
+      "Creating a reusable billable metric that can be referenced across multiple offers and price models",
+    ],
+    context: ["Suger Console", "Price Model Configuration"],
+    related: [
+      { name: "Billable Dimension", slug: "billable-dimension" },
+      { name: "Price Model", slug: "price-model" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+    ],
   },
   {
     name: "Billable Dimension",
@@ -823,6 +2174,19 @@ export const terms = [
     def: "The combination of a Billable Metric and a usage metering price model within an offer. Defines both what gets measured and how it gets priced. Multiple billable dimensions can be configured in a single offer.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring multiple pricing dimensions in a single offer — e.g., one for API calls and another for storage",
+      "Pairing a billable metric with a tiered or volume price model to create a specific billing dimension",
+    ],
+    context: ["Suger Console", "Offer Configuration"],
+    related: [
+      { name: "Billable Metric", slug: "billable-metric" },
+      { name: "Price Model", slug: "price-model" },
+      { name: "Offer", slug: "offer" },
+    ],
   },
   {
     name: "Billing Cycle",
@@ -830,6 +2194,19 @@ export const terms = [
     def: "The start day of a billing period in Suger — either the start date of the entitlement or the 1st of the month. Determines when each billing period begins relative to the contract.",
     alias: "",
     source: "https://doc.suger.io/billing/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring whether billing periods start on entitlement creation date or the 1st of the calendar month",
+      "Aligning billing cycle settings to match a buyer's expected invoice cadence",
+    ],
+    context: ["Suger Console", "Billing Configuration"],
+    related: [
+      { name: "Billing Period", slug: "billing-period" },
+      { name: "Billing Interval", slug: "billing-interval" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Billing Interval",
@@ -837,6 +2214,19 @@ export const terms = [
     def: "The frequency at which a buyer is charged within a contract — monthly, quarterly, annually, etc. Configured per price model in a Suger offer.",
     alias: "",
     source: "https://doc.suger.io/billing/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Setting monthly, quarterly, or annual billing frequency on a Suger offer price model",
+      "Matching the billing interval to enterprise procurement requirements for predictable invoice scheduling",
+    ],
+    context: ["Suger Console", "Offer Configuration", "Price Model"],
+    related: [
+      { name: "Billing Cycle", slug: "billing-cycle" },
+      { name: "Billing Period", slug: "billing-period" },
+      { name: "Price Model", slug: "price-model" },
+    ],
   },
   {
     name: "Billing Period",
@@ -844,6 +2234,19 @@ export const terms = [
     def: "A single charging cycle within a contract's duration. The price model is applied once per billing period. Multiple billing periods span the full contract term.",
     alias: "",
     source: "https://doc.suger.io/billing/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Understanding how billing periods structure charges throughout an annual or multi-year contract",
+      "Troubleshooting invoice timing by reviewing which billing period an invoice corresponds to",
+    ],
+    context: ["Suger Console", "Invoice Management", "Billing Configuration"],
+    related: [
+      { name: "Billing Cycle", slug: "billing-cycle" },
+      { name: "Billing Interval", slug: "billing-interval" },
+      { name: "Invoice", slug: "invoice" },
+    ],
   },
   {
     name: "Chargebee Integration",
@@ -851,6 +2254,19 @@ export const terms = [
     def: "Suger's connection to Chargebee, a subscription billing platform. Allows ISVs already using Chargebee to sync billing data and entitlements with Suger's marketplace and co-sell workflows.",
     alias: "",
     source: "https://doc.suger.io/integrations/chargebee/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Syncing Chargebee subscription data with Suger entitlements for unified billing and marketplace reporting",
+      "Connecting an ISV's existing Chargebee billing to Suger's marketplace and co-sell workflows",
+    ],
+    context: ["Suger Console", "Chargebee", "Billing Integration"],
+    related: [
+      { name: "Stripe Integration", slug: "stripe-integration" },
+      { name: "Billing", slug: "billing" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Databricks Marketplace",
@@ -858,6 +2274,19 @@ export const terms = [
     def: "Databricks' marketplace for data products and AI applications within the Databricks Data Intelligence Platform. Suger supports integration with Databricks to automate workflows, execute queries, and sync marketplace data.",
     alias: "",
     source: "https://docs.databricks.com/en/marketplace/index.html",
+    difficulty: "intermediate",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing data products and AI applications on Databricks Marketplace to reach Databricks platform users",
+      "Integrating Databricks Marketplace workflows with Suger for automated query execution and data sync",
+    ],
+    context: ["Databricks Platform", "Suger Console"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+    ],
   },
   {
     name: "Email Notification",
@@ -865,6 +2294,19 @@ export const terms = [
     def: "Suger's event-driven email alert system. ISVs configure recipient lists to receive notifications on marketplace events — new entitlements, cancellations, usage alerts, and invoice issuance — distinct from Webhooks, which push to service endpoints.",
     alias: "",
     source: "https://doc.suger.io/notification/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring email alerts so sales and ops teams are notified immediately when a new entitlement is created",
+      "Receiving invoice issuance and usage threshold alerts via email without setting up a webhook endpoint",
+    ],
+    context: ["Suger Console", "Notification Settings"],
+    related: [
+      { name: "Webhook", slug: "webhook" },
+      { name: "Workflow", slug: "workflow" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Invoice",
@@ -873,6 +2315,19 @@ export const terms = [
     alias:
       "Types: Commit, Installment, Usage, Addon | Related: Revenue, Stripe Integration, Disbursement",
     source: "https://doc.suger.io/invoice/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Reviewing and exporting invoices generated by Suger for direct (non-marketplace) billing via Stripe",
+      "Editing a Draft invoice before issuance to correct amounts, dates, or line items",
+    ],
+    context: ["Suger Console", "Direct Billing", "Stripe Integration"],
+    related: [
+      { name: "Payment", slug: "payment" },
+      { name: "Revenue", slug: "revenue" },
+      { name: "Stripe Integration", slug: "stripe-integration" },
+    ],
   },
   {
     name: "Matrix Pricing",
@@ -880,6 +2335,19 @@ export const terms = [
     def: "A Suger usage metering price model that determines per-unit cost based on combinations of two or more properties (e.g. cloud provider + region). Each property combination maps to a distinct price; unmatched combinations fall back to a default price.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Pricing usage differently based on a combination of properties — e.g., cloud provider × region — using a matrix lookup",
+      "Configuring a fallback default price for usage events that don't match any matrix property combination",
+    ],
+    context: ["Suger Console", "Price Model Configuration"],
+    related: [
+      { name: "Price Model", slug: "price-model" },
+      { name: "Tiered Pricing", slug: "tiered-pricing" },
+      { name: "Billable Metric", slug: "billable-metric" },
+    ],
   },
   {
     name: "Minimum Spend",
@@ -887,6 +2355,19 @@ export const terms = [
     def: "A floor amount set on a usage-based price model ensuring a buyer is charged at least a defined minimum per billing period, regardless of actual consumption.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Setting a minimum monthly charge on a usage-based offer to protect revenue floor even in low-usage periods",
+      "Communicating minimum spend requirements to buyers as part of the offer terms",
+    ],
+    context: ["Suger Console", "Price Model Configuration", "Offer Terms"],
+    related: [
+      { name: "Price Model", slug: "price-model" },
+      { name: "Metered Billing", slug: "metered-billing" },
+      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
+    ],
   },
   {
     name: "NetSuite Integration",
@@ -894,6 +2375,19 @@ export const terms = [
     def: "Suger's connection to Oracle NetSuite ERP, enabling ISVs to sync marketplace revenue, invoices, and entitlement data with their financial management system for automated reconciliation.",
     alias: "",
     source: "https://doc.suger.io/integrations/netsuite/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Syncing Suger marketplace revenue and invoice data into NetSuite for automated financial reconciliation",
+      "Eliminating manual ERP data entry by connecting Suger's billing and revenue layer to Oracle NetSuite",
+    ],
+    context: ["Suger Console", "NetSuite", "Finance Operations"],
+    related: [
+      { name: "Revenue", slug: "revenue" },
+      { name: "Invoice", slug: "invoice" },
+      { name: "Disbursement", slug: "disbursement" },
+    ],
   },
   {
     name: "Okta Single Sign-On (SSO) Integration",
@@ -901,6 +2395,19 @@ export const terms = [
     def: "Suger's Single Sign-On integration with Okta. Allows organizations to manage Suger Console access through their existing Okta identity provider, enforcing centralized authentication and access policies.",
     alias: "Related: Role-Based Access Control (RBAC), Suger Console",
     source: "https://doc.suger.io/integrations/okta/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Enforcing centralized authentication for Suger Console access via an existing Okta identity provider",
+      "Managing Suger team access through Okta SSO to align with enterprise identity governance policies",
+    ],
+    context: ["Suger Console", "Okta", "Identity Management"],
+    related: [
+      { name: "Role-Based Access Control (RBAC)", slug: "role-based-access-control-rbac" },
+      { name: "Organization", slug: "organization" },
+      { name: "Suger Console", slug: "suger-console" },
+    ],
   },
   {
     name: "Price Model",
@@ -909,6 +2416,19 @@ export const terms = [
     alias:
       "Sub-types: Basic, Tiered, Bulk, Volume, Percentage, Tiered Percentage, Matrix | Related: Billable Metric, Billable Dimension, Offer",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring how buyers are charged in a Suger offer — choosing between flat fee commit or consumption-based models",
+      "Selecting the right price model sub-type (Tiered, Volume, Matrix, etc.) for a specific pricing structure",
+    ],
+    context: ["Suger Console", "Offer Configuration"],
+    related: [
+      { name: "Billable Metric", slug: "billable-metric" },
+      { name: "Billable Dimension", slug: "billable-dimension" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "QuickBooks Integration",
@@ -916,6 +2436,19 @@ export const terms = [
     def: "Suger's connection to QuickBooks accounting software, enabling ISVs to sync invoices, payments, and revenue data from Suger into their QuickBooks instance for financial reporting.",
     alias: "",
     source: "https://doc.suger.io/integrations/quickbooks/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Syncing Suger invoices and revenue data into QuickBooks for automated financial reporting",
+      "Eliminating manual accounting data entry by connecting Suger to QuickBooks",
+    ],
+    context: ["Suger Console", "QuickBooks", "Finance Operations"],
+    related: [
+      { name: "Invoice", slug: "invoice" },
+      { name: "Revenue", slug: "revenue" },
+      { name: "NetSuite Integration", slug: "netsuite-integration" },
+    ],
   },
   {
     name: "Recurring Commit",
@@ -923,6 +2456,19 @@ export const terms = [
     def: "A flat fee price model in Suger that charges a buyer a fixed amount per billing period (quantity × rate). Supports prepay or postpay, and can be updated mid-contract — useful for per-seat pricing where seat count changes during the term.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring per-seat pricing in Suger where the seat count can be updated mid-contract as headcount changes",
+      "Using a recurring commit price model for monthly SaaS fees with prepay or postpay flexibility",
+    ],
+    context: ["Suger Console", "Price Model Configuration"],
+    related: [
+      { name: "Price Model", slug: "price-model" },
+      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
+      { name: "Billing Interval", slug: "billing-interval" },
+    ],
   },
   {
     name: "Revenue",
@@ -930,6 +2476,19 @@ export const terms = [
     def: "Suger's revenue tracking layer that generates per-entitlement revenue records and aggregated reports by product and buyer. Distinct from Disbursement — Revenue tracks what was earned; Disbursement tracks what was paid out by the marketplace.",
     alias: "Related: Disbursement, Invoice, Suger Analytics",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reviewing per-entitlement revenue records and aggregated reports by product in the Suger Console",
+      "Distinguishing earned revenue (Revenue) from actual marketplace payouts (Disbursement) in Suger reporting",
+    ],
+    context: ["Suger Console", "Revenue Dashboard"],
+    related: [
+      { name: "Disbursement", slug: "disbursement" },
+      { name: "Invoice", slug: "invoice" },
+      { name: "Suger Analytics", slug: "suger-analytics" },
+    ],
   },
   {
     name: "Salesforce App",
@@ -937,6 +2496,19 @@ export const terms = [
     def: "Suger's native Salesforce application that embeds marketplace entitlement data, co-sell referral status, and metering information directly inside Salesforce — beyond the standard CRM Integration's bi-directional sync.",
     alias: "",
     source: "https://doc.suger.io/integrations/salesforce/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Embedding live marketplace entitlement and co-sell data inside Salesforce opportunities without leaving the CRM",
+      "Giving sales teams real-time marketplace context on accounts directly within Salesforce",
+    ],
+    context: ["Salesforce", "Suger Console", "Co-sell Workflows"],
+    related: [
+      { name: "Salesforce Integration", slug: "salesforce-integration" },
+      { name: "CRM Integration", slug: "crm-integration" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "HubSpot App",
@@ -944,6 +2516,19 @@ export const terms = [
     def: "Suger's native HubSpot application that surfaces marketplace and co-sell data inside HubSpot deals and contacts, enabling sales teams to act on entitlement events without leaving their CRM.",
     alias: "",
     source: "https://doc.suger.io/integrations/hubspot/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Surfacing marketplace entitlement events and co-sell referral status inside HubSpot deals",
+      "Enabling sales teams to act on marketplace events without switching out of HubSpot",
+    ],
+    context: ["HubSpot", "Suger Console", "Co-sell Workflows"],
+    related: [
+      { name: "HubSpot Integration", slug: "hubspot-integration" },
+      { name: "CRM Integration", slug: "crm-integration" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "Service Quotas",
@@ -951,6 +2536,18 @@ export const terms = [
     def: "Suger-enforced limits on API request rates and resource counts per organization — such as the number of products, offers, or usage records that can be created. Quotas can be reviewed and increase requests submitted via the Suger Console.",
     alias: "",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reviewing current API rate limits and resource quotas for your Suger organization",
+      "Submitting a quota increase request when usage approaches limits on products, offers, or usage records",
+    ],
+    context: ["Suger Console", "API Rate Limits"],
+    related: [
+      { name: "Suger API Client", slug: "suger-api-client" },
+      { name: "Organization", slug: "organization" },
+    ],
   },
   {
     name: "Stripe Integration",
@@ -958,6 +2555,19 @@ export const terms = [
     def: "Suger's connection to Stripe for non-marketplace (direct) billing. When Stripe is selected as the billing partner on a product, Suger uses Stripe to collect payments, issue invoices, and deposit funds to the ISV's Stripe account.",
     alias: "",
     source: "https://doc.suger.io/integrations/stripe/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Enabling direct billing for buyers who don't transact through a cloud marketplace using Stripe as the payment processor",
+      "Configuring Suger to issue invoices and collect payments through Stripe for non-marketplace entitlements",
+    ],
+    context: ["Suger Console", "Stripe", "Direct Billing"],
+    related: [
+      { name: "Invoice", slug: "invoice" },
+      { name: "Payment", slug: "payment" },
+      { name: "Billing", slug: "billing" },
+    ],
   },
   {
     name: "Table Export",
@@ -965,6 +2575,19 @@ export const terms = [
     def: "A Suger feature that exports tabular data — entitlements, usage records, revenue — from Suger's database to external storage destinations such as Google Cloud Storage or BigQuery for custom reporting and data warehousing.",
     alias: "",
     source: "https://doc.suger.io/export/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Exporting Suger entitlement and revenue data to GCS or BigQuery for custom analytics and data warehousing",
+      "Building custom finance reports by piping Suger data exports to an existing data warehouse",
+    ],
+    context: ["Suger Console", "Google Cloud Storage", "Google BigQuery", "Data Warehousing"],
+    related: [
+      { name: "Google Cloud Storage Integration", slug: "google-cloud-storage-integration" },
+      { name: "Google BigQuery Integration", slug: "google-bigquery-integration" },
+      { name: "Suger Analytics", slug: "suger-analytics" },
+    ],
   },
   {
     name: "Tiered Pricing",
@@ -972,6 +2595,19 @@ export const terms = [
     def: "A usage metering price model where the cost per unit depends on which tier range the unit falls into. Each tier can have its own per-unit rate and optional flat fee. Lower tiers are charged at their own rate even when higher tiers are reached — contrast with Volume Pricing.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Pricing usage where each consumption tier has a distinct per-unit rate — lower tiers stay at their own price",
+      "Explaining tiered pricing to buyers so they understand how usage in each band is independently priced",
+    ],
+    context: ["Suger Console", "Price Model Configuration"],
+    related: [
+      { name: "Volume Pricing", slug: "volume-pricing" },
+      { name: "Price Model", slug: "price-model" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "Volume Pricing",
@@ -979,6 +2615,19 @@ export const terms = [
     def: "A usage metering price model where the total quantity purchased determines the per-unit rate applied to all units. Reaching a higher volume tier changes the price retroactively for the entire quantity — contrast with Tiered Pricing.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Incentivizing higher usage with volume discounts where hitting a tier retroactively reprices all units",
+      "Explaining to buyers how volume pricing differs from tiered pricing — all units get repriced when a volume threshold is hit",
+    ],
+    context: ["Suger Console", "Price Model Configuration"],
+    related: [
+      { name: "Tiered Pricing", slug: "tiered-pricing" },
+      { name: "Price Model", slug: "price-model" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "Bulk Pricing",
@@ -986,6 +2635,19 @@ export const terms = [
     def: "A Suger usage metering price model that charges usage in fixed bundles. If a buyer uses fewer units than a bundle size, they are billed for the full bundle. Usage above one bundle rolls into the next.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Pricing products in fixed unit bundles where partial bundle usage is still billed as a full bundle",
+      "Structuring a token or credit pack pricing model where buyers purchase in fixed increments",
+    ],
+    context: ["Suger Console", "Price Model Configuration"],
+    related: [
+      { name: "Price Model", slug: "price-model" },
+      { name: "Tiered Pricing", slug: "tiered-pricing" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "Percentage Pricing",
@@ -993,6 +2655,19 @@ export const terms = [
     def: "A Suger usage metering price model that charges a percentage of a value carried in the usage event — for example, a percentage of a transaction amount. Supports an optional flat fee per event.",
     alias: "",
     source: "https://doc.suger.io/price-model/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Charging a revenue-share or take-rate model where billing is a percentage of transaction value reported in usage events",
+      "Adding a flat fee per transaction on top of the percentage-based charge",
+    ],
+    context: ["Suger Console", "Price Model Configuration"],
+    related: [
+      { name: "Price Model", slug: "price-model" },
+      { name: "Billable Metric", slug: "billable-metric" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
   },
   {
     name: "AWS Partner Funding — AWS",
@@ -1001,6 +2676,19 @@ export const terms = [
     alias:
       "Related: Marketing Development Funds (MDF) — AWS, Migration Acceleration Program (MAP) — AWS, Partner Opportunity Acceleration (POA) — AWS, Proof of Concept (POC) Funding — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
+    useCases: [
+      "Submitting and tracking funding requests across MDF, MAP, POC, and PIF programs via Suger's Co-sell module",
+      "Understanding available AWS funding programs before engaging a PDM or using the AWS Partner Funding Portal",
+    ],
+    context: ["Suger Console", "AWS Partner Central", "Co-sell Module"],
+    related: [
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
+      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+    ],
   },
   {
     name: "Funding Wallet",
@@ -1008,6 +2696,19 @@ export const terms = [
     def: "A balance and budget tracker within Suger's Funding tab showing a partner's available funding balance and the history of submitted and approved funding requests from AWS.",
     alias: "",
     source: "https://doc.suger.io/funding/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Checking available AWS funding balance and request history from Suger's Funding tab without logging into AWS Partner Central",
+      "Tracking the status of submitted and approved AWS funding requests in one place alongside co-sell referrals",
+    ],
+    context: ["Suger Console", "AWS Partner Central", "Co-sell Module"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Benefit Allocation — AWS", slug: "benefit-allocation-—-aws" },
+      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+    ],
   },
   {
     name: "Partner Central 3.0 (PC3.0) — AWS",
@@ -1015,6 +2716,19 @@ export const terms = [
     def: "The latest version of AWS's partner portal. Required for access to the Funding Benefits API — ISVs must complete migration to PC3.0 before AWS Funding can be activated in Suger. Migration status is confirmed via the AWS Partner Manager.",
     alias: "",
     source: "https://aws.amazon.com/partners/partner-central/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Confirming PC3.0 migration status with your AWS PDM before activating Suger's AWS Funding integration",
+      "Accessing the Funding Benefits API for programmatic funding requests after completing PC3.0 migration",
+    ],
+    context: ["AWS Partner Central", "Suger Console", "AWS Co-sell Setup"],
+    related: [
+      { name: "Funding Benefits API — AWS", slug: "funding-benefits-api-—-aws" },
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+    ],
   },
   {
     name: "Funding Benefits API — AWS",
@@ -1022,6 +2736,19 @@ export const terms = [
     def: "The AWS Partner Central API endpoint enabling programmatic submission and tracking of funding requests. Only available after a partner's migration to Partner Central 3.0 is confirmed.",
     alias: "",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Programmatically submitting and tracking AWS funding requests through Suger's Co-sell integration after PC3.0 migration",
+      "Automating funding request workflows for MDF and POC programs via the Partner Central API",
+    ],
+    context: ["AWS Partner Central", "Suger Console", "API Integration"],
+    related: [
+      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "AWS ACE Integration", slug: "aws-ace-integration" },
+    ],
   },
   {
     name: "Marketing Development Funds (MDF) — AWS",
@@ -1030,6 +2757,19 @@ export const terms = [
     alias:
       "Related: AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Partner Opportunity Acceleration (POA) — AWS, Partner Initiative Funding (PIF) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Requesting reimbursement for demand generation activities (events, campaigns, ads) by submitting MDF claims with proof of performance through the AWS Partner Funding Portal",
+      "Stacking MDF benefits on top of an SCA to fund co-marketing activities aligned with joint business goals",
+    ],
+    context: ["AWS Partner Funding Portal", "AWS Partner Central", "Co-sell Programs"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Plan of Action (POA) — AWS", slug: "plan-of-action-poa-—-aws" },
+      { name: "Strategic Collaboration Agreement (SCA) — AWS", slug: "strategic-collaboration-agreement-sca-—-aws" },
+    ],
   },
   {
     name: "Migration Acceleration Program (MAP) — AWS",
@@ -1038,6 +2778,19 @@ export const terms = [
     alias:
       "Related: AWS Partner Funding — AWS, ISV Workload Migration Program (WMP) — AWS",
     source: "https://aws.amazon.com/migration-acceleration-program/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
+    useCases: [
+      "Applying for MAP funding to offset migration and modernization project costs for customers moving workloads to AWS",
+      "Claiming MAP credits for generative AI or agentic feature builds included in a modernization engagement (post-2026 expansion)",
+    ],
+    context: ["AWS Partner Central", "AWS Partner Funding Portal", "Migration Projects"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "ISV Workload Migration Program (WMP) — AWS", slug: "isv-workload-migration-program-wmp-—-aws" },
+      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+    ],
   },
   {
     name: "AWS Partner Funding Portal (APFP) — AWS",
@@ -1045,6 +2798,19 @@ export const terms = [
     def: "The AWS portal where partners submit, track, and manage fund requests across all funding programs (MDF, MAP, POC, PIF, etc.). Accessible via the Funding tab in AWS Partner Central.",
     alias: "",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Submitting fund requests for MDF, MAP, POC, PIF, and Innovation Sandbox through a single portal",
+      "Tracking the status of all funding requests across AWS programs without contacting a PDM for routine submissions",
+    ],
+    context: ["AWS Partner Central", "AWS Funding Programs"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
+    ],
   },
   {
     name: "Benefit Allocation — AWS",
@@ -1052,6 +2818,19 @@ export const terms = [
     def: "An approved funding grant issued to a partner through the AWS Benefits API. Can take the form of cash disbursements, AWS credits, consumable wallets, access grants, or recognition. Each allocation has a lifecycle status tracked via the Partner Central API.",
     alias: "",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Tracking AWS-approved funding allocations — cash, credits, or access grants — received through the Partner Central API in Suger",
+      "Monitoring the lifecycle status of benefit allocations submitted via Suger's funding integration",
+    ],
+    context: ["AWS Partner Central", "Suger Console", "Funding Benefits API — AWS"],
+    related: [
+      { name: "Funding Benefits API — AWS", slug: "funding-benefits-api-—-aws" },
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Funding Wallet", slug: "funding-wallet" },
+    ],
   },
   {
     name: "Amazon Payee Central — AWS",
@@ -1059,6 +2838,19 @@ export const terms = [
     def: "Amazon's payment registration system where partners must set up bank account and tax information before receiving any cash-based AWS funding benefits (MDF, MAP, etc.). Required prerequisite for cash disbursements.",
     alias: "",
     source: "https://payee.amazon.com/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Setting up bank account and tax information in Amazon Payee Central before receiving cash AWS funding disbursements",
+      "Completing Payee Central registration as a prerequisite for MDF, MAP, and POA cash reimbursements",
+    ],
+    context: ["AWS Partner Central", "AWS Funding Programs", "Payment Setup"],
+    related: [
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+    ],
   },
   {
     name: "Proof of Concept (POC) Funding  — AWS",
@@ -1067,6 +2859,19 @@ export const terms = [
     alias:
       "Part of: Partner Opportunity Acceleration (POA) — AWS | Related: AWS Partner Funding — AWS, AWS Partner Funding Portal (APFP) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Requesting POC funding to offset up to 10% of proof-of-concept build costs (max $25K) for an ACE opportunity at Technical Validation stage or beyond",
+      "Applying for POC funding through the AWS Partner Funding Portal as part of the Partner Opportunity Acceleration program",
+    ],
+    context: ["AWS Partner Funding Portal", "ACE Opportunities", "AWS Partner Central"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+    ],
   },
   {
     name: "Partner Initiative Funding (PIF) — AWS",
@@ -1075,6 +2880,19 @@ export const terms = [
     alias:
       "Related: AWS Partner Funding — AWS, Marketing Development Funds (MDF) — AWS, AWS Partner Funding Portal (APFP) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Accessing PIF template-based funds without PDM involvement for eligible initiative-tied activities",
+      "Submitting a PIF request via the APFP to unlock funding tied to a specific partner program agreement",
+    ],
+    context: ["AWS Partner Funding Portal", "AWS Partner Central", "Partner Agreements"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+    ],
   },
   {
     name: "ISV Workload Migration Program (WMP) — AWS",
@@ -1083,6 +2901,19 @@ export const terms = [
     alias:
       "Related: AWS Partner Funding — AWS, Migration Acceleration Program (MAP) — AWS, Foundational Technical Review (FTR) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-workload-migration/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Applying for WMP credits and go-to-market support to migrate customer workloads from on-premises to SaaS on AWS",
+      "Qualifying for post-2026 WMP direct credit disbursement to end customers by meeting FTR and Validated stage requirements",
+    ],
+    context: ["AWS Partner Central", "AWS Co-sell Programs", "SaaS Migration Projects"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Migration Acceleration Program (MAP) — AWS", slug: "migration-acceleration-program-map-—-aws" },
+      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+    ],
   },
   {
     name: "AWS Promotional Credits — AWS",
@@ -1090,6 +2921,19 @@ export const terms = [
     def: "Non-cash credits applied to an AWS account to offset usage costs. Awarded through programs like Innovation Sandbox, ISV WMP, and MAP. Not redeemable for cash. Subject to AWS Promotional Credit Terms.",
     alias: "",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Receiving AWS Promotional Credits through programs like Innovation Sandbox, WMP, or MAP to offset AWS infrastructure costs during development or migration",
+      "Distinguishing AWS Promotional Credits (non-cash, non-redeemable) from cash MDF reimbursements when planning funding strategy",
+    ],
+    context: ["AWS Partner Central", "AWS Funding Programs"],
+    related: [
+      { name: "Innovation Sandbox (APN) — AWS", slug: "innovation-sandbox-apn-—-aws" },
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS", slug: "marketplace-private-offer-promotion-program-mpopp-—-aws" },
+    ],
   },
   {
     name: "Innovation Sandbox (APN) — AWS",
@@ -1098,6 +2942,19 @@ export const terms = [
     alias:
       "Related: AWS Partner Funding — AWS, Marketing Development Funds (MDF) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Applying for AWS Promotional Credits to offset development and testing costs during solution build-out via the APFP",
+      "Accessing Innovation Sandbox MDF Wallets alongside standard credits for Global Startup Program partners",
+    ],
+    context: ["AWS Partner Funding Portal", "AWS Partner Central", "Solution Development"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "AWS Promotional Credits — AWS", slug: "aws-promotional-credits-—-aws" },
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+    ],
   },
   {
     name: "Marketplace Commerce Analytics Service (MCAS) — AWS",
@@ -1106,6 +2963,19 @@ export const terms = [
     alias: "",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring MCAS as part of Suger's AWS integration setup to pull marketplace usage, subscription, and billing data into Suger",
+      "Accessing AWS Marketplace business data programmatically via the SDK for custom analytics and reporting pipelines",
+    ],
+    context: ["AWS Marketplace", "Suger Console", "AWS Integration Setup"],
+    related: [
+      { name: "Marketplace Data Feed Service (MDFS) — AWS", slug: "marketplace-data-feed-service-mdfs-—-aws" },
+      { name: "AWS Partner Network Integration (API)", slug: "aws-partner-network-integration-api" },
+      { name: "Suger Analytics", slug: "suger-analytics" },
+    ],
   },
   {
     name: "Marketplace Data Feed Service (MDFS) — AWS",
@@ -1114,6 +2984,19 @@ export const terms = [
     alias: "",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-service.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Enabling MDFS alongside MCAS to feed complete buyer data (company, address, email domain) into Suger's entitlement records",
+      "Using MDFS for structured product billing data as part of Suger's AWS Marketplace integration",
+    ],
+    context: ["AWS Marketplace", "Suger Console", "AWS Integration Setup"],
+    related: [
+      { name: "Marketplace Commerce Analytics Service (MCAS) — AWS", slug: "marketplace-commerce-analytics-service-mcas-—-aws" },
+      { name: "AWS Partner Network Integration (API)", slug: "aws-partner-network-integration-api" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "Plan of Action (POA) — AWS",
@@ -1122,6 +3005,19 @@ export const terms = [
     alias:
       "Related: Marketing Development Funds (MDF) — AWS | See also: Partner Opportunity Acceleration (POA) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Drafting a Plan of Action document with marketing activity details, timeline, and budget to accompany an MDF fund request",
+      "Distinguishing the POA (MDF documentation requirement) from Partner Opportunity Acceleration (POA), which share the same acronym",
+    ],
+    context: ["AWS Partner Funding Portal", "MDF Claims", "AWS Partner Central"],
+    related: [
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
+      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+    ],
   },
   {
     name: "Partner Opportunity Acceleration (POA) — AWS",
@@ -1130,6 +3026,19 @@ export const terms = [
     alias:
       "Related: Proof of Concept (POC) Funding — AWS, Migration Acceleration Program (MAP) — AWS, AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Amazon Payee Central — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
+    useCases: [
+      "Applying for POA cash reimbursement or credits to offset POC or migration project costs at APN Select tier or above",
+      "Ensuring POA funding benefits are applied to reduce customer costs — not retained as partner margin — when submitting a POA claim",
+    ],
+    context: ["AWS Partner Central", "AWS Partner Funding Portal", "Co-sell Projects"],
+    related: [
+      { name: "Proof of Concept (POC) Funding  — AWS", slug: "proof-of-concept-poc-funding-—-aws" },
+      { name: "Migration Acceleration Program (MAP) — AWS", slug: "migration-acceleration-program-map-—-aws" },
+      { name: "Amazon Payee Central — AWS", slug: "amazon-payee-central-—-aws" },
+    ],
   },
   {
     name: "Funding Dashboard — AWS",
@@ -1137,6 +3046,19 @@ export const terms = [
     def: "A native AWS Partner Central view providing real-time visibility into fund allocation, utilization, and performance metrics across all funding programs. Also mirrored in Suger's Funding tab.",
     alias: "",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Monitoring fund allocation, utilization, and performance metrics across all AWS funding programs from Partner Central or Suger",
+      "Reviewing funding request history and approval status in real time from the Suger Co-sell module's Funding tab",
+    ],
+    context: ["AWS Partner Central", "Suger Console", "Co-sell Module"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Funding Wallet", slug: "funding-wallet" },
+      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+    ],
   },
   {
     name: "Training & Certification Funding — AWS",
@@ -1144,6 +3066,19 @@ export const terms = [
     def: "An AWS funding benefit offering discounted training to help partner teams prepare for AWS certification exams. Accessible via the Funding tab in AWS Partner Central.",
     alias: "",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Accessing discounted AWS certification training for partner teams via the Funding tab in AWS Partner Central",
+      "Budgeting for team upskilling using AWS Training & Certification Funding as part of overall partner program benefits",
+    ],
+    context: ["AWS Partner Central", "Partner Programs"],
+    related: [
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+    ],
   },
   {
     name: "Strategic Collaboration Agreement (SCA) — AWS",
@@ -1151,6 +3086,19 @@ export const terms = [
     def: "A formal, multi-year agreement between AWS and a select partner — typically Premier Tier — committing both sides to joint business goals across Build-Market-Sell-Grow motions: co-sell targets, go-to-market investment, training, and funding. Anchored in outcome-driven business plans with defined metrics and milestones. MDF can stack on top of SCA benefits.",
     alias: "",
     source: "https://aws.amazon.com/partners/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
+    useCases: [
+      "Negotiating an SCA with AWS to formalize multi-year co-sell targets, joint GTM investment, and access to stacked MDF benefits",
+      "Leveraging SCA commitments and defined milestones to align AWS field engagement and funding prioritization",
+    ],
+    context: ["AWS Partner Central", "Premier Partner Programs", "Co-sell Strategy"],
+    related: [
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "Partner Development Manager (PDM) — AWS", slug: "partner-development-manager-pdm-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+    ],
   },
   {
     name: "SaaS Co-sell Benefit (SCB) — AWS",
@@ -1158,6 +3106,19 @@ export const terms = [
     def: "An AWS program where AWS sales reps earn quota retirement credit for co-selling SaaS/PaaS solutions transacted as private offers in AWS Marketplace. Incentivizes AWS sellers to prioritize ISV partners. Available to ISV Accelerate partners.",
     alias: "",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales"],
+    useCases: [
+      "Understanding why AWS sales reps are motivated to co-sell your product — SCB grants them quota retirement credit for co-sold SaaS private offers",
+      "Ensuring your product is ISV Accelerate eligible to unlock SCB and make it financially compelling for AWS sellers to prioritize your deals",
+    ],
+    context: ["AWS Marketplace", "ISV Accelerate Program", "Co-sell Motions"],
+    related: [
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "Quota Retirement — AWS", slug: "quota-retirement-—-aws" },
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+    ],
   },
   {
     name: "Quota Retirement — AWS",
@@ -1165,6 +3126,19 @@ export const terms = [
     def: "When an AWS seller earns credit toward their sales quota for a deal transacted through AWS Marketplace. The SCB program grants this to AWS reps on co-sold SaaS private offers — the core mechanic that motivates AWS sellers to co-sell your product.",
     alias: "",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales"],
+    useCases: [
+      "Explaining to AWS sellers how transacting through marketplace private offers earns them quota retirement via the SCB program",
+      "Using quota retirement as a selling point when positioning ISV Accelerate participation to AWS field teams",
+    ],
+    context: ["ISV Accelerate Program", "AWS Field Sales", "Co-sell Conversations"],
+    related: [
+      { name: "SaaS Co-sell Benefit (SCB) — AWS", slug: "saas-co-sell-benefit-scb-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Partner Development Manager (PDM) — AWS",
@@ -1172,6 +3146,19 @@ export const terms = [
     def: "The AWS-assigned contact responsible for managing a partner's relationship with AWS. Helps with APN program navigation, SCA setup, co-sell strategy, and funding access.",
     alias: "",
     source: "https://aws.amazon.com/partners/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Working with your PDM to navigate APN program tiers, confirm PC3.0 migration, and unlock ISV Accelerate benefits",
+      "Engaging your PDM to initiate SCA negotiations, co-sell strategy sessions, and priority funding conversations",
+    ],
+    context: ["AWS Partner Central", "APN Relationship Management"],
+    related: [
+      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "Strategic Collaboration Agreement (SCA) — AWS", slug: "strategic-collaboration-agreement-sca-—-aws" },
+    ],
   },
   {
     name: "Private Pricing Agreement (PPA) — AWS",
@@ -1179,6 +3166,19 @@ export const terms = [
     def: "AWS's committed spend program for enterprises — essentially the same as EDP. A negotiated agreement where a customer commits to a minimum AWS spend over 1–3 years in exchange for discounts. Marketplace transactable purchases count toward PPA drawdown. Can be AWS-led or Partner-led.",
     alias: "Also known as: EDP (Enterprise Discount Program)",
     source: "https://aws.amazon.com/pricing/enterprise/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["Enterprise Buyers", "ISVs / Sellers", "AWS Sales"],
+    useCases: [
+      "Positioning transactable marketplace listings to enterprise buyers under a PPA to enable committed spend drawdown",
+      "Understanding PPA as the enterprise committed spend mechanism that powers EDP drawdown for AWS Marketplace purchases",
+    ],
+    context: ["AWS Enterprise Sales", "AWS Marketplace", "Committed Spend Motions"],
+    related: [
+      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      { name: "Transactable Offer", slug: "transactable-offer" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Reseller Private Offer Plan (RPOP) — GCP",
@@ -1188,6 +3188,19 @@ export const terms = [
       "AWS equivalent: Resale Authorization — AWS | Related: Marketplace Channel Private Offer (MCPO) — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/resellers/reseller-private-offer-plans",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Creating a single-use or multi-use RPOP in Suger to authorize a GCP reseller to create private offers with an ISV-defined wholesale discount",
+      "Managing the full RPOP lifecycle — creation, reseller acceptance, offer generation, and entitlement tracking — from Suger or Salesforce",
+    ],
+    context: ["GCP Marketplace", "Suger Console", "Channel Programs"],
+    related: [
+      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      { name: "Partner Sales Console — GCP", slug: "partner-sales-console-—-gcp" },
+    ],
   },
   {
     name: "Reseller Contract (RCMP) — AWS",
@@ -1197,6 +3210,19 @@ export const terms = [
       "Related: Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Attaching the RCMP standard reseller contract to a Resale Authorization to define the ISV–partner relationship in a CPPO transaction",
+      "Using RCMP instead of a custom contract to reduce legal overhead for channel partner onboarding on AWS Marketplace",
+    ],
+    context: ["AWS Marketplace", "Channel Programs", "Resale Authorization"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      { name: "Seller of Record", slug: "seller-of-record" },
+    ],
   },
   {
     name: "Partner Sales Console — GCP",
@@ -1205,6 +3231,19 @@ export const terms = [
     alias: "",
     source:
       "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["Channel Partners", "Distributors"],
+    useCases: [
+      "Accessing RPOP plans from ISVs in the Partner Sales Console to create private offers for end customers on GCP Marketplace",
+      "Managing reseller orders and tracking offer acceptance from GCP's reseller-facing portal",
+    ],
+    context: ["GCP Marketplace", "Channel Programs", "Reseller Workflows"],
+    related: [
+      { name: "Reseller Private Offer Plan (RPOP) — GCP", slug: "reseller-private-offer-plan-rpop-—-gcp" },
+      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      { name: "Producer Portal — GCP", slug: "producer-portal-—-gcp" },
+    ],
   },
   {
     name: "Selling Authorization — AWS",
@@ -1214,6 +3253,19 @@ export const terms = [
       "Also called: Resale Authorization — AWS, Opportunity (in AWS API docs)",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Creating a Selling Authorization (Resale Authorization) in AMMP to authorize a channel partner to create a CPPO for a specific buyer",
+      "Tracking the status of a Selling Authorization — from Authorized through Consumed or Expired — across multiple partner transactions",
+    ],
+    context: ["AWS Marketplace", "AMMP (AWS Marketplace Management Portal)", "Channel Programs"],
+    related: [
+      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "AWS Marketplace Management Portal (AMMP) — AWS", slug: "aws-marketplace-management-portal-ammp-—-aws" },
+    ],
   },
   {
     name: "Marketplace Channel Private Offer (MCPO) — GCP",
@@ -1223,6 +3275,19 @@ export const terms = [
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | Azure equivalent: Multiparty Private Offer (MPO) — Azure",
     source:
       "https://cloud.google.com/marketplace/docs/partners/resellers/overview",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Enterprise Buyers"],
+    useCases: [
+      "Transacting through a GCP reseller using an MCPO to allow committed spend (CUD) drawdown up to 25% of total customer commitment",
+      "Enabling a reseller to mark up an ISV's wholesale price and create a customized private offer for an end customer on GCP Marketplace",
+    ],
+    context: ["GCP Marketplace", "Channel Programs", "Committed Spend (CUD)"],
+    related: [
+      { name: "Reseller Private Offer Plan (RPOP) — GCP", slug: "reseller-private-offer-plan-rpop-—-gcp" },
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+    ],
   },
   {
     name: "Express Private Offer — AWS",
@@ -1232,6 +3297,19 @@ export const terms = [
       "Related: Private Offer, Agreement-Based Offer (ABO) — AWS, MPOPP (Marketplace Private Offer Promotion Program)",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/express-private-offers.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Configuring a rate card for Express Private Offers so AWS can automatically generate and deliver personalized offers to qualified buyers without manual negotiation",
+      "Accelerating deal velocity by enabling buyers to receive custom-priced private offers in minutes for SaaS Contract products",
+    ],
+    context: ["AWS Marketplace", "Private Offer Flows", "AI-Powered Features"],
+    related: [
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
+      { name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS", slug: "marketplace-private-offer-promotion-program-mpopp-—-aws" },
+    ],
   },
   {
     name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
@@ -1240,6 +3318,19 @@ export const terms = [
     alias:
       "Related: AWS Promotional Credits — AWS, Marketing Development Funds (MDF) — AWS, Express Private Offer — AWS, AWS Partner Funding Portal (APFP) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Enrolling in MPOPP to offer buyers AWS Promotional Credits as an incentive when accepting a private offer — accelerating deal close",
+      "Submitting a self-service MPOPP request via the AWS Partner Funding Portal to trigger next-business-day credit delivery to the buyer",
+    ],
+    context: ["AWS Partner Funding Portal", "Private Offer Flows", "Co-sell Incentives"],
+    related: [
+      { name: "AWS Promotional Credits — AWS", slug: "aws-promotional-credits-—-aws" },
+      { name: "Express Private Offer — AWS", slug: "express-private-offer-—-aws" },
+      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+    ],
   },
   {
     name: "Multi-Product Solution — AWS",
@@ -1249,6 +3340,19 @@ export const terms = [
       "Related: Listing, Private Offer, Seller of Record, Channel Partner (CP)",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-as-a-seller.html",
+    difficulty: "advanced",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Enterprise Buyers"],
+    useCases: [
+      "Bundling multiple products from multiple providers into a single purchasable AWS Marketplace solution with one seller of record and one procurement flow",
+      "Participating as a component provider in a Multi-Product Solution where a channel partner acts as the seller of record for the bundle",
+    ],
+    context: ["AWS Marketplace", "Bundled Solutions", "Channel Programs"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Seller of Record", slug: "seller-of-record" },
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+    ],
   },
   {
     name: "Agent Mode — AWS",
@@ -1256,6 +3360,19 @@ export const terms = [
     def: "An AI-powered conversational buyer discovery experience on AWS Marketplace (launched Nov 2025). Buyers describe their needs in natural language, ask follow-up questions, upload requirements documents, and compare products side-by-side. Can generate downloadable procurement proposals. Also accessible via MCP-compatible AI applications.",
     alias: "Related: Listing, AWS Marketplace — AWS",
     source: "https://aws.amazon.com/marketplace/",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["Enterprise Buyers", "ISVs / Sellers"],
+    useCases: [
+      "Helping buyers discover and compare AWS Marketplace products using natural language queries, document uploads, and AI-generated procurement proposals",
+      "Optimizing listing content and metadata to surface well in Agent Mode's AI-powered recommendations to enterprise buyers",
+    ],
+    context: ["AWS Marketplace", "Buyer Discovery", "AI-Powered Features"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Resale-Enabled Offer — Azure",
@@ -1265,6 +3382,19 @@ export const terms = [
       "Related: Multiparty Private Offer (MPO) — Azure, Azure Consumption Commitment (MACC) — Azure, Cloud Solution Provider (CSP) — Azure, Microsoft Marketplace — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/multiparty-private-offers-for-isvs",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Enterprise Buyers"],
+    useCases: [
+      "Designating authorized resellers by geography on a Resale-Enabled Offer to enable MACC drawdown for channel-transacted purchases",
+      "Expanding Azure channel motion alongside MPO — Resale-Enabled Offers provide geographic-based partner authorization without a buyer-specific private offer",
+    ],
+    context: ["Microsoft Marketplace", "Azure Channel Programs", "Partner Center — Azure"],
+    related: [
+      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
+    ],
   },
   {
     name: "AWS ACE Integration",
@@ -1273,6 +3403,19 @@ export const terms = [
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, Funding Benefits API — AWS, Partner Central 3.0 (PC3.0) — AWS",
     source: "https://doc.suger.io/integrations/aws-ace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Setting up Suger's AWS ACE Integration to bi-directionally sync co-sell referrals and funding requests with AWS Partner Central",
+      "Using the ACE integration to manage ACE opportunities, submit funding requests, and track pipeline data without switching to AWS Partner Central",
+    ],
+    context: ["Suger Console", "AWS Partner Central", "Co-sell Workflows"],
+    related: [
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      { name: "Funding Benefits API — AWS", slug: "funding-benefits-api-—-aws" },
+      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+    ],
   },
   {
     name: "AWS Partner Network Integration (S3)",
@@ -1281,6 +3424,19 @@ export const terms = [
     alias:
       "Related: Marketplace Commerce Analytics Service (MCAS) — AWS, Marketplace Data Feed Service (MDFS) — AWS, AWS Partner Network Integration (API)",
     source: "https://doc.suger.io/integrations/aws-marketplace/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Migrating from the legacy S3-based AWS Partner Network integration to the API-based integration for improved reliability",
+      "Understanding which MCAS and MDFS data flows are affected when transitioning from S3 to API-based integration in Suger",
+    ],
+    context: ["Suger Console", "AWS Integration Setup", "Legacy Integrations"],
+    related: [
+      { name: "AWS Partner Network Integration (API)", slug: "aws-partner-network-integration-api" },
+      { name: "Marketplace Commerce Analytics Service (MCAS) — AWS", slug: "marketplace-commerce-analytics-service-mcas-—-aws" },
+      { name: "Marketplace Data Feed Service (MDFS) — AWS", slug: "marketplace-data-feed-service-mdfs-—-aws" },
+    ],
   },
   {
     name: "AWS Partner Network Integration (API)",
@@ -1289,6 +3445,19 @@ export const terms = [
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, Marketplace Commerce Analytics Service (MCAS) — AWS, Marketplace Data Feed Service (MDFS) — AWS, AWS Partner Funding Portal (APFP)",
     source: "https://doc.suger.io/integrations/aws-marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring the API-based AWS integration in Suger to replace the legacy S3 integration and unlock co-sell, funding, and reporting features",
+      "Using the AWS Partner Network API integration to pull MCAS/MDFS data and sync ACE opportunities into Suger automatically",
+    ],
+    context: ["Suger Console", "AWS Integration Setup", "AWS Partner Central"],
+    related: [
+      { name: "AWS ACE Integration", slug: "aws-ace-integration" },
+      { name: "Marketplace Commerce Analytics Service (MCAS) — AWS", slug: "marketplace-commerce-analytics-service-mcas-—-aws" },
+      { name: "AWS Partner Network Integration (S3)", slug: "aws-partner-network-integration-s3" },
+    ],
   },
   {
     name: "Lago Integration",
@@ -1296,6 +3465,19 @@ export const terms = [
     def: "Suger's connection to Lago, an open-source usage-based billing engine. Automates the flow of metered usage data from Lago directly to all connected cloud marketplaces via Suger's unified metering API — eliminating manual reporting.",
     alias: "Related: Usage Metering, Metronome Integration, Orb Integration",
     source: "https://doc.suger.io/integrations/lago/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Lago to Suger to automatically forward metered usage data to AWS, Azure, and GCP Marketplace without manual reporting",
+      "Replacing a custom metering pipeline by routing Lago consumption events through Suger's unified marketplace metering API",
+    ],
+    context: ["Suger Console", "Lago", "Usage Metering"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Metronome Integration", slug: "metronome-integration" },
+      { name: "Orb Integration", slug: "orb-integration" },
+    ],
   },
   {
     name: "Metronome Integration",
@@ -1303,6 +3485,19 @@ export const terms = [
     def: "Suger's connection to Metronome, a usage-based billing platform. Automatically syncs consumption data from Metronome to cloud marketplace metering endpoints (AWS, Azure, GCP) through Suger.",
     alias: "Related: Usage Metering, Lago Integration, Orb Integration",
     source: "https://doc.suger.io/integrations/metronome/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Metronome to Suger to automatically sync consumption data to cloud marketplace metering endpoints",
+      "Eliminating manual marketplace usage reporting by piping Metronome billing events through Suger",
+    ],
+    context: ["Suger Console", "Metronome", "Usage Metering"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Lago Integration", slug: "lago-integration" },
+      { name: "Orb Integration", slug: "orb-integration" },
+    ],
   },
   {
     name: "Orb Integration",
@@ -1310,6 +3505,19 @@ export const terms = [
     def: "Suger's connection to Orb, a billing infrastructure platform. Pipes metered usage from Orb to all cloud marketplaces automatically via Suger, supporting complex pricing models including tiered, volume, and matrix pricing.",
     alias: "Related: Usage Metering, Metronome Integration, Lago Integration",
     source: "https://doc.suger.io/integrations/orb/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Orb to Suger to automatically forward usage events with complex pricing models (tiered, volume, matrix) to all marketplace metering APIs",
+      "Replacing manual usage reporting by routing Orb billing data through Suger's unified metering layer",
+    ],
+    context: ["Suger Console", "Orb", "Usage Metering"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Metronome Integration", slug: "metronome-integration" },
+      { name: "Lago Integration", slug: "lago-integration" },
+    ],
   },
   {
     name: "Salesforce Integration",
@@ -1317,6 +3525,19 @@ export const terms = [
     def: "Suger's bi-directional connection to Salesforce CRM. Syncs marketplace entitlements, private offer status, co-sell referrals, and metering data into Salesforce opportunities and accounts. Also available as the Suger Salesforce App for a deeper embedded experience.",
     alias: "Related: Salesforce App, CRM Integration, HubSpot Integration",
     source: "https://doc.suger.io/integrations/salesforce/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Syncing Suger marketplace entitlements, private offer status, and co-sell referrals into Salesforce opportunities for unified CRM visibility",
+      "Using Salesforce Integration as the foundation for the Suger Salesforce App's deeper embedded marketplace experience",
+    ],
+    context: ["Salesforce", "Suger Console", "CRM Workflows"],
+    related: [
+      { name: "Salesforce App", slug: "salesforce-app" },
+      { name: "CRM Integration", slug: "crm-integration" },
+      { name: "HubSpot Integration", slug: "hubspot-integration" },
+    ],
   },
   {
     name: "HubSpot Integration",
@@ -1324,6 +3545,19 @@ export const terms = [
     def: "Suger's bi-directional connection to HubSpot CRM. Syncs marketplace deals, entitlement events, and co-sell referral status into HubSpot. Also available as the Suger HubSpot App for a deeper embedded experience.",
     alias: "Related: HubSpot App, CRM Integration, Salesforce Integration",
     source: "https://doc.suger.io/integrations/hubspot/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Syncing marketplace entitlement events and co-sell referral status from Suger into HubSpot deals for real-time CRM visibility",
+      "Using HubSpot Integration as the foundation for the Suger HubSpot App's embedded marketplace experience inside deals",
+    ],
+    context: ["HubSpot", "Suger Console", "CRM Workflows"],
+    related: [
+      { name: "HubSpot App", slug: "hubspot-app" },
+      { name: "CRM Integration", slug: "crm-integration" },
+      { name: "Salesforce Integration", slug: "salesforce-integration" },
+    ],
   },
   {
     name: "Slack Integration",
@@ -1331,6 +3565,19 @@ export const terms = [
     def: "Suger's connection to Slack that delivers real-time marketplace event notifications — new entitlements, cancellations, usage alerts, and co-sell updates — to designated Slack channels in your workspace.",
     alias: "Related: Webhook, Email Notification, Microsoft Teams Integration",
     source: "https://doc.suger.io/integrations/slack/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Routing real-time marketplace event notifications — new entitlements, cancellations, usage alerts — to specific Slack channels",
+      "Keeping sales and ops teams informed of marketplace activity without polling the Suger console",
+    ],
+    context: ["Suger Console", "Slack Workspace", "Notification Settings"],
+    related: [
+      { name: "Microsoft Teams Integration", slug: "microsoft-teams-integration" },
+      { name: "Email Notification", slug: "email-notification" },
+      { name: "Webhook", slug: "webhook" },
+    ],
   },
   {
     name: "Microsoft Teams Integration",
@@ -1338,6 +3585,19 @@ export const terms = [
     def: "Suger's connection to Microsoft Teams that pushes real-time marketplace event notifications and alerts to designated Teams channels. Mirrors Slack Integration functionality for Microsoft-centric organizations.",
     alias: "Related: Slack Integration, Webhook, Email Notification",
     source: "https://doc.suger.io/integrations/microsoft-teams/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Routing marketplace event notifications to Microsoft Teams channels for organizations standardized on Microsoft 365",
+      "Replacing or complementing Slack Integration with Microsoft Teams notifications for real-time marketplace event alerting",
+    ],
+    context: ["Suger Console", "Microsoft Teams", "Notification Settings"],
+    related: [
+      { name: "Slack Integration", slug: "slack-integration" },
+      { name: "Email Notification", slug: "email-notification" },
+      { name: "Webhook", slug: "webhook" },
+    ],
   },
   {
     name: "Gmail Integration",
@@ -1346,6 +3606,19 @@ export const terms = [
     alias:
       "Related: User Gmail Integration, Microsoft Outlook Integration, Workflow",
     source: "https://doc.suger.io/integrations/gmail/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting an organization Gmail account to Suger to send automated email communications triggered by marketplace events",
+      "Using org-level Gmail Integration to handle buyer onboarding or entitlement notification emails through Suger workflows",
+    ],
+    context: ["Suger Console", "Gmail", "Workflow Automation"],
+    related: [
+      { name: "User Gmail Integration", slug: "user-gmail-integration" },
+      { name: "Microsoft Outlook Integration", slug: "microsoft-outlook-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "User Gmail Integration",
@@ -1353,6 +3626,19 @@ export const terms = [
     def: "Suger's user-level Gmail connection (distinct from the org-level Gmail Integration). Allows individual Suger users to connect their personal Gmail account for email-based actions within Suger workflows.",
     alias: "Related: Gmail Integration, User Microsoft Outlook Integration",
     source: "https://doc.suger.io/integrations/gmail/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting a personal Gmail account to Suger to enable individual user email actions inside Suger workflows",
+      "Distinguishing user-level Gmail access from the org-level Gmail Integration when configuring email automation in Suger",
+    ],
+    context: ["Suger Console", "Gmail", "User-Level Settings"],
+    related: [
+      { name: "Gmail Integration", slug: "gmail-integration" },
+      { name: "User Microsoft Outlook Integration", slug: "user-microsoft-outlook-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "Google Drive Integration",
@@ -1360,6 +3646,19 @@ export const terms = [
     def: "Suger's connection to Google Drive that enables creating, deleting, updating, and sharing files and folders programmatically — used for storing marketplace reports, contracts, and exported data within Suger workflows.",
     alias: "Related: Table Export, Google Cloud Storage Integration",
     source: "https://doc.suger.io/integrations/google-drive/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Automatically storing marketplace reports, contracts, or exported data in Google Drive folders via Suger workflows",
+      "Programmatically managing Google Drive files — creating, updating, sharing — as part of marketplace event automation",
+    ],
+    context: ["Suger Console", "Google Drive", "Workflow Automation"],
+    related: [
+      { name: "Table Export", slug: "table-export" },
+      { name: "Google Cloud Storage Integration", slug: "google-cloud-storage-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "Google Cloud Storage Integration",
@@ -1368,6 +3667,19 @@ export const terms = [
     alias:
       "Related: Table Export, Google BigQuery Integration, Google Drive Integration",
     source: "https://doc.suger.io/integrations/google-cloud-storage/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring a GCS bucket as a Table Export destination to receive Suger entitlement, usage, and revenue data for custom reporting",
+      "Piping Suger data exports into GCS as the first step of a data warehousing or analytics pipeline",
+    ],
+    context: ["Suger Console", "Google Cloud Storage", "Data Warehousing"],
+    related: [
+      { name: "Table Export", slug: "table-export" },
+      { name: "Google BigQuery Integration", slug: "google-bigquery-integration" },
+      { name: "Suger Analytics", slug: "suger-analytics" },
+    ],
   },
   {
     name: "Google BigQuery Integration",
@@ -1376,6 +3688,19 @@ export const terms = [
     alias:
       "Related: Table Export, Google Cloud Storage Integration, Suger Analytics",
     source: "https://doc.suger.io/integrations/google-bigquery/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Syncing Suger marketplace data into a BigQuery data warehouse for advanced analytics and custom revenue reporting",
+      "Querying or updating BigQuery tables as part of Suger automation workflows",
+    ],
+    context: ["Suger Console", "Google BigQuery", "Data Warehousing"],
+    related: [
+      { name: "Table Export", slug: "table-export" },
+      { name: "Google Cloud Storage Integration", slug: "google-cloud-storage-integration" },
+      { name: "Suger Analytics", slug: "suger-analytics" },
+    ],
   },
   {
     name: "Microsoft Outlook Integration",
@@ -1384,6 +3709,19 @@ export const terms = [
     alias:
       "Related: User Microsoft Outlook Integration, Gmail Integration, Workflow",
     source: "https://doc.suger.io/integrations/microsoft-outlook/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting an organization Microsoft Outlook account to Suger for automated email communications triggered by marketplace events",
+      "Using org-level Outlook Integration as the Microsoft 365 equivalent of Suger's Gmail Integration for workflow email automation",
+    ],
+    context: ["Suger Console", "Microsoft Outlook", "Workflow Automation"],
+    related: [
+      { name: "User Microsoft Outlook Integration", slug: "user-microsoft-outlook-integration" },
+      { name: "Gmail Integration", slug: "gmail-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "User Microsoft Outlook Integration",
@@ -1391,6 +3729,19 @@ export const terms = [
     def: "Suger's user-level Outlook connection (distinct from the org-level Microsoft Outlook Integration). Allows individual Suger users to connect their personal Outlook account for email-based workflow actions.",
     alias: "Related: Microsoft Outlook Integration, User Gmail Integration",
     source: "https://doc.suger.io/integrations/microsoft-outlook/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting a personal Outlook account to Suger to enable individual user email actions inside Suger workflows",
+      "Distinguishing user-level Outlook access from the org-level Microsoft Outlook Integration when setting up email automation",
+    ],
+    context: ["Suger Console", "Microsoft Outlook", "User-Level Settings"],
+    related: [
+      { name: "Microsoft Outlook Integration", slug: "microsoft-outlook-integration" },
+      { name: "User Gmail Integration", slug: "user-gmail-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "OpenAI Integration",
@@ -1398,6 +3749,19 @@ export const terms = [
     def: "Suger's connection to OpenAI via API key. Enables AI-powered features within Suger — such as workflow automation, intelligent suggestions, and natural language processing — billed at cost directly to the ISV's OpenAI account.",
     alias: "Related: Google Gemini Integration, Anthropic Integration",
     source: "https://doc.suger.io/integrations/openai/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting an OpenAI API key to Suger to enable AI-powered workflow automation and intelligent suggestions within Suger",
+      "Choosing OpenAI as the AI provider for Suger's AI features, with costs billed directly to the ISV's OpenAI account",
+    ],
+    context: ["Suger Console", "AI Features", "Workflow Automation"],
+    related: [
+      { name: "Google Gemini Integration", slug: "google-gemini-integration" },
+      { name: "Anthropic Integration", slug: "anthropic-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "Google Gemini Integration",
@@ -1405,6 +3769,19 @@ export const terms = [
     def: "Suger's connection to Google Gemini via API key. Provides AI-powered capabilities within Suger at cost, using Google's Gemini models as an alternative or complement to OpenAI or Anthropic.",
     alias: "Related: OpenAI Integration, Anthropic Integration",
     source: "https://doc.suger.io/integrations/google-gemini/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting a Google Gemini API key to Suger to use Gemini models as the AI provider for Suger's AI-powered features",
+      "Choosing Gemini as an alternative to OpenAI or Anthropic for Suger workflow automation and intelligent suggestions",
+    ],
+    context: ["Suger Console", "AI Features", "Google Cloud"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      { name: "Anthropic Integration", slug: "anthropic-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "Anthropic Integration",
@@ -1412,6 +3789,19 @@ export const terms = [
     def: "Suger's connection to Anthropic via API key. Enables Claude-powered AI features within Suger at cost, billed directly to the ISV's Anthropic account. One of three AI provider integrations supported alongside OpenAI and Gemini.",
     alias: "Related: OpenAI Integration, Google Gemini Integration",
     source: "https://doc.suger.io/integrations/anthropic/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting an Anthropic API key to Suger to use Claude models for AI-powered workflow automation within Suger",
+      "Choosing Anthropic as the AI provider when Claude's capabilities best fit the ISV's Suger automation needs",
+    ],
+    context: ["Suger Console", "AI Features", "Workflow Automation"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      { name: "Google Gemini Integration", slug: "google-gemini-integration" },
+      { name: "Workflow", slug: "workflow" },
+    ],
   },
   {
     name: "OAuth 2.0 Integration",
@@ -1420,6 +3810,19 @@ export const terms = [
     alias:
       "Related: Salesforce Integration, HubSpot Integration, Okta Single Sign-On (SSO) Integration",
     source: "https://doc.suger.io/integrations/oauth/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting a custom or non-native external service to Suger using the generic OAuth 2.0 connector when a dedicated integration doesn't exist",
+      "Using OAuth 2.0 Integration as the authentication layer for custom CRM or internal tool connections to Suger",
+    ],
+    context: ["Suger Console", "Integration Setup", "Custom Connectors"],
+    related: [
+      { name: "Salesforce Integration", slug: "salesforce-integration" },
+      { name: "HubSpot Integration", slug: "hubspot-integration" },
+      { name: "Okta Single Sign-On (SSO) Integration", slug: "okta-single-sign-on-sso-integration" },
+    ],
   },
   {
     name: "Snowflake Integration",
@@ -1428,6 +3831,19 @@ export const terms = [
     alias:
       "Related: Snowflake Marketplace — Snowflake, Table Export, Google BigQuery Integration",
     source: "https://doc.suger.io/integrations/snowflake/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Streaming Suger marketplace data — entitlements, usage, revenue — in real time into a Snowflake data warehouse for analytics",
+      "Distinguishing Snowflake Integration (data streaming into Snowflake) from Snowflake Marketplace (selling on Snowflake's marketplace)",
+    ],
+    context: ["Suger Console", "Snowflake", "Data Warehousing"],
+    related: [
+      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+      { name: "Table Export", slug: "table-export" },
+      { name: "Google BigQuery Integration", slug: "google-bigquery-integration" },
+    ],
   },
   {
     name: "Partner Revenue Measurement (PRM) — AWS",
@@ -1436,6 +3852,19 @@ export const terms = [
     alias:
       "Related: APN ID Tag (aws-apn-id), PRM Resource Tagging, Revenue Attribution — AWS, AWS Partner Network (APN) — AWS",
     source: "https://aws.amazon.com/partners/partner-revenue-measurement/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Implementing PRM resource tagging to quantify how your ISV product drives AWS consumption and unlock APN funding eligibility",
+      "Demonstrating AWS consumption impact across partner-managed and customer-managed accounts via PRM to support SCA or MDF negotiations",
+    ],
+    context: ["AWS Partner Central", "AWS Resource Tagging", "APN Programs"],
+    related: [
+      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
+      { name: "PRM Resource Tagging — AWS", slug: "prm-resource-tagging-—-aws" },
+      { name: "Revenue Attribution — AWS", slug: "revenue-attribution-—-aws" },
+    ],
   },
   {
     name: "APN ID Tag (aws-apn-id) — AWS",
@@ -1443,6 +3872,19 @@ export const terms = [
     def: "The AWS resource tag key used for Partner Revenue Measurement. Partners tag their AWS resources with key `aws-apn-id` and value `pc:<product-code>` (e.g. `pc:5ugbbrmu7ud3u5hsipfzug61p`) to attribute AWS service consumption to their marketplace product. Revenue attribution continues until the tag is removed or the resource is terminated.",
     alias: "",
     source: "https://aws.amazon.com/partners/partner-revenue-measurement/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Tagging AWS resources with the aws-apn-id key and your marketplace product code to begin attributing consumption to your product via PRM",
+      "Understanding that revenue attribution persists as long as the aws-apn-id tag remains on a billable resource",
+    ],
+    context: ["AWS Resource Tagging", "AWS Partner Central", "PRM Implementation"],
+    related: [
+      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
+      { name: "PRM Resource Tagging — AWS", slug: "prm-resource-tagging-—-aws" },
+      { name: "Product Code — AWS", slug: "product-code-—-aws" },
+    ],
   },
   {
     name: "PRM Resource Tagging — AWS",
@@ -1450,6 +3892,19 @@ export const terms = [
     def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect.",
     alias: "",
     source: "https://aws.amazon.com/partners/partner-revenue-measurement/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Tagging billable AWS resources (EC2, S3, RDS) with the ISV's marketplace product code to enable PRM revenue attribution",
+      "Understanding which resource types generate attribution — only chargeable services count; tagging IAM or other free services has no effect",
+    ],
+    context: ["AWS Resource Tagging", "AWS Partner Central", "PRM Implementation"],
+    related: [
+      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
+      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
+      { name: "PRM Architecture Patterns — AWS", slug: "prm-architecture-patterns-—-aws" },
+    ],
   },
   {
     name: "PRM Architecture Patterns — AWS",
@@ -1457,6 +3912,19 @@ export const terms = [
     def: "The three deployment models supported by AWS Partner Revenue Measurement: Partner Account (all components in the partner's AWS account), Customer Account (all components in the customer's AWS account), and Hybrid (components split across both). Determines where tagging must be applied.",
     alias: "",
     source: "https://aws.amazon.com/partners/partner-revenue-measurement/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Determining where to apply aws-apn-id tags based on whether your solution runs in the partner account, customer account, or both",
+      "Choosing the right PRM architecture pattern (Partner Account, Customer Account, or Hybrid) before implementing resource tagging",
+    ],
+    context: ["AWS Resource Tagging", "PRM Implementation", "AWS Architecture"],
+    related: [
+      { name: "PRM Resource Tagging — AWS", slug: "prm-resource-tagging-—-aws" },
+      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
+      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
+    ],
   },
   {
     name: "Revenue Attribution — AWS",
@@ -1465,6 +3933,19 @@ export const terms = [
     alias:
       "Related: PRM (Partner Revenue Measurement), APN ID Tag (aws-apn-id), Product Code — AWS",
     source: "https://aws.amazon.com/partners/partner-revenue-measurement/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Using PRM resource tags to establish AWS revenue attribution that demonstrates your product's impact on customer AWS spend",
+      "Understanding how AWS quantifies partner contribution via revenue attribution to determine APN funding eligibility",
+    ],
+    context: ["AWS Partner Central", "PRM Implementation", "APN Funding"],
+    related: [
+      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
+      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
+      { name: "Product Code — AWS", slug: "product-code-—-aws" },
+    ],
   },
   {
     name: "Subsidiary Account Connection — AWS",
@@ -1472,6 +3953,19 @@ export const terms = [
     def: "An AWS Partner Central feature allowing partners with multiple AWS Marketplace accounts to link them all under a single primary account. Required for partners managing multiple marketplace storefronts who want unified PRM tracking and APN program management.",
     alias: "",
     source: "https://aws.amazon.com/partners/partner-central/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Linking multiple AWS Marketplace seller accounts under a single primary account for unified PRM tracking and APN program management",
+      "Consolidating multi-account marketplace operations into a single Partner Central view via Subsidiary Account Connection",
+    ],
+    context: ["AWS Partner Central", "Multi-Account Management"],
+    related: [
+      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
+      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+    ],
   },
   {
     name: "Partner Relationship Management (PRM) System",
@@ -1479,6 +3973,19 @@ export const terms = [
     def: "A platform that helps companies recruit, onboard, enable, and manage partners, while supporting collaboration, deal tracking, and performance across the partner lifecycle. Suger extends traditional PRM by acting as the execution layer for cloud marketplace and co-sell workflows—automating CPPOs, syncing CRM deal data to AWS, Azure, and GCP, and enabling partners to transact and track deals in a unified system.",
     alias: "Related: CRM Integration, Co-sell",
     source: "https://doc.suger.io/get-started/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
+    useCases: [
+      "Understanding how Suger extends traditional PRM to execute cloud marketplace and co-sell workflows — not just track pipeline",
+      "Positioning Suger as the execution layer that connects partner management (CPPOs, referrals, deals) to marketplace transactions",
+    ],
+    context: ["Partner Ecosystem", "Cloud GTM Strategy", "Co-sell Programs"],
+    related: [
+      { name: "CRM Integration", slug: "crm-integration" },
+      { name: "Co-sell", slug: "co-sell" },
+      { name: "Partner Revenue Management (PRM)", slug: "partner-revenue-management-prm" },
+    ],
   },
   {
     name: "Self-service Cancellations and Billing Adjustments (SCABA)",
@@ -1487,6 +3994,19 @@ export const terms = [
     alias: "Related: Agreement, Refund, CRM Integration",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/agreements.html",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Issuing refunds or terminating AWS Marketplace agreements directly from Suger without contacting AWS support",
+      "Enabling sales ops to manage billing adjustments and cancellations from Salesforce or the Suger console via the SCABA feature",
+    ],
+    context: ["AWS Marketplace", "Suger Console", "Agreement Management"],
+    related: [
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      { name: "Refund", slug: "refund" },
+      { name: "CRM Integration", slug: "crm-integration" },
+    ],
   },
   {
     name: "AWS Secure Environment Accelerator (SEA) — AWS",
@@ -1496,6 +4016,19 @@ export const terms = [
       "Also called: ASEA | Successor: Landing Zone Accelerator (LZA) | Related: AWS Partner Network (APN), Public Sector",
     source:
       "https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Understanding ASEA as the predecessor to LZA for partners who need context on legacy public sector AWS deployments",
+      "Guiding customers still using ASEA to migrate to the Landing Zone Accelerator (LZA) as the current recommended solution",
+    ],
+    context: ["AWS Public Sector", "Multi-Account AWS Environments", "Compliance"],
+    related: [
+      { name: "Landing Zone Accelerator (LZA) — AWS", slug: "landing-zone-accelerator-lza-—-aws" },
+      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+    ],
   },
   {
     name: "Landing Zone Accelerator (LZA) — AWS",
@@ -1505,6 +4038,19 @@ export const terms = [
       "Replaces: SEA / ASEA | Related: AWS Secure Environment Accelerator (SEA) — AWS",
     source:
       "https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Deploying high-compliance, multi-account AWS environments using LZA with CCCS Cloud Medium or Trusted Secure Enclave sample configurations",
+      "Migrating a customer from the deprecated ASEA to LZA using the automated migration path",
+    ],
+    context: ["AWS Public Sector", "Multi-Account AWS Environments", "Compliance"],
+    related: [
+      { name: "AWS Secure Environment Accelerator (SEA) — AWS", slug: "aws-secure-environment-accelerator-sea-—-aws" },
+      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
+    ],
   },
   {
     name: "Foundational Technical Review (FTR) — AWS",
@@ -1513,6 +4059,19 @@ export const terms = [
     alias:
       "Related: ISV Accelerate — AWS, AWS Specialization, Well-Architected Framework Review, Partner Development Manager (PDM) — AWS",
     source: "https://aws.amazon.com/partners/foundational-technical-review/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Completing the FTR to unlock ISV Accelerate eligibility, AWS Specialization, and co-sell access",
+      "Waiving FTR with a recent Well-Architected Framework Review showing no high-risk issues — confirmed with your PDM",
+    ],
+    context: ["AWS Partner Central", "ISV Accelerate Program", "APN Program Requirements"],
+    related: [
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
+      { name: "Partner Development Manager (PDM) — AWS", slug: "partner-development-manager-pdm-—-aws" },
+    ],
   },
   {
     name: "AWS Specialization — AWS",
@@ -1521,6 +4080,19 @@ export const terms = [
     alias:
       "Related: Foundational Technical Review (FTR) — AWS, ACE (APN Customer Engagements), Co-sell Recommendation Score — AWS, AWS Competency — AWS",
     source: "https://aws.amazon.com/partners/specializations/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Earning an AWS Specialization badge to improve Marketplace listing visibility and increase Co-sell Recommendation Score",
+      "Maintaining Specialization renewal by demonstrating launched ACE opportunities tied to the Specialization solution over a rolling 12-month period",
+    ],
+    context: ["AWS Partner Central", "AWS Marketplace Listings", "Co-sell Programs"],
+    related: [
+      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      { name: "Co-sell Recommendation Score — AWS", slug: "co-sell-recommendation-score-—-aws" },
+      { name: "AWS Competency — AWS", slug: "aws-competency-—-aws" },
+    ],
   },
   {
     name: "AWS Competency — AWS",
@@ -1529,6 +4101,19 @@ export const terms = [
     alias:
       "Related: AWS Specialization — AWS, Marketing Development Funds (MDF) — AWS — AWS, Strategic Collaboration Agreement (SCA) — AWS",
     source: "https://aws.amazon.com/partners/competencies/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Achieving an AWS Competency at Advanced Tier or higher to unlock increased MDF, improved Marketplace visibility, and priority in AWS seller recommendations",
+      "Understanding that Competency is a subcategory of Specialization — all Competencies are Specializations but require Advanced Tier APN status",
+    ],
+    context: ["AWS Partner Central", "APN Programs", "Co-sell Eligibility"],
+    related: [
+      { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+    ],
   },
   {
     name: "Co-sell Recommendation Score — AWS",
@@ -1537,6 +4122,19 @@ export const terms = [
     alias:
       "Related: ACE (APN Customer Engagements), AWS Specialization, ISV Accelerate — AWS, Partner Development Manager (PDM) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Monitoring Co-sell Recommendation Score to understand how likely AWS sellers are to recommend your solution for specific deals",
+      "Improving the score by increasing ACE activity, Marketplace listing quality, and maintaining Specialization status with validated case studies",
+    ],
+    context: ["AWS Partner Central", "Analytics & Insights Dashboard", "Co-sell Programs"],
+    related: [
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+    ],
   },
   {
     name: "First Value Opportunity (FVO) — AWS",
@@ -1544,6 +4142,19 @@ export const terms = [
     def: "A designation for an ISV's very first launched co-sell opportunity in ACE. FVOs are excluded from ISV Accelerate's minimum launched opportunity count requirements — meaning the first deal doesn't count toward the 5-launch threshold. Ensures the eligibility bar reflects sustained co-sell activity rather than a single deal.",
     alias: "Related: ACE (APN Customer Engagements), ISV Accelerate — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Understanding that the FVO — the very first launched ACE deal — is excluded from the 5-launch minimum required for ISV Accelerate",
+      "Planning co-sell pipeline knowing the second launched opportunity is when the ISV Accelerate eligibility clock actually starts",
+    ],
+    context: ["ACE Opportunities", "ISV Accelerate Eligibility", "AWS Partner Central"],
+    related: [
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
   },
   {
     name: "AWS Solution Provider Program (SPP) — AWS",
@@ -1552,6 +4163,19 @@ export const terms = [
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, SPPO (Solution Provider Private Offer), Channel Partner (CP), Partner Development Manager (PDM) — AWS",
     source: "https://aws.amazon.com/partners/programs/solution-providers/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["Channel Partners", "ISVs / Sellers"],
+    useCases: [
+      "Enrolling in SPP to resell AWS services to end customers with consolidated billing, discounts, and the 2026-updated incentive structure",
+      "Distinguishing SPP (AWS service resale program) from CPPO/SPPO (ISV software marketplace channel programs) when advising on channel strategy",
+    ],
+    context: ["AWS Channel Programs", "AWS Partner Central", "Channel Resale"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Solution Provider Private Offer (SPPO) — AWS", slug: "solution-provider-private-offer-sppo-—-aws" },
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+    ],
   },
   {
     name: "AWS Partner Central Agents — AWS",
@@ -1560,6 +4184,19 @@ export const terms = [
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Funding — AWS, Partner Central 3.0 (PC3.0) — AWS",
     source: "https://aws.amazon.com/partners/partner-central/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Using AWS Partner Central Agents to auto-populate ACE opportunity fields from meeting transcripts, reducing manual data entry",
+      "Leveraging AI-generated funding recommendations and pre-filled fund requests at the opportunity level to accelerate co-sell funding workflows",
+    ],
+    context: ["AWS Partner Central", "AI Features", "Co-sell Operations"],
+    related: [
+      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
+      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+    ],
   },
   {
     name: "Partner Revenue Management (PRM)",
@@ -1567,6 +4204,19 @@ export const terms = [
     def: "The practice of tracking, reconciling, and reporting revenue generated through cloud marketplace and direct billing channels. In Suger, PRM spans the full billing lifecycle — from offer creation and usage metering through invoicing, payment collection, disbursement, and revenue reporting — across both marketplace and direct (Stripe) billing.",
     alias: "Related: Revenue, Disbursement, Invoice, Billing Integration",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Using Suger's PRM layer to track, reconcile, and report all revenue across both marketplace and direct Stripe billing channels in one place",
+      "Understanding PRM as the full billing lifecycle — offer → metering → invoicing → payment → disbursement → reporting — in Suger",
+    ],
+    context: ["Suger Console", "Revenue Dashboard", "Billing Operations"],
+    related: [
+      { name: "Revenue", slug: "revenue" },
+      { name: "Disbursement", slug: "disbursement" },
+      { name: "Invoice", slug: "invoice" },
+    ],
   },
   {
     name: "Payment",
@@ -1574,6 +4224,19 @@ export const terms = [
     def: "Suger's automated payment processing layer that triggers when an invoice becomes Finalized. Processes payments via Stripe, applying buyer wallet credits first before charging the remaining balance. Supports payment retry, dispute handling via Stripe webhooks, and abnormal payment alerts.",
     alias: "Related: Invoice, Stripe Integration, Refund, Buyer Wallet",
     source: "https://doc.suger.io/payment/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reviewing payment status and retry history for a finalized Suger invoice in the payment console",
+      "Configuring abnormal payment alerts so finance teams are notified when a payment fails or requires retry",
+    ],
+    context: ["Suger Console", "Stripe", "Invoice Management"],
+    related: [
+      { name: "Invoice", slug: "invoice" },
+      { name: "Refund", slug: "refund" },
+      { name: "Buyer Wallet", slug: "buyer-wallet" },
+    ],
   },
   {
     name: "Refund",
@@ -1581,6 +4244,19 @@ export const terms = [
     def: "Suger's manual refund capability for successful payments. Supports partial refunds, multiple refunds per payment, and both credit wallet refunds and Stripe payment refunds. Refunds are processed at the transaction level, not the invoice level.",
     alias: "Related: Payment, Invoice, Stripe Integration",
     source: "https://doc.suger.io/payment/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Issuing a partial or full refund on a successful Suger payment at the transaction level",
+      "Choosing between a Buyer Wallet credit refund and a Stripe payment refund based on the customer's preferred resolution",
+    ],
+    context: ["Suger Console", "Stripe", "Payment Management"],
+    related: [
+      { name: "Payment", slug: "payment" },
+      { name: "Buyer Wallet", slug: "buyer-wallet" },
+      { name: "Stripe Integration", slug: "stripe-integration" },
+    ],
   },
   {
     name: "Buyer Wallet",
@@ -1588,6 +4264,19 @@ export const terms = [
     def: "A credit balance held for a specific buyer in Suger. During payment processing, credits in the wallet are applied first before any Stripe charge is made. Wallets must be in active status to accept credit refunds.",
     alias: "Related: Usage Credit, Payment, Refund",
     source: "https://doc.suger.io/payment/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Applying buyer wallet credits to reduce the Stripe charge on an invoice — credits are consumed before any card or ACH payment",
+      "Issuing a credit refund to a buyer's wallet rather than a direct Stripe refund for billing corrections",
+    ],
+    context: ["Suger Console", "Invoice Payment", "Credit Management"],
+    related: [
+      { name: "Usage Credit", slug: "usage-credit" },
+      { name: "Payment", slug: "payment" },
+      { name: "Refund", slug: "refund" },
+    ],
   },
   {
     name: "Payment Transaction",
@@ -1595,6 +4284,19 @@ export const terms = [
     def: "A single atomic payment attempt within Suger's payment pipeline. One invoice may have multiple transactions — for example, a credit deduction followed by a Stripe charge. Each transaction has its own status (Pending, Processing, Success, Failed). The invoice's payment status always reflects the latest transaction.",
     alias: "Related: Payment, Invoice, Revenue Record",
     source: "https://doc.suger.io/payment/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reviewing individual payment transaction records to diagnose a failed or pending payment on a Suger invoice",
+      "Understanding that a single invoice can have multiple transactions — wallet credit deduction followed by Stripe charge",
+    ],
+    context: ["Suger Console", "Payment Debugging", "Invoice Management"],
+    related: [
+      { name: "Payment", slug: "payment" },
+      { name: "Invoice", slug: "invoice" },
+      { name: "Revenue Record", slug: "revenue-record" },
+    ],
   },
   {
     name: "Revenue Record",
@@ -1602,6 +4304,19 @@ export const terms = [
     def: "A financial record generated in Suger on successful invoice payment. Two types: Joined Records (one per invoice, consolidating all payment transactions) and Raw Records (one per individual payment transaction). Used for reconciliation and financial reporting.",
     alias: "Related: Revenue, Payment Transaction, Disbursement",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Using Joined Revenue Records for invoice-level reconciliation and Raw Records for per-transaction audit trails in Suger",
+      "Exporting revenue records from Suger to accounting systems (NetSuite, QuickBooks) for financial reporting",
+    ],
+    context: ["Suger Console", "Revenue Reporting", "Financial Reconciliation"],
+    related: [
+      { name: "Revenue", slug: "revenue" },
+      { name: "Payment Transaction", slug: "payment-transaction" },
+      { name: "Disbursement", slug: "disbursement" },
+    ],
   },
   {
     name: "Invoiced Amount",
@@ -1609,6 +4324,19 @@ export const terms = [
     def: "The total amount billed to a buyer on an invoice — what the customer owes. Distinct from Collectable Amount, which accounts for marketplace fees and credits. Tracked per invoice issue date in Suger's revenue reports.",
     alias: "Related: Collectable Amount, Disbursed Amount, Invoice",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Viewing total amounts billed per invoice issue date in Suger's revenue reports for period-close reconciliation",
+      "Distinguishing Invoiced Amount (what the buyer owes) from Collectable Amount (what the ISV receives after fees)",
+    ],
+    context: ["Suger Console", "Revenue Reports", "Financial Reporting"],
+    related: [
+      { name: "Collectable Amount", slug: "collectable-amount" },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+      { name: "Invoice", slug: "invoice" },
+    ],
   },
   {
     name: "Collectable Amount",
@@ -1617,6 +4345,19 @@ export const terms = [
     alias:
       "Related: Invoiced Amount, Disbursed Amount, Marketplace Fee / Transaction Fee",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Using Collectable Amount to forecast net receivables after marketplace fees and buyer credits on a per-payment-due-date basis",
+      "Comparing Collectable Amount to Invoiced Amount to understand the effective take-rate after fees on a given transaction",
+    ],
+    context: ["Suger Console", "Revenue Reports", "Financial Forecasting"],
+    related: [
+      { name: "Invoiced Amount", slug: "invoiced-amount" },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+      { name: "Partner Fee", slug: "partner-fee" },
+    ],
   },
   {
     name: "Disbursed Amount",
@@ -1624,6 +4365,19 @@ export const terms = [
     def: "The net amount paid out to the seller after deducting all partner/marketplace fees from the total payment. Formula: Total Payment − Partner Fee. Tracked per disbursement date. Distinct from Collectable Amount, which also includes credits.",
     alias: "Related: Collectable Amount, Invoiced Amount, Disbursement",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reconciling actual cash received (Disbursed Amount) against expected net revenue per disbursement date in Suger reports",
+      "Distinguishing Disbursed Amount (Total Payment minus fee) from Collectable Amount (which also factors in credits)",
+    ],
+    context: ["Suger Console", "Revenue Reports", "Cash Reconciliation"],
+    related: [
+      { name: "Collectable Amount", slug: "collectable-amount" },
+      { name: "Disbursement", slug: "disbursement" },
+      { name: "Partner Fee", slug: "partner-fee" },
+    ],
   },
   {
     name: "Partner Fee",
@@ -1632,6 +4386,19 @@ export const terms = [
     alias:
       "Related: Marketplace Fee / Transaction Fee, Disbursed Amount, Collectable Amount",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Understanding how Partner Fee is factored into Suger's revenue reporting — subtracted from total payment to derive Collectable and Disbursed Amounts",
+      "Checking the Partner Fee percentage on a specific entitlement to understand the effective take-rate before reconciling payouts",
+    ],
+    context: ["Suger Console", "Revenue Reports", "Marketplace Fee Structures"],
+    related: [
+      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+      { name: "Collectable Amount", slug: "collectable-amount" },
+    ],
   },
   {
     name: "Payment Due Date",
@@ -1639,6 +4406,19 @@ export const terms = [
     def: "The deadline by which a buyer must complete payment on a finalized invoice. Used as the key date for Collectable Amount in Suger's revenue reports.",
     alias: "Related: Invoice, Payment, Collectable Amount",
     source: "https://doc.suger.io/invoice/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Filtering Suger revenue reports by Payment Due Date to see expected inflows within a specific period",
+      "Configuring invoice due dates that align with enterprise buyer AP cycles",
+    ],
+    context: ["Suger Console", "Invoice Management", "Revenue Reports"],
+    related: [
+      { name: "Invoice", slug: "invoice" },
+      { name: "Payment", slug: "payment" },
+      { name: "Collectable Amount", slug: "collectable-amount" },
+    ],
   },
   {
     name: "Disbursement Date",
@@ -1646,6 +4426,19 @@ export const terms = [
     def: "The date when a successful payment is processed and transferred to the seller's account. Used as the key date for Disbursed Amount in Suger's revenue reports.",
     alias: "Related: Disbursement, Disbursed Amount, Payment",
     source: "https://doc.suger.io/revenue/",
+    difficulty: "beginner",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Filtering Suger revenue reports by Disbursement Date to reconcile actual cash received in a given period",
+      "Distinguishing Disbursement Date (when cash clears) from Payment Due Date (when payment is expected)",
+    ],
+    context: ["Suger Console", "Revenue Reports", "Cash Reconciliation"],
+    related: [
+      { name: "Disbursement", slug: "disbursement" },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+      { name: "Payment Due Date", slug: "payment-due-date" },
+    ],
   },
   {
     name: "Payment Dispute",
@@ -1653,6 +4446,19 @@ export const terms = [
     def: "A buyer-initiated challenge to a payment charge, handled by Stripe. Suger receives dispute notifications via Stripe webhooks and displays them in the relevant payment transaction record in the Suger console.",
     alias: "Related: Payment, Stripe Integration, Payment Transaction",
     source: "https://doc.suger.io/payment/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Monitoring Stripe dispute notifications surfaced in Suger's payment transaction records to respond within Stripe's response window",
+      "Investigating a disputed payment by reviewing the transaction record in Suger and responding through Stripe's dispute resolution flow",
+    ],
+    context: ["Suger Console", "Stripe", "Payment Management"],
+    related: [
+      { name: "Payment", slug: "payment" },
+      { name: "Stripe Integration", slug: "stripe-integration" },
+      { name: "Payment Transaction", slug: "payment-transaction" },
+    ],
   },
   {
     name: "ACH Debit",
@@ -1660,6 +4466,19 @@ export const terms = [
     def: "An electronic bank transfer payment method supported via Stripe in Suger. ACH refunds are processed as bank credits rather than explicit refunds. Payments may take a few hours to complete — refunds initiated before completion cancel the original payment rather than creating a separate refund.",
     alias: "Related: Payment, Stripe Integration, Refund",
     source: "https://doc.suger.io/payment/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
+    useCases: [
+      "Enabling ACH Debit as a payment method for enterprise buyers who prefer bank transfer over card payment via Stripe",
+      "Understanding ACH refund behavior — initiated before completion cancels the original payment rather than creating a separate refund",
+    ],
+    context: ["Suger Console", "Stripe", "Enterprise Billing"],
+    related: [
+      { name: "Payment", slug: "payment" },
+      { name: "Refund", slug: "refund" },
+      { name: "Stripe Integration", slug: "stripe-integration" },
+    ],
   },
   {
     name: "Billing",
@@ -1667,6 +4486,19 @@ export const terms = [
     def: "Suger's end-to-end billing system for direct (non-marketplace) revenue. Covers the full lifecycle: product setup → billable metrics → offer creation → entitlement management → usage metering → invoicing → payment collection → revenue reporting. Uses Stripe as the payment provider.",
     alias: "Related: Partner Revenue Management, Invoice, Payment, Revenue",
     source: "https://doc.suger.io/billing/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Setting up direct (non-marketplace) billing in Suger to monetize buyers who don't transact through a cloud marketplace",
+      "Understanding Suger's full direct billing lifecycle — from product and offer setup through metering, invoicing, and payment collection via Stripe",
+    ],
+    context: ["Suger Console", "Direct Billing", "Stripe"],
+    related: [
+      { name: "Invoice", slug: "invoice" },
+      { name: "Payment", slug: "payment" },
+      { name: "Partner Revenue Management (PRM)", slug: "partner-revenue-management-prm" },
+    ],
   },
 
   {
@@ -1676,6 +4508,19 @@ export const terms = [
     alias:
       "Related: AWS Competency — AWS, Foundational Technical Review (FTR) — AWS, Marketing Development Funds (MDF) — AWS",
     source: "https://aws.amazon.com/partners/competencies/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Pursuing an AWS Competency designation to unlock higher-tier MDF and improved AWS Marketplace listing visibility",
+      "Using Competency status as a prerequisite signal in SCA negotiations and co-sell priority discussions with AWS",
+    ],
+    context: ["AWS Partner Central", "APN Programs", "Co-sell Eligibility"],
+    related: [
+      { name: "AWS Competency — AWS", slug: "aws-competency-—-aws" },
+      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+    ],
   },
   {
     name: "AWS Marketplace Skill",
@@ -1684,6 +4529,19 @@ export const terms = [
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, AWS Partner Network (APN) — AWS, Channel Partner (CP)",
     source: "https://aws.amazon.com/partners/competencies/marketplace/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["Channel Partners", "ISVs / Sellers"],
+    useCases: [
+      "Identifying AWS Marketplace Skill-designated partners as the most qualified channel partners for CPPO transactions",
+      "Achieving the AWS Marketplace Skill designation as a consulting partner to unlock CPPO and marketplace procurement deal flow",
+    ],
+    context: ["AWS Partner Central", "Channel Programs", "AWS Marketplace"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+      { name: "AWS Competency — AWS", slug: "aws-competency-—-aws" },
+    ],
   },
   {
     name: "Build Engagement Model — GCP",
@@ -1692,6 +4550,19 @@ export const terms = [
     alias:
       "Related: Partner Advantage — GCP, GCP Marketplace — GCP, Marketing Development Funds (MDF) — AWS",
     source: "https://cloud.google.com/partners/become-a-partner",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Enrolling in the GCP Build Engagement Model to unlock co-sell incentives and MDF by completing a technical review and publishing a transactable GCP listing",
+      "Understanding Build as the GCP equivalent of AWS ISV Accelerate for software providers integrated with Google Cloud",
+    ],
+    context: ["Google Cloud Partner Advantage", "GCP Marketplace", "Co-sell Programs"],
+    related: [
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      { name: "Transactable Offer", slug: "transactable-offer" },
+    ],
   },
   {
     name: "ISV Success Program — Azure",
@@ -1700,6 +4571,19 @@ export const terms = [
     alias:
       "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/isv-success",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Enrolling in the ISV Success Program to access technical consulting, Azure credits, and marketplace rewards for building and publishing on Azure Marketplace",
+      "Understanding ISV Success as the Azure equivalent of AWS ISV Accelerate — the primary ISV co-sell enablement program on Microsoft",
+    ],
+    context: ["Microsoft Marketplace", "Azure Co-sell Programs", "Partner Center — Azure"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
+      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+    ],
   },
   {
     name: "End Customer Investment Funds (ECIF) — Azure",
@@ -1709,6 +4593,19 @@ export const terms = [
       "Related: ISV Success Program — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
     source:
       "https://partner.microsoft.com/en-us/partnership/partner-incentives",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
+    useCases: [
+      "Initiating an ECIF engagement through your Microsoft PDM to fund a customer deployment, migration, or PoC project up to $500K",
+      "Understanding ECIF prerequisites — Advanced Specialization required, net-new consumption only, field-driven (not self-service)",
+    ],
+    context: ["Azure Co-sell Programs", "Microsoft Partner Center", "Microsoft Field Team"],
+    related: [
+      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+      { name: "Microsoft AI Cloud Partner Program (MPN) — Azure", slug: "microsoft-ai-cloud-partner-program-mpn-—-azure" },
+    ],
   },
   {
     name: "Microsoft Intelligent Security Association (MISA) — Azure",
@@ -1718,6 +4615,19 @@ export const terms = [
       "Related: Microsoft Marketplace — Azure, Co-sell Eligible / Incentivized — Azure, ISV Success Program — Azure",
     source:
       "https://www.microsoft.com/en-us/security/business/intelligent-security-association",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Pursuing MISA membership to gain Microsoft Security ecosystem recognition and co-sell visibility for security-focused ISVs",
+      "Understanding MISA as a nomination-only program requiring a transactable Azure Marketplace listing and Microsoft Security product integration",
+    ],
+    context: ["Azure Marketplace", "Microsoft Security Ecosystem", "Co-sell Programs"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+    ],
   },
   {
     name: "Snowflake Data Appreciation (SDA) — Snowflake",
@@ -1725,6 +4635,19 @@ export const terms = [
     def: "A Snowflake partner program that incentivizes data providers to list high-quality data products on the Snowflake Marketplace. Provides marketing support and increased visibility to Snowflake's customer base.",
     alias: "Related: Snowflake Marketplace — Snowflake, Snowflake Integration",
     source: "https://docs.snowflake.com/en/user-guide/data-marketplace",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Enrolling in SDA to gain Snowflake marketing support and increased visibility for high-quality data products listed on Snowflake Marketplace",
+      "Understanding SDA as the Snowflake co-sell/partner program equivalent for data providers on the Snowflake platform",
+    ],
+    context: ["Snowflake Marketplace", "Snowflake Partner Programs"],
+    related: [
+      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+      { name: "Snowflake Data Clean Rooms — Snowflake", slug: "snowflake-data-clean-rooms-—-snowflake" },
+      { name: "Listing", slug: "listing" },
+    ],
   },
   {
     name: "Snowflake Data Clean Rooms — Snowflake",
@@ -1732,6 +4655,19 @@ export const terms = [
     def: "A secure environment that allows multiple parties to join and analyze data without exposing the raw underlying data to each other. Often sold as a specialized application or service on the Snowflake Marketplace.",
     alias: "Related: Snowflake Marketplace — Snowflake, Snowflake Integration",
     source: "https://docs.snowflake.com/en/user-guide/cleanrooms/introduction",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Selling a Snowflake Data Clean Room solution on Snowflake Marketplace to enable multi-party data collaboration without raw data exposure",
+      "Understanding Clean Rooms as a premium product type on Snowflake Marketplace requiring Snowflake-native deployment",
+    ],
+    context: ["Snowflake Marketplace", "Multi-Party Data Collaboration"],
+    related: [
+      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+      { name: "Snowflake Data Appreciation (SDA) — Snowflake", slug: "snowflake-data-appreciation-sda-—-snowflake" },
+      { name: "Listing", slug: "listing" },
+    ],
   },
 
   {
@@ -1742,6 +4678,19 @@ export const terms = [
       "Related: Private Offer — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/create-private-offer",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Sending separate GCP private offers to the same billing account for different departments or projects, each with distinct terms",
+      "Using Multiple Offers to handle enterprise buyers who need project-specific billing arrangements for the same product",
+    ],
+    context: ["GCP Marketplace", "Private Offer Flows", "Producer Portal — GCP"],
+    related: [
+      { name: "Private Offer — GCP", slug: "private-offer-—-gcp" },
+      { name: "Private Plan — GCP", slug: "private-plan-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
   },
   {
     name: "Private Offer — GCP",
@@ -1751,6 +4700,19 @@ export const terms = [
       "Related: Multiple Offers — GCP, Private Plan — GCP, Producer Portal — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/create-private-offer",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating a custom-priced GCP private offer for a specific billing account to close an enterprise deal with negotiated terms",
+      "Understanding GCP-specific private offer mechanics — including Multiple Offers and project-based billing — versus AWS and Azure equivalents",
+    ],
+    context: ["GCP Marketplace", "Private Offer Flows", "Producer Portal — GCP"],
+    related: [
+      { name: "Multiple Offers — GCP", slug: "multiple-offers-—-gcp" },
+      { name: "Private Plan — GCP", slug: "private-plan-—-gcp" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
   },
   {
     name: "Private Plan — GCP",
@@ -1760,6 +4722,182 @@ export const terms = [
       "Related: Multiple Offers — GCP, Private Offer — GCP, GCP Marketplace — GCP",
     source:
       "https://cloud.google.com/marketplace/docs/partners/integrated-saas/set-up-product",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating a Private Plan on GCP Marketplace to offer the same custom terms to multiple pre-authorized billing accounts without a per-customer private offer",
+      "Distinguishing Private Plan (reusable, multi-subscriber) from Private Offer (one-time, single-buyer transaction) when configuring GCP pricing",
+    ],
+    context: ["GCP Marketplace", "Producer Portal — GCP", "Pricing Configuration"],
+    related: [
+      { name: "Private Offer — GCP", slug: "private-offer-—-gcp" },
+      { name: "Multiple Offers — GCP", slug: "multiple-offers-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
+  },
+  {
+    name: "Cloud Committed Spend (CCS)",
+    tags: ["general"],
+    def: "A pre-negotiated minimum spend commitment an enterprise makes with a cloud provider, typically in exchange for volume discounts. Transactable marketplace purchases often count toward a company's committed spend balance, making them strategically attractive to enterprise buyers on EDP, MACC, or CUD agreements. CCS is the cross-platform umbrella term; each hyperscaler has a branded program name.",
+    alias: "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Azure Consumption Commitment (MACC) — Azure | GCP: Committed Use Discount (CUD) — GCP | See also: Committed Spend / Cloud Commit",
+    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/customer-private-offers-committed-spend.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Positioning a transactable marketplace listing as eligible for a buyer's committed spend drawdown to accelerate enterprise deal cycles",
+      "Understanding why enterprise buyers prefer marketplace procurement over direct purchasing when they have an active EDP, MACC, or CUD commitment",
+    ],
+    context: ["Enterprise Sales", "Marketplace Procurement", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    related: [
+      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+    ],
+  },
+  {
+    name: "Metering / Usage Reporting",
+    tags: ["general"],
+    def: "The process by which an ISV reports a buyer's consumption data to the marketplace to trigger accurate billing. For usage-based and consumption models, the ISV — or their integration partner — must submit usage records to the marketplace's metering API within each billing period. Missing or late reports result in billing failures or undercollection. All major hyperscalers (AWS, Azure, GCP) require ISVs to implement a metering integration for SaaS products with usage-based pricing.",
+    alias: "Related: Usage Metering, Metered Billing, Metering Dimension",
+    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/metering-and-entitlement.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Reporting per-seat, API-call, or data-volume consumption to AWS, Azure, or GCP Marketplace to trigger monthly billing",
+      "Validating that all usage records are submitted before the marketplace metering deadline to avoid billing gaps",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    related: [
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Metered Billing", slug: "metered-billing" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+    ],
+  },
+  {
+    name: "Provisioning",
+    tags: ["general"],
+    def: "The process of granting a buyer access to an ISV's product after they complete a marketplace purchase. When a buyer accepts an offer, the marketplace sends a notification to the ISV — typically via webhook, SQS message, or API callback — to create the customer's account or environment. Failed or delayed provisioning is the most common source of buyer dissatisfaction after a marketplace transaction, and is often the integration step ISVs underinvest in.",
+    alias: "Related: Entitlement, Fulfillment URL",
+    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-product-customer-setup.html",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Implementing a fulfillment webhook to automatically create a buyer's account when a marketplace entitlement is activated",
+      "Diagnosing a failed provisioning flow when a buyer reports they cannot access the product after purchase",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    related: [
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Listing", slug: "listing" },
+      { name: "Usage Metering", slug: "usage-metering" },
+    ],
+  },
+  {
+    name: "Integration Partner",
+    tags: ["general", "suger"],
+    def: "A platform or service provider that handles the technical integration between an ISV's product and one or more cloud marketplace APIs. Integration partners abstract the complexity of listing management, metering, entitlement tracking, and offer creation across AWS, Azure, GCP, and Snowflake — allowing ISVs to go live on marketplace faster without dedicated engineering resources. Suger is an integration partner. The alternative is to build each marketplace integration in-house, which typically requires significant ongoing maintenance.",
+    alias: "Related: Partner Relationship Management (PRM) System, Usage Metering, Provisioning",
+    source: "https://doc.suger.io/get-started/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Evaluating whether to build marketplace integrations in-house or use an integration partner like Suger to reduce time-to-live",
+      "Understanding how Suger manages metering, entitlement, and offer creation across multiple hyperscalers on behalf of an ISV",
+    ],
+    context: ["Marketplace Onboarding", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    related: [
+      { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Provisioning", slug: "provisioning" },
+    ],
+  },
+  {
+    name: "Distributor",
+    tags: ["general", "cosell"],
+    def: "A company authorized to resell an ISV's software to end customers through a cloud marketplace, typically via a channel partner private offer mechanism. Distributors add value through financing, support, regional reach, or existing customer relationships that the ISV cannot serve directly. On AWS, distributors transact via CPPO under a resale authorization granted by the ISV; on Azure via Multiparty Private Offer (MPO); on GCP via Marketplace Channel Private Offer (MCPO).",
+    alias: "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Marketplace Channel Private Offer (MCPO) — GCP, Resale Authorization — AWS",
+    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    difficulty: "intermediate",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Partnering with a distributor to reach enterprise customers in regions or verticals the ISV cannot serve directly",
+      "Granting a resale authorization to a distributor so they can create CPPOs for their own customer base",
+    ],
+    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Channel Programs"],
+    related: [
+      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+    ],
+  },
+  {
+    name: "Tax Details Dashboard — AWS",
+    tags: ["aws"],
+    def: "A self-service portal in AWS Partner Central that lets marketplace sellers view, search, filter, and download tax invoices. Covers two invoice types: listing fee invoices (AWS charges to sellers for listing fees) and customer invoices (tax invoices generated on behalf of sellers to buyers). Bulk downloads are supported, and programmatic access is available via the ListInvoiceSummaries and GetInvoicePDF APIs. Customer invoice downloads are currently available to India-based sellers only.",
+    alias: "Related: Marketplace Tax Management — Azure, Marketplace Tax Management — GCP",
+    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/managing-invoices.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Downloading listing fee invoices for finance reconciliation and accounting",
+      "Accessing customer tax invoices (India-based sellers) to provide buyers with compliant documentation",
+      "Automating invoice retrieval using the ListInvoiceSummaries and GetInvoicePDF APIs",
+    ],
+    context: ["AWS Partner Central", "AWS Marketplace", "Finance & Billing"],
+    related: [
+      { name: "Marketplace Tax Management — Azure", slug: "marketplace-tax-management-—-azure" },
+      { name: "Marketplace Tax Management — GCP", slug: "marketplace-tax-management-—-gcp" },
+      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+    ],
+  },
+  {
+    name: "Marketplace Tax Management — Azure",
+    tags: ["azure"],
+    def: "Microsoft's framework governing tax obligations on Azure Marketplace transactions. Countries and regions are split into three categories: Microsoft-managed (Microsoft calculates, collects, and remits transaction taxes on the publisher's behalf), publisher-managed (the publisher is solely responsible for tax compliance, collection, and remittance), and reseller jurisdictions (currently Brazil only, where Microsoft acts as the reseller and handles all transaction tax). Publishers must determine which model applies in each target market to maintain compliance.",
+    alias: "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — GCP",
+    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/tax-details-marketplace",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Determining whether Microsoft or the publisher is responsible for collecting and remitting VAT or GST in a given market before expanding Azure listings to new regions",
+      "Assessing publisher-side tax compliance requirements in publisher-managed jurisdictions",
+    ],
+    context: ["Azure Marketplace", "Microsoft Partner Center", "Finance & Billing"],
+    related: [
+      { name: "Tax Details Dashboard — AWS", slug: "tax-details-dashboard-—-aws" },
+      { name: "Marketplace Tax Management — GCP", slug: "marketplace-tax-management-—-gcp" },
+      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+    ],
+  },
+  {
+    name: "Marketplace Tax Management — GCP",
+    tags: ["gcp"],
+    def: "Google Cloud Marketplace's Agency Transaction model for tax, defined in the Marketplace Vendor Agreement. Where both the vendor's and buyer's countries qualify as Agency Jurisdictions, Google collects applicable taxes from buyers and remits them to tax authorities on the vendor's behalf. Vendors are required to notify Google if they have independent tax collection obligations in any jurisdiction. Google may withhold taxes and provide withholding certificates where local law requires.",
+    alias: "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — Azure",
+    source: "https://cloud.google.com/terms/marketplace-agency-jurisdictions",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Determining whether GCP's Agency Transaction model covers tax collection for a transaction in a given jurisdiction",
+      "Identifying markets where vendor-side tax obligations remain even when GCP collects taxes under the agency model",
+    ],
+    context: ["GCP Marketplace", "Google Cloud Console", "Finance & Billing"],
+    related: [
+      { name: "Tax Details Dashboard — AWS", slug: "tax-details-dashboard-—-aws" },
+      { name: "Marketplace Tax Management — Azure", slug: "marketplace-tax-management-—-azure" },
+      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+    ],
   },
 ];
 

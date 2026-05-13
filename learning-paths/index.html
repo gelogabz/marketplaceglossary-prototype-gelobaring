@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Paths — Cloud GTM Reference</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        .topnav-links {
+            display: flex;
+            gap: 2px;
+            flex-shrink: 0;
+        }
+
+        .topnav-links a {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: background 0.12s, color 0.12s;
+        }
+
+        .topnav-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+        }
+
+        .topnav-links a.current { color: var(--orange); }
+
+        .lp-page {
+            margin-top: var(--topnav-h);
+            min-height: calc(100vh - var(--topnav-h));
+            background: var(--bg);
+        }
+
+        .lp-hero {
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-100);
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        .lp-hero-eyebrow {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--orange-text);
+            margin-bottom: 10px;
+        }
+
+        .lp-hero-title {
+            font-family: "Lexend", sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--gray-900);
+            letter-spacing: -0.03em;
+            margin-bottom: 10px;
+        }
+
+        .lp-hero-sub {
+            font-size: 15px;
+            color: var(--gray-500);
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .lp-body {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        /* ---- Featured banner ---- */
+
+        .lp-featured {
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5e 100%);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            text-decoration: none;
+            transition: opacity 0.12s;
+        }
+
+        .lp-featured:hover { opacity: 0.92; }
+
+        .lp-featured-copy { flex: 1; min-width: 0; }
+
+        .lp-featured-eyebrow {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--orange);
+            margin-bottom: 6px;
+        }
+
+        .lp-featured-title {
+            font-family: "Lexend", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+        }
+
+        .lp-featured-desc {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.55;
+        }
+
+        .lp-featured-cta {
+            padding: 9px 18px;
+            border-radius: 8px;
+            background: var(--orange);
+            color: var(--white);
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        /* ---- Path grid ---- */
+
+        .path-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+            gap: 16px;
+        }
+
+        /* ---- Path card ---- */
+
+        .path-card {
+            background: var(--white);
+            border: 1px solid var(--gray-100);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            display: block;
+            transition: border-color 0.12s, box-shadow 0.12s;
+        }
+
+        .path-card:hover {
+            border-color: var(--gray-200);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .path-card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .path-card-title {
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--gray-900);
+            letter-spacing: -0.02em;
+        }
+
+        .level-badge {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 99px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            text-transform: capitalize;
+        }
+
+        .l-beginner     { background: #e8f5e9; color: #2e7d32; }
+        .l-intermediate { background: #fff3e0; color: #bf5600; }
+        .l-advanced     { background: #fce4ec; color: #c62828; }
+
+        .path-card-desc {
+            font-size: 13px;
+            color: var(--gray-700);
+            line-height: 1.65;
+            margin-bottom: 10px;
+        }
+
+        .path-card-meta {
+            font-size: 11px;
+            color: var(--gray-400);
+            margin-bottom: 14px;
+        }
+
+        .path-sequence {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+
+        .seq-term {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 3px 9px;
+            background: var(--bg);
+            border: 1px solid var(--gray-100);
+            border-radius: 99px;
+            color: var(--gray-700);
+            white-space: nowrap;
+        }
+
+        .seq-arrow { font-size: 10px; color: var(--gray-400); }
+
+        .path-start-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--orange-text);
+        }
+
+        /* ---- Category sections ---- */
+
+        .lp-category-section { margin-bottom: 3rem; }
+
+        .lp-category-header {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 1rem;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .lp-category-title {
+            font-family: "Lexend", sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--gray-900);
+            letter-spacing: -0.02em;
+        }
+
+        .lp-category-desc { font-size: 13px; color: var(--gray-400); }
+
+        /* ---- Completion state ---- */
+
+        .path-card--done { border-color: #c8e6c9; }
+
+        .path-card-badges {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+
+        .path-done-badge {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 99px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            white-space: nowrap;
+        }
+
+        .progress-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 2.5rem;
+            padding: 1rem 0;
+            border-top: 1px solid var(--gray-100);
+            font-size: 13px;
+            color: var(--gray-400);
+        }
+
+        .reset-all-btn {
+            appearance: none;
+            border: none;
+            background: none;
+            font-family: inherit;
+            font-size: 12px;
+            color: var(--gray-400);
+            cursor: pointer;
+            padding: 0;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: color 0.12s;
+        }
+
+        .reset-all-btn:hover { color: #c62828; }
+
+        @media (max-width: 767px) {
+            .topnav-links { display: none; }
+            .path-grid { grid-template-columns: 1fr; }
+            .lp-body { padding: 1.25rem 1rem 3rem; }
+            .lp-featured { flex-direction: column; align-items: flex-start; }
+            .lp-hero { padding: 1.5rem 1rem; }
+            .lp-category-header { flex-direction: column; gap: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="topnav" aria-label="Site navigation">
+    <div class="topnav-inner">
+        <a href="../index.html" class="topnav-brand">SUGER<span class="brand-dot">.</span> Cloud GTM Reference</a>
+        <div style="flex:1"></div>
+        <div class="topnav-links">
+            <a href="../index.html">Glossary</a>
+            <a href="index.html" class="current">Learning Paths</a>
+        </div>
+    </div>
+</nav>
+
+<div class="lp-page">
+    <section class="lp-hero">
+        <div class="lp-hero-eyebrow">Learning Paths</div>
+        <h1 class="lp-hero-title">Build your Cloud GTM knowledge, step by step.</h1>
+        <p class="lp-hero-sub">Structured paths through the glossary — start from the basics or jump to the mechanics you need most.</p>
+    </section>
+
+    <div class="lp-body">
+        <div id="featuredBanner"></div>
+        <div id="pathSections"></div>
+        <div id="progressFooter"></div>
+    </div>
+</div>
+
+<script type="module">
+    import { learningPaths } from '../data/learning-paths.js';
+
+    const STORAGE_KEY = 'gtm-completed-paths';
+
+    function getCompleted() {
+        try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
+        catch { return {}; }
+    }
+
+    function isComplete(pathSlug) {
+        return !!getCompleted()[pathSlug];
+    }
+
+    function resetAllProgress() {
+        localStorage.removeItem(STORAGE_KEY);
+    }
+
+    const CATEGORY_ORDER = ['fundamentals', 'procurement', 'cosell', 'billing', 'operations', 'advanced'];
+
+    const CATEGORY_META = {
+        fundamentals: { label: "Getting Started",   desc: "Core concepts every Cloud GTM practitioner needs first." },
+        procurement:  { label: "Procurement",        desc: "How buyers transact — offers, contracts, and entitlements." },
+        cosell:       { label: "Co-sell",             desc: "Joint selling motions with hyperscaler sales teams." },
+        billing:      { label: "Billing & Revenue",  desc: "Revenue, metering, committed spend, and payout mechanics." },
+        operations:   { label: "Marketplace Ops",    desc: "Day-to-day ISV operations — APIs, integrations, and listing management." },
+        advanced:     { label: "Channel & Partner",  desc: "Distributor models, resale mechanics, and multi-party channel motions." },
+    };
+
+    function buildSequenceHtml(steps) {
+        return steps.map((step, i) =>
+            `<span class="seq-term">${step.name.replace(/ — (AWS|Azure|GCP|Snowflake|Alibaba)$/, '')}</span>` +
+            (i < steps.length - 1 ? `<span class="seq-arrow">›</span>` : '')
+        ).join('');
+    }
+
+    function buildCard(path) {
+        const done = isComplete(path.slug);
+        const a = document.createElement('a');
+        a.className = 'path-card' + (done ? ' path-card--done' : '');
+        a.href = `path.html?p=${path.slug}`;
+        a.innerHTML = `
+            <div class="path-card-top">
+                <div class="path-card-title">${path.title}</div>
+                <div class="path-card-badges">
+                    ${done ? '<span class="path-done-badge">✓ Completed</span>' : ''}
+                    <span class="level-badge l-${path.level}">${path.level}</span>
+                </div>
+            </div>
+            <p class="path-card-desc">${path.description}</p>
+            <p class="path-card-meta">${path.meta}</p>
+            <div class="path-sequence">${buildSequenceHtml(path.steps)}</div>
+            <span class="path-start-label">${done ? 'Review path →' : 'Start path →'}</span>
+        `;
+        return a;
+    }
+
+    function renderFeatured(path) {
+        const el = document.getElementById('featuredBanner');
+        el.innerHTML = `
+            <a href="path.html?p=${path.slug}" class="lp-featured">
+                <div class="lp-featured-copy">
+                    <div class="lp-featured-eyebrow">Start here if you're new</div>
+                    <div class="lp-featured-title">${path.title}</div>
+                    <div class="lp-featured-desc">${path.meta} · No prior knowledge needed</div>
+                </div>
+                <span class="lp-featured-cta">Start this path →</span>
+            </a>
+        `;
+    }
+
+    function renderByCategory(paths) {
+        const container = document.getElementById('pathSections');
+        CATEGORY_ORDER.forEach(cat => {
+            const catPaths = paths.filter(p => p.category === cat);
+            if (!catPaths.length) return;
+            const meta = CATEGORY_META[cat];
+            const section = document.createElement('section');
+            section.className = 'lp-category-section';
+            section.innerHTML = `
+                <div class="lp-category-header">
+                    <div class="lp-category-title">${meta.label}</div>
+                    <div class="lp-category-desc">${meta.desc}</div>
+                </div>
+            `;
+            const grid = document.createElement('div');
+            grid.className = 'path-grid';
+            catPaths.forEach(path => grid.appendChild(buildCard(path)));
+            section.appendChild(grid);
+            container.appendChild(section);
+        });
+    }
+
+    function renderProgressFooter() {
+        const completed = getCompleted();
+        const count = Object.keys(completed).filter(s => learningPaths.some(p => p.slug === s)).length;
+        const total = learningPaths.length;
+        if (count === 0) return;
+        const el = document.getElementById('progressFooter');
+        el.innerHTML = `
+            <div class="progress-footer">
+                <span>${count} of ${total} path${count !== 1 ? 's' : ''} completed</span>
+                <button class="reset-all-btn" id="resetAllBtn" type="button">Reset all progress</button>
+            </div>
+        `;
+        document.getElementById('resetAllBtn').addEventListener('click', () => {
+            if (confirm('Reset all learning path progress?')) {
+                resetAllProgress();
+                location.reload();
+            }
+        });
+    }
+
+    const featured = learningPaths.find(p => p.level === 'beginner') || learningPaths[0];
+    renderFeatured(featured);
+    renderByCategory(learningPaths);
+    renderProgressFooter();
+</script>
+
+</body>
+</html>

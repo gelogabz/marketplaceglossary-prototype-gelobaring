@@ -1,13 +1,15 @@
-import { terms } from "../data/terms.js";
-import { tagMeta } from "../data/tags.js";
-
 // ---- State ------------------------------------------------------------------
 
 const activeFilters = new Set();
+let activeCategory = null;
 let onChangeCallback = null;
 
 export function getActiveFilters() {
   return activeFilters;
+}
+
+export function getActiveCategory() {
+  return activeCategory;
 }
 
 export function toggleFilter(tag) {
@@ -15,54 +17,35 @@ export function toggleFilter(tag) {
   if (onChangeCallback) onChangeCallback();
 }
 
-export function clearFilters() {
-  activeFilters.clear();
-  renderPills();
+export function setCategory(cat) {
+  activeCategory = activeCategory === cat ? null : cat;
   if (onChangeCallback) onChangeCallback();
 }
 
-// Register a callback to run whenever filters change (wired up in main.js)
+export function clearFilters() {
+  activeFilters.clear();
+  activeCategory = null;
+  if (onChangeCallback) onChangeCallback();
+}
+
 export function onFilterChange(fn) {
   onChangeCallback = fn;
 }
 
-// ---- Pills ------------------------------------------------------------------
+// ---- Sidebar state ----------------------------------------------------------
 
-export function renderPills() {
-  const filterBar = document.getElementById("filterBar");
-  const clearBtn = document.getElementById("clearBtn");
-
-  // Collect all tags actually used across terms, sorted by tagMeta order then alpha
-  const usedTags = [...new Set(terms.flatMap((t) => t.tags || []))].sort(
-    (a, b) => {
-      const order = Object.keys(tagMeta);
-      const ai = order.indexOf(a),
-        bi = order.indexOf(b);
-      if (ai !== -1 && bi !== -1) return ai - bi;
-      if (ai !== -1) return -1;
-      if (bi !== -1) return 1;
-      return a.localeCompare(b);
-    },
-  );
-
-  filterBar.innerHTML = "";
-
-  usedTags.forEach((tag) => {
-    const meta = tagMeta[tag] || { label: tag };
-    const count = terms.filter((t) => t.tags && t.tags.includes(tag)).length;
-    const pill = document.createElement("button");
-    pill.type = "button";
-    pill.className = "filter-pill" + (activeFilters.has(tag) ? " active" : "");
-    pill.textContent = `${meta.label.toUpperCase()} (${count})`;
-    pill.onclick = () => {
-      toggleFilter(tag);
-      renderPills();
-    };
-    filterBar.appendChild(pill);
+export function renderSidebarState() {
+  document.querySelectorAll("[data-filter-tag]").forEach((btn) => {
+    btn.classList.toggle("active", activeFilters.has(btn.dataset.filterTag));
   });
 
-  const visible = activeFilters.size > 0;
-  clearBtn.style.visibility = visible ? "visible" : "hidden";
-  clearBtn.style.opacity = visible ? "1" : "0";
-  clearBtn.style.pointerEvents = visible ? "auto" : "none";
+  document.querySelectorAll("[data-filter-category]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.filterCategory === activeCategory);
+  });
+
+  const allBtn = document.getElementById("sidebarAllBtn");
+  if (allBtn) allBtn.classList.toggle("active", activeFilters.size === 0 && activeCategory === null);
+
+  const clearBtn = document.getElementById("clearBtn");
+  if (clearBtn) clearBtn.classList.toggle("visible", activeFilters.size > 0 || activeCategory !== null);
 }

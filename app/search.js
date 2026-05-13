@@ -1,5 +1,5 @@
 import { terms } from "../data/terms.js";
-import { getActiveFilters } from "./filters.js";
+import { getActiveFilters, getActiveCategory } from "./filters.js";
 import { matchScore } from "./render.js";
 
 // Subsequence fuzzy match — returns a score > 0 if all query chars appear
@@ -57,6 +57,11 @@ export function getFiltered(q) {
     candidates = candidates.filter(
       (t) => t.tags && t.tags.some((tag) => activeFilters.has(tag)),
     );
+  }
+
+  const activeCategory = getActiveCategory();
+  if (activeCategory) {
+    candidates = candidates.filter((t) => t.category === activeCategory);
   }
 
   return candidates;

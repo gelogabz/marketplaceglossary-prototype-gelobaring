@@ -1,9 +1,12 @@
 import { slug } from "./render.js";
 
+const TOPNAV_H = 52;
+
 // ---- Alpha nav --------------------------------------------------------------
 
 export function buildAlphaNav(grouped) {
   const alphaNavEl = document.getElementById("alpha-nav");
+  if (!alphaNavEl) return;
   alphaNavEl.innerHTML = "";
 
   Object.keys(grouped)
@@ -23,7 +26,6 @@ export function buildAlphaNav(grouped) {
 }
 
 // ---- Scroll to best match ---------------------------------------------------
-// Double rAF ensures we scroll after the browser has painted the new DOM.
 
 export function scrollToBestMatch(bestMatch) {
   if (!bestMatch) return;
@@ -40,23 +42,13 @@ export function scrollToBestMatch(bestMatch) {
 
 export function initScrollSpy() {
   const backToTopBtn = document.getElementById("backToTop");
-  const controlsEl = document.querySelector(".controls");
-  const alphaNavEl = document.querySelector(".alpha-nav");
 
   function stickyHeight() {
-    return (controlsEl?.offsetHeight ?? 0) + (alphaNavEl?.offsetHeight ?? 0);
+    const alphaNavEl = document.querySelector(".alpha-nav");
+    return TOPNAV_H + (alphaNavEl?.offsetHeight ?? 0);
   }
-
-  function updateControlsHeight() {
-    const h = controlsEl?.offsetHeight ?? 0;
-    document.documentElement.style.setProperty("--controls-height", h + "px");
-  }
-
-  updateControlsHeight();
-  if (controlsEl) new ResizeObserver(updateControlsHeight).observe(controlsEl);
 
   window.addEventListener("scroll", () => {
-    // Active letter badge in alpha nav
     const threshold = stickyHeight() + 10;
     const headers = document.querySelectorAll(".alpha-header");
     let current = "";
@@ -68,9 +60,12 @@ export function initScrollSpy() {
       link.classList.toggle("active", link.textContent === current);
     });
 
-    // Back to top visibility
-    backToTopBtn.style.display = window.scrollY > 400 ? "block" : "none";
+    if (backToTopBtn) {
+      backToTopBtn.style.display = window.scrollY > 400 ? "block" : "none";
+    }
   });
 
-  backToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  if (backToTopBtn) {
+    backToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 }

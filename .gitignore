@@ -2,3 +2,7 @@ CLAUDE.md
 claude-contexts/
 .DS_Store
 data/terms.csv
+sample-*.html
+possible-*.png
+temp/
+.claude
