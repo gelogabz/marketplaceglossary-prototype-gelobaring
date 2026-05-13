@@ -40,12 +40,23 @@ export function renderSidebarState() {
   });
 
   document.querySelectorAll("[data-filter-category]").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.filterCategory === activeCategory);
+    btn.classList.toggle(
+      "active",
+      btn.dataset.filterCategory === activeCategory,
+    );
   });
 
   const allBtn = document.getElementById("sidebarAllBtn");
-  if (allBtn) allBtn.classList.toggle("active", activeFilters.size === 0 && activeCategory === null);
+  if (allBtn)
+    allBtn.classList.toggle(
+      "active",
+      activeFilters.size === 0 && activeCategory === null,
+    );
 
   const clearBtn = document.getElementById("clearBtn");
-  if (clearBtn) clearBtn.classList.toggle("visible", activeFilters.size > 0 || activeCategory !== null);
+  if (clearBtn)
+    clearBtn.classList.toggle(
+      "visible",
+      activeFilters.size > 0 || activeCategory !== null,
+    );
 }

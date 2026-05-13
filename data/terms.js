@@ -14,9 +14,17 @@ export const terms = [
       "Tracking joint pipeline with AWS sales teams in a shared CRM-like view",
       "Qualifying for ISV Accelerate co-sell benefits and SaaS Co-sell Benefit (SCB)",
     ],
-    context: ["AWS Partner Central", "ACE Pipeline Manager", "ISV Accelerate", "Co-sell Motions"],
+    context: [
+      "AWS Partner Central",
+      "ACE Pipeline Manager",
+      "ISV Accelerate",
+      "Co-sell Motions",
+    ],
     related: [
-      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
       { name: "Co-sell", slug: "co-sell" },
     ],
@@ -38,7 +46,10 @@ export const terms = [
     context: ["AWS Marketplace", "AWS Seller Central", "Private Offer Flows"],
     related: [
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
-      { name: "Future Dated Agreement — AWS", slug: "future-dated-agreement-—-aws" },
+      {
+        name: "Future Dated Agreement — AWS",
+        slug: "future-dated-agreement-—-aws",
+      },
       { name: "Private Offer", slug: "private-offer" },
     ],
   },
@@ -57,9 +68,16 @@ export const terms = [
       "Tracking the active contract created after a buyer accepts a private offer on AWS",
       "Referencing an Agreement ID in support requests or API-based lifecycle calls",
     ],
-    context: ["AWS Marketplace", "Suger Console", "AWS Marketplace Management Portal (AMMP)"],
+    context: [
+      "AWS Marketplace",
+      "Suger Console",
+      "AWS Marketplace Management Portal (AMMP)",
+    ],
     related: [
-      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
+      {
+        name: "Agreement-Based Offer (ABO) — AWS",
+        slug: "agreement-based-offer-abo-—-aws",
+      },
       { name: "Entitlement", slug: "entitlement" },
       { name: "Private Offer", slug: "private-offer" },
     ],
@@ -79,10 +97,17 @@ export const terms = [
       "Listing a server-side software product on AWS Marketplace for EC2 deployment",
       "Offering BYOL or hourly-priced software to buyers who manage their own infrastructure",
     ],
-    context: ["AWS Marketplace", "EC2 Console", "AWS Marketplace Management Portal (AMMP)"],
+    context: [
+      "AWS Marketplace",
+      "EC2 Console",
+      "AWS Marketplace Management Portal (AMMP)",
+    ],
     related: [
       { name: "Listing", slug: "listing" },
-      { name: "Bring Your Own License (BYOL)", slug: "bring-your-own-license-byol" },
+      {
+        name: "Bring Your Own License (BYOL)",
+        slug: "bring-your-own-license-byol",
+      },
       { name: "Contract — AWS", slug: "contract-—-aws" },
     ],
   },
@@ -122,7 +147,10 @@ export const terms = [
     ],
     context: ["Microsoft Marketplace — Azure", "Partner Center — Azure"],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
     ],
   },
@@ -145,7 +173,10 @@ export const terms = [
     related: [
       { name: "Listing", slug: "listing" },
       { name: "Private Offer", slug: "private-offer" },
-      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
     ],
   },
   {
@@ -165,7 +196,10 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Suger Console", "ISV Backend Systems"],
     related: [
-      { name: "AWS Marketplace Management Portal (AMMP) — AWS", slug: "aws-marketplace-management-portal-ammp-—-aws" },
+      {
+        name: "AWS Marketplace Management Portal (AMMP) — AWS",
+        slug: "aws-marketplace-management-portal-ammp-—-aws",
+      },
       { name: "Suger Console", slug: "suger-console" },
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
     ],
@@ -186,7 +220,10 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "AWS Seller Operations"],
     related: [
-      { name: "AWS Marketplace Catalog API — AWS", slug: "aws-marketplace-catalog-api-—-aws" },
+      {
+        name: "AWS Marketplace Catalog API — AWS",
+        slug: "aws-marketplace-catalog-api-—-aws",
+      },
       { name: "Private Offer", slug: "private-offer" },
       { name: "Suger Console", slug: "suger-console" },
     ],
@@ -207,7 +244,10 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "Co-sell Programs", "ISV Programs"],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
     ],
@@ -229,7 +269,10 @@ export const terms = [
     ],
     context: ["Partner Center — Azure", "Azure Portal", "Microsoft Sales"],
     related: [
-      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
       { name: "Listing", slug: "listing" },
     ],
@@ -248,7 +291,12 @@ export const terms = [
       "Connecting an ISV's system to a cloud marketplace to automate subscription lifecycle and usage reporting",
       "Setting up Suger as the billing integration layer to handle entitlement provisioning across AWS, Azure, and GCP",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
       { name: "Entitlement", slug: "entitlement" },
       { name: "Landing Page / Signup URL", slug: "landing-page-/-signup-url" },
@@ -269,11 +317,19 @@ export const terms = [
       "Listing software on marketplace for discoverability when the buyer already has a license purchased directly",
       "Distinguishing BYOL listings from transactable offers when advising buyers on committed spend eligibility",
     ],
-    context: ["AWS Marketplace", "GCP Marketplace", "Azure Marketplace", "Listing Types"],
+    context: [
+      "AWS Marketplace",
+      "GCP Marketplace",
+      "Azure Marketplace",
+      "Listing Types",
+    ],
     related: [
       { name: "Listing", slug: "listing" },
       { name: "Transactable Offer", slug: "transactable-offer" },
-      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+      {
+        name: "Committed Spend / Cloud Commit",
+        slug: "committed-spend-/-cloud-commit",
+      },
     ],
   },
   {
@@ -290,7 +346,12 @@ export const terms = [
       "Identifying the purchasing entity behind an entitlement in Suger across different marketplace platforms",
       "Mapping marketplace buyer IDs to internal CRM accounts for deal tracking",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
       { name: "Entitlement", slug: "entitlement" },
       { name: "Offer", slug: "offer" },
@@ -312,10 +373,21 @@ export const terms = [
       "Identifying which partners are authorized to transact your product on marketplace on behalf of end customers",
       "Structuring resale motions where a partner becomes the seller of record in a CPPO or MPO transaction",
     ],
-    context: ["Channel Programs", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Channel Programs",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
       { name: "Seller of Record", slug: "seller-of-record" },
     ],
   },
@@ -348,14 +420,28 @@ export const terms = [
     source: "https://doc.suger.io/co-sell/",
     difficulty: "beginner",
     category: "cosell",
-    whoFor: ["ISVs / Sellers", "AWS Sales", "GCP Sales", "Azure Sales", "Partner Managers"],
+    whoFor: [
+      "ISVs / Sellers",
+      "AWS Sales",
+      "GCP Sales",
+      "Azure Sales",
+      "Partner Managers",
+    ],
     useCases: [
       "Sharing a qualified deal with AWS, Azure, or GCP sales teams to accelerate the enterprise sales cycle",
       "Registering opportunities in ACE, Partner Advantage, or Partner Center to unlock co-sell incentives",
     ],
-    context: ["Suger Console", "AWS Partner Central", "GCP Partner Advantage", "Azure Partner Center"],
+    context: [
+      "Suger Console",
+      "AWS Partner Central",
+      "GCP Partner Advantage",
+      "Azure Partner Center",
+    ],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
       { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
       { name: "Inbound Referral", slug: "inbound-referral" },
     ],
@@ -375,11 +461,24 @@ export const terms = [
       "Achieving Azure IP Co-sell status to make your listing MACC-eligible for enterprise buyers",
       "Qualifying for Co-sell Incentivized status so Microsoft sellers earn quota credit on deals involving your product",
     ],
-    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Co-sell Programs"],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "Azure Co-sell Programs",
+    ],
     related: [
-      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
-      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
     ],
   },
   {
@@ -396,7 +495,11 @@ export const terms = [
       "Pricing a GCP Marketplace SaaS product with a base subscription plus metered overage for heavy users",
       "Structuring a deal that includes a predictable floor price alongside flexible consumption billing",
     ],
-    context: ["GCP Marketplace", "Producer Portal — GCP", "Pricing Configuration"],
+    context: [
+      "GCP Marketplace",
+      "Producer Portal — GCP",
+      "Pricing Configuration",
+    ],
     related: [
       { name: "Usage Metering", slug: "usage-metering" },
       { name: "Overage", slug: "overage" },
@@ -416,9 +519,17 @@ export const terms = [
       "Structuring a contract with a guaranteed minimum payment alongside usage-based overage billing",
       "Configuring prepaid commit amounts in Suger offer price models for AWS, Azure, or GCP listings",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
-      { name: "Commit with Additional Usage Metering", slug: "commit-with-additional-usage-metering" },
+      {
+        name: "Commit with Additional Usage Metering",
+        slug: "commit-with-additional-usage-metering",
+      },
       { name: "Overage", slug: "overage" },
       { name: "Metered Billing", slug: "metered-billing" },
     ],
@@ -460,9 +571,18 @@ export const terms = [
     ],
     context: ["Enterprise Sales", "Marketplace Procurement", "Cloud Budgeting"],
     related: [
-      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
-      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
-      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+      },
     ],
   },
   {
@@ -479,7 +599,11 @@ export const terms = [
       "Selling annual or multi-year upfront commitments on AWS Marketplace with optional metered overage",
       "Structuring an enterprise deal with a fixed-term, non-cancellable commitment via AWS Marketplace",
     ],
-    context: ["AWS Marketplace", "Private Offer Flows", "Enterprise Procurement"],
+    context: [
+      "AWS Marketplace",
+      "Private Offer Flows",
+      "Enterprise Procurement",
+    ],
     related: [
       { name: "Private Offer", slug: "private-offer" },
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
@@ -502,11 +626,25 @@ export const terms = [
       "Routing an enterprise deal through a strategic reseller while preserving marketplace attribution",
       "Applying a committed spend discount for a buyer while a partner manages the relationship",
     ],
-    context: ["AWS Marketplace", "AWS Seller Central", "Channel Programs", "Co-sell Motions"],
+    context: [
+      "AWS Marketplace",
+      "AWS Seller Central",
+      "Channel Programs",
+      "Co-sell Motions",
+    ],
     related: [
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
-      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
-      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+      },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
       { name: "Entitlement", slug: "entitlement" },
     ],
   },
@@ -545,10 +683,20 @@ export const terms = [
       "Enabling authorized CSP partners to resell your Microsoft Marketplace solution to their enterprise customers",
       "Creating Multiparty Private Offers for CSP partners to set their own margin on your product",
     ],
-    context: ["Partner Center — Azure", "Microsoft Marketplace", "Channel Programs"],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "Channel Programs",
+    ],
     related: [
-      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
     ],
   },
@@ -566,11 +714,24 @@ export const terms = [
       "Positioning GCP Marketplace transactable listings as CUD-eligible to enterprise buyers managing their Google Cloud commitment",
       "Understanding how marketplace purchases draw down a buyer's CUD balance on GCP",
     ],
-    context: ["GCP Marketplace", "Enterprise Procurement", "Google Cloud Billing"],
+    context: [
+      "GCP Marketplace",
+      "Enterprise Procurement",
+      "Google Cloud Billing",
+    ],
     related: [
-      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
-      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
-      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Committed Spend / Cloud Commit",
+        slug: "committed-spend-/-cloud-commit",
+      },
     ],
   },
   {
@@ -586,7 +747,11 @@ export const terms = [
       "Mapping internal usage metric names to marketplace-specific dimension keys without changing either system",
       "Applying a multiplier factor to convert raw usage units into the dimension values expected by the marketplace",
     ],
-    context: ["Suger Console", "Usage Metering Configuration", "Marketplace APIs"],
+    context: [
+      "Suger Console",
+      "Usage Metering Configuration",
+      "Marketplace APIs",
+    ],
     related: [
       { name: "Metering Dimension", slug: "metering-dimension" },
       { name: "Usage Metering", slug: "usage-metering" },
@@ -610,7 +775,10 @@ export const terms = [
     context: ["Suger Console", "Revenue Dashboard", "Marketplace Payouts"],
     related: [
       { name: "Revenue", slug: "revenue" },
-      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+      },
       { name: "Disbursed Amount", slug: "disbursed-amount" },
     ],
   },
@@ -629,7 +797,10 @@ export const terms = [
     ],
     context: ["Suger Console", "Entitlement Configuration", "Usage Metering"],
     related: [
-      { name: "Commit with Additional Usage Metering", slug: "commit-with-additional-usage-metering" },
+      {
+        name: "Commit with Additional Usage Metering",
+        slug: "commit-with-additional-usage-metering",
+      },
       { name: "Overage", slug: "overage" },
       { name: "Entitlement", slug: "entitlement" },
     ],
@@ -650,9 +821,18 @@ export const terms = [
     ],
     context: ["Enterprise Sales", "AWS Marketplace", "AWS Account Management"],
     related: [
-      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
-      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
-      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+      {
+        name: "Committed Spend / Cloud Commit",
+        slug: "committed-spend-/-cloud-commit",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+      },
     ],
   },
   {
@@ -669,7 +849,12 @@ export const terms = [
       "Tracking all active buyer contracts and their billing status across connected marketplaces from one view",
       "Using entitlement state to trigger provisioning, cancellation, and renewal workflows in Suger",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
       { name: "Private Offer", slug: "private-offer" },
@@ -690,9 +875,17 @@ export const terms = [
       "Attaching custom legal terms to a private offer to cover enterprise-specific compliance requirements",
       "Using the AWS Standard Contract (SCMP) to reduce buyer legal review time on marketplace deals",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "Private Offer Flows", "Legal Review"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "Private Offer Flows",
+      "Legal Review",
+    ],
     related: [
-      { name: "Standard Contract (SCMP) — AWS", slug: "standard-contract-scmp-—-aws" },
+      {
+        name: "Standard Contract (SCMP) — AWS",
+        slug: "standard-contract-scmp-—-aws",
+      },
       { name: "Private Offer", slug: "private-offer" },
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
     ],
@@ -732,7 +925,12 @@ export const terms = [
       "Structuring an annual deal with quarterly installment payments to align to the buyer's budget cycle",
       "Offering flexible payment terms on a private offer without reducing total contract value",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "Private Offer Flows", "Enterprise Procurement"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "Private Offer Flows",
+      "Enterprise Procurement",
+    ],
     related: [
       { name: "Private Offer", slug: "private-offer" },
       { name: "Contract — AWS", slug: "contract-—-aws" },
@@ -753,7 +951,12 @@ export const terms = [
       "Lowering buyer friction by offering a time-limited free trial before a marketplace subscription converts to paid",
       "Configuring trial periods on AWS, Azure, or GCP listings to drive product-led growth motions",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Listing Configuration"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Listing Configuration",
+    ],
     related: [
       { name: "Listing", slug: "listing" },
       { name: "Transactable Offer", slug: "transactable-offer" },
@@ -777,8 +980,14 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Private Offer Flows", "Renewal Operations"],
     related: [
-      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      {
+        name: "Agreement-Based Offer (ABO) — AWS",
+        slug: "agreement-based-offer-abo-—-aws",
+      },
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
     ],
   },
@@ -798,7 +1007,10 @@ export const terms = [
     context: ["Google Cloud Console", "Producer Portal — GCP", "GCP Billing"],
     related: [
       { name: "Listing", slug: "listing" },
-      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+      },
       { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
     ],
   },
@@ -819,7 +1031,10 @@ export const terms = [
     context: ["GCP Partner Portal", "Co-sell Programs", "GCP Marketplace"],
     related: [
       { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
-      { name: "Build Engagement Model — GCP", slug: "build-engagement-model-—-gcp" },
+      {
+        name: "Build Engagement Model — GCP",
+        slug: "build-engagement-model-—-gcp",
+      },
       { name: "Producer Portal — GCP", slug: "producer-portal-—-gcp" },
     ],
   },
@@ -942,9 +1157,18 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "Co-sell Programs", "ISV Programs"],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
-      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
-      { name: "SaaS Co-sell Benefit (SCB) — AWS", slug: "saas-co-sell-benefit-scb-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
+      {
+        name: "SaaS Co-sell Benefit (SCB) — AWS",
+        slug: "saas-co-sell-benefit-scb-—-aws",
+      },
     ],
   },
   {
@@ -960,7 +1184,13 @@ export const terms = [
       "Configuring the signup URL in Suger to intercept marketplace redirects and auto-provision entitlements before sending buyers to your product",
       "Decoupling marketplace provisioning from product onboarding using Suger's signup URL redirect feature",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Buyer Onboarding"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Buyer Onboarding",
+    ],
     related: [
       { name: "Signup URL Redirect", slug: "signup-url-redirect" },
       { name: "Entitlement", slug: "entitlement" },
@@ -981,10 +1211,18 @@ export const terms = [
       "Publishing a product on AWS, Azure, or GCP marketplace so buyers can discover and purchase it",
       "Choosing the right listing type (transactable, BYOL, free trial, contact me) for your go-to-market motion",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Snowflake Marketplace"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Snowflake Marketplace",
+    ],
     related: [
       { name: "Transactable Offer", slug: "transactable-offer" },
-      { name: "Bring Your Own License (BYOL)", slug: "bring-your-own-license-byol" },
+      {
+        name: "Bring Your Own License (BYOL)",
+        slug: "bring-your-own-license-byol",
+      },
       { name: "Private Offer", slug: "private-offer" },
     ],
   },
@@ -1003,11 +1241,24 @@ export const terms = [
       "Achieving Azure IP Co-sell status to make your listing MACC-eligible for enterprise customers managing Azure spend commitments",
       "Helping enterprise buyers understand that marketplace purchases of MACC-eligible listings count toward their Azure commitment",
     ],
-    context: ["Microsoft Marketplace", "Enterprise Procurement", "Azure Billing"],
+    context: [
+      "Microsoft Marketplace",
+      "Enterprise Procurement",
+      "Azure Billing",
+    ],
     related: [
-      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
-      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
-      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
     ],
   },
   {
@@ -1025,11 +1276,21 @@ export const terms = [
       "Registering a first-time GCP Marketplace deal in Partner Advantage to qualify the buyer for up to 3% Google Cloud credits",
       "Positioning MCCP as an additional incentive alongside CUD drawdown to accelerate GCP enterprise deals",
     ],
-    context: ["GCP Partner Portal", "Partner Advantage — GCP", "GCP Marketplace"],
+    context: [
+      "GCP Partner Portal",
+      "Partner Advantage — GCP",
+      "GCP Marketplace",
+    ],
     related: [
       { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
-      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
-      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+      },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+      },
     ],
   },
   {
@@ -1046,7 +1307,12 @@ export const terms = [
       "Calculating net payout by understanding what percentage the marketplace retains before disbursing to the ISV",
       "Explaining to partners how revenue splits work across ISV, channel partner, and hyperscaler in a CPPO transaction",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Revenue Reporting"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Revenue Reporting",
+    ],
     related: [
       { name: "Disbursement", slug: "disbursement" },
       { name: "Seller of Record", slug: "seller-of-record" },
@@ -1068,11 +1334,24 @@ export const terms = [
       "Activating Marketplace Rewards to unlock co-marketing budget and technical support as Azure transact revenue grows",
       "Tracking revenue milestones that unlock higher-tier Rewards benefits in Partner Center",
     ],
-    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Partner Programs"],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "Azure Partner Programs",
+    ],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
-      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
     ],
   },
   {
@@ -1088,7 +1367,12 @@ export const terms = [
       "Implementing consumption-based billing where customers pay only for what they use",
       "Using Suger's unified metering API to report usage to AWS, Azure, and GCP from a single integration",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
       { name: "Usage Metering", slug: "usage-metering" },
       { name: "Metering Dimension", slug: "metering-dimension" },
@@ -1108,7 +1392,11 @@ export const terms = [
       "Defining the units of consumption (API calls, GB, seats) that will be tracked and billed for a marketplace offer",
       "Mapping internal metric names to marketplace dimension keys using Suger's dimension configuration",
     ],
-    context: ["Suger Console", "Usage Metering Configuration", "Marketplace APIs"],
+    context: [
+      "Suger Console",
+      "Usage Metering Configuration",
+      "Marketplace APIs",
+    ],
     related: [
       { name: "Usage Metering", slug: "usage-metering" },
       { name: "Billable Metric", slug: "billable-metric" },
@@ -1129,11 +1417,24 @@ export const terms = [
       "Enrolling in the MPN program as a prerequisite for publishing on Microsoft Marketplace and accessing co-sell benefits",
       "Navigating MPN program requirements to unlock Marketplace Rewards and partner funding eligibility",
     ],
-    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Partner Programs"],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "Azure Partner Programs",
+    ],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
-      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
     ],
   },
   {
@@ -1151,11 +1452,24 @@ export const terms = [
       "Enabling a CSP or authorized partner to resell your Microsoft Marketplace product with their own margin",
       "Structuring an enterprise deal where the partner manages the customer relationship and the purchase counts toward MACC",
     ],
-    context: ["Partner Center — Azure", "Microsoft Marketplace", "Channel Programs"],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "Channel Programs",
+    ],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
-      { name: "Resale-Enabled Offer — Azure", slug: "resale-enabled-offer-—-azure" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+      },
+      {
+        name: "Resale-Enabled Offer — Azure",
+        slug: "resale-enabled-offer-—-azure",
+      },
     ],
   },
   {
@@ -1171,11 +1485,22 @@ export const terms = [
       "Identifying MSP partners who manage customer cloud environments and could resell your marketplace product",
       "Structuring CPPO or MPO resale authorization for MSPs who bundle your software with managed services",
     ],
-    context: ["Channel Programs", "AWS Marketplace", "Azure Marketplace", "Partner Ecosystem"],
+    context: [
+      "Channel Programs",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "Partner Ecosystem",
+    ],
     related: [
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Cloud Solution Provider (CSP) — Azure",
+        slug: "cloud-solution-provider-csp-—-azure",
+      },
     ],
   },
   {
@@ -1191,7 +1516,12 @@ export const terms = [
       "Creating a public or private offer in Suger to present pricing and terms to a specific buyer",
       "Linking a Suger offer to a product before publishing to a cloud marketplace",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
       { name: "Private Offer", slug: "private-offer" },
       { name: "Product", slug: "product" },
@@ -1215,7 +1545,10 @@ export const terms = [
     context: ["AWS Marketplace", "AWS Seller Central", "Private Offer Flows"],
     related: [
       { name: "Private Offer", slug: "private-offer" },
-      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
+      {
+        name: "Agreement-Based Offer (ABO) — AWS",
+        slug: "agreement-based-offer-abo-—-aws",
+      },
     ],
   },
   {
@@ -1233,7 +1566,10 @@ export const terms = [
     ],
     context: ["Suger Console", "Account Setup"],
     related: [
-      { name: "Role-Based Access Control (RBAC)", slug: "role-based-access-control-rbac" },
+      {
+        name: "Role-Based Access Control (RBAC)",
+        slug: "role-based-access-control-rbac",
+      },
       { name: "Suger Console", slug: "suger-console" },
       { name: "Product", slug: "product" },
     ],
@@ -1275,7 +1611,10 @@ export const terms = [
     related: [
       { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
       { name: "Usage Metering", slug: "usage-metering" },
-      { name: "Commit with Additional Usage Metering", slug: "commit-with-additional-usage-metering" },
+      {
+        name: "Commit with Additional Usage Metering",
+        slug: "commit-with-additional-usage-metering",
+      },
     ],
   },
   {
@@ -1294,9 +1633,18 @@ export const terms = [
     ],
     context: ["Microsoft Marketplace", "Azure Publisher Operations"],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
-      { name: "SaaS Fulfillment API — Azure", slug: "saas-fulfillment-api-—-azure" },
-      { name: "Microsoft AI Cloud Partner Program (MPN) — Azure", slug: "microsoft-ai-cloud-partner-program-mpn-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+      },
     ],
   },
   {
@@ -1355,11 +1703,18 @@ export const terms = [
       "Creating multiple pricing tiers within a single Azure Marketplace offer (e.g., Starter, Pro, Enterprise plans)",
       "Publishing a private plan visible only to specific tenants for custom pricing without a full private offer",
     ],
-    context: ["Partner Center — Azure", "Microsoft Marketplace", "Azure Offer Configuration"],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "Azure Offer Configuration",
+    ],
     related: [
       { name: "Private Plan — Azure", slug: "private-plan-—-azure" },
       { name: "Private Offer", slug: "private-offer" },
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
     ],
   },
   {
@@ -1379,7 +1734,10 @@ export const terms = [
     context: ["AWS Marketplace", "AWS Seller Support"],
     related: [
       { name: "Private Offer", slug: "private-offer" },
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
     ],
   },
   {
@@ -1397,11 +1755,19 @@ export const terms = [
       "Closing a custom-priced enterprise deal through marketplace with negotiated terms and payment schedules",
       "Extending a private offer to a specific buyer account after negotiating pricing off the public list",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Suger Console",
+    ],
     related: [
       { name: "Offer", slug: "offer" },
       { name: "Entitlement", slug: "entitlement" },
-      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+      {
+        name: "Committed Spend / Cloud Commit",
+        slug: "committed-spend-/-cloud-commit",
+      },
     ],
   },
   {
@@ -1418,11 +1784,18 @@ export const terms = [
       "Giving a specific enterprise customer access to custom pricing without creating a time-bound private offer",
       "Restricting a pricing plan to selected tenant IDs in Partner Center for segment-specific pricing",
     ],
-    context: ["Partner Center — Azure", "Azure Marketplace", "Listing Configuration"],
+    context: [
+      "Partner Center — Azure",
+      "Azure Marketplace",
+      "Listing Configuration",
+    ],
     related: [
       { name: "Plan — Azure", slug: "plan-—-azure" },
       { name: "Private Offer", slug: "private-offer" },
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
     ],
   },
   {
@@ -1483,9 +1856,15 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Suger Console", "AWS Marketplace APIs"],
     related: [
-      { name: "AWS Marketplace Catalog API — AWS", slug: "aws-marketplace-catalog-api-—-aws" },
+      {
+        name: "AWS Marketplace Catalog API — AWS",
+        slug: "aws-marketplace-catalog-api-—-aws",
+      },
       { name: "Product", slug: "product" },
-      { name: "Amazon Machine Image (AMI) — AWS", slug: "amazon-machine-image-ami-—-aws" },
+      {
+        name: "Amazon Machine Image (AMI) — AWS",
+        slug: "amazon-machine-image-ami-—-aws",
+      },
     ],
   },
   {
@@ -1565,9 +1944,18 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "AWS Seller Central", "Channel Programs"],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Selling Authorization — AWS", slug: "selling-authorization-—-aws" },
-      { name: "Solution Provider Private Offer (SPPO) — AWS", slug: "solution-provider-private-offer-sppo-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Selling Authorization — AWS",
+        slug: "selling-authorization-—-aws",
+      },
+      {
+        name: "Solution Provider Private Offer (SPPO) — AWS",
+        slug: "solution-provider-private-offer-sppo-—-aws",
+      },
     ],
   },
   {
@@ -1585,11 +1973,24 @@ export const terms = [
       "Enabling authorized GCP resellers to create private offers for your marketplace product using RPOP/MCPO",
       "Understanding how GCP's channel program compares to AWS CPPO and Azure MPO for resale motions",
     ],
-    context: ["GCP Marketplace", "Partner Sales Console — GCP", "Channel Programs"],
+    context: [
+      "GCP Marketplace",
+      "Partner Sales Console — GCP",
+      "Channel Programs",
+    ],
     related: [
-      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
-      { name: "Reseller Private Offer Plan (RPOP) — GCP", slug: "reseller-private-offer-plan-rpop-—-gcp" },
-      { name: "Partner Sales Console — GCP", slug: "partner-sales-console-—-gcp" },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+      },
+      {
+        name: "Reseller Private Offer Plan (RPOP) — GCP",
+        slug: "reseller-private-offer-plan-rpop-—-gcp",
+      },
+      {
+        name: "Partner Sales Console — GCP",
+        slug: "partner-sales-console-—-gcp",
+      },
     ],
   },
   {
@@ -1606,7 +2007,12 @@ export const terms = [
       "Listing a hosted software product on cloud marketplace as a SaaS offer with subscription billing",
       "Understanding why SaaS is the most common and fully transactable listing type across AWS, Azure, and GCP",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Listing Types"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Listing Types",
+    ],
     related: [
       { name: "Listing", slug: "listing" },
       { name: "Transactable Offer", slug: "transactable-offer" },
@@ -1627,9 +2033,16 @@ export const terms = [
       "Implementing the Azure SaaS Fulfillment API to handle subscription activation, plan changes, and cancellations",
       "Using Suger to abstract SaaS Fulfillment API complexity so your backend receives normalized lifecycle events",
     ],
-    context: ["Azure Marketplace", "ISV Backend Integration", "Partner Center — Azure"],
+    context: [
+      "Azure Marketplace",
+      "ISV Backend Integration",
+      "Partner Center — Azure",
+    ],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
       { name: "Entitlement", slug: "entitlement" },
     ],
@@ -1650,7 +2063,10 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Private Offer Flows", "Legal Review"],
     related: [
-      { name: "End User License Agreement (EULA)", slug: "end-user-license-agreement-eula" },
+      {
+        name: "End User License Agreement (EULA)",
+        slug: "end-user-license-agreement-eula",
+      },
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
       { name: "Private Offer", slug: "private-offer" },
     ],
@@ -1672,7 +2088,10 @@ export const terms = [
     context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
     related: [
       { name: "Seller of Record", slug: "seller-of-record" },
-      { name: "Independent Software Vendor (ISV)", slug: "independent-software-vendor-isv" },
+      {
+        name: "Independent Software Vendor (ISV)",
+        slug: "independent-software-vendor-isv",
+      },
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
     ],
   },
@@ -1693,8 +2112,14 @@ export const terms = [
     context: ["Channel Programs", "AWS Marketplace", "Azure Marketplace"],
     related: [
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+      },
     ],
   },
   {
@@ -1712,7 +2137,10 @@ export const terms = [
     ],
     context: ["GCP Marketplace", "Suger Console", "GCP IAM"],
     related: [
-      { name: "Workload Identity Federation — GCP", slug: "workload-identity-federation-—-gcp" },
+      {
+        name: "Workload Identity Federation — GCP",
+        slug: "workload-identity-federation-—-gcp",
+      },
       { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
       { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
     ],
@@ -1753,7 +2181,10 @@ export const terms = [
     context: ["Partner Ecosystem", "Channel Programs", "Co-sell Motions"],
     related: [
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
-      { name: "Managed Service Provider (MSP)", slug: "managed-service-provider-msp" },
+      {
+        name: "Managed Service Provider (MSP)",
+        slug: "managed-service-provider-msp",
+      },
       { name: "Co-sell", slug: "co-sell" },
     ],
   },
@@ -1770,7 +2201,13 @@ export const terms = [
       "Routing post-purchase marketplace redirects through Suger to auto-provision entitlements before sending buyers to your onboarding flow",
       "Decoupling marketplace provisioning from product onboarding so entitlement state is tracked in Suger before handoff",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Buyer Onboarding"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Buyer Onboarding",
+    ],
     related: [
       { name: "Landing Page / Signup URL", slug: "landing-page-/-signup-url" },
       { name: "Entitlement", slug: "entitlement" },
@@ -1793,8 +2230,14 @@ export const terms = [
     ],
     context: ["Snowflake Environment", "Suger Console"],
     related: [
-      { name: "Snowflake Data Clean Rooms — Snowflake", slug: "snowflake-data-clean-rooms-—-snowflake" },
-      { name: "Snowflake Data Appreciation (SDA) — Snowflake", slug: "snowflake-data-appreciation-sda-—-snowflake" },
+      {
+        name: "Snowflake Data Clean Rooms — Snowflake",
+        slug: "snowflake-data-clean-rooms-—-snowflake",
+      },
+      {
+        name: "Snowflake Data Appreciation (SDA) — Snowflake",
+        slug: "snowflake-data-appreciation-sda-—-snowflake",
+      },
       { name: "Listing", slug: "listing" },
     ],
   },
@@ -1815,8 +2258,14 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Channel Programs", "ISV Accelerate"],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
     ],
   },
@@ -1895,11 +2344,21 @@ export const terms = [
       "Mapping an Azure Subscription ID to a Suger Entitlement for lifecycle tracking and metering",
       "Understanding how the Azure Subscription ID appears in SaaS Fulfillment API events",
     ],
-    context: ["Azure Marketplace", "Suger Console", "SaaS Fulfillment API — Azure"],
+    context: [
+      "Azure Marketplace",
+      "Suger Console",
+      "SaaS Fulfillment API — Azure",
+    ],
     related: [
       { name: "Entitlement", slug: "entitlement" },
-      { name: "SaaS Fulfillment API — Azure", slug: "saas-fulfillment-api-—-azure" },
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
     ],
   },
   {
@@ -1938,11 +2397,22 @@ export const terms = [
       "Publishing a transactable listing to enable marketplace-billed purchases that draw down EDP, MACC, or CUD",
       "Distinguishing transactable offers from BYOL or Contact Me listings when configuring a marketplace strategy",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Listing Types"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Listing Types",
+    ],
     related: [
       { name: "Listing", slug: "listing" },
-      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
-      { name: "Bring Your Own License (BYOL)", slug: "bring-your-own-license-byol" },
+      {
+        name: "Committed Spend / Cloud Commit",
+        slug: "committed-spend-/-cloud-commit",
+      },
+      {
+        name: "Bring Your Own License (BYOL)",
+        slug: "bring-your-own-license-byol",
+      },
     ],
   },
   {
@@ -1959,7 +2429,11 @@ export const terms = [
       "Configuring a GCP Marketplace SaaS offer with pure consumption-based pricing and no upfront commitment",
       "Understanding GCP Usage-based pricing as the equivalent of AWS Subscription pricing",
     ],
-    context: ["GCP Marketplace", "Producer Portal — GCP", "Pricing Configuration"],
+    context: [
+      "GCP Marketplace",
+      "Producer Portal — GCP",
+      "Pricing Configuration",
+    ],
     related: [
       { name: "PAYG / Pay-as-you-go", slug: "payg-/-pay-as-you-go" },
       { name: "Combined Pricing — GCP", slug: "combined-pricing-—-gcp" },
@@ -1999,7 +2473,12 @@ export const terms = [
       "Submitting usage data to Suger's unified metering API to trigger billing across AWS, Azure, or GCP",
       "Validating that reported consumption is correctly aggregated and deduplicated before forwarding to the marketplace",
     ],
-    context: ["Suger Console", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
       { name: "Metering Dimension", slug: "metering-dimension" },
       { name: "Usage Record", slug: "usage-record" },
@@ -2285,7 +2764,10 @@ export const terms = [
     related: [
       { name: "Listing", slug: "listing" },
       { name: "Entitlement", slug: "entitlement" },
-      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
     ],
   },
   {
@@ -2404,7 +2886,10 @@ export const terms = [
     ],
     context: ["Suger Console", "Okta", "Identity Management"],
     related: [
-      { name: "Role-Based Access Control (RBAC)", slug: "role-based-access-control-rbac" },
+      {
+        name: "Role-Based Access Control (RBAC)",
+        slug: "role-based-access-control-rbac",
+      },
       { name: "Organization", slug: "organization" },
       { name: "Suger Console", slug: "suger-console" },
     ],
@@ -2582,10 +3067,21 @@ export const terms = [
       "Exporting Suger entitlement and revenue data to GCS or BigQuery for custom analytics and data warehousing",
       "Building custom finance reports by piping Suger data exports to an existing data warehouse",
     ],
-    context: ["Suger Console", "Google Cloud Storage", "Google BigQuery", "Data Warehousing"],
+    context: [
+      "Suger Console",
+      "Google Cloud Storage",
+      "Google BigQuery",
+      "Data Warehousing",
+    ],
     related: [
-      { name: "Google Cloud Storage Integration", slug: "google-cloud-storage-integration" },
-      { name: "Google BigQuery Integration", slug: "google-bigquery-integration" },
+      {
+        name: "Google Cloud Storage Integration",
+        slug: "google-cloud-storage-integration",
+      },
+      {
+        name: "Google BigQuery Integration",
+        slug: "google-bigquery-integration",
+      },
       { name: "Suger Analytics", slug: "suger-analytics" },
     ],
   },
@@ -2685,9 +3181,18 @@ export const terms = [
     ],
     context: ["Suger Console", "AWS Partner Central", "Co-sell Module"],
     related: [
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
-      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Partner Opportunity Acceleration (POA) — AWS",
+        slug: "partner-opportunity-acceleration-poa-—-aws",
+      },
+      {
+        name: "AWS Partner Funding Portal (APFP) — AWS",
+        slug: "aws-partner-funding-portal-apfp-—-aws",
+      },
     ],
   },
   {
@@ -2707,7 +3212,10 @@ export const terms = [
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
       { name: "Benefit Allocation — AWS", slug: "benefit-allocation-—-aws" },
-      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+      {
+        name: "AWS Partner Funding Portal (APFP) — AWS",
+        slug: "aws-partner-funding-portal-apfp-—-aws",
+      },
     ],
   },
   {
@@ -2725,9 +3233,15 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "Suger Console", "AWS Co-sell Setup"],
     related: [
-      { name: "Funding Benefits API — AWS", slug: "funding-benefits-api-—-aws" },
+      {
+        name: "Funding Benefits API — AWS",
+        slug: "funding-benefits-api-—-aws",
+      },
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
     ],
   },
   {
@@ -2745,7 +3259,10 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "Suger Console", "API Integration"],
     related: [
-      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+      {
+        name: "Partner Central 3.0 (PC3.0) — AWS",
+        slug: "partner-central-3.0-pc3.0-—-aws",
+      },
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
       { name: "AWS ACE Integration", slug: "aws-ace-integration" },
     ],
@@ -2764,11 +3281,18 @@ export const terms = [
       "Requesting reimbursement for demand generation activities (events, campaigns, ads) by submitting MDF claims with proof of performance through the AWS Partner Funding Portal",
       "Stacking MDF benefits on top of an SCA to fund co-marketing activities aligned with joint business goals",
     ],
-    context: ["AWS Partner Funding Portal", "AWS Partner Central", "Co-sell Programs"],
+    context: [
+      "AWS Partner Funding Portal",
+      "AWS Partner Central",
+      "Co-sell Programs",
+    ],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
       { name: "Plan of Action (POA) — AWS", slug: "plan-of-action-poa-—-aws" },
-      { name: "Strategic Collaboration Agreement (SCA) — AWS", slug: "strategic-collaboration-agreement-sca-—-aws" },
+      {
+        name: "Strategic Collaboration Agreement (SCA) — AWS",
+        slug: "strategic-collaboration-agreement-sca-—-aws",
+      },
     ],
   },
   {
@@ -2785,11 +3309,21 @@ export const terms = [
       "Applying for MAP funding to offset migration and modernization project costs for customers moving workloads to AWS",
       "Claiming MAP credits for generative AI or agentic feature builds included in a modernization engagement (post-2026 expansion)",
     ],
-    context: ["AWS Partner Central", "AWS Partner Funding Portal", "Migration Projects"],
+    context: [
+      "AWS Partner Central",
+      "AWS Partner Funding Portal",
+      "Migration Projects",
+    ],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "ISV Workload Migration Program (WMP) — AWS", slug: "isv-workload-migration-program-wmp-—-aws" },
-      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+      {
+        name: "ISV Workload Migration Program (WMP) — AWS",
+        slug: "isv-workload-migration-program-wmp-—-aws",
+      },
+      {
+        name: "AWS Partner Funding Portal (APFP) — AWS",
+        slug: "aws-partner-funding-portal-apfp-—-aws",
+      },
     ],
   },
   {
@@ -2808,8 +3342,14 @@ export const terms = [
     context: ["AWS Partner Central", "AWS Funding Programs"],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Partner Opportunity Acceleration (POA) — AWS",
+        slug: "partner-opportunity-acceleration-poa-—-aws",
+      },
     ],
   },
   {
@@ -2825,9 +3365,16 @@ export const terms = [
       "Tracking AWS-approved funding allocations — cash, credits, or access grants — received through the Partner Central API in Suger",
       "Monitoring the lifecycle status of benefit allocations submitted via Suger's funding integration",
     ],
-    context: ["AWS Partner Central", "Suger Console", "Funding Benefits API — AWS"],
+    context: [
+      "AWS Partner Central",
+      "Suger Console",
+      "Funding Benefits API — AWS",
+    ],
     related: [
-      { name: "Funding Benefits API — AWS", slug: "funding-benefits-api-—-aws" },
+      {
+        name: "Funding Benefits API — AWS",
+        slug: "funding-benefits-api-—-aws",
+      },
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
       { name: "Funding Wallet", slug: "funding-wallet" },
     ],
@@ -2847,8 +3394,14 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "AWS Funding Programs", "Payment Setup"],
     related: [
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Partner Opportunity Acceleration (POA) — AWS",
+        slug: "partner-opportunity-acceleration-poa-—-aws",
+      },
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
     ],
   },
@@ -2866,11 +3419,21 @@ export const terms = [
       "Requesting POC funding to offset up to 10% of proof-of-concept build costs (max $25K) for an ACE opportunity at Technical Validation stage or beyond",
       "Applying for POC funding through the AWS Partner Funding Portal as part of the Partner Opportunity Acceleration program",
     ],
-    context: ["AWS Partner Funding Portal", "ACE Opportunities", "AWS Partner Central"],
+    context: [
+      "AWS Partner Funding Portal",
+      "ACE Opportunities",
+      "AWS Partner Central",
+    ],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "Partner Opportunity Acceleration (POA) — AWS",
+        slug: "partner-opportunity-acceleration-poa-—-aws",
+      },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
     ],
   },
   {
@@ -2887,11 +3450,21 @@ export const terms = [
       "Accessing PIF template-based funds without PDM involvement for eligible initiative-tied activities",
       "Submitting a PIF request via the APFP to unlock funding tied to a specific partner program agreement",
     ],
-    context: ["AWS Partner Funding Portal", "AWS Partner Central", "Partner Agreements"],
+    context: [
+      "AWS Partner Funding Portal",
+      "AWS Partner Central",
+      "Partner Agreements",
+    ],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "AWS Partner Funding Portal (APFP) — AWS",
+        slug: "aws-partner-funding-portal-apfp-—-aws",
+      },
     ],
   },
   {
@@ -2908,11 +3481,21 @@ export const terms = [
       "Applying for WMP credits and go-to-market support to migrate customer workloads from on-premises to SaaS on AWS",
       "Qualifying for post-2026 WMP direct credit disbursement to end customers by meeting FTR and Validated stage requirements",
     ],
-    context: ["AWS Partner Central", "AWS Co-sell Programs", "SaaS Migration Projects"],
+    context: [
+      "AWS Partner Central",
+      "AWS Co-sell Programs",
+      "SaaS Migration Projects",
+    ],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "Migration Acceleration Program (MAP) — AWS", slug: "migration-acceleration-program-map-—-aws" },
-      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      {
+        name: "Migration Acceleration Program (MAP) — AWS",
+        slug: "migration-acceleration-program-map-—-aws",
+      },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
     ],
   },
   {
@@ -2930,9 +3513,18 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "AWS Funding Programs"],
     related: [
-      { name: "Innovation Sandbox (APN) — AWS", slug: "innovation-sandbox-apn-—-aws" },
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS", slug: "marketplace-private-offer-promotion-program-mpopp-—-aws" },
+      {
+        name: "Innovation Sandbox (APN) — AWS",
+        slug: "innovation-sandbox-apn-—-aws",
+      },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
+        slug: "marketplace-private-offer-promotion-program-mpopp-—-aws",
+      },
     ],
   },
   {
@@ -2949,11 +3541,21 @@ export const terms = [
       "Applying for AWS Promotional Credits to offset development and testing costs during solution build-out via the APFP",
       "Accessing Innovation Sandbox MDF Wallets alongside standard credits for Global Startup Program partners",
     ],
-    context: ["AWS Partner Funding Portal", "AWS Partner Central", "Solution Development"],
+    context: [
+      "AWS Partner Funding Portal",
+      "AWS Partner Central",
+      "Solution Development",
+    ],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "AWS Promotional Credits — AWS", slug: "aws-promotional-credits-—-aws" },
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      {
+        name: "AWS Promotional Credits — AWS",
+        slug: "aws-promotional-credits-—-aws",
+      },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
     ],
   },
   {
@@ -2972,8 +3574,14 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Suger Console", "AWS Integration Setup"],
     related: [
-      { name: "Marketplace Data Feed Service (MDFS) — AWS", slug: "marketplace-data-feed-service-mdfs-—-aws" },
-      { name: "AWS Partner Network Integration (API)", slug: "aws-partner-network-integration-api" },
+      {
+        name: "Marketplace Data Feed Service (MDFS) — AWS",
+        slug: "marketplace-data-feed-service-mdfs-—-aws",
+      },
+      {
+        name: "AWS Partner Network Integration (API)",
+        slug: "aws-partner-network-integration-api",
+      },
       { name: "Suger Analytics", slug: "suger-analytics" },
     ],
   },
@@ -2993,8 +3601,14 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Suger Console", "AWS Integration Setup"],
     related: [
-      { name: "Marketplace Commerce Analytics Service (MCAS) — AWS", slug: "marketplace-commerce-analytics-service-mcas-—-aws" },
-      { name: "AWS Partner Network Integration (API)", slug: "aws-partner-network-integration-api" },
+      {
+        name: "Marketplace Commerce Analytics Service (MCAS) — AWS",
+        slug: "marketplace-commerce-analytics-service-mcas-—-aws",
+      },
+      {
+        name: "AWS Partner Network Integration (API)",
+        slug: "aws-partner-network-integration-api",
+      },
       { name: "Entitlement", slug: "entitlement" },
     ],
   },
@@ -3012,11 +3626,24 @@ export const terms = [
       "Drafting a Plan of Action document with marketing activity details, timeline, and budget to accompany an MDF fund request",
       "Distinguishing the POA (MDF documentation requirement) from Partner Opportunity Acceleration (POA), which share the same acronym",
     ],
-    context: ["AWS Partner Funding Portal", "MDF Claims", "AWS Partner Central"],
+    context: [
+      "AWS Partner Funding Portal",
+      "MDF Claims",
+      "AWS Partner Central",
+    ],
     related: [
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "Partner Opportunity Acceleration (POA) — AWS", slug: "partner-opportunity-acceleration-poa-—-aws" },
-      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Partner Opportunity Acceleration (POA) — AWS",
+        slug: "partner-opportunity-acceleration-poa-—-aws",
+      },
+      {
+        name: "AWS Partner Funding Portal (APFP) — AWS",
+        slug: "aws-partner-funding-portal-apfp-—-aws",
+      },
     ],
   },
   {
@@ -3033,11 +3660,24 @@ export const terms = [
       "Applying for POA cash reimbursement or credits to offset POC or migration project costs at APN Select tier or above",
       "Ensuring POA funding benefits are applied to reduce customer costs — not retained as partner margin — when submitting a POA claim",
     ],
-    context: ["AWS Partner Central", "AWS Partner Funding Portal", "Co-sell Projects"],
+    context: [
+      "AWS Partner Central",
+      "AWS Partner Funding Portal",
+      "Co-sell Projects",
+    ],
     related: [
-      { name: "Proof of Concept (POC) Funding  — AWS", slug: "proof-of-concept-poc-funding-—-aws" },
-      { name: "Migration Acceleration Program (MAP) — AWS", slug: "migration-acceleration-program-map-—-aws" },
-      { name: "Amazon Payee Central — AWS", slug: "amazon-payee-central-—-aws" },
+      {
+        name: "Proof of Concept (POC) Funding  — AWS",
+        slug: "proof-of-concept-poc-funding-—-aws",
+      },
+      {
+        name: "Migration Acceleration Program (MAP) — AWS",
+        slug: "migration-acceleration-program-map-—-aws",
+      },
+      {
+        name: "Amazon Payee Central — AWS",
+        slug: "amazon-payee-central-—-aws",
+      },
     ],
   },
   {
@@ -3057,7 +3697,10 @@ export const terms = [
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
       { name: "Funding Wallet", slug: "funding-wallet" },
-      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+      {
+        name: "AWS Partner Funding Portal (APFP) — AWS",
+        slug: "aws-partner-funding-portal-apfp-—-aws",
+      },
     ],
   },
   {
@@ -3076,8 +3719,14 @@ export const terms = [
     context: ["AWS Partner Central", "Partner Programs"],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
-      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
     ],
   },
   {
@@ -3093,10 +3742,20 @@ export const terms = [
       "Negotiating an SCA with AWS to formalize multi-year co-sell targets, joint GTM investment, and access to stacked MDF benefits",
       "Leveraging SCA commitments and defined milestones to align AWS field engagement and funding prioritization",
     ],
-    context: ["AWS Partner Central", "Premier Partner Programs", "Co-sell Strategy"],
+    context: [
+      "AWS Partner Central",
+      "Premier Partner Programs",
+      "Co-sell Strategy",
+    ],
     related: [
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "Partner Development Manager (PDM) — AWS", slug: "partner-development-manager-pdm-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Partner Development Manager (PDM) — AWS",
+        slug: "partner-development-manager-pdm-—-aws",
+      },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
     ],
   },
@@ -3117,7 +3776,10 @@ export const terms = [
     related: [
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
       { name: "Quota Retirement — AWS", slug: "quota-retirement-—-aws" },
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
     ],
   },
   {
@@ -3133,9 +3795,16 @@ export const terms = [
       "Explaining to AWS sellers how transacting through marketplace private offers earns them quota retirement via the SCB program",
       "Using quota retirement as a selling point when positioning ISV Accelerate participation to AWS field teams",
     ],
-    context: ["ISV Accelerate Program", "AWS Field Sales", "Co-sell Conversations"],
+    context: [
+      "ISV Accelerate Program",
+      "AWS Field Sales",
+      "Co-sell Conversations",
+    ],
     related: [
-      { name: "SaaS Co-sell Benefit (SCB) — AWS", slug: "saas-co-sell-benefit-scb-—-aws" },
+      {
+        name: "SaaS Co-sell Benefit (SCB) — AWS",
+        slug: "saas-co-sell-benefit-scb-—-aws",
+      },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
       { name: "Private Offer", slug: "private-offer" },
     ],
@@ -3155,9 +3824,15 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "APN Relationship Management"],
     related: [
-      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
-      { name: "Strategic Collaboration Agreement (SCA) — AWS", slug: "strategic-collaboration-agreement-sca-—-aws" },
+      {
+        name: "Strategic Collaboration Agreement (SCA) — AWS",
+        slug: "strategic-collaboration-agreement-sca-—-aws",
+      },
     ],
   },
   {
@@ -3173,9 +3848,16 @@ export const terms = [
       "Positioning transactable marketplace listings to enterprise buyers under a PPA to enable committed spend drawdown",
       "Understanding PPA as the enterprise committed spend mechanism that powers EDP drawdown for AWS Marketplace purchases",
     ],
-    context: ["AWS Enterprise Sales", "AWS Marketplace", "Committed Spend Motions"],
+    context: [
+      "AWS Enterprise Sales",
+      "AWS Marketplace",
+      "Committed Spend Motions",
+    ],
     related: [
-      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
       { name: "Transactable Offer", slug: "transactable-offer" },
       { name: "Private Offer", slug: "private-offer" },
     ],
@@ -3197,9 +3879,18 @@ export const terms = [
     ],
     context: ["GCP Marketplace", "Suger Console", "Channel Programs"],
     related: [
-      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
-      { name: "Partner Sales Console — GCP", slug: "partner-sales-console-—-gcp" },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+      },
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
+      {
+        name: "Partner Sales Console — GCP",
+        slug: "partner-sales-console-—-gcp",
+      },
     ],
   },
   {
@@ -3219,8 +3910,14 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Channel Programs", "Resale Authorization"],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
       { name: "Seller of Record", slug: "seller-of-record" },
     ],
   },
@@ -3240,8 +3937,14 @@ export const terms = [
     ],
     context: ["GCP Marketplace", "Channel Programs", "Reseller Workflows"],
     related: [
-      { name: "Reseller Private Offer Plan (RPOP) — GCP", slug: "reseller-private-offer-plan-rpop-—-gcp" },
-      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
+      {
+        name: "Reseller Private Offer Plan (RPOP) — GCP",
+        slug: "reseller-private-offer-plan-rpop-—-gcp",
+      },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+      },
       { name: "Producer Portal — GCP", slug: "producer-portal-—-gcp" },
     ],
   },
@@ -3260,11 +3963,24 @@ export const terms = [
       "Creating a Selling Authorization (Resale Authorization) in AMMP to authorize a channel partner to create a CPPO for a specific buyer",
       "Tracking the status of a Selling Authorization — from Authorized through Consumed or Expired — across multiple partner transactions",
     ],
-    context: ["AWS Marketplace", "AMMP (AWS Marketplace Management Portal)", "Channel Programs"],
+    context: [
+      "AWS Marketplace",
+      "AMMP (AWS Marketplace Management Portal)",
+      "Channel Programs",
+    ],
     related: [
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "AWS Marketplace Management Portal (AMMP) — AWS", slug: "aws-marketplace-management-portal-ammp-—-aws" },
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "AWS Marketplace Management Portal (AMMP) — AWS",
+        slug: "aws-marketplace-management-portal-ammp-—-aws",
+      },
     ],
   },
   {
@@ -3284,9 +4000,18 @@ export const terms = [
     ],
     context: ["GCP Marketplace", "Channel Programs", "Committed Spend (CUD)"],
     related: [
-      { name: "Reseller Private Offer Plan (RPOP) — GCP", slug: "reseller-private-offer-plan-rpop-—-gcp" },
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
+      {
+        name: "Reseller Private Offer Plan (RPOP) — GCP",
+        slug: "reseller-private-offer-plan-rpop-—-gcp",
+      },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
     ],
   },
   {
@@ -3307,8 +4032,14 @@ export const terms = [
     context: ["AWS Marketplace", "Private Offer Flows", "AI-Powered Features"],
     related: [
       { name: "Private Offer", slug: "private-offer" },
-      { name: "Agreement-Based Offer (ABO) — AWS", slug: "agreement-based-offer-abo-—-aws" },
-      { name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS", slug: "marketplace-private-offer-promotion-program-mpopp-—-aws" },
+      {
+        name: "Agreement-Based Offer (ABO) — AWS",
+        slug: "agreement-based-offer-abo-—-aws",
+      },
+      {
+        name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
+        slug: "marketplace-private-offer-promotion-program-mpopp-—-aws",
+      },
     ],
   },
   {
@@ -3325,11 +4056,24 @@ export const terms = [
       "Enrolling in MPOPP to offer buyers AWS Promotional Credits as an incentive when accepting a private offer — accelerating deal close",
       "Submitting a self-service MPOPP request via the AWS Partner Funding Portal to trigger next-business-day credit delivery to the buyer",
     ],
-    context: ["AWS Partner Funding Portal", "Private Offer Flows", "Co-sell Incentives"],
+    context: [
+      "AWS Partner Funding Portal",
+      "Private Offer Flows",
+      "Co-sell Incentives",
+    ],
     related: [
-      { name: "AWS Promotional Credits — AWS", slug: "aws-promotional-credits-—-aws" },
-      { name: "Express Private Offer — AWS", slug: "express-private-offer-—-aws" },
-      { name: "AWS Partner Funding Portal (APFP) — AWS", slug: "aws-partner-funding-portal-apfp-—-aws" },
+      {
+        name: "AWS Promotional Credits — AWS",
+        slug: "aws-promotional-credits-—-aws",
+      },
+      {
+        name: "Express Private Offer — AWS",
+        slug: "express-private-offer-—-aws",
+      },
+      {
+        name: "AWS Partner Funding Portal (APFP) — AWS",
+        slug: "aws-partner-funding-portal-apfp-—-aws",
+      },
     ],
   },
   {
@@ -3389,11 +4133,24 @@ export const terms = [
       "Designating authorized resellers by geography on a Resale-Enabled Offer to enable MACC drawdown for channel-transacted purchases",
       "Expanding Azure channel motion alongside MPO — Resale-Enabled Offers provide geographic-based partner authorization without a buyer-specific private offer",
     ],
-    context: ["Microsoft Marketplace", "Azure Channel Programs", "Partner Center — Azure"],
+    context: [
+      "Microsoft Marketplace",
+      "Azure Channel Programs",
+      "Partner Center — Azure",
+    ],
     related: [
-      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
-      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
-      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Cloud Solution Provider (CSP) — Azure",
+        slug: "cloud-solution-provider-csp-—-azure",
+      },
     ],
   },
   {
@@ -3412,9 +4169,18 @@ export const terms = [
     ],
     context: ["Suger Console", "AWS Partner Central", "Co-sell Workflows"],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
-      { name: "Funding Benefits API — AWS", slug: "funding-benefits-api-—-aws" },
-      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "Funding Benefits API — AWS",
+        slug: "funding-benefits-api-—-aws",
+      },
+      {
+        name: "Partner Central 3.0 (PC3.0) — AWS",
+        slug: "partner-central-3.0-pc3.0-—-aws",
+      },
     ],
   },
   {
@@ -3433,9 +4199,18 @@ export const terms = [
     ],
     context: ["Suger Console", "AWS Integration Setup", "Legacy Integrations"],
     related: [
-      { name: "AWS Partner Network Integration (API)", slug: "aws-partner-network-integration-api" },
-      { name: "Marketplace Commerce Analytics Service (MCAS) — AWS", slug: "marketplace-commerce-analytics-service-mcas-—-aws" },
-      { name: "Marketplace Data Feed Service (MDFS) — AWS", slug: "marketplace-data-feed-service-mdfs-—-aws" },
+      {
+        name: "AWS Partner Network Integration (API)",
+        slug: "aws-partner-network-integration-api",
+      },
+      {
+        name: "Marketplace Commerce Analytics Service (MCAS) — AWS",
+        slug: "marketplace-commerce-analytics-service-mcas-—-aws",
+      },
+      {
+        name: "Marketplace Data Feed Service (MDFS) — AWS",
+        slug: "marketplace-data-feed-service-mdfs-—-aws",
+      },
     ],
   },
   {
@@ -3455,8 +4230,14 @@ export const terms = [
     context: ["Suger Console", "AWS Integration Setup", "AWS Partner Central"],
     related: [
       { name: "AWS ACE Integration", slug: "aws-ace-integration" },
-      { name: "Marketplace Commerce Analytics Service (MCAS) — AWS", slug: "marketplace-commerce-analytics-service-mcas-—-aws" },
-      { name: "AWS Partner Network Integration (S3)", slug: "aws-partner-network-integration-s3" },
+      {
+        name: "Marketplace Commerce Analytics Service (MCAS) — AWS",
+        slug: "marketplace-commerce-analytics-service-mcas-—-aws",
+      },
+      {
+        name: "AWS Partner Network Integration (S3)",
+        slug: "aws-partner-network-integration-s3",
+      },
     ],
   },
   {
@@ -3574,7 +4355,10 @@ export const terms = [
     ],
     context: ["Suger Console", "Slack Workspace", "Notification Settings"],
     related: [
-      { name: "Microsoft Teams Integration", slug: "microsoft-teams-integration" },
+      {
+        name: "Microsoft Teams Integration",
+        slug: "microsoft-teams-integration",
+      },
       { name: "Email Notification", slug: "email-notification" },
       { name: "Webhook", slug: "webhook" },
     ],
@@ -3616,7 +4400,10 @@ export const terms = [
     context: ["Suger Console", "Gmail", "Workflow Automation"],
     related: [
       { name: "User Gmail Integration", slug: "user-gmail-integration" },
-      { name: "Microsoft Outlook Integration", slug: "microsoft-outlook-integration" },
+      {
+        name: "Microsoft Outlook Integration",
+        slug: "microsoft-outlook-integration",
+      },
       { name: "Workflow", slug: "workflow" },
     ],
   },
@@ -3636,7 +4423,10 @@ export const terms = [
     context: ["Suger Console", "Gmail", "User-Level Settings"],
     related: [
       { name: "Gmail Integration", slug: "gmail-integration" },
-      { name: "User Microsoft Outlook Integration", slug: "user-microsoft-outlook-integration" },
+      {
+        name: "User Microsoft Outlook Integration",
+        slug: "user-microsoft-outlook-integration",
+      },
       { name: "Workflow", slug: "workflow" },
     ],
   },
@@ -3656,7 +4446,10 @@ export const terms = [
     context: ["Suger Console", "Google Drive", "Workflow Automation"],
     related: [
       { name: "Table Export", slug: "table-export" },
-      { name: "Google Cloud Storage Integration", slug: "google-cloud-storage-integration" },
+      {
+        name: "Google Cloud Storage Integration",
+        slug: "google-cloud-storage-integration",
+      },
       { name: "Workflow", slug: "workflow" },
     ],
   },
@@ -3677,7 +4470,10 @@ export const terms = [
     context: ["Suger Console", "Google Cloud Storage", "Data Warehousing"],
     related: [
       { name: "Table Export", slug: "table-export" },
-      { name: "Google BigQuery Integration", slug: "google-bigquery-integration" },
+      {
+        name: "Google BigQuery Integration",
+        slug: "google-bigquery-integration",
+      },
       { name: "Suger Analytics", slug: "suger-analytics" },
     ],
   },
@@ -3698,7 +4494,10 @@ export const terms = [
     context: ["Suger Console", "Google BigQuery", "Data Warehousing"],
     related: [
       { name: "Table Export", slug: "table-export" },
-      { name: "Google Cloud Storage Integration", slug: "google-cloud-storage-integration" },
+      {
+        name: "Google Cloud Storage Integration",
+        slug: "google-cloud-storage-integration",
+      },
       { name: "Suger Analytics", slug: "suger-analytics" },
     ],
   },
@@ -3718,7 +4517,10 @@ export const terms = [
     ],
     context: ["Suger Console", "Microsoft Outlook", "Workflow Automation"],
     related: [
-      { name: "User Microsoft Outlook Integration", slug: "user-microsoft-outlook-integration" },
+      {
+        name: "User Microsoft Outlook Integration",
+        slug: "user-microsoft-outlook-integration",
+      },
       { name: "Gmail Integration", slug: "gmail-integration" },
       { name: "Workflow", slug: "workflow" },
     ],
@@ -3738,7 +4540,10 @@ export const terms = [
     ],
     context: ["Suger Console", "Microsoft Outlook", "User-Level Settings"],
     related: [
-      { name: "Microsoft Outlook Integration", slug: "microsoft-outlook-integration" },
+      {
+        name: "Microsoft Outlook Integration",
+        slug: "microsoft-outlook-integration",
+      },
       { name: "User Gmail Integration", slug: "user-gmail-integration" },
       { name: "Workflow", slug: "workflow" },
     ],
@@ -3821,7 +4626,10 @@ export const terms = [
     related: [
       { name: "Salesforce Integration", slug: "salesforce-integration" },
       { name: "HubSpot Integration", slug: "hubspot-integration" },
-      { name: "Okta Single Sign-On (SSO) Integration", slug: "okta-single-sign-on-sso-integration" },
+      {
+        name: "Okta Single Sign-On (SSO) Integration",
+        slug: "okta-single-sign-on-sso-integration",
+      },
     ],
   },
   {
@@ -3840,9 +4648,15 @@ export const terms = [
     ],
     context: ["Suger Console", "Snowflake", "Data Warehousing"],
     related: [
-      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
       { name: "Table Export", slug: "table-export" },
-      { name: "Google BigQuery Integration", slug: "google-bigquery-integration" },
+      {
+        name: "Google BigQuery Integration",
+        slug: "google-bigquery-integration",
+      },
     ],
   },
   {
@@ -3861,8 +4675,14 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "AWS Resource Tagging", "APN Programs"],
     related: [
-      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
-      { name: "PRM Resource Tagging — AWS", slug: "prm-resource-tagging-—-aws" },
+      {
+        name: "APN ID Tag (aws-apn-id) — AWS",
+        slug: "apn-id-tag-aws-apn-id-—-aws",
+      },
+      {
+        name: "PRM Resource Tagging — AWS",
+        slug: "prm-resource-tagging-—-aws",
+      },
       { name: "Revenue Attribution — AWS", slug: "revenue-attribution-—-aws" },
     ],
   },
@@ -3879,10 +4699,20 @@ export const terms = [
       "Tagging AWS resources with the aws-apn-id key and your marketplace product code to begin attributing consumption to your product via PRM",
       "Understanding that revenue attribution persists as long as the aws-apn-id tag remains on a billable resource",
     ],
-    context: ["AWS Resource Tagging", "AWS Partner Central", "PRM Implementation"],
+    context: [
+      "AWS Resource Tagging",
+      "AWS Partner Central",
+      "PRM Implementation",
+    ],
     related: [
-      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
-      { name: "PRM Resource Tagging — AWS", slug: "prm-resource-tagging-—-aws" },
+      {
+        name: "Partner Revenue Measurement (PRM) — AWS",
+        slug: "partner-revenue-measurement-prm-—-aws",
+      },
+      {
+        name: "PRM Resource Tagging — AWS",
+        slug: "prm-resource-tagging-—-aws",
+      },
       { name: "Product Code — AWS", slug: "product-code-—-aws" },
     ],
   },
@@ -3899,11 +4729,24 @@ export const terms = [
       "Tagging billable AWS resources (EC2, S3, RDS) with the ISV's marketplace product code to enable PRM revenue attribution",
       "Understanding which resource types generate attribution — only chargeable services count; tagging IAM or other free services has no effect",
     ],
-    context: ["AWS Resource Tagging", "AWS Partner Central", "PRM Implementation"],
+    context: [
+      "AWS Resource Tagging",
+      "AWS Partner Central",
+      "PRM Implementation",
+    ],
     related: [
-      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
-      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
-      { name: "PRM Architecture Patterns — AWS", slug: "prm-architecture-patterns-—-aws" },
+      {
+        name: "Partner Revenue Measurement (PRM) — AWS",
+        slug: "partner-revenue-measurement-prm-—-aws",
+      },
+      {
+        name: "APN ID Tag (aws-apn-id) — AWS",
+        slug: "apn-id-tag-aws-apn-id-—-aws",
+      },
+      {
+        name: "PRM Architecture Patterns — AWS",
+        slug: "prm-architecture-patterns-—-aws",
+      },
     ],
   },
   {
@@ -3921,9 +4764,18 @@ export const terms = [
     ],
     context: ["AWS Resource Tagging", "PRM Implementation", "AWS Architecture"],
     related: [
-      { name: "PRM Resource Tagging — AWS", slug: "prm-resource-tagging-—-aws" },
-      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
-      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
+      {
+        name: "PRM Resource Tagging — AWS",
+        slug: "prm-resource-tagging-—-aws",
+      },
+      {
+        name: "Partner Revenue Measurement (PRM) — AWS",
+        slug: "partner-revenue-measurement-prm-—-aws",
+      },
+      {
+        name: "APN ID Tag (aws-apn-id) — AWS",
+        slug: "apn-id-tag-aws-apn-id-—-aws",
+      },
     ],
   },
   {
@@ -3942,8 +4794,14 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "PRM Implementation", "APN Funding"],
     related: [
-      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
-      { name: "APN ID Tag (aws-apn-id) — AWS", slug: "apn-id-tag-aws-apn-id-—-aws" },
+      {
+        name: "Partner Revenue Measurement (PRM) — AWS",
+        slug: "partner-revenue-measurement-prm-—-aws",
+      },
+      {
+        name: "APN ID Tag (aws-apn-id) — AWS",
+        slug: "apn-id-tag-aws-apn-id-—-aws",
+      },
       { name: "Product Code — AWS", slug: "product-code-—-aws" },
     ],
   },
@@ -3962,8 +4820,14 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "Multi-Account Management"],
     related: [
-      { name: "Partner Revenue Measurement (PRM) — AWS", slug: "partner-revenue-measurement-prm-—-aws" },
-      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      {
+        name: "Partner Revenue Measurement (PRM) — AWS",
+        slug: "partner-revenue-measurement-prm-—-aws",
+      },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
     ],
   },
@@ -3984,7 +4848,10 @@ export const terms = [
     related: [
       { name: "CRM Integration", slug: "crm-integration" },
       { name: "Co-sell", slug: "co-sell" },
-      { name: "Partner Revenue Management (PRM)", slug: "partner-revenue-management-prm" },
+      {
+        name: "Partner Revenue Management (PRM)",
+        slug: "partner-revenue-management-prm",
+      },
     ],
   },
   {
@@ -4023,11 +4890,24 @@ export const terms = [
       "Understanding ASEA as the predecessor to LZA for partners who need context on legacy public sector AWS deployments",
       "Guiding customers still using ASEA to migrate to the Landing Zone Accelerator (LZA) as the current recommended solution",
     ],
-    context: ["AWS Public Sector", "Multi-Account AWS Environments", "Compliance"],
+    context: [
+      "AWS Public Sector",
+      "Multi-Account AWS Environments",
+      "Compliance",
+    ],
     related: [
-      { name: "Landing Zone Accelerator (LZA) — AWS", slug: "landing-zone-accelerator-lza-—-aws" },
-      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
-      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      {
+        name: "Landing Zone Accelerator (LZA) — AWS",
+        slug: "landing-zone-accelerator-lza-—-aws",
+      },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
     ],
   },
   {
@@ -4045,10 +4925,20 @@ export const terms = [
       "Deploying high-compliance, multi-account AWS environments using LZA with CCCS Cloud Medium or Trusted Secure Enclave sample configurations",
       "Migrating a customer from the deprecated ASEA to LZA using the automated migration path",
     ],
-    context: ["AWS Public Sector", "Multi-Account AWS Environments", "Compliance"],
+    context: [
+      "AWS Public Sector",
+      "Multi-Account AWS Environments",
+      "Compliance",
+    ],
     related: [
-      { name: "AWS Secure Environment Accelerator (SEA) — AWS", slug: "aws-secure-environment-accelerator-sea-—-aws" },
-      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
+      {
+        name: "AWS Secure Environment Accelerator (SEA) — AWS",
+        slug: "aws-secure-environment-accelerator-sea-—-aws",
+      },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
       { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
     ],
   },
@@ -4066,11 +4956,18 @@ export const terms = [
       "Completing the FTR to unlock ISV Accelerate eligibility, AWS Specialization, and co-sell access",
       "Waiving FTR with a recent Well-Architected Framework Review showing no high-risk issues — confirmed with your PDM",
     ],
-    context: ["AWS Partner Central", "ISV Accelerate Program", "APN Program Requirements"],
+    context: [
+      "AWS Partner Central",
+      "ISV Accelerate Program",
+      "APN Program Requirements",
+    ],
     related: [
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
       { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
-      { name: "Partner Development Manager (PDM) — AWS", slug: "partner-development-manager-pdm-—-aws" },
+      {
+        name: "Partner Development Manager (PDM) — AWS",
+        slug: "partner-development-manager-pdm-—-aws",
+      },
     ],
   },
   {
@@ -4087,10 +4984,20 @@ export const terms = [
       "Earning an AWS Specialization badge to improve Marketplace listing visibility and increase Co-sell Recommendation Score",
       "Maintaining Specialization renewal by demonstrating launched ACE opportunities tied to the Specialization solution over a rolling 12-month period",
     ],
-    context: ["AWS Partner Central", "AWS Marketplace Listings", "Co-sell Programs"],
+    context: [
+      "AWS Partner Central",
+      "AWS Marketplace Listings",
+      "Co-sell Programs",
+    ],
     related: [
-      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
-      { name: "Co-sell Recommendation Score — AWS", slug: "co-sell-recommendation-score-—-aws" },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
+      {
+        name: "Co-sell Recommendation Score — AWS",
+        slug: "co-sell-recommendation-score-—-aws",
+      },
       { name: "AWS Competency — AWS", slug: "aws-competency-—-aws" },
     ],
   },
@@ -4111,8 +5018,14 @@ export const terms = [
     context: ["AWS Partner Central", "APN Programs", "Co-sell Eligibility"],
     related: [
       { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
-      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
     ],
   },
   {
@@ -4129,9 +5042,16 @@ export const terms = [
       "Monitoring Co-sell Recommendation Score to understand how likely AWS sellers are to recommend your solution for specific deals",
       "Improving the score by increasing ACE activity, Marketplace listing quality, and maintaining Specialization status with validated case studies",
     ],
-    context: ["AWS Partner Central", "Analytics & Insights Dashboard", "Co-sell Programs"],
+    context: [
+      "AWS Partner Central",
+      "Analytics & Insights Dashboard",
+      "Co-sell Programs",
+    ],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
       { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
     ],
@@ -4149,9 +5069,16 @@ export const terms = [
       "Understanding that the FVO — the very first launched ACE deal — is excluded from the 5-launch minimum required for ISV Accelerate",
       "Planning co-sell pipeline knowing the second launched opportunity is when the ISV Accelerate eligibility clock actually starts",
     ],
-    context: ["ACE Opportunities", "ISV Accelerate Eligibility", "AWS Partner Central"],
+    context: [
+      "ACE Opportunities",
+      "ISV Accelerate Eligibility",
+      "AWS Partner Central",
+    ],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
       { name: "Co-sell", slug: "co-sell" },
     ],
@@ -4172,8 +5099,14 @@ export const terms = [
     ],
     context: ["AWS Channel Programs", "AWS Partner Central", "Channel Resale"],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Solution Provider Private Offer (SPPO) — AWS", slug: "solution-provider-private-offer-sppo-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Solution Provider Private Offer (SPPO) — AWS",
+        slug: "solution-provider-private-offer-sppo-—-aws",
+      },
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
     ],
   },
@@ -4193,9 +5126,15 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "AI Features", "Co-sell Operations"],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+      {
+        name: "Partner Central 3.0 (PC3.0) — AWS",
+        slug: "partner-central-3.0-pc3.0-—-aws",
+      },
     ],
   },
   {
@@ -4395,7 +5334,10 @@ export const terms = [
     ],
     context: ["Suger Console", "Revenue Reports", "Marketplace Fee Structures"],
     related: [
-      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+      },
       { name: "Disbursed Amount", slug: "disbursed-amount" },
       { name: "Collectable Amount", slug: "collectable-amount" },
     ],
@@ -4497,7 +5439,10 @@ export const terms = [
     related: [
       { name: "Invoice", slug: "invoice" },
       { name: "Payment", slug: "payment" },
-      { name: "Partner Revenue Management (PRM)", slug: "partner-revenue-management-prm" },
+      {
+        name: "Partner Revenue Management (PRM)",
+        slug: "partner-revenue-management-prm",
+      },
     ],
   },
 
@@ -4518,8 +5463,14 @@ export const terms = [
     context: ["AWS Partner Central", "APN Programs", "Co-sell Eligibility"],
     related: [
       { name: "AWS Competency — AWS", slug: "aws-competency-—-aws" },
-      { name: "Foundational Technical Review (FTR) — AWS", slug: "foundational-technical-review-ftr-—-aws" },
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
     ],
   },
   {
@@ -4538,7 +5489,10 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "Channel Programs", "AWS Marketplace"],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
       { name: "AWS Competency — AWS", slug: "aws-competency-—-aws" },
     ],
@@ -4557,7 +5511,11 @@ export const terms = [
       "Enrolling in the GCP Build Engagement Model to unlock co-sell incentives and MDF by completing a technical review and publishing a transactable GCP listing",
       "Understanding Build as the GCP equivalent of AWS ISV Accelerate for software providers integrated with Google Cloud",
     ],
-    context: ["Google Cloud Partner Advantage", "GCP Marketplace", "Co-sell Programs"],
+    context: [
+      "Google Cloud Partner Advantage",
+      "GCP Marketplace",
+      "Co-sell Programs",
+    ],
     related: [
       { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
       { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
@@ -4578,11 +5536,24 @@ export const terms = [
       "Enrolling in the ISV Success Program to access technical consulting, Azure credits, and marketplace rewards for building and publishing on Azure Marketplace",
       "Understanding ISV Success as the Azure equivalent of AWS ISV Accelerate — the primary ISV co-sell enablement program on Microsoft",
     ],
-    context: ["Microsoft Marketplace", "Azure Co-sell Programs", "Partner Center — Azure"],
+    context: [
+      "Microsoft Marketplace",
+      "Azure Co-sell Programs",
+      "Partner Center — Azure",
+    ],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
-      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
-      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
     ],
   },
   {
@@ -4600,11 +5571,24 @@ export const terms = [
       "Initiating an ECIF engagement through your Microsoft PDM to fund a customer deployment, migration, or PoC project up to $500K",
       "Understanding ECIF prerequisites — Advanced Specialization required, net-new consumption only, field-driven (not self-service)",
     ],
-    context: ["Azure Co-sell Programs", "Microsoft Partner Center", "Microsoft Field Team"],
+    context: [
+      "Azure Co-sell Programs",
+      "Microsoft Partner Center",
+      "Microsoft Field Team",
+    ],
     related: [
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
-      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
-      { name: "Microsoft AI Cloud Partner Program (MPN) — Azure", slug: "microsoft-ai-cloud-partner-program-mpn-—-azure" },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+      },
     ],
   },
   {
@@ -4622,11 +5606,24 @@ export const terms = [
       "Pursuing MISA membership to gain Microsoft Security ecosystem recognition and co-sell visibility for security-focused ISVs",
       "Understanding MISA as a nomination-only program requiring a transactable Azure Marketplace listing and Microsoft Security product integration",
     ],
-    context: ["Azure Marketplace", "Microsoft Security Ecosystem", "Co-sell Programs"],
+    context: [
+      "Azure Marketplace",
+      "Microsoft Security Ecosystem",
+      "Co-sell Programs",
+    ],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
-      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
     ],
   },
   {
@@ -4644,8 +5641,14 @@ export const terms = [
     ],
     context: ["Snowflake Marketplace", "Snowflake Partner Programs"],
     related: [
-      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
-      { name: "Snowflake Data Clean Rooms — Snowflake", slug: "snowflake-data-clean-rooms-—-snowflake" },
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
+      {
+        name: "Snowflake Data Clean Rooms — Snowflake",
+        slug: "snowflake-data-clean-rooms-—-snowflake",
+      },
       { name: "Listing", slug: "listing" },
     ],
   },
@@ -4664,8 +5667,14 @@ export const terms = [
     ],
     context: ["Snowflake Marketplace", "Multi-Party Data Collaboration"],
     related: [
-      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
-      { name: "Snowflake Data Appreciation (SDA) — Snowflake", slug: "snowflake-data-appreciation-sda-—-snowflake" },
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
+      {
+        name: "Snowflake Data Appreciation (SDA) — Snowflake",
+        slug: "snowflake-data-appreciation-sda-—-snowflake",
+      },
       { name: "Listing", slug: "listing" },
     ],
   },
@@ -4685,7 +5694,11 @@ export const terms = [
       "Sending separate GCP private offers to the same billing account for different departments or projects, each with distinct terms",
       "Using Multiple Offers to handle enterprise buyers who need project-specific billing arrangements for the same product",
     ],
-    context: ["GCP Marketplace", "Private Offer Flows", "Producer Portal — GCP"],
+    context: [
+      "GCP Marketplace",
+      "Private Offer Flows",
+      "Producer Portal — GCP",
+    ],
     related: [
       { name: "Private Offer — GCP", slug: "private-offer-—-gcp" },
       { name: "Private Plan — GCP", slug: "private-plan-—-gcp" },
@@ -4707,7 +5720,11 @@ export const terms = [
       "Creating a custom-priced GCP private offer for a specific billing account to close an enterprise deal with negotiated terms",
       "Understanding GCP-specific private offer mechanics — including Multiple Offers and project-based billing — versus AWS and Azure equivalents",
     ],
-    context: ["GCP Marketplace", "Private Offer Flows", "Producer Portal — GCP"],
+    context: [
+      "GCP Marketplace",
+      "Private Offer Flows",
+      "Producer Portal — GCP",
+    ],
     related: [
       { name: "Multiple Offers — GCP", slug: "multiple-offers-—-gcp" },
       { name: "Private Plan — GCP", slug: "private-plan-—-gcp" },
@@ -4729,7 +5746,11 @@ export const terms = [
       "Creating a Private Plan on GCP Marketplace to offer the same custom terms to multiple pre-authorized billing accounts without a per-customer private offer",
       "Distinguishing Private Plan (reusable, multi-subscriber) from Private Offer (one-time, single-buyer transaction) when configuring GCP pricing",
     ],
-    context: ["GCP Marketplace", "Producer Portal — GCP", "Pricing Configuration"],
+    context: [
+      "GCP Marketplace",
+      "Producer Portal — GCP",
+      "Pricing Configuration",
+    ],
     related: [
       { name: "Private Offer — GCP", slug: "private-offer-—-gcp" },
       { name: "Multiple Offers — GCP", slug: "multiple-offers-—-gcp" },
@@ -4740,8 +5761,10 @@ export const terms = [
     name: "Cloud Committed Spend (CCS)",
     tags: ["general"],
     def: "A pre-negotiated minimum spend commitment an enterprise makes with a cloud provider, typically in exchange for volume discounts. Transactable marketplace purchases often count toward a company's committed spend balance, making them strategically attractive to enterprise buyers on EDP, MACC, or CUD agreements. CCS is the cross-platform umbrella term; each hyperscaler has a branded program name.",
-    alias: "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Azure Consumption Commitment (MACC) — Azure | GCP: Committed Use Discount (CUD) — GCP | See also: Committed Spend / Cloud Commit",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/customer-private-offers-committed-spend.html",
+    alias:
+      "AWS: Enterprise Discount Program (EDP) — AWS | Azure: Azure Consumption Commitment (MACC) — Azure | GCP: Committed Use Discount (CUD) — GCP | See also: Committed Spend / Cloud Commit",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/customer-private-offers-committed-spend.html",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -4749,12 +5772,30 @@ export const terms = [
       "Positioning a transactable marketplace listing as eligible for a buyer's committed spend drawdown to accelerate enterprise deal cycles",
       "Understanding why enterprise buyers prefer marketplace procurement over direct purchasing when they have an active EDP, MACC, or CUD commitment",
     ],
-    context: ["Enterprise Sales", "Marketplace Procurement", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace"],
+    context: [
+      "Enterprise Sales",
+      "Marketplace Procurement",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
     related: [
-      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
-      { name: "Azure Consumption Commitment (MACC) — Azure", slug: "azure-consumption-commitment-macc-—-azure" },
-      { name: "Committed Use Discount (CUD) — GCP", slug: "committed-use-discount-cud-—-gcp" },
-      { name: "Committed Spend / Cloud Commit", slug: "committed-spend-/-cloud-commit" },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+      },
+      {
+        name: "Committed Spend / Cloud Commit",
+        slug: "committed-spend-/-cloud-commit",
+      },
     ],
   },
   {
@@ -4762,7 +5803,8 @@ export const terms = [
     tags: ["general"],
     def: "The process by which an ISV reports a buyer's consumption data to the marketplace to trigger accurate billing. For usage-based and consumption models, the ISV — or their integration partner — must submit usage records to the marketplace's metering API within each billing period. Missing or late reports result in billing failures or undercollection. All major hyperscalers (AWS, Azure, GCP) require ISVs to implement a metering integration for SaaS products with usage-based pricing.",
     alias: "Related: Usage Metering, Metered Billing, Metering Dimension",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/metering-and-entitlement.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/metering-and-entitlement.html",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -4770,7 +5812,12 @@ export const terms = [
       "Reporting per-seat, API-call, or data-volume consumption to AWS, Azure, or GCP Marketplace to trigger monthly billing",
       "Validating that all usage records are submitted before the marketplace metering deadline to avoid billing gaps",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Suger Console",
+    ],
     related: [
       { name: "Usage Metering", slug: "usage-metering" },
       { name: "Metered Billing", slug: "metered-billing" },
@@ -4782,7 +5829,8 @@ export const terms = [
     tags: ["general"],
     def: "The process of granting a buyer access to an ISV's product after they complete a marketplace purchase. When a buyer accepts an offer, the marketplace sends a notification to the ISV — typically via webhook, SQS message, or API callback — to create the customer's account or environment. Failed or delayed provisioning is the most common source of buyer dissatisfaction after a marketplace transaction, and is often the integration step ISVs underinvest in.",
     alias: "Related: Entitlement, Fulfillment URL",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-product-customer-setup.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-product-customer-setup.html",
     difficulty: "beginner",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -4790,7 +5838,12 @@ export const terms = [
       "Implementing a fulfillment webhook to automatically create a buyer's account when a marketplace entitlement is activated",
       "Diagnosing a failed provisioning flow when a buyer reports they cannot access the product after purchase",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Suger Console",
+    ],
     related: [
       { name: "Entitlement", slug: "entitlement" },
       { name: "Listing", slug: "listing" },
@@ -4801,7 +5854,8 @@ export const terms = [
     name: "Integration Partner",
     tags: ["general", "suger"],
     def: "A platform or service provider that handles the technical integration between an ISV's product and one or more cloud marketplace APIs. Integration partners abstract the complexity of listing management, metering, entitlement tracking, and offer creation across AWS, Azure, GCP, and Snowflake — allowing ISVs to go live on marketplace faster without dedicated engineering resources. Suger is an integration partner. The alternative is to build each marketplace integration in-house, which typically requires significant ongoing maintenance.",
-    alias: "Related: Partner Relationship Management (PRM) System, Usage Metering, Provisioning",
+    alias:
+      "Related: Partner Relationship Management (PRM) System, Usage Metering, Provisioning",
     source: "https://doc.suger.io/get-started/",
     difficulty: "beginner",
     category: "operations",
@@ -4810,9 +5864,18 @@ export const terms = [
       "Evaluating whether to build marketplace integrations in-house or use an integration partner like Suger to reduce time-to-live",
       "Understanding how Suger manages metering, entitlement, and offer creation across multiple hyperscalers on behalf of an ISV",
     ],
-    context: ["Marketplace Onboarding", "AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Suger Console"],
+    context: [
+      "Marketplace Onboarding",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Suger Console",
+    ],
     related: [
-      { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
       { name: "Usage Metering", slug: "usage-metering" },
       { name: "Provisioning", slug: "provisioning" },
     ],
@@ -4821,8 +5884,10 @@ export const terms = [
     name: "Distributor",
     tags: ["general", "cosell"],
     def: "A company authorized to resell an ISV's software to end customers through a cloud marketplace, typically via a channel partner private offer mechanism. Distributors add value through financing, support, regional reach, or existing customer relationships that the ISV cannot serve directly. On AWS, distributors transact via CPPO under a resale authorization granted by the ISV; on Azure via Multiparty Private Offer (MPO); on GCP via Marketplace Channel Private Offer (MCPO).",
-    alias: "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Marketplace Channel Private Offer (MCPO) — GCP, Resale Authorization — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+    alias:
+      "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Marketplace Channel Private Offer (MCPO) — GCP, Resale Authorization — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
     difficulty: "intermediate",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
@@ -4830,20 +5895,39 @@ export const terms = [
       "Partnering with a distributor to reach enterprise customers in regions or verticals the ISV cannot serve directly",
       "Granting a resale authorization to a distributor so they can create CPPOs for their own customer base",
     ],
-    context: ["AWS Marketplace", "Azure Marketplace", "GCP Marketplace", "Channel Programs"],
+    context: [
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+      "Channel Programs",
+    ],
     related: [
-      { name: "Channel Partner Private Offer (CPPO) — AWS", slug: "channel-partner-private-offer-cppo-—-aws" },
-      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
-      { name: "Marketplace Channel Private Offer (MCPO) — GCP", slug: "marketplace-channel-private-offer-mcpo-—-gcp" },
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+      },
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
     ],
   },
   {
     name: "Tax Details Dashboard — AWS",
     tags: ["aws"],
     def: "A self-service portal in AWS Partner Central that lets marketplace sellers view, search, filter, and download tax invoices. Covers two invoice types: listing fee invoices (AWS charges to sellers for listing fees) and customer invoices (tax invoices generated on behalf of sellers to buyers). Bulk downloads are supported, and programmatic access is available via the ListInvoiceSummaries and GetInvoicePDF APIs. Customer invoice downloads are currently available to India-based sellers only.",
-    alias: "Related: Marketplace Tax Management — Azure, Marketplace Tax Management — GCP",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/managing-invoices.html",
+    alias:
+      "Related: Marketplace Tax Management — Azure, Marketplace Tax Management — GCP",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/managing-invoices.html",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers"],
@@ -4854,17 +5938,28 @@ export const terms = [
     ],
     context: ["AWS Partner Central", "AWS Marketplace", "Finance & Billing"],
     related: [
-      { name: "Marketplace Tax Management — Azure", slug: "marketplace-tax-management-—-azure" },
-      { name: "Marketplace Tax Management — GCP", slug: "marketplace-tax-management-—-gcp" },
-      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      {
+        name: "Marketplace Tax Management — Azure",
+        slug: "marketplace-tax-management-—-azure",
+      },
+      {
+        name: "Marketplace Tax Management — GCP",
+        slug: "marketplace-tax-management-—-gcp",
+      },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+      },
     ],
   },
   {
     name: "Marketplace Tax Management — Azure",
     tags: ["azure"],
     def: "Microsoft's framework governing tax obligations on Azure Marketplace transactions. Countries and regions are split into three categories: Microsoft-managed (Microsoft calculates, collects, and remits transaction taxes on the publisher's behalf), publisher-managed (the publisher is solely responsible for tax compliance, collection, and remittance), and reseller jurisdictions (currently Brazil only, where Microsoft acts as the reseller and handles all transaction tax). Publishers must determine which model applies in each target market to maintain compliance.",
-    alias: "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — GCP",
-    source: "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/tax-details-marketplace",
+    alias:
+      "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — GCP",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/tax-details-marketplace",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["ISVs / Sellers"],
@@ -4872,18 +5967,32 @@ export const terms = [
       "Determining whether Microsoft or the publisher is responsible for collecting and remitting VAT or GST in a given market before expanding Azure listings to new regions",
       "Assessing publisher-side tax compliance requirements in publisher-managed jurisdictions",
     ],
-    context: ["Azure Marketplace", "Microsoft Partner Center", "Finance & Billing"],
+    context: [
+      "Azure Marketplace",
+      "Microsoft Partner Center",
+      "Finance & Billing",
+    ],
     related: [
-      { name: "Tax Details Dashboard — AWS", slug: "tax-details-dashboard-—-aws" },
-      { name: "Marketplace Tax Management — GCP", slug: "marketplace-tax-management-—-gcp" },
-      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      {
+        name: "Tax Details Dashboard — AWS",
+        slug: "tax-details-dashboard-—-aws",
+      },
+      {
+        name: "Marketplace Tax Management — GCP",
+        slug: "marketplace-tax-management-—-gcp",
+      },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+      },
     ],
   },
   {
     name: "Marketplace Tax Management — GCP",
     tags: ["gcp"],
     def: "Google Cloud Marketplace's Agency Transaction model for tax, defined in the Marketplace Vendor Agreement. Where both the vendor's and buyer's countries qualify as Agency Jurisdictions, Google collects applicable taxes from buyers and remits them to tax authorities on the vendor's behalf. Vendors are required to notify Google if they have independent tax collection obligations in any jurisdiction. Google may withhold taxes and provide withholding certificates where local law requires.",
-    alias: "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — Azure",
+    alias:
+      "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — Azure",
     source: "https://cloud.google.com/terms/marketplace-agency-jurisdictions",
     difficulty: "advanced",
     category: "billing",
@@ -4894,9 +6003,18 @@ export const terms = [
     ],
     context: ["GCP Marketplace", "Google Cloud Console", "Finance & Billing"],
     related: [
-      { name: "Tax Details Dashboard — AWS", slug: "tax-details-dashboard-—-aws" },
-      { name: "Marketplace Tax Management — Azure", slug: "marketplace-tax-management-—-azure" },
-      { name: "Marketplace Fee / Transaction Fee", slug: "marketplace-fee-/-transaction-fee" },
+      {
+        name: "Tax Details Dashboard — AWS",
+        slug: "tax-details-dashboard-—-aws",
+      },
+      {
+        name: "Marketplace Tax Management — Azure",
+        slug: "marketplace-tax-management-—-azure",
+      },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+      },
     ],
   },
 ];

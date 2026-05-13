@@ -66,6 +66,7 @@ export function initScrollSpy() {
   });
 
   if (backToTopBtn) {
-    backToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    backToTopBtn.onclick = () =>
+      window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }

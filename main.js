@@ -16,7 +16,11 @@ import {
   setCategory,
 } from "./app/filters.js";
 import { getFiltered, getBestMatch } from "./app/search.js";
-import { buildAlphaNav, scrollToBestMatch, initScrollSpy } from "./app/scroll.js";
+import {
+  buildAlphaNav,
+  scrollToBestMatch,
+  initScrollSpy,
+} from "./app/scroll.js";
 
 const searchInput = document.getElementById("search");
 const listEl = document.getElementById("list");
@@ -44,9 +48,9 @@ function openDetail(term) {
 function closeDetail() {
   activeTerm = null;
   sidebarRight?.classList.remove("open");
-  document.querySelectorAll(".term-card").forEach((c) =>
-    c.classList.remove("active"),
-  );
+  document
+    .querySelectorAll(".term-card")
+    .forEach((c) => c.classList.remove("active"));
 }
 
 // ---- Sidebar right delegation -----------------------------------------------
