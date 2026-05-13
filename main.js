@@ -233,7 +233,7 @@ window.onload = () => {
     const term = terms.find((t) => slug(t.name) === hashSlug);
     if (term) {
       setTimeout(() => {
-        openDetail(term);
+        if (window.innerWidth > 767) openDetail(term);
         document
           .getElementById(`term-${hashSlug}`)
           ?.scrollIntoView({ behavior: "smooth", block: "center" });

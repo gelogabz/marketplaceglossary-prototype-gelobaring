@@ -9,10 +9,26 @@
 }
 
 :root {
-    --navy: #1a1a2e;
+    /* brand primary */
+    --navy: #000000;
     --orange: #f26a1c;
-    --orange-text: #ae530f;
+    --yellow: #fbb92a;
     --white: #ffffff;
+
+    /* brand secondary */
+    --purple: #6830ff;
+    --lavender: #9c6aff;
+    --blue: #4678ee;
+    --aqua: #84daff;
+    --emerald: #0eac7a;
+    --lime: #8dd93d;
+    --red: #f4332c;
+    --salmon: #f46863;
+
+    /* accessibility / derived */
+    --orange-text: #ae530f;
+
+    /* ui grays / surfaces */
     --bg: #f5f5f7;
     --gray-100: #e5e5ea;
     --gray-200: #d1d1d6;
@@ -45,6 +61,11 @@ body {
 }
 
 /* ---- Accessibility -------------------------------------------------------- */
+
+:focus-visible {
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
+}
 
 .sr-only {
     position: absolute;
@@ -96,10 +117,14 @@ mark {
     white-space: nowrap;
     flex-shrink: 0;
     letter-spacing: -0.01em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.brand-dot {
-    color: var(--orange);
+.brand-logo {
+    display: block;
+    flex-shrink: 0;
 }
 
 .topnav-center {
@@ -404,16 +429,16 @@ mark {
 }
 
 .d-beginner {
-    background: #e8f5e9;
-    color: #2e7d32;
+    background: #e3f8f1;
+    color: #088a60;
 }
 .d-intermediate {
     background: #fff3e0;
     color: #bf5600;
 }
 .d-advanced {
-    background: #fce4ec;
-    color: #c62828;
+    background: #ede9ff;
+    color: #5020cc;
 }
 
 /* ---- Card header ---------------------------------------------------------- */
@@ -865,7 +890,7 @@ mark {
         display: none;
     }
 
-    .topnav-right {
+    .reviewed-badge {
         display: none;
     }
 
@@ -875,6 +900,21 @@ mark {
 
     .alpha-nav {
         padding: 0.4rem 1rem;
+    }
+
+    .back-to-top {
+        padding: 11px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-text {
+        display: none;
+    }
+
+    .alpha-link {
+        padding: 3px 5px;
+        font-size: 11px;
     }
 }
 

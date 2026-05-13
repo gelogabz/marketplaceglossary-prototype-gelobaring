@@ -46,6 +46,7 @@ const CATEGORY_META = {
   billing: "Billing & Revenue",
   operations: "Marketplace Ops",
   advanced: "Channel & Partner",
+  onboarding: "Role-Based Onboarding",
 };
 
 const params = new URLSearchParams(location.search);
