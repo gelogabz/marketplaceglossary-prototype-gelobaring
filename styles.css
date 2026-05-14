@@ -768,6 +768,11 @@ mark {
     color: #bdbdbd;
     text-decoration: line-through;
 }
+.pb-agnostic {
+    background: var(--bg);
+    color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+}
 
 .platform-notes {
     font-size: 11px;

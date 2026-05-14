@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cross-Platform Comparison — Cloud GTM Reference</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <style>
+            .topnav-links {
+                display: flex;
+                gap: 2px;
+                flex-shrink: 0;
+            }
+
+            .topnav-links a {
+                font-size: 13px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 6px;
+                transition:
+                    background 0.12s,
+                    color 0.12s;
+            }
+
+            .topnav-links a:hover {
+                background: rgba(255, 255, 255, 0.1);
+                color: var(--white);
+            }
+
+            .topnav-links a.current {
+                color: var(--orange);
+            }
+
+            /* ---- Page shell ---- */
+
+            .compare-outer {
+                margin-top: var(--topnav-h);
+                min-height: calc(100vh - var(--topnav-h));
+                background: var(--bg);
+                padding: 2.5rem 1.5rem 5rem;
+            }
+
+            .compare-page {
+                max-width: 980px;
+                margin: 0 auto;
+            }
+
+            .compare-hdr {
+                margin-bottom: 2rem;
+            }
+
+            .compare-hdr h1 {
+                font-family: "Lexend", sans-serif;
+                font-size: 26px;
+                font-weight: 700;
+                color: var(--gray-900);
+                letter-spacing: -0.03em;
+                margin-bottom: 8px;
+            }
+
+            .compare-hdr p {
+                font-size: 14px;
+                color: var(--gray-500);
+                line-height: 1.6;
+                max-width: 560px;
+            }
+
+            /* ---- Filter ---- */
+
+            .compare-filter {
+                display: block;
+                width: 100%;
+                max-width: 380px;
+                padding: 9px 14px;
+                border: 1.5px solid var(--gray-200);
+                border-radius: 8px;
+                font-family: inherit;
+                font-size: 14px;
+                background: var(--white);
+                color: var(--gray-900);
+                margin-bottom: 1.5rem;
+                transition: border-color 0.12s;
+            }
+
+            .compare-filter:focus {
+                outline: none;
+                border-color: var(--orange);
+            }
+
+            /* ---- Table ---- */
+
+            .compare-table-wrap {
+                overflow-x: auto;
+                border-radius: 10px;
+                border: 1px solid var(--gray-100);
+            }
+
+            .compare-table {
+                width: 100%;
+                border-collapse: collapse;
+                background: var(--white);
+                font-size: 13px;
+            }
+
+            .compare-th {
+                padding: 10px 14px;
+                font-size: 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.07em;
+                text-align: left;
+                background: var(--bg);
+                white-space: nowrap;
+            }
+
+            .compare-th-concept {
+                min-width: 200px;
+                color: var(--gray-400);
+            }
+
+            .compare-th-suger {
+                color: #ae530f;
+            }
+            .compare-th-aws {
+                color: #7d5a00;
+            }
+            .compare-th-azure {
+                color: #004085;
+            }
+            .compare-th-gcp {
+                color: #155724;
+            }
+            .compare-th-snowflake {
+                color: #1a5276;
+            }
+            .compare-th-alibaba {
+                color: #bf360c;
+            }
+
+            .compare-table td {
+                padding: 10px 14px;
+                border-top: 1px solid var(--gray-100);
+                vertical-align: top;
+            }
+
+            .compare-concept {
+                font-weight: 600;
+                color: var(--gray-900);
+                font-size: 13px;
+                white-space: nowrap;
+            }
+
+            .compare-cell--absent {
+                color: var(--gray-200);
+                font-size: 13px;
+            }
+
+            .compare-cell--suger {
+                background: #fff8f4;
+            }
+            .compare-cell--aws {
+                background: #fffbf0;
+            }
+            .compare-cell--azure {
+                background: #f0f6ff;
+            }
+            .compare-cell--gcp {
+                background: #f0fdf4;
+            }
+            .compare-cell--snowflake {
+                background: #f0f8ff;
+            }
+            .compare-cell--alibaba {
+                background: #fff5f0;
+            }
+
+            .compare-link {
+                color: var(--gray-700);
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 1.5;
+            }
+
+            .compare-link:hover {
+                color: var(--orange-text);
+                text-decoration: underline;
+            }
+
+            .compare-count {
+                font-size: 12px;
+                color: var(--gray-400);
+                margin-top: 10px;
+            }
+
+            .compare-empty {
+                font-size: 14px;
+                color: var(--gray-400);
+                padding: 2rem 0;
+            }
+
+            /* ---- Mobile ---- */
+
+            @media (max-width: 767px) {
+                .topnav-links a.current {
+                    display: none;
+                }
+                .compare-outer {
+                    padding: 1.5rem 1rem 4rem;
+                }
+                .compare-hdr h1 {
+                    font-size: 21px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="topnav" aria-label="Site navigation">
+            <div class="topnav-inner">
+                <a href="../index.html" class="topnav-brand">
+                    <svg
+                        class="brand-logo"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 100 100"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M49.9999 99.9999C77.6141 99.9999 99.9998 77.6142 99.9998 50C99.9998 22.3858 77.6141 6.10352e-05 49.9999 6.10352e-05C22.3857 6.10352e-05 0 22.3858 0 50C0 77.6142 22.3857 99.9999 49.9999 99.9999Z"
+                            fill="#F26A1C"
+                        />
+                        <path
+                            d="M99.8031 45.5344C99.4753 41.8308 94.8315 41.8103 91.7516 43.893C83.7679 49.2918 74.1411 52.4446 63.7778 52.4446C53.5714 52.4446 44.0792 49.3864 36.1676 44.1365C27.0941 38.1155 16.0466 33.2801 6.25722 38.0495C5.81756 38.2638 5.37971 38.4811 4.94369 38.7015C2.30106 40.0375 0.457789 42.5847 0.196716 45.5344C0.0664981 47.0056 0 48.4951 0 50.0001C0 77.6143 22.3857 100 49.9999 100C77.6141 100 99.9998 77.6143 99.9998 50.0001C99.9998 48.4951 99.9333 47.0056 99.8031 45.5344Z"
+                            fill="#FBB92A"
+                        />
+                        <path
+                            d="M99.7996 45.4C99.3996 41.8 94.7996 41.8 91.7997 43.8C83.7997 49.2 74.1997 52.4 63.7997 52.4C53.5997 52.4 44.0997 49.3 36.1997 44.1C27.0998 38.1 15.9998 33.3 6.29979 38C5.8998 38.2 5.3998 38.4 4.9998 38.7C2.3998 40 0.599804 42.5 0.299805 45.4C2.4998 19.9 23.8998 6.10352e-05 49.9997 6.10352e-05C76.0997 6.10352e-05 97.4996 20 99.7996 45.4Z"
+                            fill="#F26A1C"
+                        />
+                    </svg>
+                    <span class="brand-text">Cloud GTM Reference</span>
+                </a>
+                <div style="flex: 1"></div>
+                <div class="topnav-links">
+                    <a href="../index.html">Glossary</a>
+                    <a href="." class="current">Compare</a>
+                    <a href="../learning-paths/">Learning Paths</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="compare-outer">
+            <div class="compare-page">
+                <div class="compare-hdr">
+                    <h1>Cross-Platform Comparison</h1>
+                    <p>
+                        How the same concepts appear across Suger, AWS, Azure,
+                        GCP, Snowflake, and Alibaba Cloud marketplaces. Click
+                        any term to open it in the glossary.
+                    </p>
+                </div>
+                <input
+                    class="compare-filter"
+                    type="search"
+                    id="compareFilter"
+                    placeholder="Filter by concept…"
+                    autocomplete="off"
+                    spellcheck="false"
+                />
+                <div id="compareTable"></div>
+            </div>
+        </div>
+
+        <script type="module" src="comparison.js"></script>
+    </body>
+</html>

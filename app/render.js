@@ -186,8 +186,18 @@ function buildTagsHtml(t) {
 }
 
 function buildPlatformSection(t) {
+  const tags = t.tags || [];
+  const hasPlatformTag = PLATFORMS.some((p) => tags.includes(p.key));
+
+  if (!hasPlatformTag) {
+    return `<div class="sr-section">
+      <div class="sr-section-title">Platform availability</div>
+      <span class="pbadge pb-agnostic">Platform-agnostic</span>
+    </div>`;
+  }
+
   const platformHtml = PLATFORMS.map((p) => {
-    const present = (t.tags || []).includes(p.key);
+    const present = tags.includes(p.key);
     return `<span class="pbadge ${present ? p.cls : "pb-off"}">${p.label}</span>`;
   }).join("");
   const notes = t.alias?.toLowerCase().includes("equivalent")

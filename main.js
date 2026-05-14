@@ -325,7 +325,9 @@ window.onload = () => {
   render();
 
   if (window.location.hash) {
-    const hashSlug = window.location.hash.replace("#term-", "");
+    const hashSlug = decodeURIComponent(
+      window.location.hash.replace("#term-", ""),
+    );
     const term = terms.find((t) => slug(t.name) === hashSlug);
     if (term) {
       setTimeout(() => {

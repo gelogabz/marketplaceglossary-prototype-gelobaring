@@ -433,6 +433,88 @@
                 color: #c62828;
             }
 
+            /* ---- Inline term — learning path enhancements (LP5) ---- */
+
+            .path-carousel-content .inline-term {
+                padding: 2rem;
+                box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+            }
+
+            .path-carousel-content .it-name {
+                font-size: 22px;
+                letter-spacing: -0.03em;
+                margin-bottom: 10px;
+            }
+
+            .path-carousel-content .it-def {
+                font-size: 15px;
+                line-height: 1.78;
+                padding-bottom: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .path-carousel-content .sr-section {
+                margin-bottom: 1.5rem;
+            }
+
+            /* ---- Export button (LP6) ---- */
+
+            .path-export-btn {
+                appearance: none;
+                border: none;
+                background: none;
+                font-family: inherit;
+                font-size: 12px;
+                color: var(--gray-400);
+                cursor: pointer;
+                padding: 0;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                transition: color 0.12s;
+            }
+
+            .path-export-btn:hover {
+                color: var(--orange-text);
+            }
+
+            /* ---- Print ---- */
+
+            @media print {
+                .topnav,
+                .path-back,
+                .path-hdr-meta,
+                .path-progress,
+                .path-carousel-btn,
+                .path-footer,
+                .path-export-btn,
+                .path-continues-callout,
+                .path-prereq-warning,
+                .it-actions,
+                .sr-close-row,
+                .step-counter {
+                    display: none !important;
+                }
+
+                .path-outer {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .path-page {
+                    max-width: 100%;
+                }
+
+                .path-step {
+                    page-break-inside: avoid;
+                }
+
+                .inline-term {
+                    border: none;
+                    box-shadow: none;
+                    padding: 0;
+                }
+            }
+
             /* ---- Responsive ---- */
 
             @media (max-width: 767px) {
@@ -512,6 +594,7 @@
                 <div style="flex: 1"></div>
                 <div class="topnav-links">
                     <a href="../index.html">Glossary</a>
+                    <a href="../comparison/">Compare</a>
                     <a href="index.html" class="current">Learning Paths</a>
                 </div>
             </div>

@@ -660,4 +660,233 @@ export const learningPaths = [
       },
     ],
   },
+  {
+    slug: "aws-marketplace-essentials",
+    title: "AWS Marketplace Essentials",
+    category: "operations",
+    level: "intermediate",
+    description:
+      "The AWS-specific mechanics every ISV needs: how listings, offers, and agreements work on AWS Marketplace, the key programs that unlock co-sell access, and the tools and APIs that run day-to-day operations.",
+    meta: "9 terms · ~35 min",
+    continuesFrom: "cloud-marketplace-basics",
+    next: "cosell-fundamentals",
+    prereqs: ["cloud-marketplace-basics"],
+    steps: [
+      {
+        name: "AWS Marketplace — AWS",
+        slug: "aws-marketplace-—-aws",
+        why: "Start with the platform itself — what AWS Marketplace is, how it fits into the AWS Partner Network, and why it's the largest and most mature cloud marketplace for ISV distribution.",
+      },
+      {
+        name: "AWS Marketplace Management Portal (AMMP) — AWS",
+        slug: "aws-marketplace-management-portal-ammp-—-aws",
+        why: "The AMMP is the seller's primary interface for managing listings, offers, and account settings on AWS Marketplace. Learn what's configurable here and how it relates to the Catalog API.",
+      },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+        why: "ISV Accelerate, ACE, and most AWS co-sell benefits require APN membership. Understand what the APN is, how partners are tiered, and why your APN standing determines your access to marketplace programs.",
+      },
+      {
+        name: "ISV Accelerate — AWS",
+        slug: "isv-accelerate-—-aws",
+        why: "ISV Accelerate is the AWS program that unlocks co-sell support, AWS field engagement, and SaaS Co-sell Benefit incentives. Learn the eligibility requirements and why qualifying for this program is a commercial priority.",
+      },
+      {
+        name: "Agreement — AWS",
+        slug: "agreement-—-aws",
+        why: "When a buyer accepts a private offer on AWS Marketplace, an Agreement is created — the contract record that governs the subscription. Learn what an Agreement contains and how it persists through renewals and amendments.",
+      },
+      {
+        name: "Standard Contract (SCMP) — AWS",
+        slug: "standard-contract-scmp-—-aws",
+        why: "AWS's standardized contract template for marketplace transactions. Learn when to use the SCMP, what it covers, and how ISVs can layer custom EULAs on top of it without starting from scratch.",
+      },
+      {
+        name: "Subscription — AWS",
+        slug: "subscription-—-aws",
+        why: "An AWS Marketplace Subscription is the active billing relationship between a buyer and a product. Learn how subscriptions differ from Agreements, how they're managed, and what triggers subscription state changes.",
+      },
+      {
+        name: "Product Code — AWS",
+        slug: "product-code-—-aws",
+        why: "The Product Code is the AWS identifier that links every marketplace transaction — metering records, entitlements, and subscriptions — back to a specific product. Know how it's used in APIs and billing pipelines.",
+      },
+      {
+        name: "AWS Marketplace Catalog API — AWS",
+        slug: "aws-marketplace-catalog-api-—-aws",
+        why: "The Catalog API is how ISVs and integration platforms programmatically create and update listings and offers. Learn its capabilities and how integration partners like Suger use it to automate listing management.",
+      },
+    ],
+  },
+  {
+    slug: "azure-marketplace-essentials",
+    title: "Azure Marketplace Essentials",
+    category: "operations",
+    level: "intermediate",
+    description:
+      "How Microsoft's commercial marketplace works end-to-end — from listing structures and offer types to MACC eligibility, partner programs, and the APIs that power SaaS integrations.",
+    meta: "9 terms · ~35 min",
+    continuesFrom: "cloud-marketplace-basics",
+    next: "cosell-fundamentals",
+    prereqs: ["cloud-marketplace-basics"],
+    steps: [
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+        why: "Start with the platform — the unified Microsoft commercial marketplace that replaced the separate Azure Marketplace and AppSource storefronts. Learn what types of offers are available and how buyers discover them.",
+      },
+      {
+        name: "Partner Center — Azure",
+        slug: "partner-center-—-azure",
+        why: "Partner Center is where ISVs publish and manage every offer on Microsoft Marketplace. Learn how it's structured, what's configured there, and how it connects to the SaaS Fulfillment API and co-sell workflows.",
+      },
+      {
+        name: "Plan — Azure",
+        slug: "plan-—-azure",
+        why: "Azure offers are organized into Plans — pricing and packaging tiers within a single listing. Understanding how plans work is essential before creating private plans or configuring MACC-eligible offers.",
+      },
+      {
+        name: "Private Plan — Azure",
+        slug: "private-plan-—-azure",
+        why: "Azure's mechanism for custom pricing: instead of a standalone private offer, ISVs create a private plan visible only to a specific buyer. Learn how private plans differ from AWS private offers and when to use each.",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+        why: "MACC-eligible status is the most important commercial lever for enterprise Azure deals — it lets purchases draw down the buyer's committed spend. Learn what it takes to achieve MACC eligibility and why enterprise buyers demand it.",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+        why: "Azure co-sell access is gated by status tiers. Learn the difference between Co-sell Eligible and Co-sell Incentivized, what each unlocks, and how achieving Incentivized status amplifies deal support from Microsoft field teams.",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+        why: "As ISVs transact more revenue through Microsoft Marketplace, they unlock Marketplace Rewards — marketing, technical, and sales benefits. Learn what's available at each revenue tier and how to activate rewards.",
+      },
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+        why: "The SaaS Fulfillment API is how ISVs integrate their SaaS products with Microsoft Marketplace — handling subscription lifecycle events, activation, and plan changes. Learn the required endpoints and what Suger abstracts.",
+      },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+        why: "MPN membership is the foundation of all Azure partner benefits — co-sell access, Marketplace Rewards, and ISV Success Program eligibility all flow through it. Learn the membership tiers and what each unlocks.",
+      },
+    ],
+  },
+  {
+    slug: "gcp-marketplace-essentials",
+    title: "GCP Marketplace Essentials",
+    category: "operations",
+    level: "intermediate",
+    description:
+      "The GCP-specific mechanics ISVs need: how GCP Marketplace is structured, how committed use and private offers work, and the partner programs and APIs that govern the GCP co-sell and reseller motions.",
+    meta: "8 terms · ~30 min",
+    continuesFrom: "cloud-marketplace-basics",
+    next: "cosell-fundamentals",
+    prereqs: ["cloud-marketplace-basics"],
+    steps: [
+      {
+        name: "GCP Marketplace — GCP",
+        slug: "gcp-marketplace-—-gcp",
+        why: "Start with the platform — what GCP Marketplace is, how it compares to AWS and Azure marketplaces, and the key differences in how listings and transactions are structured on Google Cloud.",
+      },
+      {
+        name: "Producer Portal — GCP",
+        slug: "producer-portal-—-gcp",
+        why: "The Producer Portal is the GCP equivalent of AWS's AMMP — the ISV interface for managing listings and offers on GCP Marketplace. Learn what you configure here and how it connects to the Procurement API.",
+      },
+      {
+        name: "Partner Advantage — GCP",
+        slug: "partner-advantage-—-gcp",
+        why: "Partner Advantage is GCP's partner framework — co-sell access, Build Engagement credits, and funding programs all flow through it. Learn the tiers, engagement models, and what ISVs need to qualify.",
+      },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+        why: "CUD is GCP's committed spend mechanism. Understand how CUD draw-down works for marketplace purchases, what makes an ISV's offer eligible, and why CUD eligibility is a deal-closing lever for enterprise GCP buyers.",
+      },
+      {
+        name: "Private Offer — GCP",
+        slug: "private-offer-—-gcp",
+        why: "GCP's private offer mechanism differs from AWS and Azure — learn how it's structured, what the ISV configures, and how the buyer accepts a private offer through GCP Marketplace.",
+      },
+      {
+        name: "Marketplace Channel Private Offer (MCPO) — GCP",
+        slug: "marketplace-channel-private-offer-mcpo-—-gcp",
+        why: "MCPO is GCP's channel resale mechanism — the equivalent of AWS's CPPO. Learn how ISVs authorize resellers, how the MCPO transaction flows, and how it differs from the AWS and Azure channel models.",
+      },
+      {
+        name: "Marketplace Customer Credit Program (MCCP) — GCP",
+        slug: "marketplace-customer-credit-program-mccp-—-gcp",
+        why: "MCCP gives first-time GCP Marketplace buyers up to 3% in Google Cloud credits — a direct incentive that ISVs can use to accelerate deals. Learn eligibility requirements and how to register opportunities through Partner Advantage.",
+      },
+      {
+        name: "Procurement API — GCP",
+        slug: "procurement-api-—-gcp",
+        why: "The Procurement API is how ISVs integrate with GCP Marketplace — handling entitlement events, subscription approvals, and usage reporting. Learn the core endpoints and what Suger wraps for GCP integrations.",
+      },
+    ],
+  },
+  {
+    slug: "cloud-funding-incentives",
+    title: "Cloud Funding & Incentives",
+    category: "billing",
+    level: "intermediate",
+    description:
+      "The cross-platform funding landscape — AWS, Azure, and GCP programs that offset customer acquisition, migration, and proof-of-concept costs. Learn which programs exist, what they cover, and how ISVs and partners qualify.",
+    meta: "9 terms · ~35 min",
+    prereqs: ["cosell-fundamentals"],
+    steps: [
+      {
+        name: "AWS Partner Funding — AWS",
+        slug: "aws-partner-funding-—-aws",
+        why: "Start with the AWS umbrella — the set of funding types AWS makes available to partners. Understanding the overall framework before diving into specific programs (MAP, MDF, POA, PIF) prevents confusion about what applies when.",
+      },
+      {
+        name: "Migration Acceleration Program (MAP) — AWS",
+        slug: "migration-acceleration-program-map-—-aws",
+        why: "MAP is AWS's largest partner funding program — credits and cash for migration and modernization engagements. Learn what qualifies, how funding scales with deal size, and how the 2026 expansion to generative AI workloads broadens eligibility.",
+      },
+      {
+        name: "ISV Workload Migration Program (WMP) — AWS",
+        slug: "isv-workload-migration-program-wmp-—-aws",
+        why: "WMP is MAP's ISV-specific variant — targeted at software vendors migrating customer workloads onto their AWS-hosted product. Learn how WMP funding differs from MAP and what ISVs must demonstrate to qualify.",
+      },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+        why: "MDF reimburses eligible marketing activities — events, campaigns, and demand generation — that drive AWS pipeline. Learn what activities qualify, how to submit claims through the APFP, and what documentation AWS requires.",
+      },
+      {
+        name: "Partner Opportunity Acceleration (POA) — AWS",
+        slug: "partner-opportunity-acceleration-poa-—-aws",
+        why: "POA is AWS's deal-level funding type — financial support tied to a specific ACE opportunity to accelerate close. Learn the eligibility criteria, how POA interacts with proof-of-concept funding, and the claim timeline.",
+      },
+      {
+        name: "Proof of Concept (POC) Funding  — AWS",
+        slug: "proof-of-concept-poc-funding-—-aws",
+        why: "POC Funding offsets up to $25,000 of the cost of building a proof of concept for a customer. Learn the ACE stage requirements, how to submit through the APFP, and how POC funding fits into a broader deal acceleration strategy.",
+      },
+      {
+        name: "Partner Initiative Funding (PIF) — AWS",
+        slug: "partner-initiative-funding-pif-—-aws",
+        why: "PIF unlocks initiative-specific funding via a self-service template in the APFP — no PDM approval required for eligible activities. Learn what differentiates PIF from MDF and when to use each.",
+      },
+      {
+        name: "End Customer Investment Funds (ECIF) — Azure",
+        slug: "end-customer-investment-funds-ecif-—-azure",
+        why: "ECIF is Microsoft's direct project funding mechanism — up to $500K paid to partners to deliver deployment, migration, or POC services that accelerate customer cloud adoption. Learn the hard prerequisites (Advanced Specialization) and how it compares to AWS's POA and POC programs.",
+      },
+      {
+        name: "Marketplace Customer Credit Program (MCCP) — GCP",
+        slug: "marketplace-customer-credit-program-mccp-—-gcp",
+        why: "MCCP is GCP's buyer-side incentive — up to 3% in Google Cloud credits for first-time GCP Marketplace buyers. Learn how ISVs register opportunities in Partner Advantage to activate the credit and how it differs from AWS and Azure funding models.",
+      },
+    ],
+  },
 ];

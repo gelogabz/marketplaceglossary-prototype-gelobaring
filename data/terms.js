@@ -1144,7 +1144,7 @@ export const terms = [
     tags: ["aws", "cosell"],
     def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources in exchange for listing transactable products on AWS Marketplace. Required for SPPO participation.",
     alias:
-      "Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
+      "Azure equivalent: ISV Success Program — Azure | GCP equivalent: Build Engagement Model — GCP | Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
     difficulty: "intermediate",
     category: "cosell",
@@ -5502,7 +5502,7 @@ export const terms = [
     tags: ["gcp", "cosell"],
     def: "The Google Cloud Partner Advantage engagement model designed for ISVs and SaaS providers who integrate their products with Google Cloud. Requires a technical review and a transactable GCP Marketplace listing to unlock co-sell incentives and Market Development Funds (MDF).",
     alias:
-      "Related: Partner Advantage — GCP, GCP Marketplace — GCP, Marketing Development Funds (MDF) — AWS",
+      "AWS equivalent: ISV Accelerate — AWS | Azure equivalent: ISV Success Program — Azure | Related: Partner Advantage — GCP, GCP Marketplace — GCP, Marketing Development Funds (MDF) — AWS",
     source: "https://partners.cloud.google.com",
     difficulty: "intermediate",
     category: "cosell",
@@ -5527,7 +5527,7 @@ export const terms = [
     tags: ["azure", "cosell", "funding"],
     def: "A Microsoft program (formerly ISV Success Path) that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace.",
     alias:
-      "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
+      "AWS equivalent: ISV Accelerate — AWS | GCP equivalent: Build Engagement Model — GCP | Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/isv-success",
     difficulty: "intermediate",
     category: "cosell",
@@ -5926,7 +5926,7 @@ export const terms = [
     tags: ["aws"],
     def: "A self-service portal in AWS Partner Central that lets marketplace sellers view, search, filter, and download tax invoices. Covers two invoice types: listing fee invoices (AWS charges to sellers for listing fees) and customer invoices (tax invoices generated on behalf of sellers to buyers). Bulk downloads are supported, and programmatic access is available via the ListInvoiceSummaries and GetInvoicePDF APIs. Customer invoice downloads are currently available to India-based sellers only.",
     alias:
-      "Related: Marketplace Tax Management — Azure, Marketplace Tax Management — GCP",
+      "Azure equivalent: Marketplace Tax Management — Azure | GCP equivalent: Marketplace Tax Management — GCP",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/managing-invoices.html",
     difficulty: "intermediate",
@@ -5958,7 +5958,7 @@ export const terms = [
     tags: ["azure"],
     def: "Microsoft's framework governing tax obligations on Azure Marketplace transactions. Countries and regions are split into three categories: Microsoft-managed (Microsoft calculates, collects, and remits transaction taxes on the publisher's behalf), publisher-managed (the publisher is solely responsible for tax compliance, collection, and remittance), and reseller jurisdictions (currently Brazil only, where Microsoft acts as the reseller and handles all transaction tax). Publishers must determine which model applies in each target market to maintain compliance.",
     alias:
-      "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — GCP",
+      "AWS equivalent: Tax Details Dashboard — AWS | GCP equivalent: Marketplace Tax Management — GCP",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/tax-details-marketplace",
     difficulty: "advanced",
@@ -5993,7 +5993,7 @@ export const terms = [
     tags: ["gcp"],
     def: "Google Cloud Marketplace's Agency Transaction model for tax, defined in the Marketplace Vendor Agreement. Where both the vendor's and buyer's countries qualify as Agency Jurisdictions, Google collects applicable taxes from buyers and remits them to tax authorities on the vendor's behalf. Vendors are required to notify Google if they have independent tax collection obligations in any jurisdiction. Google may withhold taxes and provide withholding certificates where local law requires.",
     alias:
-      "Related: Tax Details Dashboard — AWS, Marketplace Tax Management — Azure",
+      "AWS equivalent: Tax Details Dashboard — AWS | Azure equivalent: Marketplace Tax Management — Azure",
     source: "https://cloud.google.com/terms/marketplace-agency-jurisdictions",
     difficulty: "advanced",
     category: "billing",
