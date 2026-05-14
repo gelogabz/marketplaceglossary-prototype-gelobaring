@@ -471,6 +471,7 @@ mark {
 
 .term-card:hover {
     border-color: var(--gray-200);
+    border-left-color: var(--orange);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
@@ -916,6 +917,48 @@ mark {
         padding: 3px 5px;
         font-size: 11px;
     }
+}
+
+/* ---- Card expand hint ----------------------------------------------------- */
+
+.card-expand-hint {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-top: 8px;
+    transition: color 0.12s;
+}
+
+.term-card:hover .card-expand-hint {
+    color: var(--orange-text);
+}
+
+/* ---- Term accordion (mobile inline detail) -------------------------------- */
+
+.term-card--expanded {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: transparent;
+    border-left-color: var(--orange);
+    border-color: #fcd9bc;
+    margin-bottom: 0;
+}
+
+.term-accordion {
+    background: var(--white);
+    border: 1px solid #fcd9bc;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.term-accordion .detail-view {
+    padding: 1.25rem;
+}
+
+.term-accordion .sr-close-row {
+    justify-content: flex-start;
+    margin-bottom: 0.75rem;
 }
 
 /* ---- Inline term detail (learning path pages) ----------------------------- */

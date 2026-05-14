@@ -149,7 +149,8 @@
                 transform: scale(1.2);
             }
             .progress-dot.done {
-                background: var(--gray-300);
+                background: var(--orange);
+                opacity: 0.45;
             }
 
             /* ---- Step sections ---- */
@@ -182,6 +183,61 @@
                 background: #fff8f4;
                 border-left: 3px solid var(--orange);
                 border-radius: 0 6px 6px 0;
+            }
+
+            /* ---- Prereq warning ---- */
+
+            .path-prereq-warning {
+                font-size: 13px;
+                line-height: 1.6;
+                padding: 10px 14px;
+                border-radius: 6px;
+                margin-bottom: 1.25rem;
+                background: #fffbeb;
+                border: 1px solid #f6c342;
+                color: #7a4f00;
+            }
+
+            .path-prereq-warning .prereq-link {
+                font-weight: 600;
+                color: #7a4f00;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+
+            /* ---- Continues-from callout ---- */
+
+            .path-continues-callout {
+                font-size: 13px;
+                line-height: 1.6;
+                padding: 10px 14px;
+                border-radius: 0 6px 6px 0;
+                margin-bottom: 1.5rem;
+            }
+
+            .path-continues-callout a {
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .path-continues-done {
+                background: #f0fdf8;
+                border-left: 3px solid var(--emerald);
+                color: #0a6b4a;
+            }
+
+            .path-continues-done a {
+                color: #0a6b4a;
+            }
+
+            .path-continues-hint {
+                background: #f5f5f7;
+                border-left: 3px solid var(--navy);
+                color: var(--gray-700);
+            }
+
+            .path-continues-hint a {
+                color: var(--orange-text);
             }
 
             /* ---- Path footer ---- */
@@ -220,6 +276,95 @@
                 color: var(--orange);
             }
 
+            /* ---- Carousel layout ---- */
+
+            .path-carousel {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+                margin-bottom: 2rem;
+            }
+
+            .path-carousel-content {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .path-carousel-btn {
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                min-width: 44px;
+                padding: 0;
+                font-size: 20px;
+                line-height: 1;
+                border-radius: 50%;
+                overflow: hidden;
+                position: sticky;
+                top: calc(var(--topnav-h) + 1.5rem);
+                z-index: 1;
+            }
+
+            .path-nav-btn {
+                appearance: none;
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 10px 24px;
+                border-radius: 8px;
+                border: 1.5px solid var(--gray-200);
+                background: var(--white);
+                color: var(--gray-700);
+                cursor: pointer;
+                transition:
+                    background 0.12s,
+                    border-color 0.12s,
+                    color 0.12s,
+                    opacity 0.12s;
+            }
+
+            .path-nav-btn:hover:not(:disabled) {
+                border-color: var(--gray-400);
+                color: var(--gray-900);
+            }
+
+            .path-nav-btn:disabled {
+                opacity: 0.35;
+                cursor: not-allowed;
+            }
+
+            .path-nav-btn--next {
+                background: var(--orange);
+                border-color: var(--orange);
+                color: var(--white);
+            }
+
+            .path-nav-btn--next:hover:not(:disabled) {
+                background: #d45e18;
+                border-color: #d45e18;
+                color: var(--white);
+            }
+
+            /* ---- Step entrance animation ---- */
+
+            @keyframes stepIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(6px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .path-step {
+                animation: stepIn 0.18s ease;
+            }
+
             /* ---- Not found ---- */
 
             .path-not-found {
@@ -252,9 +397,16 @@
                     color 0.12s;
             }
 
-            .path-complete-btn:hover {
+            .path-complete-btn:hover:not(:disabled) {
                 background: var(--orange);
                 color: var(--white);
+            }
+
+            .path-complete-btn:disabled {
+                opacity: 0.4;
+                cursor: not-allowed;
+                border-color: var(--gray-200);
+                color: var(--gray-400);
             }
 
             .path-complete-badge {
@@ -311,6 +463,20 @@
                 }
                 .path-progress {
                     gap: 12px;
+                }
+                .path-carousel {
+                    flex-wrap: wrap;
+                }
+                .path-carousel-content {
+                    flex-basis: 100%;
+                    order: -1;
+                }
+                .path-carousel-btn {
+                    flex: 1;
+                    height: 44px;
+                    width: auto;
+                    border-radius: 8px;
+                    position: static;
                 }
             }
         </style>

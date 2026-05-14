@@ -143,6 +143,11 @@ export function buildCard(t, q, bestMatch) {
     card.appendChild(tagContainer);
   }
 
+  const hintEl = document.createElement("div");
+  hintEl.className = "card-expand-hint";
+  hintEl.textContent = "Details →";
+  card.appendChild(hintEl);
+
   return card;
 }
 
@@ -163,102 +168,107 @@ function getRelatedTerms(t) {
     .filter((other) => other.name !== t.name && t.alias.includes(other.name));
 }
 
-export function buildDetailView(t) {
-  const termSlug = slug(t.name);
+// ---- Shared section builders ------------------------------------------------
 
-  const difficultyHtml = t.difficulty
+function buildDifficultyHtml(t) {
+  return t.difficulty
     ? `<span class="difficulty-badge d-${t.difficulty}">${t.difficulty}</span>`
     : "";
+}
 
-  const tagsHtml = (t.tags || [])
+function buildTagsHtml(t) {
+  return (t.tags || [])
     .map((tag) => {
       const meta = tagMeta[tag] || { label: tag };
       return `<span class="detail-tag tag-${tag}">${meta.label.toUpperCase()}</span>`;
     })
     .join("");
+}
 
+function buildPlatformSection(t) {
   const platformHtml = PLATFORMS.map((p) => {
     const present = (t.tags || []).includes(p.key);
     return `<span class="pbadge ${present ? p.cls : "pb-off"}">${p.label}</span>`;
   }).join("");
+  const notes = t.alias?.toLowerCase().includes("equivalent")
+    ? `<p class="platform-notes">${t.alias.replace(/\|/g, "·")}</p>`
+    : "";
+  return `<div class="sr-section">
+    <div class="sr-section-title">Platform availability</div>
+    <div class="platform-row">${platformHtml}</div>
+    ${notes}
+  </div>`;
+}
 
-  // Platform notes: use alias text if it mentions "equivalent"
-  const platformNotes =
-    t.alias && t.alias.toLowerCase().includes("equivalent")
-      ? `<p class="platform-notes">${t.alias.replace(/\|/g, "·")}</p>`
-      : "";
+function buildWhoForHtml(t) {
+  if (!t.whoFor?.length) return "";
+  return `<div class="sr-section">
+    <div class="sr-section-title">Who it's for</div>
+    <div class="chips">${t.whoFor.map((p) => `<span class="chip">${p}</span>`).join("")}</div>
+  </div>`;
+}
 
-  const whoForHtml =
-    t.whoFor && t.whoFor.length
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Who it's for</div>
-           <div class="chips">
-             ${t.whoFor.map((p) => `<span class="chip">${p}</span>`).join("")}
-           </div>
-         </div>`
-      : "";
+function buildUseCasesHtml(t) {
+  if (!t.useCases?.length) return "";
+  return `<div class="sr-section">
+    <div class="sr-section-title">Common use cases</div>
+    <ul class="use-cases">${t.useCases.map((uc) => `<li>${uc}</li>`).join("")}</ul>
+  </div>`;
+}
 
-  const useCasesHtml =
-    t.useCases && t.useCases.length
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Common use cases</div>
-           <ul class="use-cases">
-             ${t.useCases.map((uc) => `<li>${uc}</li>`).join("")}
-           </ul>
-         </div>`
-      : "";
+function buildContextHtml(t) {
+  if (!t.context?.length) return "";
+  return `<div class="sr-section">
+    <div class="sr-section-title">Where you'll encounter this</div>
+    <div class="chips">${t.context.map((c) => `<span class="chip chip-context">${c}</span>`).join("")}</div>
+  </div>`;
+}
 
-  const contextHtml =
-    t.context && t.context.length
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Where you'll encounter this</div>
-           <div class="chips">
-             ${t.context.map((c) => `<span class="chip chip-context">${c}</span>`).join("")}
-           </div>
-         </div>`
-      : "";
+function getRelatedItems(t) {
+  return t.related?.length
+    ? t.related
+    : getRelatedTerms(t).map((r) => ({ name: r.name, slug: slug(r.name) }));
+}
 
-  // Prefer explicit related array; fall back to alias parsing
-  const relatedItems =
-    t.related && t.related.length
-      ? t.related
-      : getRelatedTerms(t).map((r) => ({ name: r.name, slug: slug(r.name) }));
+// ---- Detail view builder ----------------------------------------------------
 
-  const relatedSection =
-    relatedItems.length > 0
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Related terms</div>
-           <div class="chips">
-             ${relatedItems
-               .map((r) => {
-                 const shortName = r.name.replace(
-                   / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
-                   "",
-                 );
-                 return `<a href="#term-${r.slug}" class="chip chip-link alias-link">${shortName}</a>`;
-               })
-               .join("")}
-           </div>
-         </div>`
-      : "";
+export function buildDetailView(t) {
+  const termSlug = slug(t.name);
+  const relatedItems = getRelatedItems(t);
+
+  const relatedSection = relatedItems.length
+    ? `<div class="sr-section">
+         <div class="sr-section-title">Related terms</div>
+         <div class="chips">
+           ${relatedItems
+             .map((r) => {
+               const shortName = r.name.replace(
+                 / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
+                 "",
+               );
+               return `<a href="#term-${r.slug}" class="chip chip-link alias-link">${shortName}</a>`;
+             })
+             .join("")}
+         </div>
+       </div>`
+    : "";
 
   const termPaths = learningPaths.filter((p) =>
     p.steps.some((s) => s.slug === termSlug),
   );
-  const learningPathsHtml =
-    termPaths.length > 0
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Learning paths</div>
-           <div class="chips">
-             ${termPaths
-               .map(
-                 (p) =>
-                   `<a href="learning-paths/path.html?p=${p.slug}" class="chip chip-link">${p.title} →</a>`,
-               )
-               .join("")}
-           </div>
-         </div>`
-      : "";
+  const learningPathsHtml = termPaths.length
+    ? `<div class="sr-section">
+         <div class="sr-section-title">Learning paths</div>
+         <div class="chips">
+           ${termPaths
+             .map(
+               (p) =>
+                 `<a href="learning-paths/path.html?p=${p.slug}" class="chip chip-link">${p.title} →</a>`,
+             )
+             .join("")}
+         </div>
+       </div>`
+    : "";
 
   const sourceHtml = t.source
     ? `<a class="sr-source-link" href="${t.source}" target="_blank" rel="noopener noreferrer">Official source ↗</a>`
@@ -269,26 +279,80 @@ export function buildDetailView(t) {
       <div class="sr-close-row">
         <button class="close-btn" id="detailCloseBtn" type="button" aria-label="Close detail panel">✕</button>
       </div>
-
       <div class="sr-name">${t.name}</div>
-      <div class="sr-meta">${difficultyHtml}${tagsHtml}</div>
-
+      <div class="sr-meta">${buildDifficultyHtml(t)}${buildTagsHtml(t)}</div>
       <div class="sr-def">${t.def}</div>
-
-      <div class="sr-section">
-        <div class="sr-section-title">Platform availability</div>
-        <div class="platform-row">${platformHtml}</div>
-        ${platformNotes}
-      </div>
-
-      ${whoForHtml}
-      ${useCasesHtml}
-      ${contextHtml}
+      ${buildPlatformSection(t)}
+      ${buildWhoForHtml(t)}
+      ${buildUseCasesHtml(t)}
+      ${buildContextHtml(t)}
       ${relatedSection}
       ${learningPathsHtml}
-
       <div class="sr-section-divider"></div>
+      <div class="detail-actions">
+        <button class="detail-copy-btn" id="detailCopyBtn" type="button" data-slug="${termSlug}">🔗 Copy link</button>
+        ${sourceHtml}
+      </div>
+    </div>
+  `;
+}
 
+// ---- Accordion detail (mobile — skips name/meta/def already shown in card) --
+
+export function buildAccordionDetail(t) {
+  const termSlug = slug(t.name);
+  const relatedItems = getRelatedItems(t);
+
+  const relatedSection = relatedItems.length
+    ? `<div class="sr-section">
+         <div class="sr-section-title">Related terms</div>
+         <div class="chips">
+           ${relatedItems
+             .map((r) => {
+               const shortName = r.name.replace(
+                 / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
+                 "",
+               );
+               return `<a href="#term-${r.slug}" class="chip chip-link alias-link">${shortName}</a>`;
+             })
+             .join("")}
+         </div>
+       </div>`
+    : "";
+
+  const termPaths = learningPaths.filter((p) =>
+    p.steps.some((s) => s.slug === termSlug),
+  );
+  const learningPathsHtml = termPaths.length
+    ? `<div class="sr-section">
+         <div class="sr-section-title">Learning paths</div>
+         <div class="chips">
+           ${termPaths
+             .map(
+               (p) =>
+                 `<a href="learning-paths/path.html?p=${p.slug}" class="chip chip-link">${p.title} →</a>`,
+             )
+             .join("")}
+         </div>
+       </div>`
+    : "";
+
+  const sourceHtml = t.source
+    ? `<a class="sr-source-link" href="${t.source}" target="_blank" rel="noopener noreferrer">Official source ↗</a>`
+    : "";
+
+  return `
+    <div class="detail-view accordion-detail">
+      <div class="sr-close-row">
+        <button class="close-btn" id="detailCloseBtn" type="button" aria-label="Close">✕</button>
+      </div>
+      ${buildPlatformSection(t)}
+      ${buildWhoForHtml(t)}
+      ${buildUseCasesHtml(t)}
+      ${buildContextHtml(t)}
+      ${relatedSection}
+      ${learningPathsHtml}
+      <div class="sr-section-divider"></div>
       <div class="detail-actions">
         <button class="detail-copy-btn" id="detailCopyBtn" type="button" data-slug="${termSlug}">🔗 Copy link</button>
         ${sourceHtml}
@@ -301,80 +365,24 @@ export function buildDetailView(t) {
 
 export function buildInlineTermDetail(t) {
   const termSlug = slug(t.name);
+  const relatedItems = getRelatedItems(t);
 
-  const difficultyHtml = t.difficulty
-    ? `<span class="difficulty-badge d-${t.difficulty}">${t.difficulty}</span>`
+  const relatedSection = relatedItems.length
+    ? `<div class="sr-section">
+         <div class="sr-section-title">Related terms</div>
+         <div class="chips">
+           ${relatedItems
+             .map((r) => {
+               const shortName = r.name.replace(
+                 / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
+                 "",
+               );
+               return `<a href="../index.html#term-${r.slug}" class="chip chip-link" target="_blank">${shortName}</a>`;
+             })
+             .join("")}
+         </div>
+       </div>`
     : "";
-
-  const tagsHtml = (t.tags || [])
-    .map((tag) => {
-      const meta = tagMeta[tag] || { label: tag };
-      return `<span class="detail-tag tag-${tag}">${meta.label.toUpperCase()}</span>`;
-    })
-    .join("");
-
-  const platformHtml = PLATFORMS.map((p) => {
-    const present = (t.tags || []).includes(p.key);
-    return `<span class="pbadge ${present ? p.cls : "pb-off"}">${p.label}</span>`;
-  }).join("");
-
-  const platformNotes =
-    t.alias && t.alias.toLowerCase().includes("equivalent")
-      ? `<p class="platform-notes">${t.alias.replace(/\|/g, "·")}</p>`
-      : "";
-
-  const whoForHtml =
-    t.whoFor && t.whoFor.length
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Who it's for</div>
-           <div class="chips">
-             ${t.whoFor.map((p) => `<span class="chip">${p}</span>`).join("")}
-           </div>
-         </div>`
-      : "";
-
-  const useCasesHtml =
-    t.useCases && t.useCases.length
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Common use cases</div>
-           <ul class="use-cases">
-             ${t.useCases.map((uc) => `<li>${uc}</li>`).join("")}
-           </ul>
-         </div>`
-      : "";
-
-  const contextHtml =
-    t.context && t.context.length
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Where you'll encounter this</div>
-           <div class="chips">
-             ${t.context.map((c) => `<span class="chip chip-context">${c}</span>`).join("")}
-           </div>
-         </div>`
-      : "";
-
-  const relatedItems =
-    t.related && t.related.length
-      ? t.related
-      : getRelatedTerms(t).map((r) => ({ name: r.name, slug: slug(r.name) }));
-
-  const relatedSection =
-    relatedItems.length > 0
-      ? `<div class="sr-section">
-           <div class="sr-section-title">Related terms</div>
-           <div class="chips">
-             ${relatedItems
-               .map((r) => {
-                 const shortName = r.name.replace(
-                   / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
-                   "",
-                 );
-                 return `<a href="../index.html#term-${r.slug}" class="chip chip-link" target="_blank">${shortName}</a>`;
-               })
-               .join("")}
-           </div>
-         </div>`
-      : "";
 
   const sourceHtml = t.source
     ? `<a class="it-source" href="${t.source}" target="_blank" rel="noopener noreferrer">Official source ↗</a>`
@@ -383,22 +391,14 @@ export function buildInlineTermDetail(t) {
   return `
     <article class="inline-term">
       <div class="it-name">${t.name}</div>
-      <div class="it-meta">${difficultyHtml}${tagsHtml}</div>
+      <div class="it-meta">${buildDifficultyHtml(t)}${buildTagsHtml(t)}</div>
       <div class="it-def">${t.def}</div>
-
-      <div class="sr-section">
-        <div class="sr-section-title">Platform availability</div>
-        <div class="platform-row">${platformHtml}</div>
-        ${platformNotes}
-      </div>
-
-      ${whoForHtml}
-      ${useCasesHtml}
-      ${contextHtml}
+      ${buildPlatformSection(t)}
+      ${buildWhoForHtml(t)}
+      ${buildUseCasesHtml(t)}
+      ${buildContextHtml(t)}
       ${relatedSection}
-
       <div class="sr-section-divider"></div>
-
       <div class="it-actions">
         <button class="it-copy-btn" type="button" data-slug="${termSlug}">🔗 Copy glossary link</button>
         ${sourceHtml}

@@ -37,6 +37,28 @@ function isComplete(pathSlug) {
   return !!getCompleted()[pathSlug];
 }
 
+// ---- Step-level read tracking ----
+
+const READ_KEY = "gtm-path-progress";
+
+function getReadProgress() {
+  try {
+    return JSON.parse(localStorage.getItem(READ_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function markStepRead(pathSlug, stepIndex) {
+  const data = getReadProgress();
+  if (!data[pathSlug]) data[pathSlug] = { read: [], total: 0 };
+  if (!data[pathSlug].read.includes(stepIndex)) {
+    data[pathSlug].read.push(stepIndex);
+  }
+  localStorage.setItem(READ_KEY, JSON.stringify(data));
+}
+
+
 // ---- App ----
 
 const CATEGORY_META = {
@@ -68,133 +90,161 @@ if (!path) {
 }
 
 function renderPath(path) {
+  let currentStep = 0;
   const catLabel = CATEGORY_META[path.category] || path.category;
 
-  // Find a sibling path in the same category (for "Next path" footer link)
-  const sameCatPaths = learningPaths.filter(
-    (p) => p.category === path.category && p.slug !== path.slug,
-  );
-  const nextPath = sameCatPaths[0] || null;
+  const nextPath =
+    (path.next ? learningPaths.find((p) => p.slug === path.next) : null) ||
+    learningPaths.find(
+      (p) => p.category === path.category && p.slug !== path.slug,
+    ) ||
+    null;
 
-  // Progress dots HTML
   const dotsHtml = path.steps
     .map(
       (_, i) =>
-        `<button class="progress-dot" data-step="${i}" type="button" aria-label="Jump to step ${i + 1}"></button>`,
+        `<button class="progress-dot" data-step="${i}" type="button" aria-label="Go to step ${i + 1}"></button>`,
     )
     .join("");
 
+  let prereqWarningHtml = "";
+  if (path.prereqs && path.prereqs.length) {
+    const unmetPrereqs = path.prereqs
+      .map((s) => learningPaths.find((p) => p.slug === s))
+      .filter((p) => p && !isComplete(p.slug));
+    if (unmetPrereqs.length) {
+      const links = unmetPrereqs
+        .map((p) => `<a href="path.html?p=${p.slug}" class="prereq-link">${p.title}</a>`)
+        .join(", ");
+      prereqWarningHtml = `
+        <div class="path-prereq-warning">
+          ⚠ For the best experience, complete ${links} before starting this one.
+        </div>`;
+    }
+  }
+
+  let continuesFromHtml = "";
+  if (path.continuesFrom) {
+    const prev = learningPaths.find((p) => p.slug === path.continuesFrom);
+    if (prev) {
+      const prevDone = isComplete(path.continuesFrom);
+      continuesFromHtml = prevDone
+        ? `<div class="path-continues-callout path-continues-done">
+            ✓ You completed <a href="path.html?p=${prev.slug}">${prev.title}</a>. This path picks up where that left off.
+           </div>`
+        : `<div class="path-continues-callout path-continues-hint">
+            For the best experience, complete <a href="path.html?p=${prev.slug}">${prev.title}</a> first.
+           </div>`;
+    }
+  }
+
   content.innerHTML = `
-        <a href="index.html" class="path-back">← All paths</a>
+    ${prereqWarningHtml}
+    <a href="index.html" class="path-back">← All paths</a>
+    <div class="path-hdr-meta">
+      <span class="level-badge l-${path.level}">${path.level}</span>
+      <span class="path-cat-label">${catLabel}</span>
+    </div>
+    <h1 class="path-hdr-title">${path.title}</h1>
+    <p class="path-hdr-desc">${path.description}</p>
+    <p class="path-hdr-meta-text">${path.meta}</p>
+    ${continuesFromHtml}
+    <div class="path-progress" id="pathProgress">${dotsHtml}</div>
+    <div class="path-carousel">
+      <button class="path-nav-btn path-carousel-btn" id="prevStepBtn" type="button" aria-label="Previous step">‹</button>
+      <div id="pathStepContent" class="path-carousel-content"></div>
+      <button class="path-nav-btn path-nav-btn--next path-carousel-btn" id="nextStepBtn" type="button" aria-label="Next step">›</button>
+    </div>
+    <div class="path-footer" id="pathFooter"></div>
+  `;
 
-        <div class="path-hdr-meta">
-            <span class="level-badge l-${path.level}">${path.level}</span>
-            <span class="path-cat-label">${catLabel}</span>
-        </div>
+  function renderStep(index) {
+    currentStep = index;
+    const step = path.steps[index];
+    const term = terms.find((t) => slug(t.name) === step.slug);
+    const isLast = index === path.steps.length - 1;
 
-        <h1 class="path-hdr-title">${path.title}</h1>
-        <p class="path-hdr-desc">${path.description}</p>
-        <p class="path-hdr-meta-text">${path.meta}</p>
-
-        <div class="path-progress" id="pathProgress">${dotsHtml}</div>
-
-        <div id="pathSteps"></div>
-
-        <div class="path-footer" id="pathFooter"></div>
+    document.getElementById("pathStepContent").innerHTML = `
+      <section class="path-step">
+        <div class="step-counter">Step ${index + 1} of ${path.steps.length}</div>
+        <div class="step-why-callout">${step.why}</div>
+        ${term
+          ? buildInlineTermDetail(term)
+          : `<p style="color:var(--gray-400);font-size:13px;padding:1rem 0;">Term "${step.name}" not found in glossary.</p>`
+        }
+      </section>
     `;
 
-  const stepsContainer = document.getElementById("pathSteps");
+    document.querySelectorAll(".progress-dot").forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+      dot.classList.toggle("done", i < index);
+    });
 
-  path.steps.forEach((step, i) => {
-    const term = terms.find((t) => slug(t.name) === step.slug);
+    const prevBtn = document.getElementById("prevStepBtn");
+    const nextBtn = document.getElementById("nextStepBtn");
+    if (prevBtn) prevBtn.disabled = index === 0;
+    if (nextBtn) {
+      nextBtn.disabled = isLast;
+    }
 
-    const section = document.createElement("section");
-    section.className = "path-step";
-    section.id = `step-${i}`;
+    // Enable/disable the mark-complete button based on current step
+    const markCompleteBtn = document.getElementById("markCompleteBtn");
+    if (markCompleteBtn) markCompleteBtn.disabled = !isLast;
 
-    const termHtml = term
-      ? buildInlineTermDetail(term)
-      : `<p style="color:var(--gray-400);font-size:13px;padding:1rem 0;">Term "${step.name}" not found in glossary.</p>`;
+    markStepRead(path.slug, index);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
-    section.innerHTML = `
-            <div class="step-counter">Step ${i + 1} of ${path.steps.length}</div>
-            <div class="step-why-callout">${step.why}</div>
-            ${termHtml}
-        `;
+  function renderFooter() {
+    const done = isComplete(path.slug);
+    const isLastStep = currentStep === path.steps.length - 1;
+    const footer = document.getElementById("pathFooter");
 
-    stepsContainer.appendChild(section);
-  });
+    const completionHtml = done
+      ? `<span class="path-complete-badge">✓ Completed</span>
+         <button class="path-reset-btn" id="resetPathBtn" type="button">Reset</button>`
+      : `<button class="path-complete-btn" id="markCompleteBtn" type="button"${isLastStep ? "" : " disabled"}>Mark as complete ✓</button>`;
 
-  renderFooter(path, nextPath);
-  initProgress();
+    footer.innerHTML = `
+      <a href="index.html" class="path-footer-link">← Back to all paths</a>
+      <div style="display:flex;align-items:center;gap:10px;">
+        ${completionHtml}
+      </div>
+      ${nextPath ? `<a href="path.html?p=${nextPath.slug}" class="path-next-link">Next: ${nextPath.title} →</a>` : ""}
+    `;
+
+    document.getElementById("markCompleteBtn")?.addEventListener("click", () => {
+      markComplete(path.slug);
+      renderFooter();
+    });
+
+    document.getElementById("resetPathBtn")?.addEventListener("click", () => {
+      unmarkComplete(path.slug);
+      const progress = getReadProgress();
+      delete progress[path.slug];
+      localStorage.setItem(READ_KEY, JSON.stringify(progress));
+      renderFooter();
+    });
+  }
+
+  function initCarousel() {
+    document.querySelectorAll(".progress-dot").forEach((dot) => {
+      dot.addEventListener("click", () => renderStep(parseInt(dot.dataset.step, 10)));
+    });
+    document.getElementById("prevStepBtn")?.addEventListener("click", () => {
+      if (currentStep > 0) renderStep(currentStep - 1);
+    });
+    document.getElementById("nextStepBtn")?.addEventListener("click", () => {
+      if (currentStep < path.steps.length - 1) renderStep(currentStep + 1);
+    });
+    renderStep(0);
+  }
+
+  renderFooter();
+  initCarousel();
   initCopyButtons();
 }
 
-function renderFooter(path, nextPath) {
-  const done = isComplete(path.slug);
-  const footer = document.getElementById("pathFooter");
-
-  const completionHtml = done
-    ? `<span class="path-complete-badge">✓ Completed</span>
-           <button class="path-reset-btn" id="resetPathBtn" type="button">Reset</button>`
-    : `<button class="path-complete-btn" id="markCompleteBtn" type="button">Mark as complete ✓</button>`;
-
-  footer.innerHTML = `
-        <a href="index.html" class="path-footer-link">← Back to all paths</a>
-        <div style="display:flex;align-items:center;gap:10px;">
-            ${completionHtml}
-        </div>
-        ${nextPath ? `<a href="path.html?p=${nextPath.slug}" class="path-next-link">Next: ${nextPath.title} →</a>` : ""}
-    `;
-
-  document.getElementById("markCompleteBtn")?.addEventListener("click", () => {
-    markComplete(path.slug);
-    renderFooter(path, nextPath);
-  });
-
-  document.getElementById("resetPathBtn")?.addEventListener("click", () => {
-    unmarkComplete(path.slug);
-    renderFooter(path, nextPath);
-  });
-}
-
-function initProgress() {
-  const dots = document.querySelectorAll(".progress-dot");
-  const stepEls = document.querySelectorAll(".path-step");
-
-  if (!dots.length) return;
-
-  dots[0].classList.add("active");
-
-  dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-      const idx = parseInt(dot.dataset.step, 10);
-      document
-        .getElementById(`step-${idx}`)
-        ?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const idx = parseInt(entry.target.id.replace("step-", ""), 10);
-          dots.forEach((d, i) => {
-            d.classList.toggle("active", i === idx);
-            d.classList.toggle("done", i < idx);
-          });
-        }
-      });
-    },
-    {
-      rootMargin: "-20% 0px -60% 0px",
-      threshold: 0,
-    },
-  );
-
-  stepEls.forEach((el) => observer.observe(el));
-}
 
 function initCopyButtons() {
   document.getElementById("pathContent").addEventListener("click", (e) => {

@@ -3,6 +3,7 @@ import {
   injectTagStyles,
   buildCard,
   buildDetailView,
+  buildAccordionDetail,
   copyToClipboard,
   slug,
 } from "./app/render.js";
@@ -53,6 +54,35 @@ function closeDetail() {
     .forEach((c) => c.classList.remove("active"));
 }
 
+// ---- Accordion (mobile inline detail) ---------------------------------------
+
+let expandedCard = null;
+
+function collapseAccordion() {
+  if (!expandedCard) return;
+  expandedCard.classList.remove("term-card--expanded");
+  const panel = expandedCard.nextElementSibling;
+  if (panel?.classList.contains("term-accordion")) panel.remove();
+  expandedCard = null;
+}
+
+function expandAccordion(card, term, skipScroll = false) {
+  if (expandedCard === card) {
+    collapseAccordion();
+    return;
+  }
+  collapseAccordion();
+  expandedCard = card;
+  card.classList.add("term-card--expanded");
+  const panel = document.createElement("div");
+  panel.className = "term-accordion";
+  panel.innerHTML = buildAccordionDetail(term);
+  card.after(panel);
+  if (!skipScroll) {
+    card.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 // ---- Sidebar right delegation -----------------------------------------------
 
 sidebarRight?.addEventListener("click", (e) => {
@@ -82,12 +112,47 @@ sidebarRight?.addEventListener("click", (e) => {
 // ---- List delegation --------------------------------------------------------
 
 listEl?.addEventListener("click", (e) => {
-  if (e.target.closest(".tag") || e.target.closest(".alias-link")) return;
+  if (e.target.closest(".tag")) return;
+
+  if (e.target.closest("#detailCloseBtn")) {
+    collapseAccordion();
+    return;
+  }
+
+  const copyBtn = e.target.closest("#detailCopyBtn");
+  if (copyBtn) {
+    const s = copyBtn.dataset.slug;
+    const url = `${window.location.origin}${window.location.pathname}#term-${s}`;
+    copyToClipboard(url, copyBtn);
+    return;
+  }
+
+  const aliasLink = e.target.closest(".alias-link");
+  if (aliasLink) {
+    e.preventDefault();
+    const href = aliasLink.getAttribute("href");
+    const targetSlug = href?.replace("#term-", "");
+    const target = terms.find((t) => slug(t.name) === targetSlug);
+    if (!target) return;
+    if (window.innerWidth <= 767) {
+      const targetCard = document.getElementById(`term-${targetSlug}`);
+      if (targetCard) expandAccordion(targetCard, target);
+    } else {
+      openDetail(target);
+    }
+    return;
+  }
+
   const card = e.target.closest(".term-card");
   if (!card) return;
   const termSlug = card.id.replace("term-", "");
   const term = terms.find((t) => slug(t.name) === termSlug);
-  if (term) openDetail(term);
+  if (!term) return;
+  if (window.innerWidth <= 767) {
+    expandAccordion(card, term);
+  } else {
+    openDetail(term);
+  }
 });
 
 // ---- Sidebar left delegation ------------------------------------------------
@@ -132,6 +197,23 @@ function syncToURL() {
 
 function loadFromURL() {
   const params = new URLSearchParams(window.location.search);
+  const t = params.get("t");
+
+  if (t) {
+    // Open via ?t= after render completes (600ms covers the 100ms debounce + DOM build)
+    setTimeout(() => {
+      const term = terms.find((tt) => slug(tt.name) === t);
+      if (!term) return;
+      if (window.innerWidth <= 767) {
+        const card = document.getElementById(`term-${t}`);
+        if (card) expandAccordion(card, term);
+      } else {
+        openDetail(term);
+      }
+    }, 600);
+    return;
+  }
+
   const q = params.get("q");
   const f = params.get("f");
   const c = params.get("c");
@@ -146,7 +228,10 @@ function loadFromURL() {
 // ---- Keyboard shortcuts -----------------------------------------------------
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeDetail();
+  if (e.key === "Escape") {
+    closeDetail();
+    collapseAccordion();
+  }
   if (e.key === "/" && document.activeElement !== searchInput) {
     e.preventDefault();
     searchInput.focus();
@@ -159,6 +244,9 @@ let debounceTimer;
 function render() {
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(() => {
+    const prevExpandedId = expandedCard?.id;
+    expandedCard = null; // stale reference; DOM is being rebuilt
+
     const q = searchInput.value.trim().toLowerCase();
     const filtered = getFiltered(q);
     const bestMatch = getBestMatch(filtered, q);
@@ -203,11 +291,19 @@ function render() {
         });
       });
 
-    // Re-apply active state on the open term after a re-render
+    // Re-apply desktop active state after re-render
     if (activeTerm) {
       document
         .getElementById(`term-${slug(activeTerm.name)}`)
         ?.classList.add("active");
+    }
+
+    // Re-expand mobile accordion if the term is still visible
+    if (prevExpandedId && window.innerWidth <= 767) {
+      const card = document.getElementById(prevExpandedId);
+      const termSlug = prevExpandedId.replace("term-", "");
+      const term = terms.find((t) => slug(t.name) === termSlug);
+      if (card && term) expandAccordion(card, term, true);
     }
 
     buildAlphaNav(grouped);
@@ -233,13 +329,26 @@ window.onload = () => {
     const term = terms.find((t) => slug(t.name) === hashSlug);
     if (term) {
       setTimeout(() => {
-        if (window.innerWidth > 767) openDetail(term);
-        document
-          .getElementById(`term-${hashSlug}`)
-          ?.scrollIntoView({ behavior: "smooth", block: "center" });
+        if (window.innerWidth <= 767) {
+          const card = document.getElementById(`term-${hashSlug}`);
+          if (card) expandAccordion(card, term);
+        } else {
+          openDetail(term);
+          document
+            .getElementById(`term-${hashSlug}`)
+            ?.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
       }, 600);
     }
   }
 };
 
 searchInput.addEventListener("input", render);
+
+// ---- Popstate ---------------------------------------------------------------
+
+window.addEventListener("popstate", () => {
+  collapseAccordion();
+  loadFromURL();
+  render();
+});

@@ -1,3 +1,17 @@
+export const GLOBAL_SEQUENCE = [
+  "cloud-marketplace-basics",
+  "private-offers-and-cppas",
+  "cosell-fundamentals",
+  "marketplace-ops-essentials",
+  "enterprise-billing-and-committed-spend",
+  "channel-and-partner-motions",
+  "suger-platform-quickstart",
+  "marketplace-integrations",
+  "marketplace-tax-compliance",
+];
+// Onboarding paths are role-specific — they sit outside the global sequence
+// and are recommended via the role selector (Session LP3).
+
 export const learningPaths = [
   {
     slug: "cloud-marketplace-basics",
@@ -7,6 +21,7 @@ export const learningPaths = [
     description:
       "Everything you need to understand how cloud marketplaces work — what they are, who buys and sells on them, and how transactions flow from listing to entitlement.",
     meta: "8 terms · ~25 min",
+    next: "private-offers-and-cppas",
     steps: [
       {
         name: "Cloud Go-to-Market (Cloud GTM)",
@@ -58,6 +73,9 @@ export const learningPaths = [
     description:
       "From a basic private offer to a channel partner resale — learn how AWS pricing customization works, how partners get involved, and what authorizations and agreements are required.",
     meta: "8 terms · ~30 min",
+    continuesFrom: "cloud-marketplace-basics",
+    next: "cosell-fundamentals",
+    prereqs: ["cloud-marketplace-basics"],
     steps: [
       {
         name: "Private Offer",
@@ -109,6 +127,9 @@ export const learningPaths = [
     description:
       "How ISVs work alongside hyperscaler sales teams to close deals. Covers the co-sell motion, referral mechanics, platform tools, AWS program requirements, and how co-sell varies across AWS, Azure, and GCP.",
     meta: "9 terms · ~35 min",
+    continuesFrom: "private-offers-and-cppas",
+    next: "marketplace-ops-essentials",
+    prereqs: ["private-offers-and-cppas"],
     steps: [
       {
         name: "Co-sell",
@@ -165,6 +186,9 @@ export const learningPaths = [
     description:
       "How committed spend agreements interact with marketplace purchases, why it matters for ISV deal strategy, and how to position listings as eligible across AWS, Azure, and GCP.",
     meta: "7 terms · ~25 min",
+    continuesFrom: "marketplace-ops-essentials",
+    next: "channel-and-partner-motions",
+    prereqs: ["marketplace-ops-essentials"],
     steps: [
       {
         name: "Cloud Committed Spend (CCS)",
@@ -211,6 +235,9 @@ export const learningPaths = [
     description:
       "The day-to-day operational layer every ISV needs to understand — from what gets published on marketplace to how buyers get provisioned and how integrations keep entitlements in sync.",
     meta: "8 terms · ~30 min",
+    continuesFrom: "cosell-fundamentals",
+    next: "enterprise-billing-and-committed-spend",
+    prereqs: ["cosell-fundamentals"],
     steps: [
       {
         name: "Product",
@@ -262,6 +289,9 @@ export const learningPaths = [
     description:
       "How ISVs sell through distribution and channel partners across AWS, Azure, and GCP. Covers resale mechanics, authorizations, and the multi-party transaction flows each hyperscaler uses.",
     meta: "7 terms · ~25 min",
+    continuesFrom: "enterprise-billing-and-committed-spend",
+    next: "suger-platform-quickstart",
+    prereqs: ["enterprise-billing-and-committed-spend"],
     steps: [
       {
         name: "Channel Partner (CP)",
@@ -308,6 +338,8 @@ export const learningPaths = [
     description:
       "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
     meta: "7 terms · ~20 min",
+    continuesFrom: "channel-and-partner-motions",
+    next: "marketplace-integrations",
     steps: [
       {
         name: "Suger",
@@ -354,6 +386,9 @@ export const learningPaths = [
     description:
       "How ISVs connect their backend systems to marketplace billing, entitlement, and provisioning flows — and what integration partners abstract for them.",
     meta: "7 terms · ~25 min",
+    continuesFrom: "suger-platform-quickstart",
+    next: "marketplace-tax-compliance",
+    prereqs: ["suger-platform-quickstart"],
     steps: [
       {
         name: "Integration Partner",
@@ -400,6 +435,8 @@ export const learningPaths = [
     description:
       "How tax collection and remittance works across AWS, Azure, and GCP — who's responsible for what, and how ISVs manage tax settings on each platform.",
     meta: "5 terms · ~20 min",
+    continuesFrom: "marketplace-integrations",
+    prereqs: ["marketplace-integrations"],
     steps: [
       {
         name: "Invoice",
@@ -436,6 +473,7 @@ export const learningPaths = [
     description:
       "Marketplace fundamentals every AE needs to understand before their first marketplace deal — what marketplace is, how enterprise buyers transact, and how co-sell works.",
     meta: "8 terms · ~25 min",
+    next: "private-offers-and-cppas",
     steps: [
       {
         name: "Cloud Go-to-Market (Cloud GTM)",
@@ -487,6 +525,8 @@ export const learningPaths = [
     description:
       "Co-sell programs, channel motions, and partner tooling from the partner manager's perspective — what you need to know to operate the partner layer of a cloud marketplace motion.",
     meta: "8 terms · ~30 min",
+    next: "channel-and-partner-motions",
+    prereqs: ["cosell-fundamentals"],
     steps: [
       {
         name: "Co-sell",
@@ -538,6 +578,8 @@ export const learningPaths = [
     description:
       "Revenue attribution, metering, committed spend, and billing mechanics that flow through marketplace — the RevOps perspective on cloud GTM.",
     meta: "7 terms · ~25 min",
+    next: "enterprise-billing-and-committed-spend",
+    prereqs: ["enterprise-billing-and-committed-spend"],
     steps: [
       {
         name: "Revenue",
@@ -584,6 +626,7 @@ export const learningPaths = [
     description:
       "Why cloud marketplaces matter, how enterprise procurement works through marketplace, and the co-sell and committed spend dynamics that drive revenue — no prior knowledge needed.",
     meta: "6 terms · ~20 min",
+    next: "cloud-marketplace-basics",
     steps: [
       {
         name: "Cloud Go-to-Market (Cloud GTM)",
