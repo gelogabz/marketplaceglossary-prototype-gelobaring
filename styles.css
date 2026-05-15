@@ -1045,6 +1045,60 @@ mark {
     color: var(--orange-text);
 }
 
+/* ---- Site footer ---------------------------------------------------------- */
+
+.site-footer {
+    border-top: 1px solid var(--gray-100);
+    background: var(--white);
+    padding: 2.5rem 1.5rem;
+}
+
+.site-footer-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 120px;
+}
+
+.footer-section-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray-400);
+    margin: 0 0 4px;
+}
+
+.footer-link {
+    font-size: 13px;
+    color: var(--gray-700);
+    text-decoration: none;
+    line-height: 1.5;
+    transition: color 0.12s;
+}
+
+.footer-link:hover {
+    color: var(--orange-text);
+}
+
+@media (max-width: 480px) {
+    .site-footer-inner {
+        gap: 1.5rem;
+    }
+
+    .footer-section {
+        min-width: calc(50% - 0.75rem);
+    }
+}
+
 /* ---- Print ---------------------------------------------------------------- */
 
 @media print {

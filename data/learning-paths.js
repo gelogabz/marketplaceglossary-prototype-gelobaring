@@ -1,3 +1,5 @@
+// Reference: https://www.suger.io/resources/guides/
+
 export const GLOBAL_SEQUENCE = [
   "cloud-marketplace-basics",
   "private-offers-and-cppas",
@@ -49,9 +51,9 @@ export const learningPaths = [
         why: "SaaS is the most common listing type on modern cloud marketplaces. Learn how SaaS billing and fulfillment work and why it requires API integration with the hyperscaler.",
       },
       {
-        name: "Transactable Offer",
-        slug: "transactable-offer",
-        why: "Not all listings can be purchased through the marketplace. Learn what makes an offer transactable and why this distinction matters for ISVs and buyers alike.",
+        name: "Offer",
+        slug: "offer",
+        why: "Before a deal can close on any marketplace, it must be structured as an offer — a priced, time-limited proposal sent to a specific buyer. Understanding what an offer is (and isn't) is the foundation for everything from private negotiations to channel deals.",
       },
       {
         name: "Private Offer",
@@ -72,7 +74,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "From a basic private offer to a channel partner resale — learn how AWS pricing customization works, how partners get involved, and what authorizations and agreements are required.",
-    meta: "8 terms · ~30 min",
+    meta: "9 terms · ~35 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -81,6 +83,11 @@ export const learningPaths = [
         name: "Private Offer",
         slug: "private-offer",
         why: "Start with the foundation — direct seller-to-buyer custom pricing on any cloud marketplace. Understanding what a private offer is sets the stage for everything else in this path.",
+      },
+      {
+        name: "Express Private Offer — AWS",
+        slug: "express-private-offer-—-aws",
+        why: "Launched November 2025, Express Private Offers use AI to auto-generate and deliver personalized offers to buyers without manual negotiation. If you're building a private offer today on AWS, this is the flow you'll encounter in AMMP.",
       },
       {
         name: "Agreement — AWS",
@@ -126,7 +133,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How ISVs work alongside hyperscaler sales teams to close deals. Covers the co-sell motion, referral mechanics, platform tools, AWS program requirements, and how co-sell varies across AWS, Azure, and GCP.",
-    meta: "9 terms · ~35 min",
+    meta: "12 terms · ~45 min",
     continuesFrom: "private-offers-and-cppas",
     next: "marketplace-ops-essentials",
     prereqs: ["private-offers-and-cppas"],
@@ -157,14 +164,29 @@ export const learningPaths = [
         why: "ACE is the platform where AWS co-sell actually happens. Now that you understand referrals conceptually, learn the system you'll use to register opportunities and engage AWS field teams.",
       },
       {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+        why: "When you open ACE today, you'll encounter AI agents that auto-populate opportunity fields, recommend funding, and automate pipeline management. Learn what these agents do so you can use them — not work around them.",
+      },
+      {
         name: "ISV Accelerate — AWS",
         slug: "isv-accelerate-—-aws",
         why: "To unlock deeper AWS co-sell benefits, ISVs need to join ISV Accelerate. Learn the eligibility requirements and what the program unlocks — including AWS field engagement and deal support.",
       },
       {
+        name: "First Value Opportunity (FVO) — AWS",
+        slug: "first-value-opportunity-fvo-—-aws",
+        why: "ISV Accelerate requires 5 launched opportunities — but your very first deal doesn't count. Learn what the FVO exclusion means for how you plan your co-sell pipeline and when the eligibility clock actually starts.",
+      },
+      {
         name: "SaaS Co-sell Benefit (SCB) — AWS",
         slug: "saas-co-sell-benefit-scb-—-aws",
         why: "The financial incentive that motivates AWS reps to actively co-sell your product. Understanding SCB explains why some deals get strong AWS field engagement and others don't.",
+      },
+      {
+        name: "Quota Retirement — AWS",
+        slug: "quota-retirement-—-aws",
+        why: "SCB works because AWS sellers earn quota credit — not just recognition — for co-sold private offers. Learn the underlying quota retirement mechanic that drives AWS field behavior and makes co-sell financially compelling for both sides.",
       },
       {
         name: "Co-sell Eligible / Incentivized — Azure",
@@ -349,12 +371,12 @@ export const learningPaths = [
       {
         name: "Organization",
         slug: "organization",
-        why: "In Suger, an Organization is the top-level entity that maps to your company. Learn what an Organization contains, how it's structured, and why it's the first thing you configure when onboarding.",
+        why: "Your Organization is the root of your Suger account — it's where access controls, integrations, and product configurations live. Getting this right at setup prevents permission and billing attribution issues across every marketplace you connect to later.",
       },
       {
         name: "Suger Console",
         slug: "suger-console",
-        why: "The Suger Console is the management interface where you configure everything. Learn what's accessible from the Console, how it maps to cloud marketplace operations, and how to navigate it.",
+        why: "The Suger Console is your operational control plane for cloud marketplace — where you monitor entitlements, manage offers, trigger metering, and configure integrations. Understanding its structure up front saves hours of navigation time once you're live.",
       },
       {
         name: "Integration",
@@ -434,34 +456,54 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How tax collection and remittance works across AWS, Azure, and GCP — who's responsible for what, and how ISVs manage tax settings on each platform.",
-    meta: "5 terms · ~20 min",
+    meta: "9 terms · ~35 min",
     continuesFrom: "marketplace-integrations",
     prereqs: ["marketplace-integrations"],
     steps: [
       {
         name: "Invoice",
         slug: "invoice",
-        why: "Start with what a marketplace invoice is — the billing document that captures charges, fees, and tax. Understanding invoice structure gives you the frame for how tax appears in the billing flow.",
+        why: "The invoice is the primary document your finance team will receive and reconcile for every marketplace transaction. Understanding what's on it — charges, fees, tax line items — is the starting point for any compliant billing workflow.",
       },
       {
         name: "Tax Details Dashboard — AWS",
         slug: "tax-details-dashboard-—-aws",
-        why: "AWS provides a dedicated dashboard for ISVs to configure their tax settings and review how tax is applied to marketplace transactions. Learn what it controls and what ISVs are responsible for configuring.",
+        why: "Misconfigured tax settings on AWS can result in incorrect tax collection or ISV liability exposure. Learn exactly what AWS's Tax Details Dashboard controls and what you must configure before going live.",
       },
       {
         name: "Marketplace Tax Management — Azure",
         slug: "marketplace-tax-management-—-azure",
-        why: "Azure's approach to marketplace tax differs from AWS — Microsoft acts as the Marketplace Facilitator for most transactions. Learn what that means for ISVs and what tax configuration is still required.",
+        why: "Microsoft acts as the Marketplace Facilitator for most Azure transactions — which shifts the tax remittance burden away from ISVs in many jurisdictions. Know which geographies are covered and where you still own the obligation.",
       },
       {
         name: "Marketplace Tax Management — GCP",
         slug: "marketplace-tax-management-—-gcp",
-        why: "GCP's tax model has its own nuances. Learn how Google handles tax collection and remittance for GCP Marketplace transactions and what compliance responsibilities remain with ISVs.",
+        why: "GCP's tax handling model differs from both AWS and Azure in ways that matter for multi-cloud ISVs. Learn which tax responsibilities GCP assumes and where ISVs remain exposed, so your compliance posture is accurate across all three platforms.",
+      },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+        why: "The marketplace fee is deducted before you ever see revenue — and it's calculated on gross transaction value, not net. Understanding how the fee is applied is essential for accurate revenue recognition, tax basis calculations, and finance-to-marketplace reconciliation.",
+      },
+      {
+        name: "Revenue",
+        slug: "revenue",
+        why: "Marketplace revenue recognition has platform-specific timing and treatment. Understanding when revenue is recognized — versus when it's billed, collected, or disbursed — is the foundation for accurate financial close cycles.",
       },
       {
         name: "Disbursement",
         slug: "disbursement",
-        why: "Tax and fees are deducted before ISVs receive their net proceeds. Understanding disbursement — the payout schedule, deductions, and reconciliation process — completes the tax and billing picture.",
+        why: "Knowing your disbursement schedule isn't optional for finance — it's what allows accurate cash flow forecasting and reconciliation with your accounting system. Learn what's deducted before payout and when funds actually arrive.",
+      },
+      {
+        name: "Disbursed Amount",
+        slug: "disbursed-amount",
+        why: "The disbursed amount is the net figure after marketplace fees and any applicable tax withholding — and it's often significantly different from the gross transaction value. Your finance team needs to reconcile this number, not the invoice total.",
+      },
+      {
+        name: "Disbursement Date",
+        slug: "disbursement-date",
+        why: "Knowing when funds land — not just that they will — is what lets your finance team reconcile marketplace revenue with your accounting close cycle. Disbursement dates follow platform-specific schedules that are often misunderstood or missed entirely.",
       },
     ],
   },
@@ -486,9 +528,9 @@ export const learningPaths = [
         why: "A listing is how your company's product appears on cloud marketplace. Before you can close a deal through marketplace, you need to understand what a listing is and how buyers find and evaluate it.",
       },
       {
-        name: "Transactable Offer",
-        slug: "transactable-offer",
-        why: "Not all listings can be purchased through the marketplace directly. Learn what makes an offer transactable — this determines whether a buyer can close through marketplace or needs a different path.",
+        name: "Offer",
+        slug: "offer",
+        why: "Before a deal can close on any marketplace, it must be structured as an offer — a priced, time-limited proposal sent to a specific buyer. As an AE, understanding what an offer is and how it triggers the buying workflow is essential for navigating the close.",
       },
       {
         name: "Private Offer",
@@ -625,38 +667,53 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Why cloud marketplaces matter, how enterprise procurement works through marketplace, and the co-sell and committed spend dynamics that drive revenue — no prior knowledge needed.",
-    meta: "6 terms · ~20 min",
+    meta: "9 terms · ~30 min",
     next: "cloud-marketplace-basics",
     steps: [
       {
         name: "Cloud Go-to-Market (Cloud GTM)",
         slug: "cloud-go-to-market-cloud-gtm",
-        why: "Start with why Cloud GTM matters strategically — why the world's largest enterprise software companies are shifting distribution through cloud marketplaces and what it means for growth.",
+        why: "Cloud GTM is now a primary growth lever for enterprise software companies — not an experiment. Understand why the shift to marketplace distribution is accelerating and what it means for your company's competitive positioning.",
       },
       {
         name: "Listing",
         slug: "listing",
-        why: "A listing is how your company's product is published on a cloud marketplace. Understanding what a listing is and how buyers discover it sets up everything that follows about deal mechanics.",
+        why: "Your marketplace listing is your product's commercial presence on the hyperscaler's platform. Executives should understand what a listing enables — and what it doesn't — because listing quality directly affects whether enterprise buyers can transact through marketplace at all.",
       },
       {
         name: "Private Offer",
         slug: "private-offer",
-        why: "Most enterprise marketplace revenue comes through private offers — seller-customized pricing for individual buyers. This is the primary transaction mechanism executives should understand.",
+        why: "The vast majority of enterprise marketplace revenue is transacted through private offers — customized, negotiated deals sent directly to a specific buyer. Understanding this mechanism explains why marketplace is a serious enterprise sales channel, not just a catalog.",
       },
       {
         name: "Co-sell",
         slug: "co-sell",
-        why: "Co-selling is what makes cloud marketplace different from a traditional app store — it's a joint motion with the hyperscaler's own field teams. Learn why hyperscalers participate and what it means for deal velocity.",
+        why: "Co-selling with hyperscaler field teams is the highest-leverage motion in cloud GTM — it accelerates deal cycles, adds enterprise credibility, and creates a distribution multiplier you can't replicate through direct sales alone. This is the core reason serious ISVs invest in marketplace.",
+      },
+      {
+        name: "ISV Accelerate — AWS",
+        slug: "isv-accelerate-—-aws",
+        why: "ISV Accelerate is the AWS program that gates access to co-sell support and AWS rep incentives. Executives should understand what qualifying for this program unlocks — because it's the difference between passive marketplace presence and active hyperscaler-backed distribution.",
       },
       {
         name: "Cloud Committed Spend (CCS)",
         slug: "cloud-committed-spend-ccs",
-        why: "Enterprise buyers have committed spend balances with hyperscalers — and marketplace purchases draw them down. This is the mechanism that makes marketplace a preferred buying channel for large enterprises.",
+        why: "Your largest enterprise prospects almost certainly have committed spend balances with AWS, Azure, or GCP — and they're looking for ways to draw them down before they expire. Marketplace listings that qualify for committed spend draw-down have a structural deal-closing advantage in those accounts.",
+      },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+        why: "The marketplace takes a fee on every transaction — typically 3–5% for established ISVs. Executives need to understand this cost structure to accurately model marketplace economics and compare it against other distribution channels.",
+      },
+      {
+        name: "Entitlement",
+        slug: "entitlement",
+        why: "When a marketplace deal closes, an entitlement is created — the operational record that the buyer's access rights are active. Understanding what 'closed on marketplace' means operationally helps executives track pipeline health and distinguish counted revenue from in-flight transactions.",
       },
       {
         name: "Revenue",
         slug: "revenue",
-        why: "Finally, understand how marketplace revenue flows — how transactions on the hyperscaler's platform translate into recognized revenue for your company, net of marketplace fees and timing of disbursements.",
+        why: "Marketplace revenue has its own recognition timing, fee structure, and disbursement schedule. Executives need to understand how marketplace bookings translate to recognized revenue — and how they're reported differently from direct sales — to accurately communicate performance to the board.",
       },
     ],
   },
@@ -667,7 +724,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The AWS-specific mechanics every ISV needs: how listings, offers, and agreements work on AWS Marketplace, the key programs that unlock co-sell access, and the tools and APIs that run day-to-day operations.",
-    meta: "9 terms · ~35 min",
+    meta: "11 terms · ~40 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -688,9 +745,19 @@ export const learningPaths = [
         why: "ISV Accelerate, ACE, and most AWS co-sell benefits require APN membership. Understand what the APN is, how partners are tiered, and why your APN standing determines your access to marketplace programs.",
       },
       {
+        name: "Partner Revenue Measurement (PRM) — AWS",
+        slug: "partner-revenue-measurement-prm-—-aws",
+        why: "PRM launched January 2026 and is now required for ISVs who want to unlock APN funding benefits — including for the ISV Accelerate 2026 cohort. Learn what PRM is and how to set it up before you get stuck on a funding claim.",
+      },
+      {
         name: "ISV Accelerate — AWS",
         slug: "isv-accelerate-—-aws",
         why: "ISV Accelerate is the AWS program that unlocks co-sell support, AWS field engagement, and SaaS Co-sell Benefit incentives. Learn the eligibility requirements and why qualifying for this program is a commercial priority.",
+      },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+        why: "The FTR is a hard prerequisite for ISV Accelerate co-sell access and AWS Specialization. Learn what the review covers, how long it takes, and when the Well-Architected waiver applies — so you can plan the gate before it blocks you.",
       },
       {
         name: "Agreement — AWS",
@@ -839,7 +906,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The cross-platform funding landscape — AWS, Azure, and GCP programs that offset customer acquisition, migration, and proof-of-concept costs. Learn which programs exist, what they cover, and how ISVs and partners qualify.",
-    meta: "9 terms · ~35 min",
+    meta: "10 terms · ~40 min",
     prereqs: ["cosell-fundamentals"],
     steps: [
       {
@@ -871,6 +938,11 @@ export const learningPaths = [
         name: "Proof of Concept (POC) Funding  — AWS",
         slug: "proof-of-concept-poc-funding-—-aws",
         why: "POC Funding offsets up to $25,000 of the cost of building a proof of concept for a customer. Learn the ACE stage requirements, how to submit through the APFP, and how POC funding fits into a broader deal acceleration strategy.",
+      },
+      {
+        name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
+        slug: "marketplace-private-offer-promotion-program-mpopp-—-aws",
+        why: "Launched August 2025, MPOPP lets ISVs accelerate deal close by offering AWS Promotional Credits when buyers accept private offers. It's the AWS equivalent of ECIF (Azure) and MCCP (GCP) — both of which you just covered.",
       },
       {
         name: "Partner Initiative Funding (PIF) — AWS",

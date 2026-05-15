@@ -477,6 +477,73 @@
                 color: var(--orange-text);
             }
 
+            /* ---- Overview ---- */
+
+            .path-overview {
+                animation: stepIn 0.18s ease;
+            }
+
+            .overview-steps {
+                margin: 1.5rem 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .overview-step-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 14px;
+                color: var(--gray-700);
+                line-height: 1.4;
+            }
+
+            .overview-step-num {
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background: var(--gray-100);
+                color: var(--gray-500);
+                font-size: 11px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .overview-start-btn {
+                appearance: none;
+                margin-top: 2rem;
+                padding: 10px 24px;
+                border-radius: 8px;
+                border: none;
+                background: var(--orange);
+                color: var(--white);
+                font-size: 14px;
+                font-weight: 600;
+                font-family: inherit;
+                cursor: pointer;
+                transition: background 0.12s;
+                display: block;
+            }
+
+            .overview-start-btn:hover {
+                background: #d45e18;
+            }
+
+            .progress-dot--overview {
+                opacity: 0.5;
+            }
+
+            .progress-dot--overview.active {
+                opacity: 1;
+                background: var(--orange);
+            }
+
             /* ---- Print ---- */
 
             @media print {
@@ -491,7 +558,8 @@
                 .path-prereq-warning,
                 .it-actions,
                 .sr-close-row,
-                .step-counter {
+                .step-counter,
+                .site-footer {
                     display: none !important;
                 }
 
@@ -607,5 +675,64 @@
         </div>
 
         <script type="module" src="path.js"></script>
+
+        <footer class="site-footer">
+            <div class="site-footer-inner">
+                <div class="footer-section">
+                    <p class="footer-section-label">Suger</p>
+                    <a
+                        href="https://doc.suger.io/get-started/"
+                        class="footer-link"
+                        target="_blank"
+                        rel="noopener"
+                        >Documentation</a
+                    >
+                    <a
+                        href="https://www.suger.io/resources/guides/"
+                        class="footer-link"
+                        target="_blank"
+                        rel="noopener"
+                        >Guides</a
+                    >
+                    <a
+                        href="https://www.suger.io/resources/blog/"
+                        class="footer-link"
+                        target="_blank"
+                        rel="noopener"
+                        >Blog</a
+                    >
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-label">AWS</p>
+                    <a
+                        href="https://docs.aws.amazon.com/marketplace/"
+                        class="footer-link"
+                        target="_blank"
+                        rel="noopener"
+                        >AWS Marketplace</a
+                    >
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-label">Azure</p>
+                    <a
+                        href="https://learn.microsoft.com/en-us/partner-center/"
+                        class="footer-link"
+                        target="_blank"
+                        rel="noopener"
+                        >Partner Center</a
+                    >
+                </div>
+                <div class="footer-section">
+                    <p class="footer-section-label">GCP</p>
+                    <a
+                        href="https://docs.cloud.google.com/marketplace/docs"
+                        class="footer-link"
+                        target="_blank"
+                        rel="noopener"
+                        >GCP Marketplace</a
+                    >
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

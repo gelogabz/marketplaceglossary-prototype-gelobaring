@@ -89,7 +89,7 @@ if (!path) {
 }
 
 function renderPath(path) {
-  let currentStep = 0;
+  let currentStep = -1; // -1 = overview
   const catLabel = CATEGORY_META[path.category] || path.category;
 
   const nextPath =
@@ -99,12 +99,15 @@ function renderPath(path) {
     ) ||
     null;
 
-  const dotsHtml = path.steps
-    .map(
-      (_, i) =>
-        `<button class="progress-dot" data-step="${i}" type="button" aria-label="Go to step ${i + 1}"></button>`,
-    )
-    .join("");
+  const overviewDot = `<button class="progress-dot progress-dot--overview" data-step="-1" type="button" aria-label="Overview"></button>`;
+  const dotsHtml =
+    overviewDot +
+    path.steps
+      .map(
+        (_, i) =>
+          `<button class="progress-dot" data-step="${i}" type="button" aria-label="Go to step ${i + 1}"></button>`,
+      )
+      .join("");
 
   let prereqWarningHtml = "";
   if (path.prereqs && path.prereqs.length) {
@@ -162,39 +165,68 @@ function renderPath(path) {
 
   function renderStep(index) {
     currentStep = index;
-    const step = path.steps[index];
-    const term = terms.find((t) => slug(t.name) === step.slug);
-    const isLast = index === path.steps.length - 1;
+    const isLast = index >= 0 && index === path.steps.length - 1;
+    const stepContent = document.getElementById("pathStepContent");
 
-    document.getElementById("pathStepContent").innerHTML = `
-      <section class="path-step">
-        <div class="step-counter">Step ${index + 1} of ${path.steps.length}</div>
-        <div class="step-why-callout">${step.why}</div>
-        ${
-          term
-            ? buildInlineTermDetail(term)
-            : `<p style="color:var(--gray-400);font-size:13px;padding:1rem 0;">Term "${step.name}" not found in glossary.</p>`
-        }
-      </section>
-    `;
+    if (index === -1) {
+      const stepsList = path.steps
+        .map(
+          (s, i) => `
+          <li class="overview-step-item">
+            <span class="overview-step-num">${i + 1}</span>
+            <span class="overview-step-name">${s.name}</span>
+          </li>`,
+        )
+        .join("");
 
-    document.querySelectorAll(".progress-dot").forEach((dot, i) => {
-      dot.classList.toggle("active", i === index);
-      dot.classList.toggle("done", i < index);
+      stepContent.innerHTML = `
+        <section class="path-overview">
+          <div class="step-counter">Overview · ${path.steps.length} steps</div>
+          <ol class="overview-steps">${stepsList}</ol>
+          <button class="overview-start-btn" id="startPathBtn" type="button">Begin path →</button>
+        </section>
+      `;
+
+      document
+        .getElementById("startPathBtn")
+        ?.addEventListener("click", () => renderStep(0));
+    } else {
+      const step = path.steps[index];
+      const term = terms.find((t) => slug(t.name) === step.slug);
+
+      stepContent.innerHTML = `
+        <section class="path-step">
+          <div class="step-counter">Step ${index + 1} of ${path.steps.length}</div>
+          <div class="step-why-callout">${step.why}</div>
+          ${
+            term
+              ? buildInlineTermDetail(term)
+              : `<p style="color:var(--gray-400);font-size:13px;padding:1rem 0;">Term "${step.name}" not found in glossary.</p>`
+          }
+        </section>
+      `;
+
+      markStepRead(path.slug, index);
+    }
+
+    // Dots: compare by data-step value, not forEach index
+    document.querySelectorAll(".progress-dot").forEach((dot) => {
+      const s = parseInt(dot.dataset.step, 10);
+      dot.classList.toggle("active", s === currentStep);
+      dot.classList.toggle(
+        "done",
+        s >= 0 && s < currentStep && currentStep >= 0,
+      );
     });
 
     const prevBtn = document.getElementById("prevStepBtn");
     const nextBtn = document.getElementById("nextStepBtn");
-    if (prevBtn) prevBtn.disabled = index === 0;
-    if (nextBtn) {
-      nextBtn.disabled = isLast;
-    }
+    if (prevBtn) prevBtn.disabled = index === -1;
+    if (nextBtn) nextBtn.disabled = isLast;
 
-    // Enable/disable the mark-complete button based on current step
     const markCompleteBtn = document.getElementById("markCompleteBtn");
     if (markCompleteBtn) markCompleteBtn.disabled = !isLast;
 
-    markStepRead(path.slug, index);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -233,7 +265,7 @@ function renderPath(path) {
       const progress = getReadProgress();
       delete progress[path.slug];
       localStorage.setItem(READ_KEY, JSON.stringify(progress));
-      renderStep(0);
+      renderStep(-1);
       renderFooter();
     });
   }
@@ -245,12 +277,12 @@ function renderPath(path) {
       );
     });
     document.getElementById("prevStepBtn")?.addEventListener("click", () => {
-      if (currentStep > 0) renderStep(currentStep - 1);
+      if (currentStep > -1) renderStep(currentStep - 1); // step 0 → overview (-1)
     });
     document.getElementById("nextStepBtn")?.addEventListener("click", () => {
       if (currentStep < path.steps.length - 1) renderStep(currentStep + 1);
     });
-    renderStep(0);
+    renderStep(-1); // start on overview
   }
 
   function printPath() {

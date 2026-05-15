@@ -5,7 +5,8 @@ export const terms = [
     def: "AWS's co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft's co-sell program or GCP Partner Advantage co-sell.",
     alias:
       "Related: AWS Partner Network (APN) — AWS, Inbound Referral, Outbound Referral",
-    source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/builder-guide/index.html",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
@@ -391,7 +392,7 @@ export const terms = [
     ],
   },
   {
-    name: "Cloud Go-To-Market (Cloud GTM)",
+    name: "Cloud Go-to-Market (Cloud GTM)",
     tags: ["general"],
     def: "A sales and distribution strategy centered on cloud marketplaces — combining listing, transacting, and co-selling to reach enterprise buyers and shorten sales cycles.",
     alias: "Related: Suger Console, Co-sell",
@@ -448,7 +449,7 @@ export const terms = [
   {
     name: "Co-sell Eligible / Incentivized — Azure",
     tags: ["azure", "cosell"],
-    def: "Tiered Microsoft co-sell statuses. 'Co-sell Ready' meets requirements for joint selling. 'Azure IP Co-sell Eligible' unlocks MACC eligibility — purchases count dollar-for-dollar toward the customer's Azure commitment on Microsoft Marketplace. 'Co-sell Incentivized' means Microsoft sellers earn quota credit for selling your product.",
+    def: "Tiered Microsoft co-sell statuses. 'Co-sell Ready' requires a live Microsoft Marketplace listing plus a solution one-pager and pitch deck. 'Azure IP Co-sell Eligible' requires co-sell ready status plus: at least $100,000 in Azure Consumed Revenue or Marketplace Billed Sales over the trailing 12 months at the organization level, Azure-based technical validation, and active Azure platform hosting at transaction time — this status unlocks MACC eligibility. 'Co-sell Incentivized' means Microsoft sellers earn quota credit for selling your product. Note: As of 2025, Azure IP co-sell top-tier benefits are transitioning to the certified software designation within the Microsoft AI Cloud Partner Program.",
     alias:
       "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
     source:
@@ -807,7 +808,7 @@ export const terms = [
   {
     name: "Enterprise Discount Program (EDP) — AWS",
     tags: ["aws", "funding"],
-    def: "AWS's committed spend program for enterprises. Requires a minimum $1M spend commitment. Eligible AWS Marketplace transactable listing purchases count toward EDP drawdown — a key enterprise buying incentive.",
+    def: "AWS's committed spend program for enterprises (also called Private Pricing Agreement / PPA). Eligible AWS Marketplace transactable listing purchases count toward EDP drawdown — a key enterprise buying incentive. Minimum commitment thresholds are negotiated privately with AWS and are not publicly disclosed; the $1M figure is widely cited but not officially confirmed.",
     alias:
       "Also known as: Private Pricing Agreement (PPA) — AWS | Azure equivalent: Azure Consumption Commitment (MACC) — Azure | GCP equivalent: Committed Use Discount (CUD) — GCP",
     source: "https://aws.amazon.com/pricing/enterprise/",
@@ -1016,7 +1017,7 @@ export const terms = [
   {
     name: "Partner Advantage — GCP",
     tags: ["gcp", "cosell"],
-    def: "Google Cloud's partner program required to list on GCP Marketplace. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the 'Build' engagement model. As of Q1 2026, Partner Advantage is transitioning to a three-tier structure — Select, Premier, and Diamond — with the Diamond tier reserved for partners consistently delivering exceptional customer outcomes.",
+    def: "Google Cloud's partner program required to list on GCP Marketplace. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the 'Build' engagement model. As of Q1 2026, Google Cloud announced the Google Cloud Partner Network as a replacement for Partner Advantage, with a new tier and competency structure. Partners should verify current enrollment status through the Google Cloud partner portal.",
     alias:
       "Related: Build Engagement Model — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
     source: "https://partners.cloud.google.com",
@@ -1142,7 +1143,7 @@ export const terms = [
   {
     name: "ISV Accelerate — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources in exchange for listing transactable products on AWS Marketplace. Required for SPPO participation.",
+    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Required for SPPO participation.",
     alias:
       "Azure equivalent: ISV Success Program — Azure | GCP equivalent: Build Engagement Model — GCP | Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
@@ -1151,7 +1152,7 @@ export const terms = [
     whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
     useCases: [
       "Enrolling in ISV Accelerate to gain access to AWS seller introductions, co-sell resources, and SPPO eligibility",
-      "Meeting the program requirements (transactable listing + FTR) to unlock ACE co-sell benefits",
+      "Meeting ISV Accelerate requirements — transactable listing, FTR approval, 5+ launched ACE opportunities, 15+ qualified ACE opportunities, $2K+ AWS account revenue — to unlock full co-sell benefits including SCB",
     ],
     context: ["AWS Partner Central", "Co-sell Programs", "ISV Programs"],
     related: [
@@ -5004,7 +5005,7 @@ export const terms = [
   {
     name: "AWS Competency — AWS",
     tags: ["aws", "cosell"],
-    def: "A category of AWS Specialization validating a partner's technical expertise and customer success in a specific technology area or industry (e.g., AI Competency, Security Competency, SMB Competency). Requires Advanced Tier or higher APN status. Partners with Competencies gain increased MDF, Marketplace visibility, and priority in AWS seller recommendations.",
+    def: "A category of AWS Specialization validating a partner's technical expertise and customer success in a specific technology area or industry (e.g., AI Competency, Security Competency, SMB Competency). Partners with Competencies gain increased MDF, Marketplace visibility, and priority in AWS seller recommendations. ISVs on the Software Path do not need Advanced Tier APN status to pursue Competencies.",
     alias:
       "Related: AWS Specialization — AWS, Marketing Development Funds (MDF) — AWS — AWS, Strategic Collaboration Agreement (SCA) — AWS",
     source: "https://aws.amazon.com/partners/programs/specializations/",
@@ -5012,8 +5013,8 @@ export const terms = [
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
     useCases: [
-      "Achieving an AWS Competency at Advanced Tier or higher to unlock increased MDF, improved Marketplace visibility, and priority in AWS seller recommendations",
-      "Understanding that Competency is a subcategory of Specialization — all Competencies are Specializations but require Advanced Tier APN status",
+      "Achieving an AWS Competency to unlock increased MDF, improved Marketplace visibility, and priority in AWS seller recommendations (no APN tier requirement for ISVs on the Software Path)",
+      "Understanding that Competency is a subcategory of Specialization — all Competencies are Specializations, but ISVs on the Software Path do not need Advanced or Premier APN tier to pursue them",
     ],
     context: ["AWS Partner Central", "APN Programs", "Co-sell Eligibility"],
     related: [
@@ -5502,7 +5503,7 @@ export const terms = [
     tags: ["gcp", "cosell"],
     def: "The Google Cloud Partner Advantage engagement model designed for ISVs and SaaS providers who integrate their products with Google Cloud. Requires a technical review and a transactable GCP Marketplace listing to unlock co-sell incentives and Market Development Funds (MDF).",
     alias:
-      "AWS equivalent: ISV Accelerate — AWS | Azure equivalent: ISV Success Program — Azure | Related: Partner Advantage — GCP, GCP Marketplace — GCP, Marketing Development Funds (MDF) — AWS",
+      "AWS equivalent: ISV Accelerate — AWS | Azure equivalent: ISV Success Program — Azure | Related: Partner Advantage — GCP, GCP Marketplace — GCP",
     source: "https://partners.cloud.google.com",
     difficulty: "intermediate",
     category: "cosell",
@@ -5528,7 +5529,8 @@ export const terms = [
     def: "A Microsoft program (formerly ISV Success Path) that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace.",
     alias:
       "AWS equivalent: ISV Accelerate — AWS | GCP equivalent: Build Engagement Model — GCP | Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/isv-success",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/membership/isv-success",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -6016,6 +6018,477 @@ export const terms = [
         name: "Marketplace Fee / Transaction Fee",
         slug: "marketplace-fee-/-transaction-fee",
       },
+    ],
+  },
+  {
+    name: "Amazon EventBridge Marketplace Integration — AWS",
+    tags: ["aws", "integrations"],
+    def: "AWS's event-driven integration mechanism for SaaS Marketplace products. When a buyer subscribes, amends, or cancels, EventBridge sends events to the seller's default event bus using the source `aws.agreement-marketplace`. Sellers configure rules and targets (Lambda, Step Functions, API Gateway) to trigger provisioning and deprovisioning logic. EventBridge is replacing SNS-based notifications for all new SaaS listings.",
+    alias:
+      "Replacing: Amazon SNS Marketplace Notifications — AWS | Related: SaaS Fulfillment API — Azure, Pub/Sub — GCP",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-eventbridge-integration.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Triggering tenant provisioning automatically when a buyer's Purchase Agreement Created event is received from EventBridge",
+      "Starting the 1-hour final usage reporting window by reacting to the License Deprovisioned - Manufacturer event before entitlements are revoked",
+      "Replacing legacy SNS-based subscription notification handling by migrating SaaS product integration to EventBridge rules",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Seller SaaS Integration",
+      "EventBridge Console",
+      "AWS Lambda",
+    ],
+    related: [
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+      { name: "Pub/Sub — GCP", slug: "pub/sub-—-gcp" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
+  },
+  {
+    name: "Registration Token — AWS",
+    tags: ["aws", "integrations"],
+    def: "A short-lived token (`x-amzn-marketplace-token`) that AWS sends to a SaaS seller's landing page via HTTP POST when a buyer clicks Subscribe. The seller must exchange this token for a permanent CustomerIdentifier by calling the ResolveCustomer API — only then can metering begin. Tokens expire quickly and cannot be reused.",
+    alias:
+      "Related: Landing Page / Signup URL, ResolveCustomer API — AWS, Signup URL Redirect",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-integrate-subscription.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Implementing the SaaS subscription onboarding flow by exchanging the registration token for a CustomerIdentifier on the seller's landing page",
+      "Debugging failed SaaS subscriptions by checking whether the token was exchanged before metering began",
+    ],
+    context: [
+      "AWS Marketplace SaaS Integration",
+      "Seller Landing Page",
+      "AWS Marketplace Metering Service",
+    ],
+    related: [
+      { name: "Landing Page / Signup URL", slug: "landing-page-/-signup-url" },
+      { name: "Signup URL Redirect", slug: "signup-url-redirect" },
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+    ],
+  },
+  {
+    name: "ResolveCustomer API — AWS",
+    tags: ["aws", "integrations"],
+    def: "An AWS Marketplace Metering Service API call that exchanges a buyer's temporary registration token for a permanent CustomerIdentifier, CustomerAWSAccountId, LicenseArn, and ProductCode. Required as the first step in all SaaS subscription and contract integrations — sellers must call this before provisioning access or sending metering records.",
+    alias:
+      "Related: Registration Token — AWS, BatchMeterUsage API — AWS, GetEntitlements API — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_ResolveCustomer.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Exchanging the registration token for a permanent CustomerIdentifier during the SaaS onboarding flow so the seller can begin metering",
+      "Storing the CustomerAWSAccountId and ProductCode returned by ResolveCustomer for use in future metering and entitlement API calls",
+    ],
+    context: [
+      "AWS Marketplace Metering Service",
+      "AWS Marketplace SaaS Integration",
+      "Seller Backend",
+    ],
+    related: [
+      { name: "Registration Token — AWS", slug: "registration-token-—-aws" },
+      { name: "BatchMeterUsage API — AWS", slug: "batchmeterusage-api-—-aws" },
+      { name: "GetEntitlements API — AWS", slug: "getentitlements-api-—-aws" },
+      { name: "Landing Page / Signup URL", slug: "landing-page-/-signup-url" },
+    ],
+  },
+  {
+    name: "BatchMeterUsage API — AWS",
+    tags: ["aws", "integrations"],
+    def: "The AWS Marketplace Metering Service API that sellers call hourly to report usage consumption for SaaS subscription and SaaS contract products. Records are submitted per CustomerIdentifier and dimension, de-duplicated on the hour, and used to generate buyer invoices. Sellers must send final records within a 1-hour window after receiving a License Deprovisioned event before entitlements are revoked.",
+    alias:
+      "AWS equivalent of: Service Control API — GCP, Marketplace Metering Service API — Azure | Related: ResolveCustomer API — AWS, Usage Metering, Metered Billing",
+    source:
+      "https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_BatchMeterUsage.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Reporting hourly SaaS usage records to AWS so buyers are billed for consumption on metered dimensions",
+      "Submitting final usage records within the 1-hour window after a License Deprovisioned event to ensure all consumption is billed before access is revoked",
+    ],
+    context: [
+      "AWS Marketplace Metering Service",
+      "AWS Marketplace SaaS Integration",
+      "Seller Backend",
+    ],
+    related: [
+      { name: "ResolveCustomer API — AWS", slug: "resolvecustomer-api-—-aws" },
+      { name: "GetEntitlements API — AWS", slug: "getentitlements-api-—-aws" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Service Control API — GCP", slug: "service-control-api-—-gcp" },
+    ],
+  },
+  {
+    name: "GetEntitlements API — AWS",
+    tags: ["aws", "integrations"],
+    def: "An AWS Marketplace Entitlement Service API that returns the quantity and dimensions a buyer is entitled to under a SaaS Contract. Sellers call this after resolving a customer to verify what the buyer has purchased, and again when they receive an `entitlement-updated` SNS notification to check for contract changes. Only applicable to SaaS Contract products — PAYG/subscription products do not use entitlements.",
+    alias:
+      "Related: ResolveCustomer API — AWS, Amazon EventBridge Marketplace Integration — AWS, Entitlement",
+    source:
+      "https://docs.aws.amazon.com/marketplaceentitlement/latest/APIReference/API_GetEntitlements.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Verifying the buyer's contracted quantity and dimensions at onboarding by calling GetEntitlements after resolving the registration token",
+      "Reacting to an entitlement-updated SNS notification by calling GetEntitlements to check whether a contract was upgraded, renewed, or cancelled",
+    ],
+    context: [
+      "AWS Marketplace Entitlement Service",
+      "AWS Marketplace SaaS Contract Integration",
+      "Seller Backend",
+    ],
+    related: [
+      { name: "ResolveCustomer API — AWS", slug: "resolvecustomer-api-—-aws" },
+      { name: "BatchMeterUsage API — AWS", slug: "batchmeterusage-api-—-aws" },
+      { name: "Entitlement", slug: "entitlement" },
+      {
+        name: "Amazon EventBridge Marketplace Integration — AWS",
+        slug: "amazon-eventbridge-marketplace-integration-—-aws",
+      },
+    ],
+  },
+  {
+    name: "SaaS Subscription Pricing — AWS",
+    tags: ["aws", "billing"],
+    def: "An AWS Marketplace SaaS pricing model where buyers pay hourly for actual usage with no upfront contract commitment. Sellers report usage via BatchMeterUsage and buyers are billed based on custom metering dimensions. Also called Pay-As-You-Go (PAYG). Does not use entitlement SNS topics or the GetEntitlements API — only subscription SNS notifications apply.",
+    alias:
+      "Also called: Pay-As-You-Go (PAYG) | Azure equivalent: SaaS flat-rate with metered billing | Related: SaaS Contract Pricing — AWS, Metered Billing, PAYG / Pay-as-you-go",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a consumption-based SaaS product on AWS Marketplace where buyers pay only for what they use with no upfront commitment",
+      "Choosing between SaaS Subscription (PAYG) and SaaS Contract pricing when planning a new AWS Marketplace listing",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Marketplace Management Portal (AMMP)",
+      "SaaS Product Setup",
+    ],
+    related: [
+      {
+        name: "SaaS Contract Pricing — AWS",
+        slug: "saas-contract-pricing-—-aws",
+      },
+      { name: "Metered Billing", slug: "metered-billing" },
+      { name: "PAYG / Pay-as-you-go", slug: "payg-/-pay-as-you-go" },
+      { name: "BatchMeterUsage API — AWS", slug: "batchmeterusage-api-—-aws" },
+    ],
+  },
+  {
+    name: "SaaS Contract Pricing — AWS",
+    tags: ["aws", "billing"],
+    def: "An AWS Marketplace SaaS pricing model where buyers pay upfront — or on a flexible installment schedule — for defined entitlements (quantity × dimension). Includes SaaS Contracts (no consumption overage) and SaaS Contracts with Pay-As-You-Go (contract entitlement plus metered overage billing). Entitlements are verified via GetEntitlements and changes are notified via `entitlement-updated` SNS events.",
+    alias:
+      "Variant: SaaS Contracts with Pay-As-You-Go | Related: SaaS Subscription Pricing — AWS, Agreement — AWS, Flexible Payment Schedule / Installment Plan",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a SaaS product with upfront or installment-based pricing on AWS Marketplace where buyers purchase defined entitlements",
+      "Structuring a contract with consumption overage by combining a SaaS Contract base with pay-as-you-go metering above the committed quantity",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Marketplace Management Portal (AMMP)",
+      "SaaS Product Setup",
+    ],
+    related: [
+      {
+        name: "SaaS Subscription Pricing — AWS",
+        slug: "saas-subscription-pricing-—-aws",
+      },
+      { name: "GetEntitlements API — AWS", slug: "getentitlements-api-—-aws" },
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      {
+        name: "Flexible Payment Schedule / Installment Plan",
+        slug: "flexible-payment-schedule-/-installment-plan",
+      },
+    ],
+  },
+  {
+    name: "Connection Webhook — Azure",
+    tags: ["azure", "integrations"],
+    def: "A publisher-provided HTTPS endpoint that Microsoft calls to notify a SaaS seller of subscription lifecycle events. Required for all transactable SaaS offers in Microsoft Marketplace. Events include ChangePlan, ChangeQuantity, Suspend, Unsubscribe, Renew, and Reinstate. The publisher must respond with HTTP 200 within 10 seconds and then call the SaaS Fulfillment API to confirm or reject the operation.",
+    alias:
+      "AWS equivalent: Amazon EventBridge Marketplace Integration — AWS | GCP equivalent: Pub/Sub — GCP | Related: SaaS Fulfillment API — Azure, Subscription — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/pc-saas-fulfillment-webhook",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Implementing the required webhook endpoint to receive Microsoft's subscription lifecycle notifications for a transactable SaaS offer",
+      "Handling a Suspend event by restricting buyer access until a Reinstate event confirms payment resumed",
+      "Accepting or rejecting a plan change request received via webhook by calling the SaaS Fulfillment API within 10 seconds",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "SaaS Offer Technical Configuration",
+    ],
+    related: [
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+      { name: "Subscription — Azure", slug: "subscription-—-azure" },
+      {
+        name: "Amazon EventBridge Marketplace Integration — AWS",
+        slug: "amazon-eventbridge-marketplace-integration-—-aws",
+      },
+      { name: "Pub/Sub — GCP", slug: "pub/sub-—-gcp" },
+    ],
+  },
+  {
+    name: "Marketplace Metering Service API — Azure",
+    tags: ["azure", "integrations"],
+    def: "Microsoft's API that publishers call to report custom usage dimensions consumed above the flat-rate base fee in a transactable SaaS or Azure Managed Application offer. Publishers POST usage events per resource, dimension, and hour to `marketplaceapi.microsoft.com`. Microsoft uses these events to bill the buyer for overage and pays the publisher. At most one event per hour per resource per dimension is accepted.",
+    alias:
+      "AWS equivalent: BatchMeterUsage API — AWS | GCP equivalent: Service Control API — GCP | Related: SaaS Fulfillment API — Azure, Metered Billing, Metering Dimension",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-metering-service-apis",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Emitting custom dimension usage events to Microsoft after a buyer exhausts their flat-rate included quantity, triggering overage billing",
+      "Implementing metered billing for an Azure Managed Application by POSTing usage against the managed resource group's resourceUri",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Azure Managed Applications",
+      "SaaS Offer Integration",
+      "Partner Center — Azure",
+    ],
+    related: [
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+      { name: "Metered Billing", slug: "metered-billing" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      { name: "Service Control API — GCP", slug: "service-control-api-—-gcp" },
+    ],
+  },
+  {
+    name: "Standard Contract — Azure",
+    tags: ["azure"],
+    def: "Microsoft's standardized legal terms that publishers can adopt for their Microsoft Marketplace offers instead of writing custom terms and conditions. Customers who have accepted the Standard Contract once do not need to re-review it for new offers using it. Publishers can extend the Standard Contract with Universal Amendments (for all buyers) or Custom Amendments (targeted to specific Azure tenant IDs). Applies to SaaS, Azure Applications, Virtual Machines, Containers, and AI Apps.",
+    alias:
+      "AWS equivalent: Standard Contract (SCMP) — AWS | Related: End User License Agreement (EULA), Private Offer — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/standard-contract",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Simplifying the procurement process for enterprise buyers by adopting the Standard Contract so they don't need to review new legal terms for each offer",
+      "Adding a Custom Amendment to the Standard Contract to include tenant-specific terms for a strategic customer without abandoning the standardized base",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Private Offer — Azure",
+      "Offer Legal Terms",
+    ],
+    related: [
+      {
+        name: "Standard Contract (SCMP) — AWS",
+        slug: "standard-contract-scmp-—-aws",
+      },
+      {
+        name: "End User License Agreement (EULA)",
+        slug: "end-user-license-agreement-eula",
+      },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Flexible Billing Schedule — Azure",
+    tags: ["azure", "offers"],
+    def: "A Microsoft Marketplace feature that lets publishers create custom installment payment schedules — up to 70 installments with unique charge dates and amounts — inside a private offer. Available for SaaS flat-rate and Virtual Machine software reservation plans with contract durations of 1 year or longer. The buyer's invoicing cadence is unchanged; each installment appears as a separate line item. Mid-term plan changes are not supported on flexible schedule plans.",
+    alias:
+      "Related: Flexible Payment Schedule / Installment Plan, Private Plan — Azure, Multiparty Private Offer (MPO) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/flexible-billing-schedule",
+    difficulty: "advanced",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Channel Partners"],
+    useCases: [
+      "Aligning a multi-year SaaS deal to a buyer's budget cycle by configuring a custom installment schedule inside a private offer",
+      "Structuring a channel partner deal with a 0 USD immediate charge and back-loaded payments to match the end customer's cash flow preferences",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Private Offer — Azure",
+      "Multiparty Private Offer (MPO) — Azure",
+    ],
+    related: [
+      {
+        name: "Flexible Payment Schedule / Installment Plan",
+        slug: "flexible-payment-schedule-/-installment-plan",
+      },
+      { name: "Private Plan — Azure", slug: "private-plan-—-azure" },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      { name: "Subscription — Azure", slug: "subscription-—-azure" },
+    ],
+  },
+  {
+    name: "Concurrent Agreements — AWS",
+    tags: ["aws"],
+    def: "An AWS Marketplace capability (required for all new SaaS products from June 1, 2026) that allows a single AWS account to hold multiple active agreements for the same product simultaneously. Before this feature, a buyer could only have one active agreement per product per account. Sellers must update their SaaS integration to handle multiple CustomerIdentifiers per account and route metering records accordingly.",
+    alias:
+      "Related: Agreement — AWS, SaaS Contract Pricing — AWS, ResolveCustomer API — AWS",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/02/concurrent-agreements-february/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Updating SaaS integration logic to handle multiple active agreements on the same AWS account after the June 2026 Concurrent Agreements requirement takes effect",
+      "Supporting enterprise buyers who need separate agreements for different business units within the same AWS account",
+    ],
+    context: [
+      "AWS Marketplace SaaS Integration",
+      "AWS Marketplace",
+      "Seller Backend",
+    ],
+    related: [
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      {
+        name: "SaaS Contract Pricing — AWS",
+        slug: "saas-contract-pricing-—-aws",
+      },
+      { name: "ResolveCustomer API — AWS", slug: "resolvecustomer-api-—-aws" },
+    ],
+  },
+  {
+    name: "Agreements and Renewals Dashboard — AWS",
+    tags: ["aws"],
+    def: "A QuickSight-powered seller dashboard in the AWS Marketplace Management Portal (under Insights > Sales Operations) that surfaces agreement lifecycle data — active agreements, ended agreements, expiry timelines, and renewal intent — within 24 hours of signing. Sellers can filter by offer, subscriber account, CPPO flag, resale authorization, and agreement status to track renewal pipeline and spot churn risk.",
+    alias:
+      "Related: Agreement — AWS, Agreement-Based Offer (ABO) — AWS, AWS Marketplace Management Portal (AMMP) — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/agreements-renewals-dashboard.html",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Identifying agreements expiring in the next 30 days to proactively send renewal offers via the Agreements and Renewals Dashboard",
+      "Tracking renewal intent by checking whether an ended agreement has a linked Next Agreement ID indicating the buyer renewed",
+    ],
+    context: [
+      "AWS Marketplace Management Portal (AMMP)",
+      "AWS Marketplace Insights",
+      "Seller Reporting",
+    ],
+    related: [
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      {
+        name: "Agreement-Based Offer (ABO) — AWS",
+        slug: "agreement-based-offer-abo-—-aws",
+      },
+      {
+        name: "AWS Marketplace Management Portal (AMMP) — AWS",
+        slug: "aws-marketplace-management-portal-ammp-—-aws",
+      },
+    ],
+  },
+  {
+    name: "AWS PrivateLink Product Delivery — AWS",
+    tags: ["aws", "integrations"],
+    def: "A product delivery method for AWS Marketplace SaaS products where buyers access the seller's service via a VPC endpoint over the Amazon private network — bypassing the public internet. Sellers create a VPC endpoint service backed by a Network Load Balancer, register it with AWS Marketplace Seller Operations, and grant access per buyer AWS account. Billing and metering remain identical to standard SaaS products.",
+    alias:
+      "Related: AWS Marketplace — AWS, Software-as-a-Service (SaaS), Listing",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/privatelink.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Delivering a SaaS product to security-sensitive enterprise buyers who require private network connectivity and prohibit public internet access to vendor services",
+      "Configuring a VPC endpoint service with a private DNS name so buyers can connect to the seller's service using a consistent API URL across different VPCs",
+    ],
+    context: [
+      "AWS Marketplace",
+      "Amazon VPC",
+      "AWS Marketplace Management Portal (AMMP)",
+      "Enterprise Security Compliance",
+    ],
+    related: [
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      {
+        name: "Software-as-a-Service (SaaS)",
+        slug: "software-as-a-service-saas",
+      },
+      { name: "Listing", slug: "listing" },
+    ],
+  },
+  {
+    name: "Azure Managed Application — Azure",
+    tags: ["azure"],
+    def: "A Microsoft Marketplace offer type where a publisher deploys and manages Azure infrastructure resources inside the buyer's Azure subscription, but controls them via a separate managed resource group that only the publisher can modify. Unlike SaaS (where the seller hosts everything), the Azure resources run in the buyer's own subscription and are visible to them — but configuration and updates are locked to the publisher. Supports metered billing via the Marketplace Metering Service API. Used for complex infrastructure solutions that need to run within the customer's environment.",
+    alias:
+      "Also called: Azure App Managed Plan | Related: Microsoft Marketplace — Azure, SaaS Fulfillment API — Azure, Marketplace Metering Service API — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-azure-app-managed-app",
+    difficulty: "advanced",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Azure Sales"],
+    useCases: [
+      "Listing an infrastructure-heavy solution that deploys into the buyer's Azure subscription while retaining publisher control over the managed resource group",
+      "Implementing metered billing for an Azure Managed Application by emitting usage events against the managed resource group's resourceUri via the Marketplace Metering Service API",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Azure Portal",
+      "Azure Resource Manager",
+    ],
+    related: [
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+      {
+        name: "Marketplace Metering Service API — Azure",
+        slug: "marketplace-metering-service-api-—-azure",
+      },
+      { name: "Listing", slug: "listing" },
     ],
   },
 ];
