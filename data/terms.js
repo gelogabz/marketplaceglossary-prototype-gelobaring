@@ -5035,7 +5035,8 @@ export const terms = [
     def: "An ML-powered score in AWS Partner Central (Analytics & Insights dashboard) reflecting how likely a partner is to be recommended to an AWS seller for a specific customer opportunity — by region, industry, and segment. Powered by signals including ACE activity, Marketplace listings, Specialization status, validated case studies, and win history. Available to ACE-eligible partners with an AWS Specialization at Validated or Differentiated stage.",
     alias:
       "Related: ACE (APN Customer Engagements), AWS Specialization, ISV Accelerate — AWS, Partner Development Manager (PDM) — AWS",
-    source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-analytics-faq.html",
     difficulty: "advanced",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -6489,6 +6490,252 @@ export const terms = [
         slug: "marketplace-metering-service-api-—-azure",
       },
       { name: "Listing", slug: "listing" },
+    ],
+  },
+  {
+    name: "Propensity to Buy (PTB) Score",
+    tags: ["suger", "cosell"],
+    def: "Suger's composite account intelligence score that aggregates hyperscaler engagement signals (AWS, Azure, GCP), marketplace purchase history, AI-powered search activity, and third-party technographic data (BuiltWith) into a single High / Medium / Low indicator per account. High means the account ranks in the top cohort of all customers for marketplace purchase likelihood; Medium is the middle cohort; Low is below the median. Sales and alliances teams use the PTB Score in the Suger Console to prioritize which accounts are most worth pursuing for co-sell outreach or inbound referral response.",
+    alias:
+      "AWS: AWS Intelligence Signals — AWS | Azure: Azure Intelligence Signals — Azure | GCP: GCP Intelligence Signals — GCP | Related: CRM Enrichment",
+    source: "https://doc.suger.io/integrations/salesforce/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Suger Users"],
+    useCases: [
+      "Prioritizing which accounts to target for co-sell outreach by filtering the Suger Console to show only High PTB Score accounts",
+      "Focusing ISV-initiated ACE submissions on accounts with High PTB scores to maximize the likelihood of AWS field engagement on those opportunities",
+    ],
+    context: ["Suger Console", "Suger Co-sell Module", "Salesforce", "HubSpot"],
+    related: [
+      {
+        name: "AWS Intelligence Signals — AWS",
+        slug: "aws-intelligence-signals-—-aws",
+      },
+      {
+        name: "Azure Intelligence Signals — Azure",
+        slug: "azure-intelligence-signals-—-azure",
+      },
+      {
+        name: "GCP Intelligence Signals — GCP",
+        slug: "gcp-intelligence-signals-—-gcp",
+      },
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
+    ],
+  },
+  {
+    name: "AWS Intelligence Signals — AWS",
+    tags: ["aws", "cosell"],
+    def: "A set of predictive account-level scores available in the Partner Insights dashboard in AWS Partner Central. Includes the AWS Marketplace Engagement Score (likelihood to purchase through the AWS Marketplace channel), the AWS Marketplace Solution Engagement Score (likelihood to purchase from a partner's specific listing), and the Co-sell Recommendation Score (how well the partner's solution matches AWS seller opportunities). All scores are cohort-relative: High indicates the top cohort, Medium the middle, and Low below the median. Refreshed monthly.",
+    alias:
+      "Azure equivalent: Azure Intelligence Signals — Azure | GCP equivalent: GCP Intelligence Signals — GCP | Related: Propensity to Buy (PTB) Score, AWS Marketplace Solution Engagement Score — AWS, Co-sell Recommendation Score — AWS",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-analytics-faq.html",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Reviewing AWS Intelligence Signals before submitting outbound ACE referrals to confirm the target account shows High Marketplace Engagement or Solution Engagement",
+      "Using the AWS Marketplace Solution Engagement Score to rank open pipeline by likelihood of transacting through AWS Marketplace before prioritizing co-sell effort",
+    ],
+    context: [
+      "AWS Partner Central",
+      "Partner Insights Dashboard",
+      "Co-sell Programs",
+      "Suger Console",
+    ],
+    related: [
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+      },
+      {
+        name: "AWS Marketplace Solution Engagement Score — AWS",
+        slug: "aws-marketplace-solution-engagement-score-—-aws",
+      },
+      {
+        name: "Co-sell Recommendation Score — AWS",
+        slug: "co-sell-recommendation-score-—-aws",
+      },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+    ],
+  },
+  {
+    name: "AWS Marketplace Engagement Score — AWS",
+    tags: ["aws", "cosell"],
+    def: "An AWS Intelligence Signal in AWS Partner Central that predicts the likelihood of a specific customer account purchasing through AWS Marketplace as a procurement channel — not targeting any particular solution. Scored as High, Medium, Low, or '-' (indeterminate) relative to all other customers in the same cohort. Available to ISV and Software Path partners with active Marketplace listings. Refreshed monthly via the Partner Insights dashboard.",
+    alias:
+      "Part of: AWS Intelligence Signals — AWS | Related: AWS Marketplace Solution Engagement Score — AWS, Propensity to Buy (PTB) Score",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-analytics-faq.html",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Filtering pipeline accounts by High AWS Marketplace Engagement Score to focus on buyers who are already predisposed to transact through AWS Marketplace",
+      "Distinguishing between accounts likely to buy through the channel (Marketplace Engagement) versus accounts likely to buy your specific solution (Solution Engagement) when planning outreach strategy",
+    ],
+    context: [
+      "AWS Partner Central",
+      "Partner Insights Dashboard",
+      "Analytics & Insights",
+    ],
+    related: [
+      {
+        name: "AWS Marketplace Solution Engagement Score — AWS",
+        slug: "aws-marketplace-solution-engagement-score-—-aws",
+      },
+      {
+        name: "AWS Intelligence Signals — AWS",
+        slug: "aws-intelligence-signals-—-aws",
+      },
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+      },
+    ],
+  },
+  {
+    name: "AWS Marketplace Solution Engagement Score — AWS",
+    tags: ["aws", "cosell"],
+    def: "An AWS Intelligence Signal in AWS Partner Central that predicts the likelihood of a specific customer account purchasing from the partner's own marketplace listing — not the channel generally. Scored as High, Medium, Low, or '-' (indeterminate) relative to all accounts in the same cohort. Requires an active non-ProServe Marketplace listing and lifetime EC2/global support revenue above $100. Refreshed monthly. This is the most partner-specific AWS predictive signal and is distinct from the channel-level Marketplace Engagement Score.",
+    alias:
+      "Part of: AWS Intelligence Signals — AWS | Related: AWS Marketplace Engagement Score — AWS, Co-sell Recommendation Score — AWS, Propensity to Buy (PTB) Score",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-analytics-faq.html",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Identifying which prospect accounts have a High Solution Engagement Score before submitting outbound ACE referrals, to focus AWS field resources where deal probability is highest",
+      "Monitoring month-over-month changes in Solution Engagement Scores for key accounts to detect rising intent before the account appears in inbound referrals",
+    ],
+    context: [
+      "AWS Partner Central",
+      "Partner Insights Dashboard",
+      "Analytics & Insights",
+    ],
+    related: [
+      {
+        name: "AWS Intelligence Signals — AWS",
+        slug: "aws-intelligence-signals-—-aws",
+      },
+      {
+        name: "AWS Marketplace Engagement Score — AWS",
+        slug: "aws-marketplace-engagement-score-—-aws",
+      },
+      {
+        name: "Co-sell Recommendation Score — AWS",
+        slug: "co-sell-recommendation-score-—-aws",
+      },
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+      },
+    ],
+  },
+  {
+    name: "Azure Intelligence Signals — Azure",
+    tags: ["azure", "cosell"],
+    def: "Account-level propensity and engagement data for Microsoft Azure, sourced from Microsoft CloudAscent — a free program available to transacting Microsoft partners. CloudAscent scores accounts using firmographic fit and behavioral buying signals, then classifies them into four propensity clusters: Act Now, Evaluate, Nurture, and Educate. Suger normalizes these signals under the field labels Azure Engagement Score, Azure Event Score, and Azure Usage Score — alongside marketplace activity metrics (Marketplace Count, Review Count, Purchase Count) — and surfaces them in the Suger Console and via CRM Enrichment.",
+    alias:
+      "AWS equivalent: AWS Intelligence Signals — AWS | GCP equivalent: GCP Intelligence Signals — GCP | Powered by: Microsoft CloudAscent | Related: Propensity to Buy (PTB) Score, CRM Enrichment, Azure Consumption Commitment (MACC) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/insights/insights-customer-opportunities",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Using Azure Intelligence Signals in Suger to identify accounts in the Act Now cluster that are most likely to transact on Azure Marketplace in the near term",
+      "Filtering CRM records by Azure Engagement Score to prioritize outbound co-sell motions for accounts with high Microsoft cloud affinity",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "CloudAscent",
+      "Suger Console",
+      "Co-sell Programs",
+    ],
+    related: [
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+      },
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+    ],
+  },
+  {
+    name: "GCP Intelligence Signals — GCP",
+    tags: ["gcp", "cosell"],
+    def: "Account-level engagement and marketplace activity data sourced from Google Cloud partner systems and surfaced in the Suger Console. Suger normalizes these signals as GCP Engagement Score alongside marketplace activity metrics including GCP Marketplace Count, GCP Marketplace Review Count, and GCP Marketplace Purchase Count. All scores use a cohort-relative High / Medium / Low ranking: High indicates the account is in the top cohort compared to all customers. Data is accessible in the Suger Console and pushable to Salesforce or HubSpot via CRM Enrichment.",
+    alias:
+      "AWS equivalent: AWS Intelligence Signals — AWS | Azure equivalent: Azure Intelligence Signals — Azure | Related: Propensity to Buy (PTB) Score, CRM Enrichment, Partner Advantage — GCP",
+    source: "https://doc.suger.io/integrations/salesforce/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Identifying GCP-active accounts with High GCP Engagement Scores to prioritize for outbound co-sell motions via Google Cloud's Partner Advantage co-sell program",
+      "Tracking GCP Marketplace Purchase Count in Salesforce via CRM Enrichment to spot accounts already transacting on GCP Marketplace who may be ready for a new offer",
+    ],
+    context: [
+      "Google Cloud Partner Advantage",
+      "Suger Console",
+      "Co-sell Programs",
+    ],
+    related: [
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+      },
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
+  },
+  {
+    name: "CRM Enrichment",
+    tags: ["suger"],
+    def: "A Suger feature that automatically pushes hyperscaler engagement scores, propensity signals, and marketplace activity metrics into Salesforce and HubSpot custom fields via configurable field mappings. Runs on a 12-hour sync schedule and covers all three cloud providers: AWS (Marketplace Engagement Score, Solution Engagement Score), Azure (Engagement Score, Event Score, Usage Score), and GCP (Engagement Score, Marketplace Count, Review Count, Purchase Count). Configured inside the Suger Console under integrations — no PDM or manual export required.",
+    alias:
+      "Related: Propensity to Buy (PTB) Score, AWS Intelligence Signals — AWS, Azure Intelligence Signals — Azure, GCP Intelligence Signals — GCP",
+    source: "https://doc.suger.io/integrations/salesforce/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring CRM Enrichment in Suger to push AWS Solution Engagement Scores and Azure Engagement Scores into Salesforce Account fields so sales reps can prioritize outreach without leaving their CRM",
+      "Setting up HubSpot CRM Enrichment to automatically populate marketplace activity metrics (Purchase Count, Review Count) on Contact records for accounts already transacting on cloud marketplaces",
+    ],
+    context: ["Suger Console", "Salesforce", "HubSpot", "CRM Integration"],
+    related: [
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+      },
+      {
+        name: "AWS Intelligence Signals — AWS",
+        slug: "aws-intelligence-signals-—-aws",
+      },
+      {
+        name: "Azure Intelligence Signals — Azure",
+        slug: "azure-intelligence-signals-—-azure",
+      },
+      {
+        name: "GCP Intelligence Signals — GCP",
+        slug: "gcp-intelligence-signals-—-gcp",
+      },
+      { name: "Suger Console", slug: "suger-console" },
     ],
   },
 ];

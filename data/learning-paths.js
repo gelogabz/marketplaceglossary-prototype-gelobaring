@@ -359,7 +359,7 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
-    meta: "7 terms · ~20 min",
+    meta: "8 terms · ~25 min",
     continuesFrom: "channel-and-partner-motions",
     next: "marketplace-integrations",
     steps: [
@@ -397,6 +397,11 @@ export const learningPaths = [
         name: "Provisioning",
         slug: "provisioning",
         why: "After an entitlement is created, Suger helps trigger buyer provisioning. Learn how Suger's provisioning webhooks and callbacks work and what your product backend needs to handle.",
+      },
+      {
+        name: "CRM Enrichment",
+        slug: "crm-enrichment",
+        why: "The PTB scores and hyperscaler engagement signals in the Suger Console are most useful when your sales team can see them without leaving their CRM. CRM Enrichment pushes all three cloud providers' signals into Salesforce or HubSpot automatically — making account prioritization happen in the tools your team already uses.",
       },
     ],
   },
@@ -514,7 +519,7 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Marketplace fundamentals every AE needs to understand before their first marketplace deal — what marketplace is, how enterprise buyers transact, and how co-sell works.",
-    meta: "8 terms · ~25 min",
+    meta: "9 terms · ~30 min",
     next: "private-offers-and-cppas",
     steps: [
       {
@@ -551,6 +556,11 @@ export const learningPaths = [
         name: "ISV Accelerate — AWS",
         slug: "isv-accelerate-—-aws",
         why: "ISV Accelerate is the AWS program that formalizes co-sell access for software sellers. Learn what your company needs to qualify and what benefits it unlocks for your AWS-facing pipeline.",
+      },
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+        why: "Every AE has more accounts than time. The PTB Score is how Suger surfaces which accounts are most likely to transact through a cloud marketplace — so you know where to focus co-sell effort before opening ACE or reaching out to a hyperscaler field team.",
       },
       {
         name: "Channel Partner Private Offer (CPPO) — AWS",
@@ -724,7 +734,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The AWS-specific mechanics every ISV needs: how listings, offers, and agreements work on AWS Marketplace, the key programs that unlock co-sell access, and the tools and APIs that run day-to-day operations.",
-    meta: "11 terms · ~40 min",
+    meta: "12 terms · ~45 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -760,6 +770,11 @@ export const learningPaths = [
         why: "The FTR is a hard prerequisite for ISV Accelerate co-sell access and AWS Specialization. Learn what the review covers, how long it takes, and when the Well-Architected waiver applies — so you can plan the gate before it blocks you.",
       },
       {
+        name: "AWS Intelligence Signals — AWS",
+        slug: "aws-intelligence-signals-—-aws",
+        why: "Once ISV Accelerate is active, you gain access to AWS's predictive signals in Partner Insights: Marketplace Engagement Score (channel likelihood) and Solution Engagement Score (your-product-specific likelihood). These are the data points that should drive which accounts you prioritize for ACE referrals.",
+      },
+      {
         name: "Agreement — AWS",
         slug: "agreement-—-aws",
         why: "When a buyer accepts a private offer on AWS Marketplace, an Agreement is created — the contract record that governs the subscription. Learn what an Agreement contains and how it persists through renewals and amendments.",
@@ -793,7 +808,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How Microsoft's commercial marketplace works end-to-end — from listing structures and offer types to MACC eligibility, partner programs, and the APIs that power SaaS integrations.",
-    meta: "9 terms · ~35 min",
+    meta: "10 terms · ~40 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -829,6 +844,11 @@ export const learningPaths = [
         why: "Azure co-sell access is gated by status tiers. Learn the difference between Co-sell Eligible and Co-sell Incentivized, what each unlocks, and how achieving Incentivized status amplifies deal support from Microsoft field teams.",
       },
       {
+        name: "Azure Intelligence Signals — Azure",
+        slug: "azure-intelligence-signals-—-azure",
+        why: "Microsoft's CloudAscent system scores every account for Azure adoption propensity and classifies them into Act Now, Evaluate, Nurture, and Educate clusters. Suger surfaces these as Azure Engagement, Event, and Usage Scores — the signals that tell you which accounts are ready for a Microsoft co-sell push.",
+      },
+      {
         name: "Marketplace Rewards — Azure",
         slug: "marketplace-rewards-—-azure",
         why: "As ISVs transact more revenue through Microsoft Marketplace, they unlock Marketplace Rewards — marketing, technical, and sales benefits. Learn what's available at each revenue tier and how to activate rewards.",
@@ -852,7 +872,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The GCP-specific mechanics ISVs need: how GCP Marketplace is structured, how committed use and private offers work, and the partner programs and APIs that govern the GCP co-sell and reseller motions.",
-    meta: "8 terms · ~30 min",
+    meta: "9 terms · ~35 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -871,6 +891,11 @@ export const learningPaths = [
         name: "Partner Advantage — GCP",
         slug: "partner-advantage-—-gcp",
         why: "Partner Advantage is GCP's partner framework — co-sell access, Build Engagement credits, and funding programs all flow through it. Learn the tiers, engagement models, and what ISVs need to qualify.",
+      },
+      {
+        name: "GCP Intelligence Signals — GCP",
+        slug: "gcp-intelligence-signals-—-gcp",
+        why: "Partner Advantage gives ISVs access to GCP engagement and marketplace activity data per account — surfaced in Suger as GCP Engagement Score plus purchase and review metrics. Use these to identify which accounts are already active on GCP Marketplace before initiating outreach.",
       },
       {
         name: "Committed Use Discount (CUD) — GCP",
