@@ -414,7 +414,7 @@ export const learningPaths = [
       "How ISVs connect their backend systems to marketplace billing, entitlement, and provisioning flows — and what integration partners abstract for them.",
     meta: "7 terms · ~25 min",
     continuesFrom: "suger-platform-quickstart",
-    next: "marketplace-tax-compliance",
+    next: "marketplace-metering",
     prereqs: ["suger-platform-quickstart"],
     steps: [
       {
@@ -455,6 +455,80 @@ export const learningPaths = [
     ],
   },
   {
+    slug: "marketplace-metering",
+    title: "Usage Metering Deep-Dive",
+    category: "operations",
+    level: "advanced",
+    description:
+      "How usage metering actually works across AWS, Azure, and GCP — from dimension design through API calls to cross-platform differences. For ISVs building or debugging usage-based billing integrations.",
+    meta: "12 terms · ~50 min",
+    continuesFrom: "marketplace-integrations",
+    next: "marketplace-tax-compliance",
+    prereqs: ["marketplace-integrations"],
+    steps: [
+      {
+        name: "Usage Metering",
+        slug: "usage-metering",
+        why: "Before diving into APIs and dimensions, ground yourself in what usage metering is: the mechanism that connects your product's telemetry to marketplace billing. Understand the end-to-end flow so the subsequent steps each fit into a coherent picture.",
+      },
+      {
+        name: "Metering Dimension",
+        slug: "metering-dimension",
+        why: "Dimensions are the pre-declared units of measure that define what you bill for. You must register them in your listing before any metering call can reference them — a mismatch between your listing's dimensions and your API calls causes billing failure. Learn to design dimensions that map cleanly to your product's actual usage model.",
+      },
+      {
+        name: "Usage Record",
+        slug: "usage-record",
+        why: "Every usage metering report is a usage record: a bundle of dimension, quantity, customer token, and timestamp. Learn the structural rules — specifically idempotency key requirements and the submission deadline — because a rejected or duplicate record means unbilled usage or double charges.",
+      },
+      {
+        name: "Metered Billing",
+        slug: "metered-billing",
+        why: "Metered billing is the pricing model that activates your usage records into buyer charges. Understand how hyperscalers aggregate your reported usage into invoice line items, and how late or inaccurate records affect what buyers see on their bills.",
+      },
+      {
+        name: "Registration Token — AWS",
+        slug: "registration-token-—-aws",
+        why: "On AWS, every metering call must be tied to a valid registration token — the proof that the buyer's entitlement is active. Learn how to capture the token at subscription time, how long it's valid, and what error codes indicate a stale or invalid token.",
+      },
+      {
+        name: "ResolveCustomer API — AWS",
+        slug: "resolvecustomer-api-—-aws",
+        why: "ResolveCustomer converts the registration token into a CustomerIdentifier you attribute all metering records to. This is the mandatory first step of the AWS metering flow — without resolving the customer you cannot submit any usage to AWS Marketplace.",
+      },
+      {
+        name: "BatchMeterUsage API — AWS",
+        slug: "batchmeterusage-api-—-aws",
+        why: "BatchMeterUsage is the call that actually submits usage to AWS Marketplace. Learn the batch structure, the per-record idempotency requirements, and how to handle partial-batch failure responses so a single bad record doesn't cause you to skip or double-bill the rest.",
+      },
+      {
+        name: "GetEntitlements API — AWS",
+        slug: "getentitlements-api-—-aws",
+        why: "For SaaS contract products, GetEntitlements tells you exactly what a buyer has purchased. Learn how to query entitlement state to gate features at the right tier and reconcile buyer entitlements against your own subscription records before each metering cycle.",
+      },
+      {
+        name: "Amazon EventBridge Marketplace Integration — AWS",
+        slug: "amazon-eventbridge-marketplace-integration-—-aws",
+        why: "AWS delivers subscription lifecycle events — new subscriptions, cancellations, entitlement changes — through EventBridge. Wiring up an EventBridge listener is how your product reacts to those events automatically, so provisioning and deprovisioning happen without manual polling.",
+      },
+      {
+        name: "Marketplace Metering Service API — Azure",
+        slug: "marketplace-metering-service-api-—-azure",
+        why: "Azure's metering API differs from AWS in auth model, resource ID requirements, and how it handles SaaS versus managed application products. Learn the Azure-specific call format so you know exactly what changes when porting a metering integration from AWS to Azure.",
+      },
+      {
+        name: "Service Control API — GCP",
+        slug: "service-control-api-—-gcp",
+        why: "GCP routes usage reporting through the Service Control API rather than a marketplace-specific endpoint. Learn the service name and operation structure it expects, and how Suger normalizes GCP's model alongside AWS and Azure in a single metering integration.",
+      },
+      {
+        name: "Concurrent Agreements — AWS",
+        slug: "concurrent-agreements-—-aws",
+        why: "Concurrent Agreements lets buyers hold multiple active subscriptions to the same AWS product simultaneously — for example, two different pricing tiers running in parallel during a migration. Learn how this affects your metering logic: you must track and report usage against the correct CustomerIdentifier for each active agreement, or charges will be attributed incorrectly.",
+      },
+    ],
+  },
+  {
     slug: "marketplace-tax-compliance",
     title: "Marketplace Tax & Compliance",
     category: "billing",
@@ -462,7 +536,7 @@ export const learningPaths = [
     description:
       "How tax collection and remittance works across AWS, Azure, and GCP — who's responsible for what, and how ISVs manage tax settings on each platform.",
     meta: "9 terms · ~35 min",
-    continuesFrom: "marketplace-integrations",
+    continuesFrom: "marketplace-metering",
     prereqs: ["marketplace-integrations"],
     steps: [
       {
