@@ -3,36 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cross-Platform Comparison — Cloud GTM Reference</title>
+        <title>Cloud GTM Reference — Compare</title>
         <link rel="stylesheet" href="../styles.css" />
         <style>
-            .topnav-links {
-                display: flex;
-                gap: 2px;
-                flex-shrink: 0;
-            }
-
-            .topnav-links a {
-                font-size: 13px;
-                font-weight: 500;
-                color: rgba(255, 255, 255, 0.6);
-                text-decoration: none;
-                padding: 5px 10px;
-                border-radius: 6px;
-                transition:
-                    background 0.12s,
-                    color 0.12s;
-            }
-
-            .topnav-links a:hover {
-                background: rgba(255, 255, 255, 0.1);
-                color: var(--white);
-            }
-
-            .topnav-links a.current {
-                color: var(--orange);
-            }
-
             /* ---- Page shell ---- */
 
             .compare-outer {
@@ -210,9 +183,6 @@
             /* ---- Mobile ---- */
 
             @media (max-width: 767px) {
-                .topnav-links a.current {
-                    display: none;
-                }
                 .compare-outer {
                     padding: 1.5rem 1rem 4rem;
                 }
@@ -248,7 +218,11 @@
                             fill="#F26A1C"
                         />
                     </svg>
-                    <span class="brand-text">Cloud GTM Reference</span>
+                    <span class="brand-text"
+                        >Cloud GTM Reference<span class="brand-page">
+                            — Compare</span
+                        ></span
+                    >
                 </a>
                 <div style="flex: 1"></div>
                 <div class="topnav-links">
@@ -282,5 +256,36 @@
         </div>
 
         <script type="module" src="comparison.js"></script>
+
+        <div class="docs-bar">
+            <span class="docs-bar-label">Official Docs:</span>
+            <a
+                href="https://doc.suger.io/get-started/"
+                target="_blank"
+                rel="noopener"
+                >Suger</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://docs.aws.amazon.com/marketplace/"
+                target="_blank"
+                rel="noopener"
+                >AWS Marketplace</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://learn.microsoft.com/en-us/partner-center/"
+                target="_blank"
+                rel="noopener"
+                >Azure Partner Center</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://docs.cloud.google.com/marketplace/docs"
+                target="_blank"
+                rel="noopener"
+                >GCP Marketplace</a
+            >
+        </div>
     </body>
 </html>

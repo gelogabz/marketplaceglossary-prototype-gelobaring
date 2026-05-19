@@ -1,8 +1,85 @@
+/*
+ * All glossary terms. Add new terms in alphabetical order by name.
+ * A new entry appears automatically in the glossary, filter results,
+ * and the cross-platform comparison table.
+ *
+ * NAMING  ────────────────────────────────────────────────────────────────────
+ *   Format:  "Full Name (Acronym) — Platform"
+ *   - Full name first, acronym in parens only if widely used
+ *   - Em-dash (—) with a space on both sides
+ *   - End with a platform suffix: AWS | Azure | GCP | Snowflake | Alibaba
+ *   Good:  "Channel Partner Private Offer (CPPO) — AWS"
+ *   Bad:   "CPPO" or "CPPO — aws" or "CPPO (Channel Partner Private Offer)"
+ *
+ * REQUIRED FIELDS  ───────────────────────────────────────────────────────────
+ *   name        string   — naming rules above
+ *
+ *   tags        string[] — platform + topic tags from data/tags.js
+ *               Platforms: "aws" | "azure" | "gcp" | "snowflake" | "alibaba" | "suger"
+ *               Topics:    "offers" | "cosell" | "channel" | "integrations" | "funding"
+ *
+ *   def         string   — 2–4 sentence prose. No bullet points.
+ *               Inline HTML allowed for links: <a href="..." target="_blank" rel="noopener">
+ *
+ *   alias       string   — cross-links to related terms using exact names.
+ *               Format:  "Equivalent: [Name] | Related: [Name] | See also: [Name]"
+ *               Use "Equivalent:" for the same concept on another platform.
+ *               Use "Related:" for connected but distinct concepts.
+ *               Never leave blank — use at minimum "Related: X".
+ *
+ *   source      string   — authoritative URL (official platform docs or Suger docs).
+ *               No third-party sources.
+ *
+ *   difficulty  string   — "beginner" | "intermediate" | "advanced"
+ *               beginner:     core concepts anyone new to marketplace needs first
+ *               intermediate: requires understanding basics (CPPO, ACE, MACC)
+ *               advanced:     operational mechanics, edge cases, platform-specific
+ *
+ *   category    string   — "fundamentals" | "procurement" | "cosell" |
+ *                          "billing" | "operations" | "advanced"
+ *
+ *   whoFor      string[] — 1–4 values from this list only:
+ *               "ISVs / Sellers" | "Enterprise Buyers" | "Channel Partners" |
+ *               "Distributors" | "AWS Sales" | "Azure Sales" | "GCP Sales" |
+ *               "Suger Users" | "Partner Managers"
+ *
+ *   useCases    string[] — 2–4 items, each starting with an action verb.
+ *               Example: "Closing a custom-priced deal through marketplace"
+ *
+ *   context     string[] — 2–5 surface names where this term appears in practice.
+ *               Example: ["AWS Marketplace", "AWS Partner Central"]
+ *
+ *   related     { name, slug }[] — links to other terms in this file.
+ *               name must exactly match the target term's `name` field.
+ *               slug = name lowercased, parens removed, spaces and — → hyphens.
+ *               Example: { name: "Private Offer — AWS", slug: "private-offer-—-aws" }
+ *
+ * EXAMPLE ENTRY  ─────────────────────────────────────────────────────────────
+ *   {
+ *     name: "Example Term (ET) — AWS",
+ *     tags: ["aws", "offers"],
+ *     def: "What it is and why it matters. Keep to 2–4 sentences.",
+ *     alias: "Equivalent: Example Term — Azure | Related: Private Offer — AWS",
+ *     source: "https://docs.aws.amazon.com/marketplace/...",
+ *     difficulty: "intermediate",
+ *     category: "procurement",
+ *     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+ *     useCases: [
+ *       "Verb-first sentence describing a real usage scenario",
+ *       "Another scenario starting with a verb",
+ *     ],
+ *     context: ["AWS Marketplace", "AWS Partner Central"],
+ *     related: [
+ *       { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+ *     ],
+ *   },
+ */
+
 export const terms = [
   {
     name: "APN Customer Engagements (ACE) — AWS",
     tags: ["aws", "cosell"],
-    def: "AWS's co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft's co-sell program or GCP Partner Advantage co-sell. Accessible at <a href=\"https://partnercentral.awspartner.com/\" target=\"_blank\" rel=\"noopener\">partnercentral.awspartner.com</a>.",
+    def: 'AWS\'s co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft\'s co-sell program or GCP Partner Advantage co-sell. Accessible at <a href="https://partnercentral.awspartner.com/" target="_blank" rel="noopener">partnercentral.awspartner.com</a>.',
     alias:
       "Related: AWS Partner Network (APN) — AWS, Inbound Referral, Outbound Referral",
     source:
@@ -208,7 +285,7 @@ export const terms = [
   {
     name: "AWS Marketplace Management Portal (AMMP) — AWS",
     tags: ["aws"],
-    def: "The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace. Accessible at <a href=\"https://aws.amazon.com/marketplace/management/\" target=\"_blank\" rel=\"noopener\">aws.amazon.com/marketplace/management</a>.",
+    def: 'The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace. Accessible at <a href="https://aws.amazon.com/marketplace/management/" target="_blank" rel="noopener">aws.amazon.com/marketplace/management</a>.',
     alias:
       "Azure equivalent: Partner Center — Azure | GCP equivalent: Producer Portal — GCP | Related: AWS Marketplace Catalog API — AWS, Suger Console",
     source: "https://docs.aws.amazon.com/marketplace/latest/userguide/",
@@ -361,7 +438,7 @@ export const terms = [
   },
   {
     name: "Channel Partner (CP)",
-    tags: ["aws", "azure", "gcp", "general"],
+    tags: ["aws", "azure", "gcp", "general", "channel"],
     def: "A reseller, system integrator (SI), or managed service provider (MSP) authorized by an ISV to resell marketplace products to end customers. The channel partner typically becomes the seller of record.",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure",
@@ -613,7 +690,7 @@ export const terms = [
   },
   {
     name: "Channel Partner Private Offer (CPPO) — AWS",
-    tags: ["aws", "cosell", "offers"],
+    tags: ["aws", "cosell", "offers", "channel"],
     def: "A program where an ISV creates a resale authorization (with a wholesale price) that an authorized channel partner uses to create a private offer — with markup — for an end customer. The channel partner is the seller of record.",
     alias:
       "GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Azure equivalent: Multiparty Private Offer (MPO) — Azure | Related: Resale Authorization — AWS, Solution Provider Private Offer (SPPO) — AWS",
@@ -672,7 +749,7 @@ export const terms = [
   },
   {
     name: "Cloud Solution Provider (CSP) — Azure",
-    tags: ["azure", "cosell"],
+    tags: ["azure", "cosell", "channel"],
     def: "A Microsoft partner program that lets authorized partners resell Microsoft cloud services and ISV Marketplace solutions to end customers. ISVs can create margin-sharing private offers for CSP partners via Multiparty Private Offers.",
     alias:
       "Related: Multiparty Private Offer (MPO) — Azure, Microsoft Marketplace — Azure",
@@ -1018,7 +1095,7 @@ export const terms = [
   {
     name: "Partner Advantage — GCP",
     tags: ["gcp", "cosell"],
-    def: "Google Cloud's partner program required to list on GCP Marketplace. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the 'Build' engagement model. As of Q1 2026, Google Cloud announced the Google Cloud Partner Network as a replacement for Partner Advantage, with a new tier and competency structure. Partners should verify current enrollment status through the Google Cloud partner portal. Accessible at <a href=\"https://partners.cloud.google.com/\" target=\"_blank\" rel=\"noopener\">partners.cloud.google.com</a>.",
+    def: 'Google Cloud\'s partner program required to list on GCP Marketplace. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the \'Build\' engagement model. As of Q1 2026, Google Cloud announced the Google Cloud Partner Network as a replacement for Partner Advantage, with a new tier and competency structure. Partners should verify current enrollment status through the Google Cloud partner portal. Accessible at <a href="https://partners.cloud.google.com/" target="_blank" rel="noopener">partners.cloud.google.com</a>.',
     alias:
       "Related: Build Engagement Model — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
     source: "https://partners.cloud.google.com",
@@ -1042,7 +1119,7 @@ export const terms = [
   {
     name: "Producer Portal — GCP",
     tags: ["gcp"],
-    def: "The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Advantage enrollment. Accessible at <a href=\"https://console.cloud.google.com/marketplace/overview\" target=\"_blank\" rel=\"noopener\">console.cloud.google.com/marketplace</a>.",
+    def: 'The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Advantage enrollment. Accessible at <a href="https://console.cloud.google.com/marketplace/overview" target="_blank" rel="noopener">console.cloud.google.com/marketplace</a>.',
     alias: "Related: GCP Marketplace — GCP, Partner Advantage — GCP",
     source: "https://docs.cloud.google.com/marketplace/docs/partners",
     difficulty: "intermediate",
@@ -1438,7 +1515,7 @@ export const terms = [
   },
   {
     name: "Multiparty Private Offer (MPO) — Azure",
-    tags: ["azure", "cosell", "offers"],
+    tags: ["azure", "cosell", "offers", "channel"],
     def: "Microsoft Marketplace's channel reseller mechanism — the Azure equivalent of AWS's CPPO. An ISV and channel partner collaborate to create a single private offer for an end customer. The partner sets their own margin; the purchase counts toward the customer's MACC. As of 2025, Microsoft is also expanding 'Resale-Enabled Offers' — a broader channel motion allowing geographic resale by authorized distributors including Arrow, Crayon, Ingram Micro, Pax8, and TD SYNNEX.",
     alias:
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Related: Resale-Enabled Offer — Azure",
@@ -1619,7 +1696,7 @@ export const terms = [
   {
     name: "Partner Center — Azure",
     tags: ["azure"],
-    def: "Microsoft's portal where publishers create and manage Azure Marketplace and AppSource offers, co-sell configurations, payout profiles, and partner program enrollments. Accessible at <a href=\"https://partner.microsoft.com/\" target=\"_blank\" rel=\"noopener\">partner.microsoft.com</a>.",
+    def: 'Microsoft\'s portal where publishers create and manage Azure Marketplace and AppSource offers, co-sell configurations, payout profiles, and partner program enrollments. Accessible at <a href="https://partner.microsoft.com/" target="_blank" rel="noopener">partner.microsoft.com</a>.',
     alias:
       "Related: Azure Marketplace / Microsoft Marketplace, SaaS Fulfillment API — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/overview",
@@ -1928,7 +2005,7 @@ export const terms = [
   },
   {
     name: "Resale Authorization — AWS",
-    tags: ["aws", "cosell", "offers"],
+    tags: ["aws", "cosell", "offers", "channel"],
     def: "An ISV-created permission on AWS Marketplace that allows a specific channel partner to create CPPOs for a given product. Also called a 'Selling Authorization' in the AMMP UI. Can be single-use or multi-use, with or without an expiry date.",
     alias:
       "Also called: Selling Authorization — AWS | Related: Channel Partner Private Offer (CPPO) — AWS",
@@ -2096,7 +2173,7 @@ export const terms = [
   },
   {
     name: "Seller of Record",
-    tags: ["general"],
+    tags: ["general", "channel"],
     def: "The legal entity responsible for a marketplace transaction — who invoices and collects from the buyer. In CPPOs and CSP/MPO transactions, the channel partner is the seller of record, not the ISV.",
     alias: "Related: Channel Partner (CP), Marketplace Fee / Transaction Fee",
     source:
@@ -3993,7 +4070,7 @@ export const terms = [
   },
   {
     name: "Marketplace Channel Private Offer (MCPO) — GCP",
-    tags: ["gcp", "cosell", "offers"],
+    tags: ["gcp", "cosell", "offers", "channel"],
     def: "GCP Marketplace's channel reseller program — the GCP equivalent of AWS's CPPO. An ISV creates a Reseller Private Offer Plan (RPOP) with a wholesale discount; the reseller uses it to create a private offer with markup for the end customer. MCPO purchases count 100% toward the buyer's CUD committed spend, capped at 25% of total commitment.",
     alias:
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | Azure equivalent: Multiparty Private Offer (MPO) — Azure",
@@ -5895,7 +5972,7 @@ export const terms = [
   },
   {
     name: "Distributor",
-    tags: ["general", "cosell"],
+    tags: ["general", "cosell", "channel"],
     def: "A company authorized to resell an ISV's software to end customers through a cloud marketplace, typically via a channel partner private offer mechanism. Distributors add value through financing, support, regional reach, or existing customer relationships that the ISV cannot serve directly. On AWS, distributors transact via CPPO under a resale authorization granted by the ISV; on Azure via Multiparty Private Offer (MPO); on GCP via Marketplace Channel Private Offer (MCPO).",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Marketplace Channel Private Offer (MCPO) — GCP, Resale Authorization — AWS",

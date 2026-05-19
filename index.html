@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cloud GTM Reference — Suger</title>
+        <title>Cloud GTM Reference — Glossary</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
 
@@ -33,7 +33,11 @@
                             fill="#F26A1C"
                         />
                     </svg>
-                    <span class="brand-text">Cloud GTM Reference</span>
+                    <span class="brand-text"
+                        >Cloud GTM Reference<span class="brand-page">
+                            — Glossary</span
+                        ></span
+                    >
                 </a>
                 <div class="topnav-center">
                     <label for="search" class="sr-only">Search terms</label>
@@ -45,14 +49,27 @@
                         autocomplete="off"
                         spellcheck="false"
                     />
-                </div>
-                <div class="topnav-right">
-                    <a href="comparison/" class="topnav-lp-link">Compare</a>
-                    <a href="learning-paths/" class="topnav-lp-link"
-                        >Learning Paths</a
+                    <button
+                        class="filter-toggle-btn"
+                        id="filterToggleBtn"
+                        type="button"
+                        aria-haspopup="dialog"
+                        aria-label="Open term filters"
                     >
-                    <span class="reviewed-badge">Reviewed May 2026</span>
+                        Filters
+                        <span
+                            class="filter-badge"
+                            id="filterBadge"
+                            hidden
+                        ></span>
+                    </button>
                 </div>
+                <div class="topnav-links">
+                    <a href="." class="current">Glossary</a>
+                    <a href="comparison/">Compare</a>
+                    <a href="learning-paths/">Learning Paths</a>
+                </div>
+                <span class="reviewed-badge">Reviewed May 2026</span>
             </div>
         </nav>
 
@@ -71,140 +88,7 @@
                         All terms
                     </button>
 
-                    <div class="sidebar-group">
-                        <p class="sidebar-group-label">Categories</p>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-category="fundamentals"
-                        >
-                            Fundamentals
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-category="procurement"
-                        >
-                            Procurement
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-category="cosell"
-                        >
-                            Co-sell
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-category="billing"
-                        >
-                            Billing & Revenue
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-category="operations"
-                        >
-                            Marketplace Ops
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-category="advanced"
-                        >
-                            Advanced GTM
-                        </button>
-                    </div>
-
-                    <div class="sidebar-group">
-                        <p class="sidebar-group-label">Platforms</p>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="aws"
-                        >
-                            AWS
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="azure"
-                        >
-                            Azure
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="gcp"
-                        >
-                            GCP
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="snowflake"
-                        >
-                            Snowflake
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="alibaba"
-                        >
-                            Alibaba
-                        </button>
-                    </div>
-
-                    <div class="sidebar-group">
-                        <p class="sidebar-group-label">Topics</p>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="offers"
-                        >
-                            Offers
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="cosell"
-                        >
-                            Co-sell
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="integrations"
-                        >
-                            Integrations
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="funding"
-                        >
-                            Funding
-                        </button>
-                    </div>
-
-                    <div class="sidebar-group">
-                        <p class="sidebar-group-label">Suger</p>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="suger"
-                        >
-                            Suger
-                        </button>
-                        <button
-                            class="sidebar-tag-btn"
-                            type="button"
-                            data-filter-tag="general"
-                        >
-                            General
-                        </button>
-                    </div>
+                    <div class="sidebar-group" id="lpFilterGroup"></div>
 
                     <button
                         class="sidebar-clear-btn"
@@ -244,6 +128,208 @@
             ↑ Top
         </button>
 
+        <!-- Filter modal -->
+        <div class="filter-modal-backdrop" id="filterBackdrop" hidden></div>
+        <div
+            class="filter-modal"
+            id="filterModal"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Filter terms"
+            hidden
+        >
+            <div class="filter-modal-header">
+                <span class="filter-modal-title">Filter terms</span>
+                <button
+                    class="filter-modal-close"
+                    id="filterModalClose"
+                    type="button"
+                    aria-label="Close filters"
+                >
+                    ✕
+                </button>
+            </div>
+            <div class="filter-modal-search-wrap">
+                <input
+                    class="filter-modal-search"
+                    id="filterModalSearch"
+                    type="search"
+                    placeholder="Search filters…"
+                    autocomplete="off"
+                    spellcheck="false"
+                />
+            </div>
+            <div class="filter-modal-body">
+                <div class="filter-modal-section" data-section="categories">
+                    <p class="filter-modal-section-label">Categories</p>
+                    <div class="filter-modal-chips">
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-category="fundamentals"
+                        >
+                            Fundamentals
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-category="procurement"
+                        >
+                            Procurement
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-category="cosell"
+                        >
+                            Co-sell
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-category="billing"
+                        >
+                            Billing & Revenue
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-category="operations"
+                        >
+                            Marketplace Ops
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-category="advanced"
+                        >
+                            Advanced GTM
+                        </button>
+                    </div>
+                </div>
+                <div class="filter-modal-section" data-section="platforms">
+                    <p class="filter-modal-section-label">Platforms</p>
+                    <div class="filter-modal-chips">
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="aws"
+                        >
+                            AWS
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="azure"
+                        >
+                            Azure
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="gcp"
+                        >
+                            GCP
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="snowflake"
+                        >
+                            Snowflake
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="alibaba"
+                        >
+                            Alibaba
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="suger"
+                        >
+                            Suger
+                        </button>
+                    </div>
+                </div>
+                <div class="filter-modal-section" data-section="topics">
+                    <p class="filter-modal-section-label">Topics</p>
+                    <div class="filter-modal-chips">
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="offers"
+                        >
+                            Offers
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="channel"
+                        >
+                            Channel
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="integrations"
+                        >
+                            Integrations
+                        </button>
+                        <button
+                            class="filter-chip"
+                            type="button"
+                            data-filter-tag="funding"
+                        >
+                            Funding
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-modal-footer">
+                <button
+                    class="filter-modal-clear"
+                    id="filterModalClear"
+                    type="button"
+                >
+                    Clear all filters
+                </button>
+            </div>
+        </div>
+
         <script type="module" src="main.js"></script>
+
+        <div class="docs-bar">
+            <span class="docs-bar-label">Official Docs:</span>
+            <a
+                href="https://doc.suger.io/get-started/"
+                target="_blank"
+                rel="noopener"
+                >Suger</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://docs.aws.amazon.com/marketplace/"
+                target="_blank"
+                rel="noopener"
+                >AWS Marketplace</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://learn.microsoft.com/en-us/partner-center/"
+                target="_blank"
+                rel="noopener"
+                >Azure Partner Center</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://docs.cloud.google.com/marketplace/docs"
+                target="_blank"
+                rel="noopener"
+                >GCP Marketplace</a
+            >
+        </div>
     </body>
 </html>

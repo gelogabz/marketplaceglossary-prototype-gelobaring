@@ -3,36 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Learning Paths — Cloud GTM Reference</title>
+        <title>Cloud GTM Reference — Learning Paths</title>
         <link rel="stylesheet" href="../styles.css" />
         <style>
-            .topnav-links {
-                display: flex;
-                gap: 2px;
-                flex-shrink: 0;
-            }
-
-            .topnav-links a {
-                font-size: 13px;
-                font-weight: 500;
-                color: rgba(255, 255, 255, 0.6);
-                text-decoration: none;
-                padding: 5px 10px;
-                border-radius: 6px;
-                transition:
-                    background 0.12s,
-                    color 0.12s;
-            }
-
-            .topnav-links a:hover {
-                background: rgba(255, 255, 255, 0.1);
-                color: var(--white);
-            }
-
-            .topnav-links a.current {
-                color: var(--orange);
-            }
-
             .lp-page {
                 margin-top: var(--topnav-h);
                 min-height: calc(100vh - var(--topnav-h));
@@ -439,9 +412,6 @@
             }
 
             @media (max-width: 767px) {
-                .topnav-links a.current {
-                    display: none;
-                }
                 .path-grid {
                     grid-template-columns: 1fr;
                 }
@@ -488,7 +458,11 @@
                             fill="#F26A1C"
                         />
                     </svg>
-                    <span class="brand-text">Cloud GTM Reference</span>
+                    <span class="brand-text"
+                        >Cloud GTM Reference<span class="brand-page">
+                            — Learning Paths</span
+                        ></span
+                    >
                 </a>
                 <div style="flex: 1"></div>
                 <div class="topnav-links">
@@ -907,63 +881,35 @@
             renderProgressFooter();
         </script>
 
-        <footer class="site-footer">
-            <div class="site-footer-inner">
-                <div class="footer-section">
-                    <p class="footer-section-label">Suger</p>
-                    <a
-                        href="https://doc.suger.io/get-started/"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >Documentation</a
-                    >
-                    <a
-                        href="https://www.suger.io/resources/guides/"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >Guides</a
-                    >
-                    <a
-                        href="https://www.suger.io/resources/blog/"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >Blog</a
-                    >
-                </div>
-                <div class="footer-section">
-                    <p class="footer-section-label">AWS</p>
-                    <a
-                        href="https://docs.aws.amazon.com/marketplace/"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >AWS Marketplace</a
-                    >
-                </div>
-                <div class="footer-section">
-                    <p class="footer-section-label">Azure</p>
-                    <a
-                        href="https://learn.microsoft.com/en-us/partner-center/"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >Partner Center</a
-                    >
-                </div>
-                <div class="footer-section">
-                    <p class="footer-section-label">GCP</p>
-                    <a
-                        href="https://docs.cloud.google.com/marketplace/docs"
-                        class="footer-link"
-                        target="_blank"
-                        rel="noopener"
-                        >GCP Marketplace</a
-                    >
-                </div>
-            </div>
-        </footer>
+        <div class="docs-bar">
+            <span class="docs-bar-label">Official Docs:</span>
+            <a
+                href="https://doc.suger.io/get-started/"
+                target="_blank"
+                rel="noopener"
+                >Suger</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://docs.aws.amazon.com/marketplace/"
+                target="_blank"
+                rel="noopener"
+                >AWS Marketplace</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://learn.microsoft.com/en-us/partner-center/"
+                target="_blank"
+                rel="noopener"
+                >Azure Partner Center</a
+            >
+            <span class="docs-bar-sep">·</span>
+            <a
+                href="https://docs.cloud.google.com/marketplace/docs"
+                target="_blank"
+                rel="noopener"
+                >GCP Marketplace</a
+            >
+        </div>
     </body>
 </html>

@@ -1,4 +1,5 @@
 import { terms } from "./data/terms.js";
+import { learningPaths } from "./data/learning-paths.js";
 import {
   injectTagStyles,
   buildCard,
@@ -13,8 +14,10 @@ import {
   onFilterChange,
   getActiveFilters,
   getActiveCategory,
+  getActivePathFilter,
   toggleFilter,
   setCategory,
+  setPathFilter,
 } from "./app/filters.js";
 import { getFiltered, getBestMatch } from "./app/search.js";
 import {
@@ -22,6 +25,31 @@ import {
   scrollToBestMatch,
   initScrollSpy,
 } from "./app/scroll.js";
+
+// ---- Learning path slug sets ------------------------------------------------
+
+const pathSlugSets = Object.fromEntries(
+  learningPaths.map((p) => [p.slug, new Set(p.steps.map((s) => s.slug))]),
+);
+
+function buildLPFilterButtons() {
+  const container = document.getElementById("lpFilterGroup");
+  if (!container) return;
+  const label = document.createElement("p");
+  label.className = "sidebar-group-label";
+  label.textContent = "Learning Paths";
+  container.appendChild(label);
+  learningPaths.forEach((p) => {
+    const btn = document.createElement("button");
+    btn.className = "sidebar-tag-btn";
+    btn.type = "button";
+    btn.dataset.filterPath = p.slug;
+    btn.textContent = p.title;
+    container.appendChild(btn);
+  });
+}
+
+// ---- DOM refs ---------------------------------------------------------------
 
 const searchInput = document.getElementById("search");
 const listEl = document.getElementById("list");
@@ -166,12 +194,106 @@ document.getElementById("sidebarLeft")?.addEventListener("click", (e) => {
   if (tagBtn) toggleFilter(tagBtn.dataset.filterTag);
   const catBtn = e.target.closest("[data-filter-category]");
   if (catBtn) setCategory(catBtn.dataset.filterCategory);
+  const pathBtn = e.target.closest("[data-filter-path]");
+  if (pathBtn) setPathFilter(pathBtn.dataset.filterPath);
+});
+
+// ---- Filter modal -----------------------------------------------------------
+
+const filterToggleBtn = document.getElementById("filterToggleBtn");
+const filterBadge = document.getElementById("filterBadge");
+const filterBackdrop = document.getElementById("filterBackdrop");
+const filterModal = document.getElementById("filterModal");
+const filterModalClose = document.getElementById("filterModalClose");
+const filterModalClear = document.getElementById("filterModalClear");
+const filterModalSearch = document.getElementById("filterModalSearch");
+
+function updateFilterBadge() {
+  const count = getActiveFilters().size + (getActiveCategory() ? 1 : 0);
+  if (filterBadge) {
+    if (count > 0) {
+      filterBadge.textContent = count;
+      filterBadge.hidden = false;
+    } else {
+      filterBadge.hidden = true;
+    }
+  }
+  if (filterToggleBtn) {
+    filterToggleBtn.classList.toggle("filter-toggle-btn--active", count > 0);
+  }
+}
+
+function openFilterModal() {
+  if (!filterModal || !filterBackdrop) return;
+  filterModal.hidden = false;
+  filterBackdrop.hidden = false;
+  filterModalSearch?.focus();
+  document.body.style.overflow = "hidden";
+}
+
+function closeFilterModal() {
+  if (!filterModal || !filterBackdrop) return;
+  filterModal.hidden = true;
+  filterBackdrop.hidden = true;
+  if (filterModalSearch) filterModalSearch.value = "";
+  applyFilterSearch("");
+  document.body.style.overflow = "";
+}
+
+function applyFilterSearch(query) {
+  const q = query.toLowerCase().trim();
+  document.querySelectorAll(".filter-chip").forEach((chip) => {
+    const text = chip.textContent.toLowerCase();
+    const section = chip.closest("[data-section]");
+    chip.style.display = !q || text.includes(q) ? "" : "none";
+    if (section) {
+      const anyVisible = [...section.querySelectorAll(".filter-chip")].some(
+        (c) => c.style.display !== "none",
+      );
+      section.style.display = anyVisible ? "" : "none";
+    }
+  });
+}
+
+filterToggleBtn?.addEventListener("click", openFilterModal);
+filterBackdrop?.addEventListener("click", closeFilterModal);
+filterModalClose?.addEventListener("click", closeFilterModal);
+
+filterModalClear?.addEventListener("click", () => {
+  clearFilters();
+});
+
+filterModalSearch?.addEventListener("input", (e) => {
+  applyFilterSearch(e.target.value);
+});
+
+filterModal?.addEventListener("click", (e) => {
+  const chip = e.target.closest(".filter-chip");
+  if (!chip) return;
+  if (chip.dataset.filterTag) toggleFilter(chip.dataset.filterTag);
+  if (chip.dataset.filterCategory) setCategory(chip.dataset.filterCategory);
 });
 
 // ---- Filter change ----------------------------------------------------------
 
 onFilterChange(() => {
   renderSidebarState();
+  updateFilterBadge();
+  // sync modal chip active states
+  document.querySelectorAll(".filter-chip[data-filter-tag]").forEach((chip) => {
+    chip.classList.toggle(
+      "active",
+      getActiveFilters().has(chip.dataset.filterTag),
+    );
+  });
+  document
+    .querySelectorAll(".filter-chip[data-filter-category]")
+    .forEach((chip) => {
+      chip.classList.toggle(
+        "active",
+        chip.dataset.filterCategory === getActiveCategory(),
+      );
+    });
   render();
 });
 
@@ -248,7 +370,12 @@ function render() {
     expandedCard = null; // stale reference; DOM is being rebuilt
 
     const q = searchInput.value.trim().toLowerCase();
-    const filtered = getFiltered(q);
+    let filtered = getFiltered(q);
+    const activePathSlug = getActivePathFilter();
+    if (activePathSlug && pathSlugSets[activePathSlug]) {
+      const slugSet = pathSlugSets[activePathSlug];
+      filtered = filtered.filter((t) => slugSet.has(slug(t.name)));
+    }
     const bestMatch = getBestMatch(filtered, q);
 
     if (countEl) {
@@ -320,8 +447,10 @@ function render() {
 // ---- Init -------------------------------------------------------------------
 
 window.onload = () => {
+  buildLPFilterButtons();
   loadFromURL();
   renderSidebarState();
+  updateFilterBadge();
   render();
 
   if (window.location.hash) {

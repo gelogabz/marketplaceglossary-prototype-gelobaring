@@ -84,7 +84,7 @@ if (!path) {
         </div>
     `;
 } else {
-  document.title = `${path.title} — Cloud GTM Reference`;
+  document.title = `Cloud GTM Reference — ${path.title}`;
   renderPath(path);
 }
 

@@ -161,6 +161,8 @@ const PLATFORMS = [
   { key: "alibaba", label: "Alibaba", cls: "pb-alibaba" },
 ];
 
+const PLATFORM_SUFFIX_RE = / — (AWS|Azure|GCP|Snowflake|Alibaba)$/;
+
 function getRelatedTerms(t) {
   if (!t.alias) return [];
   return [...terms]
@@ -240,45 +242,51 @@ function getRelatedItems(t) {
     : getRelatedTerms(t).map((r) => ({ name: r.name, slug: slug(r.name) }));
 }
 
+function buildRelatedSection(
+  items,
+  linkPrefix,
+  { newTab = false, aliasLink = false } = {},
+) {
+  if (!items.length) return "";
+  const tabAttr = newTab ? ' target="_blank"' : "";
+  const cls = aliasLink ? "chip chip-link alias-link" : "chip chip-link";
+  const links = items
+    .map((r) => {
+      const shortName = r.name.replace(PLATFORM_SUFFIX_RE, "");
+      return `<a href="${linkPrefix}${r.slug}" class="${cls}"${tabAttr}>${shortName}</a>`;
+    })
+    .join("");
+  return `<div class="sr-section">
+    <div class="sr-section-title">Related terms</div>
+    <div class="chips">${links}</div>
+  </div>`;
+}
+
+function buildLearningPathsSection(termSlug) {
+  const paths = learningPaths.filter((p) =>
+    p.steps.some((s) => s.slug === termSlug),
+  );
+  if (!paths.length) return "";
+  const links = paths
+    .map(
+      (p) =>
+        `<a href="learning-paths/path.html?p=${p.slug}" class="chip chip-link">${p.title} →</a>`,
+    )
+    .join("");
+  return `<div class="sr-section">
+    <div class="sr-section-title">Learning paths</div>
+    <div class="chips">${links}</div>
+  </div>`;
+}
+
 // ---- Detail view builder ----------------------------------------------------
 
 export function buildDetailView(t) {
   const termSlug = slug(t.name);
-  const relatedItems = getRelatedItems(t);
-
-  const relatedSection = relatedItems.length
-    ? `<div class="sr-section">
-         <div class="sr-section-title">Related terms</div>
-         <div class="chips">
-           ${relatedItems
-             .map((r) => {
-               const shortName = r.name.replace(
-                 / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
-                 "",
-               );
-               return `<a href="#term-${r.slug}" class="chip chip-link alias-link">${shortName}</a>`;
-             })
-             .join("")}
-         </div>
-       </div>`
-    : "";
-
-  const termPaths = learningPaths.filter((p) =>
-    p.steps.some((s) => s.slug === termSlug),
-  );
-  const learningPathsHtml = termPaths.length
-    ? `<div class="sr-section">
-         <div class="sr-section-title">Learning paths</div>
-         <div class="chips">
-           ${termPaths
-             .map(
-               (p) =>
-                 `<a href="learning-paths/path.html?p=${p.slug}" class="chip chip-link">${p.title} →</a>`,
-             )
-             .join("")}
-         </div>
-       </div>`
-    : "";
+  const relatedSection = buildRelatedSection(getRelatedItems(t), "#term-", {
+    aliasLink: true,
+  });
+  const learningPathsHtml = buildLearningPathsSection(termSlug);
 
   const sourceHtml = t.source
     ? `<a class="sr-source-link" href="${t.source}" target="_blank" rel="noopener noreferrer">Official source ↗</a>`
@@ -311,41 +319,10 @@ export function buildDetailView(t) {
 
 export function buildAccordionDetail(t) {
   const termSlug = slug(t.name);
-  const relatedItems = getRelatedItems(t);
-
-  const relatedSection = relatedItems.length
-    ? `<div class="sr-section">
-         <div class="sr-section-title">Related terms</div>
-         <div class="chips">
-           ${relatedItems
-             .map((r) => {
-               const shortName = r.name.replace(
-                 / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
-                 "",
-               );
-               return `<a href="#term-${r.slug}" class="chip chip-link alias-link">${shortName}</a>`;
-             })
-             .join("")}
-         </div>
-       </div>`
-    : "";
-
-  const termPaths = learningPaths.filter((p) =>
-    p.steps.some((s) => s.slug === termSlug),
-  );
-  const learningPathsHtml = termPaths.length
-    ? `<div class="sr-section">
-         <div class="sr-section-title">Learning paths</div>
-         <div class="chips">
-           ${termPaths
-             .map(
-               (p) =>
-                 `<a href="learning-paths/path.html?p=${p.slug}" class="chip chip-link">${p.title} →</a>`,
-             )
-             .join("")}
-         </div>
-       </div>`
-    : "";
+  const relatedSection = buildRelatedSection(getRelatedItems(t), "#term-", {
+    aliasLink: true,
+  });
+  const learningPathsHtml = buildLearningPathsSection(termSlug);
 
   const sourceHtml = t.source
     ? `<a class="sr-source-link" href="${t.source}" target="_blank" rel="noopener noreferrer">Official source ↗</a>`
@@ -375,24 +352,11 @@ export function buildAccordionDetail(t) {
 
 export function buildInlineTermDetail(t) {
   const termSlug = slug(t.name);
-  const relatedItems = getRelatedItems(t);
-
-  const relatedSection = relatedItems.length
-    ? `<div class="sr-section">
-         <div class="sr-section-title">Related terms</div>
-         <div class="chips">
-           ${relatedItems
-             .map((r) => {
-               const shortName = r.name.replace(
-                 / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
-                 "",
-               );
-               return `<a href="../index.html#term-${r.slug}" class="chip chip-link" target="_blank">${shortName}</a>`;
-             })
-             .join("")}
-         </div>
-       </div>`
-    : "";
+  const relatedSection = buildRelatedSection(
+    getRelatedItems(t),
+    "../index.html#term-",
+    { newTab: true },
+  );
 
   const sourceHtml = t.source
     ? `<a class="it-source" href="${t.source}" target="_blank" rel="noopener noreferrer">Official source ↗</a>`

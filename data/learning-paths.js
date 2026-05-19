@@ -1,3 +1,50 @@
+/*
+ * All learning paths and the global learning sequence.
+ *
+ * ADDING A PATH  ─────────────────────────────────────────────────────────────
+ *   1. Append a new object to the `learningPaths` array below.
+ *   2. If it belongs to the core journey, add its slug to GLOBAL_SEQUENCE.
+ *   3. If using a new category, add it to CATEGORY_ORDER and CATEGORY_META
+ *      in learning-paths/index.html and learning-paths/path.js.
+ *   4. To include it in a role track, add its slug to the relevant array
+ *      in ROLE_TRACKS inside learning-paths/index.html.
+ *
+ * PATH OBJECT FIELDS  ────────────────────────────────────────────────────────
+ *   slug         string   — URL-safe, lowercase, hyphens only. Used in ?p=
+ *                           query param and localStorage. Must be unique.
+ *
+ *   title        string   — Short display name (3–6 words).
+ *
+ *   category     string   — "fundamentals" | "procurement" | "cosell" |
+ *                           "billing" | "operations" | "advanced" | "onboarding"
+ *                           Note: "onboarding" is paths-only — never set on terms.
+ *
+ *   level        string   — "beginner" | "intermediate" | "advanced"
+ *
+ *   description  string   — 1–2 sentences summarising what the path covers.
+ *
+ *   meta         string   — Display string shown on hub card: "N terms · ~X min"
+ *                           Rough guide: 3 min per term.
+ *
+ *   steps        object[] — Ordered list of terms to read. Max 20, target 7–15.
+ *     Each step:
+ *       name  string  — must exactly match the term's `name` in data/terms.js
+ *       slug  string  — slug(name): lowercase, parens removed, spaces → hyphens
+ *                       Example: "private-offer-—-aws"
+ *       why   string  — 1–2 sentences explaining why this term is here
+ *
+ * OPTIONAL SEQUENCING FIELDS  ────────────────────────────────────────────────
+ *   next          string   — slug of the recommended next path
+ *   continuesFrom string   — slug of the path this one follows (shows callout)
+ *   prereqs       string[] — slugs that should ideally be done first (advisory,
+ *                            non-blocking — user still sees an amber hint)
+ *
+ * GLOBAL_SEQUENCE  ────────────────────────────────────────────────────────────
+ *   Ordered array of path slugs defining the canonical 9-path core journey.
+ *   Used to drive "Continue your journey" banners and completion detection.
+ *   Onboarding (role-specific) paths live outside this sequence.
+ */
+
 // Reference: https://www.suger.io/resources/guides/
 
 export const GLOBAL_SEQUENCE = [
