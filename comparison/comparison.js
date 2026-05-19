@@ -182,8 +182,11 @@ function buildTable(filter) {
             return `<a href="../index.html#term-${termSlug}" class="compare-link">${shortName}</a>`;
           })
           .join("");
-        const multiClass = termArr.length > 1 ? " compare-cell--multi" : "";
-        return `<td class="compare-cell compare-cell--${p.key.toLowerCase()}${multiClass}">${links}</td>`;
+        const content =
+          termArr.length > 1
+            ? `<div class="compare-cell-multi">${links}</div>`
+            : links;
+        return `<td class="compare-cell compare-cell--${p.key.toLowerCase()}">${content}</td>`;
       }).join("");
       return `<tr><td class="compare-concept">${concept}</td>${cells}</tr>`;
     })
