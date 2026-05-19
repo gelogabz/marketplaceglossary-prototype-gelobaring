@@ -208,7 +208,7 @@ export const terms = [
   {
     name: "AWS Marketplace Management Portal (AMMP) — AWS",
     tags: ["aws"],
-    def: "The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace.",
+    def: "The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace. Accessible at <a href=\"https://aws.amazon.com/marketplace/management/\" target=\"_blank\" rel=\"noopener\">aws.amazon.com/marketplace/management</a>.",
     alias:
       "Azure equivalent: Partner Center — Azure | GCP equivalent: Producer Portal — GCP | Related: AWS Marketplace Catalog API — AWS, Suger Console",
     source: "https://docs.aws.amazon.com/marketplace/latest/userguide/",
@@ -1042,7 +1042,7 @@ export const terms = [
   {
     name: "Producer Portal — GCP",
     tags: ["gcp"],
-    def: "The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Advantage enrollment.",
+    def: "The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Advantage enrollment. Accessible at <a href=\"https://console.cloud.google.com/marketplace/overview\" target=\"_blank\" rel=\"noopener\">console.cloud.google.com/marketplace</a>.",
     alias: "Related: GCP Marketplace — GCP, Partner Advantage — GCP",
     source: "https://docs.cloud.google.com/marketplace/docs/partners",
     difficulty: "intermediate",
@@ -1619,7 +1619,7 @@ export const terms = [
   {
     name: "Partner Center — Azure",
     tags: ["azure"],
-    def: "Microsoft's portal where publishers create and manage Azure Marketplace and AppSource offers, co-sell configurations, payout profiles, and partner program enrollments.",
+    def: "Microsoft's portal where publishers create and manage Azure Marketplace and AppSource offers, co-sell configurations, payout profiles, and partner program enrollments. Accessible at <a href=\"https://partner.microsoft.com/\" target=\"_blank\" rel=\"noopener\">partner.microsoft.com</a>.",
     alias:
       "Related: Azure Marketplace / Microsoft Marketplace, SaaS Fulfillment API — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/overview",
