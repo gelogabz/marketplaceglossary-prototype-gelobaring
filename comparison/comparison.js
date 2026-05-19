@@ -96,9 +96,31 @@ allComparableTerms.forEach((t) => {
   if (!groups[root][platformKey]) groups[root][platformKey] = t;
 });
 
-// Concept label: Suger name first (plain, no suffix), then AWS, Azure, GCP...
+// Generic concept overrides — keyed by the platform term that would otherwise become the label.
+// Use when the raw term name is platform-branded (e.g. "Amazon EventBridge", "AWS Partner Central Agents").
+// The platform columns still show the hyperscaler-specific names; only the Concept column is affected.
+const CONCEPT_OVERRIDES = {
+  "Amazon EventBridge Marketplace Integration — AWS":
+    "Subscription Lifecycle Events",
+  "AWS Partner Central Agents — AWS": "AI Partner Automation",
+  "BatchMeterUsage API — AWS": "Batch Metering API",
+  "Channel Partner Private Offer (CPPO) — AWS": "Channel Resale Offer",
+  "Enterprise Discount Program (EDP) — AWS": "Committed Spend Drawdown",
+  "ISV Accelerate — AWS": "ISV Co-sell Program",
+  "Migration Acceleration Program (MAP) — AWS": "Cloud Partner Funding",
+  "SaaS Co-sell Benefit (SCB) — AWS": "Field Co-sell Incentive",
+  "Standard Contract (SCMP) — AWS": "Standard Marketplace Contract",
+  "Tax Details Dashboard — AWS": "Marketplace Tax Configuration",
+};
+
+// Concept label: check override map first, then Suger name (plain), then AWS, Azure, GCP...
 const LABEL_PRIORITY = ["Suger", "AWS", "Azure", "GCP", "Snowflake", "Alibaba"];
 function conceptLabel(byPlatform) {
+  for (const p of LABEL_PRIORITY) {
+    if (byPlatform[p] && CONCEPT_OVERRIDES[byPlatform[p].name]) {
+      return CONCEPT_OVERRIDES[byPlatform[p].name];
+    }
+  }
   for (const p of LABEL_PRIORITY) {
     if (byPlatform[p]) return byPlatform[p].name.replace(SUFFIX_RE, "").trim();
   }
