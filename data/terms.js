@@ -2,7 +2,7 @@ export const terms = [
   {
     name: "APN Customer Engagements (ACE) — AWS",
     tags: ["aws", "cosell"],
-    def: "AWS's co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft's co-sell program or GCP Partner Advantage co-sell.",
+    def: "AWS's co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft's co-sell program or GCP Partner Advantage co-sell. Accessible at <a href=\"https://partnercentral.awspartner.com/\" target=\"_blank\" rel=\"noopener\">partnercentral.awspartner.com</a>.",
     alias:
       "Related: AWS Partner Network (APN) — AWS, Inbound Referral, Outbound Referral",
     source:
@@ -1018,7 +1018,7 @@ export const terms = [
   {
     name: "Partner Advantage — GCP",
     tags: ["gcp", "cosell"],
-    def: "Google Cloud's partner program required to list on GCP Marketplace. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the 'Build' engagement model. As of Q1 2026, Google Cloud announced the Google Cloud Partner Network as a replacement for Partner Advantage, with a new tier and competency structure. Partners should verify current enrollment status through the Google Cloud partner portal.",
+    def: "Google Cloud's partner program required to list on GCP Marketplace. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the 'Build' engagement model. As of Q1 2026, Google Cloud announced the Google Cloud Partner Network as a replacement for Partner Advantage, with a new tier and competency structure. Partners should verify current enrollment status through the Google Cloud partner portal. Accessible at <a href=\"https://partners.cloud.google.com/\" target=\"_blank\" rel=\"noopener\">partners.cloud.google.com</a>.",
     alias:
       "Related: Build Engagement Model — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
     source: "https://partners.cloud.google.com",
@@ -1405,7 +1405,7 @@ export const terms = [
   {
     name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's partner program for ISVs and services companies. Enrollment is required to publish on Azure Marketplace and access co-sell, partner funding, and Marketplace Rewards.",
+    def: "Microsoft's partner program for ISVs and services companies. Enrollment is required to publish on Azure Marketplace and access co-sell, partner funding, and Marketplace Rewards. Co-sell is managed through Partner Center — see the Partner Center — Azure term for the direct link.",
     alias:
       "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/mpn-overview",
