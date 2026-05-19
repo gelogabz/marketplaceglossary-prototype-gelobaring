@@ -209,7 +209,8 @@ export const terms = [
     name: "AWS Marketplace Management Portal (AMMP) — AWS",
     tags: ["aws"],
     def: "The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace.",
-    alias: "Related: AWS Marketplace Catalog API — AWS, Suger Console",
+    alias:
+      "Azure equivalent: Partner Center — Azure | GCP equivalent: Producer Portal — GCP | Related: AWS Marketplace Catalog API — AWS, Suger Console",
     source: "https://docs.aws.amazon.com/marketplace/latest/userguide/",
     difficulty: "intermediate",
     category: "operations",
@@ -233,7 +234,7 @@ export const terms = [
     tags: ["aws"],
     def: "Amazon's global partner program for technology and consulting companies. Marketplace sellers are typically APN members, unlocking access to co-sell (ACE), funding, and go-to-market resources.",
     alias:
-      "Related: APN Customer Engagements (ACE) — AWS, AWS Competency Program — AWS",
+      "Azure equivalent: Microsoft AI Cloud Partner Program (MPN) — Azure | GCP equivalent: Partner Advantage — GCP | Related: APN Customer Engagements (ACE) — AWS, AWS Competency Program — AWS",
     source: "https://aws.amazon.com/partners/",
     difficulty: "beginner",
     category: "cosell",
@@ -3271,6 +3272,7 @@ export const terms = [
   {
     name: "Marketing Development Funds (MDF) — AWS",
     tags: ["aws", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "AWS co-marketing funding provided to partners to offset demand generation costs — events, campaigns, digital ads, content creation, etc. Partners are reimbursed up to 50% of eligible expenses after submitting proof of performance (receipts). Can also be issued as AWS Promotional Credits. Requested via the AWS Partner Funding Portal. Requires an Amazon Payee Central account for cash disbursement. MDF can stack on top of Strategic Collaboration Agreement (SCA) — AWS benefits.",
     alias:
       "Related: AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Partner Opportunity Acceleration (POA) — AWS, Partner Initiative Funding (PIF) — AWS",
@@ -3299,6 +3301,7 @@ export const terms = [
   {
     name: "Migration Acceleration Program (MAP) — AWS",
     tags: ["aws", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "An AWS funding program providing credits and cash to partners helping customers migrate and modernize workloads on AWS. As of 2026, now covers generative AI and agentic features built during modernization — not just migrations. Funding scales with deal size.",
     alias:
       "Related: AWS Partner Funding — AWS, ISV Workload Migration Program (WMP) — AWS",
@@ -3409,6 +3412,7 @@ export const terms = [
   {
     name: "Proof of Concept (POC) Funding  — AWS",
     tags: ["aws", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "AWS funding that offsets up to 10% of the cost of building a proof of concept for a customer, capped at $25,000. Submitted through the AWS Partner Funding Portal. Requires Validated+ stage in any Partner Path. The ACE opportunity must be in Technical Validation stage or beyond.",
     alias:
       "Part of: Partner Opportunity Acceleration (POA) — AWS | Related: AWS Partner Funding — AWS, AWS Partner Funding Portal (APFP) — AWS",
@@ -3440,6 +3444,7 @@ export const terms = [
   {
     name: "Partner Initiative Funding (PIF) — AWS",
     tags: ["aws", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "An AWS funding type tied to specific partner agreement-based initiatives. The PIF template in the AWS Partner Funding Portal lets eligible partners self-access their initiative funds without requiring their AWS Partner Manager to be involved in every request — reducing friction and accelerating time-to-funding.",
     alias:
       "Related: AWS Partner Funding — AWS, Marketing Development Funds (MDF) — AWS, AWS Partner Funding Portal (APFP) — AWS",
@@ -3471,6 +3476,7 @@ export const terms = [
   {
     name: "ISV Workload Migration Program (WMP) — AWS",
     tags: ["aws", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "An AWS program providing promotional credits and go-to-market support to ISVs that help migrate customer workloads from on-premises to a SaaS model on AWS. As of 2026, WMP now offers direct credit disbursement to end customers for eligible migrations. Requires: Foundational Technical Review completion, Validated stage status, a SaaS solution on AWS, and a qualified migration use case.",
     alias:
       "Related: AWS Partner Funding — AWS, Migration Acceleration Program (MAP) — AWS, Foundational Technical Review (FTR) — AWS",
@@ -3650,6 +3656,7 @@ export const terms = [
   {
     name: "Partner Opportunity Acceleration (POA) — AWS",
     tags: ["aws", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "AWS funding program providing cash reimbursement or promotional credits to accelerate proof-of-concept and migration projects. Available to APN Select tier and above via the AWS Partner Funding Portal. Partners must apply POA benefits to reduce customer costs — benefits may not be retained as additional partner margin. Requires an Amazon Payee Central account.",
     alias:
       "Related: Proof of Concept (POC) Funding — AWS, Migration Acceleration Program (MAP) — AWS, AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Amazon Payee Central — AWS",
@@ -4046,6 +4053,7 @@ export const terms = [
   {
     name: "Marketplace Private Offer Promotion Program (MPOPP) — AWS",
     tags: ["aws", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "An AWS program (launched Aug 2025) that issues AWS Promotional Credits to customers as an incentive for accepting private offers from participating ISVs. Credits are based on Total Contract Value (TCV). Self-service requests submitted via the AWS Partner Funding Portal with next-business-day credit delivery.",
     alias:
       "Related: AWS Promotional Credits — AWS, Marketing Development Funds (MDF) — AWS, Express Private Offer — AWS, AWS Partner Funding Portal (APFP) — AWS",
@@ -5562,6 +5570,7 @@ export const terms = [
   {
     name: "End Customer Investment Funds (ECIF) — Azure",
     tags: ["azure", "cosell", "funding"],
+    group: "cloud-partner-funding",
     def: "Microsoft funding program where Microsoft pays approved partners to deliver services — deployment, migration, training, or proof of concept — accelerating customer adoption of Microsoft cloud technologies. Provides direct project funding up to $500K (not a percentage-of-revenue rebate). Requires Advanced Specialization as a hard prerequisite and must cover net-new cloud consumption. Field-driven only: initiated through a Partner Development Manager or Microsoft field team with a scoped statement of work, not self-service.",
     alias:
       "Related: ISV Success Program — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
@@ -6866,6 +6875,7 @@ export const terms = [
   {
     name: "Google Cloud Partner Innovation Fund — GCP",
     tags: ["gcp", "cosell"],
+    group: "cloud-partner-funding",
     def: "A $750M Google Cloud funding commitment announced April 2026 to accelerate partner-led AI and marketplace innovation. The fund provides co-investment for qualified partners working on AI solutions, marketplace listings, and customer adoption programs, administered through Partner Advantage. It is Google Cloud's largest formal partner funding commitment and directly parallels AWS's partner funding cluster (MAP, POC Funding, PIF) as the primary mechanism for GCP to incentivize partner investment in the ecosystem.",
     alias:
       "AWS equivalent: Migration Acceleration Program (MAP) — AWS | AWS equivalent: Proof of Concept (POC) Funding — AWS | AWS equivalent: Partner Initiative Funding (PIF) — AWS | Related: Partner Advantage — GCP, Build Engagement Model — GCP, GCP Marketplace — GCP",

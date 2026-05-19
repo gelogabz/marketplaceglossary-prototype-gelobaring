@@ -85,15 +85,26 @@ allComparableTerms.forEach((t) => {
   }
 });
 
-// Build groups from connected components
+// Pass 4: union terms sharing an explicit `group` value
+// Enables multi-term platform cells (e.g. all AWS funding programs in one row)
+const byGroup = {};
+allComparableTerms.forEach((t) => {
+  if (!t.group) return;
+  (byGroup[t.group] ??= []).push(t.name);
+});
+Object.values(byGroup).forEach((names) => {
+  for (let i = 1; i < names.length; i++) union(names[0], names[i]);
+});
+
+// Build groups from connected components — collect ALL terms per platform (not first-wins)
 const groups = {};
 allComparableTerms.forEach((t) => {
   const root = find(t.name);
   if (!groups[root]) groups[root] = {};
   const platformMatch = t.name.match(SUFFIX_RE);
   const platformKey = platformMatch ? platformMatch[1] : "Suger";
-  // First term wins per platform per group (avoids overwriting with a weaker link)
-  if (!groups[root][platformKey]) groups[root][platformKey] = t;
+  if (!groups[root][platformKey]) groups[root][platformKey] = [];
+  groups[root][platformKey].push(t);
 });
 
 // Generic concept overrides — keyed by the platform term that would otherwise become the label.
@@ -102,29 +113,42 @@ allComparableTerms.forEach((t) => {
 const CONCEPT_OVERRIDES = {
   "Amazon EventBridge Marketplace Integration — AWS":
     "Subscription Lifecycle Events",
+  "AWS Marketplace Management Portal (AMMP) — AWS": "Marketplace Seller Portal",
   "AWS Partner Central Agents — AWS": "AI Partner Automation",
+  "AWS Partner Network (APN) — AWS": "Partner Ecosystem Program",
   "BatchMeterUsage API — AWS": "Batch Metering API",
   "Channel Partner Private Offer (CPPO) — AWS": "Channel Resale Offer",
+  "End Customer Investment Funds (ECIF) — Azure": "Cloud Partner Funding",
   "Enterprise Discount Program (EDP) — AWS": "Committed Spend Drawdown",
   "ISV Accelerate — AWS": "ISV Co-sell Program",
+  "ISV Workload Migration Program (WMP) — AWS": "Cloud Partner Funding",
+  "Marketing Development Funds (MDF) — AWS": "Cloud Partner Funding",
+  "Marketplace Private Offer Promotion Program (MPOPP) — AWS":
+    "Cloud Partner Funding",
   "Migration Acceleration Program (MAP) — AWS": "Cloud Partner Funding",
+  "Partner Initiative Funding (PIF) — AWS": "Cloud Partner Funding",
+  "Partner Opportunity Acceleration (POA) — AWS": "Cloud Partner Funding",
+  "Proof of Concept (POC) Funding  — AWS": "Cloud Partner Funding",
   "SaaS Co-sell Benefit (SCB) — AWS": "Field Co-sell Incentive",
   "Standard Contract (SCMP) — AWS": "Standard Marketplace Contract",
   "Tax Details Dashboard — AWS": "Marketplace Tax Configuration",
 };
 
-// Concept label: check override map first, then Suger name (plain), then AWS, Azure, GCP...
+// Concept label: check override map first (all terms per platform), then Suger name, then AWS...
 const LABEL_PRIORITY = ["Suger", "AWS", "Azure", "GCP", "Snowflake", "Alibaba"];
 function conceptLabel(byPlatform) {
   for (const p of LABEL_PRIORITY) {
-    if (byPlatform[p] && CONCEPT_OVERRIDES[byPlatform[p].name]) {
-      return CONCEPT_OVERRIDES[byPlatform[p].name];
+    const arr = byPlatform[p];
+    if (!arr?.length) continue;
+    for (const t of arr) {
+      if (CONCEPT_OVERRIDES[t.name]) return CONCEPT_OVERRIDES[t.name];
     }
   }
   for (const p of LABEL_PRIORITY) {
-    if (byPlatform[p]) return byPlatform[p].name.replace(SUFFIX_RE, "").trim();
+    if (byPlatform[p]?.length)
+      return byPlatform[p][0].name.replace(SUFFIX_RE, "").trim();
   }
-  return Object.values(byPlatform)[0].name.replace(SUFFIX_RE, "").trim();
+  return Object.values(byPlatform)[0][0].name.replace(SUFFIX_RE, "").trim();
 }
 
 // Only groups that span 2+ platforms, sorted alphabetically by concept label
@@ -148,12 +172,18 @@ function buildTable(filter) {
     .map((byPlatform) => {
       const concept = conceptLabel(byPlatform);
       const cells = PLATFORMS.map((p) => {
-        const term = byPlatform[p.key];
-        if (!term)
+        const termArr = byPlatform[p.key];
+        if (!termArr?.length)
           return `<td class="compare-cell compare-cell--absent">—</td>`;
-        const termSlug = slug(term.name);
-        const shortName = term.name.replace(SUFFIX_RE, "").trim();
-        return `<td class="compare-cell compare-cell--${p.key.toLowerCase()}"><a href="../index.html#term-${termSlug}" class="compare-link">${shortName}</a></td>`;
+        const links = termArr
+          .map((term) => {
+            const termSlug = slug(term.name);
+            const shortName = term.name.replace(SUFFIX_RE, "").trim();
+            return `<a href="../index.html#term-${termSlug}" class="compare-link">${shortName}</a>`;
+          })
+          .join("");
+        const multiClass = termArr.length > 1 ? " compare-cell--multi" : "";
+        return `<td class="compare-cell compare-cell--${p.key.toLowerCase()}${multiClass}">${links}</td>`;
       }).join("");
       return `<tr><td class="compare-concept">${concept}</td>${cells}</tr>`;
     })
