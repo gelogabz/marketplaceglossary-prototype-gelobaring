@@ -6868,7 +6868,7 @@ export const terms = [
     tags: ["gcp", "cosell"],
     def: "A $750M Google Cloud funding commitment announced April 2026 to accelerate partner-led AI and marketplace innovation. The fund provides co-investment for qualified partners working on AI solutions, marketplace listings, and customer adoption programs, administered through Partner Advantage. It is Google Cloud's largest formal partner funding commitment and directly parallels AWS's partner funding cluster (MAP, POC Funding, PIF) as the primary mechanism for GCP to incentivize partner investment in the ecosystem.",
     alias:
-      "AWS equivalents: Migration Acceleration Program (MAP) — AWS, Proof of Concept (POC) Funding — AWS, Partner Initiative Funding (PIF) — AWS | Related: Partner Advantage — GCP, Build Engagement Model — GCP, GCP Marketplace — GCP",
+      "AWS equivalent: Migration Acceleration Program (MAP) — AWS | AWS equivalent: Proof of Concept (POC) Funding — AWS | AWS equivalent: Partner Initiative Funding (PIF) — AWS | Related: Partner Advantage — GCP, Build Engagement Model — GCP, GCP Marketplace — GCP",
     source:
       "https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise",
     difficulty: "intermediate",
