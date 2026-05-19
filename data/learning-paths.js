@@ -74,7 +74,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "From a basic private offer to a channel partner resale — learn how AWS pricing customization works, how partners get involved, and what authorizations and agreements are required.",
-    meta: "9 terms · ~35 min",
+    meta: "10 terms · ~40 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -105,6 +105,11 @@ export const learningPaths = [
         why: "Large enterprise deals often require installment billing rather than upfront payment. Learn how flexible payment schedules work on marketplace and how they're structured in a private offer.",
       },
       {
+        name: "Variable Payments — AWS",
+        slug: "variable-payments-—-aws",
+        why: "Flexible Payment Schedules handle installments on a known commitment; Variable Payments handle milestone-tied professional services billed through marketplace. If your company sells implementation or advisory services alongside software, Variable Payments is the mechanism that lets you bundle and bill both through a single AWS private offer.",
+      },
+      {
         name: "Entitlement",
         slug: "entitlement",
         why: "Once the Agreement is signed, an Entitlement is created. This is the active record of the buyer's access rights — and what you'll track through the full subscription lifecycle.",
@@ -133,7 +138,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How ISVs work alongside hyperscaler sales teams to close deals. Covers the co-sell motion, referral mechanics, platform tools, AWS program requirements, and how co-sell varies across AWS, Azure, and GCP.",
-    meta: "12 terms · ~45 min",
+    meta: "17 terms · ~65 min",
     continuesFrom: "private-offers-and-cppas",
     next: "marketplace-ops-essentials",
     prereqs: ["private-offers-and-cppas"],
@@ -194,9 +199,34 @@ export const learningPaths = [
         why: "Azure's co-sell framework uses status tiers — Co-sell Eligible vs. Co-sell Incentivized — to determine what benefits an ISV receives. Learn how to qualify and what each status unlocks.",
       },
       {
+        name: "Referral Confidence Score — Azure",
+        slug: "referral-confidence-score-—-azure",
+        why: "Once you understand Azure's co-sell status tiers, the Referral Confidence Score explains how Microsoft evaluates individual deal quality — an AI-generated signal that affects how much attention your referral gets from the Azure field team. Knowing this score exists changes how you structure and qualify outbound referrals.",
+      },
+      {
+        name: "Partner-led Deal — Azure",
+        slug: "partner-led-deal-—-azure",
+        why: "Azure's co-sell framework distinguishes between deal types based on who drives the opportunity. A Partner-Led Deal is one where the ISV or partner owns the motion without requesting active Microsoft seller support — understanding this deal type clarifies when to engage Microsoft field teams versus when to execute independently and still receive referral attribution.",
+      },
+      {
+        name: "Microsoft Commerce Incentive (MCI) — Azure",
+        slug: "microsoft-commerce-incentive-mci-—-azure",
+        why: "You've learned that Co-sell Incentivized status unlocks Azure field engagement — MCI is the financial mechanism behind that engagement. Understanding how MCI compensates Microsoft sellers for co-sold transactions explains why Incentivized ISVs consistently get stronger field support than Eligible ones.",
+      },
+      {
+        name: "Business Applications Co-sell Incentive — Azure",
+        slug: "business-applications-co-sell-incentive-—-azure",
+        why: "MCI covers the broad Azure co-sell incentive framework; the Business Applications Co-sell Incentive is a specialized track for ISVs whose products integrate with Dynamics 365 or Power Platform. If your solution touches Microsoft's business apps ecosystem, this incentive tier significantly raises the financial motivation for Microsoft field teams to co-sell alongside you.",
+      },
+      {
         name: "Partner Advantage — GCP",
         slug: "partner-advantage-—-gcp",
         why: "GCP's co-sell program is structured differently from AWS and Azure. Partner Advantage is the framework that governs how ISVs qualify for and access GCP field co-sell support.",
+      },
+      {
+        name: "Co-sell Insights — Suger",
+        slug: "co-sell-insights-—-suger",
+        why: "After learning how co-sell programs work across AWS, Azure, and GCP, Co-sell Insights shows how Suger aggregates signals from all three into a unified intelligence layer. This is where cross-platform co-sell strategy becomes operationally executable — surfacing which deals to pursue and what actions to take, across all hyperscalers at once.",
       },
     ],
   },
@@ -207,7 +237,7 @@ export const learningPaths = [
     level: "advanced",
     description:
       "How committed spend agreements interact with marketplace purchases, why it matters for ISV deal strategy, and how to position listings as eligible across AWS, Azure, and GCP.",
-    meta: "7 terms · ~25 min",
+    meta: "9 terms · ~35 min",
     continuesFrom: "marketplace-ops-essentials",
     next: "channel-and-partner-motions",
     prereqs: ["marketplace-ops-essentials"],
@@ -233,9 +263,19 @@ export const learningPaths = [
         why: "GCP's committed spend model. Learn how CUD interacts with GCP Marketplace purchases and what ISVs need to know to position their listings for committed spend draw-down.",
       },
       {
+        name: "Marketplace Capacity Drawdown (MCD) — Snowflake",
+        slug: "marketplace-capacity-drawdown-mcd-—-snowflake",
+        why: "After covering AWS EDP, MACC, and GCP CUD, complete the committed spend picture with Snowflake's equivalent. MCD lets buyers draw down Snowflake capacity commitments through marketplace purchases — a critical lever for ISVs targeting Snowflake-heavy enterprise accounts.",
+      },
+      {
         name: "Metered Billing",
         slug: "metered-billing",
         why: "Usage-based billing is the most common model for marketplace transactions that draw down committed spend. Learn how metered billing is structured and why it's the preferred model for enterprise buyers.",
+      },
+      {
+        name: "Variable Payments — AWS",
+        slug: "variable-payments-—-aws",
+        why: "Metered billing covers consumption-based models; Variable Payments covers milestone-based billing for professional services and multi-phase engagements. Enterprise deals frequently combine both — understanding Variable Payments completes the billing model picture for complex AWS transactions.",
       },
       {
         name: "Metering / Usage Reporting",
@@ -359,7 +399,7 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
-    meta: "8 terms · ~25 min",
+    meta: "11 terms · ~40 min",
     continuesFrom: "channel-and-partner-motions",
     next: "marketplace-integrations",
     steps: [
@@ -377,6 +417,11 @@ export const learningPaths = [
         name: "Suger Console",
         slug: "suger-console",
         why: "The Suger Console is your operational control plane for cloud marketplace — where you monitor entitlements, manage offers, trigger metering, and configure integrations. Understanding its structure up front saves hours of navigation time once you're live.",
+      },
+      {
+        name: "Suger Buyer Service",
+        slug: "suger-buyer-service",
+        why: "The Suger Console is the ISV's operational interface; the Suger Buyer Service is the buyer-facing portal Suger provides for procurement and entitlement management. Understanding both sides of the Suger platform explains how buyers interact with marketplace purchases that ISVs manage through the Console.",
       },
       {
         name: "Integration",
@@ -403,6 +448,16 @@ export const learningPaths = [
         slug: "crm-enrichment",
         why: "The PTB scores and hyperscaler engagement signals in the Suger Console are most useful when your sales team can see them without leaving their CRM. CRM Enrichment pushes all three cloud providers' signals into Salesforce or HubSpot automatically — making account prioritization happen in the tools your team already uses.",
       },
+      {
+        name: "Co-sell Insights — Suger",
+        slug: "co-sell-insights-—-suger",
+        why: "CRM Enrichment pushes hyperscaler signals into your CRM; Co-sell Insights is Suger's AI layer that interprets those signals and recommends next actions for co-sell opportunities. Understanding this feature completes the picture of how Suger turns raw hyperscaler data into actionable co-sell guidance.",
+      },
+      {
+        name: "Suger MCP Server",
+        slug: "suger-mcp-server",
+        why: "Once you understand what Suger does operationally, the MCP Server shows how AI agents can interact with it directly. The Suger MCP Server exposes Suger's API capabilities to AI coding assistants and automation agents — enabling teams to build, query, and manage marketplace workflows without leaving their AI toolchain.",
+      },
     ],
   },
   {
@@ -412,7 +467,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How ISVs connect their backend systems to marketplace billing, entitlement, and provisioning flows — and what integration partners abstract for them.",
-    meta: "7 terms · ~25 min",
+    meta: "9 terms · ~35 min",
     continuesFrom: "suger-platform-quickstart",
     next: "marketplace-metering",
     prereqs: ["suger-platform-quickstart"],
@@ -438,6 +493,11 @@ export const learningPaths = [
         why: "The Catalog API is how ISVs programmatically manage listings and offers on AWS Marketplace. Learn what operations it supports and how integration platforms use it to automate listing management.",
       },
       {
+        name: "AWS Marketplace Agreements API — AWS",
+        slug: "aws-marketplace-agreements-api-—-aws",
+        why: "The Catalog API manages listings; the Agreements API manages the contracts buyers sign. For a complete AWS integration, you need both — the Agreements API is how you programmatically verify entitlement state, pull contract terms, and reconcile agreement records with your CRM or billing system.",
+      },
+      {
         name: "Webhook",
         slug: "webhook",
         why: "Marketplace events — new entitlements, subscription changes, cancellations — are pushed to ISVs via webhook. Learn the event types, how to handle them reliably, and what Suger does to normalize these across hyperscalers.",
@@ -452,6 +512,11 @@ export const learningPaths = [
         slug: "metering-/-usage-reporting",
         why: "Metering closes the integration loop — your product reports usage back through the integration layer to trigger billing. Learn the reporting model, batch vs. real-time approaches, and idempotency requirements.",
       },
+      {
+        name: "Suger MCP Server",
+        slug: "suger-mcp-server",
+        why: "The integration patterns in this path — catalog APIs, webhooks, metering — are increasingly managed through AI agents rather than manual code. The Suger MCP Server is the protocol layer that lets AI assistants call Suger's APIs directly, making it a natural extension of any automated marketplace integration workflow.",
+      },
     ],
   },
   {
@@ -461,7 +526,7 @@ export const learningPaths = [
     level: "advanced",
     description:
       "How usage metering actually works across AWS, Azure, and GCP — from dimension design through API calls to cross-platform differences. For ISVs building or debugging usage-based billing integrations.",
-    meta: "12 terms · ~50 min",
+    meta: "13 terms · ~55 min",
     continuesFrom: "marketplace-integrations",
     next: "marketplace-tax-compliance",
     prereqs: ["marketplace-integrations"],
@@ -480,6 +545,11 @@ export const learningPaths = [
         name: "Usage Record",
         slug: "usage-record",
         why: "Every usage metering report is a usage record: a bundle of dimension, quantity, customer token, and timestamp. Learn the structural rules — specifically idempotency key requirements and the submission deadline — because a rejected or duplicate record means unbilled usage or double charges.",
+      },
+      {
+        name: "UsageRecordGroup — Suger",
+        slug: "usagerecordgroup-—-suger",
+        why: "The Usage Record is the atomic unit the hyperscaler billing API expects; UsageRecordGroup is Suger's abstraction that batches multiple usage records into a single API call across customers and dimensions. Understanding this construct is essential for teams using Suger's metering API — it's what you actually build against, not the raw hyperscaler endpoints.",
       },
       {
         name: "Metered Billing",
@@ -808,7 +878,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The AWS-specific mechanics every ISV needs: how listings, offers, and agreements work on AWS Marketplace, the key programs that unlock co-sell access, and the tools and APIs that run day-to-day operations.",
-    meta: "12 terms · ~45 min",
+    meta: "14 terms · ~55 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -854,6 +924,11 @@ export const learningPaths = [
         why: "When a buyer accepts a private offer on AWS Marketplace, an Agreement is created — the contract record that governs the subscription. Learn what an Agreement contains and how it persists through renewals and amendments.",
       },
       {
+        name: "AWS Marketplace Agreements API — AWS",
+        slug: "aws-marketplace-agreements-api-—-aws",
+        why: "After learning what an Agreement is, learn how to query and manage it programmatically. The Agreements API lets ISVs and integration platforms retrieve agreement details, validate entitlements, and monitor subscription state — the operational glue between marketplace contracts and your own systems.",
+      },
+      {
         name: "Standard Contract (SCMP) — AWS",
         slug: "standard-contract-scmp-—-aws",
         why: "AWS's standardized contract template for marketplace transactions. Learn when to use the SCMP, what it covers, and how ISVs can layer custom EULAs on top of it without starting from scratch.",
@@ -873,6 +948,11 @@ export const learningPaths = [
         slug: "aws-marketplace-catalog-api-—-aws",
         why: "The Catalog API is how ISVs and integration platforms programmatically create and update listings and offers. Learn its capabilities and how integration partners like Suger use it to automate listing management.",
       },
+      {
+        name: "AWS Marketplace Discovery API — AWS",
+        slug: "aws-marketplace-discovery-api-—-aws",
+        why: "The Catalog API manages your own listings; the Discovery API exposes the full AWS Marketplace catalog for programmatic search and browse. Buyers and partner platforms use Discovery to build procurement tooling and catalog integrations — ISVs benefit by understanding how their listings are indexed and surfaced in automated purchase flows.",
+      },
     ],
   },
   {
@@ -882,7 +962,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How Microsoft's commercial marketplace works end-to-end — from listing structures and offer types to MACC eligibility, partner programs, and the APIs that power SaaS integrations.",
-    meta: "10 terms · ~40 min",
+    meta: "14 terms · ~55 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -918,6 +998,21 @@ export const learningPaths = [
         why: "Azure co-sell access is gated by status tiers. Learn the difference between Co-sell Eligible and Co-sell Incentivized, what each unlocks, and how achieving Incentivized status amplifies deal support from Microsoft field teams.",
       },
       {
+        name: "Referral Confidence Score — Azure",
+        slug: "referral-confidence-score-—-azure",
+        why: "When you submit a referral from Partner Center, Microsoft uses the Referral Confidence Score to prioritize engagement from the Azure field team. Understanding this scoring mechanism explains why deal quality signals — not just deal volume — determine how much co-sell support you receive.",
+      },
+      {
+        name: "Microsoft Commerce Incentive (MCI) — Azure",
+        slug: "microsoft-commerce-incentive-mci-—-azure",
+        why: "MCI is the incentive program that motivates Microsoft's field sellers to co-sell your product. Knowing how MCI works — and how your listing's eligibility affects whether Microsoft reps earn incentive on a deal — gives you a direct lever for improving field engagement on your Azure co-sell pipeline.",
+      },
+      {
+        name: "Partner-led Deal — Azure",
+        slug: "partner-led-deal-—-azure",
+        why: "When submitting opportunities in Partner Center, selecting the right deal type determines whether Microsoft sellers are invited in. The Partner-Led Deal type gives ISVs a way to register and close opportunities independently while still building co-sell track record — which contributes to Co-sell Incentivized eligibility.",
+      },
+      {
         name: "Azure Intelligence Signals — Azure",
         slug: "azure-intelligence-signals-—-azure",
         why: "Microsoft's CloudAscent system scores every account for Azure adoption propensity and classifies them into Act Now, Evaluate, Nurture, and Educate clusters. Suger surfaces these as Azure Engagement, Event, and Usage Scores — the signals that tell you which accounts are ready for a Microsoft co-sell push.",
@@ -933,6 +1028,11 @@ export const learningPaths = [
         why: "The SaaS Fulfillment API is how ISVs integrate their SaaS products with Microsoft Marketplace — handling subscription lifecycle events, activation, and plan changes. Learn the required endpoints and what Suger abstracts.",
       },
       {
+        name: "SaaS Auto Activation — Azure",
+        slug: "saas-auto-activation-—-azure",
+        why: "The SaaS Fulfillment API requires ISVs to explicitly activate subscriptions after buyer purchase — but SaaS Auto Activation decouples billing from fulfillment, allowing subscriptions to start billing even before ISV activation is complete. Understanding this behavior is critical to avoid unintended billing gaps or disputes during launch.",
+      },
+      {
         name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
         slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
         why: "MPN membership is the foundation of all Azure partner benefits — co-sell access, Marketplace Rewards, and ISV Success Program eligibility all flow through it. Learn the membership tiers and what each unlocks.",
@@ -946,7 +1046,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The GCP-specific mechanics ISVs need: how GCP Marketplace is structured, how committed use and private offers work, and the partner programs and APIs that govern the GCP co-sell and reseller motions.",
-    meta: "9 terms · ~35 min",
+    meta: "12 terms · ~45 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -965,6 +1065,21 @@ export const learningPaths = [
         name: "Partner Advantage — GCP",
         slug: "partner-advantage-—-gcp",
         why: "Partner Advantage is GCP's partner framework — co-sell access, Build Engagement credits, and funding programs all flow through it. Learn the tiers, engagement models, and what ISVs need to qualify.",
+      },
+      {
+        name: "Google Cloud Partner Innovation Fund — GCP",
+        slug: "google-cloud-partner-innovation-fund-—-gcp",
+        why: "Partner Advantage tiers gate access to GCP funding programs, and the Partner Innovation Fund is one of the most useful — it offsets POC, development, and go-to-market costs. Knowing this fund exists and how to qualify through Partner Advantage is part of operating the GCP partnership effectively.",
+      },
+      {
+        name: "Agentic Earnings Hub — GCP",
+        slug: "agentic-earnings-hub-—-gcp",
+        why: "Partner Advantage is the framework; the Agentic Earnings Hub is where ISVs actually claim AI-specific incentive payouts. If your product is in the generative AI or agents space, the Agentic Earnings Hub is the Partner Center-equivalent tool for managing GCP's AI partner earnings — knowing it exists before you go live prevents missed claims.",
+      },
+      {
+        name: "Google Cloud Partner Agent — GCP",
+        slug: "google-cloud-partner-agent-—-gcp",
+        why: "The Google Cloud Partner Agent is an AI-powered tool inside the partner portal that automates routine operational tasks — certifications, incentive claims, program status updates. Understanding what it can handle versus what requires manual action lets partner teams work more efficiently inside the GCP partner ecosystem.",
       },
       {
         name: "GCP Intelligence Signals — GCP",
@@ -1005,7 +1120,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The cross-platform funding landscape — AWS, Azure, and GCP programs that offset customer acquisition, migration, and proof-of-concept costs. Learn which programs exist, what they cover, and how ISVs and partners qualify.",
-    meta: "10 terms · ~40 min",
+    meta: "11 terms · ~45 min",
     prereqs: ["cosell-fundamentals"],
     steps: [
       {
@@ -1057,6 +1172,11 @@ export const learningPaths = [
         name: "Marketplace Customer Credit Program (MCCP) — GCP",
         slug: "marketplace-customer-credit-program-mccp-—-gcp",
         why: "MCCP is GCP's buyer-side incentive — up to 3% in Google Cloud credits for first-time GCP Marketplace buyers. Learn how ISVs register opportunities in Partner Advantage to activate the credit and how it differs from AWS and Azure funding models.",
+      },
+      {
+        name: "Google Cloud Partner Innovation Fund — GCP",
+        slug: "google-cloud-partner-innovation-fund-—-gcp",
+        why: "MCCP covers buyer-side GCP credits; the Partner Innovation Fund covers the ISV side — providing funding for go-to-market activities, POC builds, and joint solution development through Partner Advantage. Understanding both sides of GCP's incentive stack gives you the full picture of what's available to offset deal and onboarding costs.",
       },
     ],
   },

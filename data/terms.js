@@ -5712,11 +5712,11 @@ export const terms = [
   {
     name: "Private Offer — GCP",
     tags: ["gcp", "offers"],
-    def: "A custom pricing and terms agreement sent to a specific Google Cloud billing account. In GCP, these can be 'Multiple Offers' allowing for separate project-based contracts for the same product ID.",
+    def: "A custom pricing and terms agreement issued to a specific Google Cloud billing account through GCP Marketplace, expanded to general availability with version 2 in April 2026. Version 2 supports three discount types — flat fee, usage-based, and installment-based — and lets buyers download a signed offer including the EULA as a PDF. Multiple concurrent private offers can be issued for the same product to different billing accounts using the Multiple Offers feature, enabling separate project-based contracts with individually negotiated terms.",
     alias:
       "Related: Multiple Offers — GCP, Private Plan — GCP, Producer Portal — GCP",
     source:
-      "https://docs.cloud.google.com/marketplace/docs/partners/integrated-saas",
+      "https://docs.cloud.google.com/marketplace/docs/partners/selling/managing-private-offers",
     difficulty: "intermediate",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -6736,6 +6736,576 @@ export const terms = [
         slug: "gcp-intelligence-signals-—-gcp",
       },
       { name: "Suger Console", slug: "suger-console" },
+    ],
+  },
+  // TD1 2026-05-19 — 16 net-new terms approved
+  {
+    name: "Marketplace Capacity Drawdown (MCD) — Snowflake",
+    tags: ["snowflake", "billing"],
+    def: "Snowflake's committed spend mechanism for Marketplace purchases, generally available February 2026. Enterprises pre-commit to Snowflake Marketplace consumption capacity; purchases of participating listings draw down against that committed capacity rather than incurring incremental charges. MCD is the Snowflake-native equivalent of AWS EDP, Azure MACC, and GCP CUD — it is the primary commercial lever for enterprise Snowflake Marketplace procurement.",
+    alias:
+      "AWS equivalent: Enterprise Discount Program (EDP) — AWS | Azure equivalent: Azure Consumption Commitment (MACC) — Azure | GCP equivalent: Committed Use Discount (CUD) — GCP | Related: Snowflake Marketplace — Snowflake, Cloud Committed Spend (CCS)",
+    source:
+      "https://docs.snowflake.com/en/collaboration/collaboration-listings-about",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Positioning a Snowflake Marketplace listing as MCD-eligible to reach enterprise buyers who want purchases to draw down their committed Snowflake capacity",
+      "Configuring MCD participation for a listing to unlock access to Snowflake enterprise procurement motions",
+      "Comparing Snowflake MCD eligibility against EDP, MACC, and CUD requirements when planning cross-platform committed spend strategy",
+    ],
+    context: [
+      "Snowflake Marketplace",
+      "Snowflake Partner Programs",
+      "Enterprise Procurement",
+      "Cloud Committed Spend",
+    ],
+    related: [
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Committed Use Discount (CUD) — GCP",
+        slug: "committed-use-discount-cud-—-gcp",
+      },
+      {
+        name: "Cloud Committed Spend (CCS)",
+        slug: "cloud-committed-spend-ccs",
+      },
+    ],
+  },
+  {
+    name: "Referral Confidence Score — Azure",
+    tags: ["azure", "cosell"],
+    def: "An ML-generated signal in Microsoft Partner Center that scores the quality and likelihood of progression for each co-sell referral. Launched May 2025, the score is calculated from deal attributes — customer profile, solution fit, engagement history, and pipeline velocity — and surfaces directly on the referral detail view. Higher-scoring referrals are prioritized by Microsoft field teams for engagement, making the score a practical filter for where to concentrate co-sell effort.",
+    alias:
+      "AWS equivalent: Co-sell Recommendation Score — AWS | GCP equivalent: GCP Intelligence Signals — GCP | Related: Azure Intelligence Signals — Azure, Referral, Inbound Referral",
+    source: "https://learn.microsoft.com/en-us/partner-center/co-sell-overview",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Filtering co-sell referrals in Partner Center by Referral Confidence Score to prioritize deals most likely to receive active Microsoft field engagement",
+      "Using confidence score trends to diagnose deal quality issues — low scores may indicate incomplete solution profiles or poor customer fit",
+      "Comparing Referral Confidence Score against AWS Co-sell Recommendation Score to align cross-cloud co-sell prioritization in a unified pipeline",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Co-sell",
+      "Co-sell Pipeline Management",
+      "Referral Management",
+    ],
+    related: [
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "Co-sell Recommendation Score — AWS",
+        slug: "co-sell-recommendation-score-—-aws",
+      },
+      {
+        name: "Azure Intelligence Signals — Azure",
+        slug: "azure-intelligence-signals-—-azure",
+      },
+      { name: "Referral", slug: "referral" },
+      { name: "Inbound Referral", slug: "inbound-referral" },
+    ],
+  },
+  {
+    name: "Microsoft Commerce Incentive (MCI) — Azure",
+    tags: ["azure", "cosell"],
+    def: "Microsoft's consolidated partner incentive program that replaced multiple legacy programs (OCAS, OSA Sell, etc.) starting October 2022. MCI pays Azure partners and co-sell ISVs performance-based rewards — including marketplace transact co-sell bonuses — based on monthly ACR (Azure Consumed Revenue) generated through eligible sales motions. For co-sell ISVs, MCI is the incentive mechanism that motivates Microsoft field teams to engage on deals where an ISV's solution is Co-sell Incentivized, making it the Azure structural equivalent of AWS's SaaS Co-sell Benefit (SCB).",
+    alias:
+      "AWS equivalent: SaaS Co-sell Benefit (SCB) — AWS | Related: Co-sell Eligible / Incentivized — Azure, Marketplace Rewards — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/incentives/incentives-get-started-intro",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Understanding why achieving Co-sell Incentivized status triggers active Microsoft field engagement — MCI is the financial mechanism that compensates Microsoft sellers for co-selling your solution",
+      "Tracking MCI payments in Partner Center to measure the commercial value of co-sell activity and correlate deal support to program participation",
+      "Comparing MCI to AWS SCB when explaining to executives why ISV co-sell programs are strategically important to the hyperscaler, not just to the ISV",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Co-sell",
+      "Partner Incentive Programs",
+      "Microsoft AI Cloud Partner Program (MPN)",
+    ],
+    related: [
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "SaaS Co-sell Benefit (SCB) — AWS",
+        slug: "saas-co-sell-benefit-scb-—-aws",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Google Cloud Partner Innovation Fund — GCP",
+    tags: ["gcp", "cosell"],
+    def: "A $750M Google Cloud funding commitment announced April 2026 to accelerate partner-led AI and marketplace innovation. The fund provides co-investment for qualified partners working on AI solutions, marketplace listings, and customer adoption programs, administered through Partner Advantage. It is Google Cloud's largest formal partner funding commitment and directly parallels AWS's partner funding cluster (MAP, POC Funding, PIF) as the primary mechanism for GCP to incentivize partner investment in the ecosystem.",
+    alias:
+      "AWS equivalents: Migration Acceleration Program (MAP) — AWS, Proof of Concept (POC) Funding — AWS, Partner Initiative Funding (PIF) — AWS | Related: Partner Advantage — GCP, Build Engagement Model — GCP, GCP Marketplace — GCP",
+    source:
+      "https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "GCP Sales", "Partner Managers"],
+    useCases: [
+      "Applying through Partner Advantage for co-investment to build or accelerate an AI marketplace listing on GCP",
+      "Positioning a GCP co-sell motion to qualify for fund co-investment, similar to how ISVs apply for AWS MAP or POC funding",
+      "Comparing GCP partner funding availability to AWS and Azure when making a cross-cloud investment decision",
+    ],
+    context: [
+      "Partner Advantage — GCP",
+      "GCP Marketplace",
+      "Partner Funding Programs",
+      "AI Partner Programs",
+    ],
+    related: [
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Build Engagement Model — GCP",
+        slug: "build-engagement-model-—-gcp",
+      },
+      {
+        name: "Migration Acceleration Program (MAP) — AWS",
+        slug: "migration-acceleration-program-map-—-aws",
+      },
+      {
+        name: "Proof of Concept (POC) Funding — AWS",
+        slug: "proof-of-concept-poc-funding-—-aws",
+      },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
+  },
+  {
+    name: "AWS Marketplace Agreements API — AWS",
+    tags: ["aws", "operations"],
+    def: "A programmatic API for querying and managing the full lifecycle of AWS Marketplace purchase agreements, available to both buyers and sellers. Launched May 2026, key operations include SearchAgreements, DescribeAgreement, GetAgreementTerms, GetAgreementEntitlements, ListAgreementCharges, UpdatePurchaseOrders, and SendAgreementPaymentRequest. Before this API, agreement status, terms, entitlements, and payment history could only be accessed through the AWS Marketplace Management Portal UI; the API makes these operations auditable and automatable at scale, enabling integration with procurement systems, ERP tools, and billing pipelines.",
+    alias:
+      "Related: Agreements and Renewals Dashboard — AWS, Agreement — AWS, AWS Marketplace Catalog API — AWS, AWS Marketplace Discovery API — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Operations_AWS_Marketplace_Agreement_Service.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Suger Users"],
+    useCases: [
+      "Query all active agreements by buyer account or product type to build real-time subscription dashboards without using the Management Portal",
+      "Automate purchase order number updates across active agreements via UpdatePurchaseOrders to sync with internal ERP systems",
+      "Retrieve agreement entitlements and invoice line items programmatically for revenue reconciliation and compliance audits",
+    ],
+    context: [
+      "AWS Marketplace Management Portal",
+      "AWS Marketplace",
+      "AWS SDK / AWS CLI",
+      "Internal Procurement Portals",
+    ],
+    related: [
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
+      {
+        name: "AWS Marketplace Catalog API — AWS",
+        slug: "aws-marketplace-catalog-api-—-aws",
+      },
+      {
+        name: "Agreements and Renewals Dashboard — AWS",
+        slug: "agreements-and-renewals-dashboard-—-aws",
+      },
+      {
+        name: "AWS Marketplace Discovery API — AWS",
+        slug: "aws-marketplace-discovery-api-—-aws",
+      },
+    ],
+  },
+  {
+    name: "AWS Marketplace Discovery API — AWS",
+    tags: ["aws", "operations"],
+    def: "A programmatic API that gives buyers, sellers, and channel partners access to AWS Marketplace product listings, pricing, offer terms, and purchase options without navigating the console. Launched April 2026 across three regions, it covers SaaS, AMI, containers, AI agents, and ML models. Key capabilities include retrieving public and private offer pricing, offer terms, and listing details, enabling sellers to embed live catalog data in external tools and buyers to build procurement workflows that query purchase options before initiating an agreement.",
+    alias:
+      "Related: AWS Marketplace Catalog API — AWS, AWS Marketplace Agreements API — AWS, Listing, Private Offer",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-marketplace-discovery-api/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: [
+      "ISVs / Sellers",
+      "Enterprise Buyers",
+      "Channel Partners",
+      "Suger Users",
+    ],
+    useCases: [
+      "Embed live AWS Marketplace catalog data including current pricing and offer terms into a buyer's internal procurement portal",
+      "Surface a seller's product listings and private offer details programmatically on the seller's own website without redirecting to the AWS console",
+      "Build automated procurement workflows that query purchase options and offer terms before initiating a contract acceptance flow",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Marketplace Management Portal",
+      "AWS SDK / AWS CLI",
+      "Buyer Procurement Portals",
+    ],
+    related: [
+      {
+        name: "AWS Marketplace Catalog API — AWS",
+        slug: "aws-marketplace-catalog-api-—-aws",
+      },
+      {
+        name: "AWS Marketplace Agreements API — AWS",
+        slug: "aws-marketplace-agreements-api-—-aws",
+      },
+      { name: "Listing", slug: "listing" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
+  },
+  {
+    name: "Variable Payments — AWS",
+    tags: ["aws", "billing"],
+    def: "A contract pricing option for AWS Marketplace Professional Services private offers that lets sellers bill buyers incrementally as work is delivered, rather than requiring upfront payment or pre-scheduled installments. The seller sets a total contract cap at offer creation; once the buyer accepts, the seller submits individual payment requests specifying an amount and optional deliverables description — each request must not exceed the remaining contract balance. Unlike Flexible Payment Schedules, which define fixed amounts and dates at offer creation, variable payments are seller-initiated and tied to actual deliverables with no predetermined schedule. Available exclusively for Professional Services products.",
+    alias:
+      "Related: Flexible Payment Schedule / Installment Plan, Private Offer, AWS Marketplace Agreements API — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/proserv-variable-payments.html",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Bill a buyer in milestone-based increments for a multi-phase implementation engagement without locking in payment amounts at offer creation",
+      "Submit a payment request tied to a specific deliverable and receive buyer approval before the charge appears on their invoice",
+      "Structure a time-and-materials professional services contract through AWS Marketplace with a capped total and flexible draw-down payments",
+    ],
+    context: [
+      "AWS Marketplace Management Portal",
+      "Professional Services Offers",
+      "Private Offer Flows",
+    ],
+    related: [
+      {
+        name: "Flexible Payment Schedule / Installment Plan",
+        slug: "flexible-payment-schedule-/-installment-plan",
+      },
+      { name: "Private Offer", slug: "private-offer" },
+      {
+        name: "AWS Marketplace Agreements API — AWS",
+        slug: "aws-marketplace-agreements-api-—-aws",
+      },
+    ],
+  },
+  {
+    name: "SaaS Auto Activation — Azure",
+    tags: ["azure", "operations"],
+    def: "A plan-level setting in Microsoft Marketplace that decouples SaaS billing from ISV fulfillment actions, introduced May 2026. When enabled, Microsoft activates the customer's subscription and begins billing immediately upon purchase completion, then sends the ISV a Subscribe webhook event as the trigger to launch onboarding — eliminating the need for the ISV to call the Activate API manually. Previously, billing depended on the ISV issuing an activation API call after the buyer completed the landing page flow. All new SaaS plans default to auto activation ON; existing plans retain the manual activation behavior unless explicitly updated.",
+    alias:
+      "Related: SaaS Fulfillment API — Azure, Connection Webhook — Azure, Provisioning, Landing Page / Signup URL",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/pc-saas-fulfillment-webhook",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Launch customer onboarding workflows on receipt of the Subscribe webhook without waiting to call the Activate API manually",
+      "Remove the activation API call dependency from Azure SaaS provisioning flows where governance doesn't require pre-billing confirmation",
+      "Maintain manual activation for enterprise SaaS offers where provisioning must complete and be verified before billing begins",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Marketplace",
+      "SaaS Fulfillment API — Azure",
+      "Azure Marketplace Technical Configuration",
+    ],
+    related: [
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+      {
+        name: "Connection Webhook — Azure",
+        slug: "connection-webhook-—-azure",
+      },
+      { name: "Provisioning", slug: "provisioning" },
+      { name: "Landing Page / Signup URL", slug: "landing-page-/-signup-url" },
+    ],
+  },
+  {
+    name: "Partner-led Deal — Azure",
+    tags: ["azure", "cosell"],
+    def: "A co-sell deal type in Microsoft Partner Center where the ISV/partner works independently but grants Microsoft sellers read-only pipeline visibility, created by indicating 'no help required' while allowing Microsoft to view the deal. It is distinct from a co-sell deal (where active Microsoft participation is requested) and a private deal (where Microsoft has no visibility). Partner-led deals are eligible for Azure IP co-sell deal registration — and therefore co-sell incentives and MACC contribution — without requiring Microsoft seller participation, provided the deal includes an Azure IP co-sell eligible solution, is marked won, exceeds USD 25,000, and the customer account is Microsoft-managed.",
+    alias:
+      "Related: Co-sell Eligible / Incentivized — Azure, Referral, Outbound Referral, Azure Consumption Commitment (MACC) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Register a won deal for Azure IP co-sell incentives and MACC contribution without involving a Microsoft seller in the sales cycle",
+      "Share pipeline visibility with Microsoft for forecasting while retaining full deal ownership and control",
+      "Upgrade a partner-led deal to active co-sell mid-cycle by inviting a Microsoft seller before the deal reaches a terminal state",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Co-sell",
+      "Co-sell Opportunities Workspace",
+    ],
+    related: [
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      { name: "Referral", slug: "referral" },
+      { name: "Outbound Referral", slug: "outbound-referral" },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Business Applications Co-sell Incentive — Azure",
+    tags: ["azure", "cosell"],
+    def: "A co-sell incentive track in Microsoft Partner Center that applies exclusively to ISV solutions built on Dynamics 365 apps on Dataverse and Power Apps, and Dynamics 365 Operations Apps — structurally separate from Azure IP Co-sell Eligible status. Two tiers exist (Standard and Premium), both requiring active ISV Success program enrollment plus standard co-sell-ready prerequisites. Unlike Azure IP co-sell, this track does not require Azure Consumed Revenue thresholds or a reference architecture diagram; it is governed by offer type (Dynamics 365 and Power Platform only) and ISV Success enrollment. Microsoft sellers handling Dynamics 365 customer engagements are incentivized under MCI to prioritize solutions with this status.",
+    alias:
+      "Related: Co-sell Eligible / Incentivized — Azure, ISV Success Program — Azure, Microsoft Commerce Incentive (MCI) — Azure, AppSource — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/co-sell-requirements",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Qualify a Dynamics 365 or Power Apps ISV solution for Microsoft seller co-sell prioritization through the ISV Success enrollment pathway",
+      "Distinguish Biz Apps co-sell requirements from Azure IP co-sell requirements when building a Microsoft Partner Center eligibility roadmap",
+      "Track Standard vs. Premium co-sell incentive tier status in Partner Center for Dynamics 365 and Power Platform products",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "AppSource",
+      "Dynamics 365 Ecosystem",
+      "ISV Success Program",
+    ],
+    related: [
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
+      {
+        name: "Microsoft Commerce Incentive (MCI) — Azure",
+        slug: "microsoft-commerce-incentive-mci-—-azure",
+      },
+      { name: "AppSource — Azure", slug: "appsource-—-azure" },
+    ],
+  },
+  {
+    name: "Agentic Earnings Hub — GCP",
+    tags: ["gcp", "cosell"],
+    def: "An AI-powered incentive management tool in the Google Cloud Partner Network Hub, announced at Google Cloud Next '26 (April 2026), that automates the operational side of partner incentive management. It auto-drafts statements of work, monitors consumption milestones, and auto-generates incentive claim requests. An embedded Earnings Potential Modeler maps all available GCP incentives down to individual client engagements, providing partners with contextual recommendations for maximizing earnings.",
+    alias:
+      "Related: Partner Advantage — GCP, Google Cloud Partner Agent — GCP, Build Engagement Model — GCP, Google Cloud Partner Innovation Fund — GCP",
+    source:
+      "https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "GCP Sales", "Partner Managers"],
+    useCases: [
+      "Auto-generate a GCP incentive claim request when a consumption milestone is reached without manual tracking",
+      "Use the Earnings Potential Modeler to identify unmapped GCP incentives at the individual client level",
+      "Auto-draft a statement of work through the Partner Network Hub to accelerate partner engagement",
+    ],
+    context: [
+      "Google Cloud Partner Network Hub",
+      "Partner Advantage — GCP",
+      "Partner Incentives",
+    ],
+    related: [
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Agent — GCP",
+        slug: "google-cloud-partner-agent-—-gcp",
+      },
+      {
+        name: "Build Engagement Model — GCP",
+        slug: "build-engagement-model-—-gcp",
+      },
+    ],
+  },
+  {
+    name: "Google Cloud Partner Agent — GCP",
+    tags: ["gcp", "operations"],
+    def: "An AI agent integrated into the Google Cloud Partner Network Hub, announced at Google Cloud Next '26 (April 2026), that guides partners through program workflows through natural language. It actively directs partners to next steps, summarizes complex program documentation and assets, and provides real-time coaching for completing registrations, statements of work, and co-sell workflows — all without leaving the Partner Hub. The GCP Partner Agent parallels AWS Partner Central Agents — AWS as Google Cloud's equivalent AI-native layer within its partner operations platform.",
+    alias:
+      "AWS equivalent: AWS Partner Central Agents — AWS | Related: Partner Advantage — GCP, Agentic Earnings Hub — GCP, Build Engagement Model — GCP",
+    source:
+      "https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "GCP Sales", "Partner Managers"],
+    useCases: [
+      "Get real-time coaching on completing a GCP partner registration or statement of work without navigating to separate documentation",
+      "Summarize available GCP partner program incentives and next steps from within the Partner Network Hub",
+      "Automate routine partner workflow tasks through natural language instructions in the Partner Hub",
+    ],
+    context: [
+      "Google Cloud Partner Network Hub",
+      "Partner Advantage — GCP",
+      "GCP Co-sell Workflow",
+    ],
+    related: [
+      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Agentic Earnings Hub — GCP",
+        slug: "agentic-earnings-hub-—-gcp",
+      },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Suger MCP Server",
+    tags: ["suger", "integrations"],
+    def: "A production-available server built on the Model Context Protocol (MCP) standard that lets AI assistants and agents interact with Suger's marketplace management platform through natural language. It exposes 120+ tools spanning the full Suger API surface across eight categories: Products & Offers, Buyers & Contacts, Entitlements, Metering & Usage, Billing & Revenue, Support, Operations & Auditing, and Co-Sell & Search. An AI client connected to the Suger MCP Server can create offers, manage entitlements, report usage, pull revenue reports, and manage buyer relationships without navigating the Suger Console directly.",
+    alias:
+      "Related: Suger API Client, Suger Console, Integration, AWS Partner Central Agents — AWS",
+    source: "https://doc.suger.io/mcp/overview/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Query live revenue and entitlement data through an AI assistant chat interface without switching to the Suger Console",
+      "Create or update marketplace offers via natural language instructions using an MCP-compatible AI client",
+      "Automate usage reporting and billing reconciliation through an AI agent connected to the Suger MCP Server",
+    ],
+    context: [
+      "Suger API",
+      "Suger Console",
+      "MCP-compatible AI Clients",
+      "Marketplace Operations",
+    ],
+    related: [
+      { name: "Suger API Client", slug: "suger-api-client" },
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Integration", slug: "integration" },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Co-Sell Insights — Suger",
+    tags: ["suger", "cosell"],
+    def: "An AI-powered co-sell intelligence feature within Suger that evaluates AWS Partner Central opportunity data using pre-defined triggers and surfaces actionable guidance through three card types: Warning Cards (deterministic Suger-computed alerts, such as opportunities unchanged for 30+ days), Main Insight Cards (data pulled from AWS MCP covering opportunity health, engagement scores, and POC/MDF funding eligibility), and AI Trigger Cards (context-specific recommendations for deal progression, rejection analysis, and funding requests). Co-Sell Insights is AWS-exclusive, requires AWS Partner Central 3.0 migration, and surfaces in the Suger Console co-sell tab and Suger Salesforce App.",
+    alias:
+      "Related: Suger Analytics, Propensity to Buy (PTB) Score, CRM Enrichment, APN Customer Engagements (ACE) — AWS, AWS Partner Central Agents — AWS",
+    source: "https://doc.suger.io/cosell/co-sell-insights/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Identify stalled AWS co-sell opportunities before they expire or are rejected by monitoring Warning Card alerts",
+      "Assess POC funding or MDF eligibility on active AWS co-sell deals using Main Insight Card data from AWS MCP",
+      "Act on AI-recommended next steps to advance an AWS opportunity through the partner pipeline without leaving the Suger Console",
+    ],
+    context: [
+      "Suger Console",
+      "AWS Partner Central 3.0",
+      "Salesforce Integration",
+      "Co-sell Pipeline",
+    ],
+    related: [
+      { name: "Suger Analytics", slug: "suger-analytics" },
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+      },
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+    ],
+  },
+  {
+    name: "UsageRecordGroup — Suger",
+    tags: ["suger", "billing"],
+    def: "Suger's unified data structure for submitting metered usage to cloud marketplaces in a single normalized format. A UsageRecordGroup contains an entitlement ID, a map of dimension keys to quantities, an optional ID (max 36 characters, auto-generated if omitted), and optional UsageAllocation sub-objects for AWS cost-allocation tagging. Sellers submit records via the Suger Metering API or CSV upload through the Suger Console; Suger validates and forwards them to each cloud's native metering API — AWS BatchMeterUsage, Azure Metering Service, or GCP Service Control — abstracting the platform-specific differences into one consistent interface.",
+    alias:
+      "Related: Usage Record, Usage Metering, Metering Dimension, BatchMeterUsage API — AWS, Marketplace Metering Service API — Azure, Service Control API — GCP",
+    source: "https://doc.suger.io/get-started/metering/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Report per-dimension SaaS usage to AWS, Azure, and GCP marketplaces simultaneously using a single normalized API call",
+      "Upload bulk usage records via CSV for a billing period through the Suger Console without calling hyperscaler metering APIs directly",
+      "Convert internal usage units to marketplace-standard dimensions using Suger's dimension conversion layer before submitting a UsageRecordGroup",
+    ],
+    context: [
+      "Suger Metering API",
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
+    related: [
+      { name: "Usage Record", slug: "usage-record" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      { name: "BatchMeterUsage API — AWS", slug: "batchmeterusage-api-—-aws" },
+    ],
+  },
+  {
+    name: "Suger Buyer Service",
+    tags: ["suger"],
+    def: "A dedicated procurement management portal within Suger for enterprise buyers to manage the AWS Marketplace purchasing lifecycle — separate from the ISV-facing Suger Console. It covers five stages: creating purchase requests, routing them through internal review and approval workflows, receiving and accepting vendor private offers, managing active entitlements post-purchase, and tracking invoices and payments. Currently scoped to AWS Marketplace.",
+    alias:
+      "Related: Suger Console, Entitlement, Buyer, Buyer Wallet, Private Offer",
+    source: "https://doc.suger.io/as-buyer/buyer-journey/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["Enterprise Buyers", "Suger Users"],
+    useCases: [
+      "Run an internal approval workflow before accepting a vendor's AWS Marketplace private offer",
+      "Centralize entitlement management and invoice tracking across AWS marketplace purchases in one portal",
+      "Provide procurement teams visibility into cloud marketplace spend without granting access to the ISV-facing Suger Console",
+    ],
+    context: [
+      "Suger Platform",
+      "AWS Marketplace",
+      "Enterprise Procurement",
+      "Private Offer Flows",
+    ],
+    related: [
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Buyer", slug: "buyer" },
+      { name: "Private Offer", slug: "private-offer" },
     ],
   },
 ];

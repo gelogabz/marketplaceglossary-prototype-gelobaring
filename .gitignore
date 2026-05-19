@@ -5,4 +5,5 @@ data/terms.csv
 sample-*.html
 possible-*.png
 temp/
+reports/
 .claude
