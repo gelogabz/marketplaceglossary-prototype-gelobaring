@@ -446,7 +446,7 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
-    meta: "11 terms · ~40 min",
+    meta: "12 terms · ~45 min",
     continuesFrom: "channel-and-partner-motions",
     next: "marketplace-integrations",
     steps: [
@@ -489,6 +489,11 @@ export const learningPaths = [
         name: "Provisioning",
         slug: "provisioning",
         why: "After an entitlement is created, Suger helps trigger buyer provisioning. Learn how Suger's provisioning webhooks and callbacks work and what your product backend needs to handle.",
+      },
+      {
+        name: "Offer Set — Suger",
+        slug: "offer-set-—-suger",
+        why: "For deals that involve multiple products, Suger supports AWS Offer Sets — bundling multiple private offers into one buyer transaction. Learn how to create and manage Offer Sets through the Suger console or API so multi-product deals close in a single step.",
       },
       {
         name: "CRM Enrichment",
@@ -925,7 +930,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The AWS-specific mechanics every ISV needs: how listings, offers, and agreements work on AWS Marketplace, the key programs that unlock co-sell access, and the tools and APIs that run day-to-day operations.",
-    meta: "14 terms · ~55 min",
+    meta: "17 terms · ~65 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -979,6 +984,21 @@ export const learningPaths = [
         name: "Standard Contract (SCMP) — AWS",
         slug: "standard-contract-scmp-—-aws",
         why: "AWS's standardized contract template for marketplace transactions. Learn when to use the SCMP, what it covers, and how ISVs can layer custom EULAs on top of it without starting from scratch.",
+      },
+      {
+        name: "Multi-Product Solution — AWS",
+        slug: "multi-product-solution-—-aws",
+        why: "AWS's framework for bundling multiple products into one offering, built on two capabilities: Solution Listings for discovery and Offer Sets for transactions. Learn what each does before going deeper on either — they're distinct tools that serve different stages of the buyer journey.",
+      },
+      {
+        name: "Solution Listing — AWS",
+        slug: "solution-listing-—-aws",
+        why: "The discovery side of a Multi-Product Solution: a curated AWS Marketplace page that showcases how your products work together without requiring a new transactional SKU. Learn when to use one and how it routes buyers toward your individual listings or Offer Set.",
+      },
+      {
+        name: "Offer Set — AWS",
+        slug: "offer-set-—-aws",
+        why: "The transactional side of a Multi-Product Solution: groups multiple private offers into a single buyer acceptance event. Learn how Offer Sets simplify procurement for multi-component deals and when they're the right choice over separate private offers.",
       },
       {
         name: "Subscription — AWS",

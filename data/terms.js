@@ -1628,6 +1628,61 @@ export const terms = [
     ],
   },
   {
+    name: "Offer Set — AWS",
+    tags: ["aws", "offers"],
+    def: "An AWS Marketplace feature that groups multiple private offers into a single buyer transaction, part of the Multi-Product Solutions framework. Buyers accept the entire bundle in one step rather than accepting each offer individually. Each product retains its own listing and pricing, but purchase is coordinated as one event — reducing friction in multi-component enterprise deals. No direct Azure or GCP equivalent exists at this time.",
+    alias:
+      "Related: Multi-Product Solution — AWS | Related: Solution Listing — AWS | Related: Private Offer | Suger equivalent: Offer Set — Suger",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/multi-product-solutions.html",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Bundling a core SaaS product with a professional services offer so buyers complete one transaction instead of multiple separate acceptances",
+      "Packaging complementary add-on products alongside a base subscription for simplified enterprise deals",
+      "Reducing buyer friction in multi-product transactions by coordinating acceptance of multiple private offers into a single step",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Marketplace Management Portal",
+      "Multi-Product Solutions",
+    ],
+    related: [
+      {
+        name: "Multi-Product Solution — AWS",
+        slug: "multi-product-solution-—-aws",
+      },
+      { name: "Solution Listing — AWS", slug: "solution-listing-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Offer Set — Suger", slug: "offer-set-—-suger" },
+    ],
+  },
+  {
+    name: "Offer Set — Suger",
+    tags: ["suger", "aws", "offers"],
+    def: "Suger's support for creating and managing AWS Marketplace Offer Sets through the Suger platform. Enables ISVs to bundle multiple private offers into a single buyer transaction programmatically, mirroring the AWS Offer Set workflow. Managed via the Suger console or API alongside other private offer operations, eliminating the need to coordinate directly in the AWS Marketplace Management Portal.",
+    alias:
+      "AWS equivalent: Offer Set — AWS | Related: Multi-Product Solution — AWS | Related: Private Offer",
+    source: "https://doc.suger.io/get-started/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Creating an AWS Offer Set through the Suger console to bundle multiple private offers for a single buyer transaction",
+      "Programmatically managing offer set lifecycle (create, update, cancel) via the Suger API without navigating the AWS Marketplace Management Portal",
+    ],
+    context: ["Suger Console", "Suger API", "AWS Marketplace"],
+    related: [
+      { name: "Offer Set — AWS", slug: "offer-set-—-aws" },
+      {
+        name: "Multi-Product Solution — AWS",
+        slug: "multi-product-solution-—-aws",
+      },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
+  },
+  {
     name: "Organization",
     tags: ["suger"],
     def: "The top-level account in Suger representing your company. All Products, Offers, Entitlements, and Buyers are scoped to your Organization.",
@@ -2316,6 +2371,35 @@ export const terms = [
         name: "Snowflake Data Appreciation (SDA) — Snowflake",
         slug: "snowflake-data-appreciation-sda-—-snowflake",
       },
+      { name: "Listing", slug: "listing" },
+    ],
+  },
+  {
+    name: "Solution Listing — AWS",
+    tags: ["aws", "offers"],
+    def: "An AWS Marketplace discovery page that showcases how multiple products work together to solve a specific customer problem, part of the Multi-Product Solutions framework. Solution Listings are not independently transactable — they serve as a curated landing page that links buyers to the individual products or Offer Sets within the solution. Enables sellers to present a complete, integrated offering without creating a new transactional SKU.",
+    alias:
+      "Related: Multi-Product Solution — AWS | Related: Offer Set — AWS | Related: Listing",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/multi-product-solutions.html",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating a unified discovery page for a platform solution that spans multiple AWS Marketplace products",
+      "Helping enterprise buyers find and evaluate a complete multi-component solution without searching for each product separately",
+    ],
+    context: [
+      "AWS Marketplace",
+      "Multi-Product Solutions",
+      "Product Discovery",
+    ],
+    related: [
+      {
+        name: "Multi-Product Solution — AWS",
+        slug: "multi-product-solution-—-aws",
+      },
+      { name: "Offer Set — AWS", slug: "offer-set-—-aws" },
       { name: "Listing", slug: "listing" },
     ],
   },
@@ -4164,24 +4248,30 @@ export const terms = [
   },
   {
     name: "Multi-Product Solution — AWS",
-    tags: ["aws"],
-    def: "A bundled listing type launched on AWS Marketplace at re:Invent 2025 that lets partners package multiple products and services from multiple providers into a single purchasable solution. One seller of record, one procurement flow, with transparent pricing per component.",
+    tags: ["aws", "offers"],
+    def: "An AWS Marketplace framework that lets sellers combine multiple products into a unified offering through two complementary capabilities: Solution Listings (discovery pages showing how products work together) and Offer Sets (groups of private offers processed as a single buyer transaction). Sellers can use either or both. Simplifies both product discovery and procurement for buyers purchasing multi-component solutions.",
     alias:
-      "Related: Listing, Private Offer, Seller of Record, Channel Partner (CP)",
+      "Related: Offer Set — AWS | Related: Solution Listing — AWS | Related: Private Offer | Related: Seller of Record",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/multi-product-solutions.html",
     difficulty: "advanced",
-    category: "procurement",
+    category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Enterprise Buyers"],
     useCases: [
-      "Bundling multiple products from multiple providers into a single purchasable AWS Marketplace solution with one seller of record and one procurement flow",
-      "Participating as a component provider in a Multi-Product Solution where a channel partner acts as the seller of record for the bundle",
+      "Packaging a platform product alongside complementary add-ons into a single discoverable offering on AWS Marketplace",
+      "Simplifying enterprise procurement by combining multiple private offers into one buyer transaction through an Offer Set",
+      "Participating as a component provider in a multi-vendor solution where a channel partner acts as seller of record",
     ],
-    context: ["AWS Marketplace", "Bundled Solutions", "Channel Programs"],
+    context: [
+      "AWS Marketplace",
+      "AWS Marketplace Management Portal",
+      "Multi-Product Solutions",
+    ],
     related: [
-      { name: "Listing", slug: "listing" },
+      { name: "Offer Set — AWS", slug: "offer-set-—-aws" },
+      { name: "Solution Listing — AWS", slug: "solution-listing-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
       { name: "Seller of Record", slug: "seller-of-record" },
-      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
     ],
   },
   {
