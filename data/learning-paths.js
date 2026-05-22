@@ -266,6 +266,21 @@ export const learningPaths = [
         why: "MCI covers the broad Azure co-sell incentive framework; the Business Applications Co-sell Incentive is a specialized track for ISVs whose products integrate with Dynamics 365 or Power Platform. If your solution touches Microsoft's business apps ecosystem, this incentive tier significantly raises the financial motivation for Microsoft field teams to co-sell alongside you.",
       },
       {
+        name: "Azure Consumed Revenue (ACR) — Azure",
+        slug: "azure-consumed-revenue-acr-—-azure",
+        why: "ACR is the core metric Microsoft uses to measure partner-driven Azure impact. Understanding how ACR is defined, tracked, and attributed is the foundation for PRACR reporting and co-sell incentive eligibility on the Azure platform.",
+      },
+      {
+        name: "Deal Registration — Azure",
+        slug: "deal-registration-—-azure",
+        why: "Before PRACR reporting can begin, each customer deal must have an approved deal registration in Partner Center. Deal registration establishes partner-of-record status and is the prerequisite that unlocks co-sell incentive eligibility and monthly ACR reporting rights.",
+      },
+      {
+        name: "Partner Reported Azure Consumed Revenue (PRACR) — Azure",
+        slug: "partner-reported-azure-consumed-revenue-pracr-—-azure",
+        why: "PRACR is Azure's mechanism for ISVs to self-report the customer Azure consumption their SaaS solution drives, directly tying co-sell support level to real cloud impact. It's the Azure equivalent of demonstrating marketplace traction — but measured in downstream infrastructure spend rather than transactions.",
+      },
+      {
         name: "Partner Advantage — GCP",
         slug: "partner-advantage-—-gcp",
         why: "GCP's co-sell program is structured differently from AWS and Azure. Partner Advantage is the framework that governs how ISVs qualify for and access GCP field co-sell support.",
