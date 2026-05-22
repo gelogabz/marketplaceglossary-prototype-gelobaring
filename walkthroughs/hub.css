@@ -1,0 +1,244 @@
+.wt-page {
+    margin-top: var(--topnav-h);
+    min-height: calc(100vh - var(--topnav-h));
+    background: var(--bg);
+}
+
+.wt-hero {
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-100);
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.wt-hero-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange-text);
+    margin-bottom: 10px;
+}
+
+.wt-hero-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+}
+
+.wt-hero-sub {
+    font-size: 15px;
+    color: var(--gray-500);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+/* ---- WIP notice ---- */
+
+.wt-wip-notice {
+    display: inline-block;
+    font-size: 12px;
+    color: #8a5000;
+    background: #fffbeb;
+    border: 1px solid #f6c342;
+    border-radius: 6px;
+    padding: 6px 14px;
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
+.wt-body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+}
+
+/* ---- Category sections ---- */
+
+.wt-category-section {
+    margin-bottom: 3rem;
+}
+
+.wt-category-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.wt-category-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.02em;
+}
+
+.wt-category-desc {
+    font-size: 13px;
+    color: var(--gray-400);
+}
+
+/* ---- Walkthrough grid ---- */
+
+.wt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+    gap: 16px;
+}
+
+/* ---- Walkthrough card ---- */
+
+.wt-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    display: block;
+    transition:
+        border-color 0.12s,
+        box-shadow 0.12s;
+}
+
+.wt-card:hover {
+    border-color: var(--gray-200);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.wt-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.wt-card-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.02em;
+}
+
+/* ---- Category badges ---- */
+
+.wt-cat-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-transform: capitalize;
+}
+
+.cat-setup {
+    background: #e8f4fd;
+    color: #1a6fa8;
+}
+.cat-cosell {
+    background: #fff3e0;
+    color: #bf5600;
+}
+.cat-offers {
+    background: #e3f8f1;
+    color: #088a60;
+}
+.cat-integration {
+    background: #ede9ff;
+    color: #5020cc;
+}
+.cat-onboarding {
+    background: #fff8e1;
+    color: #8a6000;
+}
+.cat-operations {
+    background: #fce4ec;
+    color: #c62828;
+}
+
+/* ---- Status badges ---- */
+
+.wt-status-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.status-for-review {
+    background: #fffbeb;
+    color: #8a6000;
+    border: 1px solid #f6c342;
+}
+.status-not-started {
+    background: var(--bg);
+    color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+}
+.status-complete {
+    background: #e3f8f1;
+    color: #088a60;
+    border: 1px solid #b3f0db;
+}
+.status-in-progress {
+    background: #e8f4fd;
+    color: #1a6fa8;
+    border: 1px solid #b3d9f7;
+}
+
+.wt-card-desc {
+    font-size: 13px;
+    color: var(--gray-700);
+    line-height: 1.65;
+    margin-bottom: 10px;
+}
+
+.wt-card-meta {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-bottom: 14px;
+}
+
+.wt-start-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--orange-text);
+}
+
+/* ---- Stub / not-started state ---- */
+
+.wt-card--stub {
+    opacity: 0.75;
+}
+
+.wt-card--stub:hover {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .wt-grid {
+        grid-template-columns: 1fr;
+    }
+    .wt-body {
+        padding: 1.25rem 1rem 3rem;
+    }
+    .wt-hero {
+        padding: 1.5rem 1rem;
+    }
+    .wt-category-header {
+        flex-direction: column;
+        gap: 2px;
+    }
+}

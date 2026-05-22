@@ -1,0 +1,421 @@
+.lp-page {
+    margin-top: var(--topnav-h);
+    min-height: calc(100vh - var(--topnav-h));
+    background: var(--bg);
+}
+
+.lp-hero {
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-100);
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.lp-hero-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange-text);
+    margin-bottom: 10px;
+}
+
+.lp-hero-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+}
+
+.lp-hero-sub {
+    font-size: 15px;
+    color: var(--gray-500);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.lp-body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem;
+}
+
+/* ---- Role selector ---- */
+
+.lp-role-selector {
+    background: linear-gradient(135deg, #000000 0%, #1a1a2e 100%);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.lp-role-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    margin-bottom: 6px;
+}
+
+.lp-role-sub {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 1rem;
+}
+
+.lp-role-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.role-chip {
+    appearance: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 14px;
+    border-radius: 99px;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.07);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition:
+        background 0.12s,
+        border-color 0.12s,
+        color 0.12s;
+}
+
+.role-chip:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+}
+
+.lp-featured-change-role {
+    display: block;
+    font-size: 11px;
+    color: var(--gray-400);
+    text-align: right;
+    margin-top: 6px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.12s;
+}
+
+.lp-featured-change-role:hover {
+    color: var(--orange-text);
+}
+
+/* ---- Featured banner ---- */
+
+.lp-featured {
+    background: linear-gradient(135deg, #000000 0%, #1a1a2e 100%);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-decoration: none;
+    transition: opacity 0.12s;
+}
+
+.lp-featured:hover {
+    opacity: 0.92;
+}
+
+.lp-featured-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+.lp-featured-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    margin-bottom: 6px;
+}
+
+.lp-featured-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
+.lp-featured-desc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.55;
+}
+
+.lp-featured-cta {
+    padding: 9px 18px;
+    border-radius: 8px;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* ---- Path grid ---- */
+
+.path-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+    gap: 16px;
+}
+
+/* ---- Path card ---- */
+
+.path-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    display: block;
+    transition:
+        border-color 0.12s,
+        box-shadow 0.12s;
+}
+
+.path-card:hover {
+    border-color: var(--gray-200);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.path-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.path-card-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.02em;
+}
+
+.level-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-transform: capitalize;
+}
+
+.l-beginner {
+    background: #e3f8f1;
+    color: #088a60;
+}
+.l-intermediate {
+    background: #fff3e0;
+    color: #bf5600;
+}
+.l-advanced {
+    background: #ede9ff;
+    color: #5020cc;
+}
+
+.path-card-desc {
+    font-size: 13px;
+    color: var(--gray-700);
+    line-height: 1.65;
+    margin-bottom: 10px;
+}
+
+.path-card-meta {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-bottom: 14px;
+}
+
+.path-sequence {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.seq-term {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 9px;
+    background: var(--bg);
+    border: 1px solid var(--gray-100);
+    border-radius: 99px;
+    color: var(--gray-700);
+    white-space: nowrap;
+}
+
+.seq-arrow {
+    font-size: 10px;
+    color: var(--gray-400);
+}
+
+.path-start-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--orange-text);
+}
+
+/* ---- Category sections ---- */
+
+.lp-category-section {
+    margin-bottom: 3rem;
+}
+
+.lp-category-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.lp-category-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.02em;
+}
+
+.lp-category-desc {
+    font-size: 13px;
+    color: var(--gray-400);
+}
+
+/* ---- Prereq hint ---- */
+
+.path-prereq-hint {
+    font-size: 11px;
+    color: #7a4f00;
+    background: #fffbeb;
+    border: 1px solid #f6c342;
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+/* ---- Step progress bar ---- */
+
+.path-progress-bar-wrap {
+    height: 4px;
+    background: var(--gray-100);
+    border-radius: 99px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.path-progress-bar {
+    height: 100%;
+    background: var(--orange);
+    border-radius: 99px;
+    transition: width 0.3s ease;
+}
+
+.path-progress-label {
+    font-size: 11px;
+    color: var(--orange-text);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ---- Completion state ---- */
+
+.path-card--done {
+    border-color: #b3f0db;
+}
+
+.path-card-badges {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.path-done-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    background: #e3f8f1;
+    color: #088a60;
+    white-space: nowrap;
+}
+
+.progress-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 2.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--gray-100);
+    font-size: 13px;
+    color: var(--gray-400);
+}
+
+.reset-all-btn {
+    appearance: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 12px;
+    color: var(--gray-400);
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.12s;
+}
+
+.reset-all-btn:hover {
+    color: #c62828;
+}
+
+@media (max-width: 767px) {
+    .path-grid {
+        grid-template-columns: 1fr;
+    }
+    .lp-body {
+        padding: 1.25rem 1rem 3rem;
+    }
+    .lp-featured {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lp-hero {
+        padding: 1.5rem 1rem;
+    }
+    .lp-category-header {
+        flex-direction: column;
+        gap: 2px;
+    }
+}

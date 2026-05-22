@@ -1,0 +1,593 @@
+/* ---- Page shell ---- */
+
+.path-outer {
+    margin-top: var(--topnav-h);
+    min-height: calc(100vh - var(--topnav-h));
+    background: var(--bg);
+    padding: 2.5rem 1.5rem 5rem;
+}
+
+.path-page {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* ---- Header ---- */
+
+.path-back {
+    font-size: 12px;
+    color: var(--gray-400);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: color 0.12s;
+}
+
+.path-back:hover {
+    color: var(--orange-text);
+}
+
+.path-hdr-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.level-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.l-beginner {
+    background: #e3f8f1;
+    color: #088a60;
+}
+.l-intermediate {
+    background: #fff3e0;
+    color: #bf5600;
+}
+.l-advanced {
+    background: #ede9ff;
+    color: #5020cc;
+}
+
+.path-cat-label {
+    font-size: 11px;
+    color: var(--gray-400);
+}
+
+.path-hdr-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+}
+
+.path-hdr-desc {
+    font-size: 15px;
+    color: var(--gray-500);
+    line-height: 1.6;
+    margin-bottom: 8px;
+    max-width: 600px;
+}
+
+.path-hdr-meta-text {
+    font-size: 12px;
+    color: var(--gray-400);
+    margin-bottom: 2rem;
+}
+
+/* ---- Progress dots ---- */
+
+.path-progress {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.progress-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--gray-200);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition:
+        background 0.2s,
+        transform 0.15s;
+}
+
+.progress-dot:hover {
+    transform: scale(1.35);
+}
+.progress-dot.active {
+    background: var(--orange);
+    transform: scale(1.2);
+}
+.progress-dot.done {
+    background: var(--orange);
+    opacity: 0.45;
+}
+
+/* ---- Step sections ---- */
+
+.path-step {
+    margin-bottom: 3.5rem;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.path-step:last-child {
+    border-bottom: none;
+}
+
+.step-counter {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange-text);
+    margin-bottom: 10px;
+}
+
+.step-why-callout {
+    font-size: 14px;
+    color: var(--gray-500);
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+    padding: 12px 16px;
+    background: #fff8f4;
+    border-left: 3px solid var(--orange);
+    border-radius: 0 6px 6px 0;
+}
+
+/* ---- Prereq warning ---- */
+
+.path-prereq-warning {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+    background: #fffbeb;
+    border: 1px solid #f6c342;
+    color: #7a4f00;
+}
+
+.path-prereq-warning .prereq-link {
+    font-weight: 600;
+    color: #7a4f00;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* ---- Continues-from callout ---- */
+
+.path-continues-callout {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1.5rem;
+}
+
+.path-continues-callout a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.path-continues-done {
+    background: #f0fdf8;
+    border-left: 3px solid var(--emerald);
+    color: #0a6b4a;
+}
+
+.path-continues-done a {
+    color: #0a6b4a;
+}
+
+.path-continues-hint {
+    background: #f5f5f7;
+    border-left: 3px solid var(--navy);
+    color: var(--gray-700);
+}
+
+.path-continues-hint a {
+    color: var(--orange-text);
+}
+
+/* ---- Path footer ---- */
+
+.path-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.path-footer-link {
+    font-size: 13px;
+    color: var(--gray-400);
+    text-decoration: none;
+    transition: color 0.12s;
+}
+
+.path-footer-link:hover {
+    color: var(--orange-text);
+}
+
+.path-next-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--orange-text);
+    text-decoration: none;
+    transition: color 0.12s;
+}
+
+.path-next-link:hover {
+    color: var(--orange);
+}
+
+/* ---- Carousel layout ---- */
+
+.path-carousel {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+
+.path-carousel-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.path-carousel-btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: sticky;
+    top: calc(var(--topnav-h) + 1.5rem);
+    z-index: 1;
+}
+
+.path-nav-btn {
+    appearance: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray-200);
+    background: var(--white);
+    color: var(--gray-700);
+    cursor: pointer;
+    transition:
+        background 0.12s,
+        border-color 0.12s,
+        color 0.12s,
+        opacity 0.12s;
+}
+
+.path-nav-btn:hover:not(:disabled) {
+    border-color: var(--gray-400);
+    color: var(--gray-900);
+}
+
+.path-nav-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.path-nav-btn--next {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+}
+
+.path-nav-btn--next:hover:not(:disabled) {
+    background: #d45e18;
+    border-color: #d45e18;
+    color: var(--white);
+}
+
+/* ---- Step entrance animation ---- */
+
+@keyframes stepIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.path-step {
+    animation: stepIn 0.18s ease;
+}
+
+/* ---- Not found ---- */
+
+.path-not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--gray-400);
+    font-size: 14px;
+}
+
+.path-not-found a {
+    color: var(--orange-text);
+    text-decoration: none;
+}
+
+/* ---- Completion ---- */
+
+.path-complete-btn {
+    appearance: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    border: 1.5px solid var(--orange);
+    background: var(--white);
+    color: var(--orange-text);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition:
+        background 0.12s,
+        color 0.12s;
+}
+
+.path-complete-btn:hover:not(:disabled) {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.path-complete-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    border-color: var(--gray-200);
+    color: var(--gray-400);
+}
+
+.path-complete-badge {
+    font-size: 13px;
+    font-weight: 600;
+    color: #088a60;
+}
+
+.path-reset-btn {
+    appearance: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 12px;
+    color: var(--gray-400);
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.12s;
+}
+
+.path-reset-btn:hover {
+    color: #c62828;
+}
+
+/* ---- Inline term — learning path enhancements (LP5) ---- */
+
+.path-carousel-content .inline-term {
+    padding: 2rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+.path-carousel-content .it-name {
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+}
+
+.path-carousel-content .it-def {
+    font-size: 15px;
+    line-height: 1.78;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.path-carousel-content .sr-section {
+    margin-bottom: 1.5rem;
+}
+
+/* ---- Export button (LP6) ---- */
+
+.path-export-btn {
+    appearance: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 12px;
+    color: var(--gray-400);
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.12s;
+}
+
+.path-export-btn:hover {
+    color: var(--orange-text);
+}
+
+/* ---- Overview ---- */
+
+.path-overview {
+    animation: stepIn 0.18s ease;
+}
+
+.overview-steps {
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.overview-step-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.4;
+}
+
+.overview-step-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--gray-100);
+    color: var(--gray-500);
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.overview-start-btn {
+    appearance: none;
+    margin-top: 2rem;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.12s;
+    display: block;
+}
+
+.overview-start-btn:hover {
+    background: #d45e18;
+}
+
+.progress-dot--overview {
+    opacity: 0.5;
+}
+
+.progress-dot--overview.active {
+    opacity: 1;
+    background: var(--orange);
+}
+
+/* ---- Print ---- */
+
+@media print {
+    .topnav,
+    .path-back,
+    .path-hdr-meta,
+    .path-progress,
+    .path-carousel-btn,
+    .path-footer,
+    .path-export-btn,
+    .path-continues-callout,
+    .path-prereq-warning,
+    .it-actions,
+    .sr-close-row,
+    .step-counter,
+    .docs-bar {
+        display: none !important;
+    }
+
+    .path-outer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .path-page {
+        max-width: 100%;
+    }
+
+    .path-step {
+        page-break-inside: avoid;
+    }
+
+    .inline-term {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 767px) {
+    .path-outer {
+        padding: 1.5rem 1rem 4rem;
+    }
+    .path-hdr-title {
+        font-size: 21px;
+    }
+    .step-why-callout {
+        font-size: 13px;
+    }
+    .path-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .path-complete-btn {
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .progress-dot {
+        width: 12px;
+        height: 12px;
+    }
+    .path-progress {
+        gap: 12px;
+    }
+    .path-carousel {
+        flex-wrap: wrap;
+    }
+    .path-carousel-content {
+        flex-basis: 100%;
+        order: -1;
+    }
+    .path-carousel-btn {
+        flex: 1;
+        height: 44px;
+        width: auto;
+        border-radius: 8px;
+        position: static;
+    }
+}

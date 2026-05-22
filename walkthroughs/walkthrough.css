@@ -1,0 +1,349 @@
+/* ---- Page shell ---- */
+
+.wt-outer {
+    margin-top: var(--topnav-h);
+    min-height: calc(100vh - var(--topnav-h));
+    background: var(--bg);
+    padding: 2.5rem 1.5rem 5rem;
+}
+
+.wt-page {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* ---- Back / breadcrumb ---- */
+
+.wt-back {
+    font-size: 12px;
+    color: var(--gray-400);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: color 0.12s;
+}
+
+.wt-back:hover {
+    color: var(--orange-text);
+}
+
+/* ---- Header ---- */
+
+.wt-hdr-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.wt-cat-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.cat-setup {
+    background: #e8f4fd;
+    color: #1a6fa8;
+}
+.cat-cosell {
+    background: #fff3e0;
+    color: #bf5600;
+}
+.cat-offers {
+    background: #e3f8f1;
+    color: #088a60;
+}
+.cat-integration {
+    background: #ede9ff;
+    color: #5020cc;
+}
+.cat-onboarding {
+    background: #fff8e1;
+    color: #8a6000;
+}
+.cat-operations {
+    background: #fce4ec;
+    color: #c62828;
+}
+
+/* ---- Status badges ---- */
+
+.wt-status-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+}
+
+.status-for-review {
+    background: #fffbeb;
+    color: #8a6000;
+    border: 1px solid #f6c342;
+}
+.status-not-started {
+    background: var(--bg);
+    color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+}
+.status-complete {
+    background: #e3f8f1;
+    color: #088a60;
+    border: 1px solid #b3f0db;
+}
+.status-in-progress {
+    background: #e8f4fd;
+    color: #1a6fa8;
+    border: 1px solid #b3d9f7;
+}
+
+.wt-hdr-est {
+    font-size: 11px;
+    color: var(--gray-400);
+}
+
+.wt-hdr-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.wt-hdr-desc {
+    font-size: 15px;
+    color: var(--gray-500);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    max-width: 600px;
+}
+
+/* ---- Header actions ---- */
+
+.wt-hdr-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.wt-btn {
+    appearance: none;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray-200);
+    background: var(--white);
+    color: var(--gray-700);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition:
+        border-color 0.12s,
+        color 0.12s;
+}
+
+.wt-btn:hover {
+    border-color: var(--orange-text);
+    color: var(--orange-text);
+}
+
+/* ---- Step list ---- */
+
+.wt-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.wt-step {
+    display: flex;
+    gap: 1.25rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+/* vertical connector line */
+.wt-step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 40px;
+    bottom: 0;
+    width: 2px;
+    background: var(--gray-100);
+}
+
+.wt-step-num {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--white);
+    font-family: "Lexend", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.wt-step-body {
+    flex: 1;
+    min-width: 0;
+    padding-top: 6px;
+}
+
+.wt-step-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.wt-step-text {
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.wt-step-text code {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 12px;
+    background: var(--gray-50, #f9f9f9);
+    border: 1px solid var(--gray-100);
+    border-radius: 4px;
+    padding: 1px 5px;
+    color: var(--gray-900);
+}
+
+/* ---- Cross-link chips ---- */
+
+.wt-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.wt-chip {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 99px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.12s;
+}
+
+.wt-chip:hover {
+    opacity: 0.8;
+}
+
+.wt-chip--term {
+    background: var(--bg);
+    border: 1px solid var(--gray-200);
+    color: var(--gray-700);
+}
+
+.wt-chip--path {
+    background: #fff3e0;
+    border: 1px solid #f6c342;
+    color: #8a5000;
+}
+
+.wt-chip--compare {
+    background: #ede9ff;
+    border: 1px solid #c4b5ff;
+    color: #5020cc;
+}
+
+/* ---- External action link ---- */
+
+.wt-step-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--orange-text);
+    text-decoration: none;
+    margin-top: 4px;
+    transition: opacity 0.12s;
+}
+
+.wt-step-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* ---- Not found ---- */
+
+.wt-not-found {
+    text-align: center;
+    padding: 4rem 0;
+    color: var(--gray-400);
+}
+
+.wt-not-found-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    color: var(--gray-700);
+    margin-bottom: 10px;
+}
+
+/* ---- Print styles ---- */
+
+@media print {
+    .topnav,
+    .docs-bar,
+    .wt-back,
+    .wt-hdr-actions,
+    .wt-chips,
+    .wt-step-link,
+    .wt-status-badge {
+        display: none !important;
+    }
+
+    .wt-outer {
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .wt-step-num {
+        background: #000;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .wt-step:not(:last-child)::before {
+        display: none;
+    }
+
+    .wt-step {
+        page-break-inside: avoid;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .wt-outer {
+        padding: 1.5rem 1rem 4rem;
+    }
+}
