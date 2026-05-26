@@ -79,7 +79,7 @@ export const terms = [
   {
     name: "APN Customer Engagements (ACE) — AWS",
     tags: ["aws", "cosell"],
-    def: 'AWS\'s co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft\'s co-sell program or GCP Partner Advantage co-sell. Accessible at <a href="https://partnercentral.awspartner.com/" target="_blank" rel="noopener">partnercentral.awspartner.com</a>.',
+    def: 'AWS\'s co-sell platform where ISVs and AWS sales teams jointly register, track, and pursue customer opportunities. The AWS equivalent of Microsoft\'s co-sell program or Google Cloud Partner Network co-sell. Accessible at <a href="https://partnercentral.awspartner.com/" target="_blank" rel="noopener">partnercentral.awspartner.com</a>.',
     alias:
       "Related: AWS Partner Network (APN) — AWS, Inbound Referral, Outbound Referral",
     source:
@@ -311,7 +311,7 @@ export const terms = [
     tags: ["aws"],
     def: "Amazon's global partner program for technology and consulting companies. Marketplace sellers are typically APN members, unlocking access to co-sell (ACE), funding, and go-to-market resources.",
     alias:
-      "Azure equivalent: Microsoft AI Cloud Partner Program (MPN) — Azure | GCP equivalent: Partner Advantage — GCP | Related: APN Customer Engagements (ACE) — AWS, AWS Competency Program — AWS",
+      "Azure equivalent: Microsoft AI Cloud Partner Program (MPN) — Azure | GCP equivalent: Google Cloud Partner Network — GCP | Related: APN Customer Engagements (ACE) — AWS, AWS Competency Program — AWS",
     source: "https://aws.amazon.com/partners/",
     difficulty: "beginner",
     category: "cosell",
@@ -494,7 +494,7 @@ export const terms = [
     tags: ["suger", "cosell"],
     def: "A partnership motion where an ISV and a cloud provider's sales team jointly pursue a customer opportunity. Unlocks pipeline sharing, deal acceleration, and marketplace incentives. Managed in Suger via the Co-sell module.",
     alias:
-      "Related: APN Customer Engagements (ACE) — AWS, Partner Advantage — GCP, MISA (Microsoft Intelligent Security Association) — Azure",
+      "Related: APN Customer Engagements (ACE) — AWS, Google Cloud Partner Network — GCP, MISA (Microsoft Intelligent Security Association) — Azure",
     source: "https://doc.suger.io/cosell/",
     difficulty: "beginner",
     category: "cosell",
@@ -507,12 +507,12 @@ export const terms = [
     ],
     useCases: [
       "Sharing a qualified deal with AWS, Azure, or GCP sales teams to accelerate the enterprise sales cycle",
-      "Registering opportunities in ACE, Partner Advantage, or Partner Center to unlock co-sell incentives",
+      "Registering opportunities in ACE, Google Cloud Partner Network, or Partner Center to unlock co-sell incentives",
     ],
     context: [
       "Suger Console",
       "AWS Partner Central",
-      "GCP Partner Advantage",
+      "Google Cloud Partner Network",
       "Azure Partner Center",
     ],
     related: [
@@ -520,7 +520,10 @@ export const terms = [
         name: "APN Customer Engagements (ACE) — AWS",
         slug: "apn-customer-engagements-ace-—-aws",
       },
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       { name: "Inbound Referral", slug: "inbound-referral" },
     ],
   },
@@ -531,7 +534,7 @@ export const terms = [
     alias:
       "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/co-sell-requirements",
+      "https://learn.microsoft.com/en-us/partner-center/referrals/co-sell-requirements",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
@@ -691,7 +694,7 @@ export const terms = [
   {
     name: "Channel Partner Private Offer (CPPO) — AWS",
     tags: ["aws", "cosell", "offers", "channel"],
-    def: "A program where an ISV creates a resale authorization (with a wholesale price) that an authorized channel partner uses to create a private offer — with markup — for an end customer. The channel partner is the seller of record.",
+    def: "A program where an ISV creates a selling authorization (also called resale authorization) with a wholesale price that an authorized channel partner uses to create a private offer — with markup — for an end customer. The channel partner is the seller of record.",
     alias:
       "GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Azure equivalent: Multiparty Private Offer (MPO) — Azure | Related: Resale Authorization — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source:
@@ -1089,13 +1092,16 @@ export const terms = [
         name: "Committed Use Discount (CUD) — GCP",
         slug: "committed-use-discount-cud-—-gcp",
       },
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
     ],
   },
   {
-    name: "Partner Advantage — GCP",
+    name: "Google Cloud Partner Network — GCP",
     tags: ["gcp", "cosell"],
-    def: 'Google Cloud\'s partner program required to list on GCP Marketplace. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the \'Build\' engagement model. As of Q1 2026, Google Cloud announced the Google Cloud Partner Network as a replacement for Partner Advantage, with a new tier and competency structure. Partners should verify current enrollment status through the Google Cloud partner portal. Accessible at <a href="https://partners.cloud.google.com/" target="_blank" rel="noopener">partners.cloud.google.com</a>.',
+    def: "Google Cloud's partner program (rebranded from 'Partner Advantage' at Google Cloud Next '26 in April 2026) that governs how ISVs and services companies qualify for and access GCP field co-sell support, benefits, and incentives. Provides co-sell access, partner advisors, ISV Center of Excellence resources, and marketing tools. ISVs join under the 'Build' engagement model — requiring a technical review and a transactable GCP Marketplace listing. Partners enroll and manage status at <a href=\"https://partners.cloud.google.com/\" target=\"_blank\" rel=\"noopener\">partners.cloud.google.com</a>.",
     alias:
       "Related: Build Engagement Model — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
     source: "https://partners.cloud.google.com",
@@ -1103,8 +1109,8 @@ export const terms = [
     category: "cosell",
     whoFor: ["ISVs / Sellers", "GCP Sales", "Partner Managers"],
     useCases: [
-      "Enrolling in Partner Advantage under the Build engagement model to unlock GCP Marketplace listing and co-sell access",
-      "Leveraging ISV Center of Excellence resources and market development funds through the Partner Advantage program",
+      "Enrolling in Google Cloud Partner Network under the Build engagement model to unlock GCP Marketplace listing and co-sell access",
+      "Leveraging ISV Center of Excellence resources and market development funds through the Google Cloud Partner Network program",
     ],
     context: ["GCP Partner Portal", "Co-sell Programs", "GCP Marketplace"],
     related: [
@@ -1119,8 +1125,8 @@ export const terms = [
   {
     name: "Producer Portal — GCP",
     tags: ["gcp"],
-    def: 'The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Advantage enrollment. Accessible at <a href="https://console.cloud.google.com/marketplace/overview" target="_blank" rel="noopener">console.cloud.google.com/marketplace</a>.',
-    alias: "Related: GCP Marketplace — GCP, Partner Advantage — GCP",
+    def: 'The GCP console interface where ISVs create and manage their Marketplace listings, pricing plans, and integration settings. Access requires Google Cloud Partner Network enrollment. Accessible at <a href="https://console.cloud.google.com/producer-portal" target="_blank" rel="noopener">console.cloud.google.com/producer-portal</a>.',
+    alias: "Related: GCP Marketplace — GCP, Google Cloud Partner Network — GCP",
     source: "https://docs.cloud.google.com/marketplace/docs/partners",
     difficulty: "intermediate",
     category: "operations",
@@ -1132,7 +1138,10 @@ export const terms = [
     context: ["GCP Marketplace", "GCP Console"],
     related: [
       { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
     ],
   },
@@ -1221,7 +1230,7 @@ export const terms = [
   {
     name: "ISV Accelerate — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Required for SPPO participation.",
+    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Partners with Validated or Differentiated AWS Specialization status can access premium co-sell benefit tiers. Required for SPPO participation.",
     alias:
       "Azure equivalent: ISV Success Program — Azure | GCP equivalent: Build Engagement Model — GCP | Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
@@ -1306,7 +1315,7 @@ export const terms = [
   {
     name: "Azure Consumption Commitment (MACC) — Azure",
     tags: ["azure", "funding"],
-    def: "Microsoft's enterprise committed spend program. Enterprises pre-commit to Azure spend over 1–3 years; purchases of MACC-eligible transactable Marketplace listings count toward that commitment. A core driver of enterprise Azure Marketplace buying.",
+    def: "Microsoft's enterprise committed spend program. Enterprises pre-commit to Azure spend over 1–3 years; purchases of MACC-eligible transactable Marketplace listings count toward that commitment. A core driver of enterprise Azure Marketplace buying. Purchases must be made through the Azure portal — credit card purchases on Marketplace.Microsoft.com do not count, and Azure prepayment (monetary commitments) is excluded.",
     alias:
       "AWS equivalent: Enterprise Discount Program (EDP) — AWS | GCP equivalent: Committed Use Discount (CUD) — GCP",
     source:
@@ -1341,24 +1350,27 @@ export const terms = [
   {
     name: "Marketplace Customer Credit Program (MCCP) — GCP",
     tags: ["gcp", "cosell", "funding"],
-    def: "A GCP incentive offering end customers up to 3% in Google Cloud credits when purchasing eligible ISV solutions through GCP Marketplace for the first time. Applies to both direct and reseller-led deals (MCPOs). ISVs must register the opportunity in Partner Advantage to qualify.",
+    def: "A GCP incentive offering end customers up to 3% in Google Cloud credits when purchasing eligible ISV solutions through GCP Marketplace for the first time. Applies to both direct and reseller-led deals (MCPOs). ISVs must register the opportunity in Google Cloud Partner Network to qualify.",
     alias:
-      "Also referred to as: MCCP | Related: Committed Use Discount (CUD) — GCP, Partner Advantage — GCP",
+      "Also referred to as: MCCP | Related: Committed Use Discount (CUD) — GCP, Google Cloud Partner Network — GCP",
     source: "https://docs.cloud.google.com/marketplace/docs/partners",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "GCP Sales", "Enterprise Buyers"],
     useCases: [
-      "Registering a first-time GCP Marketplace deal in Partner Advantage to qualify the buyer for up to 3% Google Cloud credits",
+      "Registering a first-time GCP Marketplace deal in Google Cloud Partner Network to qualify the buyer for up to 3% Google Cloud credits",
       "Positioning MCCP as an additional incentive alongside CUD drawdown to accelerate GCP enterprise deals",
     ],
     context: [
       "GCP Partner Portal",
-      "Partner Advantage — GCP",
+      "Google Cloud Partner Network — GCP",
       "GCP Marketplace",
     ],
     related: [
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       {
         name: "Committed Use Discount (CUD) — GCP",
         slug: "committed-use-discount-cud-—-gcp",
@@ -1398,7 +1410,7 @@ export const terms = [
   {
     name: "Marketplace Rewards — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's benefits program for transactable Microsoft Marketplace publishers. Provides go-to-market support, co-marketing resources, and technical enablement scaled to the ISV's transact revenue milestones. Partners who activate Rewards see 7x higher sales on average.",
+    def: "Microsoft's benefits program for transactable Microsoft Marketplace publishers. Provides go-to-market support, co-marketing resources, and technical enablement scaled to the ISV's transact revenue milestones. Benefits scale with transact revenue milestones — measured by Marketplace-billed sales, Business Applications solution value, or Teams App MAU.",
     alias:
       "Related: Microsoft Marketplace — Azure, ISV Success Program — Azure",
     source:
@@ -1485,7 +1497,8 @@ export const terms = [
     def: "Microsoft's partner program for ISVs and services companies. Enrollment is required to publish on Azure Marketplace and access co-sell, partner funding, and Marketplace Rewards. Co-sell is managed through Partner Center — see the Partner Center — Azure term for the direct link.",
     alias:
       "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/mpn-overview",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/membership/mpn-overview",
     difficulty: "beginner",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
@@ -1751,10 +1764,10 @@ export const terms = [
   {
     name: "Partner Center — Azure",
     tags: ["azure"],
-    def: 'Microsoft\'s portal where publishers create and manage Azure Marketplace and AppSource offers, co-sell configurations, payout profiles, and partner program enrollments. Accessible at <a href="https://partner.microsoft.com/" target="_blank" rel="noopener">partner.microsoft.com</a>.',
+    def: 'Microsoft\'s portal where publishers create and manage Microsoft Marketplace offers, co-sell configurations, payout profiles, and partner program enrollments. Accessible at <a href="https://partner.microsoft.com/" target="_blank" rel="noopener">partner.microsoft.com</a>.',
     alias:
       "Related: Azure Marketplace / Microsoft Marketplace, SaaS Fulfillment API — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/overview",
+    source: "https://learn.microsoft.com/en-us/partner-center/enroll/overview",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
@@ -2156,7 +2169,7 @@ export const terms = [
     def: "Microsoft's API that ISVs must implement to handle subscription lifecycle events for Azure Marketplace SaaS offers — including activation, plan changes, quantity updates, suspension, and unsubscription.",
     alias: "Related: Microsoft Marketplace — Azure, Partner Center — Azure",
     source:
-      "https://learn.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2",
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/pc-saas-fulfillment-apis",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -2282,7 +2295,7 @@ export const terms = [
     def: "Google Cloud's API ISVs use to report usage metrics to GCP Marketplace for metered billing. Suger calls this API on the ISV's behalf when usage records are submitted.",
     alias: "",
     source:
-      "https://docs.cloud.google.com/service-infrastructure/docs/overview",
+      "https://cloud.google.com/marketplace/docs/partners/backend-integration/backend-integration-overview",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5236,7 +5249,7 @@ export const terms = [
   {
     name: "First Value Opportunity (FVO) — AWS",
     tags: ["aws", "cosell"],
-    def: "A designation for an ISV's very first launched co-sell opportunity in ACE. FVOs are excluded from ISV Accelerate's minimum launched opportunity count requirements — meaning the first deal doesn't count toward the 5-launch threshold. Ensures the eligibility bar reflects sustained co-sell activity rather than a single deal.",
+    def: "A designation for an ISV's very first launched co-sell opportunity in ACE. FVOs are excluded from ISV Accelerate's minimum launched opportunity count requirements — meaning the first deal doesn't count toward the 5-launch threshold or the 15-qualified-opportunity count. Ensures the eligibility bar reflects sustained co-sell activity rather than a single deal.",
     alias: "Related: ACE (APN Customer Engagements), ISV Accelerate — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
     difficulty: "intermediate",
@@ -5677,9 +5690,9 @@ export const terms = [
   {
     name: "Build Engagement Model — GCP",
     tags: ["gcp", "cosell"],
-    def: "The Google Cloud Partner Advantage engagement model designed for ISVs and SaaS providers who integrate their products with Google Cloud. Requires a technical review and a transactable GCP Marketplace listing to unlock co-sell incentives and Market Development Funds (MDF).",
+    def: "The Google Cloud Partner Network engagement model designed for ISVs and SaaS providers who integrate their products with Google Cloud. Requires a technical review and a transactable GCP Marketplace listing to unlock co-sell incentives and Market Development Funds (MDF).",
     alias:
-      "AWS equivalent: ISV Accelerate — AWS | Azure equivalent: ISV Success Program — Azure | Related: Partner Advantage — GCP, GCP Marketplace — GCP",
+      "AWS equivalent: ISV Accelerate — AWS | Azure equivalent: ISV Success Program — Azure | Related: Google Cloud Partner Network — GCP, GCP Marketplace — GCP",
     source: "https://partners.cloud.google.com",
     difficulty: "intermediate",
     category: "cosell",
@@ -5689,13 +5702,16 @@ export const terms = [
       "Understanding Build as the GCP equivalent of AWS ISV Accelerate for software providers integrated with Google Cloud",
     ],
     context: [
-      "Google Cloud Partner Advantage",
+      "Google Cloud Partner Network",
       "GCP Marketplace",
       "Co-sell Programs",
     ],
     related: [
       { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       { name: "Transactable Offer", slug: "transactable-offer" },
     ],
   },
@@ -6345,7 +6361,7 @@ export const terms = [
   {
     name: "SaaS Subscription Pricing — AWS",
     tags: ["aws", "billing"],
-    def: "An AWS Marketplace SaaS pricing model where buyers pay hourly for actual usage with no upfront contract commitment. Sellers report usage via BatchMeterUsage and buyers are billed based on custom metering dimensions. Also called Pay-As-You-Go (PAYG). Does not use entitlement SNS topics or the GetEntitlements API — only subscription SNS notifications apply.",
+    def: "An AWS Marketplace SaaS pricing model where buyers pay hourly for actual usage with no upfront contract commitment. Sellers report usage via BatchMeterUsage and buyers are billed based on custom metering dimensions. Also called Pay-As-You-Go (PAYG). Does not use entitlement SNS topics or the GetEntitlements API — only subscription notifications apply. Note: AWS is migrating new SaaS product listings from SNS to Amazon EventBridge for subscription notifications; existing SNS integrations continue to function but new listings use EventBridge.",
     alias:
       "Also called: Pay-As-You-Go (PAYG) | Azure equivalent: SaaS flat-rate with metered billing | Related: SaaS Contract Pricing — AWS, Metered Billing, PAYG / Pay-as-you-go",
     source:
@@ -6777,7 +6793,7 @@ export const terms = [
   {
     name: "AWS Marketplace Solution Engagement Score — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS Intelligence Signal in AWS Partner Central that predicts the likelihood of a specific customer account purchasing from the partner's own marketplace listing — not the channel generally. Scored as High, Medium, Low, or '-' (indeterminate) relative to all accounts in the same cohort. Requires an active non-ProServe Marketplace listing and lifetime EC2/global support revenue above $100. Refreshed monthly. This is the most partner-specific AWS predictive signal and is distinct from the channel-level Marketplace Engagement Score.",
+    def: "An AWS Intelligence Signal in AWS Partner Central that predicts the likelihood of a specific customer account purchasing from the partner's own marketplace listing — not the channel generally. Scored as High, Medium, Low, or '-' (indeterminate) relative to all accounts in the same cohort. Requires an active non-ProServe Marketplace listing and lifetime EC2 + GSS (Global Support Services, via private offers or public subscriptions) above $100. Refreshed monthly. This is the most partner-specific AWS predictive signal and is distinct from the channel-level Marketplace Engagement Score.",
     alias:
       "Part of: AWS Intelligence Signals — AWS | Related: AWS Marketplace Engagement Score — AWS, Co-sell Recommendation Score — AWS, Propensity to Buy (PTB) Score",
     source:
@@ -6855,17 +6871,17 @@ export const terms = [
     tags: ["gcp", "cosell"],
     def: "Account-level engagement and marketplace activity data sourced from Google Cloud partner systems and surfaced in the Suger Console. Suger normalizes these signals as GCP Engagement Score alongside marketplace activity metrics including GCP Marketplace Count, GCP Marketplace Review Count, and GCP Marketplace Purchase Count. All scores use a cohort-relative High / Medium / Low ranking: High indicates the account is in the top cohort compared to all customers. Data is accessible in the Suger Console and pushable to Salesforce or HubSpot via CRM Enrichment.",
     alias:
-      "AWS equivalent: AWS Intelligence Signals — AWS | Azure equivalent: Azure Intelligence Signals — Azure | Related: Propensity to Buy (PTB) Score, CRM Enrichment, Partner Advantage — GCP",
+      "AWS equivalent: AWS Intelligence Signals — AWS | Azure equivalent: Azure Intelligence Signals — Azure | Related: Propensity to Buy (PTB) Score, CRM Enrichment, Google Cloud Partner Network — GCP",
     source: "https://doc.suger.io/integrations/salesforce/",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
     useCases: [
-      "Identifying GCP-active accounts with High GCP Engagement Scores to prioritize for outbound co-sell motions via Google Cloud's Partner Advantage co-sell program",
+      "Identifying GCP-active accounts with High GCP Engagement Scores to prioritize for outbound co-sell motions via Google Cloud's Google Cloud Partner Network co-sell program",
       "Tracking GCP Marketplace Purchase Count in Salesforce via CRM Enrichment to spot accounts already transacting on GCP Marketplace who may be ready for a new offer",
     ],
     context: [
-      "Google Cloud Partner Advantage",
+      "Google Cloud Partner Network",
       "Suger Console",
       "Co-sell Programs",
     ],
@@ -6875,7 +6891,10 @@ export const terms = [
         slug: "propensity-to-buy-ptb-score",
       },
       { name: "CRM Enrichment", slug: "crm-enrichment" },
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
     ],
   },
@@ -7043,27 +7062,30 @@ export const terms = [
     name: "Google Cloud Partner Innovation Fund — GCP",
     tags: ["gcp", "cosell"],
     group: "cloud-partner-funding",
-    def: "A $750M Google Cloud funding commitment announced April 2026 to accelerate partner-led AI and marketplace innovation. The fund provides co-investment for qualified partners working on AI solutions, marketplace listings, and customer adoption programs, administered through Partner Advantage. It is Google Cloud's largest formal partner funding commitment and directly parallels AWS's partner funding cluster (MAP, POC Funding, PIF) as the primary mechanism for GCP to incentivize partner investment in the ecosystem.",
+    def: "A $750M Google Cloud funding commitment announced April 2026 to accelerate partner-led AI and marketplace innovation. The fund provides co-investment for qualified partners working on AI solutions, marketplace listings, and customer adoption programs, administered through Google Cloud Partner Network. It is Google Cloud's largest formal partner funding commitment and directly parallels AWS's partner funding cluster (MAP, POC Funding, PIF) as the primary mechanism for GCP to incentivize partner investment in the ecosystem.",
     alias:
-      "AWS equivalent: Migration Acceleration Program (MAP) — AWS | AWS equivalent: Proof of Concept (POC) Funding — AWS | AWS equivalent: Partner Initiative Funding (PIF) — AWS | Related: Partner Advantage — GCP, Build Engagement Model — GCP, GCP Marketplace — GCP",
+      "AWS equivalent: Migration Acceleration Program (MAP) — AWS | AWS equivalent: Proof of Concept (POC) Funding — AWS | AWS equivalent: Partner Initiative Funding (PIF) — AWS | Related: Google Cloud Partner Network — GCP, Build Engagement Model — GCP, GCP Marketplace — GCP",
     source:
       "https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "GCP Sales", "Partner Managers"],
     useCases: [
-      "Applying through Partner Advantage for co-investment to build or accelerate an AI marketplace listing on GCP",
+      "Applying through Google Cloud Partner Network for co-investment to build or accelerate an AI marketplace listing on GCP",
       "Positioning a GCP co-sell motion to qualify for fund co-investment, similar to how ISVs apply for AWS MAP or POC funding",
       "Comparing GCP partner funding availability to AWS and Azure when making a cross-cloud investment decision",
     ],
     context: [
-      "Partner Advantage — GCP",
+      "Google Cloud Partner Network — GCP",
       "GCP Marketplace",
       "Partner Funding Programs",
       "AI Partner Programs",
     ],
     related: [
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       {
         name: "Build Engagement Model — GCP",
         slug: "build-engagement-model-—-gcp",
@@ -7341,7 +7363,7 @@ export const terms = [
     alias:
       "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure | Related: Outbound Referral | Related: Partner Center — Azure | Related: Co-sell Eligible / Incentivized — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/referrals/partner-reported-azure-consumed-revenue",
+      "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
@@ -7409,7 +7431,7 @@ export const terms = [
     tags: ["gcp", "cosell"],
     def: "An AI-powered incentive management tool in the Google Cloud Partner Network Hub, announced at Google Cloud Next '26 (April 2026), that automates the operational side of partner incentive management. It auto-drafts statements of work, monitors consumption milestones, and auto-generates incentive claim requests. An embedded Earnings Potential Modeler maps all available GCP incentives down to individual client engagements, providing partners with contextual recommendations for maximizing earnings.",
     alias:
-      "Related: Partner Advantage — GCP, Google Cloud Partner Agent — GCP, Build Engagement Model — GCP, Google Cloud Partner Innovation Fund — GCP",
+      "Related: Google Cloud Partner Network — GCP, Google Cloud Partner Agent — GCP, Build Engagement Model — GCP, Google Cloud Partner Innovation Fund — GCP",
     source:
       "https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise",
     difficulty: "intermediate",
@@ -7422,11 +7444,14 @@ export const terms = [
     ],
     context: [
       "Google Cloud Partner Network Hub",
-      "Partner Advantage — GCP",
+      "Google Cloud Partner Network — GCP",
       "Partner Incentives",
     ],
     related: [
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       {
         name: "Google Cloud Partner Agent — GCP",
         slug: "google-cloud-partner-agent-—-gcp",
@@ -7442,7 +7467,7 @@ export const terms = [
     tags: ["gcp", "operations"],
     def: "An AI agent integrated into the Google Cloud Partner Network Hub, announced at Google Cloud Next '26 (April 2026), that guides partners through program workflows through natural language. It actively directs partners to next steps, summarizes complex program documentation and assets, and provides real-time coaching for completing registrations, statements of work, and co-sell workflows — all without leaving the Partner Hub. The GCP Partner Agent parallels AWS Partner Central Agents — AWS as Google Cloud's equivalent AI-native layer within its partner operations platform.",
     alias:
-      "AWS equivalent: AWS Partner Central Agents — AWS | Related: Partner Advantage — GCP, Agentic Earnings Hub — GCP, Build Engagement Model — GCP",
+      "AWS equivalent: AWS Partner Central Agents — AWS | Related: Google Cloud Partner Network — GCP, Agentic Earnings Hub — GCP, Build Engagement Model — GCP",
     source:
       "https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise",
     difficulty: "intermediate",
@@ -7455,11 +7480,14 @@ export const terms = [
     ],
     context: [
       "Google Cloud Partner Network Hub",
-      "Partner Advantage — GCP",
+      "Google Cloud Partner Network — GCP",
       "GCP Co-sell Workflow",
     ],
     related: [
-      { name: "Partner Advantage — GCP", slug: "partner-advantage-—-gcp" },
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
       {
         name: "Agentic Earnings Hub — GCP",
         slug: "agentic-earnings-hub-—-gcp",
@@ -7475,7 +7503,7 @@ export const terms = [
     tags: ["suger", "integrations"],
     def: "A production-available server built on the Model Context Protocol (MCP) standard that lets AI assistants and agents interact with Suger's marketplace management platform through natural language. It exposes 120+ tools spanning the full Suger API surface across eight categories: Products & Offers, Buyers & Contacts, Entitlements, Metering & Usage, Billing & Revenue, Support, Operations & Auditing, and Co-Sell & Search. An AI client connected to the Suger MCP Server can create offers, manage entitlements, report usage, pull revenue reports, and manage buyer relationships without navigating the Suger Console directly.",
     alias:
-      "Related: Suger API Client, Suger Console, Integration, AWS Partner Central Agents — AWS",
+      "Related: Suger API Client, Suger Console, Insulin, Integration, AWS Partner Central Agents — AWS",
     source: "https://doc.suger.io/mcp/overview/",
     difficulty: "advanced",
     category: "operations",
@@ -7567,7 +7595,7 @@ export const terms = [
   {
     name: "Suger Buyer Service",
     tags: ["suger"],
-    def: "A dedicated procurement management portal within Suger for enterprise buyers to manage the AWS Marketplace purchasing lifecycle — separate from the ISV-facing Suger Console. It covers five stages: creating purchase requests, routing them through internal review and approval workflows, receiving and accepting vendor private offers, managing active entitlements post-purchase, and tracking invoices and payments. Currently scoped to AWS Marketplace.",
+    def: "A dedicated procurement management portal within Suger for enterprise buyers to manage the cloud marketplace purchasing lifecycle — separate from the ISV-facing Suger Console. It covers five stages: creating purchase requests, routing them through internal review and approval workflows, receiving and accepting vendor private offers, managing active entitlements post-purchase, and tracking invoices and payments. Supports AWS, Azure, GCP, and Alibaba marketplaces.",
     alias:
       "Related: Suger Console, Entitlement, Buyer, Buyer Wallet, Private Offer",
     source: "https://doc.suger.io/as-buyer/buyer-journey/",
@@ -7590,6 +7618,54 @@ export const terms = [
       { name: "Entitlement", slug: "entitlement" },
       { name: "Buyer", slug: "buyer" },
       { name: "Private Offer", slug: "private-offer" },
+    ],
+  },
+  {
+    name: "Insulin",
+    tags: ["suger"],
+    def: "Suger's AI-powered workspace embedded in the Suger Console, designed for ISVs operating across cloud marketplaces. Provides an AI chat interface with streaming responses and tool execution, specialized agents for marketplace tasks, shared team channels for multi-user collaboration, and Watches — automated recurring agent runs that fire on a schedule or in response to external events. A built-in Skills & Marketplace catalog lets users install pre-built agents and instruction files with a single click.",
+    alias: "Related: Suger Console, Suger MCP Server, Suger Chrome Extension",
+    source: "https://doc.suger.io/insulin/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Using Insulin's specialized agents to automate marketplace workflows such as offer creation, co-sell referral submission, or entitlement tracking",
+      "Setting up Watches to run recurring agent tasks — like monitoring deal status changes or triggering notifications — without manual intervention",
+      "Installing pre-built skills from the Insulin marketplace catalog to give agents specialized knowledge about specific marketplace workflows",
+    ],
+    context: ["Suger Console", "AI Workspace", "Marketplace Automation"],
+    related: [
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Suger MCP Server", slug: "suger-mcp-server" },
+      { name: "Suger Chrome Extension", slug: "suger-chrome-extension" },
+    ],
+  },
+  {
+    name: "Suger Chrome Extension",
+    tags: ["suger", "integrations"],
+    def: "A Chrome browser extension that surfaces Suger functionality in a persistent side panel without leaving the active webpage. Provides context-aware AI assistance tied to the current page, slash command skill execution, and CRM integrations — displaying live marketplace records (offers, entitlements, referrals, funding) inside Salesforce and HubSpot. Supports multi-organization switching, workflow initiation for offers and co-sell referrals, and autonomous multi-step actions that require explicit user approval before executing.",
+    alias: "Related: Suger Console, Insulin, CRM Enrichment",
+    source: "https://doc.suger.io/chrome-extension/quick-guide/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Viewing live Suger offers, entitlements, and co-sell referrals inside a Salesforce deal or HubSpot contact without switching tabs",
+      "Using slash commands in the Chrome side panel to trigger pre-built Suger skills and initiate marketplace workflows from any webpage",
+      "Monitoring real-time notifications for offer and entitlement status changes while working in a CRM or other browser tool",
+    ],
+    context: [
+      "Suger Console",
+      "CRM Integration",
+      "Salesforce",
+      "HubSpot",
+      "Browser Extension",
+    ],
+    related: [
+      { name: "Suger Console", slug: "suger-console" },
+      { name: "Insulin", slug: "insulin" },
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
     ],
   },
 ];

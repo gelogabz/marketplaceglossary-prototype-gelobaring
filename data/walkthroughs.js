@@ -160,7 +160,7 @@ export const walkthroughs = [
         path: "gcp-marketplace-essentials",
         link: {
           label: "Open GCP Producer Portal →",
-          url: "https://console.cloud.google.com/marketplace/",
+          url: "https://console.cloud.google.com/producer-portal",
         },
         media: null,
       },
@@ -195,7 +195,7 @@ export const walkthroughs = [
       },
       {
         title: "Grant IAM roles to the Suger service account",
-        body: "Suger provisions a service account in your GCP project to perform Marketplace API calls. In the GCP Console under <strong>IAM & Admin → IAM</strong>, grant the following roles to the Suger service account email provided: <code>roles/cloudcommerceproducer.admin</code> and <code>roles/servicecontrol.serviceAgent</code>. Without these roles, metering and entitlement calls will fail.",
+        body: "Suger provisions a service account in your GCP project to perform Marketplace API calls. In the GCP Console under <strong>IAM & Admin → IAM</strong>, grant the following roles to the Suger service account email provided: <code>roles/cloudcommerceproducer.admin</code> and <code>roles/servicemanagement.serviceController</code>. Without these roles, metering and entitlement calls will fail.",
         terms: [
           {
             name: "Service Account — GCP",

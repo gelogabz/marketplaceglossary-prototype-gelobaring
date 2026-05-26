@@ -281,9 +281,9 @@ export const learningPaths = [
         why: "PRACR is Azure's mechanism for ISVs to self-report the customer Azure consumption their SaaS solution drives, directly tying co-sell support level to real cloud impact. It's the Azure equivalent of demonstrating marketplace traction — but measured in downstream infrastructure spend rather than transactions.",
       },
       {
-        name: "Partner Advantage — GCP",
-        slug: "partner-advantage-—-gcp",
-        why: "GCP's co-sell program is structured differently from AWS and Azure. Partner Advantage is the framework that governs how ISVs qualify for and access GCP field co-sell support.",
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+        why: "GCP's co-sell program is structured differently from AWS and Azure. Google Cloud Partner Network is the framework that governs how ISVs qualify for and access GCP field co-sell support.",
       },
       {
         name: "Co-sell Insights — Suger",
@@ -461,7 +461,7 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
-    meta: "12 terms · ~45 min",
+    meta: "14 terms · ~55 min",
     continuesFrom: "channel-and-partner-motions",
     next: "marketplace-integrations",
     steps: [
@@ -524,6 +524,16 @@ export const learningPaths = [
         name: "Suger MCP Server",
         slug: "suger-mcp-server",
         why: "Once you understand what Suger does operationally, the MCP Server shows how AI agents can interact with it directly. The Suger MCP Server exposes Suger's API capabilities to AI coding assistants and automation agents — enabling teams to build, query, and manage marketplace workflows without leaving their AI toolchain.",
+      },
+      {
+        name: "Insulin",
+        slug: "insulin",
+        why: "Insulin is Suger's built-in AI workspace — inside the Console, not a separate tool. It adds agents, team channels, and automated Watches on top of the platform you already use. Understanding Insulin completes the picture of how Suger is evolving from a management console into an agentic operations platform.",
+      },
+      {
+        name: "Suger Chrome Extension",
+        slug: "suger-chrome-extension",
+        why: "The Chrome Extension brings Suger into your browser's side panel, so marketplace data surfaces directly inside Salesforce deals and HubSpot contacts. It's the access point for users who spend most of their time in a CRM rather than the Suger Console — and it connects directly to Insulin for context-aware AI assistance.",
       },
     ],
   },
@@ -1144,19 +1154,19 @@ export const learningPaths = [
         why: "The Producer Portal is the GCP equivalent of AWS's AMMP — the ISV interface for managing listings and offers on GCP Marketplace. Learn what you configure here and how it connects to the Procurement API.",
       },
       {
-        name: "Partner Advantage — GCP",
-        slug: "partner-advantage-—-gcp",
-        why: "Partner Advantage is GCP's partner framework — co-sell access, Build Engagement credits, and funding programs all flow through it. Learn the tiers, engagement models, and what ISVs need to qualify.",
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+        why: "Google Cloud Partner Network is GCP's partner framework — co-sell access, Build Engagement credits, and funding programs all flow through it. Learn the tiers, engagement models, and what ISVs need to qualify.",
       },
       {
         name: "Google Cloud Partner Innovation Fund — GCP",
         slug: "google-cloud-partner-innovation-fund-—-gcp",
-        why: "Partner Advantage tiers gate access to GCP funding programs, and the Partner Innovation Fund is one of the most useful — it offsets POC, development, and go-to-market costs. Knowing this fund exists and how to qualify through Partner Advantage is part of operating the GCP partnership effectively.",
+        why: "Google Cloud Partner Network tiers gate access to GCP funding programs, and the Partner Innovation Fund is one of the most useful — it offsets POC, development, and go-to-market costs. Knowing this fund exists and how to qualify through Google Cloud Partner Network is part of operating the GCP partnership effectively.",
       },
       {
         name: "Agentic Earnings Hub — GCP",
         slug: "agentic-earnings-hub-—-gcp",
-        why: "Partner Advantage is the framework; the Agentic Earnings Hub is where ISVs actually claim AI-specific incentive payouts. If your product is in the generative AI or agents space, the Agentic Earnings Hub is the Partner Center-equivalent tool for managing GCP's AI partner earnings — knowing it exists before you go live prevents missed claims.",
+        why: "Google Cloud Partner Network is the framework; the Agentic Earnings Hub is where ISVs actually claim AI-specific incentive payouts. If your product is in the generative AI or agents space, the Agentic Earnings Hub is the Partner Center-equivalent tool for managing GCP's AI partner earnings — knowing it exists before you go live prevents missed claims.",
       },
       {
         name: "Google Cloud Partner Agent — GCP",
@@ -1166,7 +1176,7 @@ export const learningPaths = [
       {
         name: "GCP Intelligence Signals — GCP",
         slug: "gcp-intelligence-signals-—-gcp",
-        why: "Partner Advantage gives ISVs access to GCP engagement and marketplace activity data per account — surfaced in Suger as GCP Engagement Score plus purchase and review metrics. Use these to identify which accounts are already active on GCP Marketplace before initiating outreach.",
+        why: "Google Cloud Partner Network gives ISVs access to GCP engagement and marketplace activity data per account — surfaced in Suger as GCP Engagement Score plus purchase and review metrics. Use these to identify which accounts are already active on GCP Marketplace before initiating outreach.",
       },
       {
         name: "Committed Use Discount (CUD) — GCP",
@@ -1186,7 +1196,7 @@ export const learningPaths = [
       {
         name: "Marketplace Customer Credit Program (MCCP) — GCP",
         slug: "marketplace-customer-credit-program-mccp-—-gcp",
-        why: "MCCP gives first-time GCP Marketplace buyers up to 3% in Google Cloud credits — a direct incentive that ISVs can use to accelerate deals. Learn eligibility requirements and how to register opportunities through Partner Advantage.",
+        why: "MCCP gives first-time GCP Marketplace buyers up to 3% in Google Cloud credits — a direct incentive that ISVs can use to accelerate deals. Learn eligibility requirements and how to register opportunities through Google Cloud Partner Network.",
       },
       {
         name: "Procurement API — GCP",
@@ -1253,12 +1263,12 @@ export const learningPaths = [
       {
         name: "Marketplace Customer Credit Program (MCCP) — GCP",
         slug: "marketplace-customer-credit-program-mccp-—-gcp",
-        why: "MCCP is GCP's buyer-side incentive — up to 3% in Google Cloud credits for first-time GCP Marketplace buyers. Learn how ISVs register opportunities in Partner Advantage to activate the credit and how it differs from AWS and Azure funding models.",
+        why: "MCCP is GCP's buyer-side incentive — up to 3% in Google Cloud credits for first-time GCP Marketplace buyers. Learn how ISVs register opportunities in Google Cloud Partner Network to activate the credit and how it differs from AWS and Azure funding models.",
       },
       {
         name: "Google Cloud Partner Innovation Fund — GCP",
         slug: "google-cloud-partner-innovation-fund-—-gcp",
-        why: "MCCP covers buyer-side GCP credits; the Partner Innovation Fund covers the ISV side — providing funding for go-to-market activities, POC builds, and joint solution development through Partner Advantage. Understanding both sides of GCP's incentive stack gives you the full picture of what's available to offset deal and onboarding costs.",
+        why: "MCCP covers buyer-side GCP credits; the Partner Innovation Fund covers the ISV side — providing funding for go-to-market activities, POC builds, and joint solution development through Google Cloud Partner Network. Understanding both sides of GCP's incentive stack gives you the full picture of what's available to offset deal and onboarding costs.",
       },
     ],
   },
