@@ -185,7 +185,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How ISVs work alongside hyperscaler sales teams to close deals. Covers the co-sell motion, referral mechanics, platform tools, AWS program requirements, and how co-sell varies across AWS, Azure, and GCP.",
-    meta: "17 terms · ~65 min",
+    meta: "18 terms · ~70 min",
     continuesFrom: "private-offers-and-cppas",
     next: "marketplace-ops-essentials",
     prereqs: ["private-offers-and-cppas"],
@@ -289,6 +289,11 @@ export const learningPaths = [
         name: "Co-sell Insights — Suger",
         slug: "co-sell-insights-—-suger",
         why: "After learning how co-sell programs work across AWS, Azure, and GCP, Co-sell Insights shows how Suger aggregates signals from all three into a unified intelligence layer. This is where cross-platform co-sell strategy becomes operationally executable — surfacing which deals to pursue and what actions to take, across all hyperscalers at once.",
+      },
+      {
+        name: "Account Mapping — Suger",
+        slug: "account-mapping-—-suger",
+        why: "Account Mapping is how you turn your CRM pipeline into a co-sell targeting list. Suger maps your existing accounts against cloud partner account data across AWS, Azure, and GCP — surfacing which of your deals already have an active cloud partner relationship. These overlaps are the highest-probability co-sell engagements, because the hyperscaler already knows the account.",
       },
     ],
   },
@@ -461,7 +466,7 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
-    meta: "14 terms · ~55 min",
+    meta: "17 terms · ~65 min",
     continuesFrom: "channel-and-partner-motions",
     next: "marketplace-integrations",
     steps: [
@@ -529,6 +534,21 @@ export const learningPaths = [
         name: "Insulin",
         slug: "insulin",
         why: "Insulin is Suger's built-in AI workspace — inside the Console, not a separate tool. It adds agents, team channels, and automated Watches on top of the platform you already use. Understanding Insulin completes the picture of how Suger is evolving from a management console into an agentic operations platform.",
+      },
+      {
+        name: "Insulin Agent — Suger",
+        slug: "insulin-agent-—-suger",
+        why: "Insulin Agents are the named units of work inside Insulin — each one is an AI specialist with defined tools and instructions. Suger ships 20+ pre-built agents and lets you create custom ones. Knowing what an Agent is tells you what you're configuring when you set up a Watch or assign agents to a Channel.",
+      },
+      {
+        name: "Insulin Watch — Suger",
+        slug: "insulin-watch-—-suger",
+        why: "Watches are how you turn Insulin from a chat tool into a background automation layer. A Watch runs an Agent on a cron schedule or event trigger — so your agents can monitor revenue changes, entitlement events, or deal activity without you having to invoke them manually.",
+      },
+      {
+        name: "Insulin Channel — Suger",
+        slug: "insulin-channel-—-suger",
+        why: "Channels are persistent multi-user, multi-agent workspaces inside Insulin. Where direct agent chats are session-scoped and 1:1, a Channel is designed for ongoing operations — a deal review board, a co-sell war room, a RevOps workspace. Up to 20 agents can run inside a single Channel alongside your team.",
       },
       {
         name: "Suger Chrome Extension",

@@ -15,6 +15,7 @@ export function buildAlphaNav(grouped) {
       const a = document.createElement("a");
       a.className = "alpha-link";
       a.textContent = letter;
+      a.href = `#letter-${letter}`;
       a.onclick = (e) => {
         e.preventDefault();
         document
@@ -48,21 +49,26 @@ export function initScrollSpy() {
     return TOPNAV_H + (alphaNavEl?.offsetHeight ?? 0);
   }
 
+  let scrollTicking = false;
   window.addEventListener("scroll", () => {
-    const threshold = stickyHeight() + 10;
-    const headers = document.querySelectorAll(".alpha-header");
-    let current = "";
-    headers.forEach((h) => {
-      if (h.getBoundingClientRect().top <= threshold)
-        current = h.id.replace("letter-", "");
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(() => {
+      const threshold = stickyHeight() + 10;
+      const headers = document.querySelectorAll(".alpha-header");
+      let current = "";
+      headers.forEach((h) => {
+        if (h.getBoundingClientRect().top <= threshold)
+          current = h.id.replace("letter-", "");
+      });
+      document.querySelectorAll(".alpha-link").forEach((link) => {
+        link.classList.toggle("active", link.textContent === current);
+      });
+      if (backToTopBtn) {
+        backToTopBtn.style.display = window.scrollY > 400 ? "block" : "none";
+      }
+      scrollTicking = false;
     });
-    document.querySelectorAll(".alpha-link").forEach((link) => {
-      link.classList.toggle("active", link.textContent === current);
-    });
-
-    if (backToTopBtn) {
-      backToTopBtn.style.display = window.scrollY > 400 ? "block" : "none";
-    }
   });
 
   if (backToTopBtn) {

@@ -261,8 +261,8 @@ mark {
 }
 
 .sidebar-all-btn.active {
-    background: var(--navy);
-    color: var(--white);
+    background: #fef3eb;
+    color: var(--orange-text);
     font-weight: 600;
 }
 
@@ -450,7 +450,7 @@ mark {
 }
 .d-intermediate {
     background: #fff3e0;
-    color: #bf5600;
+    color: var(--orange-text);
 }
 .d-advanced {
     background: #ede9ff;
@@ -781,7 +781,7 @@ mark {
 }
 .pb-off {
     background: #f5f5f5;
-    color: #767676;
+    color: #636363;
     text-decoration: line-through;
 }
 .pb-agnostic {
@@ -898,7 +898,7 @@ mark {
 }
 
 .back-to-top:hover {
-    background: #2a2a4e;
+    background: #1a1a1a;
 }
 
 /* ---- Responsive ----------------------------------------------------------- */
@@ -916,7 +916,7 @@ mark {
         display: none;
     }
 
-    .topnav-links a.current {
+    .topnav-links {
         display: none;
     }
 
@@ -930,6 +930,67 @@ mark {
 
     .back-to-top {
         padding: 11px 16px;
+    }
+
+    /* Search toggle */
+    .search-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        flex-shrink: 0;
+        transition:
+            background 0.12s,
+            color 0.12s;
+    }
+
+    .search-toggle-btn:hover,
+    .search-toggle-btn[aria-expanded="true"] {
+        background: rgba(255, 255, 255, 0.13);
+        color: var(--white);
+    }
+
+    /* Align search-toggle + filter-btn to the right on mobile */
+    .topnav-center {
+        justify-content: flex-end;
+    }
+
+    /* Hide actual search bar on mobile by default */
+    .search-bar {
+        display: none;
+    }
+
+    /* Search open state: show search bar, fill available width */
+    .topnav.search-open .topnav-center {
+        justify-content: flex-start;
+    }
+
+    .topnav.search-open .search-bar {
+        display: block;
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* Change toggle icon to X appearance when open */
+    .topnav.search-open .search-toggle-btn {
+        border-color: rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.12);
+        color: var(--white);
+    }
+
+    /* Hide brand text + nav links when search open to give search bar max space */
+    .topnav.search-open .brand-text {
+        display: none;
+    }
+
+    .topnav.search-open .topnav-links {
+        display: none;
     }
 }
 
@@ -1107,6 +1168,12 @@ mark {
     color: rgba(255, 255, 255, 0.2);
 }
 
+/* ---- Search toggle button (mobile only) ----------------------------------- */
+
+.search-toggle-btn {
+    display: none;
+}
+
 /* ---- Filter toggle button ------------------------------------------------- */
 
 .filter-toggle-btn {
@@ -1177,12 +1244,34 @@ mark {
     overflow: hidden;
 }
 
+@keyframes modal-slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes backdrop-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .filter-modal:not([hidden]) {
     display: flex;
+    animation: modal-slide-in 0.15s ease-out;
 }
 
 .filter-modal-backdrop:not([hidden]) {
     display: block;
+    animation: backdrop-fade-in 0.15s ease-out;
 }
 
 .filter-modal-header {

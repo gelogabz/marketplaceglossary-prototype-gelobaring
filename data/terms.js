@@ -110,7 +110,7 @@ export const terms = [
   {
     name: "Agreement-Based Offer (ABO) — AWS",
     tags: ["aws", "offers"],
-    def: "An AWS Marketplace feature that lets sellers create a new offer on top of an existing buyer agreement — used for renewals, upgrades, or amendments without requiring the buyer to start a new subscription from scratch.",
+    def: "An AWS Marketplace feature that lets sellers create a new offer on top of an existing buyer agreement — used for renewals, upgrades, or amendments without requiring the buyer to start a new subscription from scratch. ABOs are only supported for SaaS Contract and SaaS Contract with Consumption products — AMI, container, SaaS Subscription, and professional services offers do not support amendments. Amended offers become active immediately upon buyer acceptance; no future start date is possible.",
     alias: "Related: Agreement — AWS, Future Dated Agreement — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
@@ -530,7 +530,7 @@ export const terms = [
   {
     name: "Co-sell Eligible / Incentivized — Azure",
     tags: ["azure", "cosell"],
-    def: "Tiered Microsoft co-sell statuses. 'Co-sell Ready' requires a live Microsoft Marketplace listing plus a solution one-pager and pitch deck. 'Azure IP Co-sell Eligible' requires co-sell ready status plus: at least $100,000 in Azure Consumed Revenue or Marketplace Billed Sales over the trailing 12 months at the organization level, Azure-based technical validation, and active Azure platform hosting at transaction time — this status unlocks MACC eligibility. 'Co-sell Incentivized' means Microsoft sellers earn quota credit for selling your product. Note: As of 2025, Azure IP co-sell top-tier benefits are transitioning to the certified software designation within the Microsoft AI Cloud Partner Program.",
+    def: "Microsoft's three-tier co-sell status system for Microsoft Marketplace offers: In-market (live transactable listing required), Co-sell Ready (In-market plus solution one-pager and pitch deck in Partner Center), and Azure IP Co-sell Eligible (Co-sell Ready plus ≥$100K Azure Consumed Revenue or Marketplace Billed Sales in the trailing 12 months at the org level, Azure-based technical validation, a transactable offer, and a reference architecture diagram for most offer types). Azure IP Co-sell Eligible status unlocks MACC eligibility and prioritized Microsoft seller engagement. Microsoft field sellers earn incentive credit (via MCI) for selling Azure IP Co-sell Eligible offers.",
     alias:
       "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
     source:
@@ -1076,7 +1076,8 @@ export const terms = [
     name: "GCP Marketplace — GCP",
     tags: ["gcp"],
     def: "Google Cloud's marketplace for ISVs to list and sell software and services to Google Cloud customers. Integrated with GCP billing; purchases can draw down CUD commitments.",
-    alias: "",
+    alias:
+      "Related: Producer Portal — GCP, Committed Use Discount (CUD) — GCP, Private Offer — GCP",
     source: "https://docs.cloud.google.com/marketplace/docs",
     difficulty: "beginner",
     category: "fundamentals",
@@ -1230,7 +1231,7 @@ export const terms = [
   {
     name: "ISV Accelerate — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Partners with Validated or Differentiated AWS Specialization status can access premium co-sell benefit tiers. Required for SPPO participation.",
+    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Partners must achieve Validated or Differentiated status in AWS Partner Central (via the Partner Path) as a baseline enrollment prerequisite; AWS Specialization status unlocks premium co-sell benefit tiers above the standard program. Required for SPPO participation.",
     alias:
       "Azure equivalent: ISV Success Program — Azure | GCP equivalent: Build Engagement Model — GCP | Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
@@ -1315,7 +1316,7 @@ export const terms = [
   {
     name: "Azure Consumption Commitment (MACC) — Azure",
     tags: ["azure", "funding"],
-    def: "Microsoft's enterprise committed spend program. Enterprises pre-commit to Azure spend over 1–3 years; purchases of MACC-eligible transactable Marketplace listings count toward that commitment. A core driver of enterprise Azure Marketplace buying. Purchases must be made through the Azure portal — credit card purchases on Marketplace.Microsoft.com do not count, and Azure prepayment (monetary commitments) is excluded.",
+    def: "Microsoft's enterprise committed spend program where enterprises pre-commit to Azure spend over 1–3 years; purchases of MACC-eligible transactable Marketplace listings count toward that commitment, making it a core enterprise buying driver. Purchases must be made through the Azure portal — credit card purchases on Marketplace.Microsoft.com and Azure prepayment (monetary commitments) are excluded. MACC enrollment is per-offer, not per-publisher; each offer must be independently enrolled and hold Azure IP Co-sell Eligible status. Free and BYOL offers are ineligible.",
     alias:
       "AWS equivalent: Enterprise Discount Program (EDP) — AWS | GCP equivalent: Committed Use Discount (CUD) — GCP",
     source:
@@ -1410,7 +1411,7 @@ export const terms = [
   {
     name: "Marketplace Rewards — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's benefits program for transactable Microsoft Marketplace publishers. Provides go-to-market support, co-marketing resources, and technical enablement scaled to the ISV's transact revenue milestones. Benefits scale with transact revenue milestones — measured by Marketplace-billed sales, Business Applications solution value, or Teams App MAU.",
+    def: "Microsoft's benefits program for transactable Microsoft Marketplace publishers. Provides go-to-market support, co-marketing resources, and technical enablement; benefits scale with transact revenue milestones measured by Marketplace-billed sales, Business Applications solution value, or Teams App MAU. BYOL and free offers are categorized as List/Trial tier — not transact — and are ineligible for transact-tier Marketplace Rewards benefits.",
     alias:
       "Related: Microsoft Marketplace — Azure, ISV Success Program — Azure",
     source:
@@ -1494,7 +1495,7 @@ export const terms = [
   {
     name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's partner program for ISVs and services companies. Enrollment is required to publish on Azure Marketplace and access co-sell, partner funding, and Marketplace Rewards. Co-sell is managed through Partner Center — see the Partner Center — Azure term for the direct link.",
+    def: "Microsoft's partner program for ISVs and services companies. Enrollment is required to publish on Microsoft Marketplace and access co-sell, partner funding, and Marketplace Rewards — enrollment issues a PartnerID (formerly MPNID) that must be linked to Partner Center to complete publisher registration. Co-sell is managed through Partner Center — see the Partner Center — Azure term for the direct link.",
     alias:
       "Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
     source:
@@ -1529,7 +1530,7 @@ export const terms = [
   {
     name: "Multiparty Private Offer (MPO) — Azure",
     tags: ["azure", "cosell", "offers", "channel"],
-    def: "Microsoft Marketplace's channel reseller mechanism — the Azure equivalent of AWS's CPPO. An ISV and channel partner collaborate to create a single private offer for an end customer. The partner sets their own margin; the purchase counts toward the customer's MACC. As of 2025, Microsoft is also expanding 'Resale-Enabled Offers' — a broader channel motion allowing geographic resale by authorized distributors including Arrow, Crayon, Ingram Micro, Pax8, and TD SYNNEX.",
+    def: "Microsoft Marketplace's channel reseller mechanism — the Azure equivalent of AWS's CPPO. An ISV and channel partner collaborate to create a single private offer for an end customer; the partner sets their own margin, and the purchase counts toward the customer's MACC. With Resale-Enabled Offers, authorized channel partners can initiate MPOs independently for each customer deal without requiring per-deal ISV involvement.",
     alias:
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Related: Resale-Enabled Offer — Azure",
     source:
@@ -2015,7 +2016,8 @@ export const terms = [
     name: "Pub/Sub — GCP",
     tags: ["gcp"],
     def: "Google Cloud's messaging service used to receive entitlement lifecycle events (creation, activation, cancellation) from GCP Marketplace. ISVs must subscribe to a Pub/Sub topic as part of technical integration.",
-    alias: "",
+    alias:
+      "Related: Procurement API — GCP, Service Account — GCP, GCP Marketplace — GCP",
     source:
       "https://docs.cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
     difficulty: "advanced",
@@ -2270,7 +2272,8 @@ export const terms = [
     name: "Service Account — GCP",
     tags: ["gcp"],
     def: "A GCP identity (non-human account) used to authenticate API calls between Suger and GCP Marketplace services — including the Procurement API, Pub/Sub, and billing integration.",
-    alias: "",
+    alias:
+      "Related: Workload Identity Federation — GCP, Procurement API — GCP, Producer Portal — GCP",
     source: "https://docs.cloud.google.com/iam/docs/service-account-overview",
     difficulty: "advanced",
     category: "operations",
@@ -2293,9 +2296,10 @@ export const terms = [
     name: "Service Control API — GCP",
     tags: ["gcp"],
     def: "Google Cloud's API ISVs use to report usage metrics to GCP Marketplace for metered billing. Suger calls this API on the ISV's behalf when usage records are submitted.",
-    alias: "",
+    alias:
+      "Related: Procurement API — GCP, Producer Portal — GCP, GCP Marketplace — GCP",
     source:
-      "https://cloud.google.com/marketplace/docs/partners/backend-integration/backend-integration-overview",
+      "https://docs.cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -2507,7 +2511,7 @@ export const terms = [
   },
   {
     name: "Subscription — Azure",
-    tags: ["azure", "gcp"],
+    tags: ["azure"],
     def: "A buyer's active contract for a marketplace offer. In Azure, the Subscription ID is the external identifier for an Entitlement in Suger.",
     alias: "Related: Entitlement, SaaS Fulfillment API — Azure",
     source:
@@ -3742,7 +3746,7 @@ export const terms = [
   {
     name: "Marketplace Commerce Analytics Service (MCAS) — AWS",
     tags: ["aws", "suger", "integrations"],
-    def: "An AWS service giving sellers programmatic access to marketplace business data (usage, subscriptions, billing, customer info) via the AWS SDK. Data is delivered to an S3 bucket with SNS notifications. Suger uses MCAS as part of the AWS integration setup.",
+    def: "An AWS service giving sellers programmatic access to marketplace business data (usage, subscriptions, billing, customer info) via the AWS SDK. Data is delivered to an S3 bucket; delivery notifications use SNS (verify against current docs — EventBridge migration may affect this pipeline). Suger uses MCAS as part of the AWS integration setup.",
     alias: "",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html",
@@ -4107,7 +4111,8 @@ export const terms = [
     name: "Partner Sales Console — GCP",
     tags: ["gcp", "cosell"],
     def: "The GCP portal used by authorized resellers to view RPOP private offer plans from ISVs, create private offers for end customers, and manage orders. The reseller-side equivalent of the GCP Producer Portal.",
-    alias: "",
+    alias:
+      "Related: Reseller Private Offer Plan (RPOP) — GCP, Marketplace Channel Private Offer (MCPO) — GCP, Producer Portal — GCP",
     source:
       "https://docs.cloud.google.com/marketplace/docs/partners/resellers/resell",
     difficulty: "intermediate",
@@ -4310,11 +4315,11 @@ export const terms = [
   {
     name: "Resale-Enabled Offer — Azure",
     tags: ["azure", "cosell", "offers"],
-    def: "A new Microsoft Marketplace channel motion (launched 2025, broadly available later in 2025) where ISVs designate authorized channel partners to resell their solutions on a geographic basis. Resale-enabled offers that are also Azure benefit-eligible count toward the customer's MACC. Part of Microsoft's broader expansion of partner resale options alongside MPO.",
+    def: "A Microsoft Marketplace channel motion where ISVs designate authorized channel partners to resell their solutions on a geographic basis — without creating a separate private offer per customer deal. Available for transactable SaaS and Azure VM with software reservation pricing offers; available in 30+ markets as of May 2026. Resale-enabled offers that are also Azure benefit-eligible count toward the customer's MACC.",
     alias:
       "Related: Multiparty Private Offer (MPO) — Azure, Azure Consumption Commitment (MACC) — Azure, Cloud Solution Provider (CSP) — Azure, Microsoft Marketplace — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/multiparty-private-offers-for-isvs",
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/resale-enabled-offers-overview",
     difficulty: "advanced",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Enterprise Buyers"],
@@ -5718,11 +5723,11 @@ export const terms = [
   {
     name: "ISV Success Program — Azure",
     tags: ["azure", "cosell", "funding"],
-    def: "A Microsoft program (formerly ISV Success Path) that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace.",
+    def: "A Microsoft program that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace. Enrollment in ISV Success is required for Business Applications co-sell eligible status for Dynamics 365 and Power Apps ISVs.",
     alias:
       "AWS equivalent: ISV Accelerate — AWS | GCP equivalent: Build Engagement Model — GCP | Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/membership/isv-success",
+      "https://learn.microsoft.com/en-us/partner-center/referrals/co-sell-requirements",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -6216,7 +6221,7 @@ export const terms = [
   {
     name: "Amazon EventBridge Marketplace Integration — AWS",
     tags: ["aws", "integrations"],
-    def: "AWS's event-driven integration mechanism for SaaS Marketplace products. When a buyer subscribes, amends, or cancels, EventBridge sends events to the seller's default event bus using the source `aws.agreement-marketplace`. Sellers configure rules and targets (Lambda, Step Functions, API Gateway) to trigger provisioning and deprovisioning logic. EventBridge is replacing SNS-based notifications for all new SaaS listings.",
+    def: "AWS's event-driven integration mechanism for SaaS Marketplace products. When a buyer subscribes, amends, or cancels, EventBridge sends events to the seller's default event bus using the source `aws.agreement-marketplace`. Sellers configure rules and targets (Lambda, Step Functions, API Gateway) to trigger provisioning and deprovisioning logic. EventBridge is the future direction for SaaS notification handling; existing SNS integrations continue to function, and new listings will eventually transition to EventBridge — no hard cutover date has been announced.",
     alias:
       "Replacing: Amazon SNS Marketplace Notifications — AWS | Related: SaaS Fulfillment API — Azure, Pub/Sub — GCP",
     source:
@@ -6331,7 +6336,7 @@ export const terms = [
   {
     name: "GetEntitlements API — AWS",
     tags: ["aws", "integrations"],
-    def: "An AWS Marketplace Entitlement Service API that returns the quantity and dimensions a buyer is entitled to under a SaaS Contract. Sellers call this after resolving a customer to verify what the buyer has purchased, and again when they receive an `entitlement-updated` SNS notification to check for contract changes. Only applicable to SaaS Contract products — PAYG/subscription products do not use entitlements.",
+    def: "An AWS Marketplace Entitlement Service API that returns the quantity and dimensions a buyer is entitled to under a SaaS Contract. Sellers call this after resolving a customer to verify what the buyer has purchased, and again when they receive an `entitlement-updated` SNS notification (or the `License Updated - Manufacturer` EventBridge event from `aws.agreement-marketplace`) to check for contract changes. Only applicable to SaaS Contract products — PAYG/subscription products do not use entitlements.",
     alias:
       "Related: ResolveCustomer API — AWS, Amazon EventBridge Marketplace Integration — AWS, Entitlement",
     source:
@@ -7501,7 +7506,7 @@ export const terms = [
   {
     name: "Suger MCP Server",
     tags: ["suger", "integrations"],
-    def: "A production-available server built on the Model Context Protocol (MCP) standard that lets AI assistants and agents interact with Suger's marketplace management platform through natural language. It exposes 120+ tools spanning the full Suger API surface across eight categories: Products & Offers, Buyers & Contacts, Entitlements, Metering & Usage, Billing & Revenue, Support, Operations & Auditing, and Co-Sell & Search. An AI client connected to the Suger MCP Server can create offers, manage entitlements, report usage, pull revenue reports, and manage buyer relationships without navigating the Suger Console directly.",
+    def: "A production-available server built on the Model Context Protocol (MCP) standard that lets AI assistants and agents interact with Suger's marketplace management platform through natural language. It exposes 120+ tools spanning the full Suger API surface across nine categories: Products & Offers, Buyers & Contacts, Entitlements, Metering & Usage, Billing & Revenue, Support, Operations & Auditing, Co-Sell, and Knowledge Search. An AI client connected to the Suger MCP Server can create offers, manage entitlements, report usage, pull revenue reports, and manage buyer relationships without navigating the Suger Console directly.",
     alias:
       "Related: Suger API Client, Suger Console, Insulin, Integration, AWS Partner Central Agents — AWS",
     source: "https://doc.suger.io/mcp/overview/",
@@ -7665,6 +7670,748 @@ export const terms = [
     related: [
       { name: "Suger Console", slug: "suger-console" },
       { name: "Insulin", slug: "insulin" },
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
+    ],
+  },
+  {
+    name: "SaaS Contracts with Pay-As-You-Go (Overages) — AWS",
+    tags: ["aws", "offers", "billing"],
+    def: "A SaaS pricing model that combines a committed contract (entitlement quantities purchased upfront) with unlimited overage consumption billed through the Metering API. Unlike SaaS Subscription, the buyer commits to defined quantities; unlike SaaS Contract, additional usage above the committed quantity is billed per-unit via BatchMeterUsage. Requires both the GetEntitlements API (to check contracted quantities) and the BatchMeterUsage API (to bill overages) — the only SaaS pricing model requiring both APIs simultaneously.",
+    alias:
+      "Related: SaaS Contract Pricing — AWS, SaaS Subscription Pricing — AWS, GetEntitlements API — AWS, BatchMeterUsage API — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-contracts.html",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Pricing a SaaS product where buyers commit to a base quantity with the ability to consume additional units above that commitment",
+      "Integrating both GetEntitlements and BatchMeterUsage APIs for a product that combines contract commitments with usage-based overages",
+    ],
+    context: [
+      "AWS Marketplace",
+      "SaaS Pricing Configuration",
+      "Metered Billing",
+    ],
+    related: [
+      {
+        name: "SaaS Contract Pricing — AWS",
+        slug: "saas-contract-pricing-—-aws",
+      },
+      {
+        name: "SaaS Subscription Pricing — AWS",
+        slug: "saas-subscription-pricing-—-aws",
+      },
+      { name: "GetEntitlements API — AWS", slug: "getentitlements-api-—-aws" },
+      { name: "BatchMeterUsage API — AWS", slug: "batchmeterusage-api-—-aws" },
+    ],
+  },
+  {
+    name: "SaaS Free Trial — AWS",
+    tags: ["aws", "offers"],
+    def: "A free trial option configurable on SaaS Subscription and SaaS Contract AWS Marketplace listings. The buyer registers via the standard AMMP registration token flow; when the trial period ends, the listing automatically converts to paid or expires. The SNS `subscribe-success` notification includes an `isFreeTrialTermPresent` flag indicating an active trial, allowing ISV backends to distinguish trial from paid subscriptions during entitlement checks.",
+    alias:
+      "Related: SaaS Subscription Pricing — AWS, SaaS Contract Pricing — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Configuring a time-limited free trial period on an AWS Marketplace SaaS listing to lower buyer adoption friction",
+      "Handling the isFreeTrialTermPresent flag in SNS notifications to track trial versus paid subscriptions in the ISV backend",
+    ],
+    context: [
+      "AWS Marketplace",
+      "SaaS Pricing Configuration",
+      "Subscription Management",
+    ],
+    related: [
+      {
+        name: "SaaS Subscription Pricing — AWS",
+        slug: "saas-subscription-pricing-—-aws",
+      },
+      {
+        name: "SaaS Contract Pricing — AWS",
+        slug: "saas-contract-pricing-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Private Marketplace — AWS",
+    tags: ["aws", "procurement"],
+    def: "An enterprise governance feature that allows AWS administrators to restrict which AWS Marketplace listings employees can purchase. IT and procurement teams curate an approved catalog; any listing not on the approved list is blocked at purchase time regardless of whether the employee can find it in Marketplace. Sellers can request inclusion on a buyer's Private Marketplace through the standard AWS Marketplace listing process.",
+    alias: "Related: AWS Marketplace — AWS, Private Offer",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["Enterprise Buyers", "AWS Sales"],
+    useCases: [
+      "Configuring a Private Marketplace to restrict employee software purchases to pre-approved listings only",
+      "Presenting an ISV product to an enterprise account for inclusion on their Private Marketplace approved catalog as part of a deal",
+    ],
+    context: ["AWS Marketplace", "Enterprise Procurement", "AWS Organizations"],
+    related: [
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
+  },
+  {
+    name: "Seller Data Delivery Service (SDDS) — AWS",
+    tags: ["aws", "operations"],
+    def: "The current-generation data delivery pipeline for AWS Marketplace sellers, replacing the legacy Marketplace Data Feed Service (MDFS). SDDS delivers daily reports — including disbursements, subscriber activity, and usage data — to a seller-specified S3 bucket via automated batch delivery. It is the primary reporting infrastructure for sellers managing revenue reconciliation and analytics.",
+    alias:
+      "Replaces: Marketplace Data Feed Service (MDFS) — AWS | Related: AWS Marketplace — AWS, Disbursement",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Setting up SDDS to receive daily seller reports in an S3 bucket for revenue reconciliation and buyer analytics",
+      "Migrating from the legacy MDFS to SDDS as the active reporting pipeline for AWS Marketplace data",
+    ],
+    context: ["AWS Marketplace", "Seller Reporting", "AWS S3"],
+    related: [
+      {
+        name: "Marketplace Data Feed Service (MDFS) — AWS",
+        slug: "marketplace-data-feed-service-mdfs-—-aws",
+      },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+    ],
+  },
+  {
+    name: "AWS Data Exchange — AWS",
+    tags: ["aws", "offers", "integrations"],
+    def: "An AWS service that enables ISVs to publish, license, and deliver data products — including datasets, APIs, Amazon S3 objects, and Amazon Redshift queries — to AWS customers via AWS Marketplace. Data Exchange listings are a distinct product type from SaaS, AMI, and container listings; subscription management is handled through the AWS Data Exchange console, not Seller Central.",
+    alias: "Related: AWS Marketplace — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/data-products.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing a data product (dataset or API feed) on AWS Marketplace as an AWS Data Exchange listing",
+      "Accessing licensed third-party data feeds directly in AWS analytics workflows via Data Exchange subscriptions",
+    ],
+    context: ["AWS Marketplace", "AWS Data Exchange", "Data Products"],
+    related: [{ name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" }],
+  },
+  {
+    name: "EKS Add-On — AWS",
+    tags: ["aws", "offers", "integrations"],
+    def: "A container product delivery type that allows ISVs to list their software as an installable add-on directly within the Amazon EKS console. Buyers discover, purchase, and deploy the add-on from EKS cluster management without navigating the Marketplace catalog separately. Updates and versioning are managed through the EKS add-on lifecycle, not the standard container image pull workflow.",
+    alias: "Related: AWS Marketplace — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/container-based-products.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing a Kubernetes-native tool as an EKS Add-On to reach buyers who manage clusters through the EKS console",
+      "Evaluating EKS Add-On versus standard container product listing for a networking or security tool targeting EKS users",
+    ],
+    context: ["AWS Marketplace", "Amazon EKS", "Container Products"],
+    related: [{ name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" }],
+  },
+  {
+    name: "Change Set — AWS",
+    tags: ["aws", "operations", "integrations"],
+    def: "The core operational unit of the AWS Marketplace Catalog API — a batch of one or more change requests (e.g., updating listing details, adding pricing tiers, adding versions) submitted as an atomic transaction. Amazon EventBridge emits change set lifecycle events — ChangeSetSucceeded, ChangeSetFailed, ChangeSetCancelled — from the aws.marketplace-catalog source, enabling automated pipeline monitoring of publish and update operations.",
+    alias:
+      "Related: AWS Marketplace Catalog API — AWS, Amazon EventBridge Marketplace Integration — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/APIReference/welcome.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Submitting a change set via the Catalog API to update listing details or pricing programmatically without using Seller Central",
+      "Monitoring change set lifecycle EventBridge events to automate and track ISV publishing pipelines",
+    ],
+    context: [
+      "AWS Marketplace",
+      "Catalog API",
+      "AWS Marketplace Seller Central",
+    ],
+    related: [
+      {
+        name: "AWS Marketplace Catalog API — AWS",
+        slug: "aws-marketplace-catalog-api-—-aws",
+      },
+      {
+        name: "Amazon EventBridge Marketplace Integration — AWS",
+        slug: "amazon-eventbridge-marketplace-integration-—-aws",
+      },
+    ],
+  },
+  {
+    name: "AWS European Sovereign Cloud Marketplace — AWS",
+    tags: ["aws", "operations"],
+    def: "A separate AWS Marketplace partition purpose-built for EU data sovereignty requirements, active as of 2026. ISVs must register independently from the standard AWS Marketplace — a separate seller account and listing are required even if the ISV is already registered on the main Marketplace. All data remains within EU borders and the partition operates under distinct regulatory guarantees.",
+    alias: "Related: AWS Marketplace — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Registering a separate seller account for the AWS European Sovereign Cloud Marketplace to serve EU data sovereignty customers",
+      "Evaluating whether to list on both standard AWS Marketplace and the European Sovereign Cloud partition for enterprise EU deals",
+    ],
+    context: ["AWS Marketplace", "EU Sovereign Cloud", "AWS European Region"],
+    related: [{ name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" }],
+  },
+  {
+    name: "SaaS Free — AWS",
+    tags: ["aws", "offers", "billing"],
+    def: "An AWS Marketplace SaaS pricing model where all metering dimensions are priced at $0.00. Free SaaS products still require the full AMMP entitlement and fulfillment integration — including registration token handling, SNS subscription confirmation, and entitlement checks — even though no charge is generated. Used for freemium products or ISVs distributing tools at no cost through Marketplace.",
+    alias:
+      "Related: SaaS Subscription Pricing — AWS, SaaS Contract Pricing — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-product-customer-experience.html",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Publishing a freemium or developer tool on AWS Marketplace at no cost while still using the standard entitlement and fulfillment integration",
+      "Understanding that SaaS Free listings still require the full AMMP registration and entitlement flow despite $0 pricing",
+    ],
+    context: ["AWS Marketplace", "SaaS Pricing Configuration"],
+    related: [
+      {
+        name: "SaaS Subscription Pricing — AWS",
+        slug: "saas-subscription-pricing-—-aws",
+      },
+      {
+        name: "SaaS Contract Pricing — AWS",
+        slug: "saas-contract-pricing-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Billing Adjustment — AWS",
+    tags: ["aws", "billing", "operations"],
+    def: "A post-transaction correction mechanism in AWS Marketplace that allows sellers to modify charges after a transaction has been processed. Used to correct mispriced deals, apply credits, or adjust usage records after the billing cycle. Amazon EventBridge emits Billing Adjustment Completed and Billing Adjustment Failed events from the aws.marketplace-catalog source to notify ISVs of adjustment outcomes.",
+    alias:
+      "Related: Amazon EventBridge Marketplace Integration — AWS, Disbursement",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/buyer-private-offers.html",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Submitting a billing adjustment to correct a mispriced enterprise deal after transaction completion",
+      "Monitoring Billing Adjustment EventBridge events to track adjustment status in an automated revenue operations pipeline",
+    ],
+    context: ["AWS Marketplace", "Billing & Revenue", "Seller Central"],
+    related: [
+      {
+        name: "Amazon EventBridge Marketplace Integration — AWS",
+        slug: "amazon-eventbridge-marketplace-integration-—-aws",
+      },
+      { name: "Disbursed Amount", slug: "disbursed-amount" },
+    ],
+  },
+  {
+    name: "Azure Virtual Machine Offer — Azure",
+    tags: ["azure", "offers"],
+    def: "A transactable Microsoft Marketplace listing type for VM-based software solutions. Pricing models include per-hour VM-core or vCPU billing, software reservation pricing (1–5 year via VMSR), and pay-as-you-go. Azure VM Offers are distinct from Azure Application offers (which include Managed Application and Solution Template plan types) and from SaaS offers.",
+    alias:
+      "Related: Azure Managed Application — Azure, VM Software Reservation (VMSR) — Azure, Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/publisher-guide-by-offer-type",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing an infrastructure or security tool as an Azure VM Offer to reach buyers who provision VMs directly from Marketplace",
+      "Configuring software reservation pricing on a VM Offer to offer 1- or 3-year discount tiers via VMSR",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Azure Portal",
+    ],
+    related: [
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "Azure Managed Application — Azure",
+        slug: "azure-managed-application-—-azure",
+      },
+    ],
+  },
+  {
+    name: "VM Software Reservation (VMSR) — Azure",
+    tags: ["azure", "offers", "billing"],
+    def: "An ISV-configurable 1–5 year discount on VM software license fees published on Microsoft Marketplace. Buyers pay a discounted per-hour software rate in exchange for a term commitment; Azure infrastructure cost is billed separately. VMSR is supported on Resale-Enabled Offers, allowing channel partners to transact software reservations for end customers. The discounted software rate — not list price — is what Microsoft pays the ISV.",
+    alias:
+      "Related: Azure Virtual Machine Offer — Azure, Resale-Enabled Offer — Azure, Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-vm-software-reservations",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Channel Partners"],
+    useCases: [
+      "Configuring 1-year and 3-year VMSR discount tiers on a VM Offer to give enterprise buyers a term commitment discount",
+      "Understanding the impact of VMSR software reservation pricing on ISV payout rates versus pay-as-you-go",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Azure VM Offers",
+    ],
+    related: [
+      {
+        name: "Azure Virtual Machine Offer — Azure",
+        slug: "azure-virtual-machine-offer-—-azure",
+      },
+      {
+        name: "Resale-Enabled Offer — Azure",
+        slug: "resale-enabled-offer-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Solution Template — Azure",
+    tags: ["azure", "offers"],
+    def: "An Azure Application offer plan type that deploys a coordinated set of Azure resources (VMs, networking, storage, services) via an ARM template. Unlike Managed Application plans, Solution Templates are not directly transactable — they cannot be priced or purchased through Marketplace. ISVs use them to orchestrate free-to-deploy infrastructure patterns alongside a separately transactable offer.",
+    alias:
+      "Related: Azure Managed Application — Azure, Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-azure-application-offer",
+    difficulty: "advanced",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing a Solution Template plan to deploy a multi-resource Azure environment alongside a separately transactable SaaS or VM offer",
+      "Distinguishing between Solution Template (non-transactable, ARM-based) and Managed Application (transactable, ISV-managed) plan types within an Azure Application offer",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Azure Application Offers",
+    ],
+    related: [
+      {
+        name: "Azure Managed Application — Azure",
+        slug: "azure-managed-application-—-azure",
+      },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+    ],
+  },
+  {
+    name: "AI Apps and Agents — Azure",
+    tags: ["azure", "offers"],
+    def: "A dedicated Microsoft Marketplace category for AI and agentic solutions, surfaced in Azure Portal, Azure AI Foundry, Microsoft 365 Copilot, and Teams. The category covers AI agents, AI services, AI plugins, and copilot extensions. It is the fastest-growing category in Microsoft Marketplace as of 2026; ISVs listing AI solutions here gain placement in AI-native discovery surfaces alongside the standard Marketplace catalog.",
+    alias:
+      "Related: Microsoft Marketplace — Azure, ISV Success Program — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/publisher-guide-by-offer-type",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing an AI agent or copilot extension in the AI Apps and Agents category to reach buyers in Azure AI Foundry and M365 Copilot surfaces",
+      "Evaluating placement in the AI Apps and Agents category versus a standard SaaS offer type for an AI-native product",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Azure AI Foundry",
+      "Microsoft 365 Copilot",
+    ],
+    related: [
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Product Ingestion API — Azure",
+    tags: ["azure", "operations", "integrations"],
+    def: "Microsoft's unified REST API for programmatic offer management in Partner Center, replacing the legacy Cloud Partner Portal (CPP) API. Enables ISVs to create, update, and publish Microsoft Marketplace offers without using the Partner Center UI. Supports all transactable offer types including SaaS, Azure VM, Azure Application, and Container. The Azure equivalent of the AWS Marketplace Catalog API.",
+    alias:
+      "AWS equivalent: AWS Marketplace Catalog API — AWS | Related: Partner Center — Azure, Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/product-ingestion-api",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Using the Product Ingestion API to automate offer creation and updates in Partner Center as part of an ISV's publishing pipeline",
+      "Migrating offer management scripts from the deprecated CPP API to the Product Ingestion API",
+    ],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "API Integration",
+    ],
+    related: [
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Private Offer — Azure",
+    tags: ["azure", "offers"],
+    def: "A direct ISV-to-customer custom-priced Microsoft Marketplace offer. The ISV creates a private offer in Partner Center for a specific customer, configuring a custom price, discount, or terms on top of an existing published plan. Distinct from Private Plan (a hidden plan within a published offer) and from Multiparty Private Offer (a tri-party ISV+partner+customer deal). Private Offer is the bilateral foundation on which MPO and Resale-Enabled Offers are built.",
+    alias:
+      "AWS equivalent: Private Offer — AWS | GCP equivalent: Private Offer — GCP | Related: Multiparty Private Offer (MPO) — Azure, Private Plan — Azure, Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/isv-customer-private-offers",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating a Private Offer in Partner Center to give a specific enterprise customer a custom price or custom terms on an existing published plan",
+      "Understanding the distinction between Private Offer (ISV-to-customer), Private Plan (hidden public plan), and MPO (tri-party) on Microsoft Marketplace",
+    ],
+    context: [
+      "Partner Center — Azure",
+      "Microsoft Marketplace",
+      "Enterprise Sales",
+    ],
+    related: [
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      { name: "Private Plan — Azure", slug: "private-plan-—-azure" },
+      { name: "Private Offer", slug: "private-offer" },
+    ],
+  },
+  {
+    name: "Metered Billing — Azure",
+    tags: ["azure", "billing", "integrations"],
+    def: "Microsoft Marketplace's consumption-based billing model for SaaS and Azure Managed Application offers. ISVs define up to 30 custom metering dimensions (e.g., API calls, active users, processed GB) and report usage via the Marketplace Metering Service API. Reported usage is billed directly to the buyer's Azure subscription. Metered billing cannot be combined with free trial offers, and dimension overage reporting must be submitted within 24 hours of the billing period end.",
+    alias:
+      "AWS equivalent: BatchMeterUsage API — AWS | GCP equivalent: Service Control API — GCP | Related: Marketplace Metering Service API — Azure, Metering Dimension",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-metering-service-apis",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring custom metering dimensions on a SaaS offer to bill customers based on API calls, active seats, or data processed per month",
+      "Understanding the 30-dimension limit and 24-hour usage reporting deadline for Azure Marketplace metered billing",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Marketplace Metering Service API",
+    ],
+    related: [
+      {
+        name: "Marketplace Metering Service API — Azure",
+        slug: "marketplace-metering-service-api-—-azure",
+      },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+    ],
+  },
+  {
+    name: "Solutions Partner Designation — Azure",
+    tags: ["azure", "cosell"],
+    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation.",
+    alias:
+      "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-overview",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
+    useCases: [
+      "Pursuing a Solutions Partner Designation to unlock PRACR eligibility and co-sell benefit tiers for an Azure-focused ISV",
+      "Understanding that Solutions Partner Designations replaced Gold/Silver competencies and the new point-based monthly assessment process",
+    ],
+    context: [
+      "Partner Center — Azure",
+      "Azure Co-sell Programs",
+      "Microsoft AI Cloud Partner Program",
+    ],
+    related: [
+      {
+        name: "Partner Reported Azure Consumed Revenue (PRACR) — Azure",
+        slug: "partner-reported-azure-consumed-revenue-pracr-—-azure",
+      },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Agency Fee Discount for Renewals — Azure",
+    tags: ["azure", "billing"],
+    def: "A Microsoft Marketplace transaction fee reduction for private offer renewals. Standard private offers carry a 3% Microsoft agency fee; qualifying renewal private offers are discounted to 1.5% — a 50% reduction. The discount applies when an ISV renews an existing private offer for the same customer at renewal rather than creating a net-new private offer.",
+    alias:
+      "Related: Private Offer — Azure, Marketplace Rewards — Azure, Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/isv-customer-private-offers",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Structuring enterprise SaaS renewals as private offer renewals to qualify for the 1.5% agency fee instead of the standard 3%",
+      "Calculating ISV net payout on renewal deals accounting for the reduced agency fee discount",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Private Offers",
+    ],
+    related: [
+      { name: "Private Offer — Azure", slug: "private-offer-—-azure" },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Standard Contract Amendment — Azure",
+    tags: ["azure", "procurement"],
+    def: "A publisher-specific addendum that ISVs attach to the Microsoft Standard Contract for Cloud Marketplace (SCMC) to modify or supplement standard terms. Once a SaaS or other offer is published under the Standard Contract, switching to fully custom terms is blocked — the amendment is the only customization path. ISVs commonly use amendments for data processing addenda, jurisdiction-specific clauses, or enterprise liability caps.",
+    alias: "Related: Standard Contract — Azure, Standard Contract (SCMP) — AWS",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/standard-contract",
+    difficulty: "advanced",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Attaching a Standard Contract Amendment to add a data processing addendum (DPA) or liability cap without switching away from the SCMC",
+      "Understanding that publishing under the Standard Contract with an amendment blocks future migration to fully custom offer terms",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Offer Legal Terms",
+    ],
+    related: [
+      { name: "Standard Contract — Azure", slug: "standard-contract-—-azure" },
+    ],
+  },
+  {
+    name: "CSP Private Offer — Azure",
+    tags: ["azure", "offers", "channel"],
+    def: "A bilateral ISV-to-CSP-partner pricing agreement on Microsoft Marketplace. The ISV sets a wholesale price for a Cloud Solution Provider (CSP) to resell to end customers; the CSP adds their own margin on top. Distinct from the standard CSP channel (list-price resell with no ISV-set wholesale price) and from Multiparty Private Offer (a tri-party ISV+partner+customer deal). Managed through a separate Private Offers tab in Partner Center and visible to authorized CSP partners in Partner Center Marketplace.",
+    alias:
+      "Related: Multiparty Private Offer (MPO) — Azure, Cloud Solution Provider (CSP) — Azure, Private Offer — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/csp-commercial-marketplace-offers",
+    difficulty: "advanced",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Creating a CSP Private Offer to set a custom wholesale price for a trusted reseller, allowing them to add margin for customer deals",
+      "Distinguishing CSP Private Offer (bilateral ISV→CSP) from MPO (tri-party) and standard CSP list-price resell",
+    ],
+    context: ["Partner Center — Azure", "Microsoft Marketplace", "CSP Channel"],
+    related: [
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      {
+        name: "Cloud Solution Provider (CSP) — Azure",
+        slug: "cloud-solution-provider-csp-—-azure",
+      },
+    ],
+  },
+  {
+    name: "AI Agent Listing — GCP",
+    tags: ["gcp", "offers"],
+    def: "A first-class Google Cloud Marketplace listing type for AI agents, distinct from SaaS, VM, and Kubernetes product types. Announced at Google Cloud Next '26, AI Agent Listings allow ISVs to publish conversational and autonomous AI agents that buyers can deploy and integrate with Google Cloud AI services. Listings require an Agent Card JSON spec file and are discoverable through Google Cloud Marketplace and Google Agentspace.",
+    alias:
+      "Related: Agent Card — GCP, GCP Marketplace — GCP, Agentic Earnings Hub — GCP",
+    source: "https://docs.cloud.google.com/marketplace/docs",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Publishing an AI agent as an AI Agent Listing on GCP Marketplace to reach buyers building with Google Cloud AI services",
+      "Understanding AI Agent Listing requirements — including the Agent Card spec file — for launching an AI product on GCP Marketplace",
+    ],
+    context: ["GCP Marketplace", "Google Agentspace", "AI Agent Ecosystem"],
+    related: [
+      { name: "Agent Card — GCP", slug: "agent-card-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+      {
+        name: "Agentic Earnings Hub — GCP",
+        slug: "agentic-earnings-hub-—-gcp",
+      },
+    ],
+  },
+  {
+    name: "Agent Card — GCP",
+    tags: ["gcp", "integrations"],
+    def: "A JSON specification file required to list an AI agent on Google Cloud Marketplace. The Agent Card describes the agent's capabilities, input/output schemas, authentication requirements, and supported protocols (including A2A). It is the discovery and interoperability artifact for AI agent listings — analogous to an OpenAPI spec for REST APIs.",
+    alias:
+      "Related: AI Agent Listing — GCP, Agent2Agent (A2A) Protocol — GCP, GCP Marketplace — GCP",
+    source: "https://docs.cloud.google.com/marketplace/docs",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Creating an Agent Card JSON spec file to define the capabilities and interface of an AI agent before publishing on GCP Marketplace",
+      "Ensuring the Agent Card correctly describes A2A protocol support for interoperability with Gemini Enterprise and other Google AI agents",
+    ],
+    context: ["GCP Marketplace", "AI Agent Listing", "AI Agent Integration"],
+    related: [
+      { name: "AI Agent Listing — GCP", slug: "ai-agent-listing-—-gcp" },
+      {
+        name: "Agent2Agent (A2A) Protocol — GCP",
+        slug: "agent2agent-a2a-protocol-—-gcp",
+      },
+    ],
+  },
+  {
+    name: "Agent2Agent (A2A) Protocol — GCP",
+    tags: ["gcp", "integrations"],
+    def: "Google's open protocol for AI agent interoperability, enabling ISV-built agents to communicate and collaborate with Gemini Enterprise and other Google AI agents in the same ecosystem. A2A agents are discoverable via Agent Cards and can participate in multi-agent workflows. ISV agents that support A2A can integrate with Google Agentspace, Vertex AI Agent Builder, and enterprise orchestration pipelines via a standardized communication interface.",
+    alias:
+      "Related: Agent Card — GCP, AI Agent Listing — GCP, Agentic Earnings Hub — GCP",
+    source: "https://docs.cloud.google.com/marketplace/docs",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Implementing the A2A Protocol in an ISV agent to enable interoperability with Google Agentspace and Vertex AI orchestration pipelines",
+      "Listing an A2A-compatible agent on GCP Marketplace as an AI Agent Listing to surface in Google AI discovery surfaces",
+    ],
+    context: [
+      "GCP Marketplace",
+      "Google Agentspace",
+      "Vertex AI Agent Builder",
+    ],
+    related: [
+      { name: "Agent Card — GCP", slug: "agent-card-—-gcp" },
+      { name: "AI Agent Listing — GCP", slug: "ai-agent-listing-—-gcp" },
+      {
+        name: "Agentic Earnings Hub — GCP",
+        slug: "agentic-earnings-hub-—-gcp",
+      },
+    ],
+  },
+  {
+    name: "App Lifecycle Manager — GCP",
+    tags: ["gcp", "integrations"],
+    def: "An optional Google Cloud Marketplace integration layer that automates tenant provisioning, configuration, and deprovisioning for SaaS ISV backends. When a buyer purchases a listing with App Lifecycle Manager enabled, GCP sends structured lifecycle events to the ISV's registered endpoint — replacing manual Procurement API polling. Reduces integration complexity for multi-tenant SaaS architectures.",
+    alias:
+      "Related: Procurement API — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
+    source:
+      "https://docs.cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Configuring App Lifecycle Manager to receive structured provisioning events instead of polling the Procurement API for entitlement state changes",
+      "Evaluating App Lifecycle Manager versus direct Procurement API integration for a new GCP Marketplace SaaS backend",
+    ],
+    context: [
+      "GCP Marketplace",
+      "ISV Backend Integration",
+      "Producer Portal — GCP",
+    ],
+    related: [
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
+  },
+  {
+    name: "Insulin Watch — Suger",
+    tags: ["suger"],
+    def: "An automation primitive in Suger's Insulin platform that runs an Insulin Agent on a cron schedule or in response to an event trigger. Watches can monitor marketplace signals — such as entitlement changes, deal stage updates, or revenue events — and automatically invoke the configured agent to take action. Insulin Watch is the event-driven execution layer for Insulin Agents, distinct from manual agent chat invocations.",
+    alias: "Related: Insulin, Insulin Agent — Suger, Insulin Channel — Suger",
+    source: "https://doc.suger.io/insulin/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Configuring an Insulin Watch to monitor daily revenue changes and automatically trigger an agent to generate a deal summary",
+      "Setting up event-driven automation in Insulin using a Watch to respond to entitlement lifecycle events without manual agent invocation",
+    ],
+    context: ["Suger Console", "Insulin Platform", "Marketplace Automation"],
+    related: [
+      { name: "Insulin", slug: "insulin" },
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+    ],
+  },
+  {
+    name: "Insulin Agent — Suger",
+    tags: ["suger"],
+    def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, tools, and instructions. Insulin comes with 20+ pre-built agents (e.g., Deal Analyst, Revenue Ops, Marketplace Monitor) and supports custom agent creation. Agents can be invoked manually in chat, triggered via Insulin Watch, or assigned to run within an Insulin Channel. Each agent has access to Suger's full data layer and can call external APIs.",
+    alias:
+      "Related: Insulin, Insulin Watch — Suger, Insulin Channel — Suger, Suger MCP Server",
+    source: "https://doc.suger.io/insulin/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Invoking a pre-built Insulin Agent such as Deal Analyst to generate a co-sell briefing from Suger deal data",
+      "Creating a custom Insulin Agent with specialized instructions and tools for a specific marketplace automation workflow",
+    ],
+    context: ["Suger Console", "Insulin Platform", "AI Workspace"],
+    related: [
+      { name: "Insulin", slug: "insulin" },
+      { name: "Insulin Watch — Suger", slug: "insulin-watch-—-suger" },
+      { name: "Suger MCP Server", slug: "suger-mcp-server" },
+    ],
+  },
+  {
+    name: "Insulin Channel — Suger",
+    tags: ["suger"],
+    def: "A persistent, multi-user and multi-agent group conversation space within Suger's Insulin platform. Channels support role-based access control and up to 20 agents simultaneously, enabling collaborative workflows where multiple team members and multiple specialized agents operate in shared context. Distinct from a direct 1:1 agent chat — Channels are designed for ongoing operational processes such as a nightly deal review or a revenue operations war room.",
+    alias: "Related: Insulin, Insulin Agent — Suger, Insulin Watch — Suger",
+    source: "https://doc.suger.io/insulin/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Setting up an Insulin Channel as a persistent deal review workspace where multiple team members and agents collaborate on co-sell pipeline",
+      "Understanding the difference between an Insulin Channel (persistent, multi-agent, multi-user) and a direct agent chat (1:1, session-scoped)",
+    ],
+    context: ["Suger Console", "Insulin Platform", "AI Workspace"],
+    related: [
+      { name: "Insulin", slug: "insulin" },
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+    ],
+  },
+  {
+    name: "Account Mapping — Suger",
+    tags: ["suger", "cosell"],
+    def: "A Suger feature that maps ISV CRM accounts to cloud partner accounts across AWS, Azure, and GCP to identify co-sell opportunities in the ISV's existing customer and prospect base. Shipped April 2026. Account Mapping surfaces potential co-sell engagements by finding overlaps between the ISV's pipeline and cloud partner account data — a prerequisite step before co-sell referral submission in many motions.",
+    alias:
+      "Related: Co-sell, APN Customer Engagements (ACE) — AWS, CRM Enrichment, Suger Console",
+    source: "https://doc.suger.io/get-started/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Running Account Mapping in Suger to identify which existing CRM accounts also have active relationships with AWS, Azure, or GCP partner teams",
+      "Using Account Mapping as a prospecting tool to prioritize co-sell outreach by surfacing ISV accounts with cloud partner overlaps",
+    ],
+    context: ["Suger Console", "Co-sell Programs", "CRM Integration"],
+    related: [
+      { name: "Co-sell", slug: "co-sell" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
       { name: "CRM Enrichment", slug: "crm-enrichment" },
     ],
   },

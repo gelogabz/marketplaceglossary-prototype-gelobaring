@@ -290,7 +290,7 @@ function renderFeatured() {
   const cta = hasCompletions ? "Continue →" : "Start this path →";
 
   const changeRoleLink = role
-    ? `<span class="lp-featured-change-role" id="changeRoleBtn">Change role</span>`
+    ? `<span class="lp-featured-change-role" id="changeRoleBtn" tabindex="0" role="button">Change role</span>`
     : "";
 
   el.innerHTML = `
@@ -305,11 +305,23 @@ function renderFeatured() {
         ${changeRoleLink}
     `;
 
-  document.getElementById("changeRoleBtn")?.addEventListener("click", () => {
-    localStorage.removeItem(ROLE_KEY);
-    localStorage.removeItem("gtm-path-progress");
-    renderRoleSelector();
-  });
+  el.onclick = null;
+
+  const changeRoleBtn = document.getElementById("changeRoleBtn");
+  if (changeRoleBtn) {
+    const handleChangeRole = () => {
+      localStorage.removeItem(ROLE_KEY);
+      localStorage.removeItem("gtm-path-progress");
+      renderRoleSelector();
+    };
+    changeRoleBtn.addEventListener("click", handleChangeRole);
+    changeRoleBtn.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleChangeRole();
+      }
+    });
+  }
 }
 
 function renderByCategory(paths) {

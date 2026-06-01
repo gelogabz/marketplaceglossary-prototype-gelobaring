@@ -64,7 +64,7 @@ function buildCard(wt) {
   a.innerHTML = `
         <div class="wt-card-top">
             <div class="wt-card-title">${wt.title}</div>
-            <div style="display:flex;gap:6px;align-items:center;flex-shrink:0">
+            <div class="wt-card-badges">
                 ${statusBadge}
                 <span class="wt-cat-badge cat-${wt.category}">${wt.category}</span>
             </div>

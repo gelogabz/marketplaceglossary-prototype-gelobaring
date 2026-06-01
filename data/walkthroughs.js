@@ -214,7 +214,7 @@ export const walkthroughs = [
       },
       {
         title: "Enable required GCP APIs",
-        body: "In your GCP project, enable the following APIs via <strong>APIs & Services → Enable APIs</strong>: (1) Cloud Commerce Consumer Procurement API, (2) Service Control API, (3) Cloud Pub/Sub API. All three are required for full Suger integration.",
+        body: "In your GCP project, enable the following APIs via <strong>APIs & Services → Enable APIs</strong>: (1) Cloud Commerce Partner Procurement API, (2) Service Control API, (3) Cloud Pub/Sub API. All three are required for full Suger integration.",
         terms: [
           {
             name: "Service Control API — GCP",

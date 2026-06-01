@@ -60,6 +60,37 @@ const sidebarRightInner = document.getElementById("sidebarRightInner");
 injectTagStyles();
 initScrollSpy();
 
+// ---- Mobile search toggle ---------------------------------------------------
+
+const topnav = document.querySelector(".topnav");
+const searchToggleBtn = document.getElementById("searchToggleBtn");
+
+const SEARCH_ICON = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
+const CLOSE_ICON = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
+
+function openMobileSearch() {
+  topnav?.classList.add("search-open");
+  searchToggleBtn?.setAttribute("aria-expanded", "true");
+  searchToggleBtn?.setAttribute("aria-label", "Close search");
+  if (searchToggleBtn) searchToggleBtn.innerHTML = CLOSE_ICON;
+  searchInput?.focus();
+}
+
+function closeMobileSearch() {
+  topnav?.classList.remove("search-open");
+  searchToggleBtn?.setAttribute("aria-expanded", "false");
+  searchToggleBtn?.setAttribute("aria-label", "Open search");
+  if (searchToggleBtn) searchToggleBtn.innerHTML = SEARCH_ICON;
+}
+
+searchToggleBtn?.addEventListener("click", () => {
+  if (topnav?.classList.contains("search-open")) {
+    closeMobileSearch();
+  } else {
+    openMobileSearch();
+  }
+});
+
 // ---- Active term ------------------------------------------------------------
 
 let activeTerm = null;
@@ -179,7 +210,33 @@ listEl?.addEventListener("click", (e) => {
   if (window.innerWidth <= 767) {
     expandAccordion(card, term);
   } else {
-    openDetail(term);
+    if (activeTerm?.name === term.name) {
+      closeDetail();
+    } else {
+      openDetail(term);
+    }
+  }
+});
+
+// ---- Card keyboard handler (Enter / Space activates focused card) -----------
+
+listEl?.addEventListener("keydown", (e) => {
+  if (e.key !== "Enter" && e.key !== " ") return;
+  if (e.target.closest(".tag")) return;
+  const card = e.target.closest(".term-card");
+  if (!card) return;
+  e.preventDefault();
+  const termSlug = card.id.replace("term-", "");
+  const term = terms.find((t) => slug(t.name) === termSlug);
+  if (!term) return;
+  if (window.innerWidth <= 767) {
+    expandAccordion(card, term);
+  } else {
+    if (activeTerm?.name === term.name) {
+      closeDetail();
+    } else {
+      openDetail(term);
+    }
   }
 });
 
@@ -227,6 +284,7 @@ function openFilterModal() {
   if (!filterModal || !filterBackdrop) return;
   filterModal.hidden = false;
   filterBackdrop.hidden = false;
+  filterToggleBtn?.setAttribute("aria-expanded", "true");
   filterModalSearch?.focus();
   document.body.style.overflow = "hidden";
 }
@@ -235,6 +293,7 @@ function closeFilterModal() {
   if (!filterModal || !filterBackdrop) return;
   filterModal.hidden = true;
   filterBackdrop.hidden = true;
+  filterToggleBtn?.setAttribute("aria-expanded", "false");
   if (filterModalSearch) filterModalSearch.value = "";
   applyFilterSearch("");
   document.body.style.overflow = "";
@@ -272,6 +331,25 @@ filterModal?.addEventListener("click", (e) => {
   if (!chip) return;
   if (chip.dataset.filterTag) toggleFilter(chip.dataset.filterTag);
   if (chip.dataset.filterCategory) setCategory(chip.dataset.filterCategory);
+});
+
+filterModal?.addEventListener("keydown", (e) => {
+  if (e.key !== "Tab") return;
+  const focusable = [
+    ...filterModal.querySelectorAll(
+      'button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    ),
+  ].filter((el) => el.offsetParent !== null);
+  if (focusable.length < 2) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
 });
 
 // ---- Filter change ----------------------------------------------------------
@@ -351,6 +429,15 @@ function loadFromURL() {
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
+    if (!filterModal?.hidden) {
+      closeFilterModal();
+      filterToggleBtn?.focus();
+      return;
+    }
+    if (topnav?.classList.contains("search-open")) {
+      closeMobileSearch();
+      return;
+    }
     closeDetail();
     collapseAccordion();
   }

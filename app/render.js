@@ -81,6 +81,8 @@ export function buildCard(t, q, bestMatch) {
   const activeFilters = getActiveFilters();
   const card = document.createElement("div");
   card.className = "term-card";
+  card.tabIndex = 0;
+  card.setAttribute("role", "button");
   const termSlug = slug(t.name);
   card.id = `term-${termSlug}`;
 

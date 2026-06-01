@@ -157,7 +157,7 @@ function renderPath(path) {
     <div class="path-progress" id="pathProgress">${dotsHtml}</div>
     <div class="path-carousel">
       <button class="path-nav-btn path-carousel-btn" id="prevStepBtn" type="button" aria-label="Previous step">‹</button>
-      <div id="pathStepContent" class="path-carousel-content"></div>
+      <div id="pathStepContent" class="path-carousel-content" aria-live="polite"></div>
       <button class="path-nav-btn path-nav-btn--next path-carousel-btn" id="nextStepBtn" type="button" aria-label="Next step">›</button>
     </div>
     <div class="path-footer" id="pathFooter"></div>

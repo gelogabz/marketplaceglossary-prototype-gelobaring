@@ -52,7 +52,7 @@
 }
 .cat-cosell {
     background: #fff3e0;
-    color: #bf5600;
+    color: var(--orange-text);
 }
 .cat-offers {
     background: #e3f8f1;

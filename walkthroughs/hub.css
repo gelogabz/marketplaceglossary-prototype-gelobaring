@@ -121,6 +121,13 @@
     margin-bottom: 10px;
 }
 
+.wt-card-badges {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
 .wt-card-title {
     font-family: "Lexend", sans-serif;
     font-size: 16px;
@@ -147,7 +154,7 @@
 }
 .cat-cosell {
     background: #fff3e0;
-    color: #bf5600;
+    color: var(--orange-text);
 }
 .cat-offers {
     background: #e3f8f1;

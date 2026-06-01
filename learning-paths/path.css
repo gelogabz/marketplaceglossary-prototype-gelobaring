@@ -49,7 +49,7 @@
 }
 .l-intermediate {
     background: #fff3e0;
-    color: #bf5600;
+    color: var(--orange-text);
 }
 .l-advanced {
     background: #ede9ff;

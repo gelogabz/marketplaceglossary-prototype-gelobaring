@@ -49,8 +49,9 @@
     transition: border-color 0.12s;
 }
 
-.compare-filter:focus {
-    outline: none;
+.compare-filter:focus-visible {
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
     border-color: var(--orange);
 }
 
