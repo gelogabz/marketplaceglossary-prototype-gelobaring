@@ -388,35 +388,117 @@
 /* ---- Print styles ---- */
 
 @media print {
+    /* Hide interactive / nav elements only */
     .topnav,
     .docs-bar,
     .wt-back,
     .wt-hdr-actions,
     .wt-chips,
     .wt-step-link,
-    .wt-status-badge,
-    .wt-step-checks {
+    .wt-status-badge {
         display: none !important;
     }
 
+    /* Compact page shell */
     .wt-outer {
         margin-top: 0;
-        padding: 1rem;
+        padding: 0.75rem 1rem;
+        background: #fff;
     }
 
+    .wt-page {
+        max-width: 100%;
+    }
+
+    /* Smaller header in print */
+    .wt-hdr-title {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .wt-hdr-desc {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 6px;
+    }
+
+    /* Source link — visible, styled for print */
+    .wt-source-link {
+        margin-bottom: 0.75rem;
+    }
+
+    .wt-source-anchor {
+        color: #ae530f;
+        font-size: 11px;
+        text-decoration: underline;
+    }
+
+    /* Step number — smaller, print-colored */
     .wt-step-num {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        font-size: 13px;
         background: #000;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 
+    /* Step connector line — hidden */
     .wt-step:not(:last-child)::before {
         display: none;
     }
 
+    /* Steps — prevent mid-step page breaks */
     .wt-step {
+        break-inside: avoid;
         page-break-inside: avoid;
-        padding-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .wt-step-title {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .wt-step-text {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 6px;
+    }
+
+    /* Sanity checks — visible as compact checklist */
+    .wt-step-checks {
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        background: #fafafa;
+        border: 1px solid #e5e5ea;
+        border-radius: 6px;
+        break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .wt-checks-label {
+        font-size: 9px;
+        margin-bottom: 0.35rem;
+    }
+
+    .wt-check-list {
+        gap: 4px;
+    }
+
+    .wt-check-text {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .wt-check-input {
+        width: 13px;
+        height: 13px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
 
