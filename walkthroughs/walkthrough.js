@@ -12,6 +12,37 @@ const wtSlug = params.get("w");
 const wt = walkthroughs.find((w) => w.slug === wtSlug);
 const container = document.getElementById("wtContent");
 
+// ---- Check state (sanity checker) -------------------------------------------
+
+const CHECKS_KEY = "gtm-walkthrough-checks";
+
+function getChecks() {
+  try {
+    return JSON.parse(localStorage.getItem(CHECKS_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function setCheck(slug, stepIdx, checkIdx, val) {
+  const state = getChecks();
+  if (!state[slug]) state[slug] = {};
+  if (!state[slug][stepIdx]) state[slug][stepIdx] = {};
+  if (val) {
+    state[slug][stepIdx][checkIdx] = true;
+  } else {
+    delete state[slug][stepIdx][checkIdx];
+  }
+  localStorage.setItem(CHECKS_KEY, JSON.stringify(state));
+}
+
+function isCheckDone(slug, stepIdx, checkIdx) {
+  const state = getChecks();
+  return !!state[slug]?.[stepIdx]?.[checkIdx];
+}
+
+// ---- Render -----------------------------------------------------------------
+
 if (!wt) {
   container.innerHTML = `
         <a href="index.html" class="wt-back">← All Walkthroughs</a>
@@ -54,20 +85,44 @@ function buildChips(step) {
   return chips.length ? `<div class="wt-chips">${chips.join("")}</div>` : "";
 }
 
+function buildChecks(step, stepIndex) {
+  if (!step.checks?.length) return "";
+  const slug = wt.slug;
+  const items = step.checks
+    .map((q, ci) => {
+      const id = `chk-${slug}-${stepIndex}-${ci}`;
+      const done = isCheckDone(slug, stepIndex, ci);
+      return `<li class="wt-check-item${done ? " wt-check-item--done" : ""}">
+        <label class="wt-check-row" for="${id}">
+          <input class="wt-check-input" type="checkbox" id="${id}" data-step="${stepIndex}" data-check="${ci}"${done ? " checked" : ""}>
+          <span class="wt-check-text">${q}</span>
+        </label>
+      </li>`;
+    })
+    .join("");
+
+  return `<div class="wt-step-checks">
+    <p class="wt-checks-label">Before moving on</p>
+    <ul class="wt-check-list">${items}</ul>
+  </div>`;
+}
+
 function buildStep(step, index) {
   const chipsHtml = buildChips(step);
   const linkHtml = step.link
     ? `<a href="${step.link.url}" class="wt-step-link" target="_blank" rel="noopener">${step.link.label}</a>`
     : "";
+  const checksHtml = buildChecks(step, index);
 
   return `
-        <div class="wt-step">
+        <div class="wt-step" id="step-${index}">
             <div class="wt-step-num">${index + 1}</div>
             <div class="wt-step-body">
                 <div class="wt-step-title">${step.title}</div>
                 <div class="wt-step-text">${step.body}</div>
                 ${chipsHtml}
                 ${linkHtml}
+                ${checksHtml}
             </div>
         </div>
     `;
@@ -112,6 +167,7 @@ function render(walkthrough) {
 
         <h1 class="wt-hdr-title">${walkthrough.title}</h1>
         <p class="wt-hdr-desc">${walkthrough.description}</p>
+        ${walkthrough.sourceUrl ? `<p class="wt-source-link"><a href="${walkthrough.sourceUrl}" class="wt-source-anchor" target="_blank" rel="noopener">View Help Center article →</a></p>` : ""}
 
         <div class="wt-hdr-actions">
             <button class="wt-btn" id="copyLinkBtn" type="button">Copy link</button>
@@ -125,4 +181,15 @@ function render(walkthrough) {
   document
     .getElementById("printBtn")
     .addEventListener("click", printWalkthrough);
+
+  // Sanity check state persistence
+  container.addEventListener("change", (e) => {
+    const input = e.target.closest(".wt-check-input");
+    if (!input) return;
+    const stepIdx = parseInt(input.dataset.step, 10);
+    const checkIdx = parseInt(input.dataset.check, 10);
+    setCheck(wt.slug, stepIdx, checkIdx, input.checked);
+    const item = input.closest(".wt-check-item");
+    if (item) item.classList.toggle("wt-check-item--done", input.checked);
+  });
 }

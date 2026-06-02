@@ -1435,3 +1435,60 @@ mark {
         break-inside: avoid;
     }
 }
+
+/* ---- Walkthrough category badges (shared across hub + detail pages) ------- */
+
+.wt-cat-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.cat-kickoff {
+    background: #f0f0f7;
+    color: #2d2059;
+}
+.cat-integrations {
+    background: #e8f4fd;
+    color: #1a6fa8;
+}
+.cat-listings {
+    background: #e3f8f1;
+    color: #088a60;
+}
+.cat-cosell {
+    background: #fff3e0;
+    color: var(--orange-text);
+}
+.cat-cpq {
+    background: #ede9ff;
+    color: #5020cc;
+}
+.cat-go-live {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+.cat-operations {
+    background: #fce4ec;
+    color: #c62828;
+}
+/* legacy aliases kept for backward compatibility */
+.cat-setup {
+    background: #e8f4fd;
+    color: #1a6fa8;
+}
+.cat-integration {
+    background: #ede9ff;
+    color: #5020cc;
+}
+.cat-offers {
+    background: #e3f8f1;
+    color: #088a60;
+}
+.cat-onboarding {
+    background: #fff8e1;
+    color: #8a6000;
+}

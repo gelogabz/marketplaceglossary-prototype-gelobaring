@@ -1,38 +1,44 @@
 import { walkthroughs } from "../data/walkthroughs.js";
 
+// Categories follow the Suger Implementation V2 phase sequence
 const CATEGORY_ORDER = [
-  "setup",
+  "kickoff",
+  "integrations",
+  "listings",
   "cosell",
-  "offers",
-  "integration",
-  "onboarding",
+  "cpq",
+  "go-live",
   "operations",
 ];
 
 const CATEGORY_META = {
-  setup: {
-    label: "Setup & Integrations",
-    desc: "Connect marketplaces and configure your Suger organization.",
+  kickoff: {
+    label: "Kickoff & Setup",
+    desc: "Get your Suger organization ready and align your team before integrations begin.",
+  },
+  integrations: {
+    label: "Integrations",
+    desc: "Connect cloud marketplaces (AWS, Azure, GCP, Snowflake), CRM, and notification tools to Suger.",
+  },
+  listings: {
+    label: "Listing Setup",
+    desc: "Create and submit product listings on AWS, Azure, and GCP — one walkthrough per marketplace.",
   },
   cosell: {
-    label: "Co-sell",
-    desc: "Connect to hyperscaler co-sell programs and sync referrals.",
+    label: "Co-Sell Field Mapping",
+    desc: "Configure CRM-to-cloud-partner data mapping for automated co-sell referral sharing.",
   },
-  offers: {
-    label: "Offers",
-    desc: "Create, price, and manage private offers and channel deals.",
+  cpq: {
+    label: "CPQ, Offers & Resale",
+    desc: "Create private offers, configure CPQ field mappings, and set up resale authorizations for channel partners.",
   },
-  integration: {
-    label: "Integrations",
-    desc: "Connect CRM, analytics, and third-party tools to Suger.",
-  },
-  onboarding: {
-    label: "Onboarding",
-    desc: "Guided checklists for getting productive in Suger fast.",
+  "go-live": {
+    label: "Go-Live",
+    desc: "Migrate from sandbox to production, validate end-to-end, and sign off on the implementation.",
   },
   operations: {
     label: "Operations",
-    desc: "Automate workflows, metering, and day-to-day marketplace ops.",
+    desc: "Set up API clients, webhooks, and automation for day-to-day marketplace operations.",
   },
 };
 

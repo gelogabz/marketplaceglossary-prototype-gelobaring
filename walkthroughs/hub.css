@@ -136,41 +136,10 @@
     letter-spacing: -0.02em;
 }
 
-/* ---- Category badges ---- */
+/* ---- Category badges — defined in shared styles.css ---- */
 
 .wt-cat-badge {
-    font-size: 10px;
-    font-weight: 700;
-    padding: 3px 8px;
-    border-radius: 99px;
-    white-space: nowrap;
     flex-shrink: 0;
-    text-transform: capitalize;
-}
-
-.cat-setup {
-    background: #e8f4fd;
-    color: #1a6fa8;
-}
-.cat-cosell {
-    background: #fff3e0;
-    color: var(--orange-text);
-}
-.cat-offers {
-    background: #e3f8f1;
-    color: #088a60;
-}
-.cat-integration {
-    background: #ede9ff;
-    color: #5020cc;
-}
-.cat-onboarding {
-    background: #fff8e1;
-    color: #8a6000;
-}
-.cat-operations {
-    background: #fce4ec;
-    color: #c62828;
 }
 
 /* ---- Status badges ---- */
