@@ -2,6 +2,7 @@ import { terms } from "../data/terms.js";
 import { tagMeta } from "../data/tags.js";
 import { learningPaths } from "../data/learning-paths.js";
 import { getActiveFilters, toggleFilter } from "./filters.js";
+import { PLATFORM_SUFFIX_RE } from "./utils.js";
 
 // ---- Helpers ----------------------------------------------------------------
 
@@ -163,7 +164,7 @@ const PLATFORMS = [
   { key: "alibaba", label: "Alibaba", cls: "pb-alibaba" },
 ];
 
-const PLATFORM_SUFFIX_RE = / — (AWS|Azure|GCP|Snowflake|Alibaba)$/;
+// PLATFORM_SUFFIX_RE imported from ./utils.js
 
 function getRelatedTerms(t) {
   if (!t.alias) return [];
@@ -180,6 +181,10 @@ function buildDifficultyHtml(t) {
     : "";
 }
 
+function buildSection(title, content) {
+  return `<div class="sr-section"><div class="sr-section-title">${title}</div>${content}</div>`;
+}
+
 function buildTagsHtml(t) {
   return (t.tags || [])
     .map((tag) => {
@@ -194,10 +199,10 @@ function buildPlatformSection(t) {
   const hasPlatformTag = PLATFORMS.some((p) => tags.includes(p.key));
 
   if (!hasPlatformTag) {
-    return `<div class="sr-section">
-      <div class="sr-section-title">Platform availability</div>
-      <span class="pbadge pb-agnostic">Platform-agnostic</span>
-    </div>`;
+    return buildSection(
+      "Platform availability",
+      `<span class="pbadge pb-agnostic">Platform-agnostic</span>`,
+    );
   }
 
   const platformHtml = PLATFORMS.map((p) => {
@@ -207,35 +212,34 @@ function buildPlatformSection(t) {
   const notes = t.alias?.toLowerCase().includes("equivalent")
     ? `<p class="platform-notes">${t.alias.replace(/\|/g, "·")}</p>`
     : "";
-  return `<div class="sr-section">
-    <div class="sr-section-title">Platform availability</div>
-    <div class="platform-row">${platformHtml}</div>
-    ${notes}
-  </div>`;
+  return buildSection(
+    "Platform availability",
+    `<div class="platform-row">${platformHtml}</div>${notes}`,
+  );
 }
 
 function buildWhoForHtml(t) {
   if (!t.whoFor?.length) return "";
-  return `<div class="sr-section">
-    <div class="sr-section-title">Who it's for</div>
-    <div class="chips">${t.whoFor.map((p) => `<span class="chip">${p}</span>`).join("")}</div>
-  </div>`;
+  return buildSection(
+    "Who it's for",
+    `<div class="chips">${t.whoFor.map((p) => `<span class="chip">${p}</span>`).join("")}</div>`,
+  );
 }
 
 function buildUseCasesHtml(t) {
   if (!t.useCases?.length) return "";
-  return `<div class="sr-section">
-    <div class="sr-section-title">Common use cases</div>
-    <ul class="use-cases">${t.useCases.map((uc) => `<li>${uc}</li>`).join("")}</ul>
-  </div>`;
+  return buildSection(
+    "Common use cases",
+    `<ul class="use-cases">${t.useCases.map((uc) => `<li>${uc}</li>`).join("")}</ul>`,
+  );
 }
 
 function buildContextHtml(t) {
   if (!t.context?.length) return "";
-  return `<div class="sr-section">
-    <div class="sr-section-title">Where you'll encounter this</div>
-    <div class="chips">${t.context.map((c) => `<span class="chip chip-context">${c}</span>`).join("")}</div>
-  </div>`;
+  return buildSection(
+    "Where you'll encounter this",
+    `<div class="chips">${t.context.map((c) => `<span class="chip chip-context">${c}</span>`).join("")}</div>`,
+  );
 }
 
 function getRelatedItems(t) {
@@ -258,10 +262,7 @@ function buildRelatedSection(
       return `<a href="${linkPrefix}${r.slug}" class="${cls}"${tabAttr}>${shortName}</a>`;
     })
     .join("");
-  return `<div class="sr-section">
-    <div class="sr-section-title">Related terms</div>
-    <div class="chips">${links}</div>
-  </div>`;
+  return buildSection("Related terms", `<div class="chips">${links}</div>`);
 }
 
 function buildLearningPathsSection(termSlug) {
@@ -275,10 +276,7 @@ function buildLearningPathsSection(termSlug) {
         `<a href="learning-paths/path.html?p=${p.slug}" class="chip chip-link">${p.title} →</a>`,
     )
     .join("");
-  return `<div class="sr-section">
-    <div class="sr-section-title">Learning paths</div>
-    <div class="chips">${links}</div>
-  </div>`;
+  return buildSection("Learning paths", `<div class="chips">${links}</div>`);
 }
 
 // ---- Detail view builder ----------------------------------------------------

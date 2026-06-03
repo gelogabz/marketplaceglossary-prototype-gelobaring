@@ -1,8 +1,14 @@
 import { learningPaths, GLOBAL_SEQUENCE } from "../data/learning-paths.js";
 import { terms } from "../data/terms.js";
 import { slug } from "../app/render.js";
+import {
+  PLATFORM_SUFFIX_RE,
+  getCompleted,
+  isComplete,
+  getReadProgress,
+  LP_STORAGE_KEY as STORAGE_KEY,
+} from "../app/utils.js";
 
-const STORAGE_KEY = "gtm-completed-paths";
 const ROLE_KEY = "gtm-user-role";
 
 const ROLE_TRACKS = {
@@ -48,18 +54,6 @@ const ROLE_LABELS = {
   executive: "Executive",
   technical: "Technical / Developer",
 };
-
-function getCompleted() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-  } catch {
-    return {};
-  }
-}
-
-function isComplete(pathSlug) {
-  return !!getCompleted()[pathSlug];
-}
 
 function resetAllProgress() {
   localStorage.removeItem(STORAGE_KEY);
@@ -135,18 +129,10 @@ function buildSequenceHtml(steps) {
   return steps
     .map(
       (step, i) =>
-        `<span class="seq-term">${step.name.replace(/ — (AWS|Azure|GCP|Snowflake|Alibaba)$/, "")}</span>` +
+        `<span class="seq-term">${step.name.replace(PLATFORM_SUFFIX_RE, "")}</span>` +
         (i < steps.length - 1 ? `<span class="seq-arrow">›</span>` : ""),
     )
     .join("");
-}
-
-function getReadProgress() {
-  try {
-    return JSON.parse(localStorage.getItem("gtm-path-progress") || "{}");
-  } catch {
-    return {};
-  }
 }
 
 function buildProgressBar(pathSlug, totalSteps) {
@@ -239,38 +225,20 @@ function renderRoleSelector() {
   });
 }
 
-function renderFeatured() {
-  const el = document.getElementById("featuredBanner");
-  const completed = getCompleted();
-  const role = getRole();
-  const sequence = role
-    ? ROLE_TRACKS[role] || GLOBAL_SEQUENCE
-    : GLOBAL_SEQUENCE;
-  const allDone = sequence.every((s) => completed[s]);
-  const hasCompletions = Object.keys(completed).some((s) =>
-    learningPaths.some((p) => p.slug === s),
-  );
+function renderCompletionBanner(el) {
+  el.innerHTML = `
+        <a href="#onboarding" class="lp-featured">
+            <div class="lp-featured-copy">
+                <div class="lp-featured-eyebrow">Journey complete</div>
+                <div class="lp-featured-title">You've covered the full curriculum</div>
+                <div class="lp-featured-desc">Explore role-based paths or revisit any section.</div>
+            </div>
+            <span class="lp-featured-cta">Browse paths →</span>
+        </a>
+    `;
+}
 
-  // First visit — no role, no completions: show role selector
-  if (!role && !hasCompletions) {
-    renderRoleSelector();
-    return;
-  }
-
-  if (allDone) {
-    el.innerHTML = `
-            <a href="#onboarding" class="lp-featured">
-                <div class="lp-featured-copy">
-                    <div class="lp-featured-eyebrow">Journey complete</div>
-                    <div class="lp-featured-title">You've covered the full curriculum</div>
-                    <div class="lp-featured-desc">Explore role-based paths or revisit any section.</div>
-                </div>
-                <span class="lp-featured-cta">Browse paths →</span>
-            </a>
-        `;
-    return;
-  }
-
+function renderPathBanner(el, role, hasCompletions) {
   const path = getFeaturedPath();
   if (!path) return;
 
@@ -288,7 +256,6 @@ function renderFeatured() {
       ? `${path.meta} · Continues from ${prevPath.title}`
       : `${path.meta} · No prior knowledge needed`;
   const cta = hasCompletions ? "Continue →" : "Start this path →";
-
   const changeRoleLink = role
     ? `<span class="lp-featured-change-role" id="changeRoleBtn" tabindex="0" role="button">Change role</span>`
     : "";
@@ -322,6 +289,29 @@ function renderFeatured() {
       }
     });
   }
+}
+
+function renderFeatured() {
+  const el = document.getElementById("featuredBanner");
+  const completed = getCompleted();
+  const role = getRole();
+  const sequence = role
+    ? ROLE_TRACKS[role] || GLOBAL_SEQUENCE
+    : GLOBAL_SEQUENCE;
+  const allDone = sequence.every((s) => completed[s]);
+  const hasCompletions = Object.keys(completed).some((s) =>
+    learningPaths.some((p) => p.slug === s),
+  );
+
+  if (!role && !hasCompletions) {
+    renderRoleSelector();
+    return;
+  }
+  if (allDone) {
+    renderCompletionBanner(el);
+    return;
+  }
+  renderPathBanner(el, role, hasCompletions);
 }
 
 function renderByCategory(paths) {

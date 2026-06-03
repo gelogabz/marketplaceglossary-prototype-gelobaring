@@ -1,4 +1,5 @@
 import { walkthroughs } from "../data/walkthroughs.js";
+import { STATUS_LABELS } from "../app/utils.js";
 
 // Categories follow the Suger Implementation V2 phase sequence
 const CATEGORY_ORDER = [
@@ -40,13 +41,6 @@ const CATEGORY_META = {
     label: "Operations",
     desc: "Set up API clients, webhooks, and automation for day-to-day marketplace operations.",
   },
-};
-
-const STATUS_LABELS = {
-  "for-review": "For review",
-  "not-started": "Not started",
-  complete: "Complete",
-  "in-progress": "In progress",
 };
 
 function isStub(wt) {

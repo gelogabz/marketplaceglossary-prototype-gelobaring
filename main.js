@@ -26,6 +26,16 @@ import {
   initScrollSpy,
 } from "./app/scroll.js";
 
+// ---- Constants --------------------------------------------------------------
+
+const MOBILE_BP = 767;
+
+// ---- Helpers ----------------------------------------------------------------
+
+function getTermBySlug(targetSlug) {
+  return terms.find((t) => slug(t.name) === targetSlug);
+}
+
 // ---- Learning path slug sets ------------------------------------------------
 
 const pathSlugSets = Object.fromEntries(
@@ -163,7 +173,7 @@ sidebarRight?.addEventListener("click", (e) => {
     e.preventDefault();
     const href = aliasLink.getAttribute("href");
     const targetSlug = href?.replace("#term-", "");
-    const target = terms.find((t) => slug(t.name) === targetSlug);
+    const target = getTermBySlug(targetSlug);
     if (target) openDetail(target);
   }
 });
@@ -191,9 +201,9 @@ listEl?.addEventListener("click", (e) => {
     e.preventDefault();
     const href = aliasLink.getAttribute("href");
     const targetSlug = href?.replace("#term-", "");
-    const target = terms.find((t) => slug(t.name) === targetSlug);
+    const target = getTermBySlug(targetSlug);
     if (!target) return;
-    if (window.innerWidth <= 767) {
+    if (window.innerWidth <= MOBILE_BP) {
       const targetCard = document.getElementById(`term-${targetSlug}`);
       if (targetCard) expandAccordion(targetCard, target);
     } else {
@@ -205,9 +215,9 @@ listEl?.addEventListener("click", (e) => {
   const card = e.target.closest(".term-card");
   if (!card) return;
   const termSlug = card.id.replace("term-", "");
-  const term = terms.find((t) => slug(t.name) === termSlug);
+  const term = getTermBySlug(termSlug);
   if (!term) return;
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= MOBILE_BP) {
     expandAccordion(card, term);
   } else {
     if (activeTerm?.name === term.name) {
@@ -227,9 +237,9 @@ listEl?.addEventListener("keydown", (e) => {
   if (!card) return;
   e.preventDefault();
   const termSlug = card.id.replace("term-", "");
-  const term = terms.find((t) => slug(t.name) === termSlug);
+  const term = getTermBySlug(termSlug);
   if (!term) return;
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= MOBILE_BP) {
     expandAccordion(card, term);
   } else {
     if (activeTerm?.name === term.name) {
@@ -402,9 +412,9 @@ function loadFromURL() {
   if (t) {
     // Open via ?t= after render completes (600ms covers the 100ms debounce + DOM build)
     setTimeout(() => {
-      const term = terms.find((tt) => slug(tt.name) === t);
+      const term = getTermBySlug(t);
       if (!term) return;
-      if (window.innerWidth <= 767) {
+      if (window.innerWidth <= MOBILE_BP) {
         const card = document.getElementById(`term-${t}`);
         if (card) expandAccordion(card, term);
       } else {
@@ -513,10 +523,10 @@ function render() {
     }
 
     // Re-expand mobile accordion if the term is still visible
-    if (prevExpandedId && window.innerWidth <= 767) {
+    if (prevExpandedId && window.innerWidth <= MOBILE_BP) {
       const card = document.getElementById(prevExpandedId);
       const termSlug = prevExpandedId.replace("term-", "");
-      const term = terms.find((t) => slug(t.name) === termSlug);
+      const term = getTermBySlug(termSlug);
       if (card && term) expandAccordion(card, term, true);
     }
 
@@ -544,10 +554,10 @@ window.onload = () => {
     const hashSlug = decodeURIComponent(
       window.location.hash.replace("#term-", ""),
     );
-    const term = terms.find((t) => slug(t.name) === hashSlug);
+    const term = getTermBySlug(hashSlug);
     if (term) {
       setTimeout(() => {
-        if (window.innerWidth <= 767) {
+        if (window.innerWidth <= MOBILE_BP) {
           const card = document.getElementById(`term-${hashSlug}`);
           if (card) expandAccordion(card, term);
         } else {

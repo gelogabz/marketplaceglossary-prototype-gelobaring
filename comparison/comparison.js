@@ -1,5 +1,6 @@
 import { terms } from "../data/terms.js";
 import { slug } from "../app/render.js";
+import { escHtml, PLATFORM_SUFFIX_RE as SUFFIX_RE } from "../app/utils.js";
 
 const PLATFORMS = [
   { key: "Suger" },
@@ -9,8 +10,6 @@ const PLATFORMS = [
   { key: "Snowflake" },
   { key: "Alibaba" },
 ];
-
-const SUFFIX_RE = / — (AWS|Azure|GCP|Snowflake|Alibaba)$/;
 
 // Platform-suffixed terms (all hyperscalers + Snowflake + Alibaba)
 const platformTerms = terms.filter((t) => SUFFIX_RE.test(t.name));
@@ -165,7 +164,7 @@ function buildTable(filter) {
     : rows;
 
   if (visible.length === 0) {
-    return `<p class="compare-empty">No concepts matched "${filter}".</p>`;
+    return `<p class="compare-empty">No concepts matched "${escHtml(filter)}".</p>`;
   }
 
   const rowsHtml = visible
@@ -194,11 +193,12 @@ function buildTable(filter) {
 
   return `
     <div class="compare-table-wrap">
-      <table class="compare-table">
+      <table class="compare-table" aria-label="Cross-platform marketplace concept comparison">
+        <caption class="sr-only">Cross-platform concept comparison across Suger, AWS, Azure, GCP, Snowflake, and Alibaba Cloud marketplaces.</caption>
         <thead>
           <tr>
-            <th class="compare-th compare-th-concept">Concept</th>
-            ${PLATFORMS.map((p) => `<th class="compare-th compare-th-${p.key.toLowerCase()}">${p.key}</th>`).join("")}
+            <th class="compare-th compare-th-concept" scope="col">Concept</th>
+            ${PLATFORMS.map((p) => `<th class="compare-th compare-th-${p.key.toLowerCase()}" scope="col">${p.key}</th>`).join("")}
           </tr>
         </thead>
         <tbody>${rowsHtml}</tbody>
@@ -212,6 +212,10 @@ const filterEl = document.getElementById("compareFilter");
 
 tableEl.innerHTML = buildTable("");
 
+let filterDebounce;
 filterEl.addEventListener("input", () => {
-  tableEl.innerHTML = buildTable(filterEl.value.trim());
+  clearTimeout(filterDebounce);
+  filterDebounce = setTimeout(() => {
+    tableEl.innerHTML = buildTable(filterEl.value.trim());
+  }, 150);
 });

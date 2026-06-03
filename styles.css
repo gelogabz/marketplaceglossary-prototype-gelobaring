@@ -80,6 +80,28 @@ body {
     border: 0;
 }
 
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0.75rem;
+    z-index: 100;
+    padding: 8px 16px;
+    background: var(--white);
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid var(--orange);
+    transition: top 0.1s;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: none;
+}
+
 /* ---- Highlight ------------------------------------------------------------ */
 
 mark {
@@ -157,7 +179,7 @@ mark {
 }
 
 .search-bar::placeholder {
-    color: rgba(255, 255, 255, 0.38);
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .search-bar:focus {
@@ -1354,7 +1376,7 @@ mark {
     text-transform: uppercase;
     letter-spacing: 0.07em;
     color: var(--gray-400);
-    margin-bottom: 8px;
+    margin: 0 0 8px;
 }
 
 .filter-modal-chips {

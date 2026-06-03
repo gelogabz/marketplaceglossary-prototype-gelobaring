@@ -6,20 +6,17 @@ import {
   slug,
   copyToClipboard,
 } from "../app/render.js";
+import {
+  getCompleted,
+  isComplete,
+  getReadProgress,
+  LP_STORAGE_KEY as STORAGE_KEY,
+  LP_READ_KEY as READ_KEY,
+} from "../app/utils.js";
 
 injectTagStyles();
 
 // ---- Progress persistence ----
-
-const STORAGE_KEY = "gtm-completed-paths";
-
-function getCompleted() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-  } catch {
-    return {};
-  }
-}
 
 function markComplete(pathSlug) {
   const data = getCompleted();
@@ -31,22 +28,6 @@ function unmarkComplete(pathSlug) {
   const data = getCompleted();
   delete data[pathSlug];
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-}
-
-function isComplete(pathSlug) {
-  return !!getCompleted()[pathSlug];
-}
-
-// ---- Step-level read tracking ----
-
-const READ_KEY = "gtm-path-progress";
-
-function getReadProgress() {
-  try {
-    return JSON.parse(localStorage.getItem(READ_KEY) || "{}");
-  } catch {
-    return {};
-  }
 }
 
 function markStepRead(pathSlug, stepIndex) {

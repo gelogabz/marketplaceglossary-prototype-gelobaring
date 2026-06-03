@@ -1,11 +1,5 @@
 import { walkthroughs } from "../data/walkthroughs.js";
-
-const STATUS_LABELS = {
-  "for-review": "For review",
-  "not-started": "Not started",
-  complete: "Complete",
-  "in-progress": "In progress",
-};
+import { escHtml, PLATFORM_SUFFIX_RE, STATUS_LABELS } from "../app/utils.js";
 
 const params = new URLSearchParams(location.search);
 const wtSlug = params.get("w");
@@ -48,7 +42,7 @@ if (!wt) {
         <a href="index.html" class="wt-back">← All Walkthroughs</a>
         <div class="wt-not-found">
             <div class="wt-not-found-title">Walkthrough not found</div>
-            <p>The walkthrough "<strong>${wtSlug || "(none)"}</strong>" doesn't exist.</p>
+            <p>The walkthrough "<strong>${escHtml(wtSlug || "(none)")}</strong>" doesn't exist.</p>
             <a href="index.html" style="color: var(--orange-text); font-size: 13px;">Browse all walkthroughs →</a>
         </div>
     `;
@@ -61,10 +55,7 @@ function buildChips(step) {
   const chips = [];
 
   (step.terms || []).forEach((t) => {
-    const shortName = t.name.replace(
-      / — (AWS|Azure|GCP|Snowflake|Alibaba)$/,
-      "",
-    );
+    const shortName = t.name.replace(PLATFORM_SUFFIX_RE, "");
     chips.push(
       `<a href="../index.html#term-${t.slug}" class="wt-chip wt-chip--term" target="_blank">${shortName}</a>`,
     );
