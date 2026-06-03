@@ -1102,7 +1102,12 @@ export const learningPaths = [
       {
         name: "Azure Consumption Commitment (MACC) — Azure",
         slug: "azure-consumption-commitment-macc-—-azure",
-        why: "MACC-eligible status is the most important commercial lever for enterprise Azure deals — it lets purchases draw down the buyer's committed spend. Learn what it takes to achieve MACC eligibility and why enterprise buyers demand it.",
+        why: "MACC-eligible status is the most important commercial lever for enterprise Azure deals — it lets purchases draw down the buyer's committed spend. Understand what the MACC program is and why enterprise buyers specifically seek out MACC-eligible offers.",
+      },
+      {
+        name: "MACC Eligibility — Azure",
+        slug: "macc-eligibility-—-azure",
+        why: "Knowing that MACC exists is only half the story — understanding the exact criteria your offer must meet is what separates sellers who can pitch MACC as a buying lever from those who can't. MACC eligibility is per-offer (not per-publisher), requires Azure IP Co-sell Eligible status, and excludes free, BYOL, and trial offers. This is the checklist every ISV needs before positioning MACC in an enterprise deal.",
       },
       {
         name: "Co-sell Eligible / Incentivized — Azure",

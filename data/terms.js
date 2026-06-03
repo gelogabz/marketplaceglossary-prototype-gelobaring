@@ -1346,6 +1346,47 @@ export const terms = [
         name: "Co-sell Eligible / Incentivized — Azure",
         slug: "co-sell-eligible-/-incentivized-—-azure",
       },
+      {
+        name: "MACC Eligibility — Azure",
+        slug: "macc-eligibility-—-azure",
+      },
+    ],
+  },
+  {
+    name: "MACC Eligibility — Azure",
+    tags: ["azure", "offers", "procurement"],
+    def: "The qualifying status that allows an Azure Marketplace transactable offer to count toward a buyer's Microsoft Azure Consumption Commitment (MACC) when purchased through the Azure portal. To be MACC-eligible, an offer must be transactable (free, BYOL, and trial offers are excluded), hold Azure IP Co-sell Eligible status, and be independently enrolled in the MACC program in Partner Center — enrollment is per-offer, not per-publisher. Buyers must complete purchases through the Azure portal; credit card purchases on Marketplace.Microsoft.com and Azure prepayments do not count toward MACC. MACC eligibility is a critical enterprise sales lever because it positions marketplace purchases as a way to draw down the customer's existing Azure committed spend.",
+    alias:
+      "Related: Azure Consumption Commitment (MACC) — Azure | Related: Co-sell Eligible / Incentivized — Azure | Related: Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/marketplace/azure-consumption-commitment-benefit",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Azure Sales"],
+    useCases: [
+      "Verifying whether an Azure Marketplace offer qualifies to draw down a customer's MACC balance before closing a deal",
+      "Enrolling a transactable offer in the MACC program through Partner Center to make it MACC-eligible",
+      "Advising enterprise buyers on which marketplace offers count toward their Azure Consumption Commitment",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Marketplace",
+      "Enterprise Procurement",
+      "Co-sell negotiations",
+    ],
+    related: [
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
     ],
   },
   {
