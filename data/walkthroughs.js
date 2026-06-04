@@ -551,51 +551,51 @@ export const walkthroughs = [
 
   {
     slug: "gcp-partner-advantage-setup",
-    title: "Integrate GCP Partner Advantage with Suger",
+    title: "Integrate GCP Partner Network Hub with Suger",
     category: "integrations",
     description:
-      "Connect Suger to Google Cloud Partner Advantage to enable automated GCP co-sell workflows and opportunity management.",
+      "Connect Suger to Google Cloud Partner Network to enable automated GCP co-sell workflows and opportunity management.",
     estimated: "~15 min",
     status: "for-review",
     sourceUrl: "https://suger.help.usepylon.com/articles/2287045699",
     steps: [
       {
         title: "Confirm prerequisites",
-        body: "Before starting, confirm: (1) your organization is enrolled in Google Cloud Partner Advantage, (2) you have admin access to your Partner Advantage portal, and (3) your GCP Marketplace integration in Suger is already connected (this is required before enabling co-sell).",
+        body: "Before starting, confirm: (1) your organization is enrolled in Google Cloud Partner Network, (2) you have admin access to the Partner Network Hub at <a href='https://partners.cloud.google.com' target='_blank' rel='noopener'>partners.cloud.google.com</a>, and (3) your GCP Marketplace integration in Suger is already connected (this is required before enabling co-sell).",
         checks: [
-          "Is your organization enrolled in Google Cloud Partner Advantage?",
+          "Is your organization enrolled in Google Cloud Partner Network?",
           "Is your GCP Marketplace integration already connected in Suger?",
         ],
         media: null,
       },
       {
-        title: "Add Suger as an integrator in GCP Partner Advantage",
-        body: "In your GCP Partner Advantage portal, navigate to <strong>Integrations</strong> or <strong>Settings → Integrators</strong>. Add Suger as an authorized integrator. This grants Suger access to read and write co-sell opportunities on your behalf. The Suger setup wizard provides the exact steps for your Partner Advantage portal version.",
+        title: "Add Suger as an integrator in the Partner Network Hub",
+        body: "In the Partner Network Hub at <a href='https://partners.cloud.google.com' target='_blank' rel='noopener'>partners.cloud.google.com</a>, navigate to <strong>Integrations</strong> or <strong>Settings → Integrators</strong>. Add Suger as an authorized integrator. This grants Suger access to read and write co-sell opportunities on your behalf. The Suger setup wizard provides the exact steps.",
         link: {
           label: "GCP Partners →",
           url: "https://partners.cloud.google.com",
         },
         checks: [
-          "Is Suger listed as an authorized integrator in your GCP Partner Advantage portal?",
+          "Is Suger listed as an authorized integrator in your Partner Network Hub?",
           "Does Suger have the required permissions for co-sell opportunity management?",
         ],
         media: null,
       },
       {
         title: "Retrieve your Partner ID",
-        body: "In GCP Partner Advantage, locate your <strong>Partner ID</strong> from your account settings or profile page. This ID is required for Suger to associate co-sell opportunities with your organization in Google's systems.",
+        body: "In the Partner Network Hub, locate your <strong>Partner ID</strong> from your account settings or profile page. This ID is required for Suger to associate co-sell opportunities with your organization in Google's systems.",
         checks: ["Have you located and noted your GCP Partner ID?"],
         media: null,
       },
       {
         title: "Connect via the Suger Console",
-        body: "In Suger Console, navigate to <strong>Settings → Integrations → GCP Partner Advantage</strong>. Enter your Partner ID and click <strong>Connect</strong>. After connection, verify the integration status shows <strong>Connected</strong>. Then proceed to the Co-Sell Field Mapping walkthrough to configure automated referral sharing.",
+        body: "In Suger Console, navigate to <strong>Settings → Integrations → GCP Partner Network Hub</strong>. Enter your Partner ID and click <strong>Connect</strong>. After connection, verify the integration status shows <strong>Connected</strong>. Then proceed to the Co-Sell Field Mapping walkthrough to configure automated referral sharing.",
         link: {
           label: "Open Suger Console →",
           url: "https://console.suger.io",
         },
         checks: [
-          "Does the GCP Partner Advantage integration show 'Connected' in Suger?",
+          "Does the GCP Partner Network Hub integration show 'Connected' in Suger?",
           "Did you note this for the Co-Sell Field Mapping step?",
         ],
         media: null,
@@ -1124,7 +1124,7 @@ export const walkthroughs = [
     steps: [
       {
         title: "Confirm cloud partner connections are active",
-        body: "Before mapping fields, verify the relevant cloud partner integrations are connected in Suger. For AWS: Settings → Integrations → AWS ACE. For Azure: Settings → Integrations → Azure Marketplace. For GCP: Settings → Integrations → GCP Partner Advantage. All relevant connections must show <strong>Connected</strong> before proceeding.",
+        body: "Before mapping fields, verify the relevant cloud partner integrations are connected in Suger. For AWS: Settings → Integrations → AWS ACE. For Azure: Settings → Integrations → Azure Marketplace. For GCP: Settings → Integrations → GCP Partner Network Hub. All relevant connections must show <strong>Connected</strong> before proceeding.",
         checks: [
           "Are the cloud partner integrations you're mapping (AWS/Azure/GCP) showing as 'Connected'?",
           "Is your CRM (Salesforce or HubSpot) also showing as 'Connected'?",
@@ -1714,7 +1714,7 @@ export const walkthroughs = [
       },
       {
         title: "Test Co-Sell configuration in production",
-        body: "Submit a test referral from production CRM. Confirm it arrives in the cloud partner portal (AWS Partner Central, Azure Partner Center, or GCP Partner Advantage). Accept it and verify the status syncs back to the CRM. If Auto-Share is enabled, trigger a qualifying opportunity and confirm it's auto-submitted.",
+        body: "Submit a test referral from production CRM. Confirm it arrives in the cloud partner portal (AWS Partner Central, Azure Partner Center, or GCP Partner Network). Accept it and verify the status syncs back to the CRM. If Auto-Share is enabled, trigger a qualifying opportunity and confirm it's auto-submitted.",
         terms: [
           { name: "Outbound Referral", slug: "outbound-referral" },
           { name: "Inbound Referral", slug: "inbound-referral" },
