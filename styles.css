@@ -923,13 +923,17 @@ mark {
     background: #1a1a1a;
 }
 
-/* ---- Mobile nav hamburger + dropdown (hidden on desktop) ------------------ */
+/* ---- Elements hidden on desktop, shown via mobile media query ------------- */
 
 .nav-hamburger {
     display: none;
 }
 
 .nav-dropdown {
+    display: none;
+}
+
+.search-toggle-btn {
     display: none;
 }
 
@@ -1273,11 +1277,6 @@ mark {
     color: rgba(255, 255, 255, 0.2);
 }
 
-/* ---- Search toggle button (mobile only) ----------------------------------- */
-
-.search-toggle-btn {
-    display: none;
-}
 
 /* ---- Filter toggle button ------------------------------------------------- */
 
