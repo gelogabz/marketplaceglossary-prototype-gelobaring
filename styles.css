@@ -957,7 +957,7 @@ mark {
     }
 
     .alpha-nav {
-        padding: 0.4rem 1rem;
+        display: none;
     }
 
     .back-to-top {
