@@ -494,14 +494,15 @@ function render() {
 
     const grouped = {};
     filtered.forEach((t) => {
-      const letter = t.name[0].toUpperCase();
+      const firstLetter = t.name.match(/[A-Za-z]/);
+      const letter = firstLetter ? firstLetter[0].toUpperCase() : "#";
       grouped[letter] = grouped[letter] || [];
       grouped[letter].push(t);
     });
 
     let isFirst = true;
     Object.keys(grouped)
-      .sort()
+      .sort((a, b) => (a === "#" ? -1 : b === "#" ? 1 : a.localeCompare(b)))
       .forEach((letter) => {
         const header = document.createElement("h2");
         header.className = "alpha-header" + (isFirst ? " alpha-first" : "");

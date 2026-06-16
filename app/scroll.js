@@ -10,7 +10,7 @@ export function buildAlphaNav(grouped) {
   alphaNavEl.innerHTML = "";
 
   Object.keys(grouped)
-    .sort()
+    .sort((a, b) => (a === "#" ? -1 : b === "#" ? 1 : a.localeCompare(b)))
     .forEach((letter) => {
       const a = document.createElement("a");
       a.className = "alpha-link";
