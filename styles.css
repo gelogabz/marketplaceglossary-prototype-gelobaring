@@ -923,6 +923,16 @@ mark {
     background: #1a1a1a;
 }
 
+/* ---- Mobile nav hamburger + dropdown (hidden on desktop) ------------------ */
+
+.nav-hamburger {
+    display: none;
+}
+
+.nav-dropdown {
+    display: none;
+}
+
 /* ---- Responsive ----------------------------------------------------------- */
 
 @media (max-width: 767px) {
@@ -1261,16 +1271,6 @@ mark {
 
 .docs-bar-sep {
     color: rgba(255, 255, 255, 0.2);
-}
-
-/* ---- Mobile nav hamburger + dropdown (hidden on desktop) ------------------ */
-
-.nav-hamburger {
-    display: none;
-}
-
-.nav-dropdown {
-    display: none;
 }
 
 /* ---- Search toggle button (mobile only) ----------------------------------- */
