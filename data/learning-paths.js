@@ -304,7 +304,7 @@ export const learningPaths = [
     level: "advanced",
     description:
       "How committed spend agreements interact with marketplace purchases, why it matters for ISV deal strategy, and how to position listings as eligible across AWS, Azure, and GCP.",
-    meta: "9 terms · ~35 min",
+    meta: "10 terms · ~40 min",
     continuesFrom: "marketplace-ops-essentials",
     next: "channel-and-partner-motions",
     prereqs: ["marketplace-ops-essentials"],
@@ -354,6 +354,11 @@ export const learningPaths = [
         slug: "disbursement",
         why: "After committed spend purchases are billed and fees are deducted, ISVs receive their proceeds through disbursement. Understand the payout schedule, currency handling, and reconciliation process.",
       },
+      {
+        name: "Payment Installments — Suger",
+        slug: "payment-installments-—-suger",
+        why: "For enterprise deals with installment billing schedules, the Payment Installments view in Suger shows the post-signing state of each scheduled payment — amounts, due dates, and collection status. This is the RevOps surface for monitoring whether installments are hitting on time and flagging failures before they become disputes.",
+      },
     ],
   },
   {
@@ -363,7 +368,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The day-to-day operational layer every ISV needs to understand — from what gets published on marketplace to how buyers get provisioned and how integrations keep entitlements in sync.",
-    meta: "8 terms · ~30 min",
+    meta: "10 terms · ~40 min",
     continuesFrom: "cosell-fundamentals",
     next: "enterprise-billing-and-committed-spend",
     prereqs: ["cosell-fundamentals"],
@@ -377,6 +382,16 @@ export const learningPaths = [
         name: "Listing",
         slug: "listing",
         why: "A listing is the public-facing representation of a product on the marketplace. Learn its structure, lifecycle states, and what separates a well-configured listing from one that stalls in review.",
+      },
+      {
+        name: "Professional Services Listing — AWS",
+        slug: "professional-services-listing-—-aws",
+        why: "SaaS and AMI are the dominant listing types — but Professional Services is the mechanism for ISVs who want to monetize implementation, consulting, and training alongside software on a single marketplace transaction. A distinct product type with its own billing and offer mechanics.",
+      },
+      {
+        name: "Professional Services Offer — Azure",
+        slug: "professional-services-offer-—-azure",
+        why: "Azure's equivalent: a non-transactable listing type for consulting, assessment, and briefing services that generates a lead rather than a checkout event. Knowing both AWS and Azure professional services listing types completes the picture of how advisory work can be listed and co-sell-eligible across hyperscalers.",
       },
       {
         name: "Offer",
@@ -417,7 +432,7 @@ export const learningPaths = [
     level: "advanced",
     description:
       "How ISVs sell through distribution and channel partners across AWS, Azure, and GCP. Covers resale mechanics, authorizations, and the multi-party transaction flows each hyperscaler uses.",
-    meta: "7 terms · ~25 min",
+    meta: "10 terms · ~40 min",
     continuesFrom: "enterprise-billing-and-committed-spend",
     next: "suger-platform-quickstart",
     prereqs: ["enterprise-billing-and-committed-spend"],
@@ -426,6 +441,16 @@ export const learningPaths = [
         name: "Channel Partner (CP)",
         slug: "channel-partner-cp",
         why: "Start with who channel partners are — the resellers, VARs, and MSPs that distribute ISV products to end buyers. Understanding the partner entity is the foundation of every channel motion in this path.",
+      },
+      {
+        name: "Value Added Reseller (VAR)",
+        slug: "value-added-reseller-var",
+        why: "VARs are the most common channel partner type for ISVs — they resell software with bundled services (implementation, training, support) and transact through CPPO/MPO/MCPO. Understanding what makes a partner a VAR vs. a pure reseller or distributor is critical before structuring a channel program.",
+      },
+      {
+        name: "Global System Integrator (GSI)",
+        slug: "global-system-integrator-gsi",
+        why: "GSIs like Accenture, Deloitte, and Infosys operate differently from VARs — they're enrolled in multiple hyperscaler programs simultaneously, drive multi-year enterprise transformation projects, and influence massive procurement decisions. ISVs who build GSI relationships unlock enterprise accounts that rarely engage through direct sales.",
       },
       {
         name: "Distributor",
@@ -453,6 +478,11 @@ export const learningPaths = [
         why: "Azure's equivalent of CPPO. Learn how ISVs, partners, and enterprise buyers transact together on Microsoft's marketplace and where the MPO flow differs from AWS's CPPO model.",
       },
       {
+        name: "Partner-to-Partner (P2P) Co-sell — Azure",
+        slug: "partner-to-partner-p2p-co-sell-—-azure",
+        why: "MPO handles multi-party transactions; P2P Co-sell handles multi-party collaboration. When two Microsoft partners jointly pursue an enterprise deal — one selling, one delivering — P2P is the referral motion that coordinates pipeline, tracks the deal in Partner Center, and unlocks MCI incentives for the selling partner.",
+      },
+      {
         name: "Marketplace Channel Private Offer (MCPO) — GCP",
         slug: "marketplace-channel-private-offer-mcpo-—-gcp",
         why: "GCP's resale mechanism. Learn how MCPO compares to CPPO and MPO and what's unique about the Google Cloud channel motion — including partner discount structures and approval flows.",
@@ -466,7 +496,7 @@ export const learningPaths = [
     level: "beginner",
     description:
       "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
-    meta: "17 terms · ~65 min",
+    meta: "19 terms · ~75 min",
     continuesFrom: "channel-and-partner-motions",
     next: "marketplace-integrations",
     steps: [
@@ -489,6 +519,16 @@ export const learningPaths = [
         name: "Suger Buyer Service",
         slug: "suger-buyer-service",
         why: "The Suger Console is the ISV's operational interface; the Suger Buyer Service is the buyer-facing portal Suger provides for procurement and entitlement management. Understanding both sides of the Suger platform explains how buyers interact with marketplace purchases that ISVs manage through the Console.",
+      },
+      {
+        name: "Buyer Portal — Suger",
+        slug: "buyer-portal-—-suger",
+        why: "The Buyer Portal is the white-label, embeddable self-service UI Suger provides for enterprise buyers — a five-section dashboard covering entitlements, offers, invoices, and requests that ISVs can brand and embed in their own customer portals. It's the product-facing complement to the Suger Console.",
+      },
+      {
+        name: "Global Search — Suger",
+        slug: "global-search-—-suger",
+        why: "As your entitlement and offer volume grows, finding a specific record without drilling through module menus becomes friction. Global Search queries across entitlements, offers, buyers, organizations, and integrations from a single bar — the fastest way to navigate Suger once you're beyond initial setup.",
       },
       {
         name: "Integration",
@@ -564,7 +604,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How ISVs connect their backend systems to marketplace billing, entitlement, and provisioning flows — and what integration partners abstract for them.",
-    meta: "9 terms · ~35 min",
+    meta: "14 terms · ~55 min",
     continuesFrom: "suger-platform-quickstart",
     next: "marketplace-metering",
     prereqs: ["suger-platform-quickstart"],
@@ -608,6 +648,31 @@ export const learningPaths = [
         name: "Metering / Usage Reporting",
         slug: "metering-/-usage-reporting",
         why: "Metering closes the integration loop — your product reports usage back through the integration layer to trigger billing. Learn the reporting model, batch vs. real-time approaches, and idempotency requirements.",
+      },
+      {
+        name: "Manufacturer / Proposer Roles — AWS",
+        slug: "manufacturer-/-proposer-roles-—-aws",
+        why: "In AWS Marketplace EventBridge notifications, not all events go to the same account. The Manufacturer gets license and metering events; the Proposer gets cancellation and billing adjustment events. In CPPO transactions, these are two different accounts — misconfiguring this routing causes silent event loss.",
+      },
+      {
+        name: "License Deprovisioned Event — AWS",
+        slug: "license-deprovisioned-event-—-aws",
+        why: "When a buyer's entitlement is cancelled, AWS sends a License Deprovisioned event to the Manufacturer's account — and the seller has exactly 1 hour to submit final usage records via BatchMeterUsage before billing closes. Miss the window, lose the revenue. This event type deserves its own failover logic in every AWS SaaS integration.",
+      },
+      {
+        name: "Zuora Integration — Suger",
+        slug: "zuora-integration-—-suger",
+        why: "For ISVs that use Zuora for subscription billing and revenue recognition, the Suger-Zuora integration syncs marketplace entitlement events directly to Zuora subscription objects — eliminating manual reconciliation between marketplace and direct-billing channels.",
+      },
+      {
+        name: "DocuSign Integration — Suger",
+        slug: "docusign-integration-—-suger",
+        why: "Enterprise private offer workflows typically require a signed order form before the marketplace offer is accepted. The DocuSign integration triggers the signature workflow automatically when a Suger private offer is created — streamlining the contract-to-checkout step without manual routing.",
+      },
+      {
+        name: "Gong Integration — Suger",
+        slug: "gong-integration-—-suger",
+        why: "Sales teams using Gong need deal context — active entitlement status, offer timelines, renewal dates — without leaving the conversation intelligence tool. The Gong integration surfaces Suger marketplace data directly in Gong deal timelines.",
       },
       {
         name: "Suger MCP Server",
@@ -975,7 +1040,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "The AWS-specific mechanics every ISV needs: how listings, offers, and agreements work on AWS Marketplace, the key programs that unlock co-sell access, and the tools and APIs that run day-to-day operations.",
-    meta: "17 terms · ~65 min",
+    meta: "20 terms · ~80 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -1065,6 +1130,21 @@ export const learningPaths = [
         slug: "aws-marketplace-discovery-api-—-aws",
         why: "The Catalog API manages your own listings; the Discovery API exposes the full AWS Marketplace catalog for programmatic search and browse. Buyers and partner platforms use Discovery to build procurement tooling and catalog integrations — ISVs benefit by understanding how their listings are indexed and surfaced in automated purchase flows.",
       },
+      {
+        name: "Professional Services Listing — AWS",
+        slug: "professional-services-listing-—-aws",
+        why: "SaaS and AMI are the most common AWS Marketplace product types, but Professional Services is the mechanism for selling consulting, implementation, training, and managed services alongside software on a single marketplace transaction — including with Variable Payments for milestone billing.",
+      },
+      {
+        name: "SageMaker Model Listing — AWS",
+        slug: "sagemaker-model-listing-—-aws",
+        why: "If your product includes ML models, SageMaker Model Listings are how you distribute them on AWS Marketplace — buyers deploy directly into their SageMaker environment without seeing your model artifacts. A distinct product type from SaaS or AMI with its own onboarding requirements.",
+      },
+      {
+        name: "AWS Marketplace Vendor Insights",
+        slug: "aws-marketplace-vendor-insights",
+        why: "Enterprise buyers increasingly run security questionnaire processes before approving marketplace purchases. Vendor Insights gives your listing a continuously-updated security and compliance profile — aggregating SOC 2, ISO certifications, and AWS Security Hub data — so buyers can approve faster without repeated manual questionnaire responses.",
+      },
     ],
   },
   {
@@ -1074,7 +1154,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How Microsoft's commercial marketplace works end-to-end — from listing structures and offer types to MACC eligibility, partner programs, and the APIs that power SaaS integrations.",
-    meta: "14 terms · ~55 min",
+    meta: "16 terms · ~60 min",
     continuesFrom: "cloud-marketplace-basics",
     next: "cosell-fundamentals",
     prereqs: ["cloud-marketplace-basics"],
@@ -1153,6 +1233,16 @@ export const learningPaths = [
         name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
         slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
         why: "MPN membership is the foundation of all Azure partner benefits — co-sell access, Marketplace Rewards, and ISV Success Program eligibility all flow through it. Learn the membership tiers and what each unlocks.",
+      },
+      {
+        name: "Professional Services Offer — Azure",
+        slug: "professional-services-offer-—-azure",
+        why: "Unlike SaaS or VM offers, Professional Services offers are non-transactable — they generate a contact request rather than a checkout event. They're the mechanism for listing consulting, implementation, and assessment services on Azure Marketplace, and can be paired with IP co-sell motions to make advisory engagements co-sell eligible.",
+      },
+      {
+        name: "Microsoft Preferred Solutions Badge — Azure",
+        slug: "microsoft-preferred-solutions-badge-—-azure",
+        why: "The Preferred Solutions Badge is Azure's top-tier quality signal — awarded annually by Microsoft solution area teams to ISVs with outstanding customer impact and technology alignment. It unlocks elevated search placement and co-sell prioritization by Microsoft field sellers, making it the highest-leverage trust credential available to a transactable Azure offer.",
       },
     ],
   },
