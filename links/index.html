@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cloud GTM Reference — Learning Paths</title>
+        <title>Cloud GTM Reference — Links</title>
         <link rel="stylesheet" href="../styles.css" />
-        <link rel="stylesheet" href="path.css" />
+        <link rel="stylesheet" href="links.css" />
     </head>
     <body>
         <nav class="topnav" aria-label="Site navigation">
@@ -35,7 +35,7 @@
                     </svg>
                     <span class="brand-text"
                         >Cloud GTM Reference<span class="brand-page">
-                            — Learning Paths</span
+                            — Links</span
                         ></span
                     >
                 </a>
@@ -43,20 +43,32 @@
                 <div class="topnav-links">
                     <a href="../index.html">Glossary</a>
                     <a href="../comparison/">Compare</a>
-                    <a href="index.html" class="current">Learning Paths</a>
+                    <a href="../learning-paths/">Learning Paths</a>
                     <a href="../walkthroughs/">Walkthroughs</a>
-                    <a href="../links/">Links</a>
+                    <a href="index.html" class="current">Links</a>
                 </div>
             </div>
         </nav>
 
-        <div class="path-outer">
-            <div class="path-page" id="pathContent">
-                <p style="color: var(--gray-400); font-size: 14px">Loading…</p>
+        <div class="links-page">
+            <section class="links-hero">
+                <div class="links-hero-eyebrow">Helpful Links &amp; Sites</div>
+                <h1 class="links-hero-title">
+                    Official portals and docs, organized by platform.
+                </h1>
+                <p class="links-hero-sub">
+                    Quick reference for the most commonly used URLs across
+                    Suger, AWS, Azure, GCP, and Snowflake — with callouts for
+                    resources that are easy to confuse.
+                </p>
+            </section>
+
+            <div class="links-body">
+                <div id="linksRoot"></div>
             </div>
         </div>
 
-        <script type="module" src="path.js"></script>
+        <script type="module" src="links.js"></script>
 
         <div class="docs-bar">
             <span class="docs-bar-label">Official Docs:</span>
