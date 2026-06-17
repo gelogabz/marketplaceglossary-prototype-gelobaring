@@ -177,6 +177,40 @@
     margin: 0;
 }
 
+/* ---- Link type badges ---- */
+
+.link-type-badge {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 7px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.link-type-portal {
+    background: rgba(242, 106, 28, 0.1);
+    color: var(--orange-text);
+}
+
+.link-type-program {
+    background: #f0f0f7;
+    color: #2d2059;
+}
+
+.link-type-doc {
+    background: #e8f4fd;
+    color: #1a6fa8;
+}
+
+.link-type-blog {
+    background: #e8f5e9;
+    color: #1b6e33;
+}
+
 /* ---- Disambiguation callout ---- */
 
 .link-confuse-callout {

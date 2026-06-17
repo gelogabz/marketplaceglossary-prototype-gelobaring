@@ -12,6 +12,15 @@ const PLATFORM_COLORS = {
   alibaba: "#8c3d00",
 };
 
+const TYPE_LABELS = {
+  portal: "Platform",
+  program: "Program",
+  doc: "Doc",
+  blog: "Blog",
+};
+
+const TYPE_ORDER = { portal: 0, program: 1, doc: 2, blog: 3 };
+
 function getOpenState() {
   try {
     return JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
@@ -39,12 +48,17 @@ function renderLinkRow(link) {
     domain = new URL(link.url).hostname;
   } catch (_) {}
 
+  const typeBadge = link.type && TYPE_LABELS[link.type]
+    ? `<span class="link-type-badge link-type-${escHtml(link.type)}">${TYPE_LABELS[link.type]}</span>`
+    : "";
+
   return `
     <li class="link-row">
       <div class="link-row-title-line">
         <span class="link-row-title">
           <a href="${escHtml(link.url)}" target="_blank" rel="noopener">${escHtml(link.title)} ↗</a>
         </span>
+        ${typeBadge}
         ${domain ? `<span class="link-row-domain">${escHtml(domain)}</span>` : ""}
       </div>
       <p class="link-row-desc">${escHtml(link.desc)}</p>
@@ -54,7 +68,10 @@ function renderLinkRow(link) {
 
 function renderSection(section, openState) {
   const accentColor = PLATFORM_COLORS[section.platformTag] || "#444441";
-  const count = section.links.length;
+  const sorted = [...section.links].sort(
+    (a, b) => (TYPE_ORDER[a.type] ?? 99) - (TYPE_ORDER[b.type] ?? 99)
+  );
+  const count = sorted.length;
   const isOpen = openState[section.platformTag] === true;
 
   return `
@@ -67,7 +84,7 @@ function renderSection(section, openState) {
         </button>
       </h2>
       <ul class="link-list"${isOpen ? "" : " hidden"}>
-        ${section.links.map(renderLinkRow).join("")}
+        ${sorted.map(renderLinkRow).join("")}
       </ul>
     </section>`;
 }
