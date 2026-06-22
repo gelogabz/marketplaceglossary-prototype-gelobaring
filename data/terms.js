@@ -7679,7 +7679,8 @@ export const terms = [
     name: "Insulin",
     tags: ["suger"],
     def: "Suger's AI-powered workspace embedded in the Suger Console, designed for ISVs operating across cloud marketplaces. Provides an AI chat interface with streaming responses and tool execution, specialized agents for marketplace tasks, shared team channels for multi-user collaboration, and Watches — automated recurring agent runs that fire on a schedule or in response to external events. A built-in Skills & Marketplace catalog lets users install pre-built agents and instruction files with a single click.",
-    alias: "Related: Suger Console, Suger MCP Server, Suger Chrome Extension",
+    alias:
+      "Related: Insulin Agent — Suger, Insulin Watch — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/",
     difficulty: "beginner",
     category: "operations",
@@ -7691,9 +7692,14 @@ export const terms = [
     ],
     context: ["Suger Console", "AI Workspace", "Marketplace Automation"],
     related: [
-      { name: "Suger Console", slug: "suger-console" },
-      { name: "Suger MCP Server", slug: "suger-mcp-server" },
-      { name: "Suger Chrome Extension", slug: "suger-chrome-extension" },
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Insulin Watch — Suger", slug: "insulin-watch-—-suger" },
+      { name: "Insulin Channel — Suger", slug: "insulin-channel-—-suger" },
+      { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
+      {
+        name: "Insulin Marketplace — Suger",
+        slug: "insulin-marketplace-—-suger",
+      },
     ],
   },
   {
@@ -8386,7 +8392,8 @@ export const terms = [
     name: "Insulin Watch — Suger",
     tags: ["suger"],
     def: "An automation primitive in Suger's Insulin platform that runs an Insulin Agent on a cron schedule or in response to an event trigger. Watches can monitor marketplace signals — such as entitlement changes, deal stage updates, or revenue events — and automatically invoke the configured agent to take action. Insulin Watch is the event-driven execution layer for Insulin Agents, distinct from manual agent chat invocations.",
-    alias: "Related: Insulin, Insulin Agent — Suger, Insulin Channel — Suger",
+    alias:
+      "Related: Insulin, Insulin Agent — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/",
     difficulty: "advanced",
     category: "operations",
@@ -8399,6 +8406,15 @@ export const terms = [
     related: [
       { name: "Insulin", slug: "insulin" },
       { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      {
+        name: "Insulin Channel — Suger",
+        slug: "insulin-channel-—-suger",
+      },
+      { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
+      {
+        name: "Insulin Marketplace — Suger",
+        slug: "insulin-marketplace-—-suger",
+      },
     ],
   },
   {
@@ -8406,8 +8422,8 @@ export const terms = [
     tags: ["suger"],
     def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, system prompt, model configuration, and optional tool access. Insulin ships with 20+ pre-built agents organized by function (development, communication, project management, data analytics, sales CRM), and supports fully custom agent creation. Agents can be invoked manually in chat, triggered via Insulin Watch, or assigned to run within an Insulin Channel. Role-based permissions (Admin, Editor, User, Viewer) control who can edit or use each agent, with ownership transfer supported. Pre-built and community agents are available to install through the Insulin Marketplace.",
     alias:
-      "Related: Insulin, Insulin Watch — Suger, Insulin Channel — Suger, Suger MCP Server",
-    source: "https://doc.suger.io/insulin/",
+      "Related: Insulin, Insulin Watch — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
+    source: "https://doc.suger.io/insulin/agents/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["Suger Users", "ISVs / Sellers"],
@@ -8419,14 +8435,23 @@ export const terms = [
     related: [
       { name: "Insulin", slug: "insulin" },
       { name: "Insulin Watch — Suger", slug: "insulin-watch-—-suger" },
-      { name: "Suger MCP Server", slug: "suger-mcp-server" },
+      {
+        name: "Insulin Channel — Suger",
+        slug: "insulin-channel-—-suger",
+      },
+      { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
+      {
+        name: "Insulin Marketplace — Suger",
+        slug: "insulin-marketplace-—-suger",
+      },
     ],
   },
   {
     name: "Insulin Channel — Suger",
     tags: ["suger"],
     def: "A persistent, multi-user and multi-agent group conversation space within Suger's Insulin platform. Channels support role-based access control and up to 20 agents simultaneously, enabling collaborative workflows where multiple team members and multiple specialized agents operate in shared context. Distinct from a direct 1:1 agent chat — Channels are designed for ongoing operational processes such as a nightly deal review or a revenue operations war room.",
-    alias: "Related: Insulin, Insulin Agent — Suger, Insulin Watch — Suger",
+    alias:
+      "Related: Insulin, Insulin Agent — Suger, Insulin Watch — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/",
     difficulty: "advanced",
     category: "operations",
@@ -8439,6 +8464,12 @@ export const terms = [
     related: [
       { name: "Insulin", slug: "insulin" },
       { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Insulin Watch — Suger", slug: "insulin-watch-—-suger" },
+      { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
+      {
+        name: "Insulin Marketplace — Suger",
+        slug: "insulin-marketplace-—-suger",
+      },
     ],
   },
   {
