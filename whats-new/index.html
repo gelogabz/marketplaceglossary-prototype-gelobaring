@@ -3,9 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cloud GTM Reference — Walkthroughs</title>
+        <title>Cloud GTM Reference — What's New</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        />
         <link rel="stylesheet" href="../styles.css" />
-        <link rel="stylesheet" href="hub.css" />
+        <link rel="stylesheet" href="whats-new.css" />
     </head>
     <body>
         <nav class="topnav" aria-label="Site navigation">
@@ -35,7 +39,7 @@
                     </svg>
                     <span class="brand-text"
                         >Cloud GTM Reference<span class="brand-page">
-                            — Walkthroughs</span
+                            — What's New</span
                         ></span
                     >
                 </a>
@@ -44,37 +48,68 @@
                     <a href="../index.html">Glossary</a>
                     <a href="../comparison/">Compare</a>
                     <a href="../learning-paths/">Learning Paths</a>
-                    <a href="index.html" class="current">Walkthroughs</a>
+                    <a href="../walkthroughs/">Walkthroughs</a>
                     <a href="../links/">Links</a>
-                    <a href="../whats-new/">What's New</a>
+                    <a href="index.html" class="current">What's New</a>
                 </div>
             </div>
         </nav>
 
-        <div class="wt-page">
-            <section class="wt-hero">
-                <div class="wt-hero-eyebrow">Walkthroughs</div>
-                <h1 class="wt-hero-title">
-                    Step-by-step guides for common workflows.
+        <div class="wn-page">
+            <section class="wn-hero">
+                <div class="wn-hero-eyebrow">What's New</div>
+                <h1 class="wn-hero-title">
+                    Latest updates from cloud marketplaces.
                 </h1>
-                <p class="wt-hero-sub">
-                    Numbered task sequences for real work — integrations,
-                    offers, co-sell, and more. Each walkthrough is shareable as
-                    a one-pager.
+                <p class="wn-hero-sub">
+                    Automatically collected from AWS, Azure, GCP, Snowflake,
+                    and Suger — features, program changes, pricing updates,
+                    and blog posts, filtered for marketplace relevance.
                 </p>
-                <div class="wt-wip-notice">
-                    <strong>Work in progress</strong> — some walkthroughs are
-                    still being built. Status labels on each card show what's
-                    ready.
+                <div class="wn-hero-meta">
+                    <span class="wn-last-updated" id="wnLastUpdated"></span>
+                    <span class="wn-stats" id="wnStats"></span>
                 </div>
             </section>
 
-            <div class="wt-body">
-                <div id="wtSections"></div>
+            <div class="wn-body">
+                <div class="wn-toolbar">
+                    <div class="wn-filter-row">
+                        <span class="wn-filter-label">Platform</span>
+                        <button class="wn-pill" data-platform="all">All</button>
+                        <button class="wn-pill" data-platform="aws">AWS</button>
+                        <button class="wn-pill" data-platform="azure">Azure</button>
+                        <button class="wn-pill" data-platform="gcp">GCP</button>
+                        <button class="wn-pill" data-platform="snowflake">Snowflake</button>
+                        <button class="wn-pill" data-platform="suger">Suger</button>
+                    </div>
+                    <div class="wn-filter-row">
+                        <span class="wn-filter-label">Type</span>
+                        <button class="wn-pill" data-type="all">All</button>
+                        <button class="wn-pill" data-type="feature">Feature</button>
+                        <button class="wn-pill" data-type="program">Program</button>
+                        <button class="wn-pill" data-type="pricing">Pricing</button>
+                        <button class="wn-pill" data-type="policy">Policy</button>
+                        <button class="wn-pill" data-type="blog">Blog</button>
+                        <button class="wn-pill" data-type="release">Release</button>
+                    </div>
+                    <div class="wn-search-row">
+                        <input
+                            type="search"
+                            id="wnSearch"
+                            placeholder="Search updates…"
+                            autocomplete="off"
+                            spellcheck="false"
+                        />
+                        <span id="wnCount" class="wn-count"></span>
+                    </div>
+                </div>
+
+                <div id="wnFeed" aria-live="polite"></div>
             </div>
         </div>
 
-        <script type="module" src="hub.js"></script>
+        <script type="module" src="whats-new.js"></script>
         <script type="module" src="../app/nav.js"></script>
 
         <div class="docs-bar">
