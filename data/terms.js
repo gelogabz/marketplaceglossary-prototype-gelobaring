@@ -192,7 +192,7 @@ export const terms = [
   {
     name: "Suger Analytics",
     tags: ["suger"],
-    def: "Suger's built-in analytics platform for tracking marketplace revenue, entitlement status, usage consumption, and co-sell pipeline across all connected marketplaces. Users can build fully customizable dashboards using a reusable chart library, organize data across multiple named datasets (Finance, Offers, Co-sell, Billing), and share dashboards collaboratively across the organization. Analytics also supports AI-powered conversational dashboard design — users describe a chart in natural language and Suger generates it automatically — and includes a dedicated Billing Analytics dashboard added in August 2025.",
+    def: "Suger's built-in analytics platform for tracking marketplace revenue, entitlement status, usage consumption, and co-sell pipeline across all connected marketplaces. Users can build fully customizable dashboards using a reusable chart library, organize data across multiple named datasets (Finance, Offers, Co-sell, Billing), and share dashboards collaboratively across the organization in real time. Analytics supports AI-powered conversational dashboard design — users describe a chart in natural language and Suger generates it automatically — as well as AI-powered automated recommendations and predictive analytics that surface insights and forecast trends without manual configuration.",
     alias: "Related: Revenue, Table Export, Suger Console",
     source: "https://doc.suger.io/analytics/",
     difficulty: "beginner",
@@ -1245,7 +1245,7 @@ export const terms = [
   {
     name: "ISV Accelerate — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Partners must achieve Validated or Differentiated status in AWS Partner Central (via the Partner Path) as a baseline enrollment prerequisite; AWS Specialization status unlocks premium co-sell benefit tiers above the standard program. Required for SPPO participation.",
+    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Partners must achieve Validated or Differentiated status in AWS Partner Central (via the Partner Path) as a baseline enrollment prerequisite; AWS Specialization status unlocks premium co-sell benefit tiers above the standard program. Required for SPPO participation. As of 2026, ISV Accelerate explicitly covers agentic SaaS co-sell activities and AI agent marketplace listings, extending the program's scope beyond conventional software products.",
     alias:
       "Azure equivalent: ISV Success Program — Azure | GCP equivalent: Build Engagement Model — GCP | Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
@@ -5189,7 +5189,7 @@ export const terms = [
   {
     name: "Foundational Technical Review (FTR) — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS validation process that reviews an ISV's software product against AWS Well-Architected best practices across security, reliability, and operational excellence. Required prerequisite for ISV Accelerate, AWS Specialization, and co-sell eligibility. Valid for 3 years. Upon approval, partners earn a 'Reviewed by AWS' badge and listing in AWS Partner Solutions Finder. As of 2025, can be waived with a recent Well-Architected Framework Review showing no high-risk issues.",
+    def: "An AWS validation process that reviews an ISV's software product against AWS Well-Architected best practices across security, reliability, and operational excellence. Required prerequisite for ISV Accelerate, AWS Specialization, and co-sell eligibility. Valid for 3 years. Upon approval, partners earn a 'Reviewed by AWS' badge and listing in AWS Partner Solutions Finder. Can be waived with a recent Well-Architected Framework Review showing no high-risk issues. As of AWS Summit New York 2026, partners can also submit an existing SOC 2 Type II audit report and receive FTR approval or feedback within minutes rather than the previous multi-week review cycle, significantly accelerating the path to ISV Accelerate eligibility.",
     alias:
       "Related: ISV Accelerate — AWS, AWS Specialization, Well-Architected Framework Review, Partner Development Manager (PDM) — AWS",
     source: "https://aws.amazon.com/partners/foundational-technical-review/",
@@ -6614,7 +6614,7 @@ export const terms = [
   {
     name: "Concurrent Agreements — AWS",
     tags: ["aws"],
-    def: "An AWS Marketplace capability (required for all new SaaS products from June 1, 2026) that allows a single AWS account to hold multiple active agreements for the same product simultaneously. Before this feature, a buyer could only have one active agreement per product per account. Sellers must complete the SNS-to-EventBridge migration before concurrent agreements support is activated, and must update their SaaS integration to handle multiple CustomerIdentifiers per account and route metering records accordingly. Event routing in concurrent agreement scenarios follows the Manufacturer/Proposer role model: License Deprovisioned events go to the Manufacturer account, while Agreement Cancellation events go to the Proposer.",
+    def: "An AWS Marketplace capability (required for all new SaaS products from June 1, 2026) that allows a single AWS account to hold multiple active agreements for the same product simultaneously. Before this feature, a buyer could only have one active agreement per product per account. Sellers must migrate from Amazon SNS to Amazon EventBridge for subscription notifications before concurrent agreements support is activated, and must update their SaaS integration to use LicenseArn as the primary key (replacing CustomerIdentifier) in ResolveCustomer, GetEntitlements, and BatchMeterUsage API calls. Each concurrent agreement carries a unique LicenseArn, which is now the authoritative identifier for routing metering records and provisioning decisions. Event routing follows the Manufacturer/Proposer role model: License Deprovisioned events go to the Manufacturer account, while Agreement Cancellation events go to the Proposer.",
     alias:
       "Related: Agreement — AWS, SaaS Contract Pricing — AWS, ResolveCustomer API — AWS, Manufacturer / Proposer Roles — AWS",
     source:
@@ -8404,7 +8404,7 @@ export const terms = [
   {
     name: "Insulin Agent — Suger",
     tags: ["suger"],
-    def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, tools, and instructions. Insulin comes with 20+ pre-built agents (e.g., Deal Analyst, Revenue Ops, Marketplace Monitor) and supports custom agent creation. Agents can be invoked manually in chat, triggered via Insulin Watch, or assigned to run within an Insulin Channel. Each agent has access to Suger's full data layer and can call external APIs.",
+    def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, system prompt, model configuration, and optional tool access. Insulin ships with 20+ pre-built agents organized by function (development, communication, project management, data analytics, sales CRM), and supports fully custom agent creation. Agents can be invoked manually in chat, triggered via Insulin Watch, or assigned to run within an Insulin Channel. Role-based permissions (Admin, Editor, User, Viewer) control who can edit or use each agent, with ownership transfer supported. Pre-built and community agents are available to install through the Insulin Marketplace.",
     alias:
       "Related: Insulin, Insulin Watch — Suger, Insulin Channel — Suger, Suger MCP Server",
     source: "https://doc.suger.io/insulin/",
@@ -9653,6 +9653,615 @@ export const terms = [
         name: "Global System Integrator (GSI)",
         slug: "global-system-integrator-gsi",
       },
+    ],
+  },
+  {
+    name: "Integrated SaaS Listing — Snowflake",
+    tags: ["snowflake", "offers"],
+    def: "A Snowflake Marketplace listing type (GA 2026) that allows consumers to discover, trial, and purchase third-party SaaS applications directly from the Snowflake interface, with Snowflake automatically provisioning required database objects and managing integration setup. Unlike standard Snowflake Marketplace data listings, Integrated SaaS listings support free trial activation from the listing page and drawdown against a buyer's existing Snowflake capacity commitment via Marketplace Capacity Drawdown. This model replaces the legacy Snowflake Partner Connect trial flow, unifying discovery, trial, and transactable purchase into a single in-platform experience.",
+    alias:
+      "Related: Marketplace Capacity Drawdown (MCD) — Snowflake, Snowflake Marketplace — Snowflake | AWS equivalent: SaaS Subscription Pricing — AWS | Azure equivalent: Subscription — Azure",
+    source:
+      "https://docs.snowflake.com/en/release-notes/2026/other/2026-06-30-integrated-saas-listings-ga",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing a SaaS product on Snowflake Marketplace with an in-platform free trial to reduce buyer friction without requiring a separate trial provisioning system",
+      "Enabling buyers to activate a SaaS trial from the Snowflake listing page with automatic database object provisioning, without leaving the Snowflake UI",
+      "Allowing buyers to apply their prepaid Snowflake capacity commitment toward Integrated SaaS Listing purchases via Marketplace Capacity Drawdown",
+    ],
+    context: [
+      "Snowflake Marketplace",
+      "Snowflake Provider Studio",
+      "Snowflake Collaboration",
+      "Snowflake Listings",
+    ],
+    related: [
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
+      {
+        name: "Marketplace Capacity Drawdown (MCD) — Snowflake",
+        slug: "marketplace-capacity-drawdown-mcd-—-snowflake",
+      },
+      { name: "Free Trial", slug: "free-trial" },
+      { name: "Transactable Offer", slug: "transactable-offer" },
+    ],
+  },
+  {
+    name: "AWS Marketplace Storefront — AWS",
+    tags: ["aws", "offers"],
+    def: "An AWS Marketplace capability (announced AWS Summit New York 2026) that enables ISVs to embed a branded, curated product catalog on their own website backed by AWS Marketplace billing and procurement infrastructure. Customers browse and purchase through the ISV's storefront experience while all transactions settle through AWS Marketplace, counting toward buyers' EDP or other committed spend commitments. The Storefront model lets sellers customize the buying experience with their own branding, pricing copy, and catalog curation while retaining all the co-sell eligibility, disbursement, and committed spend benefits of a standard marketplace transaction.",
+    alias:
+      "Related: AWS Marketplace — AWS, Express Private Offer — AWS, Enterprise Discount Program (EDP) — AWS",
+    source: "https://aws.amazon.com/blogs/apn/get-ready-to-sell/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Creating a branded ISV storefront where enterprise buyers can purchase directly using consolidated AWS billing without navigating the public AWS Marketplace console",
+      "Embedding AWS Marketplace checkout into an ISV website to preserve brand identity while enabling buyers to apply EDP committed spend",
+      "Reducing deal friction for high-velocity self-service SKUs by giving buyers a familiar ISV-branded purchasing experience backed by marketplace contracts and co-sell eligibility",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Marketplace Management Portal (AMMP)",
+      "ISV Go-to-Market",
+      "AWS Summit New York 2026",
+    ],
+    related: [
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      {
+        name: "Express Private Offer — AWS",
+        slug: "express-private-offer-—-aws",
+      },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
+      { name: "Listing", slug: "listing" },
+    ],
+  },
+  {
+    name: "Pay-Per-Outcome Pricing — AWS",
+    tags: ["aws", "offers"],
+    def: "An AWS Marketplace commercial model (announced 2026) that allows ISVs to charge buyers based on measurable business outcomes rather than resource consumption or user seats. Outcome-based pricing uses custom metering dimensions tied to delivered business results — such as cost saved, revenue generated, or anomalies resolved — and typically combines a predictable base subscription fee with variable outcome-metered charges. Designed primarily for agentic SaaS products where traditional per-seat or usage-volume models fail to capture the value delivered, this model requires defining outcome metrics as metering dimensions in the product's pricing plan.",
+    alias:
+      "Related: Metered Billing, Metering Dimension, SaaS Subscription Pricing — AWS",
+    source:
+      "https://aws.amazon.com/blogs/apn/agentic-saas-your-next-growth-market-is-already-here/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Pricing an AI agent product on AWS Marketplace by business outcome metric (e.g., 'per resolved support ticket') rather than API calls or seat count",
+      "Structuring a hybrid pricing model combining a monthly base fee with outcome-based metering dimensions for an agentic SaaS product",
+      "Aligning AWS Marketplace pricing with enterprise buyer ROI expectations by charging for delivered business value rather than consumed compute",
+    ],
+    context: [
+      "AWS Marketplace",
+      "Agentic SaaS",
+      "AWS Marketplace Custom Metering",
+      "AWS Summit New York 2026",
+    ],
+    related: [
+      { name: "Metered Billing", slug: "metered-billing" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+      {
+        name: "SaaS Subscription Pricing — AWS",
+        slug: "saas-subscription-pricing-—-aws",
+      },
+      {
+        name: "BatchMeterUsage API — AWS",
+        slug: "batchmeterusage-api-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Opportunity Quality Score — AWS",
+    tags: ["aws", "cosell"],
+    def: "A real-time data-driven metric in AWS Partner Central that scores how well an ACE opportunity submission aligns with patterns of successful co-sell engagements. The score recalculates as partners update submission details and directly determines routing to one of three co-sell motion tiers: AWS Field-engaged (direct AWS seller involvement), Agent-engaged (AI agent support with potential promotion), or Partner-led (partner operates independently with AI assistance). Higher-scoring submissions are more likely to receive direct AWS field seller engagement.",
+    alias:
+      "Related: APN Customer Engagements (ACE) — AWS, AWS Marketplace Engagement Score — AWS, Propensity to Buy (PTB) Score",
+    source: "https://aws.amazon.com/blogs/apn/sell-smarter-with-aws/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
+    useCases: [
+      "Optimizing ACE opportunity submissions to improve the Opportunity Quality Score and unlock direct AWS field seller engagement",
+      "Diagnosing why an ACE submission was routed to Agent-engaged rather than Field-engaged tier and identifying which fields to enrich",
+      "Training sales teams on the signals that drive higher opportunity quality scores to improve co-sell pipeline conversion",
+    ],
+    context: [
+      "AWS Partner Central",
+      "ACE Pipeline",
+      "Co-sell Routing",
+      "AWS Partner Central Agents — AWS",
+    ],
+    related: [
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+      {
+        name: "AWS Marketplace Engagement Score — AWS",
+        slug: "aws-marketplace-engagement-score-—-aws",
+      },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
+  },
+  {
+    name: "Agent-Engaged Opportunity — AWS",
+    tags: ["aws", "cosell"],
+    def: "A co-sell motion tier in AWS Partner Central where ACE opportunities are supported by an AI agent rather than assigned to a human AWS field seller. Agent-engaged opportunities receive actionable insights, next-step recommendations, and enrichment suggestions from the Partner Central AI agent, and may be promoted to the Field-engaged tier if the opportunity quality improves or the deal gains strategic significance. This tier sits between Partner-led (no AWS involvement, AI-assisted only) and AWS Field-engaged (direct AWS seller collaboration) in the three-tier co-sell routing model introduced in 2026.",
+    alias:
+      "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Central Agents — AWS, Opportunity Quality Score — AWS, Partner-Led Opportunity — AWS",
+    source: "https://aws.amazon.com/blogs/apn/sell-smarter-with-aws/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Responding to AWS Partner Central AI agent recommendations on an Agent-engaged ACE opportunity to improve deal quality and qualify for Field-engaged promotion",
+      "Setting pipeline expectations for deals in the Agent-engaged tier — no AWS seller is assigned, but AI insights can still accelerate the opportunity",
+      "Understanding when an Agent-engaged opportunity can be escalated to Field-engaged based on deal size, strategic fit, or enriched submission data",
+    ],
+    context: [
+      "AWS Partner Central",
+      "ACE Pipeline",
+      "Co-sell Routing",
+      "AWS Partner Central Agents",
+    ],
+    related: [
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+      {
+        name: "Opportunity Quality Score — AWS",
+        slug: "opportunity-quality-score-—-aws",
+      },
+      {
+        name: "Partner-Led Opportunity — AWS",
+        slug: "partner-led-opportunity-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Partner-Led Opportunity — AWS",
+    tags: ["aws", "cosell"],
+    def: "A co-sell motion tier in AWS Partner Central where an ACE opportunity receives no AWS field seller assignment. The partner operates independently with 24/7 AI agent support via Partner Central — receiving insights, recommendations, and best practices from the Partner Central AI — but without direct human AWS seller involvement. Partner-led is the lowest tier in the three-tier opportunity routing model (below Agent-engaged and Field-engaged) and is typically assigned when the Opportunity Quality Score is insufficient to qualify for higher tiers or when the deal does not meet AWS co-sell criteria.",
+    alias:
+      "Related: Agent-Engaged Opportunity — AWS, APN Customer Engagements (ACE) — AWS, Opportunity Quality Score — AWS",
+    source: "https://aws.amazon.com/blogs/apn/sell-smarter-with-aws/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Understanding that a Partner-led routing means no AWS rep is assigned — the partner is solely responsible for deal advancement, with AI agent guidance only",
+      "Improving an ACE opportunity's Opportunity Quality Score to move from Partner-led to Agent-engaged or Field-engaged tier",
+      "Setting accurate pipeline expectations for deals routed as Partner-led, which have lower close rates than Field-engaged co-sell opportunities",
+    ],
+    context: [
+      "AWS Partner Central",
+      "ACE Pipeline",
+      "Co-sell Routing",
+      "AWS Partner Central Agents",
+    ],
+    related: [
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "Agent-Engaged Opportunity — AWS",
+        slug: "agent-engaged-opportunity-—-aws",
+      },
+      {
+        name: "Opportunity Quality Score — AWS",
+        slug: "opportunity-quality-score-—-aws",
+      },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Express Private Offer Extension — AWS",
+    tags: ["aws", "offers", "cosell"],
+    def: "An AWS Marketplace capability (announced AWS Summit New York 2026) that allows AWS sales representatives to extend personalized custom pricing invitations directly to customers, automating the private offer workflow from the AWS side. Unlike standard Express Private Offers — which are ISV-initiated — this mechanism is triggered by an AWS rep within Partner Central, pre-populating offer terms based on the customer's account and existing commitments. The rep-initiated flow is designed to reduce deal-closure friction on co-sell opportunities by eliminating manual coordination between the ISV and AWS rep to initiate a custom pricing conversation.",
+    alias:
+      "Related: Express Private Offer — AWS, Private Offer, APN Customer Engagements (ACE) — AWS",
+    source: "https://aws.amazon.com/blogs/apn/get-ready-to-sell/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Channel Partners"],
+    useCases: [
+      "Receiving an AWS-rep-initiated express pricing invitation in a co-sell deal and understanding how it differs from an ISV-originated express private offer",
+      "Enabling AWS sales reps to unlock personalized pricing on a co-sell opportunity without requiring manual coordination with the ISV to create the offer first",
+      "Tracking rep-initiated offer extensions in the AWS Marketplace Management Portal alongside standard ISV-created private offers",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Partner Central",
+      "Co-sell Private Offers",
+      "AWS Summit New York 2026",
+    ],
+    related: [
+      {
+        name: "Express Private Offer — AWS",
+        slug: "express-private-offer-—-aws",
+      },
+      { name: "Private Offer", slug: "private-offer" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
+  },
+  {
+    name: "AWS Marketplace List & Sell Incentive — AWS",
+    tags: ["aws"],
+    def: "A cost-offset funding program (announced AWS Summit New York 2026) that reimburses AWS Marketplace partners for expenses associated with creating a new marketplace listing, expanding to new countries, or adding self-service purchase features. The incentive targets listing integration and go-live costs — such as SaaS fulfillment API integration, metering setup, and legal/contract work — reducing the financial barrier to marketplace entry for new ISVs and for existing ISVs expanding their geographic or product footprint.",
+    alias:
+      "Related: AWS Partner Funding — AWS, Marketing Development Funds (MDF) — AWS, ISV Accelerate — AWS",
+    source: "https://aws.amazon.com/blogs/apn/get-ready-to-sell/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Applying for the List & Sell Incentive to offset SaaS fulfillment API integration costs when publishing a first AWS Marketplace listing",
+      "Using the incentive to fund country expansion for an existing listing, covering legal review and regional pricing configuration costs",
+      "Combining the List & Sell Incentive with POC Funding and MDF in a coordinated AWS Partner Funding strategy for a marketplace launch",
+    ],
+    context: [
+      "AWS Partner Funding Portal (APFP)",
+      "AWS Partner Funding",
+      "AWS Marketplace Onboarding",
+      "AWS Summit New York 2026",
+    ],
+    related: [
+      {
+        name: "AWS Partner Funding — AWS",
+        slug: "aws-partner-funding-—-aws",
+      },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Business Value Realization (BVR) Motion — AWS",
+    tags: ["aws", "cosell"],
+    def: "An AWS Services Partner program (announced AWS Summit New York 2026) that helps eligible partners shift from project-delivery billing to outcome-based engagement models. The BVR Motion includes a Business Value Realization Toolkit with industry-specific templates and benchmarks, a new AWS BVR Competency designation, outcome-tied funding (up to $50K MDF for the 2026–2027 period), and a dedicated Partner Success Specialist. Eligibility requires demonstrated customer success excellence and completion of BVR learning requirements. The program is distinct from ISV-focused programs — it targets AWS Services Partners and GSIs who want to prove and quantify customer ROI post-implementation.",
+    alias:
+      "Related: ISV Accelerate — AWS, Marketing Development Funds (MDF) — AWS, Strategic Collaboration Agreement (SCA) — AWS, Global System Integrator (GSI)",
+    source:
+      "https://aws.amazon.com/blogs/apn/accelerate-customer-outcomes-with-the-aws-business-value-realization-motion/",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["Partner Managers", "AWS Sales"],
+    useCases: [
+      "Enrolling as a Services Partner in the BVR Motion to access outcome-tied MDF and the BVR Competency designation for customer-facing proof of value programs",
+      "Using the BVR Toolkit industry benchmarks to build a customer ROI framework that quantifies business outcomes from AWS-powered implementations",
+      "Qualifying co-sell deals under the BVR Motion to access dedicated Partner Success Specialist support and funding unlocked by achieving customer milestones",
+    ],
+    context: [
+      "AWS Partner Network (APN)",
+      "AWS Partner Funding Portal (APFP)",
+      "AWS Services Partners",
+      "AWS Summit New York 2026",
+    ],
+    related: [
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Strategic Collaboration Agreement (SCA) — AWS",
+        slug: "strategic-collaboration-agreement-sca-—-aws",
+      },
+      {
+        name: "Global System Integrator (GSI)",
+        slug: "global-system-integrator-gsi",
+      },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+    ],
+  },
+  {
+    name: "GCP AI Agents Program — GCP",
+    tags: ["gcp", "cosell"],
+    def: "A Google Cloud partner program (announced Google Cloud Next 2026) designed for ISVs building and commercializing AI agents on the Google Cloud platform. The program includes a rapid agent deployment framework, a structured onboard-commercialize-discover path, a $750 million partner fund for agentic development, and Google Sales co-sell incentivization for certified agents. Partners completing the program receive the Google Cloud Ready — Gemini Enterprise designation, which lists their agents in the Gemini Enterprise Agent Gallery for direct discovery and procurement by enterprise customers.",
+    alias:
+      "Related: Google Cloud Ready — Gemini Enterprise Designation — GCP, Agent Gallery — GCP, GCP Marketplace — GCP, Google Cloud Partner Network — GCP",
+    source:
+      "https://cloud.google.com/blog/products/ai-machine-learning/partner-built-agents-available-in-gemini-enterprise",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "GCP Sales", "Partner Managers"],
+    useCases: [
+      "Enrolling an AI agent product in the GCP AI Agents Program to access the $750M partner fund and unlock Google Sales co-sell incentivization",
+      "Completing the certification evaluation to earn the Google Cloud Ready — Gemini Enterprise designation and list the agent in the Gemini Enterprise Agent Gallery",
+      "Using the structured onboard-commercialize-discover path to accelerate a GCP agent product from development to marketplace-listed and sales-ready",
+    ],
+    context: [
+      "Google Cloud Marketplace",
+      "Google Cloud Partner Network",
+      "Gemini Enterprise",
+      "Google Cloud Next 2026",
+    ],
+    related: [
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+      {
+        name: "Build Engagement Model — GCP",
+        slug: "build-engagement-model-—-gcp",
+      },
+      { name: "AI Agent Listing — GCP", slug: "ai-agent-listing-—-gcp" },
+    ],
+  },
+  {
+    name: "Agent Gallery — GCP",
+    tags: ["gcp", "offers"],
+    def: "A curated hub within the Gemini Enterprise application where enterprise customers discover and procure partner-built AI agents certified under the Google Cloud Ready — Gemini Enterprise designation. The Agent Gallery is distinct from the standard Google Cloud Marketplace console — it is integrated directly into the Gemini Enterprise workflow, allowing enterprise users to discover, evaluate, and activate partner agents without leaving their Gemini environment. Google Sales representatives are incentivized to recommend and co-sell agents listed in the gallery, making gallery placement a co-sell activation milestone for ISVs in the GCP AI Agents Program.",
+    alias:
+      "Related: GCP AI Agents Program — GCP, Google Cloud Ready — Gemini Enterprise Designation — GCP, AI Agent Listing — GCP, Agent Card — GCP",
+    source:
+      "https://cloud.google.com/blog/products/ai-machine-learning/partner-built-agents-available-in-gemini-enterprise",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers", "GCP Sales"],
+    useCases: [
+      "Listing a certified AI agent in the Gemini Enterprise Agent Gallery to surface the product to enterprise buyers already using Gemini Enterprise",
+      "Discovering and activating a partner-built AI agent within a Gemini Enterprise workflow without navigating to the standalone Google Cloud Marketplace",
+      "Using Agent Gallery placement as a co-sell trigger — gallery-listed agents are covered by Google Sales incentivization and eligible for GCP AI Agents Program benefits",
+    ],
+    context: [
+      "Gemini Enterprise",
+      "Google Cloud Marketplace",
+      "GCP AI Agents Program",
+      "Partner Agent Discovery",
+    ],
+    related: [
+      { name: "AI Agent Listing — GCP", slug: "ai-agent-listing-—-gcp" },
+      {
+        name: "GCP AI Agents Program — GCP",
+        slug: "gcp-ai-agents-program-—-gcp",
+      },
+      { name: "Agent Card — GCP", slug: "agent-card-—-gcp" },
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+    ],
+  },
+  {
+    name: "Google Cloud Ready — Gemini Enterprise Designation — GCP",
+    tags: ["gcp", "cosell"],
+    def: "A Google Cloud partner certification badge awarded to AI agents that pass a four-step evaluation covering basic functionality, output accuracy, autonomous execution capability, and enterprise security and compliance standards. Certified agents are listed in the Gemini Enterprise Agent Gallery, providing commercial discoverability within the Gemini Enterprise application and eligibility for Google Sales co-sell incentivization. The designation is part of the GCP AI Agents Program introduced at Google Cloud Next 2026.",
+    alias:
+      "Related: GCP AI Agents Program — GCP, Agent Gallery — GCP, Google Cloud Partner Network Competency — GCP",
+    source:
+      "https://cloud.google.com/blog/products/ai-machine-learning/partner-built-agents-available-in-gemini-enterprise",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "GCP Sales"],
+    useCases: [
+      "Submitting a partner-built AI agent for Google Cloud Ready — Gemini Enterprise evaluation to unlock Agent Gallery listing and co-sell incentivization",
+      "Verifying that a prospective agent partner holds the Google Cloud Ready — Gemini Enterprise designation before recommending the agent to enterprise buyers",
+      "Using the designation as a buyer-facing quality signal indicating the agent has passed Google's enterprise readiness criteria",
+    ],
+    context: [
+      "Google Cloud Partner Network",
+      "Gemini Enterprise",
+      "Agent Gallery",
+      "GCP AI Agents Program",
+    ],
+    related: [
+      {
+        name: "GCP AI Agents Program — GCP",
+        slug: "gcp-ai-agents-program-—-gcp",
+      },
+      { name: "Agent Gallery — GCP", slug: "agent-gallery-—-gcp" },
+      {
+        name: "Google Cloud Partner Network Competency — GCP",
+        slug: "google-cloud-partner-network-competency-—-gcp",
+      },
+      { name: "AI Agent Listing — GCP", slug: "ai-agent-listing-—-gcp" },
+    ],
+  },
+  {
+    name: "Insulin Skill — Suger",
+    tags: ["suger"],
+    def: "An instruction file — implemented as a Markdown document — that provides Suger Insulin agents with specialized knowledge, procedures, and domain expertise for specific cloud GTM workflows. Agents automatically discover and load relevant skills based on conversation context without requiring manual invocation. Skills can be created by uploading Markdown files, building interactively with an agent, importing from a GitHub repository, or installing from the Insulin Marketplace. Once installed, a skill's content becomes part of the agent's active context for all relevant conversations in that workspace.",
+    alias:
+      "Related: Insulin Agent — Suger, Insulin Marketplace — Suger, Insulin — Suger, Insulin Watch — Suger",
+    source: "https://doc.suger.io/insulin/marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Installing a co-sell workflow skill from the Insulin Marketplace to give an Insulin agent domain knowledge about ACE opportunity best practices",
+      "Creating a custom Insulin Skill by uploading a Markdown file with internal SOPs, enabling agents to follow company-specific marketplace processes",
+      "Importing a skill from a GitHub repository to keep the agent's domain knowledge synchronized with a team's evolving process documentation",
+    ],
+    context: [
+      "Suger Insulin",
+      "Insulin Workspace",
+      "Insulin Agents",
+      "Insulin Marketplace",
+    ],
+    related: [
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      {
+        name: "Insulin Marketplace — Suger",
+        slug: "insulin-marketplace-—-suger",
+      },
+      { name: "Insulin", slug: "insulin" },
+      {
+        name: "Insulin Channel — Suger",
+        slug: "insulin-channel-—-suger",
+      },
+    ],
+  },
+  {
+    name: "Insulin Marketplace — Suger",
+    tags: ["suger"],
+    def: "A curated catalog of pre-built agents and skills within the Suger Insulin workspace, covering 20+ agents and 29+ skills across domains including document generation, CRM workflows, code review, and meeting preparation. Users browse, install with a single click, and customize installed items — each installation copies the agent's system prompt, configuration, conversation starters, and icon into the user's Insulin workspace as an editable copy. The Insulin Marketplace is Suger's distribution layer for sharing reusable AI automation components across marketplace operations teams.",
+    alias:
+      "Related: Insulin Agent — Suger, Insulin Skill — Suger, Insulin — Suger",
+    source: "https://doc.suger.io/insulin/marketplace/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Browsing the Insulin Marketplace to find a pre-built co-sell automation agent and install it to a workspace with one click",
+      "Publishing a custom-built Insulin agent to the team's Insulin Marketplace so other Suger users in the organization can discover and install it",
+      "Installing a domain-specific skill from the Insulin Marketplace to give an existing agent expertise in a new area such as legal review or deal structuring",
+    ],
+    context: ["Suger Insulin", "Insulin Workspace", "Suger Console"],
+    related: [
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
+      { name: "Insulin", slug: "insulin" },
+      {
+        name: "Insulin Channel — Suger",
+        slug: "insulin-channel-—-suger",
+      },
+    ],
+  },
+  {
+    name: "MCP Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "A Suger integration type that connects any external Model Context Protocol (MCP)-compatible server to Suger AI, allowing Suger's Insulin agents to discover and use all tools exposed by that server. Supports OAuth (PKCE), client credentials, and API key authentication methods. Suger provides a catalog of 77 pre-configured MCP servers spanning payments, project management, and productivity tools, plus the ability to connect custom MCP servers by URL. The MCP Integration is directionally opposite to the Suger MCP Server — where the MCP Server exposes Suger's own data to external AI tools, the MCP Integration brings external tool capabilities into Suger's AI layer.",
+    alias:
+      "Related: Suger MCP Server, Insulin Agent — Suger, Integration, OAuth 2.0 Integration",
+    source: "https://doc.suger.io/integrations/mcp/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Connecting a custom internal MCP server to Suger AI to give Insulin agents access to proprietary tools and data sources not in Suger's standard integration catalog",
+      "Installing a pre-configured MCP server from Suger's catalog of 77 servers to give agents access to payment, project management, or productivity tools in one step",
+      "Distinguishing the MCP Integration (Suger consumes external MCP tools) from the Suger MCP Server (external AI tools consume Suger's data)",
+    ],
+    context: [
+      "Suger Console",
+      "Insulin Agents",
+      "Model Context Protocol",
+      "Suger Integrations",
+    ],
+    related: [
+      { name: "Suger MCP Server", slug: "suger-mcp-server" },
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Integration", slug: "integration" },
+      { name: "OAuth 2.0 Integration", slug: "oauth-2.0-integration" },
+    ],
+  },
+  {
+    name: "Alibaba Marketplace Integration — Suger",
+    tags: ["suger", "alibaba", "integrations"],
+    def: "An org-level OAuth integration that connects a Suger organization to Alibaba Cloud Marketplace, enabling marketplace operations for sellers and buyers in China and international Alibaba Cloud markets. Configuration requires OAuth credentials for the integration and an SPI key for marketplace event notifications, which Alibaba uses to push real-time subscription and billing events to Suger. The integration supports both seller and buyer marketplace workflows; deleting it may affect active marketplace subscriptions and billing relationships, so deactivation must be coordinated with any live Alibaba transactions.",
+    alias: "Related: Alibaba Cloud Marketplace, Integration, Suger",
+    source: "https://doc.suger.io/integrations/alibaba-marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Connecting a Suger organization to Alibaba Cloud Marketplace to enable automated entitlement provisioning and billing event handling for the China market",
+      "Configuring the SPI key for Alibaba marketplace event notifications to receive real-time subscription lifecycle events in Suger",
+      "Managing Alibaba marketplace subscriptions and billing relationships through the Suger Console alongside AWS, Azure, and GCP operations",
+    ],
+    context: [
+      "Suger Console",
+      "Alibaba Cloud Marketplace",
+      "Suger Integrations",
+      "Marketplace Event Notifications",
+    ],
+    related: [
+      { name: "Alibaba Cloud Marketplace", slug: "alibaba-cloud-marketplace" },
+      { name: "Suger", slug: "suger" },
+      { name: "Integration", slug: "integration" },
+      { name: "Webhook", slug: "webhook" },
+    ],
+  },
+  {
+    name: "People Data Labs Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An org-level API key integration connecting Suger to People Data Labs for bulk lead and account data enrichment. Enriches professional profiles with verified employment histories, person profiles, and company firmographics from People Data Labs' datasets. Unlike user-level OAuth integrations, this integration operates at the organization level, making enriched data accessible to all Suger users and workflows within the organization. Designed for systematic enrichment of marketplace buyer and prospect records rather than per-contact lookup.",
+    alias:
+      "Related: CRM Enrichment, CRM Integration, Account Mapping — Suger, Integration",
+    source: "https://doc.suger.io/integrations/people-data-labs/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Enriching marketplace buyer records with verified employment and firmographic data from People Data Labs to improve ICP scoring and outreach personalization",
+      "Running a bulk account enrichment job across all Suger marketplace entitlements to supplement CRM data with current employment and company information",
+      "Combining People Data Labs enrichment with Account Mapping to identify which enriched buyers are also AWS or GCP account-mapped prospects",
+    ],
+    context: [
+      "Suger Console",
+      "CRM Enrichment",
+      "Suger Integrations",
+      "Lead Enrichment",
+    ],
+    related: [
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
+      { name: "CRM Integration", slug: "crm-integration" },
+      {
+        name: "Account Mapping — Suger",
+        slug: "account-mapping-—-suger",
+      },
+      { name: "Integration", slug: "integration" },
+    ],
+  },
+  {
+    name: "Microsoft Dynamics 365 Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An org-level integration connecting Suger to Microsoft Dynamics 365 to provide CRM and ERP capabilities within the Suger platform. Enables organizations to synchronize and automate processes between Suger's cloud marketplace operations — entitlements, offers, co-sell pipelines — and Dynamics 365 sales and operations data. Complements existing Microsoft integrations (Teams, Outlook) by adding the full CRM and ERP data layer for enterprise sellers who run Dynamics 365 as their system of record.",
+    alias:
+      "Related: CRM Integration, Salesforce Integration, HubSpot Integration, Microsoft Teams Integration",
+    source: "https://doc.suger.io/integrations/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Syncing Suger marketplace entitlement data to Dynamics 365 to give sales teams pipeline visibility without leaving their CRM",
+      "Automating Dynamics 365 opportunity updates when a Suger-managed private offer is accepted, reducing manual CRM hygiene",
+      "Using Dynamics 365 as the system of record for co-sell pipeline while Suger manages marketplace transaction mechanics",
+    ],
+    context: [
+      "Suger Console",
+      "CRM Integration",
+      "Suger Integrations",
+      "Microsoft Ecosystem",
+    ],
+    related: [
+      { name: "CRM Integration", slug: "crm-integration" },
+      { name: "Salesforce Integration", slug: "salesforce-integration" },
+      {
+        name: "Microsoft Teams Integration",
+        slug: "microsoft-teams-integration",
+      },
+      { name: "HubSpot Integration", slug: "hubspot-integration" },
     ],
   },
 ];
