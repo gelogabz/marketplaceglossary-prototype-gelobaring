@@ -67,53 +67,75 @@
  *   push them into `fresh` in main() before the merge step.
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { readFileSync, writeFileSync, existsSync } from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUT = join(__dirname, '../data/whats-new.js');
+const OUT = join(__dirname, "../data/whats-new.js");
 const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
 
 // ── Keyword filter ────────────────────────────────────────────────────────────
 const MARKETPLACE_KEYWORDS = [
-  'marketplace', 'private offer', 'cppo', 'disbursement',
-  'partner central', 'partner network', 'isv', 'channel partner',
-  'reseller', 'co-sell', 'cosell', 'storefront', 'listing',
-  'entitlement', 'payout', 'saas subscription', 'metering',
-  'procurement', 'seller wallet', 'listing fee',
-  'aws marketplace', 'azure marketplace', 'google cloud marketplace',
-  'snowflake marketplace', 'suger',
+  "marketplace",
+  "private offer",
+  "cppo",
+  "disbursement",
+  "partner central",
+  "partner network",
+  "isv",
+  "channel partner",
+  "reseller",
+  "co-sell",
+  "cosell",
+  "storefront",
+  "listing",
+  "entitlement",
+  "payout",
+  "saas subscription",
+  "metering",
+  "procurement",
+  "seller wallet",
+  "listing fee",
+  "aws marketplace",
+  "azure marketplace",
+  "google cloud marketplace",
+  "snowflake marketplace",
+  "suger",
 ];
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function scrub(text) {
-  if (!text) return '';
+  if (!text) return "";
   return text
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#39;|&apos;/g, "'")
     .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
-    .replace(/&[a-z]{2,6};/g, ' ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/[\n\r\t]+/g, ' ')
-    .replace(/\s{2,}/g, ' ')
+    .replace(/&[a-z]{2,6};/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[\n\r\t]+/g, " ")
+    .replace(/\s{2,}/g, " ")
     .trim();
 }
 
 function oneLiner(text, max = 280) {
   if (!text || text.length <= max) return text;
   const floor = Math.floor(max * 0.4);
-  const lastDot = text.slice(0, max).lastIndexOf('. ');
+  const lastDot = text.slice(0, max).lastIndexOf(". ");
   if (lastDot > floor) return text.slice(0, lastDot + 1);
-  return text.slice(0, max - 1) + '…';
+  return text.slice(0, max - 1) + "…";
 }
 
 function slugify(str) {
-  return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50);
+  return str
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 50);
 }
 
 function stableId(platform, date, title) {
@@ -137,33 +159,52 @@ function parseIsoDate(dateStr) {
 
 function hasKeyword(text) {
   const lower = text.toLowerCase();
-  return MARKETPLACE_KEYWORDS.some(kw => lower.includes(kw));
+  return MARKETPLACE_KEYWORDS.some((kw) => lower.includes(kw));
 }
 
 function scoreImpact(text) {
   const lower = text.toLowerCase();
   const highKw = [
-    'launch', 'generally available', 'breaking change', 'required',
-    'mandatory', 'new capability', 'price change', 'new feature',
-    'announcement', 'ga release', 'now available',
+    "launch",
+    "generally available",
+    "breaking change",
+    "required",
+    "mandatory",
+    "new capability",
+    "price change",
+    "new feature",
+    "announcement",
+    "ga release",
+    "now available",
   ];
   const medKw = [
-    'update', 'improvement', 'enhancement', 'expanded', 'added',
-    'now supports', 'preview', 'beta',
+    "update",
+    "improvement",
+    "enhancement",
+    "expanded",
+    "added",
+    "now supports",
+    "preview",
+    "beta",
   ];
-  if (highKw.some(k => lower.includes(k))) return 'high';
-  if (medKw.some(k => lower.includes(k))) return 'medium';
-  return 'low';
+  if (highKw.some((k) => lower.includes(k))) return "high";
+  if (medKw.some((k) => lower.includes(k))) return "medium";
+  return "low";
 }
 
 function inferType(title, summary) {
-  const text = (title + ' ' + summary).toLowerCase();
-  if (/pric|fee|cost|billing|revenue|commission/.test(text)) return 'pricing';
-  if (/policy|compliance|requirement|regulation|program term/.test(text)) return 'policy';
-  if (/program|partner program|incentive|benefit/.test(text)) return 'program';
-  if (/blog|guide|how to|best practice|case study|insight/.test(text)) return 'blog';
-  if (/feature|launch|capability|generally available|ga |new service/.test(text)) return 'feature';
-  return 'release';
+  const text = (title + " " + summary).toLowerCase();
+  if (/pric|fee|cost|billing|revenue|commission/.test(text)) return "pricing";
+  if (/policy|compliance|requirement|regulation|program term/.test(text))
+    return "policy";
+  if (/program|partner program|incentive|benefit/.test(text)) return "program";
+  if (/blog|guide|how to|best practice|case study|insight/.test(text))
+    return "blog";
+  if (
+    /feature|launch|capability|generally available|ga |new service/.test(text)
+  )
+    return "feature";
+  return "release";
 }
 
 // ── RSS parser ────────────────────────────────────────────────────────────────
@@ -176,18 +217,19 @@ function* parseRssItems(xml) {
     const get = (tag) => {
       const r = new RegExp(
         `<${tag}(?:[^>]*)><!\\[CDATA\\[([\\s\\S]*?)\\]\\]></${tag}>` +
-        `|<${tag}(?:[^>]*)>([\\s\\S]*?)</${tag}>`
+          `|<${tag}(?:[^>]*)>([\\s\\S]*?)</${tag}>`,
       );
       const mm = r.exec(block);
-      return mm ? (mm[1] ?? mm[2] ?? '').trim() : '';
+      return mm ? (mm[1] ?? mm[2] ?? "").trim() : "";
     };
     yield {
-      title: get('title'),
-      link: get('link'),
-      description: get('description'),
-      pubDate: get('pubDate'),
+      title: get("title"),
+      link: get("link"),
+      description: get("description"),
+      pubDate: get("pubDate"),
       category: [...block.matchAll(/<category[^>]*>([^<]+)<\/category>/g)]
-        .map(c => c[1]).join(' '),
+        .map((c) => c[1])
+        .join(" "),
     };
   }
 }
@@ -200,7 +242,10 @@ async function fetchText(url, timeoutMs = 20000) {
   try {
     const res = await fetch(url, {
       signal: ctrl.signal,
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; CloudGTMBot/1.0; +https://gelogabz.github.io/marketplaceglossary-prototype-gelobaring/)' },
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (compatible; CloudGTMBot/1.0; +https://gelogabz.github.io/marketplaceglossary-prototype-gelobaring/)",
+      },
     });
     if (!res.ok) throw new Error(`HTTP ${res.status} from ${url}`);
     return res.text();
@@ -212,20 +257,20 @@ async function fetchText(url, timeoutMs = 20000) {
 // ── Source: AWS What's New RSS ────────────────────────────────────────────────
 
 async function fetchAwsWhatsNew() {
-  const xml = await fetchText('https://aws.amazon.com/new/feed/');
+  const xml = await fetchText("https://aws.amazon.com/new/feed/");
   const results = [];
   for (const item of parseRssItems(xml)) {
     const title = scrub(item.title);
     const summary = oneLiner(scrub(item.description));
-    const combined = title + ' ' + summary + ' ' + item.category;
+    const combined = title + " " + summary + " " + item.category;
     const inMpCategory = /marketplace/i.test(item.category);
     if (!inMpCategory && !hasKeyword(combined)) continue;
     const date = parseIsoDate(item.pubDate);
     if (!date || !isRecent(date)) continue;
     results.push({
-      id: stableId('aws', date, title),
-      platform: 'AWS',
-      platformTag: 'aws',
+      id: stableId("aws", date, title),
+      platform: "AWS",
+      platformTag: "aws",
       date,
       title,
       summary,
@@ -240,7 +285,9 @@ async function fetchAwsWhatsNew() {
 // ── Source: AWS Marketplace Blog RSS ─────────────────────────────────────────
 
 async function fetchAwsMarketplaceBlog() {
-  const xml = await fetchText('https://aws.amazon.com/blogs/awsmarketplace/feed/');
+  const xml = await fetchText(
+    "https://aws.amazon.com/blogs/awsmarketplace/feed/",
+  );
   const results = [];
   for (const item of parseRssItems(xml)) {
     const title = scrub(item.title);
@@ -248,15 +295,15 @@ async function fetchAwsMarketplaceBlog() {
     const date = parseIsoDate(item.pubDate);
     if (!date || !isRecent(date)) continue;
     results.push({
-      id: stableId('aws', date, title),
-      platform: 'AWS',
-      platformTag: 'aws',
+      id: stableId("aws", date, title),
+      platform: "AWS",
+      platformTag: "aws",
       date,
       title,
       summary,
-      type: 'blog',
+      type: "blog",
       sourceUrl: item.link,
-      impact: scoreImpact(title + ' ' + summary),
+      impact: scoreImpact(title + " " + summary),
     });
   }
   return results;
@@ -265,10 +312,13 @@ async function fetchAwsMarketplaceBlog() {
 // ── Source: GCP Marketplace Release Notes (HTML) ──────────────────────────────
 
 async function fetchGcpMarketplace() {
-  const html = await fetchText('https://cloud.google.com/marketplace/docs/partners/release-notes');
+  const html = await fetchText(
+    "https://cloud.google.com/marketplace/docs/partners/release-notes",
+  );
   const results = [];
   // Each release is an h2 with a date-like ID, followed by list items
-  const sectionRe = /<h2[^>]*id="([^"]*)"[^>]*>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|<\/article|$)/g;
+  const sectionRe =
+    /<h2[^>]*id="([^"]*)"[^>]*>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|<\/article|$)/g;
   let sm;
   while ((sm = sectionRe.exec(html)) !== null) {
     const rawDate = scrub(sm[2]);
@@ -284,16 +334,18 @@ async function fetchGcpMarketplace() {
       const linkM = lm[1].match(/href="([^"]+)"/);
       const href = linkM ? linkM[1] : null;
       const absUrl = href
-        ? (href.startsWith('http') ? href : `https://cloud.google.com${href}`)
-        : 'https://cloud.google.com/marketplace/docs/partners/release-notes';
+        ? href.startsWith("http")
+          ? href
+          : `https://cloud.google.com${href}`
+        : "https://cloud.google.com/marketplace/docs/partners/release-notes";
       results.push({
-        id: stableId('gcp', date, raw),
-        platform: 'GCP',
-        platformTag: 'gcp',
+        id: stableId("gcp", date, raw),
+        platform: "GCP",
+        platformTag: "gcp",
         date,
         title: raw.slice(0, 120),
         summary: oneLiner(raw),
-        type: inferType(raw, ''),
+        type: inferType(raw, ""),
         sourceUrl: absUrl,
         impact: scoreImpact(raw),
       });
@@ -311,7 +363,7 @@ async function fetchAzurePartnerCenter() {
   for (let offset = 0; offset <= 1; offset++) {
     const d = new Date(now.getFullYear(), now.getMonth() - offset, 1);
     const year = d.getFullYear();
-    const month = d.toLocaleString('en-us', { month: 'long' }).toLowerCase();
+    const month = d.toLocaleString("en-us", { month: "long" }).toLowerCase();
     const url = `https://learn.microsoft.com/en-us/partner-center/announcements/${year}-${month}`;
     let html;
     try {
@@ -327,7 +379,8 @@ async function fetchAzurePartnerCenter() {
       const headingText = scrub(sm[1]);
       const sectionHtml = sm[2];
       const parsedDate = parseIsoDate(headingText);
-      const date = parsedDate || `${year}-${String(d.getMonth() + 1).padStart(2, '0')}-01`;
+      const date =
+        parsedDate || `${year}-${String(d.getMonth() + 1).padStart(2, "0")}-01`;
       if (!isRecent(date)) continue;
 
       // Look for table rows or list items as individual announcements
@@ -339,16 +392,18 @@ async function fetchAzurePartnerCenter() {
         const linkM = im[1].match(/href="([^"]+)"/);
         const href = linkM ? linkM[1] : null;
         const absUrl = href
-          ? (href.startsWith('http') ? href : `https://learn.microsoft.com${href}`)
+          ? href.startsWith("http")
+            ? href
+            : `https://learn.microsoft.com${href}`
           : url;
         results.push({
-          id: stableId('azure', date, raw),
-          platform: 'Azure',
-          platformTag: 'azure',
+          id: stableId("azure", date, raw),
+          platform: "Azure",
+          platformTag: "azure",
           date,
           title: raw.slice(0, 120),
           summary: oneLiner(raw),
-          type: inferType(raw, ''),
+          type: inferType(raw, ""),
           sourceUrl: absUrl,
           impact: scoreImpact(raw),
         });
@@ -359,15 +414,15 @@ async function fetchAzurePartnerCenter() {
         const raw = scrub(sectionHtml).slice(0, 300);
         if (raw.length < 20) continue;
         results.push({
-          id: stableId('azure', date, headingText),
-          platform: 'Azure',
-          platformTag: 'azure',
+          id: stableId("azure", date, headingText),
+          platform: "Azure",
+          platformTag: "azure",
           date,
           title: headingText.slice(0, 120),
           summary: oneLiner(raw),
           type: inferType(headingText, raw),
           sourceUrl: url,
-          impact: scoreImpact(headingText + ' ' + raw),
+          impact: scoreImpact(headingText + " " + raw),
         });
       }
     }
@@ -378,7 +433,7 @@ async function fetchAzurePartnerCenter() {
 // ── Source: Snowflake What's New (HTML) ───────────────────────────────────────
 
 async function fetchSnowflake() {
-  const html = await fetchText('https://docs.snowflake.com/en/whats-new');
+  const html = await fetchText("https://docs.snowflake.com/en/whats-new");
   const results = [];
   // h2 = date heading, followed by feature items
   const sectionRe = /<h2[^>]*>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|$)/g;
@@ -397,16 +452,18 @@ async function fetchSnowflake() {
       const linkM = lm[1].match(/href="([^"]+)"/);
       const href = linkM ? linkM[1] : null;
       const absUrl = href
-        ? (href.startsWith('http') ? href : `https://docs.snowflake.com${href}`)
-        : 'https://docs.snowflake.com/en/whats-new';
+        ? href.startsWith("http")
+          ? href
+          : `https://docs.snowflake.com${href}`
+        : "https://docs.snowflake.com/en/whats-new";
       results.push({
-        id: stableId('snowflake', date, raw),
-        platform: 'Snowflake',
-        platformTag: 'snowflake',
+        id: stableId("snowflake", date, raw),
+        platform: "Snowflake",
+        platformTag: "snowflake",
         date,
         title: raw.slice(0, 120),
         summary: oneLiner(raw),
-        type: inferType(raw, ''),
+        type: inferType(raw, ""),
         sourceUrl: absUrl,
         impact: scoreImpact(raw),
       });
@@ -418,12 +475,13 @@ async function fetchSnowflake() {
 // ── Source: Suger Blog (HTML) ─────────────────────────────────────────────────
 
 async function fetchSugerBlog() {
-  const html = await fetchText('https://www.suger.io/resources/blog/');
+  const html = await fetchText("https://www.suger.io/resources/blog/");
   const results = [];
   const seen = new Set();
 
   // Webflow blog: anchor tags wrapping post cards
-  const cardRe = /<a[^>]+href="([^"]*(?:\/blog\/|\/resources\/blog\/)[^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  const cardRe =
+    /<a[^>]+href="([^"]*(?:\/blog\/|\/resources\/blog\/)[^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
   let cm;
   while ((cm = cardRe.exec(html)) !== null) {
     const href = cm[1];
@@ -434,25 +492,32 @@ async function fetchSugerBlog() {
 
     // Look for a date pattern inside the card
     const dateM = rawText.match(
-      /\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{1,2},?\s+\d{4}/i
+      /\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{1,2},?\s+\d{4}/i,
     );
     if (!dateM) continue;
     const date = parseIsoDate(dateM[0]);
     if (!date || !isRecent(date)) continue;
 
-    const url = href.startsWith('http') ? href : `https://www.suger.io${href}`;
+    const url = href.startsWith("http") ? href : `https://www.suger.io${href}`;
     // First non-date line is likely the title
-    const lines = rawText.split(/\s{3,}/).map(l => l.trim()).filter(Boolean);
-    const title = lines.find(l => l.length > 5 && !/^\d/.test(l) && !dateM[0].includes(l.slice(0, 5))) || rawText.slice(0, 80);
+    const lines = rawText
+      .split(/\s{3,}/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+    const title =
+      lines.find(
+        (l) =>
+          l.length > 5 && !/^\d/.test(l) && !dateM[0].includes(l.slice(0, 5)),
+      ) || rawText.slice(0, 80);
 
     results.push({
-      id: stableId('suger', date, title),
-      platform: 'Suger',
-      platformTag: 'suger',
+      id: stableId("suger", date, title),
+      platform: "Suger",
+      platformTag: "suger",
       date,
       title: title.slice(0, 120),
       summary: oneLiner(rawText),
-      type: 'blog',
+      type: "blog",
       sourceUrl: url,
       impact: scoreImpact(rawText),
     });
@@ -463,27 +528,27 @@ async function fetchSugerBlog() {
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
-  console.log('Fetching What\'s New data…\n');
+  console.log("Fetching What's New data…\n");
 
   // Load existing entries for merge
   let existing = [];
   if (existsSync(OUT)) {
     try {
-      const raw = readFileSync(OUT, 'utf8');
+      const raw = readFileSync(OUT, "utf8");
       const m = raw.match(/export const updates = (\[[\s\S]*\]);/);
       if (m) existing = JSON.parse(m[1]);
     } catch (e) {
-      console.warn('  Could not parse existing data.whats-new.js:', e.message);
+      console.warn("  Could not parse existing data.whats-new.js:", e.message);
     }
   }
 
   const fetchers = [
-    ['AWS What\'s New RSS',      fetchAwsWhatsNew],
-    ['AWS Marketplace Blog RSS', fetchAwsMarketplaceBlog],
-    ['GCP Marketplace',          fetchGcpMarketplace],
-    ['Azure Partner Center',     fetchAzurePartnerCenter],
-    ['Snowflake What\'s New',    fetchSnowflake],
-    ['Suger Blog',               fetchSugerBlog],
+    ["AWS What's New RSS", fetchAwsWhatsNew],
+    ["AWS Marketplace Blog RSS", fetchAwsMarketplaceBlog],
+    ["GCP Marketplace", fetchGcpMarketplace],
+    ["Azure Partner Center", fetchAzurePartnerCenter],
+    ["Snowflake What's New", fetchSnowflake],
+    ["Suger Blog", fetchSugerBlog],
   ];
 
   const fresh = [];
@@ -508,7 +573,7 @@ async function main() {
   const cutoff = cutoffDate.toISOString().slice(0, 10);
 
   const final = [...byId.values()]
-    .filter(e => e.date >= cutoff)
+    .filter((e) => e.date >= cutoff)
     .sort((a, b) => b.date.localeCompare(a.date));
 
   const iso = new Date().toISOString();
@@ -518,8 +583,11 @@ async function main() {
     `export const lastUpdated = ${JSON.stringify(iso)};\n` +
     `export const updates = ${JSON.stringify(final, null, 2)};\n`;
 
-  writeFileSync(OUT, output, 'utf8');
+  writeFileSync(OUT, output, "utf8");
   console.log(`\nDone. ${final.length} entries written to data/whats-new.js`);
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

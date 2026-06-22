@@ -1,41 +1,63 @@
-import { updates, lastUpdated } from '../data/whats-new.js';
-import { escHtml } from '../app/utils.js';
+import { updates, lastUpdated } from "../data/whats-new.js";
+import { escHtml } from "../app/utils.js";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
 const PLATFORM_LABELS = {
-  aws: 'AWS', azure: 'Azure', gcp: 'GCP', snowflake: 'Snowflake', suger: 'Suger',
+  aws: "AWS",
+  azure: "Azure",
+  gcp: "GCP",
+  snowflake: "Snowflake",
+  suger: "Suger",
 };
 const TYPE_LABELS = {
-  feature: 'Feature', program: 'Program', pricing: 'Pricing',
-  policy: 'Policy', blog: 'Blog', release: 'Release',
+  feature: "Feature",
+  program: "Program",
+  pricing: "Pricing",
+  policy: "Policy",
+  blog: "Blog",
+  release: "Release",
 };
-const IMPACT_LABELS = { high: 'High impact', medium: 'Medium', low: 'Low' };
+const IMPACT_LABELS = { high: "High impact", medium: "Medium", low: "Low" };
 
 const MONTHS = [
-  'January','February','March','April','May','June',
-  'July','August','September','October','November','December',
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 // ── Formatting helpers ────────────────────────────────────────────────────────
 
 function formatDate(dateStr) {
-  const [y, m, d] = dateStr.split('-').map(Number);
+  const [y, m, d] = dateStr.split("-").map(Number);
   return `${MONTHS[m - 1]} ${d}, ${y}`;
 }
 
 function formatMonth(dateStr) {
-  const [y, m] = dateStr.split('-').map(Number);
+  const [y, m] = dateStr.split("-").map(Number);
   return `${MONTHS[m - 1]} ${y}`;
 }
 
 function formatLastUpdated(iso) {
-  if (!iso) return 'Never updated — run: node scripts/fetch-whats-new.js';
+  if (!iso) return "Never updated — run: node scripts/fetch-whats-new.js";
   try {
     const d = new Date(iso);
-    return `Updated ${d.toLocaleString('en-us', {
-      month: 'short', day: 'numeric', year: 'numeric',
-      hour: '2-digit', minute: '2-digit', timeZoneName: 'short',
+    return `Updated ${d.toLocaleString("en-us", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZoneName: "short",
     })}`;
   } catch {
     return iso;
@@ -47,30 +69,34 @@ function formatLastUpdated(iso) {
 function getState() {
   const p = new URLSearchParams(location.search);
   return {
-    platform: p.get('p') || 'all',
-    type: p.get('t') || 'all',
-    q: (p.get('q') || '').trim(),
+    platform: p.get("p") || "all",
+    type: p.get("t") || "all",
+    q: (p.get("q") || "").trim(),
   };
 }
 
 function pushState(state) {
   const p = new URLSearchParams();
-  if (state.platform !== 'all') p.set('p', state.platform);
-  if (state.type !== 'all') p.set('t', state.type);
-  if (state.q) p.set('q', state.q);
+  if (state.platform !== "all") p.set("p", state.platform);
+  if (state.type !== "all") p.set("t", state.type);
+  if (state.q) p.set("q", state.q);
   const qs = p.toString();
-  history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
 }
 
 // ── Filter ────────────────────────────────────────────────────────────────────
 
 function filterUpdates(state) {
-  return updates.filter(e => {
-    if (state.platform !== 'all' && e.platformTag !== state.platform) return false;
-    if (state.type !== 'all' && e.type !== state.type) return false;
+  return updates.filter((e) => {
+    if (state.platform !== "all" && e.platformTag !== state.platform)
+      return false;
+    if (state.type !== "all" && e.type !== state.type) return false;
     if (state.q) {
       const q = state.q.toLowerCase();
-      if (!e.title.toLowerCase().includes(q) && !(e.summary || '').toLowerCase().includes(q)) {
+      if (
+        !e.title.toLowerCase().includes(q) &&
+        !(e.summary || "").toLowerCase().includes(q)
+      ) {
         return false;
       }
     }
@@ -105,13 +131,15 @@ function renderCard(e) {
     <div class="wn-card-badges">
       <span class="wn-badge wn-badge--platform wn-badge--${escHtml(e.platformTag)}">${platformLabel}</span>
       <span class="wn-badge wn-badge--type wn-badge--type-${escHtml(e.type)}">${typeLabel}</span>
-      ${e.impact === 'high'
-        ? `<span class="wn-badge wn-badge--impact wn-badge--impact-${escHtml(e.impact)}">${impactLabel}</span>`
-        : ''}
+      ${
+        e.impact === "high"
+          ? `<span class="wn-badge wn-badge--impact wn-badge--impact-${escHtml(e.impact)}">${impactLabel}</span>`
+          : ""
+      }
       <span class="wn-card-date">${escHtml(formatDate(e.date))}</span>
     </div>
     <h3 class="wn-card-title">${escHtml(e.title)}</h3>
-    ${e.summary ? `<p class="wn-card-summary">${escHtml(e.summary)}</p>` : ''}
+    ${e.summary ? `<p class="wn-card-summary">${escHtml(e.summary)}</p>` : ""}
     <a class="wn-card-source" href="${escHtml(e.sourceUrl)}" target="_blank" rel="noopener">
       ${externalLinkIcon()} Read source
     </a>
@@ -119,10 +147,10 @@ function renderCard(e) {
 }
 
 function renderFeed(entries) {
-  const feed = document.getElementById('wnFeed');
-  const countEl = document.getElementById('wnCount');
+  const feed = document.getElementById("wnFeed");
+  const countEl = document.getElementById("wnCount");
   if (countEl) {
-    countEl.textContent = `${entries.length} update${entries.length !== 1 ? 's' : ''}`;
+    countEl.textContent = `${entries.length} update${entries.length !== 1 ? "s" : ""}`;
   }
 
   if (!entries.length) {
@@ -130,35 +158,37 @@ function renderFeed(entries) {
       <p>No updates match your filters.</p>
       <button class="wn-clear-btn" id="wnClearBtn">Clear all filters</button>
     </div>`;
-    document.getElementById('wnClearBtn')?.addEventListener('click', () => {
-      applyFilters({ platform: 'all', type: 'all', q: '' });
+    document.getElementById("wnClearBtn")?.addEventListener("click", () => {
+      applyFilters({ platform: "all", type: "all", q: "" });
     });
     return;
   }
 
   const groups = groupByMonth(entries);
-  feed.innerHTML = groups.map(([key, items]) => {
-    const label = escHtml(formatMonth(key + '-01'));
-    return `<section class="wn-month">
+  feed.innerHTML = groups
+    .map(([key, items]) => {
+      const label = escHtml(formatMonth(key + "-01"));
+      return `<section class="wn-month">
       <h2 class="wn-month-heading">
         ${label}
         <span class="wn-month-count">${items.length}</span>
       </h2>
-      <div class="wn-cards">${items.map(renderCard).join('')}</div>
+      <div class="wn-cards">${items.map(renderCard).join("")}</div>
     </section>`;
-  }).join('');
+    })
+    .join("");
 }
 
 // ── Filter interaction ────────────────────────────────────────────────────────
 
 function syncPills(state) {
-  document.querySelectorAll('[data-platform]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.platform === state.platform);
+  document.querySelectorAll("[data-platform]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.platform === state.platform);
   });
-  document.querySelectorAll('[data-type]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.type === state.type);
+  document.querySelectorAll("[data-type]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.type === state.type);
   });
-  const searchEl = document.getElementById('wnSearch');
+  const searchEl = document.getElementById("wnSearch");
   if (searchEl && searchEl.value !== state.q) searchEl.value = state.q;
 }
 
@@ -170,35 +200,36 @@ function applyFilters(override = null) {
 }
 
 function initFilters() {
-  document.querySelectorAll('[data-platform]').forEach(btn => {
-    btn.addEventListener('click', () => {
+  document.querySelectorAll("[data-platform]").forEach((btn) => {
+    btn.addEventListener("click", () => {
       const cur = getState();
-      const next = cur.platform === btn.dataset.platform ? 'all' : btn.dataset.platform;
+      const next =
+        cur.platform === btn.dataset.platform ? "all" : btn.dataset.platform;
       applyFilters({ ...cur, platform: next });
     });
   });
 
-  document.querySelectorAll('[data-type]').forEach(btn => {
-    btn.addEventListener('click', () => {
+  document.querySelectorAll("[data-type]").forEach((btn) => {
+    btn.addEventListener("click", () => {
       const cur = getState();
-      const next = cur.type === btn.dataset.type ? 'all' : btn.dataset.type;
+      const next = cur.type === btn.dataset.type ? "all" : btn.dataset.type;
       applyFilters({ ...cur, type: next });
     });
   });
 
-  const searchEl = document.getElementById('wnSearch');
+  const searchEl = document.getElementById("wnSearch");
   if (searchEl) {
     let debounce;
-    searchEl.addEventListener('input', () => {
+    searchEl.addEventListener("input", () => {
       clearTimeout(debounce);
       debounce = setTimeout(() => {
         applyFilters({ ...getState(), q: searchEl.value.trim() });
       }, 200);
     });
-    searchEl.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        searchEl.value = '';
-        applyFilters({ ...getState(), q: '' });
+    searchEl.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        searchEl.value = "";
+        applyFilters({ ...getState(), q: "" });
       }
     });
   }
@@ -207,23 +238,23 @@ function initFilters() {
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 function initMeta() {
-  const lastUpdatedEl = document.getElementById('wnLastUpdated');
+  const lastUpdatedEl = document.getElementById("wnLastUpdated");
   if (lastUpdatedEl) lastUpdatedEl.textContent = formatLastUpdated(lastUpdated);
 
-  const statsEl = document.getElementById('wnStats');
+  const statsEl = document.getElementById("wnStats");
   if (statsEl) {
     if (!updates.length) {
-      statsEl.textContent = 'No data yet';
+      statsEl.textContent = "No data yet";
     } else {
-      const platforms = [...new Set(updates.map(e => e.platform))];
-      statsEl.textContent = `${updates.length} update${updates.length !== 1 ? 's' : ''} · ${platforms.join(', ')}`;
+      const platforms = [...new Set(updates.map((e) => e.platform))];
+      statsEl.textContent = `${updates.length} update${updates.length !== 1 ? "s" : ""} · ${platforms.join(", ")}`;
     }
   }
 }
 
 function initNoData() {
   if (updates.length > 0) return;
-  const feed = document.getElementById('wnFeed');
+  const feed = document.getElementById("wnFeed");
   if (!feed) return;
   feed.innerHTML = `<div class="wn-no-data">
     <h2>No updates yet</h2>
@@ -232,11 +263,11 @@ function initNoData() {
     <p>Or trigger the <a href="https://github.com/gelogabz/marketplaceglossary-prototype-gelobaring/actions" target="_blank" rel="noopener">GitHub Actions workflow</a> manually.</p>
   </div>`;
   // Hide toolbar when there's no data
-  const toolbar = document.querySelector('.wn-toolbar');
-  if (toolbar) toolbar.style.display = 'none';
+  const toolbar = document.querySelector(".wn-toolbar");
+  if (toolbar) toolbar.style.display = "none";
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   initMeta();
   initNoData();
   if (updates.length) {

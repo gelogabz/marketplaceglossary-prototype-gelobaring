@@ -16,7 +16,8 @@ export const linkSections = [
         desc: "Concept and configuration documentation for the Suger platform. Covers billing, metering, co-sell, integrations, APIs, and workflows.",
         confusesWith: {
           otherTitle: "Suger Enablement Hub",
-          otherUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75011",
+          otherUrl:
+            "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75011",
           note: "The Enablement Hub has step-by-step how-to articles and onboarding guides. The product docs at doc.suger.io cover concepts, configuration, and API reference.",
         },
       },
@@ -97,7 +98,8 @@ export const linkSections = [
         desc: "Official AWS documentation for sellers: listing types (SaaS, AMI, Container, Data), pricing models, private offers, metering, and SaaS integration.",
         confusesWith: {
           otherTitle: "AWS Marketplace Buyer Guide",
-          otherUrl: "https://docs.aws.amazon.com/marketplace/latest/buyerguide/",
+          otherUrl:
+            "https://docs.aws.amazon.com/marketplace/latest/buyerguide/",
           note: "The Buyer Guide covers procurement from the buyer's perspective, including Private Marketplace admin controls and procurement policies.",
         },
       },
@@ -155,7 +157,8 @@ export const linkSections = [
         desc: "Microsoft documentation for publishing SaaS, Azure Application, VM, and container offers on Azure Marketplace and AppSource. Covers offer types, plans, pricing, and fulfillment APIs.",
         confusesWith: {
           otherTitle: "Partner Center — Co-sell & Referrals",
-          otherUrl: "https://learn.microsoft.com/en-us/partner-center/co-sell-overview",
+          otherUrl:
+            "https://learn.microsoft.com/en-us/partner-center/co-sell-overview",
           note: "Publishing and co-sell both live in Partner Center but are separate workstreams: marketplace publishing is under 'Marketplace offers'; co-sell pipeline is under 'Referrals'.",
         },
       },

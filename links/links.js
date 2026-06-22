@@ -48,9 +48,10 @@ function renderLinkRow(link) {
     domain = new URL(link.url).hostname;
   } catch (_) {}
 
-  const typeBadge = link.type && TYPE_LABELS[link.type]
-    ? `<span class="link-type-badge link-type-${escHtml(link.type)}">${TYPE_LABELS[link.type]}</span>`
-    : "";
+  const typeBadge =
+    link.type && TYPE_LABELS[link.type]
+      ? `<span class="link-type-badge link-type-${escHtml(link.type)}">${TYPE_LABELS[link.type]}</span>`
+      : "";
 
   return `
     <li class="link-row">
@@ -69,7 +70,7 @@ function renderLinkRow(link) {
 function renderSection(section, openState) {
   const accentColor = PLATFORM_COLORS[section.platformTag] || "#444441";
   const sorted = [...section.links].sort(
-    (a, b) => (TYPE_ORDER[a.type] ?? 99) - (TYPE_ORDER[b.type] ?? 99)
+    (a, b) => (TYPE_ORDER[a.type] ?? 99) - (TYPE_ORDER[b.type] ?? 99),
   );
   const count = sorted.length;
   const isOpen = openState[section.platformTag] === true;

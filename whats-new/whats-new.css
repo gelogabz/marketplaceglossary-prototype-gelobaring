@@ -24,7 +24,7 @@
 }
 
 .wn-hero-title {
-    font-family: 'Lexend', sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: clamp(1.6rem, 3vw, 2.25rem);
     font-weight: 700;
     color: #111;
@@ -107,7 +107,10 @@
     background: #fff;
     color: #444;
     cursor: pointer;
-    transition: background 0.12s, border-color 0.12s, color 0.12s;
+    transition:
+        background 0.12s,
+        border-color 0.12s,
+        color 0.12s;
     white-space: nowrap;
 }
 
@@ -123,11 +126,26 @@
 }
 
 /* Platform pills — active state uses platform color */
-.wn-pill[data-platform="aws"].active    { background: #F26A1C; border-color: #F26A1C; }
-.wn-pill[data-platform="azure"].active  { background: #4678EE; border-color: #4678EE; }
-.wn-pill[data-platform="gcp"].active    { background: #0EAC7A; border-color: #0EAC7A; }
-.wn-pill[data-platform="snowflake"].active { background: #29B5E8; border-color: #29B5E8; }
-.wn-pill[data-platform="suger"].active  { background: #6830FF; border-color: #6830FF; }
+.wn-pill[data-platform="aws"].active {
+    background: #f26a1c;
+    border-color: #f26a1c;
+}
+.wn-pill[data-platform="azure"].active {
+    background: #4678ee;
+    border-color: #4678ee;
+}
+.wn-pill[data-platform="gcp"].active {
+    background: #0eac7a;
+    border-color: #0eac7a;
+}
+.wn-pill[data-platform="snowflake"].active {
+    background: #29b5e8;
+    border-color: #29b5e8;
+}
+.wn-pill[data-platform="suger"].active {
+    background: #6830ff;
+    border-color: #6830ff;
+}
 
 /* ── Search row ────────────────────────────────────────────────────────────── */
 
@@ -146,7 +164,7 @@
     border: 1px solid #dcdce4;
     border-radius: 6px;
     font-size: 13px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background: #fff;
     color: #111;
     outline: none;
@@ -171,7 +189,7 @@
 }
 
 .wn-month-heading {
-    font-family: 'Lexend', sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: 1rem;
     font-weight: 600;
     color: #111;
@@ -203,12 +221,14 @@
     border: 1px solid #e8e8ec;
     border-radius: 10px;
     padding: 1rem 1.25rem;
-    transition: border-color 0.12s, box-shadow 0.12s;
+    transition:
+        border-color 0.12s,
+        box-shadow 0.12s;
 }
 
 .wn-card:hover {
     border-color: #ccc;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .wn-card-badges {
@@ -226,7 +246,7 @@
 }
 
 .wn-card-title {
-    font-family: 'Lexend', sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: #111;
@@ -253,7 +273,9 @@
     border-radius: 5px;
     border: 1px solid rgba(174, 83, 15, 0.2);
     background: rgba(242, 106, 28, 0.04);
-    transition: background 0.12s, border-color 0.12s;
+    transition:
+        background 0.12s,
+        border-color 0.12s;
 }
 
 .wn-card-source:hover {
@@ -274,24 +296,66 @@
 }
 
 /* Platform badges */
-.wn-badge--aws       { background: rgba(242,106,28,0.12); color: #B84A00; }
-.wn-badge--azure     { background: rgba(70,120,238,0.12); color: #2952BE; }
-.wn-badge--gcp       { background: rgba(14,172,122,0.12); color: #0A7A56; }
-.wn-badge--snowflake { background: rgba(41,181,232,0.12); color: #1273A0; }
-.wn-badge--suger     { background: rgba(104,48,255,0.12); color: #4A1FBB; }
+.wn-badge--aws {
+    background: rgba(242, 106, 28, 0.12);
+    color: #b84a00;
+}
+.wn-badge--azure {
+    background: rgba(70, 120, 238, 0.12);
+    color: #2952be;
+}
+.wn-badge--gcp {
+    background: rgba(14, 172, 122, 0.12);
+    color: #0a7a56;
+}
+.wn-badge--snowflake {
+    background: rgba(41, 181, 232, 0.12);
+    color: #1273a0;
+}
+.wn-badge--suger {
+    background: rgba(104, 48, 255, 0.12);
+    color: #4a1fbb;
+}
 
 /* Type badges */
-.wn-badge--type-feature  { background: rgba(14,172,122,0.1);  color: #0A7A56; }
-.wn-badge--type-program  { background: rgba(104,48,255,0.1);  color: #4A1FBB; }
-.wn-badge--type-pricing  { background: rgba(242,106,28,0.1);  color: #AE530F; }
-.wn-badge--type-policy   { background: rgba(70,120,238,0.1);  color: #2952BE; }
-.wn-badge--type-blog     { background: rgba(0,0,0,0.06);      color: #555; }
-.wn-badge--type-release  { background: rgba(0,0,0,0.06);      color: #555; }
+.wn-badge--type-feature {
+    background: rgba(14, 172, 122, 0.1);
+    color: #0a7a56;
+}
+.wn-badge--type-program {
+    background: rgba(104, 48, 255, 0.1);
+    color: #4a1fbb;
+}
+.wn-badge--type-pricing {
+    background: rgba(242, 106, 28, 0.1);
+    color: #ae530f;
+}
+.wn-badge--type-policy {
+    background: rgba(70, 120, 238, 0.1);
+    color: #2952be;
+}
+.wn-badge--type-blog {
+    background: rgba(0, 0, 0, 0.06);
+    color: #555;
+}
+.wn-badge--type-release {
+    background: rgba(0, 0, 0, 0.06);
+    color: #555;
+}
 
 /* Impact badges */
-.wn-badge--impact-high   { background: rgba(244,51,44,0.1);   color: #C0271F; }
-.wn-badge--impact-medium { background: rgba(251,185,42,0.15); color: #8C6000; }
-.wn-badge--impact-low    { background: rgba(0,0,0,0.05);      color: #888; }
+.wn-badge--impact-high {
+    background: rgba(244, 51, 44, 0.1);
+    color: #c0271f;
+}
+.wn-badge--impact-medium {
+    background: rgba(251, 185, 42, 0.15);
+    color: #8c6000;
+}
+.wn-badge--impact-low {
+    background: rgba(0, 0, 0, 0.05);
+    color: #888;
+}
 
 /* ── Empty / no-data states ────────────────────────────────────────────────── */
 
@@ -308,7 +372,7 @@
 }
 
 .wn-no-data h2 {
-    font-family: 'Lexend', sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     color: #333;
@@ -334,7 +398,7 @@
     font-weight: 500;
     color: var(--orange-text);
     background: none;
-    border: 1px solid rgba(174,83,15,0.3);
+    border: 1px solid rgba(174, 83, 15, 0.3);
     padding: 5px 12px;
     border-radius: 6px;
     cursor: pointer;
@@ -343,7 +407,7 @@
 }
 
 .wn-clear-btn:hover {
-    background: rgba(242,106,28,0.07);
+    background: rgba(242, 106, 28, 0.07);
 }
 
 /* ── Responsive ────────────────────────────────────────────────────────────── */
@@ -384,6 +448,10 @@
 /* ── Print ──────────────────────────────────────────────────────────────────── */
 
 @media print {
-    .wn-toolbar { display: none; }
-    .wn-card { break-inside: avoid; }
+    .wn-toolbar {
+        display: none;
+    }
+    .wn-card {
+        break-inside: avoid;
+    }
 }

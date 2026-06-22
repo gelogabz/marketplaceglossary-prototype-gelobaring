@@ -3,7 +3,7 @@ name: Fetch What's New
 on:
   schedule:
     # Daily at 6:00 AM UTC
-    - cron: '0 6 * * *'
+    - cron: "0 6 * * *"
   workflow_dispatch:
     # Manual trigger from the Actions tab
 
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Run fetch script
         run: node scripts/fetch-whats-new.js
