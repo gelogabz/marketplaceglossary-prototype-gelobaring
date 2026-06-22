@@ -11,6 +11,7 @@
     padding: 3rem 1.5rem 2rem;
     border-bottom: 1px solid #e8e8ec;
     background: #fff;
+    text-align: center;
 }
 
 .wn-hero-eyebrow {
@@ -35,13 +36,14 @@
     font-size: 15px;
     color: var(--gray-400);
     max-width: 52rem;
-    margin: 0 0 1.25rem;
+    margin: 0 auto 1.25rem;
     line-height: 1.6;
 }
 
 .wn-hero-meta {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1.25rem;
     flex-wrap: wrap;
 }

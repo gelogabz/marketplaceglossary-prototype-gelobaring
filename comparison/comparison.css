@@ -14,6 +14,7 @@
 
 .compare-hdr {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .compare-hdr h1 {
@@ -30,6 +31,7 @@
     color: var(--gray-500);
     line-height: 1.6;
     max-width: 560px;
+    margin: 0 auto;
 }
 
 /* ---- Filter ---- */
