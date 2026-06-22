@@ -1394,7 +1394,7 @@ export const learningPaths = [
     level: "advanced",
     description:
       "How AWS measures and attributes the revenue impact of your product on customer AWS consumption — and how Suger's PRM layer connects disbursement, invoicing, and reporting into a unified picture. Covers the full lifecycle from fee mechanics to tagging implementation.",
-    meta: "11 terms · ~45 min",
+    meta: "14 terms · ~55 min",
     prereqs: ["channel-and-partner-motions", "enterprise-billing-and-committed-spend"],
     next: "cloud-funding-incentives",
     steps: [
@@ -1452,6 +1452,21 @@ export const learningPaths = [
         name: "Partner Relationship Management (PRM) System",
         slug: "partner-relationship-management-prm-system",
         why: "Close by zooming out: PRM isn't just a tagging exercise. Suger functions as the PRM execution layer — connecting AWS PRM attribution, co-sell pipeline, CPPO transactions, and CRM data into a unified partner revenue picture. This is how the tagging you just configured feeds into measurable, reportable partner impact.",
+      },
+      {
+        name: "Deal Registration — Suger",
+        slug: "deal-registration-—-suger",
+        why: "With the Suger PRM platform established, zoom into the most operationally critical motion: deal registration. This is how VARs, resellers, and tech partners formally claim credit for a deal — triggering Salesforce Opportunity creation, approval routing, and notifications. It's the entry point for all partner-sourced attribution that feeds back into PRM reporting.",
+      },
+      {
+        name: "Commission Tracking — Suger",
+        slug: "commission-tracking-—-suger",
+        why: "Revenue attribution only matters if it translates into partner payouts. Commission Tracking is Suger's module for configuring plan logic, calculating per-deal payouts, and giving partners visibility into what they've earned. Understand this as the financial close of the deal registration lifecycle.",
+      },
+      {
+        name: "DSOR (Distribution Sell-Out Reseller Reporting)",
+        slug: "dsor-distribution-sell-out-reseller-reporting",
+        why: "For ISVs working with distributors (TD Synnex, Ingram Micro, Pax8), DSOR is the mechanism that makes multi-tier attribution possible. Without it, you see distributor aggregates but not which reseller drove each deal. End the path here to understand how channel data flows back up the chain into the PRM reporting layer you've built.",
       },
     ],
   },

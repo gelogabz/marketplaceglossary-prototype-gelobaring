@@ -6134,23 +6134,25 @@ export const terms = [
   {
     name: "Distributor",
     tags: ["general", "cosell", "channel"],
-    def: "A company authorized to resell an ISV's software to end customers through a cloud marketplace, typically via a channel partner private offer mechanism. Distributors add value through financing, support, regional reach, or existing customer relationships that the ISV cannot serve directly. On AWS, distributors transact via CPPO under a resale authorization granted by the ISV; on Azure via Multiparty Private Offer (MPO); on GCP via Marketplace Channel Private Offer (MCPO).",
+    def: "A company that sits between an ISV and its reseller network — managing the VAR and reseller tier on the ISV's behalf rather than selling directly to end customers. Real-world examples include TD Synnex, Ingram Micro, and Pax8. Distributors aggregate demand across many resellers, handle financing and credit, and report reseller-level sales data back to the ISV via DSOR (Distribution Sell-Out Reseller Reporting). For cloud marketplace transactions, distributors transact via CPPO on AWS, MPO on Azure, and MCPO on GCP under a resale authorization from the ISV.",
     alias:
-      "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Marketplace Channel Private Offer (MCPO) — GCP, Resale Authorization — AWS",
+      "Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Marketplace Channel Private Offer (MCPO) — GCP, Resale Authorization — AWS, DSOR (Distribution Sell-Out Reseller Reporting), Value Added Reseller (VAR)",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
     difficulty: "intermediate",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
     useCases: [
-      "Partnering with a distributor to reach enterprise customers in regions or verticals the ISV cannot serve directly",
-      "Granting a resale authorization to a distributor so they can create CPPOs for their own customer base",
+      "Partnering with TD Synnex, Ingram Micro, or Pax8 to reach a broad network of resellers the ISV cannot recruit and manage directly",
+      "Receiving DSOR reports from a distributor to get reseller-level deal attribution and calculate accurate commissions across the multi-tier channel",
+      "Granting a resale authorization to a distributor so they can create CPPOs for their reseller network on AWS Marketplace",
     ],
     context: [
       "AWS Marketplace",
       "Azure Marketplace",
       "GCP Marketplace",
       "Channel Programs",
+      "Suger PRM",
     ],
     related: [
       {
@@ -6168,6 +6170,14 @@ export const terms = [
       {
         name: "Resale Authorization — AWS",
         slug: "resale-authorization-—-aws",
+      },
+      {
+        name: "DSOR (Distribution Sell-Out Reseller Reporting)",
+        slug: "dsor-distribution-sell-out-reseller-reporting",
+      },
+      {
+        name: "Value Added Reseller (VAR)",
+        slug: "value-added-reseller-var",
       },
     ],
   },
@@ -10293,6 +10303,114 @@ export const terms = [
         slug: "microsoft-teams-integration",
       },
       { name: "HubSpot Integration", slug: "hubspot-integration" },
+    ],
+  },
+  {
+    name: "Deal Registration — Suger",
+    tags: ["suger", "channel"],
+    def: "The act of a partner — VAR, reseller, GSI, tech partner, or distributor — formally claiming credit for a deal with an ISV before or during an active sales cycle. In Suger PRM, a partner submits a deal registration through the white-label portal; Suger automatically creates or updates a Salesforce Opportunity, routes the registration for ISV approval, and fires notifications so neither side loses track. Approved registrations protect the partner's margin and give the ISV a real-time view of partner-sourced pipeline alongside hyperscaler co-sell on the same CRM record.",
+    alias: "Related: Partner Relationship Management (PRM) System, Value Added Reseller (VAR), Channel Partner (CP), Commission Tracking — Suger, Deal Registration — Azure",
+    source: "https://doc.suger.io/get-started/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
+    useCases: [
+      "Enabling VAR and reseller partners to submit deal registrations through the Suger white-label portal so the ISV can approve and protect partner margin",
+      "Automatically creating a Salesforce Opportunity from a partner deal registration, surfacing partner-sourced pipeline alongside AWS co-sell on the same CRM record",
+      "Tracking approval status, routing, and notifications for all incoming partner registrations without manual email follow-up",
+    ],
+    context: [
+      "Suger PRM",
+      "Suger Console",
+      "Salesforce",
+      "Channel Programs",
+      "Partner Portal",
+    ],
+    related: [
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
+      { name: "Value Added Reseller (VAR)", slug: "value-added-reseller-var" },
+      { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+      {
+        name: "Commission Tracking — Suger",
+        slug: "commission-tracking-—-suger",
+      },
+      {
+        name: "Deal Registration — Azure",
+        slug: "deal-registration-—-azure",
+      },
+    ],
+  },
+  {
+    name: "DSOR (Distribution Sell-Out Reseller Reporting)",
+    tags: ["general", "channel"],
+    def: "A reporting standard in multi-tier distribution where distributors — such as TD Synnex, Ingram Micro, or Pax8 — report the downstream reseller-level sales data back to the ISV. Because distributors transact with ISVs at a tier-one level but sell through a network of resellers to end customers, DSOR gives the ISV visibility into which reseller actually closed the deal, what the end-customer price was, and how much volume each partner in the channel is driving. Without DSOR, ISVs see distributor aggregates but not the reseller-level attribution needed for accurate commissions, deal protection, and program compliance.",
+    alias: "Related: Distributor, Value Added Reseller (VAR), Commission Tracking — Suger, Deal Registration — Suger",
+    source: "https://doc.suger.io/get-started/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Distributors", "Partner Managers"],
+    useCases: [
+      "Receiving sell-out reports from distributors like TD Synnex or Ingram Micro to see which resellers are closing deals and at what price",
+      "Reconciling distributor-level invoicing with reseller-level attribution in Suger PRM for accurate commission calculations and deal protection",
+      "Enforcing minimum advertised price (MAP) policies and deal registration compliance across a multi-tier reseller network using DSOR data",
+    ],
+    context: [
+      "Suger PRM",
+      "Channel Programs",
+      "Distribution Networks",
+      "Partner Revenue Management",
+    ],
+    related: [
+      { name: "Distributor", slug: "distributor" },
+      { name: "Value Added Reseller (VAR)", slug: "value-added-reseller-var" },
+      {
+        name: "Commission Tracking — Suger",
+        slug: "commission-tracking-—-suger",
+      },
+      {
+        name: "Deal Registration — Suger",
+        slug: "deal-registration-—-suger",
+      },
+    ],
+  },
+  {
+    name: "Commission Tracking — Suger",
+    tags: ["suger", "channel"],
+    def: "Suger PRM's module for defining, managing, and paying out partner commissions. ISVs configure commission plans — flat fee, percentage of deal value, tiered, or per-deal override — and Suger calculates the payout for each partner-sourced or partner-influenced deal as it closes. Partners can see their earned commissions in the white-label portal, giving channel teams a defensible, auditable alternative to manual spreadsheet payouts at quarter end. Commission plans connect directly to deal registration records so attribution and payout flow through the same system.",
+    alias: "Related: Deal Registration — Suger, Partner Relationship Management (PRM) System, Distributor, DSOR (Distribution Sell-Out Reseller Reporting)",
+    source: "https://doc.suger.io/get-started/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
+    useCases: [
+      "Setting up a commission plan in Suger PRM so that VAR and reseller partners are automatically paid a percentage of each closed deal they registered",
+      "Using per-deal commission overrides in Suger to handle special pricing or SPIF incentives without changing the base commission plan",
+      "Giving partners real-time visibility into their earned and pending commissions through the Suger white-label portal, replacing manual quarterly payouts",
+    ],
+    context: [
+      "Suger PRM",
+      "Suger Console",
+      "Channel Programs",
+      "Partner Portal",
+      "Finance & Billing",
+    ],
+    related: [
+      {
+        name: "Deal Registration — Suger",
+        slug: "deal-registration-—-suger",
+      },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
+      { name: "Distributor", slug: "distributor" },
+      {
+        name: "DSOR (Distribution Sell-Out Reseller Reporting)",
+        slug: "dsor-distribution-sell-out-reseller-reporting",
+      },
     ],
   },
 ];
