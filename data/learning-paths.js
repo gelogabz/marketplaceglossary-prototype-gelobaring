@@ -1387,4 +1387,72 @@ export const learningPaths = [
       },
     ],
   },
+  {
+    slug: "partner-revenue-measurement",
+    title: "Partner Revenue Measurement",
+    category: "advanced",
+    level: "advanced",
+    description:
+      "How AWS measures and attributes the revenue impact of your product on customer AWS consumption — and how Suger's PRM layer connects disbursement, invoicing, and reporting into a unified picture. Covers the full lifecycle from fee mechanics to tagging implementation.",
+    meta: "11 terms · ~45 min",
+    prereqs: ["channel-and-partner-motions", "enterprise-billing-and-committed-spend"],
+    next: "cloud-funding-incentives",
+    steps: [
+      {
+        name: "Partner Revenue Management (PRM)",
+        slug: "partner-revenue-management-prm",
+        why: "Start with the concept: PRM is the full billing lifecycle from offer creation through disbursement and reporting. This is Suger's framing — before going into AWS-specific mechanics, understand what you're ultimately trying to measure and reconcile.",
+      },
+      {
+        name: "Disbursement",
+        slug: "disbursement",
+        why: "The end goal of PRM: getting paid. Understand when marketplaces remit funds, what triggers disbursement, and how timing differs across AWS, Azure, and GCP — before going into what gets deducted first.",
+      },
+      {
+        name: "Marketplace Fee / Transaction Fee",
+        slug: "marketplace-fee-/-transaction-fee",
+        why: "Before disbursement hits your account, the marketplace takes its cut. Know the standard listing fee (3% on AWS, varies elsewhere), when reduced rates apply for ISV Accelerate members, and how fees affect your net revenue calculation.",
+      },
+      {
+        name: "Invoice",
+        slug: "invoice",
+        why: "In Suger's direct billing model, invoices are how usage translates into a payment obligation. Understanding the invoice lifecycle — Draft → Finalized → payment triggered — gives you the full picture of how revenue becomes cash before it becomes a disbursement.",
+      },
+      {
+        name: "Suger Analytics",
+        slug: "suger-analytics",
+        why: "Before implementing AWS PRM tagging, understand what reporting visibility looks like in Suger. Analytics surfaces revenue, disbursements, and offer metrics across all marketplace channels — the reporting destination for the attribution data you'll configure next.",
+      },
+      {
+        name: "Partner Revenue Measurement (PRM) — AWS",
+        slug: "partner-revenue-measurement-prm-—-aws",
+        why: "Now shift to the AWS-specific mechanism: PRM is how AWS quantifies the consumption impact your product has on customers' AWS bills. Launched January 2026, it unlocks APN funding eligibility and consumption insights that weren't previously available to partners.",
+      },
+      {
+        name: "Revenue Attribution — AWS",
+        slug: "revenue-attribution-—-aws",
+        why: "Attribution is the core output of PRM: AWS associating customer AWS spend with your product. Understand how attribution is established, how long it persists, and what breaks it — before going into the tagging implementation that creates it.",
+      },
+      {
+        name: "APN ID Tag (aws-apn-id) — AWS",
+        slug: "apn-id-tag-aws-apn-id-—-aws",
+        why: "The specific tag key-value pair (`aws-apn-id: pc:<product-code>`) that tells AWS which partner product to attribute consumption to. Knowing the exact format before you deploy prevents misattribution bugs that are difficult to detect after the fact.",
+      },
+      {
+        name: "PRM Resource Tagging — AWS",
+        slug: "prm-resource-tagging-—-aws",
+        why: "Implementation detail: which resource types generate attribution (EC2, S3, RDS — chargeable services only), which don't (IAM, free-tier), and where tags must be applied to count. The most common PRM failure points are wrong resource types or missing tags on the actual billable workload.",
+      },
+      {
+        name: "PRM Architecture Patterns — AWS",
+        slug: "prm-architecture-patterns-—-aws",
+        why: "Your deployment model determines where tags must go. Partner Account means you control everything; Customer Account means tagging in the customer's environment; Hybrid means both. Choose the wrong pattern and your attribution is partial — funding calculations will undercount your actual impact.",
+      },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+        why: "Close by zooming out: PRM isn't just a tagging exercise. Suger functions as the PRM execution layer — connecting AWS PRM attribution, co-sell pipeline, CPPO transactions, and CRM data into a unified partner revenue picture. This is how the tagging you just configured feeds into measurable, reportable partner impact.",
+      },
+    ],
+  },
 ];
