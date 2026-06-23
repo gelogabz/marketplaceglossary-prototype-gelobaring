@@ -245,7 +245,7 @@ mark {
     flex-shrink: 0;
     position: sticky;
     top: var(--topnav-h);
-    height: calc(100vh - var(--topnav-h));
+    height: calc(100vh - var(--topnav-h) - 34px);
     overflow-y: auto;
     background: var(--white);
     border-right: 1px solid var(--gray-100);
@@ -619,7 +619,7 @@ mark {
     overflow: hidden;
     position: sticky;
     top: var(--topnav-h);
-    height: calc(100vh - var(--topnav-h));
+    height: calc(100vh - var(--topnav-h) - 34px);
     transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
