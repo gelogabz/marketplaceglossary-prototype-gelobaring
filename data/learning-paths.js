@@ -1470,4 +1470,66 @@ export const learningPaths = [
       },
     ],
   },
+  {
+    slug: "propensity-to-buy",
+    title: "Propensity to Buy & Buyer Signals",
+    category: "advanced",
+    level: "intermediate",
+    description:
+      "Understand how cloud hyperscalers score buyer intent, how Suger normalizes those signals across AWS, Azure, and GCP, and how to operationalize them — from CRM enrichment to co-sell pipeline prioritization.",
+    meta: "10 terms · ~40 min",
+    prereqs: ["cosell-fundamentals"],
+    steps: [
+      {
+        name: "Propensity to Buy (PTB) Score",
+        slug: "propensity-to-buy-ptb-score",
+        why: "Start with the core concept. PTB Score is Suger's normalized measure of how likely a given account is to purchase through a cloud marketplace. Everything else in this path feeds into or derives from this score — understand what it is before diving into where the data comes from.",
+      },
+      {
+        name: "AWS Intelligence Signals — AWS",
+        slug: "aws-intelligence-signals-aws",
+        why: "AWS is the primary PTB signal source for most ISVs. Intelligence Signals is the umbrella term covering multiple AWS-generated scores — engagement, solution fit, co-sell intent — that Suger aggregates into the PTB view. Know the bundle before examining each sub-score.",
+      },
+      {
+        name: "AWS Marketplace Engagement Score — AWS",
+        slug: "aws-marketplace-engagement-score-aws",
+        why: "The first sub-score: measures how actively an account interacts with AWS Marketplace — browsing, free trials, prior purchases. High engagement = account is already in a buying motion. Use this to prioritize outreach timing.",
+      },
+      {
+        name: "AWS Marketplace Solution Engagement Score — AWS",
+        slug: "aws-marketplace-solution-engagement-score-aws",
+        why: "The second sub-score: measures fit between an account's AWS workloads and your specific product category. Combines AWS usage patterns with solution-category affinity. A high solution engagement score on a low-engagement account often signals an untapped opportunity.",
+      },
+      {
+        name: "Co-sell Recommendation Score — AWS",
+        slug: "co-sell-recommendation-score-aws",
+        why: "AWS's own signal for which accounts it recommends you pursue in co-sell. Overlaps with PTB in practice — when both scores are high, AWS reps are already watching the same account. Knowing this score lets you align your outreach with AWS's internal prioritization.",
+      },
+      {
+        name: "Azure Intelligence Signals — Azure",
+        slug: "azure-intelligence-signals-azure",
+        why: "Same concept, different source. Azure signals come from Microsoft CloudAscent — a free program that classifies accounts into propensity clusters (Act Now, Evaluate, Nurture, Educate). Suger normalizes these as Azure Engagement Score, Event Score, and Usage Score. Essential if any of your pipeline runs through Microsoft's motion.",
+      },
+      {
+        name: "GCP Intelligence Signals — GCP",
+        slug: "gcp-intelligence-signals-gcp",
+        why: "GCP's equivalent signal set — engagement score, marketplace count, review count, purchase count — surfaced by Suger from Google's partner data. Completes the cross-cloud picture: a prospect with high PTB on all three clouds is a tier-1 target regardless of which marketplace you lead with.",
+      },
+      {
+        name: "CRM Enrichment",
+        slug: "crm-enrichment",
+        why: "Signals are only actionable if they reach your reps. CRM Enrichment is how Suger pushes PTB scores and intelligence signals into Salesforce and HubSpot on a 12-hour sync cycle. Understand the field mapping model so your RevOps team can build scoring views and routing rules on top of live data.",
+      },
+      {
+        name: "Buyer Wallet",
+        slug: "buyer-wallet",
+        why: "PTB score measures intent — Buyer Wallet measures capacity. An account with high intent but a fully drawn-down committed spend balance may not be able to transact this quarter. Layer wallet visibility onto PTB data to separate true tier-1 targets from accounts to nurture for next cycle.",
+      },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-aws",
+        why: "Close the loop: PTB signals are most powerful when they feed an active co-sell motion. ACE is where you register and track co-sell opportunities with AWS. High-PTB accounts with a matching ACE opportunity — and an assigned AWS rep — represent your highest-conversion path to a marketplace deal.",
+      },
+    ],
+  },
 ];
