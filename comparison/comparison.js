@@ -131,6 +131,8 @@ const CONCEPT_OVERRIDES = {
   "SaaS Co-sell Benefit (SCB) — AWS": "Field Co-sell Incentive",
   "Standard Contract (SCMP) — AWS": "Standard Marketplace Contract",
   "Tax Details Dashboard — AWS": "Marketplace Tax Configuration",
+  "Offer Set — AWS": "Offer Set",
+  "Offer Set — Suger": "Offer Set",
 };
 
 // Concept label: check override map first (all terms per platform), then Suger name, then AWS...

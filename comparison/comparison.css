@@ -19,6 +19,15 @@
     margin: 0 auto;
 }
 
+.compare-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange-text);
+    margin-bottom: 0.5rem;
+}
+
 .compare-hdr {
     margin-bottom: 0;
 }
