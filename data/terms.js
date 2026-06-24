@@ -4253,9 +4253,10 @@ export const terms = [
   {
     name: "Express Private Offer — AWS",
     tags: ["aws", "offers"],
+    group: "private-offer",
     def: "An AI-powered AWS Marketplace feature (launched Nov 2025) where sellers pre-configure a rate card and AWS automatically generates and delivers personalized private offers to qualified buyers in minutes — without manual negotiation. Available for SaaS Contract and SaaS Contract with Consumption products.",
     alias:
-      "Related: Private Offer, Agreement-Based Offer (ABO) — AWS, MPOPP (Marketplace Private Offer Promotion Program)",
+      "Related: Private Offer — AWS, Agreement-Based Offer (ABO) — AWS, Marketplace Private Offer Promotion Program (MPOPP) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/express-private-offers.html",
     difficulty: "intermediate",
@@ -4267,7 +4268,7 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Private Offer Flows", "AI-Powered Features"],
     related: [
-      { name: "Private Offer", slug: "private-offer" },
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
       {
         name: "Agreement-Based Offer (ABO) — AWS",
         slug: "agreement-based-offer-abo-—-aws",
@@ -5957,11 +5958,57 @@ export const terms = [
     ],
   },
   {
+    name: "Private Offer — AWS",
+    tags: ["aws", "offers"],
+    group: "private-offer",
+    def: "A custom pricing and terms agreement sent directly to a specific AWS account through AWS Marketplace. ISVs use private offers to negotiate custom pricing, payment schedules, contract durations, and EULA terms outside the public listing price. Private offers are accessed via a unique URL and must be accepted before the expiry date set by the seller. Variants include Express Private Offer (simplified flow), Agreement-Based Offer (ABO, for renewals on existing agreements), and Channel Partner Private Offer (CPPO, for reseller transactions).",
+    alias:
+      "Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Related: Express Private Offer — AWS, Agreement-Based Offer (ABO) — AWS, Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Closing a custom-priced enterprise deal by sending a private offer with negotiated terms directly to the buyer's AWS account",
+      "Setting a flexible payment schedule on an AWS private offer to match the buyer's budget cadence without changing the public listing price",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Marketplace Management Portal (AMMP)",
+      "Suger Console",
+      "Enterprise Sales",
+    ],
+    related: [
+      {
+        name: "Private Offer — Azure",
+        slug: "private-offer-—-azure",
+      },
+      {
+        name: "Private Offer — GCP",
+        slug: "private-offer-—-gcp",
+      },
+      {
+        name: "Express Private Offer — AWS",
+        slug: "express-private-offer-—-aws",
+      },
+      {
+        name: "Agreement-Based Offer (ABO) — AWS",
+        slug: "agreement-based-offer-abo-—-aws",
+      },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+    ],
+  },
+  {
     name: "Private Offer — GCP",
     tags: ["gcp", "offers"],
+    group: "private-offer",
     def: "A custom pricing and terms agreement issued to a specific Google Cloud billing account through GCP Marketplace, expanded to general availability with version 2 in April 2026. Version 2 supports three discount types — flat fee, usage-based, and installment-based — and lets buyers download a signed offer including the EULA as a PDF. Multiple concurrent private offers can be issued for the same product to different billing accounts using the Multiple Offers feature, enabling separate project-based contracts with individually negotiated terms.",
     alias:
-      "Related: Multiple Offers — GCP, Private Plan — GCP, Producer Portal — GCP",
+      "AWS equivalent: Private Offer — AWS | Azure equivalent: Private Offer — Azure | Related: Multiple Offers — GCP, Private Plan — GCP, Producer Portal — GCP",
     source:
       "https://docs.cloud.google.com/marketplace/docs/partners/selling/managing-private-offers",
     difficulty: "intermediate",
@@ -5979,7 +6026,7 @@ export const terms = [
     related: [
       { name: "Multiple Offers — GCP", slug: "multiple-offers-—-gcp" },
       { name: "Private Plan — GCP", slug: "private-plan-—-gcp" },
-      { name: "Private Offer", slug: "private-offer" },
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
     ],
   },
   {
@@ -8135,6 +8182,7 @@ export const terms = [
   {
     name: "Private Offer — Azure",
     tags: ["azure", "offers"],
+    group: "private-offer",
     def: "A direct ISV-to-customer custom-priced Microsoft Marketplace offer. The ISV creates a private offer in Partner Center for a specific customer, configuring a custom price, discount, or terms on top of an existing published plan. Distinct from Private Plan (a hidden plan within a published offer) and from Multiparty Private Offer (a tri-party ISV+partner+customer deal). Private Offer is the bilateral foundation on which MPO and Resale-Enabled Offers are built.",
     alias:
       "AWS equivalent: Private Offer — AWS | GCP equivalent: Private Offer — GCP | Related: Multiparty Private Offer (MPO) — Azure, Private Plan — Azure, Microsoft Marketplace — Azure",
