@@ -1457,7 +1457,7 @@ export const learningPaths = [
     level: "intermediate",
     description:
       "How to run a channel partner program using Suger PRM — from portal setup and partner tiering to deal registration, commission plans, incentive programs, and multi-tier DSOR reporting. Built around Suger's native PRM capabilities at suger.io/prm.",
-    meta: "11 terms · ~45 min",
+    meta: "15 terms · ~60 min",
     prereqs: ["channel-and-partner-motions"],
     steps: [
       {
@@ -1471,6 +1471,16 @@ export const learningPaths = [
         why: "Understand the partner types you'll be managing. Integration partners — technology vendors whose products connect with yours via APIs or embedded integrations — are a common first tier to onboard into a PRM, because the co-sell motion is well-defined and measurable.",
       },
       {
+        name: "Global System Integrator (GSI)",
+        slug: "global-system-integrator-gsi",
+        why: "GSIs are the large-scale partner tier — Accenture, Deloitte, Infosys, Wipro — that drives multi-year enterprise transformation engagements. Understanding GSIs matters for PRM because they require dedicated partner management tracks, separate commission structures, and executive-level co-sell alignment distinct from smaller VAR relationships.",
+      },
+      {
+        name: "Value-Added Reseller (VAR)",
+        slug: "value-added-reseller-var",
+        why: "VARs are the workhorse of most ISV channel programs — they purchase at discount, bundle services, and transact via marketplace. Placing VARs here, alongside GSIs, makes the partner type taxonomy complete before you configure tier structures and commission plans around them.",
+      },
+      {
         name: "Partner Tiering — Suger",
         slug: "partner-tiering-—-suger",
         why: "Before registering deals or configuring commissions, set up your tier structure. Tiers (Silver, Gold, Platinum) control approval routing, commission eligibility, and content access — getting this right before onboarding partners prevents retroactive commission disputes.",
@@ -1479,6 +1489,16 @@ export const learningPaths = [
         name: "Partner Portal — Suger",
         slug: "partner-portal-—-suger",
         why: "The partner-facing surface of your PRM. A white-label portal under your own domain gives partners a single place to register deals, consume enablement, and check commission status — without exposing Suger branding. Set up the portal before inviting partners.",
+      },
+      {
+        name: "Learning Management System (LMS) — Suger",
+        slug: "learning-management-system-lms-—-suger",
+        why: "Partner enablement lives inside the portal. The LMS module lets you publish certification tracks, onboarding courses, and product training — organized by tier — so partners arrive at deal registration already qualified. Completion can gate commission eligibility, turning the LMS into a program governance lever, not just a training tool.",
+      },
+      {
+        name: "SCORM",
+        slug: "scorm",
+        why: "Most organizations already have training content built in Articulate, iSpring, or Captivate. SCORM is the standard that lets those existing packages import directly into the Suger LMS without rebuilding. Knowing the standard means you can audit your existing library for compatibility before committing to a content migration.",
       },
       {
         name: "Deal Registration — Suger",
