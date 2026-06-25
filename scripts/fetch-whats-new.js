@@ -73,6 +73,7 @@ import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "../data/whats-new.js");
+const OUT_CSV = join(__dirname, "../data/whats-new.csv");
 const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
 
 // ── Keyword filter ────────────────────────────────────────────────────────────
@@ -608,7 +609,17 @@ async function main() {
     `export const updates = ${JSON.stringify(final, null, 2)};\n`;
 
   writeFileSync(OUT, output, "utf8");
-  console.log(`\nDone. ${final.length} entries written to data/whats-new.js`);
+
+  // Write CSV mirror
+  const csvEsc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+  const CSV_COLS = ["id", "platform", "date", "title", "summary", "type", "sourceUrl", "impact"];
+  const csvRows = [
+    CSV_COLS.join(","),
+    ...final.map((e) => CSV_COLS.map((k) => csvEsc(e[k])).join(",")),
+  ];
+  writeFileSync(OUT_CSV, csvRows.join("\n") + "\n", "utf8");
+
+  console.log(`\nDone. ${final.length} entries written to data/whats-new.js + data/whats-new.csv`);
 }
 
 main().catch((e) => {
