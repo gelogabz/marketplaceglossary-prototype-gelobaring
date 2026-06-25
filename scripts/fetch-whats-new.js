@@ -27,7 +27,7 @@
  *   AWS What's New      https://aws.amazon.com/new/feed/         (RSS)
  *   AWS Marketplace Blog https://aws.amazon.com/blogs/awsmarketplace/feed/ (RSS)
  *   GCP Marketplace     https://cloud.google.com/marketplace/docs/partners/release-notes (HTML)
- *   Azure Partner Center https://learn.microsoft.com/en-us/partner-center/announcements/{year}-{month} (HTML, 2 months)
+ *   Azure Partner Center https://learn.microsoft.com/en-us/partner-center/announcements/{year}-{month} (HTML, 3 months)
  *   Snowflake           https://docs.snowflake.com/en/whats-new  (HTML)
  *   Suger Blog          https://www.suger.io/resources/blog/      (HTML)
  *
@@ -152,6 +152,19 @@ function isRecent(dateStr) {
 
 function parseIsoDate(dateStr) {
   if (!dateStr) return null;
+  // Already ISO YYYY-MM-DD — return as-is
+  if (/^\d{4}-\d{2}-\d{2}/.test(dateStr)) return dateStr.slice(0, 10);
+  // "June 25, 2026" or "June 25 2026" — parse manually to avoid local-timezone off-by-one
+  const months = {
+    january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+    july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+  };
+  const m = dateStr.match(/([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
+  if (m) {
+    const mon = months[m[1].toLowerCase()];
+    if (mon) return `${m[3]}-${String(mon).padStart(2, "0")}-${String(m[2]).padStart(2, "0")}`;
+  }
+  // Fallback for RFC 2822 / UTC-tagged strings (RSS pubDate: "Tue, 24 Jun 2026 00:00:00 GMT")
   const d = new Date(dateStr);
   if (isNaN(d.getTime())) return null;
   return d.toISOString().slice(0, 10);
@@ -355,12 +368,23 @@ async function fetchGcpMarketplace() {
 }
 
 // ── Source: Azure Partner Center Announcements (HTML) ────────────────────────
+//
+// Page structure (learn.microsoft.com/en-us/partner-center/announcements/YYYY-month):
+//   <h2> = announcement title (one h2 = one announcement)
+//   <p><em>italic subtitle</em></p> = short summary
+//   <ul><li>**Date**: June 24, 2026 ...</li></ul> = metadata block
+//   body paragraphs and h4 sub-sections belong to the same announcement
+//
+// Strategy: split on <h2> only; each section is one announcement.
+// Extract date from "**Date**:" or "**Announcement date**:" in the body.
+// Use first <em> content as the summary.
+// Do NOT sub-parse <li> items — they are metadata, not separate announcements.
 
 async function fetchAzurePartnerCenter() {
   const results = [];
   const now = new Date();
-  // Fetch current month + previous month
-  for (let offset = 0; offset <= 1; offset++) {
+  // Fetch current month + previous two months for better coverage
+  for (let offset = 0; offset <= 2; offset++) {
     const d = new Date(now.getFullYear(), now.getMonth() - offset, 1);
     const year = d.getFullYear();
     const month = d.toLocaleString("en-us", { month: "long" }).toLowerCase();
@@ -372,59 +396,53 @@ async function fetchAzurePartnerCenter() {
       continue;
     }
 
-    // Parse heading + following content blocks
-    const sectionRe = /<h[23][^>]*>([\s\S]*?)<\/h[23]>([\s\S]*?)(?=<h[23]|$)/g;
+    // Each <h2> = one announcement; capture title + everything until next <h2>
+    const sectionRe = /<h2[^>]*>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|$)/g;
     let sm;
     while ((sm = sectionRe.exec(html)) !== null) {
-      const headingText = scrub(sm[1]);
+      const title = scrub(sm[1]);
+      if (!title || title.length < 8) continue;
+      if (title.toLowerCase() === "in this article") continue;
+
       const sectionHtml = sm[2];
-      const parsedDate = parseIsoDate(headingText);
-      const date =
-        parsedDate || `${year}-${String(d.getMonth() + 1).padStart(2, "0")}-01`;
+      const sectionText = scrub(sectionHtml);
+
+      // Extract date from metadata line: "Date: June 24, 2026" or "Announcement date: June 24, 2026"
+      const datePat =
+        /\*{0,2}(?:announcement\s+)?date\*{0,2}\s*[:\*]+\s*([A-Za-z]+ \d{1,2},?\s+\d{4})/i;
+      const dateMatch = sectionText.match(datePat);
+      let date = dateMatch ? parseIsoDate(dateMatch[1]) : null;
+      // Fallback: use first of the month
+      if (!date)
+        date = `${year}-${String(d.getMonth() + 1).padStart(2, "0")}-01`;
       if (!isRecent(date)) continue;
 
-      // Look for table rows or list items as individual announcements
-      const itemRe = /<(?:tr|li)[^>]*>([\s\S]*?)<\/(?:tr|li)>/g;
-      let im;
-      while ((im = itemRe.exec(sectionHtml)) !== null) {
-        const raw = scrub(im[1]);
-        if (raw.length < 20) continue;
-        const linkM = im[1].match(/href="([^"]+)"/);
-        const href = linkM ? linkM[1] : null;
-        const absUrl = href
-          ? href.startsWith("http")
-            ? href
-            : `https://learn.microsoft.com${href}`
-          : url;
-        results.push({
-          id: stableId("azure", date, raw),
-          platform: "Azure",
-          platformTag: "azure",
-          date,
-          title: raw.slice(0, 120),
-          summary: oneLiner(raw),
-          type: inferType(raw, ""),
-          sourceUrl: absUrl,
-          impact: scoreImpact(raw),
-        });
-      }
+      // Summary: prefer italic subtitle (first <em> block), else first 280 chars of body
+      const emMatch = sectionHtml.match(/<em[^>]*>([\s\S]*?)<\/em>/);
+      const summary = emMatch
+        ? oneLiner(scrub(emMatch[1]))
+        : oneLiner(sectionText.slice(0, 280));
 
-      // Fallback: if no table/list, treat the whole section as one item
-      if (!/<(?:tr|li)/.test(sectionHtml)) {
-        const raw = scrub(sectionHtml).slice(0, 300);
-        if (raw.length < 20) continue;
-        results.push({
-          id: stableId("azure", date, headingText),
-          platform: "Azure",
-          platformTag: "azure",
-          date,
-          title: headingText.slice(0, 120),
-          summary: oneLiner(raw),
-          type: inferType(headingText, raw),
-          sourceUrl: url,
-          impact: scoreImpact(headingText + " " + raw),
-        });
-      }
+      // Source URL: prefer first explicit link in section, fall back to page URL
+      const linkM = sectionHtml.match(/href="([^"#][^"]+)"/);
+      const href = linkM ? linkM[1] : null;
+      const absUrl = href
+        ? href.startsWith("http")
+          ? href
+          : `https://learn.microsoft.com${href}`
+        : url;
+
+      results.push({
+        id: stableId("azure", date, title),
+        platform: "Azure",
+        platformTag: "azure",
+        date,
+        title: title.slice(0, 120),
+        summary,
+        type: inferType(title, sectionText),
+        sourceUrl: absUrl,
+        impact: scoreImpact(title + " " + sectionText),
+      });
     }
   }
   return results;
