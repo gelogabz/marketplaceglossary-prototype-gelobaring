@@ -159,6 +159,8 @@ function parseIsoDate(dateStr) {
   const months = {
     january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
     july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+    jan: 1, feb: 2, mar: 3, apr: 4, jun: 6,
+    jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12,
   };
   const m = dateStr.match(/([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
   if (m) {
@@ -582,9 +584,9 @@ async function main() {
     }
   }
 
-  // Azure: replace strategy — fetcher covers 3 full months, so drop stale existing entries
-  // before merge to avoid keeping old garbage from previous buggy scrapes.
-  existing = existing.filter((e) => e.platform !== "Azure");
+  // Azure + Suger: replace strategy — both fetchers scrape a full listing page so we have
+  // complete coverage; drop stale existing entries to avoid off-by-one date duplicates.
+  existing = existing.filter((e) => e.platform !== "Azure" && e.platform !== "Suger");
 
   // Merge: fresh entries overwrite existing ones with same ID
   const byId = new Map();
