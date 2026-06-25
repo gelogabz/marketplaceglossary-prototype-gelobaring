@@ -1389,12 +1389,12 @@ export const learningPaths = [
   },
   {
     slug: "partner-revenue-measurement",
-    title: "Partner Revenue Measurement",
+    title: "Partner Revenue Measurement (AWS PRM)",
     category: "advanced",
     level: "advanced",
     description:
-      "How AWS measures and attributes the revenue impact of your product on customer AWS consumption — and how Suger's PRM layer connects disbursement, invoicing, and reporting into a unified picture. Covers the full lifecycle from fee mechanics to tagging implementation.",
-    meta: "14 terms · ~55 min",
+      "How AWS measures and attributes the revenue impact of your product on customer AWS consumption. Covers the full lifecycle from fee mechanics and disbursement to APN tagging implementation and funding unlock.",
+    meta: "10 terms · ~40 min",
     prereqs: ["channel-and-partner-motions", "enterprise-billing-and-committed-spend"],
     next: "cloud-funding-incentives",
     steps: [
@@ -1448,25 +1448,72 @@ export const learningPaths = [
         slug: "prm-architecture-patterns-—-aws",
         why: "Your deployment model determines where tags must go. Partner Account means you control everything; Customer Account means tagging in the customer's environment; Hybrid means both. Choose the wrong pattern and your attribution is partial — funding calculations will undercount your actual impact.",
       },
+    ],
+  },
+  {
+    slug: "partner-relationship-management",
+    title: "Partner Relationship Management (Suger PRM)",
+    category: "operations",
+    level: "intermediate",
+    description:
+      "How to run a channel partner program using Suger PRM — from portal setup and partner tiering to deal registration, commission plans, incentive programs, and multi-tier DSOR reporting. Built around Suger's native PRM capabilities at suger.io/prm.",
+    meta: "11 terms · ~45 min",
+    prereqs: ["channel-and-partner-motions"],
+    steps: [
       {
         name: "Partner Relationship Management (PRM) System",
         slug: "partner-relationship-management-prm-system",
-        why: "Close by zooming out: PRM isn't just a tagging exercise. Suger functions as the PRM execution layer — connecting AWS PRM attribution, co-sell pipeline, CPPO transactions, and CRM data into a unified partner revenue picture. This is how the tagging you just configured feeds into measurable, reportable partner impact.",
+        why: "Start with the platform: Suger PRM is the unified workspace for managing VARs, GSIs, resellers, and tech partners alongside your marketplace motions. This term establishes what the system is, what it replaces (spreadsheets, email, disconnected CRMs), and how it connects channel ops to co-sell and marketplace revenue.",
+      },
+      {
+        name: "Integration Partner",
+        slug: "integration-partner",
+        why: "Understand the partner types you'll be managing. Integration partners — technology vendors whose products connect with yours via APIs or embedded integrations — are a common first tier to onboard into a PRM, because the co-sell motion is well-defined and measurable.",
+      },
+      {
+        name: "Partner Tiering — Suger",
+        slug: "partner-tiering-—-suger",
+        why: "Before registering deals or configuring commissions, set up your tier structure. Tiers (Silver, Gold, Platinum) control approval routing, commission eligibility, and content access — getting this right before onboarding partners prevents retroactive commission disputes.",
+      },
+      {
+        name: "Partner Portal — Suger",
+        slug: "partner-portal-—-suger",
+        why: "The partner-facing surface of your PRM. A white-label portal under your own domain gives partners a single place to register deals, consume enablement, and check commission status — without exposing Suger branding. Set up the portal before inviting partners.",
       },
       {
         name: "Deal Registration — Suger",
         slug: "deal-registration-—-suger",
-        why: "With the Suger PRM platform established, zoom into the most operationally critical motion: deal registration. This is how VARs, resellers, and tech partners formally claim credit for a deal — triggering Salesforce Opportunity creation, approval routing, and notifications. It's the entry point for all partner-sourced attribution that feeds back into PRM reporting.",
+        why: "The core PRM workflow: partners submit deals via a public form or email alias, Suger auto-creates the opportunity in Salesforce or HubSpot, and approval routing fires based on tier and geography. This is how partner-sourced pipeline enters your CRM cleanly.",
+      },
+      {
+        name: "Referral",
+        slug: "referral",
+        why: "Many partner deals start as referrals — inbound leads sourced by a partner who isn't transacting directly. Understand the referral model alongside deal registration so you can distinguish partner-influenced from partner-transacted revenue in your attribution.",
+      },
+      {
+        name: "CRM Enrichment",
+        slug: "crm-enrichment",
+        why: "Once a deal is registered and lives in the CRM, Suger enriches the opportunity with marketplace signals, co-sell data, and partner attribution fields. This enrichment is what makes partner deals trackable through close — and what feeds commission calculation.",
+      },
+      {
+        name: "Commission Plan — Suger",
+        slug: "commission-plan-—-suger",
+        why: "With deals flowing in and the CRM enriched, configure the commission structure. A commission plan defines rate, calculation basis, and payout trigger per partner tier or deal type — and can be overridden per deal for strategic partners.",
       },
       {
         name: "Commission Tracking — Suger",
         slug: "commission-tracking-—-suger",
-        why: "Revenue attribution only matters if it translates into partner payouts. Commission Tracking is Suger's module for configuring plan logic, calculating per-deal payouts, and giving partners visibility into what they've earned. Understand this as the financial close of the deal registration lifecycle.",
+        why: "Commission plans define the rules; commission tracking is the operational layer — calculating payouts on deal close, surfacing partner earnings in the portal, and managing the full payout lifecycle. Partners see what they've earned and when they'll be paid.",
+      },
+      {
+        name: "SPIFF — Suger",
+        slug: "spiff-—-suger",
+        why: "Layered on top of commission plans, SPIFFs are short-term bonuses tied to a product push, quarter-end acceleration, or strategic campaign. Configure them separately from base plans so SPIFF payouts don't distort your baseline commission reporting.",
       },
       {
         name: "DSOR (Distribution Sell-Out Reseller Reporting)",
         slug: "dsor-distribution-sell-out-reseller-reporting",
-        why: "For ISVs working with distributors (TD Synnex, Ingram Micro, Pax8), DSOR is the mechanism that makes multi-tier attribution possible. Without it, you see distributor aggregates but not which reseller drove each deal. End the path here to understand how channel data flows back up the chain into the PRM reporting layer you've built.",
+        why: "For ISVs working with distributors — TD Synnex, Ingram Micro, Pax8 — DSOR is the reporting mechanism that surfaces which reseller drove each deal through the distribution tier. Without it, you see distributor aggregates but can't attribute commissions or co-sell credit to the right reseller.",
       },
     ],
   },
