@@ -10461,6 +10461,70 @@ export const terms = [
       },
     ],
   },
+  {
+    name: "Generative AI Innovation Center (GenAIIC) — AWS",
+    tags: ["aws", "cosell"],
+    def: "An AWS initiative that provides technical expertise, co-innovation frameworks, and architectural guidance to help enterprise customers and partners build and scale generative AI solutions from proof-of-concept to production. GenAIIC has collaborated across thousands of enterprise engagements to validate agentic AI approaches. For ISV partners, GenAIIC serves as the technical backbone of the Partner Agent Factory (PAF) program — providing hands-on collaboration, Bedrock-based architecture guidance, and go-to-market support for industry-specific AI agent solutions listed on AWS Marketplace.",
+    alias:
+      "Related: Partner Agent Factory (PAF) — AWS, AWS Partner Central Agents — AWS",
+    source:
+      "https://aws.amazon.com/blogs/awsmarketplace/aws-genaiic-partner-agent-factory-new-ai-agents-now-in-aws-marketplace/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "AWS Sales"],
+    useCases: [
+      "Applying to the Partner Agent Factory to co-build and validate an industry-specific AI agent solution with GenAIIC technical support",
+      "Listing a PAF-validated agentic AI solution on AWS Marketplace with simplified procurement that counts toward customer AWS commitments",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Partner Network",
+      "Partner Agent Factory",
+      "Amazon Bedrock",
+    ],
+    related: [
+      {
+        name: "Partner Agent Factory (PAF) — AWS",
+        slug: "partner-agent-factory-paf-—-aws",
+      },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Partner Agent Factory (PAF) — AWS",
+    tags: ["aws", "cosell"],
+    def: "A structured co-innovation program operated by AWS GenAIIC that pairs GenAIIC's technical expertise with AWS Partner domain knowledge to build, validate, and list industry-specific agentic AI solutions on AWS Marketplace. Partners apply via genaiic-partners@amazon.com; accepted partners receive hands-on architectural collaboration using Amazon Bedrock and Strands Agents, plus go-to-market support. PAF solutions are listed on AWS Marketplace with simplified procurement and consolidated billing that counts toward existing customer AWS commitments.",
+    alias:
+      "Related: Generative AI Innovation Center (GenAIIC) — AWS, AWS Partner Central Agents — AWS",
+    source:
+      "https://aws.amazon.com/blogs/awsmarketplace/aws-genaiic-partner-agent-factory-new-ai-agents-now-in-aws-marketplace/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "AWS Sales"],
+    useCases: [
+      "Applying to PAF via genaiic-partners@amazon.com to co-build an agentic AI solution with GenAIIC support and list it on AWS Marketplace",
+      "Discovering PAF-validated AI agent solutions on AWS Marketplace to accelerate enterprise AI adoption with billing that counts toward AWS committed spend",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Partner Network",
+      "Generative AI Innovation Center",
+      "Amazon Bedrock",
+    ],
+    related: [
+      {
+        name: "Generative AI Innovation Center (GenAIIC) — AWS",
+        slug: "generative-ai-innovation-center-genaiic-—-aws",
+      },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+    ],
+  },
 ];
 
 // { name: "", tags: [""], def: "", alias: "", source: "" },
