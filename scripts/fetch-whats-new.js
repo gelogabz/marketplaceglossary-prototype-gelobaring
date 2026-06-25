@@ -328,44 +328,43 @@ async function fetchAwsMarketplaceBlog() {
 // ── Source: GCP Marketplace Release Notes (HTML) ──────────────────────────────
 
 async function fetchGcpMarketplace() {
-  const html = await fetchText(
-    "https://cloud.google.com/marketplace/docs/partners/release-notes",
+  // Markdown plaintext — one section per ## DATE heading, no sub-items
+  const txt = await fetchText(
+    "https://docs.cloud.google.com/marketplace/docs/partners/release-notes.md.txt",
   );
   const results = [];
-  // Each release is an h2 with a date-like ID, followed by list items
-  const sectionRe =
-    /<h2[^>]*id="([^"]*)"[^>]*>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|<\/article|$)/g;
-  let sm;
-  while ((sm = sectionRe.exec(html)) !== null) {
-    const rawDate = scrub(sm[2]);
-    const sectionHtml = sm[3];
-    const date = parseIsoDate(rawDate);
+  const SOURCE_URL =
+    "https://cloud.google.com/marketplace/docs/partners/release-notes";
+
+  // Split on "## " at line start; each chunk: first line = date, rest = body
+  const sections = txt.split(/^## /m);
+  for (let i = 1; i < sections.length; i++) {
+    const nl = sections[i].indexOf("\n");
+    const heading = sections[i].slice(0, nl).trim();
+    const rawBody = sections[i].slice(nl + 1);
+
+    const date = parseIsoDate(heading);
     if (!date || !isRecent(date)) continue;
 
-    const liRe = /<li[^>]*>([\s\S]*?)<\/li>/g;
-    let lm;
-    while ((lm = liRe.exec(sectionHtml)) !== null) {
-      const raw = scrub(lm[1]);
-      if (raw.length < 15 || !hasKeyword(raw)) continue;
-      const linkM = lm[1].match(/href="([^"]+)"/);
-      const href = linkM ? linkM[1] : null;
-      const absUrl = href
-        ? href.startsWith("http")
-          ? href
-          : `https://cloud.google.com${href}`
-        : "https://cloud.google.com/marketplace/docs/partners/release-notes";
-      results.push({
-        id: stableId("gcp", date, raw),
-        platform: "GCP",
-        platformTag: "gcp",
-        date,
-        title: raw.slice(0, 120),
-        summary: oneLiner(raw),
-        type: inferType(raw, ""),
-        sourceUrl: absUrl,
-        impact: scoreImpact(raw),
-      });
-    }
+    // Strip markdown links [text](url) → text, collapse whitespace
+    const body = rawBody
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/\n+/g, " ")
+      .trim();
+    if (body.length < 20) continue;
+
+    const title = body.slice(0, 120);
+    results.push({
+      id: stableId("gcp", date, title),
+      platform: "GCP",
+      platformTag: "gcp",
+      date,
+      title,
+      summary: oneLiner(body),
+      type: inferType(title, body),
+      sourceUrl: SOURCE_URL,
+      impact: scoreImpact(title + " " + body),
+    });
   }
   return results;
 }
@@ -572,7 +571,7 @@ async function main() {
     ["AWS Marketplace Blog RSS", fetchAwsMarketplaceBlog],
     ["GCP Marketplace", fetchGcpMarketplace],
     ["Azure Partner Center", fetchAzurePartnerCenter],
-    ["Snowflake What's New", fetchSnowflake],
+    // ["Snowflake What's New", fetchSnowflake], // URL needs fixing — disabled
     ["Suger Blog", fetchSugerBlog],
   ];
 
