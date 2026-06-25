@@ -47,7 +47,9 @@
  *
  * ── CHANGING THE RETENTION WINDOW ────────────────────────────────────────────
  *
- *   Edit NINETY_DAYS_MS at the top of the file.
+ *   Edit CUTOFF_DATE at the top of the file (format: "YYYY-MM-DD").
+ *   Default: "2026-01-01" — keeps all entries from January 1 2026 onward.
+ *   Change to a rolling window by computing: new Date(Date.now() - N_DAYS_MS).toISOString().slice(0,10)
  *
  * ── AUTOMATION ───────────────────────────────────────────────────────────────
  *
@@ -74,7 +76,7 @@ import { dirname, join } from "path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "../data/whats-new.js");
 const OUT_CSV = join(__dirname, "../data/whats-new.csv");
-const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
+const CUTOFF_DATE = "2026-01-01"; // keep all entries from Jan 1 2026 onward
 
 // ── Keyword filter ────────────────────────────────────────────────────────────
 const MARKETPLACE_KEYWORDS = [
@@ -143,12 +145,10 @@ function stableId(platform, date, title) {
   return `${platform.toLowerCase()}-${date}-${slugify(title)}`;
 }
 
-function isRecent(dateStr) {
-  const d = new Date(dateStr);
-  if (isNaN(d.getTime())) return false;
-  const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - 90);
-  return d >= cutoff;
+function isRecent(date) {
+  if (!date) return false;
+  const today = new Date().toISOString().slice(0, 10);
+  return date >= CUTOFF_DATE && date <= today;
 }
 
 function parseIsoDate(dateStr) {
@@ -386,8 +386,11 @@ async function fetchGcpMarketplace() {
 async function fetchAzurePartnerCenter() {
   const results = [];
   const now = new Date();
-  // Fetch current month + previous two months for better coverage
-  for (let offset = 0; offset <= 2; offset++) {
+  // Fetch every month from CUTOFF_DATE back to current month
+  const cutoffYear = parseInt(CUTOFF_DATE.slice(0, 4), 10);
+  const cutoffMonth = parseInt(CUTOFF_DATE.slice(5, 7), 10) - 1; // 0-indexed
+  const totalMonths = (now.getFullYear() - cutoffYear) * 12 + (now.getMonth() - cutoffMonth);
+  for (let offset = 0; offset <= totalMonths; offset++) {
     const d = new Date(now.getFullYear(), now.getMonth() - offset, 1);
     const year = d.getFullYear();
     const month = d.toLocaleString("en-us", { month: "long" }).toLowerCase();
@@ -593,14 +596,11 @@ async function main() {
   for (const e of existing) byId.set(e.id, e);
   for (const e of fresh) byId.set(e.id, e);
 
-  // Filter to 90 days, deduplicate, sort newest first
-  const cutoffDate = new Date();
-  cutoffDate.setDate(cutoffDate.getDate() - 90);
-  const cutoff = cutoffDate.toISOString().slice(0, 10);
+  // Filter to CUTOFF_DATE..today, deduplicate, sort newest first
   const today = new Date().toISOString().slice(0, 10);
 
   const final = [...byId.values()]
-    .filter((e) => e.date >= cutoff && e.date <= today)
+    .filter((e) => e.date >= CUTOFF_DATE && e.date <= today)
     .sort((a, b) => b.date.localeCompare(a.date));
 
   const iso = new Date().toISOString();
