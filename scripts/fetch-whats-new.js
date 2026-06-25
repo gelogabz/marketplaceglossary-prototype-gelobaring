@@ -402,7 +402,8 @@ async function fetchAzurePartnerCenter() {
     while ((sm = sectionRe.exec(html)) !== null) {
       const title = scrub(sm[1]);
       if (!title || title.length < 8) continue;
-      if (title.toLowerCase() === "in this article") continue;
+      const titleLc = title.toLowerCase();
+      if (titleLc === "in this article" || titleLc === "feedback" || titleLc === "additional resources") continue;
 
       const sectionHtml = sm[2];
       const sectionText = scrub(sectionHtml);
@@ -580,6 +581,10 @@ async function main() {
     }
   }
 
+  // Azure: replace strategy — fetcher covers 3 full months, so drop stale existing entries
+  // before merge to avoid keeping old garbage from previous buggy scrapes.
+  existing = existing.filter((e) => e.platform !== "Azure");
+
   // Merge: fresh entries overwrite existing ones with same ID
   const byId = new Map();
   for (const e of existing) byId.set(e.id, e);
@@ -589,9 +594,10 @@ async function main() {
   const cutoffDate = new Date();
   cutoffDate.setDate(cutoffDate.getDate() - 90);
   const cutoff = cutoffDate.toISOString().slice(0, 10);
+  const today = new Date().toISOString().slice(0, 10);
 
   const final = [...byId.values()]
-    .filter((e) => e.date >= cutoff)
+    .filter((e) => e.date >= cutoff && e.date <= today)
     .sort((a, b) => b.date.localeCompare(a.date));
 
   const iso = new Date().toISOString();
