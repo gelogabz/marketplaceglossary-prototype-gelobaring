@@ -160,16 +160,19 @@ mark {
     gap: 8px;
 }
 
+.sidebar-search-wrap {
+    margin-bottom: 10px;
+}
+
 .search-bar {
-    flex: 1;
-    min-width: 0;
-    padding: 7px 12px;
-    font-size: 14px;
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 13px;
     font-family: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.08);
-    color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 7px;
+    background: var(--bg);
+    color: var(--gray-900);
     outline: none;
     -webkit-appearance: none;
     appearance: none;
@@ -179,12 +182,13 @@ mark {
 }
 
 .search-bar::placeholder {
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--gray-400);
 }
 
 .search-bar:focus {
-    border-color: rgba(255, 255, 255, 0.32);
-    background: rgba(255, 255, 255, 0.13);
+    border-color: #888;
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
 .topnav-links {
@@ -1012,7 +1016,19 @@ mark {
         display: none;
     }
 
+    /* Sidebar becomes a full-width search-only strip */
     .sidebar-left {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid var(--gray-100);
+        padding: 10px 1rem;
+        overflow: visible;
+    }
+
+    /* Hide everything in sidebar except the search input */
+    .sidebar-left .sidebar-nav > *:not(.sidebar-search-wrap) {
         display: none;
     }
 
@@ -1040,65 +1056,8 @@ mark {
         padding: 11px 16px;
     }
 
-    /* Search toggle */
-    .search-toggle-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 34px;
-        height: 34px;
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        background: rgba(255, 255, 255, 0.08);
-        color: rgba(255, 255, 255, 0.7);
-        cursor: pointer;
-        flex-shrink: 0;
-        transition:
-            background 0.12s,
-            color 0.12s;
-    }
-
-    .search-toggle-btn:hover,
-    .search-toggle-btn[aria-expanded="true"] {
-        background: rgba(255, 255, 255, 0.13);
-        color: var(--white);
-    }
-
-    /* Align search-toggle + filter-btn to the right on mobile */
     .topnav-center {
         justify-content: flex-end;
-    }
-
-    /* Hide actual search bar on mobile by default */
-    .search-bar {
-        display: none;
-    }
-
-    /* Search open state: show search bar, fill available width */
-    .topnav.search-open .topnav-center {
-        justify-content: flex-start;
-    }
-
-    .topnav.search-open .search-bar {
-        display: block;
-        flex: 1;
-        min-width: 0;
-    }
-
-    /* Change toggle icon to X appearance when open */
-    .topnav.search-open .search-toggle-btn {
-        border-color: rgba(255, 255, 255, 0.25);
-        background: rgba(255, 255, 255, 0.12);
-        color: var(--white);
-    }
-
-    /* Hide brand text + nav links when search open to give search bar max space */
-    .topnav.search-open .brand-text {
-        display: none;
-    }
-
-    .topnav.search-open .topnav-links {
-        display: none;
     }
 
     /* Hamburger button */
