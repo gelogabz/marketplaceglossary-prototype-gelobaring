@@ -1471,6 +1471,9 @@ mark {
     font-family: inherit;
     font-weight: 500;
     padding: 5px 13px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
     border-radius: 20px;
     border: 1.5px solid var(--gray-200);
     background: var(--white);

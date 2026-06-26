@@ -79,6 +79,9 @@
     font-size: 13px;
     font-weight: 500;
     padding: 7px 14px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
     border-radius: 99px;
     border: 1.5px solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.07);

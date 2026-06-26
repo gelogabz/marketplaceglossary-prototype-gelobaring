@@ -569,12 +569,40 @@
         width: 100%;
         text-align: center;
     }
+    /* 44×44px hit area; 12px visual dot rendered via ::before */
     .progress-dot {
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        position: relative;
+        border-radius: 50%;
+    }
+    .progress-dot::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 12px;
         height: 12px;
+        border-radius: 50%;
+        background: var(--gray-200);
+        transition: background 0.2s, transform 0.15s;
+        pointer-events: none;
+    }
+    .progress-dot:hover::before {
+        transform: translate(-50%, -50%) scale(1.35);
+    }
+    .progress-dot.active::before {
+        background: var(--orange);
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    .progress-dot.done::before {
+        background: var(--orange);
+        opacity: 0.45;
     }
     .path-progress {
-        gap: 12px;
+        gap: 0;
     }
     .path-carousel {
         flex-wrap: wrap;

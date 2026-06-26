@@ -102,6 +102,9 @@
     font-size: 12px;
     font-weight: 500;
     padding: 4px 10px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
     border-radius: 20px;
     border: 1px solid #dcdce4;
     background: #fff;
@@ -159,7 +162,7 @@
 
 .wn-search-row input {
     flex: 1;
-    height: 32px;
+    height: 44px;
     padding: 0 10px;
     border: 1px solid #dcdce4;
     border-radius: 6px;
