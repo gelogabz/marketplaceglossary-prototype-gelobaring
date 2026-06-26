@@ -607,10 +607,15 @@ mark {
 /* ---- Glossary hero --------------------------------------------------------- */
 
 .glossary-hero {
+    margin-top: var(--topnav-h);
     background: var(--white);
     border-bottom: 1px solid var(--gray-100);
     padding: 3rem 2rem 2.5rem;
     text-align: center;
+}
+
+.glossary-hero + .layout {
+    margin-top: 0;
 }
 
 .glossary-hero-eyebrow {
