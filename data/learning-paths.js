@@ -1476,7 +1476,7 @@ export const learningPaths = [
         why: "GSIs are the large-scale partner tier — Accenture, Deloitte, Infosys, Wipro — that drives multi-year enterprise transformation engagements. Understanding GSIs matters for PRM because they require dedicated partner management tracks, separate commission structures, and executive-level co-sell alignment distinct from smaller VAR relationships.",
       },
       {
-        name: "Value-Added Reseller (VAR)",
+        name: "Value Added Reseller (VAR)",
         slug: "value-added-reseller-var",
         why: "VARs are the workhorse of most ISV channel programs — they purchase at discount, bundle services, and transact via marketplace. Placing VARs here, alongside GSIs, makes the partner type taxonomy complete before you configure tier structures and commission plans around them.",
       },

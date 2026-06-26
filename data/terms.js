@@ -5079,7 +5079,7 @@ export const terms = [
     name: "Partner Relationship Management (PRM) System",
     tags: ["suger", "general", "cosell", "aws", "azure", "gcp"],
     def: "A platform that helps companies recruit, onboard, enable, and manage partners, while supporting collaboration, deal tracking, and performance across the partner lifecycle. Suger extends traditional PRM by acting as the execution layer for cloud marketplace and co-sell workflows—automating CPPOs, syncing CRM deal data to AWS, Azure, and GCP, and enabling partners to transact and track deals in a unified system.",
-    alias: "Related: Value-Added Reseller (VAR), Global System Integrator (GSI), Learning Management System (LMS) — Suger, CRM Enrichment, Co-sell",
+    alias: "Related: Value Added Reseller (VAR), Global System Integrator (GSI), Learning Management System (LMS) — Suger, CRM Enrichment, Co-sell",
     source: "https://doc.suger.io/get-started/",
     difficulty: "intermediate",
     category: "cosell",
@@ -9666,7 +9666,7 @@ export const terms = [
     tags: ["general", "cosell"],
     def: "A large professional services and technology firm — such as Accenture, Deloitte, Infosys, Wipro, TCS, Capgemini, IBM, or Cognizant — that designs, implements, and manages complex cloud infrastructure and software deployments for enterprise clients. GSIs are key partners in cloud GTM strategies: they are typically enrolled in multiple hyperscaler partner programs, influence large enterprise purchasing decisions through multi-year transformation engagements, and often co-sell ISV software alongside their own services. ISVs who establish GSI partnerships can access major enterprise accounts and attach their marketplace listings to GSI-led cloud workloads.",
     alias:
-      "Related: System Integrator (SI), Channel Partner (CP), Value-Added Reseller (VAR), Partner Relationship Management (PRM) System",
+      "Related: System Integrator (SI), Channel Partner (CP), Value Added Reseller (VAR), Partner Relationship Management (PRM) System",
     source: "https://aws.amazon.com/partners/",
     difficulty: "intermediate",
     category: "fundamentals",
@@ -9704,7 +9704,7 @@ export const terms = [
     tags: ["general", "offers"],
     def: "A company that purchases a vendor's product and resells it to end customers with additional value — typically bundled implementation services, customization, training, ongoing support, or integration with other tools. In cloud marketplace contexts, VARs often transact ISV software through channel private offer mechanisms (CPPO on AWS, MPO on Azure, MCPO on GCP) and become the seller of record for their end-customer relationships. VARs are distinct from pure distributors in that they actively add services value, and distinct from GSIs in that they are typically smaller, vertical-focused, or regional rather than global in scope.",
     alias:
-      "Related: Channel Partner (CP), Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Distributor, Global System Integrator (GSI)",
+      "Related: Channel Partner (CP), Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure, Distributor, Global System Integrator (GSI), Distribution Sell-Out Reseller Reporting (DSOR), Partner Relationship Management (PRM) System",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
     difficulty: "beginner",
@@ -9719,13 +9719,14 @@ export const terms = [
       "Structuring a VAR resale program on AWS Marketplace by creating CPPOs for channel partners who add integration or managed services value to the ISV's SaaS product",
       "Distinguishing VAR partners from pure distributors in PRM tracking to attribute revenue correctly based on whether the partner adds services value or purely resells",
       "Enabling VAR partners to transact ISV software through marketplace private offers so enterprise customers can consume spend against cloud committed budgets (EDP, MACC)",
+      "Tracking VAR-sourced deals separately from direct sales in Suger PRM and configuring tier-based commission plans and SPIFFs for VAR performance incentives",
     ],
     context: [
       "Channel Programs",
       "AWS Marketplace",
       "Azure Marketplace",
       "GCP Marketplace",
-      "Partner Revenue Management",
+      "Suger PRM",
     ],
     related: [
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
@@ -9741,6 +9742,14 @@ export const terms = [
       {
         name: "Global System Integrator (GSI)",
         slug: "global-system-integrator-gsi",
+      },
+      {
+        name: "Distribution Sell-Out Reseller Reporting (DSOR)",
+        slug: "distribution-sell-out-reseller-reporting-dsor",
+      },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
       },
     ],
   },
@@ -10529,7 +10538,7 @@ export const terms = [
     name: "Partner Portal — Suger",
     tags: ["suger"],
     def: "A white-label, partner-facing web portal provisioned through Suger PRM that ISVs deploy under their own domain and branding. Partners authenticate via SSO/SAML to register deals, access enablement content, track commission status, and manage their activity — without any Suger branding visible. The portal can go live in under five days with no implementation fee.",
-    alias: "Related: Partner Relationship Management (PRM) System, Learning Management System (LMS) — Suger, Buyer Portal — Suger, Deal Registration — Suger",
+    alias: "Related: Partner Relationship Management (PRM) System, Learning Management System (LMS) — Suger, Value Added Reseller (VAR), Buyer Portal — Suger, Deal Registration — Suger",
     source: "https://www.suger.io/prm/",
     difficulty: "intermediate",
     category: "operations",
@@ -10606,29 +10615,6 @@ export const terms = [
     related: [
       { name: "Commission Plan — Suger", slug: "commission-plan-—-suger" },
       { name: "Commission Tracking — Suger", slug: "commission-tracking-—-suger" },
-      { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
-    ],
-  },
-  {
-    name: "Value-Added Reseller (VAR)",
-    tags: ["general", "cosell"],
-    def: "A partner that purchases software licenses from a vendor at a discount, bundles value-added services — implementation, support, training, or customization — and resells the resulting solution to end customers at a markup. VARs are a core tier in cloud marketplace channel programs: ISVs enable VAR transacting via CPPOs, MPOs, or MCPOs depending on the platform, while Suger PRM tracks VAR relationships, registers VAR-sourced deals, and calculates commissions separately from the direct sales motion.",
-    alias: "Related: Global System Integrator (GSI), Resale Authorization — AWS, Distribution Sell-Out Reseller Reporting (DSOR), Partner Relationship Management (PRM) System",
-    source: "https://aws.amazon.com/partners/resell/",
-    difficulty: "intermediate",
-    category: "operations",
-    whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers", "Distributors"],
-    useCases: [
-      "Recruit and onboard VARs as a distribution channel for marketplace software sales",
-      "Issue CPPOs or MPOs to VARs to enable marketplace transacting at custom pricing",
-      "Track VAR-sourced revenue separately from direct sales in Suger PRM",
-      "Gate SPIFF eligibility or commission rates by VAR tier in Suger PRM",
-    ],
-    context: ["Cloud Marketplace Channel", "Suger PRM", "AWS Marketplace", "Azure Marketplace", "Partner Programs"],
-    related: [
-      { name: "Global System Integrator (GSI)", slug: "global-system-integrator-gsi" },
-      { name: "Resale Authorization — AWS", slug: "resale-authorization-—-aws" },
-      { name: "Distribution Sell-Out Reseller Reporting (DSOR)", slug: "distribution-sell-out-reseller-reporting-dsor" },
       { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
     ],
   },
