@@ -7473,7 +7473,7 @@ export const terms = [
     tags: ["azure", "cosell"],
     def: "A formal record a partner creates in Microsoft Partner Center to associate a customer opportunity with their solution and claim co-sell eligibility, including PRACR reporting rights. Microsoft reviews and approves each deal registration before it becomes eligible for co-sell incentive credits or PRACR revenue attribution. Registering a deal establishes the partner-of-record for that customer opportunity, protects against channel conflict, and gives Microsoft field sellers visibility into partner-sourced pipeline. Each approved deal registration is linked to specific customer subscription GUIDs, forming the foundation for revenue attribution in the Azure partner ecosystem.",
     alias:
-      "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure | Related: Outbound Referral | Related: Partner Center — Azure | Related: Co-sell Eligible / Incentivized — Azure",
+      "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure | Related: Outbound Referral | Related: Partner Center — Azure | Related: Co-sell Eligible / Incentivized — Azure | Related: Microsoft Managed Account — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
     difficulty: "intermediate",
@@ -7497,6 +7497,7 @@ export const terms = [
       },
       { name: "Outbound Referral", slug: "outbound-referral" },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      { name: "Microsoft Managed Account — Azure", slug: "microsoft-managed-account-—-azure" },
     ],
   },
   {
@@ -10659,6 +10660,49 @@ export const terms = [
     related: [
       { name: "Learning Management System (LMS) — Suger", slug: "learning-management-system-lms-—-suger" },
       { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
+    ],
+  },
+  {
+    name: "Microsoft Managed Account — Azure",
+    tags: ["azure", "cosell"],
+    def: "A customer account classification in Microsoft Partner Center indicating the account is actively managed by Microsoft's sales team. When a partner selects a Microsoft Managed account while creating a co-sell opportunity, the deal becomes eligible for Azure IP co-sell deal registration — a prerequisite for PRACR reporting and co-sell incentive credits. Microsoft Managed accounts appear on a dedicated tab in the Partner Center customer search, alongside Microsoft Unmanaged and Other (Moody's database) tabs, and Microsoft consolidates multiple entries for the same customer into a single linked row.",
+    alias: "Related: Microsoft Unmanaged Account — Azure, Deal Registration — Azure, Partner Center — Azure, Partner Reported Azure Consumed Revenue (PRACR) — Azure",
+    source: "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
+    useCases: [
+      "Selecting a Microsoft Managed account when creating a co-sell opportunity to unlock Azure IP co-sell deal registration eligibility",
+      "Confirming deal registration eligibility before marking a co-sell opportunity as won and submitting for PRACR reporting",
+      "Identifying accounts with an existing Microsoft sales relationship to receive faster seller engagement and response",
+    ],
+    context: ["Microsoft Partner Center", "Azure Co-sell", "Deal Registration", "Azure IP Co-sell"],
+    related: [
+      { name: "Microsoft Unmanaged Account — Azure", slug: "microsoft-unmanaged-account-—-azure" },
+      { name: "Deal Registration — Azure", slug: "deal-registration-—-azure" },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      { name: "Partner Reported Azure Consumed Revenue (PRACR) — Azure", slug: "partner-reported-azure-consumed-revenue-pracr-—-azure" },
+    ],
+  },
+  {
+    name: "Microsoft Unmanaged Account — Azure",
+    tags: ["azure", "cosell"],
+    def: "A customer account classification in Microsoft Partner Center indicating the account does not have an active Microsoft sales team relationship. When a partner selects a Microsoft Unmanaged account while creating a co-sell opportunity, the deal is not eligible for Azure IP co-sell deal registration, which blocks PRACR reporting and co-sell incentive credits for that opportunity. Partners are encouraged to search for Microsoft Managed accounts first; alternatively, selecting from the Other (Moody's database) tab defers managed/unmanaged determination to Microsoft's internal account-matching process after the referral is created.",
+    alias: "Related: Microsoft Managed Account — Azure, Deal Registration — Azure, Partner Center — Azure",
+    source: "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
+    useCases: [
+      "Identifying customer accounts where Azure IP co-sell deal registration is unavailable before committing to co-sell motions",
+      "Understanding why a specific deal does not qualify for PRACR reporting or co-sell incentive credits",
+      "Deciding whether to proceed with a private or partner-led deal when no Microsoft Managed account match is found",
+    ],
+    context: ["Microsoft Partner Center", "Azure Co-sell", "Deal Registration", "Azure IP Co-sell"],
+    related: [
+      { name: "Microsoft Managed Account — Azure", slug: "microsoft-managed-account-—-azure" },
+      { name: "Deal Registration — Azure", slug: "deal-registration-—-azure" },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
     ],
   },
 ];
