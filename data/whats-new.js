@@ -21,7 +21,7 @@ export const updates = [
     "title": "Guidance on Marketplace Rewards Azure sponsorship use cases",
     "summary": "Marketplace Rewards partners can use Azure sponsorships to support customer deployments and no-cost trials of Marketplace offers.",
     "type": "pricing",
-    "sourceUrl": "https://onedrive.live.com/view.aspx?resid=6C423AE231DA44BB!1796&amp;ithint=file%2cpptx&amp;wdo=2&amp;authkey=!AGu503LujTgALh0",
+    "sourceUrl": "https://onedrive.live.com/view.aspx?resid=6C423AE231DA44BB!1796&ithint=file%2cpptx&wdo=2&authkey=!AGu503LujTgALh0",
     "impact": "high"
   },
   {
@@ -351,7 +351,7 @@ export const updates = [
     "title": "Dynamics 365 Business Central Dual Use Rights license keys update",
     "summary": "Download and replace license keys every six months to continue using on-premises Dynamics 365 Business Central online.",
     "type": "release",
-    "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/download-software-licenses-csp?view=o365-worldwide&amp;wt.mc_id=62vzgd0e3r",
+    "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/download-software-licenses-csp?view=o365-worldwide&wt.mc_id=62vzgd0e3r",
     "impact": "medium"
   },
   {
@@ -362,7 +362,7 @@ export const updates = [
     "title": "Build in-demand capabilities at Microsoft AI Skills Fest",
     "summary": "Free digital skilling event for Microsoft partners, June 8–12.",
     "type": "release",
-    "sourceUrl": "https://aiskillsnavigator.microsoft.com/events/AISF2026?UTM_Source=AISF_comms&amp;UTM_Medium=comms&amp;UTM_Campaign=PBON",
+    "sourceUrl": "https://aiskillsnavigator.microsoft.com/events/AISF2026?UTM_Source=AISF_comms&UTM_Medium=comms&UTM_Campaign=PBON",
     "impact": "low"
   },
   {
@@ -571,7 +571,7 @@ export const updates = [
     "title": "Plan migrations faster with Azure Migrate",
     "summary": "Move from manual assessments to migration-ready recommendations faster with Azure Migrate, the repeatable workshop-to-deck motion.",
     "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate&amp;preserve-view=true",
+    "sourceUrl": "https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate&preserve-view=true",
     "impact": "low"
   },
   {

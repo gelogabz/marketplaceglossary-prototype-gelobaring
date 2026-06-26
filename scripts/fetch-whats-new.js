@@ -431,11 +431,11 @@ async function fetchAzurePartnerCenter() {
 
       // Source URL: prefer first explicit link in section, fall back to page URL
       const linkM = sectionHtml.match(/href="([^"#][^"]+)"/);
-      const href = linkM ? linkM[1] : null;
-      const absUrl = href
-        ? href.startsWith("http")
-          ? href
-          : `https://learn.microsoft.com${href}`
+      const rawHref = linkM ? linkM[1].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"') : null;
+      const absUrl = rawHref
+        ? rawHref.startsWith("http")
+          ? rawHref
+          : `https://learn.microsoft.com${rawHref}`
         : url;
 
       results.push({
