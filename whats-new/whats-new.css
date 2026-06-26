@@ -101,10 +101,7 @@
 .wn-pill {
     font-size: 12px;
     font-weight: 500;
-    padding: 4px 10px;
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
+    padding: 7px 12px;
     border-radius: 20px;
     border: 1px solid #dcdce4;
     background: #fff;

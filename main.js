@@ -475,6 +475,13 @@ function render() {
     }
     const bestMatch = getBestMatch(filtered, q);
 
+    const introEl = document.getElementById("glossaryIntro");
+    if (introEl) {
+      const isFiltered =
+        q || getActiveFilters().size > 0 || getActiveCategory() !== null || getActivePathFilter() !== null;
+      introEl.classList.toggle("hidden", isFiltered);
+    }
+
     if (countEl) {
       countEl.textContent =
         filtered.length === terms.length
