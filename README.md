@@ -19,29 +19,6 @@ A searchable glossary and learning platform for cloud marketplace terminology �
 
 ---
 
-## What's New — automated feed
-
-The What's New page is populated by a Node.js fetch script that pulls from official sources:
-
-- AWS What's New (RSS)
-- AWS Marketplace Blog (RSS)
-- GCP Marketplace release notes
-- Azure Partner Center announcements
-- Snowflake What's New
-- Suger Blog
-
-**Run locally:**
-
-```bash
-node scripts/fetch-whats-new.js
-```
-
-Requires Node 18+. No dependencies — uses built-in `fetch`.
-
-**Automated:** `.github/workflows/fetch-whats-new.yml` runs daily at 6:00 AM UTC and on manual trigger from the Actions tab. The workflow commits updated data back to `main` if anything changed.
-
----
-
 ## Tech stack
 
 - Vanilla JS (ES modules) — no build step, no npm
