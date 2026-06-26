@@ -611,6 +611,25 @@ mark {
     font-size: 14px;
 }
 
+.no-results-clear-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--orange-text);
+    background: none;
+    border: 1px solid rgba(174, 83, 15, 0.3);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.12s;
+}
+
+.no-results-clear-btn:hover {
+    background: rgba(242, 106, 28, 0.07);
+}
+
 /* ---- Right sidebar -------------------------------------------------------- */
 
 .sidebar-right {

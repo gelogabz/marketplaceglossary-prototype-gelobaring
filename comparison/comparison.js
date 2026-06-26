@@ -162,7 +162,12 @@ const rows = Object.values(groups)
 function buildTable(filter) {
   const filterLower = filter.toLowerCase();
   const visible = filter
-    ? rows.filter((g) => conceptLabel(g).toLowerCase().includes(filterLower))
+    ? rows.filter((g) => {
+        if (conceptLabel(g).toLowerCase().includes(filterLower)) return true;
+        return Object.values(g).some(
+          (arr) => arr?.some((t) => t.name.toLowerCase().includes(filterLower))
+        );
+      })
     : rows;
 
   if (visible.length === 0) {
