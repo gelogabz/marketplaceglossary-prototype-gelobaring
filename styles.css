@@ -604,33 +604,45 @@ mark {
 
 /* ---- Empty state ---------------------------------------------------------- */
 
-/* ---- Glossary intro -------------------------------------------------------- */
+/* ---- Glossary hero --------------------------------------------------------- */
 
-.glossary-intro {
-    padding: 1.5rem 0 1rem;
+.glossary-hero {
+    background: var(--white);
     border-bottom: 1px solid var(--gray-100);
-    margin-bottom: 1rem;
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
 }
 
-.glossary-intro-title {
+.glossary-hero-eyebrow {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--orange-text);
+    margin-bottom: 0.5rem;
+}
+
+.glossary-hero-title {
     font-family: "Lexend", sans-serif;
-    font-size: 18px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
     color: var(--gray-900);
-    letter-spacing: -0.02em;
-    margin: 0 0 6px;
-    line-height: 1.3;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.75rem;
+    line-height: 1.2;
 }
 
-.glossary-intro-sub {
-    font-size: 13px;
-    color: var(--gray-400);
-    line-height: 1.6;
-    margin: 0;
+.glossary-hero-sub {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: var(--gray-700);
+    line-height: 1.65;
     max-width: 540px;
+    margin: 0 auto;
 }
 
-.glossary-intro.hidden {
+.glossary-hero.hidden {
     display: none;
 }
 
@@ -991,6 +1003,10 @@ mark {
 /* ---- Responsive ----------------------------------------------------------- */
 
 @media (max-width: 767px) {
+    .glossary-hero {
+        display: none;
+    }
+
     .sidebar-left {
         display: none;
     }

@@ -475,11 +475,11 @@ function render() {
     }
     const bestMatch = getBestMatch(filtered, q);
 
-    const introEl = document.getElementById("glossaryIntro");
-    if (introEl) {
+    const heroEl = document.getElementById("glossaryHero");
+    if (heroEl) {
       const isFiltered =
         q || getActiveFilters().size > 0 || getActiveCategory() !== null || getActivePathFilter() !== null;
-      introEl.classList.toggle("hidden", isFiltered);
+      heroEl.classList.toggle("hidden", !!isFiltered);
     }
 
     if (countEl) {
