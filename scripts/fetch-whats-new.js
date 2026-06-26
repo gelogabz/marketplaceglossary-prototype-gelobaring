@@ -611,6 +611,10 @@ async function main() {
 
   writeFileSync(OUT, output, "utf8");
 
+  // Write JSON mirror (for direct consumption by crawlers / AI bots)
+  const jsonOutput = { lastUpdated: iso, updates: final };
+  writeFileSync(OUT.replace("whats-new.js", "whats-new.json"), JSON.stringify(jsonOutput, null, 2) + "\n", "utf8");
+
   // Write CSV mirror
   const csvEsc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
   const CSV_COLS = ["id", "platform", "date", "title", "summary", "type", "sourceUrl", "impact"];
@@ -620,7 +624,7 @@ async function main() {
   ];
   writeFileSync(OUT_CSV, csvRows.join("\n") + "\n", "utf8");
 
-  console.log(`\nDone. ${final.length} entries written to data/whats-new.js + data/whats-new.csv`);
+  console.log(`\nDone. ${final.length} entries written to data/whats-new.js + data/whats-new.json + data/whats-new.csv`);
 }
 
 main().catch((e) => {

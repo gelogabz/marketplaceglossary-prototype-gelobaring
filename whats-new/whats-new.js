@@ -136,7 +136,7 @@ function renderCard(e) {
           ? `<span class="wn-badge wn-badge--impact wn-badge--impact-${escHtml(e.impact)}">${impactLabel}</span>`
           : ""
       }
-      <span class="wn-card-date">${escHtml(formatDate(e.date))}</span>
+      <time class="wn-card-date" datetime="${escHtml(e.date)}">${escHtml(formatDate(e.date))}</time>
     </div>
     <h3 class="wn-card-title">${escHtml(e.title)}</h3>
     ${e.summary ? `<p class="wn-card-summary">${escHtml(e.summary)}</p>` : ""}
