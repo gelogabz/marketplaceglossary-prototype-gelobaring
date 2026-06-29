@@ -3,6 +3,7 @@ import { terms } from "../data/terms.js";
 import { slug } from "../app/render.js";
 import {
   PLATFORM_SUFFIX_RE,
+  CATEGORY_META,
   getCompleted,
   isComplete,
   getReadProgress,
@@ -79,36 +80,6 @@ const CATEGORY_ORDER = [
   "onboarding",
 ];
 
-const CATEGORY_META = {
-  fundamentals: {
-    label: "Getting Started",
-    desc: "Core concepts every Cloud GTM practitioner needs first.",
-  },
-  procurement: {
-    label: "Procurement",
-    desc: "How buyers transact — offers, contracts, and entitlements.",
-  },
-  cosell: {
-    label: "Co-sell",
-    desc: "Joint selling motions with hyperscaler sales teams.",
-  },
-  billing: {
-    label: "Billing & Revenue",
-    desc: "Revenue, metering, committed spend, and payout mechanics.",
-  },
-  operations: {
-    label: "Marketplace Ops",
-    desc: "Day-to-day ISV operations — APIs, integrations, and listing management.",
-  },
-  advanced: {
-    label: "Channel & Partner",
-    desc: "Distributor models, resale mechanics, and multi-party channel motions.",
-  },
-  onboarding: {
-    label: "Role-Based Onboarding",
-    desc: "Paths aligned to job function — get productive in your role fast.",
-  },
-};
 
 function calcPathLevel(path) {
   const diffMap = { beginner: 1, intermediate: 2, advanced: 3 };

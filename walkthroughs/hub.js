@@ -52,10 +52,9 @@ function buildCard(wt) {
   const stepCount = stub
     ? "In progress"
     : `${wt.steps.length} step${wt.steps.length !== 1 ? "s" : ""}`;
-  const statusClass = wt.status ? `status-${wt.status}` : "";
-  const statusLabel = wt.status ? STATUS_LABELS[wt.status] || wt.status : "";
-  const statusBadge = statusLabel
-    ? `<span class="wt-status-badge ${statusClass}">${statusLabel}</span>`
+  const showStatus = wt.status && wt.status !== "complete";
+  const statusBadge = showStatus
+    ? `<span class="wt-status-badge status-${wt.status}">${STATUS_LABELS[wt.status] || wt.status}</span>`
     : "";
 
   const a = document.createElement("a");

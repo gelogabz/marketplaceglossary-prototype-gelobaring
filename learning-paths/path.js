@@ -7,6 +7,7 @@ import {
   copyToClipboard,
 } from "../app/render.js";
 import {
+  CATEGORY_META,
   getCompleted,
   isComplete,
   getReadProgress,
@@ -41,16 +42,6 @@ function markStepRead(pathSlug, stepIndex) {
 
 // ---- App ----
 
-const CATEGORY_META = {
-  fundamentals: "Getting Started",
-  procurement: "Procurement",
-  cosell: "Co-sell",
-  billing: "Billing & Revenue",
-  operations: "Marketplace Ops",
-  advanced: "Channel & Partner",
-  onboarding: "Role-Based Onboarding",
-};
-
 const params = new URLSearchParams(location.search);
 const pathSlug = params.get("p");
 const path = learningPaths.find((p) => p.slug === pathSlug);
@@ -71,7 +62,7 @@ if (!path) {
 
 function renderPath(path) {
   let currentStep = -1; // -1 = overview
-  const catLabel = CATEGORY_META[path.category] || path.category;
+  const catLabel = CATEGORY_META[path.category]?.label || path.category;
 
   const nextPath =
     (path.next ? learningPaths.find((p) => p.slug === path.next) : null) ||
@@ -133,14 +124,15 @@ function renderPath(path) {
     </div>
     <h1 class="path-hdr-title">${path.title}</h1>
     <p class="path-hdr-desc">${path.description}</p>
-    <p class="path-hdr-meta-text">${path.meta} &nbsp;·&nbsp; <button class="path-export-btn" id="exportPathBtn" type="button">Print / Export PDF</button></p>
+    <p class="path-hdr-meta-text">${path.meta} &nbsp;·&nbsp; <button class="path-export-btn" id="exportPathBtn" type="button">Print / Export PDF</button> &nbsp;·&nbsp; <button class="path-flat-toggle" id="flatToggleBtn" type="button">Read all steps</button></p>
     ${continuesFromHtml}
     <div class="path-progress" id="pathProgress">${dotsHtml}</div>
-    <div class="path-carousel">
+    <div class="path-carousel" id="pathCarousel">
       <button class="path-nav-btn path-carousel-btn" id="prevStepBtn" type="button" aria-label="Previous step">‹</button>
       <div id="pathStepContent" class="path-carousel-content" aria-live="polite"></div>
       <button class="path-nav-btn path-nav-btn--next path-carousel-btn" id="nextStepBtn" type="button" aria-label="Next step">›</button>
     </div>
+    <div id="pathFlatView" class="path-flat-view" hidden></div>
     <div class="path-footer" id="pathFooter"></div>
   `;
 
@@ -239,6 +231,8 @@ function renderPath(path) {
       ?.addEventListener("click", () => {
         markComplete(path.slug);
         renderFooter();
+        const badge = footer.querySelector(".path-complete-badge");
+        if (badge) badge.classList.add("path-complete-badge--pop");
       });
 
     document.getElementById("resetPathBtn")?.addEventListener("click", () => {
@@ -268,7 +262,7 @@ function renderPath(path) {
 
   function printPath() {
     const baseUrl = window.location.href.split("/learning-paths/")[0];
-    const catLabel = CATEGORY_META[path.category] || path.category;
+    const catLabel = CATEGORY_META[path.category]?.label || path.category;
 
     const stepsHtml = path.steps
       .map((step, i) => {
@@ -315,8 +309,39 @@ function renderPath(path) {
     win.document.close();
   }
 
+  function initFlatToggle() {
+    const btn = document.getElementById("flatToggleBtn");
+    const carousel = document.getElementById("pathCarousel");
+    const progress = document.getElementById("pathProgress");
+    const flatView = document.getElementById("pathFlatView");
+    if (!btn || !carousel || !flatView) return;
+
+    let flat = false;
+    btn.addEventListener("click", () => {
+      flat = !flat;
+      carousel.hidden = flat;
+      progress.hidden = flat;
+      flatView.hidden = !flat;
+      btn.textContent = flat ? "Step-by-step" : "Read all steps";
+
+      if (flat && !flatView.dataset.rendered) {
+        flatView.dataset.rendered = "1";
+        flatView.innerHTML = path.steps.map((step, i) => {
+          const term = terms.find((t) => slug(t.name) === step.slug);
+          return `
+            <section class="flat-step">
+              <div class="flat-step-counter">Step ${i + 1} of ${path.steps.length}</div>
+              <div class="flat-step-why">${step.why}</div>
+              ${term ? buildInlineTermDetail(term) : `<p style="color:var(--gray-400);font-size:13px;">Term "${step.name}" not found.</p>`}
+            </section>`;
+        }).join("");
+      }
+    });
+  }
+
   renderFooter();
   initCarousel();
+  initFlatToggle();
   initCopyButtons();
   document
     .getElementById("exportPathBtn")

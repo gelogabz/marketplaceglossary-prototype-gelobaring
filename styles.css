@@ -483,6 +483,31 @@ mark {
     color: #5020cc;
 }
 
+/* ---- Learning path level badges ------------------------------------------- */
+
+.level-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-transform: capitalize;
+}
+
+.l-beginner {
+    background: #e3f8f1;
+    color: #088a60;
+}
+.l-intermediate {
+    background: #fff3e0;
+    color: var(--orange-text);
+}
+.l-advanced {
+    background: #ede9ff;
+    color: #5020cc;
+}
+
 /* ---- Card header ---------------------------------------------------------- */
 
 .card-header {
@@ -620,6 +645,12 @@ mark {
 
 .glossary-hero + .layout {
     margin-top: 0;
+}
+
+@media (max-width: 767px) {
+    .glossary-hero + .layout {
+        margin-top: var(--topnav-h);
+    }
 }
 
 .glossary-hero-eyebrow {
@@ -1016,6 +1047,11 @@ mark {
         display: none;
     }
 
+    /* Stack layout vertically so search strip sits above content */
+    .layout {
+        flex-direction: column;
+    }
+
     /* Sidebar becomes a full-width search-only strip */
     .sidebar-left {
         width: 100%;
@@ -1025,6 +1061,7 @@ mark {
         border-bottom: 1px solid var(--gray-100);
         padding: 10px 1rem;
         overflow: visible;
+        flex-shrink: 0;
     }
 
     /* Hide everything in sidebar except the search input */

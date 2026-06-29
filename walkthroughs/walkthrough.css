@@ -46,25 +46,9 @@
     text-transform: capitalize;
 }
 
-.cat-setup {
-    background: #e8f4fd;
-    color: #1a6fa8;
-}
 .cat-cosell {
     background: #fff3e0;
     color: var(--orange-text);
-}
-.cat-offers {
-    background: #e3f8f1;
-    color: #088a60;
-}
-.cat-integration {
-    background: #ede9ff;
-    color: #5020cc;
-}
-.cat-onboarding {
-    background: #fff8e1;
-    color: #8a6000;
 }
 .cat-operations {
     background: #fce4ec;
@@ -502,8 +486,68 @@
     }
 }
 
+/* ---- Sequential nav (prev / next walkthrough) ---- */
+
+.wt-seq-nav {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-100);
+}
+
+.wt-seq-nav-inner {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.wt-seq-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--gray-100);
+    border-radius: 10px;
+    background: var(--white);
+    text-decoration: none;
+    transition:
+        border-color 0.12s,
+        box-shadow 0.12s;
+    max-width: 48%;
+}
+
+.wt-seq-btn:hover {
+    border-color: var(--gray-200);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.wt-seq-btn--next {
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.wt-seq-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--gray-400);
+}
+
+.wt-seq-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray-900);
+    line-height: 1.35;
+}
+
 @media (max-width: 767px) {
     .wt-outer {
         padding: 1.5rem 1rem 4rem;
+    }
+
+    .wt-seq-btn {
+        max-width: 100%;
     }
 }

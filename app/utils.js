@@ -24,6 +24,38 @@ export const STATUS_LABELS = {
   "in-progress": "In progress",
 };
 
+// ---- Learning path category metadata — single source of truth for hub + detail pages
+export const CATEGORY_META = {
+  fundamentals: {
+    label: "Getting Started",
+    desc: "Core concepts every Cloud GTM practitioner needs first.",
+  },
+  procurement: {
+    label: "Procurement",
+    desc: "How buyers transact — offers, contracts, and entitlements.",
+  },
+  cosell: {
+    label: "Co-sell",
+    desc: "Joint selling motions with hyperscaler sales teams.",
+  },
+  billing: {
+    label: "Billing & Revenue",
+    desc: "Revenue, metering, committed spend, and payout mechanics.",
+  },
+  operations: {
+    label: "Marketplace Ops",
+    desc: "Day-to-day ISV operations — APIs, integrations, and listing management.",
+  },
+  advanced: {
+    label: "Channel & Partner",
+    desc: "Distributor models, resale mechanics, and multi-party channel motions.",
+  },
+  onboarding: {
+    label: "Role-Based Onboarding",
+    desc: "Paths aligned to job function — get productive in your role fast.",
+  },
+};
+
 // ---- Learning path localStorage helpers ------------------------------------
 
 export const LP_STORAGE_KEY = "gtm-completed-paths";

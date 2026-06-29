@@ -100,19 +100,27 @@
 }
 
 .lp-featured-change-role {
-    display: block;
-    font-size: 11px;
-    color: var(--gray-400);
-    text-align: right;
-    margin-top: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--orange-text);
+    margin-top: 8px;
     cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    transition: color 0.12s;
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1px solid rgba(174, 83, 15, 0.3);
+    border-radius: 6px;
+    background: rgba(242, 106, 28, 0.04);
+    transition:
+        background 0.12s,
+        border-color 0.12s;
 }
 
 .lp-featured-change-role:hover {
-    color: var(--orange-text);
+    background: rgba(242, 106, 28, 0.1);
+    border-color: rgba(174, 83, 15, 0.5);
 }
 
 /* ---- Featured banner ---- */
@@ -217,28 +225,6 @@
     letter-spacing: -0.02em;
 }
 
-.level-badge {
-    font-size: 10px;
-    font-weight: 700;
-    padding: 3px 8px;
-    border-radius: 99px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    text-transform: capitalize;
-}
-
-.l-beginner {
-    background: #e3f8f1;
-    color: #088a60;
-}
-.l-intermediate {
-    background: #fff3e0;
-    color: var(--orange-text);
-}
-.l-advanced {
-    background: #ede9ff;
-    color: #5020cc;
-}
 
 .path-card-desc {
     font-size: 13px;

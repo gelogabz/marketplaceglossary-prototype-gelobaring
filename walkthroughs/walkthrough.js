@@ -4,6 +4,7 @@ import { escHtml, PLATFORM_SUFFIX_RE, STATUS_LABELS } from "../app/utils.js";
 const params = new URLSearchParams(location.search);
 const wtSlug = params.get("w");
 const wt = walkthroughs.find((w) => w.slug === wtSlug);
+const wtIndex = walkthroughs.findIndex((w) => w.slug === wtSlug);
 const container = document.getElementById("wtContent");
 
 // ---- Check state (sanity checker) -------------------------------------------
@@ -119,6 +120,25 @@ function buildStep(step, index) {
     `;
 }
 
+function buildNextNav(walkthrough) {
+  const prev = wtIndex > 0 ? walkthroughs[wtIndex - 1] : null;
+  const next = wtIndex >= 0 && wtIndex < walkthroughs.length - 1 ? walkthroughs[wtIndex + 1] : null;
+  if (!prev && !next) return "";
+  return `
+    <div class="wt-seq-nav">
+      <div class="wt-seq-nav-inner">
+        ${prev ? `<a href="walkthrough.html?w=${prev.slug}" class="wt-seq-btn wt-seq-btn--prev">
+          <span class="wt-seq-label">Previous</span>
+          <span class="wt-seq-title">${prev.title}</span>
+        </a>` : `<span></span>`}
+        ${next ? `<a href="walkthrough.html?w=${next.slug}" class="wt-seq-btn wt-seq-btn--next">
+          <span class="wt-seq-label">Next</span>
+          <span class="wt-seq-title">${next.title}</span>
+        </a>` : `<span></span>`}
+      </div>
+    </div>`;
+}
+
 function copyLink() {
   const url = location.href;
   navigator.clipboard
@@ -152,7 +172,7 @@ function render(walkthrough) {
 
         <div class="wt-hdr-meta">
             <span class="wt-cat-badge cat-${walkthrough.category}">${walkthrough.category}</span>
-            ${walkthrough.status ? `<span class="wt-status-badge status-${walkthrough.status}">${STATUS_LABELS[walkthrough.status] || walkthrough.status}</span>` : ""}
+            ${walkthrough.status && walkthrough.status !== "complete" ? `<span class="wt-status-badge status-${walkthrough.status}">${STATUS_LABELS[walkthrough.status] || walkthrough.status}</span>` : ""}
             <span class="wt-hdr-est">${walkthrough.estimated} · ${walkthrough.steps.length} step${walkthrough.steps.length !== 1 ? "s" : ""}</span>
         </div>
 
@@ -166,6 +186,8 @@ function render(walkthrough) {
         </div>
 
         <div class="wt-steps">${stepsHtml}</div>
+
+        ${buildNextNav(walkthrough)}
     `;
 
   document.getElementById("copyLinkBtn").addEventListener("click", copyLink);

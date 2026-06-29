@@ -34,7 +34,7 @@ export const walkthroughs = [
     description:
       "Set up your Suger organization, invite stakeholders, and align on the implementation timeline before integrations begin.",
     estimated: "~30 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/6695643183",
     steps: [
       {
@@ -106,7 +106,7 @@ export const walkthroughs = [
     description:
       "Connect Suger to Slack to receive real-time alerts for marketplace events — offer creation, entitlement changes, billing events, and co-sell updates.",
     estimated: "~10 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/9256429762",
     steps: [
       {
@@ -165,7 +165,7 @@ export const walkthroughs = [
     description:
       "Connect your AWS Marketplace seller account to Suger through a secure IAM connection, MCAS, and MDFS data feed configuration.",
     estimated: "~30 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/9351208221",
     steps: [
       {
@@ -279,7 +279,7 @@ export const walkthroughs = [
     description:
       "Connect Suger to AWS Partner Central to sync ACE co-sell opportunities and automate referral workflows. Requires active ISV Accelerate enrollment.",
     estimated: "~15 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/7842274106",
     steps: [
       {
@@ -354,7 +354,7 @@ export const walkthroughs = [
     description:
       "Connect your Azure Marketplace publisher account to Suger through Azure App Registration, API permissions, and Partner Center linking.",
     estimated: "~30 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/8890722816",
     steps: [
       {
@@ -446,7 +446,7 @@ export const walkthroughs = [
     description:
       "Connect your GCP Marketplace producer account to Suger using keyless Workload Identity Federation — a secure, credential-free authentication method.",
     estimated: "~45 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/1552184238",
     steps: [
       {
@@ -556,7 +556,7 @@ export const walkthroughs = [
     description:
       "Connect Suger to Google Cloud Partner Network to enable automated GCP co-sell workflows and opportunity management.",
     estimated: "~15 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/2287045699",
     steps: [
       {
@@ -610,7 +610,7 @@ export const walkthroughs = [
     description:
       "Connect your Snowflake Marketplace provider account to Suger using key-pair authentication to manage listings, entitlements, and revenue.",
     estimated: "~20 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/5917749327",
     steps: [
       {
@@ -660,7 +660,7 @@ export const walkthroughs = [
     description:
       "Connect Salesforce to Suger: install the Suger app, configure two-way sync, set up the integration user, enable the Suger widget, and configure co-sell field mapping.",
     estimated: "~30 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/9560640419",
     steps: [
       {
@@ -750,7 +750,7 @@ export const walkthroughs = [
     description:
       "Connect HubSpot to Suger: establish the OAuth connection, enable the Suger widget on Deal pages, and configure co-sell field mapping.",
     estimated: "~20 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/7681492250",
     steps: [
       {
@@ -815,7 +815,7 @@ export const walkthroughs = [
     description:
       "Create, configure, test, and publish an AWS Marketplace product listing through Suger — from product draft through AWS review and go-live.",
     estimated: "~30 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/3227053177",
     steps: [
       {
@@ -901,7 +901,7 @@ export const walkthroughs = [
     description:
       "Create and publish a transactable SaaS offer on Azure Marketplace through Suger and Microsoft Partner Center.",
     estimated: "~45 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/4753926390",
     steps: [
       {
@@ -997,7 +997,7 @@ export const walkthroughs = [
     description:
       "Create and publish a product listing on Google Cloud Marketplace through Suger and the GCP Producer Portal — from draft through approval phases and billing tests.",
     estimated: "~45 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/7061509678",
     steps: [
       {
@@ -1119,7 +1119,7 @@ export const walkthroughs = [
     description:
       "Configure CRM-to-cloud-partner field mappings, enable automation, and validate with a test referral for AWS, Azure, and GCP co-sell.",
     estimated: "~45 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/4221427647",
     steps: [
       {
@@ -1215,7 +1215,7 @@ export const walkthroughs = [
     description:
       "Map CRM fields to cloud marketplace private offer requirements for AWS, Azure, GCP, and Snowflake — and test the configuration before going live.",
     estimated: "~45 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/2043902306",
     steps: [
       {
@@ -1302,7 +1302,7 @@ export const walkthroughs = [
     description:
       "Walk through creating, pricing, and sending a custom-priced AWS Marketplace private offer to a specific buyer through the Suger Console.",
     estimated: "~15 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/8241797607",
     steps: [
       {
@@ -1397,7 +1397,7 @@ export const walkthroughs = [
     description:
       "Walk through creating, configuring, and activating a custom-priced Azure Marketplace private offer for a specific buyer through Suger.",
     estimated: "~15 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/3943279189",
     steps: [
       {
@@ -1467,7 +1467,7 @@ export const walkthroughs = [
     description:
       "Create and share a custom-priced Google Cloud Marketplace private offer for a specific buyer through Suger, with flexible pricing and payment options.",
     estimated: "~15 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/5598897548",
     steps: [
       {
@@ -1519,7 +1519,7 @@ export const walkthroughs = [
     description:
       "Create a resale authorization for an AWS Marketplace product so a channel partner can create Channel Partner Private Offers (CPPOs) for their customers.",
     estimated: "~20 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/3662037468",
     steps: [
       {
@@ -1589,7 +1589,7 @@ export const walkthroughs = [
     description:
       "Create a resale authorization for an Azure Marketplace product so channel partners can create Multiparty Private Offers (MPOs) for their customers.",
     estimated: "~20 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/8435645725",
     steps: [
       {
@@ -1659,7 +1659,7 @@ export const walkthroughs = [
     description:
       "Remove sandbox connections, connect production marketplace accounts, validate all functionality end-to-end, and sign off on the Suger implementation.",
     estimated: "~45 min",
-    status: "for-review",
+    status: "complete",
     steps: [
       {
         title: "Remove sandbox connections",
@@ -1746,7 +1746,7 @@ export const walkthroughs = [
     description:
       "A guided checklist of the first post-go-live actions: verify entitlements, configure notifications, set up webhooks, create an API client, and run your first data export.",
     estimated: "~25 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/6793092534",
     steps: [
       {
@@ -1850,7 +1850,7 @@ export const walkthroughs = [
     description:
       "Create a Suger API client for your integration layer and configure a signed webhook to automate provisioning and marketplace event handling.",
     estimated: "~15 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/3219634544",
     steps: [
       {
@@ -1935,7 +1935,7 @@ export const walkthroughs = [
     description:
       "Set up billable metrics in Suger to connect product consumption data with cloud marketplace billing engines across AWS, Azure, and GCP.",
     estimated: "~20 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/3581615435",
     steps: [
       {
@@ -2006,7 +2006,7 @@ export const walkthroughs = [
     description:
       "Set up Suger's notification system to route marketplace events to the right recipients, and optionally build branded custom email templates.",
     estimated: "~20 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/6793092534",
     steps: [
       {
@@ -2075,7 +2075,7 @@ export const walkthroughs = [
     description:
       "Integrate Okta OIDC Single Sign-On with SCIM provisioning to automate user management and enforce role-based access in the Suger Console.",
     estimated: "~30 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/2180341449",
     steps: [
       {
@@ -2134,7 +2134,7 @@ export const walkthroughs = [
     description:
       "Submit, track, and manage AWS Proof of Concept (POC) and Marketing Development Fund (MDF) funding requests through Suger.",
     estimated: "~15 min",
-    status: "for-review",
+    status: "complete",
     sourceUrl: "https://suger.help.usepylon.com/articles/6911165083",
     steps: [
       {
