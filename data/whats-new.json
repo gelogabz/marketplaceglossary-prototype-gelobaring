@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-06-29T10:21:21.029Z",
+  "lastUpdated": "2026-06-29T16:39:24.709Z",
   "updates": [
+    {
+      "id": "azure-2026-06-29-action-required-use-the-updated-microsoft-entra-id",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-06-29",
+      "title": "Action required: Use the updated Microsoft Entra ID P2 Education Student SKU for renewals",
+      "summary": "Use the new Microsoft Entra ID P2 Education Student stock-keeping unit (SKU) for renewals beginning July 1.",
+      "type": "pricing",
+      "sourceUrl": "mailto:M365PILicensingQ@microsoft.com",
+      "impact": "high"
+    },
     {
       "id": "azure-2026-06-26-sentinel-50-gb-tier-promo-extended",
       "platform": "Azure",
@@ -97,7 +108,7 @@
       "title": "New Check Inventory by Resource Type API available—Check Inventory API retiring September 25, 2026",
       "summary": "A new Check Inventory by Resource Type API is now available. The existing Check Inventory API will be retired on September 25, 2026.",
       "type": "release",
-      "sourceUrl": "https://learn.microsoft.com../developer/check-inventory",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/developer/check-inventory",
       "impact": "high"
     },
     {
@@ -108,7 +119,7 @@
       "title": "Updated Microsoft Partner Agreement takes effect December 1, 2026",
       "summary": "Preview the updated Microsoft Partner Agreement (MPA) in Partner Center.",
       "type": "policy",
-      "sourceUrl": "https://learn.microsoft.com../enroll/microsoft-partner-agreement",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/enroll/microsoft-partner-agreement",
       "impact": "high"
     },
     {
@@ -229,7 +240,7 @@
       "title": "View promotion details directly in Partner Center",
       "summary": "Partners can now view promotion details in the Partner Center UX in addition to downloading the promotions list.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com2026-march#promotions-are-now-available-to-download-in-the-pricing-workspace",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march#promotions-are-now-available-to-download-in-the-pricing-workspace",
       "impact": "high"
     },
     {
@@ -240,7 +251,7 @@
       "title": "New: End of Sale Pricelist for Software now available",
       "summary": "A new End of Sale Pricelist for Software is being added to Partner Center, effective July 1, 2026.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../pricing/software-pricing#end-of-sale-pricelist-for-software",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/software-pricing#end-of-sale-pricelist-for-software",
       "impact": "high"
     },
     {
@@ -251,7 +262,7 @@
       "title": "Reminder: ReferenceId format update in reconciliation files",
       "summary": "Reminder: The ReferenceId attribute in Billed and Unbilled Reconciliation files is updated to a structured JSON format effective June 15, 2026.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com2026-april#update-effective-date-change-for-referenceid-format-update-in-reconciliation-files",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april#update-effective-date-change-for-referenceid-format-update-in-reconciliation-files",
       "impact": "high"
     },
     {
@@ -350,7 +361,7 @@
       "title": "MFA enforcement for Partner Center APIs",
       "summary": "Multifactor authentication (MFA) enforcement for Partner Center APIs: Take action immediately.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com2026-may#4",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#4",
       "impact": "medium"
     },
     {
@@ -361,7 +372,7 @@
       "title": "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses",
       "summary": "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com2026-may#new-three-year-cloud-solution-provider-csp-purchasing-option-for-microsoft-365-copilot-now-available",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#new-three-year-cloud-solution-provider-csp-purchasing-option-for-microsoft-365-copilot-now-available",
       "impact": "medium"
     },
     {
@@ -537,7 +548,7 @@
       "title": "Action required: partner communications",
       "summary": "Action required to ensure you receive Microsoft partner communications",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../account-settings/permissions-frequently-asked-questions",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/account-settings/permissions-frequently-asked-questions",
       "impact": "high"
     },
     {
@@ -768,7 +779,7 @@
       "title": "Mandatory multifactor authentication (MFA) for Partner Center APIs",
       "summary": "Microsoft is enforcing MFA across all Partner Center app+user APIs. Inventory, validate, and test your integrations now.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../security/partner-security-requirements?wt.mc_id=rygpsn38be",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/security/partner-security-requirements?wt.mc_id=rygpsn38be",
       "impact": "high"
     },
     {
@@ -779,7 +790,7 @@
       "title": "Extended service terms enforcement for CSP in effect",
       "summary": "Extended service terms enforcement for CSPs are in effect.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../customers/extended-service-terms?wt.mc_id=wrdvrql8ie",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms?wt.mc_id=wrdvrql8ie",
       "impact": "medium"
     },
     {
@@ -790,7 +801,7 @@
       "title": "New commerce license-based May price lists are updated",
       "summary": "Minor updates were made to the May 2026 price lists and are now available.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../pricing/pricing-and-offers",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers",
       "impact": "high"
     },
     {
@@ -922,7 +933,7 @@
       "title": "Annual capabilities assessment—refinements and interim approach",
       "summary": "Microsoft is updating the annual CSP capabilities assessment experience for existing direct bill and distributor partners.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../account-settings/permissions-overview#how-to-look-up-my-organizations-account-admin-or-global-admin-or-owner-or-users-in-other-roles-in-partner-center",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/account-settings/permissions-overview#how-to-look-up-my-organizations-account-admin-or-global-admin-or-owner-or-users-in-other-roles-in-partner-center",
       "impact": "high"
     },
     {
@@ -944,7 +955,7 @@
       "title": "MCA iframe event signal now available",
       "summary": "Partners can build one-click customer workflows with a new optional event signal from the MCA acceptance iframe, which is available now in production.",
       "type": "feature",
-      "sourceUrl": "https://learn.microsoft.com../customers/integrate-sandbox-confirm-customer-accept",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/integrate-sandbox-confirm-customer-accept",
       "impact": "high"
     },
     {
@@ -988,7 +999,7 @@
       "title": "Upcoming Update: Pricelist schema enhancement to support mid‑month republishing",
       "summary": "Date : April 10, 2026 Effective date : May 1, 2026 Workspace : Pricing To improve pricing data clarity and support critical updates, we are enhancing the License-based Current Month Pricelist schema and Software Current Month Pricelist schema to enable mid‑month republishes when ",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../pricing/pricing-and-offers#new-commerce-price-list",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers#new-commerce-price-list",
       "impact": "high"
     },
     {
@@ -1186,7 +1197,7 @@
       "title": "New process to redeem cloud benefits",
       "summary": "Your partner benefits package has powerful cloud benefits. Activate them today with a streamlined process.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../benefits/cloud-services?wt.mc_id=r5j371cee1",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/benefits/cloud-services?wt.mc_id=r5j371cee1",
       "impact": "high"
     },
     {
@@ -1241,7 +1252,7 @@
       "title": "Promotions are now available to download in the Pricing workspace",
       "summary": "Date : March 11, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Promotions are now available directly through the Pricing workspace to download in Partner Center. What's new Partners can now download active promot",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../media/announcements/2026-march/promotions.png#lightbox",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-march/promotions.png#lightbox",
       "impact": "high"
     },
     {
@@ -1263,7 +1274,7 @@
       "title": "Reminders and updates to extended service terms (EST)",
       "summary": "New EST download capability and update to specialized offer EST availability dates.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../customers/extended-service-terms#download-est-subscriptions",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms#download-est-subscriptions",
       "impact": "high"
     },
     {
@@ -1296,7 +1307,7 @@
       "title": "Monthly Microsoft AI Cloud Partner Program update",
       "summary": "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
       "type": "policy",
-      "sourceUrl": "https://learn.microsoft.com../membership/specializations",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/specializations",
       "impact": "medium"
     },
     {
@@ -1318,7 +1329,7 @@
       "title": "The ​automated Support Services designation experience is now available in Partner Center",
       "summary": "Partners can self-nominate, enroll in, and access relevant information related to the Support Services designation in Partner Center.",
       "type": "program",
-      "sourceUrl": "https://learn.microsoft.com../membership/support-services-designation",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/support-services-designation",
       "impact": "high"
     },
     {
@@ -1329,7 +1340,7 @@
       "title": "Accelerated file download for Unbilled usage and reconciliation files from Partner Center",
       "summary": "Effective May 15th 2026, all unbilled usage and reconciliation files will be delivered in .CSV.GZIP format to enable faster and more efficient downloads",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../media/announcements/2026-march/disable-download.png#lightbox",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-march/disable-download.png#lightbox",
       "impact": "high"
     },
     {
@@ -1351,7 +1362,7 @@
       "title": "Legacy Azure pricelists updates",
       "summary": "Date : February 26, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective March 1, 2026 , the following Legacy Azure Price Lists will transition from Excel (.xlsx) to CSV (.csv) format: Global → Azure in Global",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../pricing/pricing-and-offers",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers",
       "impact": "high"
     },
     {
@@ -1406,7 +1417,7 @@
       "title": "CSP unbilled invoice reconciliation API v1 to retire March 15, 2026",
       "summary": "Migrate to API v2 before March 15, 2026, to avoid service disruption.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../developer/get-invoice-unbilled-line-items-asynchronously?wt.mc_id=qeowlup25z",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/developer/get-invoice-unbilled-line-items-asynchronously?wt.mc_id=qeowlup25z",
       "impact": "low"
     },
     {
@@ -1461,7 +1472,7 @@
       "title": "Unlock growth through Joint Planning and coselling",
       "summary": "Access Joint Planning resources in Partner Center to accelerate coselling opportunities and coordinate upsell engagements.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../referrals/joint-planning-leads?wt.mc_id=kv7o5yo2h1",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/referrals/joint-planning-leads?wt.mc_id=kv7o5yo2h1",
       "impact": "low"
     },
     {
@@ -1494,7 +1505,7 @@
       "title": "Revised timelines: Extended Service Terms in CSP",
       "summary": "Enforcement of Extended Service Terms in CSP is extended from the previously announced April 1, 2026, to May 4, 2026.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com2026-january#extended-service-term-est-production-availability-for-ux-and-api-are-delayed",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-january#extended-service-term-est-production-availability-for-ux-and-api-are-delayed",
       "impact": "high"
     },
     {
@@ -1593,7 +1604,7 @@
       "title": "Solutions Partner for Modern Work update",
       "summary": "Review expanded eligible workloads for the Solutions Partner for Modern Work (MW) designation.",
       "type": "program",
-      "sourceUrl": "https://learn.microsoft.com../membership/solutions-partner-modern-work?wt.mc_id=dqpzssqi28",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-modern-work?wt.mc_id=dqpzssqi28",
       "impact": "medium"
     },
     {
@@ -1670,7 +1681,7 @@
       "title": "Target upcoming renewals for Microsoft 365 + Copilot bundle",
       "summary": "Beginning January 21, 2026 partners can download a report with customers renewing Microsoft 365 Business with upsell recommendations.",
       "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com../media/announcements/2026-january/ai-assistant-zero-prompt.png#lightbox",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-january/ai-assistant-zero-prompt.png#lightbox",
       "impact": "high"
     },
     {
@@ -1780,7 +1791,7 @@
       "title": "Smarter referral submissions are coming!",
       "summary": "Smarter referral submissions are coming.",
       "type": "release",
-      "sourceUrl": "https://learn.microsoft.com2025-december#2",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2025-december#2",
       "impact": "high"
     },
     {
