@@ -435,7 +435,7 @@ async function fetchAzurePartnerCenter() {
       const absUrl = rawHref
         ? rawHref.startsWith("http")
           ? rawHref
-          : `https://learn.microsoft.com${rawHref}`
+          : new URL(rawHref, url).href
         : url;
 
       results.push({
