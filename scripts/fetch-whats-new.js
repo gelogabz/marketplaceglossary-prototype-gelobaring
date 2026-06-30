@@ -13,7 +13,7 @@
  *
  * ── WHAT IT DOES ─────────────────────────────────────────────────────────────
  *
- *   1. Fetches entries from 6 sources (see SOURCE LIST below).
+ *   1. Fetches entries from 7 sources (see SOURCE LIST below).
  *   2. Loads any existing entries already in data/whats-new.js.
  *   3. Merges: fresh entries overwrite existing ones with the same ID.
  *      Old entries not in the current fetch are kept (avoids data loss
@@ -26,13 +26,14 @@
  *
  *   AWS What's New      https://aws.amazon.com/new/feed/         (RSS)
  *   AWS Marketplace Blog https://aws.amazon.com/blogs/awsmarketplace/feed/ (RSS)
+ *   AWS APN Blog        https://aws.amazon.com/blogs/apn/feed/  (RSS)
  *   GCP Marketplace     https://cloud.google.com/marketplace/docs/partners/release-notes (HTML)
  *   Azure Partner Center https://learn.microsoft.com/en-us/partner-center/announcements/{year}-{month} (HTML, 3 months)
  *   Snowflake           https://docs.snowflake.com/en/whats-new  (HTML)
  *   Suger Blog          https://www.suger.io/resources/blog/      (HTML)
  *
  *   AWS What's New is keyword-filtered to marketplace-relevant entries only.
- *   All other AWS Marketplace Blog entries are included (no keyword filter).
+ *   AWS Marketplace Blog and AWS APN Blog entries are included (no keyword filter).
  *   GCP, Snowflake entries are keyword-filtered for marketplace relevance.
  *   Azure and Suger Blog entries are included without additional filtering.
  *
@@ -325,6 +326,31 @@ async function fetchAwsMarketplaceBlog() {
   return results;
 }
 
+// ── Source: AWS APN Blog RSS ──────────────────────────────────────────────────
+
+async function fetchAwsApnBlog() {
+  const xml = await fetchText("https://aws.amazon.com/blogs/apn/feed/");
+  const results = [];
+  for (const item of parseRssItems(xml)) {
+    const title = scrub(item.title);
+    const summary = oneLiner(scrub(item.description));
+    const date = parseIsoDate(item.pubDate);
+    if (!date || !isRecent(date)) continue;
+    results.push({
+      id: stableId("aws", date, title),
+      platform: "AWS",
+      platformTag: "aws",
+      date,
+      title,
+      summary,
+      type: "blog",
+      sourceUrl: item.link,
+      impact: scoreImpact(title + " " + summary),
+    });
+  }
+  return results;
+}
+
 // ── Source: GCP Marketplace Release Notes (HTML) ──────────────────────────────
 
 async function fetchGcpMarketplace() {
@@ -569,6 +595,7 @@ async function main() {
   const fetchers = [
     ["AWS What's New RSS", fetchAwsWhatsNew],
     ["AWS Marketplace Blog RSS", fetchAwsMarketplaceBlog],
+    ["AWS APN Blog RSS", fetchAwsApnBlog],
     ["GCP Marketplace", fetchGcpMarketplace],
     ["Azure Partner Center", fetchAzurePartnerCenter],
     // ["Snowflake What's New", fetchSnowflake], // URL needs fixing — disabled
