@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-06-29T16:39:24.709Z",
+  "lastUpdated": "2026-06-30T08:55:51.258Z",
   "updates": [
+    {
+      "id": "azure-2026-06-29-microsoft-365-copilot-cowork-updated-partner-resou",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-06-29",
+      "title": "Microsoft 365 Copilot Cowork: Updated Partner Resources and Enablement",
+      "summary": "Following the general availability of Microsoft 365 Copilot Cowork, partner resources and enablement materials are now available to support customer conversations, planning, and readiness.",
+      "type": "pricing",
+      "sourceUrl": "https://aka.ms/CoworkPartnerLaunchKit",
+      "impact": "high"
+    },
     {
       "id": "azure-2026-06-29-action-required-use-the-updated-microsoft-entra-id",
       "platform": "Azure",
