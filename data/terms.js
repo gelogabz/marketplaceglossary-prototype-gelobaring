@@ -11158,6 +11158,28 @@ export const terms = [
       { name: "OAuth 2.0 Integration", slug: "oauth-2.0-integration" },
     ],
   },
+  {
+    name: "AWS EMEA SARL — AWS",
+    tags: ["aws"],
+    def: "The Luxembourg-headquartered Amazon.com subsidiary (established July 1, 2018) that operates AWS Marketplace and acts as merchant of record for all EMEA transactions — covering Europe, the Middle East, and Africa except Turkey and South Africa. When an EMEA-region account purchases through AWS Marketplace, the contracting entity is AWS EMEA SARL rather than Amazon Web Services, Inc., and it issues all applicable VAT invoices and handles regional tax compliance across its 25+ branch offices. ISVs selling on AWS Marketplace receive a separate disbursement from AWS EMEA SARL for EMEA sales, distinct from non-EMEA disbursements issued by Amazon Web Services, Inc. — requiring sellers to reconcile two payout sources in financial reporting.",
+    alias: "Related: Seller of Record, AWS Marketplace — AWS, Disbursement, Private Offer — AWS",
+    source: "https://aws.amazon.com/legal/aws-emea/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Identifying the correct contracting entity when an EMEA-region buyer purchases through AWS Marketplace for legal or procurement review",
+      "Reconciling separate disbursement payments from AWS EMEA SARL (EMEA sales) and Amazon Web Services, Inc. (non-EMEA sales) in revenue reporting",
+      "Verifying VAT invoice issuer and tax compliance entity for EMEA marketplace transactions during finance audits",
+    ],
+    context: ["AWS Marketplace", "Seller Disbursements", "EMEA Compliance", "VAT Invoicing"],
+    related: [
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      { name: "Seller of Record", slug: "seller-of-record" },
+      { name: "Disbursement", slug: "disbursement" },
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+    ],
+  },
 ];
 
 // { name: "", tags: [""], def: "", alias: "", source: "" },
