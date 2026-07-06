@@ -1,4 +1,4 @@
-import { terms } from "./data/terms.js";
+import { terms, lastReviewed } from "./data/terms.js";
 import { learningPaths } from "./data/learning-paths.js";
 import {
   injectTagStyles,
@@ -561,7 +561,15 @@ function render() {
 
 // ---- Init -------------------------------------------------------------------
 
+const MONTHS_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function formatReviewedDate(iso) {
+  const [y, m] = iso.split("-");
+  return `Reviewed ${MONTHS_SHORT[parseInt(m, 10) - 1]} ${y}`;
+}
+
 window.onload = () => {
+  const badge = document.getElementById("reviewedBadge");
+  if (badge) badge.textContent = formatReviewedDate(lastReviewed);
   buildLPFilterButtons();
   loadFromURL();
   renderSidebarState();

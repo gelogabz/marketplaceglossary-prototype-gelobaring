@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T09:55:16.911Z",
+  "lastUpdated": "2026-07-06T10:50:00.647Z",
   "updates": [
     {
       "id": "aws-2026-07-02-how-interwiz-reduced-ai-costs-by-90-with-amazon-be",
@@ -376,94 +376,6 @@
       "impact": "high"
     },
     {
-      "id": "aws-2026-06-16-aws-partner-central-agents-now-accelerate-co-selli",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Partner Central agents now accelerate co-selling on every deal",
-      "summary": "Starting today, AWS Partner Central agents qualify every co-sell opportunity in real time and make recommendations that drive AWS engagement and accelerate deal progression.",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/accelerate-co-selling-with-agents/",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-aws-marketplace-announces-ai-assisted-product-list",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Marketplace announces AI-assisted product listing",
-      "summary": "Today, AWS Marketplace announces AI-assisted product listing in Partner Assistant chat, helping Independent Software Vendors (ISVs) and Consulting Partners create high-quality product listings on AWS Marketplace using their existing digital assets.",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/ai-assisted-product-listing/",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-aws-partner-central-launches-new-funding-benefits-",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Partner Central launches new funding benefits for Business Value Realization",
-      "summary": "AWS Partner Central now supports the Business Value Realization (BVR) motion, a new experience and funding motion for partners who drive customer adoption and business outcomes after deploying strategic AWS services.",
-      "type": "program",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-partner-business-value-realization/",
-      "impact": "high"
-    },
-    {
-      "id": "aws-2026-06-16-aws-partner-central-now-validates-foundational-tec",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Partner Central now validates Foundational Technical Review in minutes",
-      "summary": "AWS Partner Central now accepts SOC 2 Type II audit reports or AWS Well-Architected Framework Reviews (WAFR) reports to complete Foundational Technical Review (FTR) in minutes.",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-partner-central-foundational-technical-review/",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-aws-marketplace-reduces-listing-fee-for-profession",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Marketplace reduces listing fee for professional services to 0.5%",
-      "summary": "AWS Marketplace now offers a 0.5% listing fee for professional services private offers, reduced from 2.5%. This makes it more cost-effective for consulting partners, systems integrators, managed services providers and independent software vendors to transact their services throu…",
-      "type": "pricing",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/reduce-listing-fee-professional-services-aws-marketplace",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-aws-partners-can-now-accelerate-co-sell-deals-with",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Partners can now accelerate co-sell deals with express private offers",
-      "summary": "AWS Partners co-selling with AWS can now use express private offers to automate pricing within co-sell workflows. Partners configure their pricing rules, discount boundaries, and eligible products once, and when AWS sales representatives identify their solution as a fit for a cu…",
-      "type": "pricing",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-partners-express-private-offers",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-aws-marketplace-storefront-is-now-generally-availa",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Marketplace Storefront is now generally available",
-      "summary": "AWS Marketplace Storefront is now generally available, enabling AWS Partners to create and deploy their own branded catalog of solutions and services on their website or application in hours.",
-      "type": "feature",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-marketplace-storefront/",
-      "impact": "high"
-    },
-    {
-      "id": "aws-2026-06-16-aws-partner-central-agents-now-guide-new-partners-",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "AWS Partner Central agents now guide new partners from registration to ready-to-sell",
-      "summary": "Today, AWS announces the general availability of onboarding capabilities for AWS Partner Central agents. The agent acts as an always-available advisor that guides new partners through every step required to be ready to sell with AWS, from profile setup to guidance to complete co…",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-partner-central/",
-      "impact": "high"
-    },
-    {
       "id": "aws-2026-06-16-agentic-saas-your-next-growth-market-is-already-he",
       "platform": "AWS",
       "platformTag": "aws",
@@ -528,17 +440,6 @@
       "type": "pricing",
       "sourceUrl": "https://aka.ms/CoworkGA",
       "impact": "high"
-    },
-    {
-      "id": "aws-2026-06-15-aws-partner-central-now-provides-lead-enrichment-a",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-15",
-      "title": "AWS Partner Central now provides lead enrichment and prospecting",
-      "summary": "AWS Partner Central now provides lead enrichment and prospecting, enabling AWS Partners to enrich AWS-sourced leads or partner-sourced leads with AWS-generated propensity insights, and recommendations for program, funding, and sales motion eligibility.",
-      "type": "program",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/lead-enrichment-and-prospecting",
-      "impact": "low"
     },
     {
       "id": "aws-2026-06-15-how-public-ai-delivers-sovereign-llm-inference-on-",
@@ -794,28 +695,6 @@
       "impact": "high"
     },
     {
-      "id": "aws-2026-06-01-bring-context-from-the-physical-world-to-ai-with-w",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-01",
-      "title": "Bring context from the physical world to AI with Wherobots on AWS",
-      "summary": "Most AI systems today have no direct understanding of the physical world because the underlying spatial data requires purpose-built preprocessing before AI can use it.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/bring-context-from-the-physical-world-to-ai-with-wherobots-on-aws/",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-01-say-hello-to-169-new-aws-competency-partners-added",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-01",
-      "title": "Say Hello to 169 New AWS Competency Partners Added in May",
-      "summary": "We are excited to highlight 169 AWS Partners that received new or renewed specializations in May for our global AWS Competency programs.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/say-hello-to-169-new-aws-competency-partners-added-in-may/",
-      "impact": "medium"
-    },
-    {
       "id": "azure-2026-06-01-new-microsoft-365-business-with-copilot-skus-avail",
       "platform": "Azure",
       "platformTag": "azure",
@@ -847,17 +726,6 @@
       "type": "pricing",
       "sourceUrl": "https://news.microsoft.com/annual-work-trend-index-2026/?msockid=38d2c9eb06866e8c3c72deb507296f82%3Fwt.mc_id%3Dddqtwyvcox",
       "impact": "high"
-    },
-    {
-      "id": "aws-2026-05-28-data-driven-optimization-and-ai-powered-orchestrat",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-05-28",
-      "title": "Data-driven optimization and AI-powered orchestration for Nextflow with Fovus on AWS",
-      "summary": "Learn how Fovus, an AWS Advanced Technology Partner, eliminates the inefficiency of static Nextflow resource configurations by benchmarking each pipeline process individually and applying AI-powered orchestration to select optimal EC2 instance types, memory, storage, and paralle…",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/data-driven-optimization-and-ai-powered-orchestration-for-nextflow-with-fovus-on-aws/",
-      "impact": "low"
     },
     {
       "id": "azure-2026-05-28-microsoft-publisher-agreement-version-8-0-july-202",
@@ -902,17 +770,6 @@
       "type": "blog",
       "sourceUrl": "https://cloud.google.com/marketplace/docs/partners/release-notes",
       "impact": "low"
-    },
-    {
-      "id": "aws-2026-05-27-accelerate-vendor-evaluation-with-aws-specializati",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-05-27",
-      "title": "Accelerate vendor evaluation with AWS Specializations and AWS Marketplace",
-      "summary": "AWS Specializations and AWS Marketplace Vendor Insights work together to transform vendor evaluation. By combining rigorous, domain-specific technical validations from AWS across more than 115 solution areas with continuously updated security posture dashboards, these complement…",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/accelerate-vendor-evaluation-with-aws-specializations-and-aws-marketplace/",
-      "impact": "medium"
     },
     {
       "id": "azure-2026-05-27-multiparty-private-offers-are-expanding-across-eur",

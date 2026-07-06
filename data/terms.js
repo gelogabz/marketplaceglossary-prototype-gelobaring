@@ -75,6 +75,8 @@
  *   },
  */
 
+export const lastReviewed = "2026-07-06";
+
 export const terms = [
   {
     name: "APN Customer Engagements (ACE) — AWS",

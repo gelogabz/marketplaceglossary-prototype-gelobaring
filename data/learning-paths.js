@@ -1464,9 +1464,9 @@ export const learningPaths = [
     prereqs: ["channel-and-partner-motions"],
     steps: [
       {
-        name: "Partner Relationship Management (PRM) System",
-        slug: "partner-relationship-management-prm-system",
-        why: "Start with the platform: Suger PRM is the unified workspace for managing VARs, GSIs, resellers, and tech partners alongside your marketplace motions. This term establishes what the system is, what it replaces (spreadsheets, email, disconnected CRMs), and how it connects channel ops to co-sell and marketplace revenue.",
+        name: "Partner Relationship Management (PRM) — Suger",
+        slug: "partner-relationship-management-prm-—-suger",
+        why: "Start with the product: Suger PRM is the purpose-built platform for managing VARs, GSIs, resellers, and tech partners alongside cloud marketplace co-sell — not a generic CRM plugin. This term establishes what it is, what it replaces (spreadsheets, email, disconnected tools), and why it's distinct from a general-purpose PRM by integrating marketplace co-sell motions natively.",
       },
       {
         name: "Integration Partner",
