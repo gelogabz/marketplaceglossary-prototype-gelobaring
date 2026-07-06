@@ -122,19 +122,30 @@ function buildStep(step, index) {
 
 function buildNextNav(walkthrough) {
   const prev = wtIndex > 0 ? walkthroughs[wtIndex - 1] : null;
-  const next = wtIndex >= 0 && wtIndex < walkthroughs.length - 1 ? walkthroughs[wtIndex + 1] : null;
+  const next =
+    wtIndex >= 0 && wtIndex < walkthroughs.length - 1
+      ? walkthroughs[wtIndex + 1]
+      : null;
   if (!prev && !next) return "";
   return `
     <div class="wt-seq-nav">
       <div class="wt-seq-nav-inner">
-        ${prev ? `<a href="walkthrough.html?w=${prev.slug}" class="wt-seq-btn wt-seq-btn--prev">
+        ${
+          prev
+            ? `<a href="walkthrough.html?w=${prev.slug}" class="wt-seq-btn wt-seq-btn--prev">
           <span class="wt-seq-label">Previous</span>
           <span class="wt-seq-title">${prev.title}</span>
-        </a>` : `<span></span>`}
-        ${next ? `<a href="walkthrough.html?w=${next.slug}" class="wt-seq-btn wt-seq-btn--next">
+        </a>`
+            : `<span></span>`
+        }
+        ${
+          next
+            ? `<a href="walkthrough.html?w=${next.slug}" class="wt-seq-btn wt-seq-btn--next">
           <span class="wt-seq-label">Next</span>
           <span class="wt-seq-title">${next.title}</span>
-        </a>` : `<span></span>`}
+        </a>`
+            : `<span></span>`
+        }
       </div>
     </div>`;
 }

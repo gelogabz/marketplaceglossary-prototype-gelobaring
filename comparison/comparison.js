@@ -164,8 +164,8 @@ function buildTable(filter) {
   const visible = filter
     ? rows.filter((g) => {
         if (conceptLabel(g).toLowerCase().includes(filterLower)) return true;
-        return Object.values(g).some(
-          (arr) => arr?.some((t) => t.name.toLowerCase().includes(filterLower))
+        return Object.values(g).some((arr) =>
+          arr?.some((t) => t.name.toLowerCase().includes(filterLower)),
         );
       })
     : rows;

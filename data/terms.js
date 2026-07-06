@@ -5079,7 +5079,8 @@ export const terms = [
     name: "Partner Relationship Management (PRM) System",
     tags: ["suger", "general", "cosell", "aws", "azure", "gcp"],
     def: "A platform that helps companies recruit, onboard, enable, and manage partners, while supporting collaboration, deal tracking, and performance across the partner lifecycle. Suger extends traditional PRM by acting as the execution layer for cloud marketplace and co-sell workflows—automating CPPOs, syncing CRM deal data to AWS, Azure, and GCP, and enabling partners to transact and track deals in a unified system.",
-    alias: "Related: Value Added Reseller (VAR), Global System Integrator (GSI), Learning Management System (LMS) — Suger, CRM Enrichment, Co-sell",
+    alias:
+      "Related: Value Added Reseller (VAR), Global System Integrator (GSI), Learning Management System (LMS) — Suger, CRM Enrichment, Co-sell",
     source: "https://doc.suger.io/get-started/",
     difficulty: "intermediate",
     category: "cosell",
@@ -5362,7 +5363,8 @@ export const terms = [
     def: "Agentic AI capabilities embedded in AWS Partner Central (launched March 2026) that assist partner teams with pipeline insights, sales play recommendations, and automated ACE opportunity management. Can auto-populate opportunity fields from meeting transcripts or emails, recommend funding at the opportunity level, and generate pre-filled fund requests. A June 2026 expansion extended agent-assisted co-sell qualification to every deal — enabling partners to apply agentic acceleration across their full pipeline without manually selecting eligible opportunities. Available in all commercial AWS Regions.",
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Funding — AWS, Partner Central 3.0 (PC3.0) — AWS",
-    source: "https://aws.amazon.com/about-aws/whats-new/2026/06/accelerate-co-selling-with-agents/",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/06/accelerate-co-selling-with-agents/",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -5774,11 +5776,10 @@ export const terms = [
   {
     name: "ISV Success Program — Azure",
     tags: ["azure", "cosell", "funding"],
-    def: "A Microsoft program that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace. The program has two tiers: the self-service Advanced Package (available to all eligible ISVs) includes $50K Azure credits, up to $100K cash incentives for AI/Analytics builds, and $50K in migration simplification benefits; the invitation-only Expanded Benefits tier adds $25K Azure sponsorship, 50 hours of technical consultations, and a $5K GitHub Copilot bonus. Enrollment in ISV Success is required for Business Applications co-sell eligible status for Dynamics 365 and Power Apps ISVs.",
+    def: "A Microsoft program that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace. The program has two tiers: the self-service Advanced Package (available to all eligible ISVs) includes $50K Azure credits, up to $100K cash incentives for AI/Analytics builds, and $50K in migration simplification benefits; the invitation-only Expanded Benefits tier adds $25K Azure sponsorship, 50 hours of technical consultations, and a $5K GitHub Copilot bonus. Enrollment in ISV Success is required for Business Applications co-sell eligible status for Dynamics 365 and Power Apps ISVs. ISV Success is scheduled for consolidation into Frontier Accelerate for Marketplace in fall 2026.",
     alias:
-      "AWS equivalent: ISV Accelerate — AWS | GCP equivalent: Build Engagement Model — GCP | Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure",
-    source:
-      "https://learn.microsoft.com/en-us/partner-center/referrals/isv-success",
+      "AWS equivalent: ISV Accelerate — AWS | GCP equivalent: Build Engagement Model — GCP | Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure, Frontier Accelerate for Marketplace — Azure",
+    source: "https://www.microsoft.com/isv/offer-benefits",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -7497,7 +7498,10 @@ export const terms = [
       },
       { name: "Outbound Referral", slug: "outbound-referral" },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
-      { name: "Microsoft Managed Account — Azure", slug: "microsoft-managed-account-—-azure" },
+      {
+        name: "Microsoft Managed Account — Azure",
+        slug: "microsoft-managed-account-—-azure",
+      },
     ],
   },
   {
@@ -7736,22 +7740,22 @@ export const terms = [
   {
     name: "Insulin",
     tags: ["suger"],
-    def: "Suger's AI-powered workspace embedded in the Suger Console, designed for ISVs operating across cloud marketplaces. Provides an AI chat interface with streaming responses and tool execution, specialized agents for marketplace tasks, shared team channels for multi-user collaboration, and Watches — automated recurring agent runs that fire on a schedule or in response to external events. A built-in Skills & Marketplace catalog lets users install pre-built agents and instruction files with a single click.",
+    def: "Suger's AI-powered workspace embedded in the Suger Console, designed for ISVs operating across cloud marketplaces. Provides an AI chat interface with streaming responses and tool execution, specialized agents for marketplace tasks, shared team channels for multi-user collaboration, and Jobs — automated recurring agent runs that fire on a schedule or in response to external events. A built-in Skills & Marketplace catalog lets users install pre-built agents and instruction files with a single click.",
     alias:
-      "Related: Insulin Agent — Suger, Insulin Watch — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
+      "Related: Insulin Agent — Suger, Insulin Jobs — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/",
     difficulty: "beginner",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
     useCases: [
       "Using Insulin's specialized agents to automate marketplace workflows such as offer creation, co-sell referral submission, or entitlement tracking",
-      "Setting up Watches to run recurring agent tasks — like monitoring deal status changes or triggering notifications — without manual intervention",
+      "Setting up Jobs to run recurring agent tasks — like monitoring deal status changes or triggering notifications — without manual intervention",
       "Installing pre-built skills from the Insulin marketplace catalog to give agents specialized knowledge about specific marketplace workflows",
     ],
     context: ["Suger Console", "AI Workspace", "Marketplace Automation"],
     related: [
       { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
-      { name: "Insulin Watch — Suger", slug: "insulin-watch-—-suger" },
+      { name: "Insulin Jobs — Suger", slug: "insulin-jobs-—-suger" },
       { name: "Insulin Channel — Suger", slug: "insulin-channel-—-suger" },
       { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
       {
@@ -8448,40 +8452,39 @@ export const terms = [
     ],
   },
   {
-    name: "Insulin Watch — Suger",
+    name: "Insulin Jobs — Suger",
     tags: ["suger"],
-    def: "An automation primitive in Suger's Insulin platform that runs an Insulin Agent on a cron schedule or in response to an event trigger. Watches can monitor marketplace signals — such as entitlement changes, deal stage updates, or revenue events — and automatically invoke the configured agent to take action. Insulin Watch is the event-driven execution layer for Insulin Agents, distinct from manual agent chat invocations.",
+    def: "An automated execution system within Suger Insulin that connects an Insulin Agent to a trigger and runs the agent when the trigger fires — without manual intervention. Supports three trigger modes: manual (on-demand run), cron schedule (recurring time pattern), and external push event (webhook or event signal from an external system). Renamed from Insulin Watch in 2026 to reflect expanded trigger capabilities beyond scheduled monitoring. Jobs enable ISV operations teams to automate recurring marketplace tasks — monitoring entitlements, generating reports, flagging stale co-sell referrals — as background processes that run independently of the Insulin Chat interface.",
     alias:
-      "Related: Insulin, Insulin Agent — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
-    source: "https://doc.suger.io/insulin/",
-    difficulty: "advanced",
+      "Related: Insulin Agent — Suger, Insulin Chat — Suger, Insulin Channel — Suger, Insulin Skill — Suger",
+    source: "https://doc.suger.io/insulin/jobs/",
+    difficulty: "intermediate",
     category: "operations",
-    whoFor: ["Suger Users", "ISVs / Sellers"],
+    whoFor: ["Suger Users"],
     useCases: [
-      "Configuring an Insulin Watch to monitor daily revenue changes and automatically trigger an agent to generate a deal summary",
-      "Setting up event-driven automation in Insulin using a Watch to respond to entitlement lifecycle events without manual agent invocation",
+      "Scheduling a recurring Insulin Agent job to scan co-sell opportunities for stale referrals every Monday morning without manual triggering",
+      "Setting up an external push trigger so an Insulin Agent runs automatically when a new entitlement activates in Suger",
+      "Automating weekly marketplace revenue reports by connecting a reporting agent to a cron Job that generates and delivers the output on schedule",
     ],
-    context: ["Suger Console", "Insulin Platform", "Marketplace Automation"],
+    context: [
+      "Suger Insulin",
+      "Automation Workflows",
+      "Suger Console",
+      "Agent Execution",
+    ],
     related: [
-      { name: "Insulin", slug: "insulin" },
       { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
-      {
-        name: "Insulin Channel — Suger",
-        slug: "insulin-channel-—-suger",
-      },
+      { name: "Insulin Chat — Suger", slug: "insulin-chat-—-suger" },
+      { name: "Insulin Channel — Suger", slug: "insulin-channel-—-suger" },
       { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
-      {
-        name: "Insulin Marketplace — Suger",
-        slug: "insulin-marketplace-—-suger",
-      },
     ],
   },
   {
     name: "Insulin Agent — Suger",
     tags: ["suger"],
-    def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, system prompt, model configuration, and optional tool access. Insulin ships with 20+ pre-built agents organized by function (development, communication, project management, data analytics, sales CRM), and supports fully custom agent creation. Agents can be invoked manually in chat, triggered via Insulin Watch, or assigned to run within an Insulin Channel. Role-based permissions (Admin, Editor, User, Viewer) control who can edit or use each agent, with ownership transfer supported. Pre-built and community agents are available to install through the Insulin Marketplace.",
+    def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, system prompt, model configuration, and optional tool access. Insulin ships with 20+ pre-built agents organized by function (development, communication, project management, data analytics, sales CRM), and supports fully custom agent creation. Agents can be invoked manually in chat, triggered via an Insulin Job, or assigned to run within an Insulin Channel. Role-based permissions (Admin, Editor, User, Viewer) control who can edit or use each agent, with ownership transfer supported. Pre-built and community agents are available to install through the Insulin Marketplace.",
     alias:
-      "Related: Insulin, Insulin Watch — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
+      "Related: Insulin, Insulin Jobs — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/agents/",
     difficulty: "intermediate",
     category: "operations",
@@ -8493,7 +8496,7 @@ export const terms = [
     context: ["Suger Console", "Insulin Platform", "AI Workspace"],
     related: [
       { name: "Insulin", slug: "insulin" },
-      { name: "Insulin Watch — Suger", slug: "insulin-watch-—-suger" },
+      { name: "Insulin Jobs — Suger", slug: "insulin-jobs-—-suger" },
       {
         name: "Insulin Channel — Suger",
         slug: "insulin-channel-—-suger",
@@ -8510,7 +8513,7 @@ export const terms = [
     tags: ["suger"],
     def: "A persistent, multi-user and multi-agent group conversation space within Suger's Insulin platform. Channels support role-based access control and up to 20 agents simultaneously, enabling collaborative workflows where multiple team members and multiple specialized agents operate in shared context. Distinct from a direct 1:1 agent chat — Channels are designed for ongoing operational processes such as a nightly deal review or a revenue operations war room.",
     alias:
-      "Related: Insulin, Insulin Agent — Suger, Insulin Watch — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
+      "Related: Insulin, Insulin Agent — Suger, Insulin Jobs — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/",
     difficulty: "advanced",
     category: "operations",
@@ -8523,7 +8526,7 @@ export const terms = [
     related: [
       { name: "Insulin", slug: "insulin" },
       { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
-      { name: "Insulin Watch — Suger", slug: "insulin-watch-—-suger" },
+      { name: "Insulin Jobs — Suger", slug: "insulin-jobs-—-suger" },
       { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
       {
         name: "Insulin Marketplace — Suger",
@@ -9075,7 +9078,7 @@ export const terms = [
   {
     name: "Professional Services Listing — AWS",
     tags: ["aws", "offers"],
-    def: "A distinct AWS Marketplace product type for selling time-bound, deliverable-based consulting, implementation, training, and managed services engagements. Unlike SaaS or AMI listings, Professional Services products do not provision software entitlements — instead, the buyer receives a statement of work or engagement scope. Private Offers for Professional Services support both Flexible Payment Schedules and Variable Payments as billing mechanisms, making them the primary vehicle for bundling advisory work alongside software on a single marketplace transaction. As of June 16, 2026, AWS reduced the listing fee for Professional Services private offers from 2.5% to 0.5%, applying to all new private offers across all AWS Regions and currencies.",
+    def: "A distinct AWS Marketplace product type for selling time-bound, deliverable-based consulting, implementation, training, and managed services engagements. Unlike SaaS or AMI listings, Professional Services products do not provision software entitlements — instead, the buyer receives a statement of work or engagement scope. Private Offers for Professional Services support both Flexible Payment Schedules and Variable Payments as billing mechanisms, making them the primary vehicle for bundling advisory work alongside software on a single marketplace transaction. As of June 16, 2026, AWS reduced the listing fee for Professional Services private offers from 2.5% to 0.5%, applying to all new private offers across all AWS Regions and currencies. As of March 2026, AWS first-party Professional Services are also available as transactable listings in AWS Marketplace, marking the first time Amazon itself has offered consulting services for purchase through the marketplace alongside third-party ISV and SI listings.",
     alias:
       "Azure equivalent: Professional Services Offer — Azure | Related: Variable Payments — AWS, Flexible Payment Schedule / Installment Plan, Private Offer",
     source:
@@ -10191,7 +10194,7 @@ export const terms = [
     tags: ["suger"],
     def: "An instruction file — implemented as a Markdown document — that provides Suger Insulin agents with specialized knowledge, procedures, and domain expertise for specific cloud GTM workflows. Agents automatically discover and load relevant skills based on conversation context without requiring manual invocation. Skills can be created by uploading Markdown files, building interactively with an agent, importing from a GitHub repository, or installing from the Insulin Marketplace. Once installed, a skill's content becomes part of the agent's active context for all relevant conversations in that workspace.",
     alias:
-      "Related: Insulin Agent — Suger, Insulin Marketplace — Suger, Insulin — Suger, Insulin Watch — Suger",
+      "Related: Insulin Agent — Suger, Insulin Marketplace — Suger, Insulin — Suger, Insulin Jobs — Suger",
     source: "https://doc.suger.io/insulin/marketplace/",
     difficulty: "intermediate",
     category: "operations",
@@ -10367,7 +10370,8 @@ export const terms = [
     name: "Deal Registration — Suger",
     tags: ["suger", "channel"],
     def: "The act of a partner — VAR, reseller, GSI, tech partner, or distributor — formally claiming credit for a deal with an ISV before or during an active sales cycle. In Suger PRM, a partner submits a deal registration through the white-label portal; Suger automatically creates or updates a Salesforce Opportunity, routes the registration for ISV approval, and fires notifications so neither side loses track. Approved registrations protect the partner's margin and give the ISV a real-time view of partner-sourced pipeline alongside hyperscaler co-sell on the same CRM record.",
-    alias: "Related: Partner Relationship Management (PRM) System, Value Added Reseller (VAR), Channel Partner (CP), Commission Tracking — Suger, Deal Registration — Azure",
+    alias:
+      "Related: Partner Relationship Management (PRM) System, Value Added Reseller (VAR), Channel Partner (CP), Commission Tracking — Suger, Deal Registration — Azure",
     source: "https://doc.suger.io/get-started/",
     difficulty: "intermediate",
     category: "operations",
@@ -10405,7 +10409,8 @@ export const terms = [
     name: "DSOR (Distribution Sell-Out Reseller Reporting)",
     tags: ["general", "channel"],
     def: "A reporting standard in multi-tier distribution where distributors — such as TD Synnex, Ingram Micro, or Pax8 — report the downstream reseller-level sales data back to the ISV. Because distributors transact with ISVs at a tier-one level but sell through a network of resellers to end customers, DSOR gives the ISV visibility into which reseller actually closed the deal, what the end-customer price was, and how much volume each partner in the channel is driving. Without DSOR, ISVs see distributor aggregates but not the reseller-level attribution needed for accurate commissions, deal protection, and program compliance.",
-    alias: "Related: Distributor, Value Added Reseller (VAR), Commission Tracking — Suger, Deal Registration — Suger",
+    alias:
+      "Related: Distributor, Value Added Reseller (VAR), Commission Tracking — Suger, Deal Registration — Suger",
     source: "https://doc.suger.io/get-started/",
     difficulty: "advanced",
     category: "advanced",
@@ -10438,7 +10443,8 @@ export const terms = [
     name: "Commission Tracking — Suger",
     tags: ["suger", "channel"],
     def: "Suger PRM's module for defining, managing, and paying out partner commissions. ISVs configure commission plans — flat fee, percentage of deal value, tiered, or per-deal override — and Suger calculates the payout for each partner-sourced or partner-influenced deal as it closes. Partners can see their earned commissions in the white-label portal, giving channel teams a defensible, auditable alternative to manual spreadsheet payouts at quarter end. Commission plans connect directly to deal registration records so attribution and payout flow through the same system.",
-    alias: "Related: Deal Registration — Suger, Partner Relationship Management (PRM) System, Distributor, DSOR (Distribution Sell-Out Reseller Reporting)",
+    alias:
+      "Related: Deal Registration — Suger, Partner Relationship Management (PRM) System, Distributor, DSOR (Distribution Sell-Out Reseller Reporting)",
     source: "https://doc.suger.io/get-started/",
     difficulty: "intermediate",
     category: "operations",
@@ -10539,7 +10545,8 @@ export const terms = [
     name: "Partner Portal — Suger",
     tags: ["suger"],
     def: "A white-label, partner-facing web portal provisioned through Suger PRM that ISVs deploy under their own domain and branding. Partners authenticate via SSO/SAML to register deals, access enablement content, track commission status, and manage their activity — without any Suger branding visible. The portal can go live in under five days with no implementation fee.",
-    alias: "Related: Partner Relationship Management (PRM) System, Learning Management System (LMS) — Suger, Value Added Reseller (VAR), Buyer Portal — Suger, Deal Registration — Suger",
+    alias:
+      "Related: Partner Relationship Management (PRM) System, Learning Management System (LMS) — Suger, Value Added Reseller (VAR), Buyer Portal — Suger, Deal Registration — Suger",
     source: "https://www.suger.io/prm/",
     difficulty: "intermediate",
     category: "operations",
@@ -10549,9 +10556,17 @@ export const terms = [
       "Give resellers a single login to register deals, access content, and track payouts",
       "Enable SSO for partner users via your existing identity provider",
     ],
-    context: ["Suger PRM", "Partner Enablement", "Deal Registration", "Suger Console"],
+    context: [
+      "Suger PRM",
+      "Partner Enablement",
+      "Deal Registration",
+      "Suger Console",
+    ],
     related: [
-      { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
       { name: "Deal Registration — Suger", slug: "deal-registration-—-suger" },
       { name: "Buyer Portal — Suger", slug: "buyer-portal-—-suger" },
     ],
@@ -10560,7 +10575,8 @@ export const terms = [
     name: "Partner Tiering — Suger",
     tags: ["suger"],
     def: "A classification system within Suger PRM that groups channel partners into tiers (such as Silver, Gold, Platinum) based on performance, revenue contribution, or certification status. Tier assignments control approval routing for deal registrations, commission plan eligibility, and access to incentive programs — ensuring higher-performing partners receive differentiated treatment automatically.",
-    alias: "Related: Partner Relationship Management (PRM) System, Deal Registration — Suger, Commission Plan — Suger",
+    alias:
+      "Related: Partner Relationship Management (PRM) System, Deal Registration — Suger, Commission Plan — Suger",
     source: "https://www.suger.io/prm/",
     difficulty: "intermediate",
     category: "operations",
@@ -10570,18 +10586,30 @@ export const terms = [
       "Apply higher commission rates automatically for Gold and Platinum partners",
       "Restrict access to premium enablement content to certified-tier partners",
     ],
-    context: ["Suger PRM", "Deal Registration", "Commission Plans", "Partner Portal — Suger"],
+    context: [
+      "Suger PRM",
+      "Deal Registration",
+      "Commission Plans",
+      "Partner Portal — Suger",
+    ],
     related: [
-      { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
       { name: "Deal Registration — Suger", slug: "deal-registration-—-suger" },
-      { name: "Commission Tracking — Suger", slug: "commission-tracking-—-suger" },
+      {
+        name: "Commission Tracking — Suger",
+        slug: "commission-tracking-—-suger",
+      },
     ],
   },
   {
     name: "Commission Plan — Suger",
     tags: ["suger"],
     def: "A configurable template in Suger PRM that defines the commission rate, calculation basis, and payout trigger for a class of channel partners or deal types. Plans are applied at the program level with optional per-deal overrides. When a deal closes in the connected CRM, Suger calculates the payout automatically and initiates the full payout lifecycle.",
-    alias: "Related: Commission Tracking — Suger, Partner Tiering — Suger, SPIFF — Suger",
+    alias:
+      "Related: Commission Tracking — Suger, Partner Tiering — Suger, SPIFF — Suger",
     source: "https://www.suger.io/prm/",
     difficulty: "intermediate",
     category: "billing",
@@ -10591,9 +10619,17 @@ export const terms = [
       "Override the standard plan for a strategic partner negotiating a higher rate",
       "Trigger automatic payout calculation when an opportunity closes in Salesforce",
     ],
-    context: ["Suger PRM", "Commission Tracking", "Partner Payouts", "Salesforce Integration"],
+    context: [
+      "Suger PRM",
+      "Commission Tracking",
+      "Partner Payouts",
+      "Salesforce Integration",
+    ],
     related: [
-      { name: "Commission Tracking — Suger", slug: "commission-tracking-—-suger" },
+      {
+        name: "Commission Tracking — Suger",
+        slug: "commission-tracking-—-suger",
+      },
       { name: "Partner Tiering — Suger", slug: "partner-tiering-—-suger" },
       { name: "SPIFF — Suger", slug: "spiff-—-suger" },
     ],
@@ -10602,7 +10638,8 @@ export const terms = [
     name: "SPIFF — Suger",
     tags: ["suger"],
     def: "A short-term performance incentive program (SPIFF) or special performance fund (SPF) configured within Suger PRM to motivate channel partners around a specific product, time window, or deal type. SPIFFs pay a bonus on top of the standard commission plan and are tracked separately with their own payout lifecycle and reporting.",
-    alias: "Related: Commission Plan — Suger, Commission Tracking — Suger, Partner Relationship Management (PRM) System",
+    alias:
+      "Related: Commission Plan — Suger, Commission Tracking — Suger, Partner Relationship Management (PRM) System",
     source: "https://www.suger.io/prm/",
     difficulty: "intermediate",
     category: "operations",
@@ -10612,18 +10649,30 @@ export const terms = [
       "Create a special performance fund to accelerate a specific partner's pipeline",
       "Track SPIFF payouts separately from baseline commissions for clean reporting",
     ],
-    context: ["Suger PRM", "Partner Incentives", "Commission Tracking", "Partner Portal — Suger"],
+    context: [
+      "Suger PRM",
+      "Partner Incentives",
+      "Commission Tracking",
+      "Partner Portal — Suger",
+    ],
     related: [
       { name: "Commission Plan — Suger", slug: "commission-plan-—-suger" },
-      { name: "Commission Tracking — Suger", slug: "commission-tracking-—-suger" },
-      { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
+      {
+        name: "Commission Tracking — Suger",
+        slug: "commission-tracking-—-suger",
+      },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
     ],
   },
   {
     name: "Learning Management System (LMS) — Suger",
     tags: ["suger"],
     def: "A partner enablement module built into Suger PRM that lets ISVs create and deliver structured training — courses, certifications, and onboarding modules — directly through the partner portal. Content is organized by partner tier or role, with completion tracking that can gate deal registration access or commission eligibility behind required training. Accepts SCORM-compliant course packages so organizations with existing training libraries can import them without rebuilding.",
-    alias: "Related: SCORM, Partner Portal — Suger, Partner Tiering — Suger, Partner Relationship Management (PRM) System",
+    alias:
+      "Related: SCORM, Partner Portal — Suger, Partner Tiering — Suger, Partner Relationship Management (PRM) System",
     source: "https://www.suger.io/prm/",
     difficulty: "intermediate",
     category: "operations",
@@ -10634,19 +10683,28 @@ export const terms = [
       "Import existing SCORM training modules into the partner portal without rebuilding them",
       "Track partner enablement completion to qualify commission eligibility by tier",
     ],
-    context: ["Suger PRM", "Partner Portal — Suger", "Partner Enablement", "Channel Onboarding"],
+    context: [
+      "Suger PRM",
+      "Partner Portal — Suger",
+      "Partner Enablement",
+      "Channel Onboarding",
+    ],
     related: [
       { name: "SCORM", slug: "scorm" },
       { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
       { name: "Partner Tiering — Suger", slug: "partner-tiering-—-suger" },
-      { name: "Partner Relationship Management (PRM) System", slug: "partner-relationship-management-prm-system" },
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
     ],
   },
   {
     name: "SCORM",
     tags: ["general"],
     def: "Sharable Content Object Reference Model — an e-learning technical standard that defines how online training content packages communicate with a learning management system. SCORM-compliant courses can be uploaded to any compatible LMS, which then tracks completion, quiz scores, and time-on-module data without custom integration. Most enterprise training authoring tools (Articulate Storyline, iSpring, Adobe Captivate) export SCORM packages, making it the default interchange format for organizations moving existing training content into a partner enablement platform like Suger PRM.",
-    alias: "Related: Learning Management System (LMS) — Suger, Partner Portal — Suger",
+    alias:
+      "Related: Learning Management System (LMS) — Suger, Partner Portal — Suger",
     source: "https://adlnet.gov/projects/scorm/",
     difficulty: "intermediate",
     category: "operations",
@@ -10656,9 +10714,17 @@ export const terms = [
       "Maintain one training library that works across multiple LMS platforms via SCORM export",
       "Verify partner training completion before granting deal registration or commission eligibility",
     ],
-    context: ["Partner Enablement", "Learning Management System (LMS) — Suger", "Suger PRM", "E-learning Standards"],
+    context: [
+      "Partner Enablement",
+      "Learning Management System (LMS) — Suger",
+      "Suger PRM",
+      "E-learning Standards",
+    ],
     related: [
-      { name: "Learning Management System (LMS) — Suger", slug: "learning-management-system-lms-—-suger" },
+      {
+        name: "Learning Management System (LMS) — Suger",
+        slug: "learning-management-system-lms-—-suger",
+      },
       { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
     ],
   },
@@ -10666,8 +10732,10 @@ export const terms = [
     name: "Microsoft Managed Account — Azure",
     tags: ["azure", "cosell"],
     def: "A customer account classification in Microsoft Partner Center indicating the account is actively managed by Microsoft's sales team. When a partner selects a Microsoft Managed account while creating a co-sell opportunity, the deal becomes eligible for Azure IP co-sell deal registration — a prerequisite for PRACR reporting and co-sell incentive credits. Microsoft Managed accounts appear on a dedicated tab in the Partner Center customer search, alongside Microsoft Unmanaged and Other (Moody's database) tabs, and Microsoft consolidates multiple entries for the same customer into a single linked row.",
-    alias: "Related: Microsoft Unmanaged Account — Azure, Deal Registration — Azure, Partner Center — Azure, Partner Reported Azure Consumed Revenue (PRACR) — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
+    alias:
+      "Related: Microsoft Unmanaged Account — Azure, Deal Registration — Azure, Partner Center — Azure, Partner Reported Azure Consumed Revenue (PRACR) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
@@ -10676,20 +10744,33 @@ export const terms = [
       "Confirming deal registration eligibility before marking a co-sell opportunity as won and submitting for PRACR reporting",
       "Identifying accounts with an existing Microsoft sales relationship to receive faster seller engagement and response",
     ],
-    context: ["Microsoft Partner Center", "Azure Co-sell", "Deal Registration", "Azure IP Co-sell"],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Co-sell",
+      "Deal Registration",
+      "Azure IP Co-sell",
+    ],
     related: [
-      { name: "Microsoft Unmanaged Account — Azure", slug: "microsoft-unmanaged-account-—-azure" },
+      {
+        name: "Microsoft Unmanaged Account — Azure",
+        slug: "microsoft-unmanaged-account-—-azure",
+      },
       { name: "Deal Registration — Azure", slug: "deal-registration-—-azure" },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
-      { name: "Partner Reported Azure Consumed Revenue (PRACR) — Azure", slug: "partner-reported-azure-consumed-revenue-pracr-—-azure" },
+      {
+        name: "Partner Reported Azure Consumed Revenue (PRACR) — Azure",
+        slug: "partner-reported-azure-consumed-revenue-pracr-—-azure",
+      },
     ],
   },
   {
     name: "Microsoft Unmanaged Account — Azure",
     tags: ["azure", "cosell"],
     def: "A customer account classification in Microsoft Partner Center indicating the account does not have an active Microsoft sales team relationship. When a partner selects a Microsoft Unmanaged account while creating a co-sell opportunity, the deal is not eligible for Azure IP co-sell deal registration, which blocks PRACR reporting and co-sell incentive credits for that opportunity. Partners are encouraged to search for Microsoft Managed accounts first; alternatively, selecting from the Other (Moody's database) tab defers managed/unmanaged determination to Microsoft's internal account-matching process after the referral is created.",
-    alias: "Related: Microsoft Managed Account — Azure, Deal Registration — Azure, Partner Center — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
+    alias:
+      "Related: Microsoft Managed Account — Azure, Deal Registration — Azure, Partner Center — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
@@ -10698,9 +10779,17 @@ export const terms = [
       "Understanding why a specific deal does not qualify for PRACR reporting or co-sell incentive credits",
       "Deciding whether to proceed with a private or partner-led deal when no Microsoft Managed account match is found",
     ],
-    context: ["Microsoft Partner Center", "Azure Co-sell", "Deal Registration", "Azure IP Co-sell"],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Co-sell",
+      "Deal Registration",
+      "Azure IP Co-sell",
+    ],
     related: [
-      { name: "Microsoft Managed Account — Azure", slug: "microsoft-managed-account-—-azure" },
+      {
+        name: "Microsoft Managed Account — Azure",
+        slug: "microsoft-managed-account-—-azure",
+      },
       { name: "Deal Registration — Azure", slug: "deal-registration-—-azure" },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
     ],
@@ -10709,8 +10798,10 @@ export const terms = [
     name: "AI-Assisted Product Listing — AWS",
     tags: ["aws"],
     def: "An AI capability in AWS Partner Central and AMMP (launched June 16, 2026) that automatically generates and validates product listing content for AWS Marketplace from existing seller digital assets — website URLs, PDFs, case studies, and product documentation. Partner Assistant reads imported materials and produces content across all required listing fields (description, highlights, categories, metadata), validates against AWS Marketplace size and format requirements, and returns a quality score comparing the listing against AWS best practices. Not available in GovCloud or China Regions.",
-    alias: "Related: AWS Marketplace — AWS, AWS Partner Central Agents — AWS, Listing",
-    source: "https://docs.aws.amazon.com/marketplace/latest/userguide/partner-assistant.html",
+    alias:
+      "Related: AWS Marketplace — AWS, AWS Partner Central Agents — AWS, Listing",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/partner-assistant.html",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -10727,7 +10818,10 @@ export const terms = [
     ],
     related: [
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
-      { name: "AWS Partner Central Agents — AWS", slug: "aws-partner-central-agents-—-aws" },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
       { name: "Listing", slug: "listing" },
     ],
   },
@@ -10735,8 +10829,10 @@ export const terms = [
     name: "AWS Marketplace MCP Server — AWS",
     tags: ["aws"],
     def: "An AWS-provided Model Context Protocol (MCP) server (GA May 2026) that enables AI assistants and agents to programmatically discover, evaluate, and transact AWS Marketplace products using natural language queries. Capabilities include finding products by business need, generating AI-written vendor comparison reports, and producing purchase proposals tailored to buyer requirements. Available without coding via the AWS Marketplace connector for Claude, where tool discovery and invocation happen automatically. Distinct from Suger's MCP Integration, which connects Suger platform workflows to AI models — this MCP server is buyer-facing and focused on product discovery and procurement.",
-    alias: "Related: MCP Integration — Suger, AWS Marketplace — AWS, AWS Partner Central Agents — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/APIReference/marketplace-mcp-server.html",
+    alias:
+      "Related: MCP Integration — Suger, AWS Marketplace — AWS, AWS Partner Central Agents — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/APIReference/marketplace-mcp-server.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["Enterprise Buyers", "ISVs / Sellers", "Suger Users"],
@@ -10754,15 +10850,20 @@ export const terms = [
     related: [
       { name: "MCP Integration — Suger", slug: "mcp-integration-—-suger" },
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
-      { name: "AWS Partner Central Agents — AWS", slug: "aws-partner-central-agents-—-aws" },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
     ],
   },
   {
     name: "Frontier Accelerate for Marketplace — Azure",
     tags: ["azure", "offers", "cosell"],
     def: "Microsoft's unified ISV program for FY27 (launching fall 2026) that consolidates ISV Success, Marketplace Rewards, Azure IP co-sell, and Solutions Partner with certified software designations into a single enrollment and benefits track. Azure sponsorship within Frontier Accelerate is restructured into use-case-specific allocations: a larger dedicated allowance for customer deployments and a smaller separate allowance for no-cost trials. The program is designed to reduce administrative overhead for software companies transacting on Microsoft Marketplace by eliminating the need to manage multiple separate program enrollments.",
-    alias: "Related: ISV Success Program — Azure, Marketplace Rewards — Azure, Co-sell Eligible / Incentivized — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june",
+    alias:
+      "Related: ISV Success Program — Azure, Marketplace Rewards — Azure, Co-sell Eligible / Incentivized — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june",
     difficulty: "intermediate",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -10778,17 +10879,28 @@ export const terms = [
       "FY27 Partner Programs",
     ],
     related: [
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
-      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
-      { name: "Co-sell Eligible / Incentivized — Azure", slug: "co-sell-eligible-/-incentivized-—-azure" },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
     ],
   },
   {
     name: "Lead Enrichment — AWS",
     tags: ["aws", "cosell"],
     def: "An AWS Partner Central capability (launched June 15, 2026) that augments partner-uploaded or AWS-sourced leads with AWS-generated propensity-to-buy signals and program eligibility recommendations. For each lead, the feature returns a Marketplace purchase likelihood score (High/Medium/Low), alignment with AWS solution categories, and eligibility flags for programs including Partner Greenfield Program (PGP), Pioneer Credits, and Partner-Led Sales Motion. Available to all ACE-eligible AWS Partners via the Partner Central console and Partner Central API (US East N. Virginia Region).",
-    alias: "Related: APN Customer Engagements (ACE) — AWS, Partner Greenfield Program (PGP) — AWS, AWS Marketplace Engagement Score — AWS, AWS Partner Central Agents — AWS",
-    source: "https://docs.aws.amazon.com/partner-central/latest/sales-guide/lead-enrichment.html",
+    alias:
+      "Related: APN Customer Engagements (ACE) — AWS, Partner Greenfield Program (PGP) — AWS, AWS Marketplace Engagement Score — AWS, AWS Partner Central Agents — AWS",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/sales-guide/lead-enrichment.html",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Suger Users", "AWS Sales"],
@@ -10804,18 +10916,32 @@ export const terms = [
       "Partner-Led Sales",
     ],
     related: [
-      { name: "APN Customer Engagements (ACE) — AWS", slug: "apn-customer-engagements-ace-—-aws" },
-      { name: "Partner Greenfield Program (PGP) — AWS", slug: "partner-greenfield-program-pgp-—-aws" },
-      { name: "AWS Marketplace Engagement Score — AWS", slug: "aws-marketplace-engagement-score-—-aws" },
-      { name: "AWS Partner Central Agents — AWS", slug: "aws-partner-central-agents-—-aws" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "Partner Greenfield Program (PGP) — AWS",
+        slug: "partner-greenfield-program-pgp-—-aws",
+      },
+      {
+        name: "AWS Marketplace Engagement Score — AWS",
+        slug: "aws-marketplace-engagement-score-—-aws",
+      },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
     ],
   },
   {
     name: "Amazon Connect Customer Services Competency — AWS",
     tags: ["aws"],
     def: "An AWS Specialization (announced June 2026) that recognizes Services Partners with validated expertise in transforming enterprise customer experience on Amazon Connect. Partners are validated in two categories: Contact Center Transformation (migrating legacy contact center infrastructure) and AI-Powered Customer Experience (operationalizing AI at scale on Amazon Connect). The Competency replaces the Amazon Connect Service Delivery Program, which is deprecated June 1, 2027. Benefits include $50K Marketing Development Funds (MDF) in both 2026 and 2027, AWS Migration Acceleration Program funding for customer migrations, and dedicated co-selling support.",
-    alias: "Related: Marketing Development Funds (MDF) — AWS, AWS Marketplace — AWS",
-    source: "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-announces-amazon-connect-customer-services-competency/",
+    alias:
+      "Related: Marketing Development Funds (MDF) — AWS, AWS Marketplace — AWS",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-announces-amazon-connect-customer-services-competency/",
     difficulty: "advanced",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
@@ -10831,7 +10957,10 @@ export const terms = [
       "Partner Marketing",
     ],
     related: [
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
     ],
   },
@@ -10865,7 +10994,8 @@ export const terms = [
     name: "Insulin Chat — Suger",
     tags: ["suger"],
     def: "The conversational interface layer of the Suger Insulin platform through which users interact with Insulin agents in multi-turn threads. Supports streaming token-by-token responses, tool execution with expandable status indicators (running/succeeded/failed), and two safety gates: plan approvals (user confirms a multi-step task before execution) and tool approvals (explicit authorization required before data-modifying actions). Automatically retains conversation history both short-term and across sessions, and supports context chips for attaching files, images, or code snippets to messages. Distinct from Insulin Agent, which is the underlying AI system — Chat is the interface layer that presents Agent responses.",
-    alias: "Related: Insulin Agent — Suger, Insulin, Insulin Channel — Suger, Suger AI — Suger",
+    alias:
+      "Related: Insulin Agent — Suger, Insulin, Insulin Channel — Suger, Suger AI — Suger",
     source: "https://doc.suger.io/insulin/chat/",
     difficulty: "beginner",
     category: "operations",
@@ -10892,7 +11022,8 @@ export const terms = [
     name: "Business Value Realization (BVR) Competency — AWS",
     tags: ["aws", "cosell"],
     def: "A standalone AWS Specialization (launched June 2026) that designates AWS Services Partners with demonstrated expertise in connecting customers' AWS technology investments to measurable business outcomes — cost savings, productivity gains, or revenue growth. Validated partners deliver Value Realization Plans linking specific AWS workloads to trackable business results, extending partner engagement beyond technical delivery into post-sales customer success. Benefits include $50K in MDF (2026–2027), priority placement in the AWS Partner Solutions Finder, access to the BVR Toolkit (industry-specific templates, benchmarks, and use case models), and a dedicated Partner Success Specialist. Distinct from the Business Value Realization (BVR) Motion — the Motion is the broader post-sales framework with funding and enablement; the Competency is the formal designation earned to access those Motion benefits.",
-    alias: "Related: Business Value Realization (BVR) Motion — AWS, Marketing Development Funds (MDF) — AWS",
+    alias:
+      "Related: Business Value Realization (BVR) Motion — AWS, Marketing Development Funds (MDF) — AWS",
     source: "https://aws.amazon.com/partners/business-value-realization/",
     difficulty: "advanced",
     category: "advanced",
@@ -10909,16 +11040,24 @@ export const terms = [
       "Post-Sales Customer Success",
     ],
     related: [
-      { name: "Business Value Realization (BVR) Motion — AWS", slug: "business-value-realization-bvr-motion-—-aws" },
-      { name: "Marketing Development Funds (MDF) — AWS", slug: "marketing-development-funds-mdf-—-aws" },
+      {
+        name: "Business Value Realization (BVR) Motion — AWS",
+        slug: "business-value-realization-bvr-motion-—-aws",
+      },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
     ],
   },
   {
     name: "Partner Marketing Center Pro — Azure",
     tags: ["azure"],
     def: "The AI-powered tier of Microsoft's Partner Marketing Center, launched in 2026 as part of the Frontier partner push. Eligibility requires an active Microsoft partner benefits package, a Solutions Partner designation, or enrollment in ISV Success. The Pro tier adds AI-driven content generation for marketing campaign assets — decks, social posts, email templates, landing pages, and display ads — created from guided questions about a partner's ideal customer profile, target industries, and value proposition. The standard Partner Marketing Center remains available to all partners; the Pro tier provides audience-specific AI customization plus social and email scheduling and an analytics dashboard.",
-    alias: "Related: ISV Success Program — Azure, Frontier Accelerate for Marketplace — Azure, Marketplace Rewards — Azure",
-    source: "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
+    alias:
+      "Related: ISV Success Program — Azure, Frontier Accelerate for Marketplace — Azure, Marketplace Rewards — Azure",
+    source:
+      "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -10934,17 +11073,28 @@ export const terms = [
       "Partner Marketing",
     ],
     related: [
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
-      { name: "Frontier Accelerate for Marketplace — Azure", slug: "frontier-accelerate-for-marketplace-—-azure" },
-      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
+      {
+        name: "Frontier Accelerate for Marketplace — Azure",
+        slug: "frontier-accelerate-for-marketplace-—-azure",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
     ],
   },
   {
     name: "Microsoft Publisher Agreement — Azure",
     tags: ["azure", "offers"],
     def: "The legal contract between Microsoft and publishers transacting on Microsoft Marketplace (commercial marketplace, AppSource, Azure Marketplace). Version 8.0 (effective July 1, 2026) introduced three significant provisions: an AI Systems section requiring publishers to comply with EU AI Act Article 5 prohibited practices and submit AI conformity documentation; a Marketplace Facilitator Tax (MFT) provision where Microsoft collects and remits sales tax in eligible U.S. jurisdictions while publishers remain liable for amounts arising from incorrect information they provide; and a Sovereign Cloud Operator Marketplace section enabling publishers to offer products on SCO-operated clouds where Microsoft acts as agent or commissionaire. For Multiparty Private Offers, the agreement clarifies that the Store Service Fee applies only to the ISV Price, not the partner markup.",
-    alias: "Related: Multiparty Private Offer (MPO) — Azure, Marketplace Rewards — Azure, ISV Success Program — Azure",
-    source: "https://learn.microsoft.com/en-us/legal/marketplace/msft-publisher-agreement",
+    alias:
+      "Related: Multiparty Private Offer (MPO) — Azure, Marketplace Rewards — Azure, ISV Success Program — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/legal/marketplace/msft-publisher-agreement",
     difficulty: "advanced",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -10960,9 +11110,18 @@ export const terms = [
       "Publisher Compliance",
     ],
     related: [
-      { name: "Multiparty Private Offer (MPO) — Azure", slug: "multiparty-private-offer-mpo-—-azure" },
-      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
     ],
   },
   {
@@ -11092,17 +11251,26 @@ export const terms = [
       "Connecting Suger to AWS China Marketplace to manage seller operations, entitlements, and billing events for the China market alongside global AWS operations",
       "Enabling marketplace subscriptions and billing events for China-region buyers through the dedicated AWS China Marketplace infrastructure",
     ],
-    context: ["Suger Console", "AWS China Marketplace", "Suger Integrations", "China Region"],
+    context: [
+      "Suger Console",
+      "AWS China Marketplace",
+      "Suger Integrations",
+      "China Region",
+    ],
     related: [
       { name: "Integration", slug: "integration" },
-      { name: "Alibaba Marketplace Integration — Suger", slug: "alibaba-marketplace-integration-—-suger" },
+      {
+        name: "Alibaba Marketplace Integration — Suger",
+        slug: "alibaba-marketplace-integration-—-suger",
+      },
     ],
   },
   {
     name: "Dropbox Integration — Suger",
     tags: ["suger", "integrations"],
     def: "A Suger integration available in two variants: an org-level Dropbox Business connection (requires admin privileges, adds team member info and team-wide file access) and a user-level personal account connection (limited to personal files and folders). Supports reading file metadata and content, writing files, and managing sharing. Deletion removes credentials from Suger but requires separate disconnection at dropbox.com to fully revoke access.",
-    alias: "Related: Integration, Google Drive Integration, Google Cloud Storage Integration",
+    alias:
+      "Related: Integration, Google Drive Integration, Google Cloud Storage Integration",
     source: "https://doc.suger.io/integrations/dropbox/",
     difficulty: "beginner",
     category: "operations",
@@ -11115,7 +11283,10 @@ export const terms = [
     related: [
       { name: "Integration", slug: "integration" },
       { name: "Google Drive Integration", slug: "google-drive-integration" },
-      { name: "Google Cloud Storage Integration", slug: "google-cloud-storage-integration" },
+      {
+        name: "Google Cloud Storage Integration",
+        slug: "google-cloud-storage-integration",
+      },
     ],
   },
   {
@@ -11131,7 +11302,12 @@ export const terms = [
       "Automating meeting scheduling from Suger workflows by creating Google Calendar events with Google Meet links for co-sell discovery calls or partner onboarding sessions",
       "Querying free/busy availability across team calendars from a Suger automation to find optimal meeting slots for enterprise deal cycles",
     ],
-    context: ["Suger Console", "Suger Integrations", "Google Workspace", "GCP Service Account"],
+    context: [
+      "Suger Console",
+      "Suger Integrations",
+      "Google Workspace",
+      "GCP Service Account",
+    ],
     related: [
       { name: "Integration", slug: "integration" },
       { name: "Gmail Integration", slug: "gmail-integration" },
@@ -11151,7 +11327,12 @@ export const terms = [
       "Configuring a custom sending domain for all Suger-generated workflow and notification emails to improve deliverability and brand consistency",
       "Setting DKIM and SPF records for DMARC compliance on outbound Suger emails from a verified company domain",
     ],
-    context: ["Suger Console", "Suger Integrations", "Email Delivery", "AWS SES"],
+    context: [
+      "Suger Console",
+      "Suger Integrations",
+      "Email Delivery",
+      "AWS SES",
+    ],
     related: [
       { name: "Integration", slug: "integration" },
       { name: "Gmail Integration", slug: "gmail-integration" },
@@ -11162,7 +11343,8 @@ export const terms = [
     name: "AWS EMEA SARL — AWS",
     tags: ["aws"],
     def: "The Luxembourg-headquartered Amazon.com subsidiary (established July 1, 2018) that operates AWS Marketplace and acts as merchant of record for all EMEA transactions — covering Europe, the Middle East, and Africa except Turkey and South Africa. When an EMEA-region account purchases through AWS Marketplace, the contracting entity is AWS EMEA SARL rather than Amazon Web Services, Inc., and it issues all applicable VAT invoices and handles regional tax compliance across its 25+ branch offices. ISVs selling on AWS Marketplace receive a separate disbursement from AWS EMEA SARL for EMEA sales, distinct from non-EMEA disbursements issued by Amazon Web Services, Inc. — requiring sellers to reconcile two payout sources in financial reporting.",
-    alias: "Related: Seller of Record, AWS Marketplace — AWS, Disbursement, Private Offer — AWS",
+    alias:
+      "Related: Seller of Record, AWS Marketplace — AWS, Disbursement, Private Offer — AWS",
     source: "https://aws.amazon.com/legal/aws-emea/",
     difficulty: "intermediate",
     category: "billing",
@@ -11172,12 +11354,240 @@ export const terms = [
       "Reconciling separate disbursement payments from AWS EMEA SARL (EMEA sales) and Amazon Web Services, Inc. (non-EMEA sales) in revenue reporting",
       "Verifying VAT invoice issuer and tax compliance entity for EMEA marketplace transactions during finance audits",
     ],
-    context: ["AWS Marketplace", "Seller Disbursements", "EMEA Compliance", "VAT Invoicing"],
+    context: [
+      "AWS Marketplace",
+      "Seller Disbursements",
+      "EMEA Compliance",
+      "VAT Invoicing",
+    ],
     related: [
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
       { name: "Seller of Record", slug: "seller-of-record" },
       { name: "Disbursement", slug: "disbursement" },
       { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+    ],
+  },
+  {
+    name: "Insulin Custom Apps — Suger",
+    tags: ["suger"],
+    def: "An AI-assisted app builder within Suger Insulin that generates interactive dashboards, forms, and workflow tools from natural-language prompts — without requiring separate product engineering. Apps are compiled from multi-file source code including App.tsx components, shared at the org level, and governed by integration permissions that control which Suger data and external connectors each app can access. Custom Apps complement Insulin Chat for cases where a recurring, shared interactive interface is more efficient than a conversational session — such as a persistent revenue dashboard or a structured deal-submission form used daily across a team.",
+    alias:
+      "Related: Insulin Agent — Suger, Insulin Chat — Suger, Insulin Jobs — Suger",
+    source: "https://doc.suger.io/insulin/custom-apps/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Building a persistent revenue dashboard by prompting Insulin to generate a Custom App that visualizes entitlement and deal data for daily team review",
+      "Creating a partner deal-submission form as a Custom App so field teams can capture structured inputs without navigating the full Suger Console",
+    ],
+    context: [
+      "Suger Console",
+      "Suger Insulin",
+      "AI Workspace",
+      "Marketplace Automation",
+    ],
+    related: [
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Insulin Chat — Suger", slug: "insulin-chat-—-suger" },
+      { name: "Insulin Jobs — Suger", slug: "insulin-jobs-—-suger" },
+    ],
+  },
+  {
+    name: "Insulin Knowledge Bases — Suger",
+    tags: ["suger"],
+    def: "Searchable document collections stored within Suger Insulin that agents retrieve at query time to ground responses in org-specific content — runbooks, deal notes, product documentation, and playbooks. Knowledge Bases extend Insulin Agents beyond platform data by ingesting proprietary internal files, chunking and indexing them for semantic search, and automatically surfacing the most relevant chunks when a Knowledge Base is attached to an agent's configuration. Agents can answer questions and generate outputs requiring company-specific context without that information needing to live inside the Suger platform itself.",
+    alias:
+      "Related: Insulin Agent — Suger, Insulin Skill — Suger, Insulin Chat — Suger",
+    source: "https://doc.suger.io/insulin/knowledge-bases/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Attaching an internal co-sell playbook as a Knowledge Base so an Insulin Agent references company-specific deal escalation procedures when responding to referral questions",
+      "Indexing product documentation in a Knowledge Base so agents surface accurate technical details when generating marketplace listings or customer-facing email follow-ups",
+    ],
+    context: [
+      "Suger Console",
+      "Suger Insulin",
+      "AI Workspace",
+      "Document Management",
+    ],
+    related: [
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Insulin Skill — Suger", slug: "insulin-skill-—-suger" },
+      { name: "Insulin Chat — Suger", slug: "insulin-chat-—-suger" },
+    ],
+  },
+  {
+    name: "Partner Relationship Management (PRM) — Suger",
+    tags: ["suger"],
+    def: "Suger's Partner Relationship Management product that unifies cloud marketplace co-sell workflows, channel partner management, commission automation, and partner enablement in one platform — eliminating the need for separate CRM plugins, spreadsheets, and standalone LMS tools. Core capabilities include deal registration via public forms that auto-sync to Salesforce or HubSpot, automated commission calculation and SPIFF programs triggered at deal closure, a white-label branded partner portal deployable in five days, and a built-in LMS for partner certification tracking. Unlike generic PRM systems, Suger PRM is purpose-built for organizations running both cloud marketplace co-sell motions and traditional channel reseller programs — giving partner managers a single interface for hyperscaler-driven and direct channel pipeline.",
+    alias:
+      "Related: Partner Relationship Management (PRM) System, Partner Portal — Suger, Commission Plan — Suger, Learning Management System (LMS) — Suger",
+    source: "https://www.suger.io/prm/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Partner Managers", "ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Deploying a white-label partner portal in five days to give resellers and VARs a branded hub for deal registration and co-sell collaboration",
+      "Automating commission payouts and SPIFF programs by connecting Suger PRM deal closure events to configurable commission templates without manual calculation",
+      "Consolidating co-sell referral tracking and channel partner management in one interface so partner managers avoid context-switching between separate tools",
+    ],
+    context: [
+      "Suger PRM Portal",
+      "Suger Console",
+      "Partner Enablement",
+      "Co-sell Management",
+      "Channel Management",
+    ],
+    related: [
+      {
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
+      },
+      { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
+      { name: "Commission Plan — Suger", slug: "commission-plan-—-suger" },
+      {
+        name: "Learning Management System (LMS) — Suger",
+        slug: "learning-management-system-lms-—-suger",
+      },
+    ],
+  },
+  {
+    name: "LicenseArn — AWS",
+    tags: ["aws"],
+    def: "An Amazon Resource Name (ARN) that uniquely identifies each active software license issued under AWS Marketplace Concurrent Agreements. Required in all SaaS listings supporting Concurrent Agreements (mandatory for new listings as of June 1, 2026), LicenseArn is the primary key passed to ResolveCustomer, GetEntitlements, and BatchMeterUsage API calls — replacing the prior product-code and account-ID model for entitlement and metering lookup. A single AWS account can hold multiple active LicenseArns for the same product simultaneously, each with independent terms and pricing; sellers must store and pass the correct LicenseArn per license to accurately track and bill each subscription.",
+    alias: "Related: Concurrent Agreements — AWS, Entitlement, Metered Billing",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/checking-entitlements.html",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Resolving a customer's active license during SaaS subscription activation by passing LicenseArn to the ResolveCustomer API call",
+      "Tracking and billing multiple independent subscriptions for the same product in one AWS account by maintaining distinct LicenseArns per active entitlement",
+      "Migrating existing SaaS listings to Concurrent Agreements by updating ResolveCustomer and BatchMeterUsage implementations to use LicenseArn instead of product code and account ID",
+    ],
+    context: [
+      "AWS Marketplace",
+      "Concurrent Agreements",
+      "SaaS Entitlement API",
+      "AWS Marketplace Metering Service",
+    ],
+    related: [
+      {
+        name: "Concurrent Agreements — AWS",
+        slug: "concurrent-agreements-—-aws",
+      },
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "Metered Billing", slug: "metered-billing" },
+    ],
+  },
+  {
+    name: "Joint Planning — Azure",
+    tags: ["azure", "cosell"],
+    def: "An always-on Partner Center co-sell workflow (GA February 2026) that connects ISVs and channel partners with Microsoft Small Medium Enterprise & Channel (SME&C) sellers on shared customer accounts. Partners gain early access to Microsoft-generated leads and customer insights from SME&C seller data; leads accepted through Joint Planning convert directly into co-sell opportunities tracked in Partner Center. Unlike standard co-sell referral submission — where partners initiate by sharing an opportunity — Joint Planning is Microsoft-initiated: SME&C sellers surface accounts they believe a partner can help activate, and the partner responds.",
+    alias:
+      "Related: Co-sell Eligible / Incentivized — Azure, APN Customer Engagements (ACE) — AWS, Partner Center — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Accepting a Microsoft-initiated Joint Planning lead to convert it into a co-sell opportunity with a shared SME&C customer account",
+      "Using Joint Planning as an inbound pipeline source alongside standard outbound co-sell referral submission to increase co-sell volume",
+      "Tracking Joint Planning-originated co-sell opportunities separately in Partner Center to measure Microsoft seller-driven pipeline contribution",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "Co-sell Motions",
+      "SME&C Sales",
+      "Pipeline Management",
+    ],
+    related: [
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      {
+        name: "Frontier Accelerate for Marketplace — Azure",
+        slug: "frontier-accelerate-for-marketplace-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Co-sell Referral Quality — Azure",
+    tags: ["azure", "cosell"],
+    def: "An automated quality gate Microsoft introduced in Partner Center (GA May 2026) that evaluates every inbound co-sell referral at submission against five mandatory fields: solution area or play, estimated deal value, estimated close date, customer need description, and customer contact consent. Referrals missing any required field are held or declined automatically rather than routed to a Microsoft seller; referrals passing all five fields are auto-routed to the right seller without manual review. High-quality referrals — those with complete fields plus an ACR value — receive faster seller assignment and higher engagement priority. The Azure equivalent of AWS's Opportunity Quality Score for prioritizing co-sell pipeline.",
+    alias:
+      "AWS equivalent: Opportunity Quality Score — AWS | Related: Co-sell Eligible / Incentivized — Azure, Partner Center — Azure, Azure Consumed Revenue (ACR) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
+    useCases: [
+      "Ensuring all five required fields are complete before submitting a Partner Center co-sell referral to avoid automatic hold or decline",
+      "Adding an ACR value to a complete referral to signal Azure workload intensity and increase the likelihood of proactive Microsoft seller engagement",
+      "Diagnosing why a co-sell referral was held or declined by checking whether it passed the automated quality gate",
+    ],
+    context: [
+      "Microsoft Partner Center",
+      "Co-sell Referrals",
+      "Azure IP Co-sell",
+      "Pipeline Management",
+    ],
+    related: [
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "Azure Consumed Revenue (ACR) — Azure",
+        slug: "azure-consumed-revenue-acr-—-azure",
+      },
+      {
+        name: "Opportunity Quality Score — AWS",
+        slug: "opportunity-quality-score-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Marketplace Listing Association — AWS",
+    tags: ["aws", "cosell", "offers"],
+    def: "A Partner Central feature (GA July 1, 2026) that lets AWS Partners link one or more AWS Marketplace solution listings directly to a co-sell opportunity in ACE. Once associated, the linked listing appears alongside the opportunity in the Partner Central pipeline view, giving AWS field sellers full context on which products are being co-sold without requiring a separate lookup. Listing association is required for certain co-sell motions where the Marketplace transaction is the intended deal vehicle — connecting the co-sell engagement record to the transactable product the customer will ultimately purchase.",
+    alias:
+      "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Central Agents — AWS, Listing, AWS Marketplace — AWS",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-marketplace-co-selling-support/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Suger Users"],
+    useCases: [
+      "Associating an AWS Marketplace listing to an ACE co-sell opportunity so AWS field sellers can see the transactable product without a separate lookup",
+      "Linking multiple listings to a single co-sell opportunity when an enterprise deal covers more than one AWS Marketplace product",
+      "Using Marketplace Listing Association to close the loop between a co-sell referral and the eventual marketplace transaction for attribution and reporting",
+    ],
+    context: [
+      "AWS Partner Central",
+      "APN Customer Engagements (ACE)",
+      "AWS Marketplace",
+      "Co-sell Workflow",
+    ],
+    related: [
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      { name: "Listing", slug: "listing" },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
     ],
   },
 ];

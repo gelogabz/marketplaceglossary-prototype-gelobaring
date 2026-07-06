@@ -478,7 +478,10 @@ function render() {
     const heroEl = document.getElementById("glossaryHero");
     if (heroEl) {
       const isFiltered =
-        q || getActiveFilters().size > 0 || getActiveCategory() !== null || getActivePathFilter() !== null;
+        q ||
+        getActiveFilters().size > 0 ||
+        getActiveCategory() !== null ||
+        getActivePathFilter() !== null;
       heroEl.classList.toggle("hidden", !!isFiltered);
     }
 
@@ -498,7 +501,9 @@ function render() {
         getActiveCategory() !== null ||
         getActivePathFilter() !== null;
       listEl.innerHTML = `<div class="no-results">No terms matched your search.${hasFilters ? '<br><button class="no-results-clear-btn" type="button">Clear all filters</button>' : ""}</div>`;
-      listEl.querySelector(".no-results-clear-btn")?.addEventListener("click", clearFilters);
+      listEl
+        .querySelector(".no-results-clear-btn")
+        ?.addEventListener("click", clearFilters);
       const alphaNavEl = document.getElementById("alpha-nav");
       if (alphaNavEl) alphaNavEl.innerHTML = "";
       return;

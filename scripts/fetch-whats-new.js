@@ -158,15 +158,35 @@ function parseIsoDate(dateStr) {
   if (/^\d{4}-\d{2}-\d{2}/.test(dateStr)) return dateStr.slice(0, 10);
   // "June 25, 2026" or "June 25 2026" — parse manually to avoid local-timezone off-by-one
   const months = {
-    january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
-    july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
-    jan: 1, feb: 2, mar: 3, apr: 4, jun: 6,
-    jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12,
+    january: 1,
+    february: 2,
+    march: 3,
+    april: 4,
+    may: 5,
+    june: 6,
+    july: 7,
+    august: 8,
+    september: 9,
+    october: 10,
+    november: 11,
+    december: 12,
+    jan: 1,
+    feb: 2,
+    mar: 3,
+    apr: 4,
+    jun: 6,
+    jul: 7,
+    aug: 8,
+    sep: 9,
+    oct: 10,
+    nov: 11,
+    dec: 12,
   };
   const m = dateStr.match(/([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
   if (m) {
     const mon = months[m[1].toLowerCase()];
-    if (mon) return `${m[3]}-${String(mon).padStart(2, "0")}-${String(m[2]).padStart(2, "0")}`;
+    if (mon)
+      return `${m[3]}-${String(mon).padStart(2, "0")}-${String(m[2]).padStart(2, "0")}`;
   }
   // Fallback for RFC 2822 / UTC-tagged strings (RSS pubDate: "Tue, 24 Jun 2026 00:00:00 GMT")
   const d = new Date(dateStr);
@@ -414,7 +434,8 @@ async function fetchAzurePartnerCenter() {
   // Fetch every month from CUTOFF_DATE back to current month
   const cutoffYear = parseInt(CUTOFF_DATE.slice(0, 4), 10);
   const cutoffMonth = parseInt(CUTOFF_DATE.slice(5, 7), 10) - 1; // 0-indexed
-  const totalMonths = (now.getFullYear() - cutoffYear) * 12 + (now.getMonth() - cutoffMonth);
+  const totalMonths =
+    (now.getFullYear() - cutoffYear) * 12 + (now.getMonth() - cutoffMonth);
   for (let offset = 0; offset <= totalMonths; offset++) {
     const d = new Date(now.getFullYear(), now.getMonth() - offset, 1);
     const year = d.getFullYear();
@@ -434,7 +455,12 @@ async function fetchAzurePartnerCenter() {
       const title = scrub(sm[1]);
       if (!title || title.length < 8) continue;
       const titleLc = title.toLowerCase();
-      if (titleLc === "in this article" || titleLc === "feedback" || titleLc === "additional resources") continue;
+      if (
+        titleLc === "in this article" ||
+        titleLc === "feedback" ||
+        titleLc === "additional resources"
+      )
+        continue;
 
       const sectionHtml = sm[2];
       const sectionText = scrub(sectionHtml);
@@ -457,7 +483,13 @@ async function fetchAzurePartnerCenter() {
 
       // Source URL: prefer first explicit link in section, fall back to page URL
       const linkM = sectionHtml.match(/href="([^"#][^"]+)"/);
-      const rawHref = linkM ? linkM[1].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"') : null;
+      const rawHref = linkM
+        ? linkM[1]
+            .replace(/&amp;/g, "&")
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&quot;/g, '"')
+        : null;
       const absUrl = rawHref
         ? rawHref.startsWith("http")
           ? rawHref
@@ -615,7 +647,9 @@ async function main() {
 
   // Azure + Suger: replace strategy — both fetchers scrape a full listing page so we have
   // complete coverage; drop stale existing entries to avoid off-by-one date duplicates.
-  existing = existing.filter((e) => e.platform !== "Azure" && e.platform !== "Suger");
+  existing = existing.filter(
+    (e) => e.platform !== "Azure" && e.platform !== "Suger",
+  );
 
   // Merge: fresh entries overwrite existing ones with same ID
   const byId = new Map();
@@ -640,18 +674,33 @@ async function main() {
 
   // Write JSON mirror (for direct consumption by crawlers / AI bots)
   const jsonOutput = { lastUpdated: iso, updates: final };
-  writeFileSync(OUT.replace("whats-new.js", "whats-new.json"), JSON.stringify(jsonOutput, null, 2) + "\n", "utf8");
+  writeFileSync(
+    OUT.replace("whats-new.js", "whats-new.json"),
+    JSON.stringify(jsonOutput, null, 2) + "\n",
+    "utf8",
+  );
 
   // Write CSV mirror
   const csvEsc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
-  const CSV_COLS = ["id", "platform", "date", "title", "summary", "type", "sourceUrl", "impact"];
+  const CSV_COLS = [
+    "id",
+    "platform",
+    "date",
+    "title",
+    "summary",
+    "type",
+    "sourceUrl",
+    "impact",
+  ];
   const csvRows = [
     CSV_COLS.join(","),
     ...final.map((e) => CSV_COLS.map((k) => csvEsc(e[k])).join(",")),
   ];
   writeFileSync(OUT_CSV, csvRows.join("\n") + "\n", "utf8");
 
-  console.log(`\nDone. ${final.length} entries written to data/whats-new.js + data/whats-new.json + data/whats-new.csv`);
+  console.log(
+    `\nDone. ${final.length} entries written to data/whats-new.js + data/whats-new.json + data/whats-new.csv`,
+  );
 }
 
 main().catch((e) => {

@@ -34,7 +34,6 @@
     margin-bottom: 10px;
 }
 
-
 .path-cat-label {
     font-size: 11px;
     color: var(--gray-400);
@@ -406,9 +405,17 @@
 }
 
 @keyframes completePop {
-    0% { transform: scale(0.8); opacity: 0; }
-    60% { transform: scale(1.1); }
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .path-complete-badge {
@@ -620,7 +627,7 @@
         border-radius: 50%;
     }
     .progress-dot::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 50%;
@@ -629,7 +636,9 @@
         height: 12px;
         border-radius: 50%;
         background: var(--gray-200);
-        transition: background 0.2s, transform 0.15s;
+        transition:
+            background 0.2s,
+            transform 0.15s;
         pointer-events: none;
     }
     .progress-dot:hover::before {

@@ -1395,7 +1395,10 @@ export const learningPaths = [
     description:
       "How AWS measures and attributes the revenue impact of your product on customer AWS consumption. Covers the full lifecycle from fee mechanics and disbursement to APN tagging implementation and funding unlock.",
     meta: "10 terms · ~40 min",
-    prereqs: ["channel-and-partner-motions", "enterprise-billing-and-committed-spend"],
+    prereqs: [
+      "channel-and-partner-motions",
+      "enterprise-billing-and-committed-spend",
+    ],
     next: "cloud-funding-incentives",
     steps: [
       {

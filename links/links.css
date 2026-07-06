@@ -273,7 +273,9 @@
     background: var(--white);
     color: #111;
     outline: none;
-    transition: border-color 0.12s, box-shadow 0.12s;
+    transition:
+        border-color 0.12s,
+        box-shadow 0.12s;
 }
 
 .links-search-input:focus {

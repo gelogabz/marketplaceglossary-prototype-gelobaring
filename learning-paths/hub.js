@@ -80,7 +80,6 @@ const CATEGORY_ORDER = [
   "onboarding",
 ];
 
-
 function calcPathLevel(path) {
   const diffMap = { beginner: 1, intermediate: 2, advanced: 3 };
   const scores = path.steps

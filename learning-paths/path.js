@@ -326,15 +326,17 @@ function renderPath(path) {
 
       if (flat && !flatView.dataset.rendered) {
         flatView.dataset.rendered = "1";
-        flatView.innerHTML = path.steps.map((step, i) => {
-          const term = terms.find((t) => slug(t.name) === step.slug);
-          return `
+        flatView.innerHTML = path.steps
+          .map((step, i) => {
+            const term = terms.find((t) => slug(t.name) === step.slug);
+            return `
             <section class="flat-step">
               <div class="flat-step-counter">Step ${i + 1} of ${path.steps.length}</div>
               <div class="flat-step-why">${step.why}</div>
               ${term ? buildInlineTermDetail(term) : `<p style="color:var(--gray-400);font-size:13px;">Term "${step.name}" not found.</p>`}
             </section>`;
-        }).join("");
+          })
+          .join("");
       }
     });
   }

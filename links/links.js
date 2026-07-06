@@ -157,12 +157,16 @@ function render() {
   // Total count + jump-nav
   const totalLinks = linkSections.reduce((n, s) => n + s.links.length, 0);
   const countEl = document.getElementById("linksTotalCount");
-  if (countEl) countEl.textContent = `${totalLinks} links across ${linkSections.length} platforms`;
+  if (countEl)
+    countEl.textContent = `${totalLinks} links across ${linkSections.length} platforms`;
 
   const jumpNav = document.getElementById("linksJumpNav");
   if (jumpNav) {
     jumpNav.innerHTML = linkSections
-      .map((s) => `<a class="links-jump-link" href="#links-section-${escHtml(s.platformTag)}">${escHtml(s.platform)}</a>`)
+      .map(
+        (s) =>
+          `<a class="links-jump-link" href="#links-section-${escHtml(s.platformTag)}">${escHtml(s.platform)}</a>`,
+      )
       .join("");
   }
 
