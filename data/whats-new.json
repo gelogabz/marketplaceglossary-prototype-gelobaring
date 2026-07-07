@@ -1,6 +1,39 @@
 {
-  "lastUpdated": "2026-07-06T10:50:00.647Z",
+  "lastUpdated": "2026-07-07T09:23:03.692Z",
   "updates": [
+    {
+      "id": "aws-2026-07-06-say-hello-to-184-new-aws-competency-service-delive",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-07-06",
+      "title": "Say Hello to 184 New AWS Competency, Service Delivery, and MSP Partners Added in June",
+      "summary": "We are excited to highlight 184 AWS Partners that received new or renewed specializations in June for our global AWS Competency, AWS Managed Service Provider (MSP), and AWS Service Delivery programs.",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/apn/say-hello-to-184-new-aws-competency-service-delivery-and-msp-partners-added-in-june/",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-07-06-custom-contract-lengths-now-available",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-06",
+      "title": "Custom contract lengths now available",
+      "summary": "Secure deals for up to 10 years with custom contract lengths, now generally available in Microsoft Marketplace.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/manage-isv-customer-private-offers#2-create-a-private-offer-with-absolute-pricing-as-a-new-saas-or-professional-services-plan",
+      "impact": "high"
+    },
+    {
+      "id": "azure-2026-07-06-dlp-in-defender-for-cloud-apps-deprecation",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-06",
+      "title": "DLP in Defender for Cloud Apps deprecation",
+      "summary": "DLP in Defender for Cloud Apps will be deprecated on January 6, 2027. Microsoft Purview will become the unified home for data security and compliance.",
+      "type": "policy",
+      "sourceUrl": "https://aka.ms/MDAPartnerFAQ",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-07-02-how-interwiz-reduced-ai-costs-by-90-with-amazon-be",
       "platform": "AWS",
