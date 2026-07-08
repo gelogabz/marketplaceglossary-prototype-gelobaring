@@ -1,6 +1,39 @@
 {
-  "lastUpdated": "2026-07-07T09:23:03.692Z",
+  "lastUpdated": "2026-07-08T08:07:26.764Z",
   "updates": [
+    {
+      "id": "azure-2026-07-07-new-access-to-move-customers-from-ea-to-csp",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-07",
+      "title": "New access to move customers from EA to CSP",
+      "summary": "Expanded access to the EA-to-CSP for Azure tool helps partners transition customers to drive recurring revenue.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/benefits/technical-benefits",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-07-07-csp-software-pricing-update",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-07",
+      "title": "CSP software pricing update",
+      "summary": "A 5% cost-of-capital uplift will be applied to annual-term CSP software subscriptions billed monthly, effective August 1, 2026.",
+      "type": "pricing",
+      "sourceUrl": "https://aka.ms/CostofCapital_FAQ",
+      "impact": "high"
+    },
+    {
+      "id": "azure-2026-07-07-growth-margins-cloud-solution-providers-csps-avail",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-07",
+      "title": "Growth margins cloud solution providers (CSPs) available",
+      "summary": "Sandbox access now available for CSP growth margins",
+      "type": "blog",
+      "sourceUrl": "https://aka.ms/cspgrowthmargins",
+      "impact": "high"
+    },
     {
       "id": "aws-2026-07-06-say-hello-to-184-new-aws-competency-service-delive",
       "platform": "AWS",
