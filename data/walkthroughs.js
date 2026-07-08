@@ -194,14 +194,14 @@ export const walkthroughs = [
       },
       {
         title: "Establish the secure IAM connection",
-        body: "In Suger Console, navigate to <strong>Settings → Integrations → AWS Marketplace</strong> and begin the setup wizard. Suger uses cross-account IAM roles — not access keys — for secure, credential-free access. The wizard provides a CloudFormation template. When prompted for an Account ID in the template, enter <strong>Suger's AWS Account ID: <code>752785145360</code></strong> — do not enter your own AWS account ID. Check the acknowledgment box that allows IAM resource creation. Wait for the CloudFormation stack status to show <strong>CREATE_COMPLETE</strong> before moving on. Then paste the resulting Role ARN back into Suger.",
+        body: "In Suger Console, navigate to <strong>Settings → Integrations → AWS Marketplace</strong> and begin the setup wizard. Suger uses cross-account IAM roles — not access keys — for secure, credential-free access. The wizard provides a CloudFormation template. When prompted for an Account ID in the template, enter <strong>Suger's AWS Account ID</strong> — ask your Suger contact for this value, and do not enter your own AWS account ID. Check the acknowledgment box that allows IAM resource creation. Wait for the CloudFormation stack status to show <strong>CREATE_COMPLETE</strong> before moving on. Then paste the resulting Role ARN back into Suger.",
         terms: [{ name: "Integration", slug: "integration" }],
         link: {
           label: "Open Suger Console → Settings → Integrations →",
           url: "https://console.suger.io",
         },
         checks: [
-          "Did you enter <code>752785145360</code> (Suger's AWS Account ID) in the CloudFormation template — NOT your own AWS account ID?",
+          "Did you get Suger's AWS Account ID from your Suger contact and enter it in the CloudFormation template — NOT your own AWS account ID?",
           "Did you check the acknowledgment box that allows IAM resource creation?",
           "Did you wait for CloudFormation stack status <code>CREATE_COMPLETE</code> before proceeding?",
           "Did you paste the Role ARN back into Suger?",
