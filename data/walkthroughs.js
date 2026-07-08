@@ -39,16 +39,18 @@ export const walkthroughs = [
     steps: [
       {
         title: "Create your Suger Console and invite stakeholders",
-        body: "Log in to <a href='https://console.suger.io' target='_blank' rel='noopener'>console.suger.io</a>. Navigate to <strong>Settings → Users</strong>. Click <strong>Invite a New Team Member</strong>, enter their email, and assign the appropriate role: <strong>Admin</strong> for implementation leads, <strong>Editor</strong> for day-to-day operators, <strong>Viewer</strong> for executive stakeholders. Invite all relevant team members before integrations begin.",
+        body: "Go to <a href='https://console.suger.io' target='_blank' rel='noopener'>console.suger.io</a> and sign up. Use your company email domain — not a personal email like Gmail. Enter your company name and basic details. Your account won't be active immediately: Suger must approve your organization before you can proceed, which typically takes up to <strong>1 business day</strong>. Once approved you'll receive a confirmation email. After approval, navigate to <strong>Settings → Users → Invite a New Team Member</strong> and assign roles: <strong>Admin</strong> for implementation leads, <strong>Editor</strong> for day-to-day operators, <strong>Viewer</strong> for executive stakeholders. Invite everyone early — delays in adding team members often block later phases. At minimum, cover: <strong>AWS Console Full Admin</strong> (for marketplace setup) and <strong>Sales Ops / Finance / Deal Desk / MarketplaceOps</strong> (for business stakeholders).",
         terms: [{ name: "Suger Console", slug: "suger-console" }],
         link: {
           label: "Open Suger Console →",
           url: "https://console.suger.io",
         },
         checks: [
-          "Is your Suger organization accessible at console.suger.io?",
+          "Did you sign up using your company email domain (not a personal email like Gmail)?",
+          "Did your organization approval email arrive within 1 business day? If not, reach out via your Slack channel.",
           "Have all relevant implementation stakeholders been invited?",
           "Are roles assigned correctly (Admin / Editor / Viewer)?",
+          "Are these roles covered in your invite list: AWS Console Full Admin, Sales Ops, Finance, Deal Desk / MarketplaceOps?",
         ],
         media: null,
       },
@@ -170,7 +172,7 @@ export const walkthroughs = [
     steps: [
       {
         title: "Confirm prerequisites",
-        body: "Before starting, confirm you have: (1) an active AWS Marketplace seller account with listings published or in progress, (2) AWS account admin access, and (3) Suger organization admin access. If you haven't registered as an AWS Marketplace seller, complete that registration first.",
+        body: "You must complete <strong>AWS Marketplace seller registration</strong> before starting this integration — the CloudFormation stack in the next step requires an active seller account. Also have ready: (1) someone with <strong>AWS account admin access</strong> to create IAM roles (takes ~20 minutes), and (2) Suger organization admin access. If you haven't registered as an AWS Marketplace seller, do that first via the link below.",
         terms: [
           { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
           {
@@ -184,30 +186,31 @@ export const walkthroughs = [
           url: "https://aws.amazon.com/marketplace/management/tour",
         },
         checks: [
-          "Is your AWS Marketplace seller account active (not just applied)?",
-          "Do you have AWS account admin access for IAM configuration?",
+          "Is AWS Marketplace seller registration complete (not just applied or pending)?",
+          "Do you have someone with AWS account admin access available for IAM configuration?",
           "Do you have Suger organization admin access?",
         ],
         media: null,
       },
       {
         title: "Establish the secure IAM connection",
-        body: "In Suger Console, navigate to <strong>Settings → Integrations → AWS Marketplace</strong> and begin the setup wizard. Suger uses cross-account IAM roles — not access keys — for secure, credential-free access. The wizard provides the exact IAM policy document and trust relationship you need to create. You will need Suger's AWS Account ID (provided in the wizard or by Suger Support) to configure the trust policy. Create the IAM role in your AWS account and enter the resulting Role ARN in Suger.",
+        body: "In Suger Console, navigate to <strong>Settings → Integrations → AWS Marketplace</strong> and begin the setup wizard. Suger uses cross-account IAM roles — not access keys — for secure, credential-free access. The wizard provides a CloudFormation template. When prompted for an Account ID in the template, enter <strong>Suger's AWS Account ID: <code>752785145360</code></strong> — do not enter your own AWS account ID. Check the acknowledgment box that allows IAM resource creation. Wait for the CloudFormation stack status to show <strong>CREATE_COMPLETE</strong> before moving on. Then paste the resulting Role ARN back into Suger.",
         terms: [{ name: "Integration", slug: "integration" }],
         link: {
           label: "Open Suger Console → Settings → Integrations →",
           url: "https://console.suger.io",
         },
         checks: [
-          "Did you use Suger's AWS Account ID (from the wizard) in the IAM role trust policy — not your own account ID?",
-          "Did you create the IAM role in AWS and paste the Role ARN back into Suger?",
-          "Does the IAM role have the required Marketplace IAM policies attached?",
+          "Did you enter <code>752785145360</code> (Suger's AWS Account ID) in the CloudFormation template — NOT your own AWS account ID?",
+          "Did you check the acknowledgment box that allows IAM resource creation?",
+          "Did you wait for CloudFormation stack status <code>CREATE_COMPLETE</code> before proceeding?",
+          "Did you paste the Role ARN back into Suger?",
         ],
         media: null,
       },
       {
         title: "Enable Marketplace Commerce Analytics Service (MCAS)",
-        body: "MCAS is an AWS service that gives Suger access to your marketplace business reports — revenue, disbursements, subscriber data, and usage records. In AWS Marketplace Management Portal (AMMP), navigate to <strong>Settings → AWS Marketplace Commerce Analytics Service</strong>. Enable MCAS and grant access to Suger's AWS Account ID. This allows Suger to pull financial and subscription data automatically.",
+        body: "MCAS is an AWS service that gives Suger access to your marketplace business reports — revenue, disbursements, subscriber data, and usage records. In AWS Marketplace Management Portal (AMMP), navigate to the MCAS enrollment page. When setting up the IAM role for MCAS, select <strong>Use an existing IAM role</strong> and enter the S3 Bucket Name and SNS Topic ARN that correspond to your AWS account ID. This allows Suger to pull financial and subscription data automatically.",
         terms: [
           {
             name: "AWS Marketplace Management Portal (AMMP) — AWS",
@@ -219,29 +222,29 @@ export const walkthroughs = [
           url: "https://aws.amazon.com/marketplace/management/settings",
         },
         checks: [
-          "Is MCAS enabled in AMMP → Settings?",
-          "Did you authorize Suger's AWS Account ID (not your own account ID) for MCAS access?",
-          "Did Suger's Account ID come from the Suger Console setup wizard or Suger Support?",
+          "Is MCAS enabled in AMMP?",
+          "Did you select 'Use an existing IAM role' during MCAS enrollment?",
+          "Did you enter the correct S3 Bucket Name and SNS Topic ARN for your AWS account?",
         ],
         media: null,
       },
       {
         title: "Configure Marketplace Data Feeds Service (MDFS)",
-        body: "MDFS delivers detailed data feeds (subscription, usage, and financial data as CSV files) to an Amazon S3 bucket. In AMMP, navigate to <strong>Settings → Data Feed Service</strong>. Designate or create an S3 bucket for the data feeds. Grant Suger's AWS account read access to this bucket via an S3 bucket policy. Enter the S3 bucket name and ARN in the Suger Console setup wizard.",
+        body: "MDFS delivers detailed subscription, usage, and financial data as CSV files. Run a second CloudFormation stack in your AWS account. <strong>The stack must be named exactly: <code>mp-data-feed</code></strong> — the name matters. Once the stack reaches <strong>CREATE_COMPLETE</strong>, go to <strong>AWS CloudFormation → Stacks → mp-data-feed → Outputs tab</strong>. Copy both the <strong><code>s3BucketARN</code></strong> and <strong><code>KMSKeyARN</code></strong> values from the Outputs tab and paste them into the Data Feed Configuration page in AMMP. If you skip this step, Suger will not be able to access your revenue and billing data.",
         link: {
           label: "AWS Marketplace Data Feed docs →",
           url: "https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed.html",
         },
         checks: [
-          "Is an S3 bucket designated for MDFS data feeds?",
-          "Does the S3 bucket policy grant read access to Suger's AWS Account ID?",
-          "Did you enter the bucket name and ARN in the Suger Console setup wizard?",
+          "Is the CloudFormation stack named exactly <code>mp-data-feed</code>?",
+          "Did you copy the <code>s3BucketARN</code> and <code>KMSKeyARN</code> from the stack's Outputs tab and paste them into the Data Feed Configuration page? (This is the most common reason verification fails.)",
+          "Is the stack status <code>CREATE_COMPLETE</code>?",
         ],
         media: null,
       },
       {
         title: "Finalize your integration in the Suger Console",
-        body: "Complete the Suger setup wizard by saving your configuration. Return to <strong>Settings → Integrations → AWS Marketplace</strong> — the status badge should show <strong>Connected</strong> in green. Navigate to <strong>Products</strong> in Suger and link each of your products to its AWS Marketplace Product Code. Product Codes are found in AMMP under <strong>Listings</strong>.",
+        body: "Return to <strong>Settings → Integrations → AWS Marketplace</strong> in Suger Console. Click the <strong>VERIFY</strong> button on the integration card. Confirm the status updates to <strong>VERIFIED</strong>. If verification fails, the most common cause is missing or incorrect <code>s3BucketARN</code>/<code>KMSKeyARN</code> values in MDFS — re-check Step 4. Once verified, navigate to <strong>Products</strong> in Suger and link each product to its AWS Marketplace Product Code. Product Codes are found in AMMP under <strong>Listings</strong>.",
         terms: [
           { name: "Product Code — AWS", slug: "product-code-—-aws" },
           { name: "Listing", slug: "listing" },
@@ -251,7 +254,8 @@ export const walkthroughs = [
           url: "https://aws.amazon.com/marketplace/management/products/",
         },
         checks: [
-          "Does the integration status show 'Connected' in Suger?",
+          "Did you click VERIFY in Suger Console → Settings → Integrations → AWS Marketplace?",
+          "Does the integration status show VERIFIED?",
           "Is every Suger product linked to its correct AWS Marketplace Product Code?",
         ],
         media: null,
@@ -284,7 +288,7 @@ export const walkthroughs = [
     steps: [
       {
         title: "Confirm prerequisites",
-        body: "Before starting, confirm: (1) your AWS account is actively enrolled in <strong>ISV Accelerate</strong> — status must show 'Active', not 'Pending' or 'Applied', (2) the enrolled AWS account is linked to AWS Partner Central, and (3) you have Suger organization admin access.",
+        body: "Before starting, confirm your organization meets AWS's co-sell eligibility requirements: your AWS account must be actively enrolled in <strong>ISV Accelerate</strong> — status must show 'Active', not 'Pending' or 'Applied'. Complete the ISV Accelerate eligibility check first if you haven't done so. After this integration is complete, your Suger contact will help configure field mapping so opportunities sync correctly between your CRM and AWS ACE.",
         terms: [
           { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
           {
@@ -298,7 +302,8 @@ export const walkthroughs = [
           url: "https://partnercentral.awspartner.com/",
         },
         checks: [
-          "Is your ISV Accelerate status showing 'Active' in AWS Partner Central?",
+          "Is your organization enrolled in ISV Accelerate / Partner Advantage and eligible for AWS co-sell?",
+          "Is your ISV Accelerate status showing 'Active' (not Pending or Applied) in AWS Partner Central?",
           "Is the enrolled AWS account the same one you'll connect to Suger?",
         ],
         media: null,
@@ -333,14 +338,16 @@ export const walkthroughs = [
       },
       {
         title: "Sync and verify co-sell data",
-        body: "After connecting, verify the integration is active by checking for any existing co-sell opportunities in Suger under <strong>Co-Sell</strong>. If you have existing ACE opportunities in Partner Central, they should begin syncing within a few minutes. Then proceed to the <strong>Co-Sell Field Mapping</strong> walkthrough to configure automated referral sharing from your CRM.",
+        body: "After connecting, verify the integration is active by checking for any existing co-sell opportunities in Suger under <strong>Co-Sell</strong>. If you have existing ACE opportunities in Partner Central, they should begin syncing within a few minutes. Then test your co-sell configuration by opening an opportunity and clicking <strong>Share</strong>. Review the Share modal — all required AWS co-sell fields should be populated: <strong>Customer Business Problem</strong>, <strong>Solution Offered</strong>, <strong>Use Case</strong>, and <strong>Expected Monthly AWS Revenue</strong>. Enable <strong>Auto-Enrich</strong> to automatically fill in missing company and contact data before submission.",
         terms: [
           { name: "Outbound Referral", slug: "outbound-referral" },
           { name: "Inbound Referral", slug: "inbound-referral" },
         ],
         checks: [
-          "Does the AWS ACE integration show 'Connected' in Suger?",
-          "Are existing ACE opportunities beginning to appear in Suger → Co-Sell?",
+          "Is the AWS Partner Central integration showing a green checkmark in Suger Console → Settings → Integrations?",
+          "Are all required AWS co-sell fields mapped: Customer Business Problem, Solution Offered, Use Case, Expected Monthly AWS Revenue?",
+          "Is Auto-Enrich turned ON to automatically fill missing company/contact data?",
+          "In a Share modal test: does the Submit button become enabled after filling required fields?",
         ],
         media: null,
       },
@@ -359,7 +366,7 @@ export const walkthroughs = [
     steps: [
       {
         title: "Confirm prerequisites",
-        body: "Before starting, confirm: (1) an active Azure subscription with Azure Marketplace publisher access (via Partner Center), (2) Azure Active Directory admin permissions to create app registrations, and (3) Suger organization admin access.",
+        body: "Before starting, confirm: (1) someone with <strong>Global Administrator</strong> access in both Azure and Microsoft Partner Center is available to complete the OAuth consent step — without this, setup cannot complete, (2) Microsoft Partner Center enrollment is fully done: <strong>Commercial Marketplace enrollment</strong>, <strong>Microsoft AI Cloud Partner Program</strong>, <strong>Legal profile</strong>, <strong>Tax profile</strong>, and <strong>Payout profile</strong> — payout verification can take a few business days so set it up early, and (3) Suger organization admin access.",
         terms: [
           {
             name: "Microsoft Marketplace — Azure",
@@ -373,8 +380,8 @@ export const walkthroughs = [
           url: "https://partner.microsoft.com/",
         },
         checks: [
-          "Do you have Azure Active Directory admin permissions to create app registrations?",
-          "Is your organization active as a publisher in Microsoft Partner Center?",
+          "Does the person completing the OAuth consent step have Global Administrator access in both Azure AND Microsoft Partner Center?",
+          "Is Partner Center enrollment complete: Commercial Marketplace, Microsoft AI Cloud Partner Program, Legal/Tax/Payout profiles?",
           "Do you have Suger organization admin access?",
         ],
         media: null,
@@ -415,7 +422,7 @@ export const walkthroughs = [
       },
       {
         title: "Link to Partner Center and finalize in Suger Console",
-        body: "In Microsoft Partner Center, link the app registration to your publisher account under <strong>Account settings → User management → Azure AD applications</strong>. Add the application and assign it the <strong>Manager</strong> role. Then, in Suger Console, go to <strong>Settings → Integrations → Azure Marketplace</strong> and enter your Tenant ID, Client ID, and Client Secret. Save to establish the connection.",
+        body: "In Microsoft Partner Center, link the app registration to your publisher account under <strong>Account settings → User management → Azure AD applications</strong>. Add the application and assign it the <strong>Manager</strong> role. Then, in Suger Console, go to <strong>Settings → Integrations → Azure Marketplace</strong> and enter your Tenant ID, Client ID, and Client Secret. Save to establish the connection. <strong>If you already have an existing Azure Marketplace product:</strong> verify that the product's Technical Configuration values match — Azure AD Tenant ID, Azure AD Application (Client) ID, Landing Page URL, and Connection Webhook must all align between Partner Center and Suger.",
         link: {
           label: "Open Suger Console → Settings → Integrations →",
           url: "https://console.suger.io",
@@ -423,7 +430,8 @@ export const walkthroughs = [
         checks: [
           "Is the app registration linked to your Partner Center publisher account with Manager role?",
           "Did you enter Tenant ID, Client ID, and Client Secret in Suger Console?",
-          "Does the integration show 'Connected' in Suger?",
+          "Does the integration show 'Connected' (VERIFIED) in Suger?",
+          "If you have an existing Azure Marketplace product: do these values match between Partner Center and Suger — Azure AD Tenant ID, Client ID, Landing Page URL, Connection Webhook?",
         ],
         media: null,
       },
@@ -451,7 +459,7 @@ export const walkthroughs = [
     steps: [
       {
         title: "Confirm prerequisites and define environment variables",
-        body: "Confirm: (1) a GCP project with Marketplace producer access enabled and billing active, (2) <code>gcloud</code> CLI installed and authenticated, and (3) Suger organization admin access. Before running setup commands, define and export these environment variables in your terminal: your GCP project ID, the service account name you'll create, and the Workload Identity Pool name. The Suger Console setup wizard will provide all required values.",
+        body: "GCP has more upfront prerequisites than AWS or Azure. Before starting, complete these steps in order: set up a GCP Organization, create a GCP project, register on Partner Hub, accept the Marketplace Vendor Agreement (MVA), pass the Solution Architecture Validation, and enable the Producer Portal. The Solution Architecture Review is unique to GCP and is the most common cause of delays — start preparing your architecture diagram early. All setup commands must be run in <strong>GCP Cloud Shell</strong>, step by step in order. Do not paste the entire script at once. Validate each step before proceeding to the next. Also confirm: billing enabled on the GCP project, and Suger organization admin access.",
         terms: [
           { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
           { name: "Service Account — GCP", slug: "service-account-—-gcp" },
@@ -463,7 +471,8 @@ export const walkthroughs = [
         },
         checks: [
           "Is billing enabled on the GCP project you're connecting?",
-          "Is the gcloud CLI installed and authenticated to the correct project?",
+          "Are you running all commands in GCP Cloud Shell (not your local terminal)?",
+          "Are you running commands one step at a time in order — not pasting the entire script?",
           "Do you have Suger organization admin access?",
         ],
         media: null,
@@ -530,7 +539,7 @@ export const walkthroughs = [
       },
       {
         title: "Validate and connect in the Suger Console",
-        body: "In Suger Console, go to <strong>Settings → Integrations → GCP Marketplace</strong> and run the validation. If validation passes, click <strong>Finalize</strong>. The status should show <strong>Connected</strong>. Test by creating a private offer in the GCP Producer Portal and verifying the entitlement syncs to Suger → Entitlements within 2–3 minutes.",
+        body: "Before connecting, run the final output commands in GCP Cloud Shell to print your key identifiers. <strong>Save these values</strong> — you will need them when connecting in Suger Console: <strong>PROJECT_ID</strong>, <strong>PROJECT_NUMBER</strong>, <strong>Workload Identity Pool ID</strong> (<code>suger-wip</code>), and <strong>Service Account Email</strong>. Then in Suger Console, go to <strong>Settings → Integrations → GCP Marketplace</strong>, click <strong>Connect Now</strong>, enter the values from the final output, and run the validation. Once connected, submit a support ticket in Suger Console requesting integration whitelisting and final validation.",
         terms: [
           { name: "Entitlement", slug: "entitlement" },
           { name: "Producer Portal — GCP", slug: "producer-portal-—-gcp" },
@@ -540,9 +549,10 @@ export const walkthroughs = [
           url: "https://console.suger.io",
         },
         checks: [
-          "Does the integration show 'Connected' status in Suger?",
-          "Did a test entitlement sync to Suger within 2–3 minutes of a test subscription?",
-          "If validation failed, did you re-check all IAM roles and API enablements?",
+          "Did you save the final output values: PROJECT_ID, PROJECT_NUMBER, Workload Identity Pool ID (suger-wip), and Service Account Email?",
+          "Does the GCP Marketplace integration show 'Connected' in Suger?",
+          "Have you submitted a support ticket in Suger Console requesting integration whitelisting and final validation?",
+          "If validation failed, did you re-check all IAM role assignments and API enablements?",
         ],
         media: null,
       },
@@ -561,9 +571,10 @@ export const walkthroughs = [
     steps: [
       {
         title: "Confirm prerequisites",
-        body: "Before starting, confirm: (1) your organization is enrolled in Google Cloud Partner Network, (2) you have admin access to the Partner Network Hub at <a href='https://partners.cloud.google.com' target='_blank' rel='noopener'>partners.cloud.google.com</a>, and (3) your GCP Marketplace integration in Suger is already connected (this is required before enabling co-sell).",
+        body: "Only complete this phase if your Suger subscription includes GCP co-sell capabilities. Before starting, confirm: (1) your organization is enrolled in <strong>Google Cloud Partner Advantage</strong>, (2) Partner Hub is configured correctly at <a href='https://partners.cloud.google.com' target='_blank' rel='noopener'>partners.cloud.google.com</a>, and (3) your GCP Marketplace integration in Suger is already connected (required before enabling co-sell). After this integration is complete, your Suger contact will help configure field mapping so opportunities sync correctly between your CRM and Google Cloud.",
         checks: [
-          "Is your organization enrolled in Google Cloud Partner Network?",
+          "Is your organization enrolled in Google Cloud Partner Advantage?",
+          "Is Partner Hub configured correctly?",
           "Is your GCP Marketplace integration already connected in Suger?",
         ],
         media: null,
@@ -589,14 +600,15 @@ export const walkthroughs = [
       },
       {
         title: "Connect via the Suger Console",
-        body: "In Suger Console, navigate to <strong>Settings → Integrations → GCP Partner Network Hub</strong>. Enter your Partner ID and click <strong>Connect</strong>. After connection, verify the integration status shows <strong>Connected</strong>. Then proceed to the Co-Sell Field Mapping walkthrough to configure automated referral sharing.",
+        body: "In Suger Console, navigate to <strong>Settings → Integrations → GCP Partner Network Hub</strong>. Enter your Partner ID and click <strong>Connect</strong>. After connection, verify the integration status shows <strong>Connected</strong>. Then test your co-sell configuration: open a GCP opportunity, click <strong>Share</strong>, and confirm all required fields populate without validation errors. Proceed to the Co-Sell Field Mapping walkthrough to configure automated referral sharing.",
         link: {
           label: "Open Suger Console →",
           url: "https://console.suger.io",
         },
         checks: [
           "Does the GCP Partner Network Hub integration show 'Connected' in Suger?",
-          "Did you note this for the Co-Sell Field Mapping step?",
+          "In a Share modal test with a GCP opportunity: do required fields populate without errors?",
+          "Is Auto-Enrich turned ON?",
         ],
         media: null,
       },
@@ -723,7 +735,7 @@ export const walkthroughs = [
       },
       {
         title: "Configure Co-Sell field mapping",
-        body: "With Salesforce connected, proceed to configure the co-sell field mapping — how Salesforce Opportunity fields map to cloud partner required fields. Follow the <strong>Co-Sell Field Mapping</strong> walkthrough for the full configuration, or navigate to <strong>Co-Sell → Settings → + New Config</strong> in Suger Console to start.",
+        body: "With Salesforce connected, proceed to configure the co-sell field mapping — how Salesforce Opportunity fields map to cloud partner required fields. Follow the <strong>Co-Sell Field Mapping</strong> walkthrough for the full configuration, or navigate to <strong>Co-Sell → Settings → + New Config</strong> in Suger Console to start. After mapping, run a test via <strong>Settings → Co-Sell Configuration → Test</strong> and inspect each row. Then validate end-to-end: open an opportunity, click <strong>Share</strong>, and confirm all required fields populate in the Share modal without errors. Enable <strong>Auto-Enrich</strong> to automatically fill in missing company and contact data before submission.",
         terms: [
           {
             name: "APN Customer Engagements (ACE) — AWS",
@@ -735,8 +747,10 @@ export const walkthroughs = [
           url: "https://suger.help.usepylon.com/articles/1414396545",
         },
         checks: [
-          "Have you completed or scheduled the co-sell field mapping configuration?",
-          "Can you navigate to Co-Sell → Settings in Suger Console?",
+          "Is the Salesforce integration showing VERIFIED in Suger Console → Settings → Integrations → Salesforce?",
+          "Have you run Settings → Co-Sell Configuration → Test and reviewed field mapping results?",
+          "In the Share modal test: do all required fields populate with no validation errors?",
+          "Is Auto-Enrich turned ON to automatically fill missing company/contact data?",
         ],
         media: null,
       },
@@ -789,15 +803,17 @@ export const walkthroughs = [
       },
       {
         title: "Configure Co-Sell field mapping",
-        body: "With HubSpot connected, configure how HubSpot Deal properties map to cloud partner required fields. Start by creating a custom <strong>Referral State</strong> property on the HubSpot Deal object (see Help Center article for the exact setup), then follow the <strong>Co-Sell Field Mapping</strong> walkthrough or navigate to <strong>Co-Sell → Settings → + New Config</strong> in Suger Console.",
+        body: "With HubSpot connected, configure how HubSpot Deal properties map to cloud partner required fields. Start by creating a custom <strong>Referral State</strong> property on the HubSpot Deal object (see Help Center article for the exact setup), then follow the <strong>Co-Sell Field Mapping</strong> walkthrough or navigate to <strong>Co-Sell → Settings → + New Config</strong> in Suger Console. After mapping, validate end-to-end: open a deal, click <strong>Share</strong>, and confirm all required fields populate in the Share modal without errors. Enable <strong>Auto-Enrich</strong> to automatically fill in missing company and contact data.",
         terms: [{ name: "Outbound Referral", slug: "outbound-referral" }],
         link: {
           label: "Configure Co-Sell Settings for HubSpot (Help Center) →",
           url: "https://suger.help.usepylon.com/articles/2668559601",
         },
         checks: [
+          "Is the HubSpot integration showing VERIFIED (not just CREATED) in Suger Console? Note: it shows CREATED immediately, then updates to VERIFIED after Suger reads your deals.",
           "Have you created the custom Referral State property on the HubSpot Deal object?",
-          "Have you completed or scheduled the co-sell field mapping configuration?",
+          "In the Share modal test: do all required fields populate with no validation errors?",
+          "Is Auto-Enrich turned ON?",
         ],
         media: null,
       },
@@ -820,16 +836,17 @@ export const walkthroughs = [
     steps: [
       {
         title: "Understand products vs. listings and confirm prerequisites",
-        body: "In Suger, a <strong>Product</strong> is your software offering; a <strong>Listing</strong> is its marketplace-specific representation. One product can have multiple listings (AWS, Azure, GCP). Before creating an AWS listing confirm: (1) your AWS Marketplace integration is connected in Suger, (2) you have a SaaS or Professional Services product to list, (3) your fulfillment URL (SaaS landing page) is ready, and (4) you have product assets: description, logo, categories, pricing model.",
+        body: "This listing is what customers will see when they discover your product on AWS Marketplace. In Suger, a <strong>Product</strong> is your software offering; a <strong>Listing</strong> is its marketplace-specific representation. One product can have multiple listings (AWS, Azure, GCP). Before creating an AWS listing confirm: (1) your AWS Marketplace integration is connected in Suger, (2) you have a SaaS or Professional Services product to list, (3) your fulfillment URL (SaaS landing page) is live and publicly accessible — AWS checks it, and (4) you have product assets: description, logo (PNG), categories, pricing model, support email and support URL.",
         terms: [
           { name: "Listing", slug: "listing" },
           { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
         ],
         path: "aws-marketplace-essentials",
         checks: [
-          "Is your AWS Marketplace integration connected in Suger (Settings → Integrations → AWS Marketplace)?",
-          "Is your fulfillment URL live and accessible?",
+          "Is your AWS Marketplace integration connected and VERIFIED in Suger (Settings → Integrations)?",
+          "Is your fulfillment URL live and accessible at a public URL?",
           "Do you have a product logo ready (PNG format)?",
+          "Do you have a support email and support URL — AWS requires both for listing review?",
         ],
         media: null,
       },
@@ -849,31 +866,34 @@ export const walkthroughs = [
       },
       {
         title: "Complete Basic Information",
-        body: "Fill in all required Basic Information fields: <strong>Product Name</strong> (public-facing, shown in AWS Marketplace search), <strong>Short Description</strong> (up to 1,000 characters, shown in search results), <strong>Long Description</strong> (detailed product overview), <strong>Logo</strong> (PNG, 120×80px minimum), <strong>Support Contact</strong> email, <strong>Categories</strong> (up to 3), and <strong>Keywords</strong>. These fields drive discoverability in AWS Marketplace.",
+        body: "Fill in all required Basic Information fields: <strong>Product Name</strong> (public-facing, shown in AWS Marketplace search), <strong>Short Description</strong> (up to 1,000 characters, shown in search results), <strong>Long Description</strong> (detailed product overview), <strong>Logo</strong> (PNG, 120×80px minimum), <strong>Support Contact</strong> email, <strong>Categories</strong> (up to 3), and <strong>Keywords</strong>. The Company Name must match your AWS Public Profile. Review product descriptions carefully before submitting: AWS rejects listings with <strong>competitive claims</strong> (naming competitors), <strong>hyperbolic language</strong> (best, industry-leading, revolutionary), <strong>unverifiable statistics</strong> (performance or cost claims that can't be substantiated), or <strong>missing dependency disclosures</strong> (if your product requires another product to function). Use neutral, factual language.",
         checks: [
+          "Does the Company Name match your AWS Public Profile?",
           "Is the product name clear and unique in AWS Marketplace?",
-          "Is the short description compelling and under 1,000 characters?",
+          "Do product descriptions avoid: named competitor comparisons, terms like 'best'/'industry-leading', unverifiable performance claims, undisclosed product dependencies?",
           "Is the logo PNG at the correct dimensions?",
         ],
         media: null,
       },
       {
         title: "Complete Pricing Information",
-        body: "Define your pricing model. Common AWS SaaS options: <strong>SaaS Subscription</strong> (monthly/annual flat fee), <strong>SaaS Contract</strong> (upfront contract with optional usage), <strong>Usage-Based</strong> (pay-per-use metered dimensions). For usage-based pricing, define each dimension: unit name (e.g., 'API calls'), unit description, and price per unit. <strong>Pricing cannot be changed after a listing is public</strong> — verify thoroughly.",
+        body: "Define your pricing model. Common AWS SaaS options: <strong>SaaS Subscription</strong> (monthly/annual flat fee), <strong>SaaS Contract</strong> (upfront contract with optional usage), <strong>Usage-Based</strong> (pay-per-use metered dimensions). For usage-based pricing, define each dimension: unit name (e.g., 'API calls'), unit description, and price per unit. <strong>Set every pricing dimension to $0.01 before testing</strong> — this is required for test purchases. Replace with your production pricing only when you're ready to publish. <strong>Pricing cannot be changed after a listing is public</strong> — verify thoroughly before going live.",
         checks: [
+          "Is every pricing dimension currently set to $0.01? (Replace with production pricing only when ready to publish.)",
           "Is the pricing model correct for your sales motion?",
           "For usage-based: are all dimension names, units, and prices finalized?",
-          "Have you confirmed pricing with your deal desk before submitting?",
+          "Have you confirmed production pricing with your deal desk before going live?",
         ],
         media: null,
       },
       {
         title: "Save, Preview, and Create",
-        body: "Click <strong>Save and Preview</strong> to see how your listing will appear in AWS Marketplace. Review the buyer-facing view carefully. Once satisfied, click <strong>Create</strong> to submit the listing to AWS for review. AWS Marketplace review typically takes 3–5 business days. You'll receive email notification when approved or if changes are required.",
+        body: "Before submitting, confirm your <strong>Fulfillment URL</strong> is entered in <strong>both</strong> the AWS Marketplace Management Portal and in the product in Suger Console — it must be in both places. Click <strong>Save and Preview</strong> to see how your listing will appear in AWS Marketplace. Review the buyer-facing view carefully. Once satisfied, click <strong>Create</strong> to submit the listing to AWS for review. AWS Marketplace review typically takes 3–5 business days for initial listings. You'll receive email notification when approved or if changes are required. If you have an active deal waiting on your listing, let your Suger contact know — listings can be expedited.",
         checks: [
+          "Is the Fulfillment URL entered in BOTH the AWS Marketplace Management Portal AND in the product in Suger Console?",
           "Did you preview the listing and confirm all fields look correct?",
           "Is the listing submitted to AWS for review?",
-          "Have you noted the expected 3–5 business day review timeline?",
+          "Have you noted the expected review timeline? (If you have a deal waiting, ask Suger about expediting.)",
         ],
         media: null,
       },
@@ -928,7 +948,7 @@ export const walkthroughs = [
       },
       {
         title: "Start a new product draft in Suger",
-        body: "In Suger Console, navigate to <strong>Product → New Product</strong>. Select <strong>Azure</strong> as the cloud provider and <strong>SaaS</strong> as the product type. Enter a draft product name and save. Suger will create the listing structure — you'll then fill in the details across Basic Information and Pricing sections.",
+        body: "In Suger Console, navigate to <strong>Product → New Product</strong>. Select <strong>Azure</strong> as the cloud provider and <strong>SaaS</strong> as the product type. Enter a draft product name and save. Suger uses AI-assisted templates to pre-fill content — use the generated content as a starting point and review and refine everything before submitting. Suger will create the listing structure; fill in the details across Basic Information and Pricing sections.",
         link: {
           label: "Open Suger Console → Product →",
           url: "https://console.suger.io",
@@ -936,6 +956,7 @@ export const walkthroughs = [
         checks: [
           "Is Azure selected as the cloud provider?",
           "Is the product draft saved in Suger?",
+          "Have you reviewed all AI-generated content and updated any placeholder or generic text?",
         ],
         media: null,
       },
@@ -951,10 +972,12 @@ export const walkthroughs = [
       },
       {
         title: "Add Pricing Information (Plans)",
-        body: "Azure SaaS offers use <strong>Plans</strong> (pricing tiers). Create at least one plan: set the <strong>Plan ID</strong>, <strong>Plan Name</strong>, pricing model (<strong>Flat Rate</strong> monthly/annual, <strong>Per User</strong>, or <strong>Metered</strong>), and prices per market. For metered billing, define dimension IDs and per-unit prices here. Azure requires at least one plan before you can publish.",
+        body: "Azure SaaS offers use <strong>Plans</strong> (pricing tiers). Create at least one plan: set the <strong>Plan ID</strong>, <strong>Plan Name</strong>, pricing model (<strong>Flat Rate</strong> monthly/annual, <strong>Per User</strong>, or <strong>Metered</strong>), and prices per market. <strong>All plans must use the same pricing model</strong> — you cannot mix Flat Rate and Per User plans in one offer. Each plan must have at least one billing term configured. For metered billing, define dimension IDs and per-unit prices here. If using Flat Rate, add a generic $0.01 usage dimension before publishing — this is recommended for testing. Azure requires at least one plan before you can publish.",
         checks: [
           "Is at least one Plan created with a valid Plan ID?",
-          "Is the pricing model and currency set correctly?",
+          "Did you select the correct pricing model — Flat Rate or Per User? Note: all plans in this offer must use the same model.",
+          "Does each plan have at least one billing term configured?",
+          "If using Flat Rate, have you added a $0.01 usage dimension before publishing?",
           "For metered plans: are all dimension IDs and prices defined?",
         ],
         media: null,
@@ -975,12 +998,14 @@ export const walkthroughs = [
       },
       {
         title: "Publish, review, and go live",
-        body: "In Microsoft Partner Center, click <strong>Review and Publish</strong>. Microsoft reviews the offer — typically 1–3 business days. Once approved, the offer enters <strong>Publisher Preview</strong>: only you can see it. Test a purchase using a test account. After confirming everything works, click <strong>Go Live</strong> in Partner Center to make it publicly available. Finalize in Suger by verifying the listing status updates to Published.",
+        body: "Before submitting for review, do a final content check: no placeholder or AI-generated text left in descriptions, all required logos and screenshots uploaded, no broken or missing URLs (Privacy Policy, documentation, support). In Microsoft Partner Center, click <strong>Review and Publish</strong>. Microsoft reviews the offer — typically 1–3 business days. If you have an active deal waiting, let your Suger contact know — listings can be expedited. Once approved, the offer enters <strong>Publisher Preview</strong>: only you can see it. Test a purchase using a test account. After confirming everything works, click <strong>Go Live</strong> in Partner Center to make it publicly available. Finalize in Suger by verifying the listing status updates to Published.",
         link: {
           label: "Create and publish an Azure listing (Help Center) →",
           url: "https://suger.help.usepylon.com/articles/4753926390",
         },
         checks: [
+          "Does the listing have no placeholder or AI-generated text that wasn't updated?",
+          "Are all required assets present: logos (216×216 and 1280×720), screenshots, Privacy Policy URL, support URL?",
           "Did the Publisher Preview subscription work end-to-end?",
           "Have you clicked 'Go Live' in Partner Center?",
           "Is the listing status updated to Published in Suger?",
@@ -1663,15 +1688,15 @@ export const walkthroughs = [
     steps: [
       {
         title: "Remove sandbox connections",
-        body: "In Suger Console, navigate to <strong>Settings → Integrations</strong>. For each cloud marketplace (AWS, Azure, GCP, Snowflake), disconnect the sandbox or test integration. Do not delete the configuration — just disconnect the sandbox account to stop receiving sandbox events in your production data.",
+        body: "This step applies only if you used a sandbox or test environment during setup. In Suger Console, navigate to <strong>Settings → Integrations</strong>. For each cloud marketplace (AWS, Azure, GCP, Snowflake), disconnect the sandbox or test integration. Do not delete the configuration — just disconnect the sandbox account to stop receiving sandbox events in your production data. Self-serve customers who set up directly in production can skip this step.",
         link: {
           label: "Open Suger Console → Settings → Integrations →",
           url: "https://console.suger.io",
         },
         checks: [
+          "Did you use a sandbox environment during setup? If not, skip this step.",
           "Have all sandbox marketplace connections been disconnected (not deleted)?",
           "Are there no sandbox Product Codes remaining linked to Suger products?",
-          "Did you confirm this step with your Suger implementation contact?",
         ],
         media: null,
       },
@@ -1700,15 +1725,17 @@ export const walkthroughs = [
       },
       {
         title: "Test Private Offer configuration in production",
-        body: "Create a $0 test private offer using the production integration to a test buyer account you control. Confirm: (1) the offer appears in the production cloud marketplace portal, (2) the test buyer can accept the offer, (3) the entitlement syncs to Suger → Entitlements. This validates the full production offer flow end-to-end.",
+        body: "Before testing, confirm your listing is live: go to <strong>Suger Console → Product</strong>, open your product, and verify the status is <strong>Public</strong>. Copy the <strong>Marketplace URL</strong> and open it in an incognito browser window to confirm it loads. Then create a $0 test private offer using the production integration to a test buyer account you control. Confirm: (1) the offer appears in the production cloud marketplace portal, (2) the test buyer can accept the offer, (3) the entitlement syncs to Suger → Entitlements. Don't skip this step — it's much easier to catch issues here than after a real customer transacts.",
         terms: [
           { name: "Private Offer", slug: "private-offer" },
           { name: "Entitlement", slug: "entitlement" },
         ],
         checks: [
+          "Is your listing status showing Public in Suger Console → Product?",
+          "Did the Marketplace URL load successfully in an incognito browser window?",
           "Did the test private offer appear in the production cloud marketplace portal?",
           "Did the test buyer accept the offer successfully?",
-          "Did the entitlement sync to Suger after acceptance?",
+          "Did the entitlement sync to Suger → Entitlements after acceptance?",
         ],
         media: null,
       },
