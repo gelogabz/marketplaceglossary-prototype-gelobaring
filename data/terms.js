@@ -1166,7 +1166,8 @@ export const terms = [
     name: "Inbound Referral",
     tags: ["cosell", "suger"],
     def: "A co-sell opportunity initiated by a cloud provider's sales team and shared with your organization to accept, qualify, and pursue jointly. Managed in Suger's co-sell module with status tracking and CRM sync.",
-    alias: "Opposite: Outbound Referral | Related: Co-sell, Referral",
+    alias:
+      "Opposite: Outbound Referral | Azure equivalent: Microsoft-Sourced Opportunity Referral (MSOR) — Azure | Related: Co-sell, Referral",
     source: "https://doc.suger.io/cosell/cosell-inbound/",
     difficulty: "beginner",
     category: "cosell",
@@ -1180,6 +1181,10 @@ export const terms = [
       { name: "Outbound Referral", slug: "outbound-referral" },
       { name: "Referral", slug: "referral" },
       { name: "Co-sell", slug: "co-sell" },
+      {
+        name: "Microsoft-Sourced Opportunity Referral (MSOR) — Azure",
+        slug: "microsoft-sourced-opportunity-referral-msor-—-azure",
+      },
     ],
   },
   {
@@ -1586,6 +1591,38 @@ export const terms = [
         name: "ISV Success Program — Azure",
         slug: "isv-success-program-—-azure",
       },
+    ],
+  },
+  {
+    name: "Microsoft-Sourced Opportunity Referral (MSOR) — Azure",
+    tags: ["azure", "cosell"],
+    def: "A co-sell opportunity that a Microsoft sales representative identifies and shares with a partner through the Inbound tab of Partner Center's Co-sell opportunities page. The partner has 14 days to accept or decline; unanswered referrals automatically expire and both Microsoft and the partner are notified. MSORs typically arrive pre-matched against a Microsoft-managed customer account, giving the partner a warm, pre-qualified lead rather than a self-sourced deal.",
+    alias:
+      "Suger equivalent: Inbound Referral | AWS equivalent: APN Customer Engagements (ACE) — AWS | Related: Outbound Referral, Co-sell Eligible / Incentivized — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
+    useCases: [
+      "Reviewing an MSOR in Partner Center's Inbound tab and deciding whether to accept or decline within the 14-day window",
+      "Prioritizing Azure co-sell pipeline by distinguishing Microsoft-sourced referrals from partner-created outbound deals",
+      "Tracking MSOR acceptance and win rates to improve future referral volume and quality from Microsoft sales teams",
+    ],
+    context: [
+      "Partner Center — Azure",
+      "Co-sell Opportunities Page",
+      "Azure Co-sell",
+      "CRM",
+    ],
+    related: [
+      { name: "Inbound Referral", slug: "inbound-referral" },
+      { name: "Outbound Referral", slug: "outbound-referral" },
+      {
+        name: "Co-sell Eligible / Incentivized — Azure",
+        slug: "co-sell-eligible-incentivized-—-azure",
+      },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
     ],
   },
   {
