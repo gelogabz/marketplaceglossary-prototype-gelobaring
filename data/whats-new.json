@@ -1,6 +1,28 @@
 {
-  "lastUpdated": "2026-07-09T09:20:36.448Z",
+  "lastUpdated": "2026-07-09T23:31:24.678Z",
   "updates": [
+    {
+      "id": "aws-2026-07-09-amazon-sagemaker-feature-store-now-supports-batch-",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-07-09",
+      "title": "Amazon SageMaker Feature Store now supports batch feature writes and record listing",
+      "summary": "Amazon SageMaker Feature Store is a fully managed capability that makes it easy to compute, store, and retrieve features for training and deploying AI models.",
+      "type": "feature",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/amzn-sgm-feature-store-batch-write-list/",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-07-09-microsoft-365-copilot-specialization-updates",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-09",
+      "title": "Microsoft 365 Copilot specialization updates",
+      "summary": "Starting July 2026, Microsoft will update the Microsoft Copilot specialization. Here's what to do now.",
+      "type": "policy",
+      "sourceUrl": "https://partner.microsoft.com/partnership/specialization/microsoft-copilot?wt.mc_id=7fr6rqckgo",
+      "impact": "high"
+    },
     {
       "id": "azure-2026-07-08-azure-promotions-for-cloud-solution-providers-csps",
       "platform": "Azure",
