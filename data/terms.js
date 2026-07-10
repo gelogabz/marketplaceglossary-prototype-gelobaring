@@ -670,6 +670,42 @@ export const terms = [
     ],
   },
   {
+    name: "Commit Drawdown — Suger",
+    tags: ["suger", "billing"],
+    def: "Suger's cross-cloud comparison of how a marketplace purchase retires a customer's committed-spend agreement — AWS EDP/PPA, Azure MACC, or GCP CUD. Azure draws down 100% of the pretax purchase with no cap; AWS and GCP channel offers typically cap drawdown around 25%, a negotiated term rather than a published figure, so the exact cap must be confirmed in the customer's agreement. AWS and Azure only retire commit when the product is hosted on their own cloud — AWS requires the 'Deployed on AWS' badge and Azure requires 'Azure benefit eligible' status plus a purchase through the Azure portal path — while GCP has no hosting requirement and any transactable listing is auto-eligible.",
+    alias:
+      "Related: Committed Spend / Cloud Commit, Enterprise Discount Program (EDP) — AWS, Azure Consumption Commitment (MACC) — Azure, Committed Use Discount (CUD) — GCP",
+    source: "https://doc.suger.io/billing/revenue/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Setting accurate customer expectations before a sale by confirming whether the product's hosting location qualifies for AWS EDP/PPA, Azure MACC, or GCP CUD drawdown",
+      "Diagnosing why a completed purchase didn't reduce a customer's AWS EDP or Azure MACC balance by checking hosting and portal-path requirements",
+      "Advising a GCP-hosted product's go-to-market team that GCP drawdown is the only cloud commitment they can realistically retire without a multi-cloud hosting footprint",
+    ],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "GCP Marketplace",
+    ],
+    related: [
+      {
+        name: "Committed Spend / Cloud Commit",
+        slug: "committed-spend-/-cloud-commit",
+      },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
+      {
+        name: "Azure Consumption Commitment (MACC) — Azure",
+        slug: "azure-consumption-commitment-macc-—-azure",
+      },
+    ],
+  },
+  {
     name: "Contract — AWS",
     tags: ["aws"],
     def: "An AWS pricing model where a buyer commits upfront to a fixed fee for a defined term (up to 3 years). Can include a consumption/PAYG component for usage above the contract amount. Cannot be cancelled mid-term.",
@@ -1986,6 +2022,7 @@ export const terms = [
   {
     name: "Private Offer",
     tags: ["suger", "aws", "azure", "gcp", "offers"],
+    group: "private-offer",
     def: "A customized, non-public offer extended directly to a specific buyer with negotiated pricing, custom terms, payment schedule, or EULA. Must be based on a public listing.",
     alias:
       "Related: Offer, Agreement-Based Offer (ABO) — AWS, Multiparty Private Offer (MPO) — Azure",
@@ -2017,7 +2054,8 @@ export const terms = [
     name: "Private Plan — Azure",
     tags: ["azure", "offers"],
     def: "A plan within an Azure offer visible only to designated customers (by tenant ID). Distinct from a private offer — a private plan is a listing-level construct; a private offer is a deal-level, time-bound transaction.",
-    alias: "Related: Plan — Azure, Private Offer",
+    alias:
+      "Suger equivalent: Private Plan — Suger | Related: Plan — Azure, Private Offer",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/create-new-saas-offer-plans",
     difficulty: "intermediate",
@@ -2039,6 +2077,27 @@ export const terms = [
         name: "Microsoft Marketplace — Azure",
         slug: "microsoft-marketplace-—-azure",
       },
+    ],
+  },
+  {
+    name: "Private Plan — Suger",
+    tags: ["suger", "azure", "offers"],
+    def: "Suger's workflow for adding and managing Azure private plans — supplementary pricing tiers attached to an already-published Azure SaaS product, visible only to specific Azure AD tenant IDs. From the product detail page, sellers select Add Private Plan and provide a Plan ID, display name, description, one or more billing terms, and at least one restricted tenant ID; Azure publishes the plan asynchronously, which can take several hours. Once published, Azure locks the price — Suger's Manage Private Plans view lets sellers stop or restore distribution, but not edit pricing.",
+    alias: "Azure equivalent: Private Plan — Azure | Related: Private Offer",
+    source: "https://doc.suger.io/azure-marketplace/private-plan/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Adding a private plan to an already-published Azure SaaS product to give a specific enterprise tenant custom pricing without a time-bound private offer",
+      "Restricting a private plan's visibility to one or more Azure AD tenant IDs from the Suger Console",
+      "Stopping distribution of a private plan in Suger's Manage Private Plans view while preserving existing entitlements",
+    ],
+    context: ["Suger Console", "Azure Marketplace", "Partner Center — Azure"],
+    related: [
+      { name: "Private Plan — Azure", slug: "private-plan-—-azure" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Plan — Azure", slug: "plan-—-azure" },
     ],
   },
   {
@@ -2199,6 +2258,42 @@ export const terms = [
       {
         name: "Solution Provider Private Offer (SPPO) — AWS",
         slug: "solution-provider-private-offer-sppo-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Resale Authorization — Suger",
+    tags: ["suger", "cosell", "offers", "channel"],
+    def: "The Suger Console workflow (New Resale Authorization) that lets ISVs grant a specific channel partner permission to resell their product — creating an AWS CPPO or an Azure Multiparty Private Offer depending on the target marketplace. Sellers configure the reseller account, eligible buyers, and commit amount from a single form; the Suger Salesforce App exposes the same action as Create Reseller Authorization directly from an opportunity.",
+    alias:
+      "AWS equivalent: Resale Authorization — AWS | Related: Channel Partner Private Offer (CPPO) — AWS, Multiparty Private Offer (MPO) — Azure",
+    source: "https://doc.suger.io/aws-marketplace/cppo/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Suger Users"],
+    useCases: [
+      "Granting a channel partner resale permission for an AWS product directly from the Suger Console offer page",
+      "Creating an Azure Multiparty Private Offer resale authorization without leaving Suger",
+      "Using the Suger Salesforce App to create a Reseller Authorization from an existing opportunity",
+    ],
+    context: [
+      "Suger Console",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "Salesforce App",
+    ],
+    related: [
+      {
+        name: "Resale Authorization — AWS",
+        slug: "resale-authorization-—-aws",
+      },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
+      },
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
       },
     ],
   },
@@ -2741,7 +2836,8 @@ export const terms = [
     name: "Usage Metering",
     tags: ["suger", "general"],
     def: "The process of tracking and reporting a buyer's consumption of a product in a billing period. Suger provides a unified metering API normalizing reporting across AWS, Azure, and GCP — handling deduplication, validation, and aggregation.",
-    alias: "Related: Metering Dimension, Billable Metric, Usage Record",
+    alias:
+      "AWS equivalent: BatchMeterUsage API — AWS | Related: Metering Dimension, Billable Metric, Usage Record",
     source: "https://doc.suger.io/billing/metering/",
     difficulty: "intermediate",
     category: "billing",
@@ -2760,6 +2856,7 @@ export const terms = [
       { name: "Metering Dimension", slug: "metering-dimension" },
       { name: "Usage Record", slug: "usage-record" },
       { name: "Metered Billing", slug: "metered-billing" },
+      { name: "BatchMeterUsage API — AWS", slug: "batchmeterusage-api-—-aws" },
     ],
   },
   {
@@ -3027,7 +3124,7 @@ export const terms = [
   },
   {
     name: "Databricks Marketplace",
-    tags: ["general", "integrations"],
+    tags: ["general"],
     def: "Databricks' marketplace for data products and AI applications within the Databricks Data Intelligence Platform. Suger supports integration with Databricks to automate workflows, execute queries, and sync marketplace data.",
     alias: "",
     source: "https://docs.databricks.com/aws/en/marketplace",
@@ -3193,26 +3290,7 @@ export const terms = [
       { name: "Metered Billing", slug: "metered-billing" },
     ],
   },
-  {
-    name: "QuickBooks Integration",
-    tags: ["suger", "integrations"],
-    def: "Suger's connection to QuickBooks accounting software, enabling ISVs to sync invoices, payments, and revenue data from Suger into their QuickBooks instance for financial reporting.",
-    alias: "",
-    source: "https://doc.suger.io/integrations/quickbooks/",
-    difficulty: "intermediate",
-    category: "operations",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Syncing Suger invoices and revenue data into QuickBooks for automated financial reporting",
-      "Eliminating manual accounting data entry by connecting Suger to QuickBooks",
-    ],
-    context: ["Suger Console", "QuickBooks", "Finance Operations"],
-    related: [
-      { name: "Invoice", slug: "invoice" },
-      { name: "Revenue", slug: "revenue" },
-      { name: "NetSuite Integration", slug: "netsuite-integration" },
-    ],
-  },
+
   {
     name: "Recurring Commit",
     tags: ["suger"],
@@ -3484,6 +3562,34 @@ export const terms = [
         name: "AWS Partner Funding Portal (APFP) — AWS",
         slug: "aws-partner-funding-portal-apfp-—-aws",
       },
+    ],
+  },
+  {
+    name: "Funding — Suger",
+    tags: ["suger", "cosell", "funding"],
+    group: "cloud-partner-funding",
+    def: "The Suger Console tab that aggregates AWS Partner Central funding programs — MDF, POC Funding, and other ACE-linked incentives — into a single submit-and-track workflow. Suger connects directly to the AWS Partner Central API so sellers can create a funding request pre-filled from an existing co-sell opportunity or deal, without leaving the Suger Console or CRM. Requires an active AWS ACE integration migrated to Partner Central 3.0 before funding benefits can be enabled.",
+    alias:
+      "Related: APN Customer Engagements (ACE) — AWS, Marketing Development Funds (MDF) — AWS, Funding Wallet",
+    source: "https://doc.suger.io/cosell/cosell-funding/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Submitting an AWS MDF or POC funding request pre-filled from an active co-sell opportunity without leaving the Suger Console",
+      "Tracking the status of all AWS Partner Central funding requests in one place instead of per-program portals",
+    ],
+    context: ["Suger Console", "AWS Partner Central 3.0", "Co-sell Pipeline"],
+    related: [
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      { name: "Funding Wallet", slug: "funding-wallet" },
     ],
   },
   {
@@ -4472,7 +4578,7 @@ export const terms = [
     def: "Suger's legacy integration with AWS Partner Network using S3-based data delivery for MCAS and MDFS reports. Being deprecated in favor of the API-based AWS Partner Network integration. ISVs still on S3 should migrate to the API integration.",
     alias:
       "Related: Marketplace Commerce Analytics Service (MCAS) — AWS, Marketplace Data Feed Service (MDFS) — AWS, AWS Partner Network Integration (API)",
-    source: "https://doc.suger.io/integrations/aws-marketplace/",
+    source: "https://doc.suger.io/integrations/aws-partner-network-s3/",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -4502,7 +4608,7 @@ export const terms = [
     def: "Suger's current API-based integration with AWS Partner Network. Enables programmatic access to co-sell (ACE), funding, MCAS/MDFS data, and marketplace reporting. Replaces the legacy S3-based integration.",
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, Marketplace Commerce Analytics Service (MCAS) — AWS, Marketplace Data Feed Service (MDFS) — AWS, AWS Partner Funding Portal (APFP)",
-    source: "https://doc.suger.io/integrations/aws-marketplace/",
+    source: "https://doc.suger.io/integrations/aws-partner-network-api/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -7690,7 +7796,7 @@ export const terms = [
     tags: ["suger", "cosell"],
     def: "An AI-powered co-sell intelligence feature within Suger that evaluates AWS Partner Central opportunity data using pre-defined triggers and surfaces actionable guidance through three card types: Warning Cards (deterministic Suger-computed alerts, such as opportunities unchanged for 30+ days), Main Insight Cards (data pulled from AWS MCP covering opportunity health, engagement scores, and POC/MDF funding eligibility), and AI Trigger Cards (context-specific recommendations for deal progression, rejection analysis, and funding requests). Co-Sell Insights is AWS-exclusive, requires AWS Partner Central 3.0 migration, and surfaces in the Suger Console co-sell tab and Suger Salesforce App.",
     alias:
-      "Related: Suger Analytics, Propensity to Buy (PTB) Score, CRM Enrichment, APN Customer Engagements (ACE) — AWS, AWS Partner Central Agents — AWS",
+      "AWS equivalent: AWS Partner Central Agents — AWS | Related: Suger Analytics, Propensity to Buy (PTB) Score, CRM Enrichment, APN Customer Engagements (ACE) — AWS",
     source: "https://doc.suger.io/cosell/co-sell-insights/",
     difficulty: "intermediate",
     category: "cosell",
@@ -7717,6 +7823,38 @@ export const terms = [
         name: "APN Customer Engagements (ACE) — AWS",
         slug: "apn-customer-engagements-ace-—-aws",
       },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+      {
+        name: "Co-sell Intelligence — Suger",
+        slug: "co-sell-intelligence-—-suger",
+      },
+    ],
+  },
+  {
+    name: "Co-sell Intelligence — Suger",
+    tags: ["suger", "cosell"],
+    def: "A global toggle in Suger Console → Settings → Co-sell that enables Suger to retrieve partner engagement signals from AWS, Azure, and GCP. Once enabled per cloud, it surfaces an Engagement Score (Low, Medium, or High) directly in the CRM widget for each account — a prerequisite signal layer that sits underneath higher-level features like Co-Sell Insights, which consumes this data to generate its Warning and AI Trigger cards.",
+    alias:
+      "Related: Co-Sell Insights — Suger, APN Customer Engagements (ACE) — AWS, CRM Enrichment",
+    source: "https://doc.suger.io/cosell/cosell-configuration/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Enabling AWS, Azure, or GCP Signals in Settings → Co-sell so Engagement Scores appear in the CRM widget before building out co-sell automation",
+      "Turning on Co-sell Intelligence as a prerequisite step before configuring Auto-Enrich or Auto-Share automations for a specific cloud partner",
+    ],
+    context: ["Suger Console", "Settings", "CRM Widget", "Co-sell Pipeline"],
+    related: [
+      { name: "Co-Sell Insights — Suger", slug: "co-sell-insights-—-suger" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      { name: "CRM Enrichment", slug: "crm-enrichment" },
     ],
   },
   {
@@ -9482,7 +9620,7 @@ export const terms = [
     tags: ["suger", "offers"],
     def: "A white-label, embeddable buyer self-service interface provided by Suger that gives enterprise buyers a unified dashboard to manage all their marketplace entitlements, offers, invoices, and service requests across connected cloud marketplaces. The portal has five sections — Home, Vendors, Offers, Invoices, and Requests — and is designed to be embedded in a seller's customer portal or offered as a standalone buyer-facing URL. ISVs configure branding, domain, and access controls; buyers authenticate and view their active entitlements and payment history without contacting the seller's support team.",
     alias: "Related: Suger Buyer Service, Buyer, Entitlement, Private Offer",
-    source: "https://doc.suger.io/buyers/buyer-portal/",
+    source: "https://doc.suger.io/as-buyer/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Suger Users"],
@@ -9509,7 +9647,7 @@ export const terms = [
     tags: ["suger"],
     def: "A cross-record search interface in the Suger console that allows users to search across entitlements, offers, buyers, organizations, and integrations from a single query bar — without navigating to individual module pages. Global Search returns results ranked by relevance across all connected record types, enabling operators to locate a specific buyer account, trace an entitlement by deal name, or find an offer by product code in a single step. Results link directly to the matching record's detail view.",
     alias: "Related: Suger Console, Entitlement, Offer",
-    source: "https://doc.suger.io/get-started/global-search/",
+    source: "https://doc.suger.io/get-started/",
     difficulty: "beginner",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -9530,7 +9668,7 @@ export const terms = [
     def: "A Suger console view that provides post-signing visibility into the installment payment schedule for an active entitlement — displaying each scheduled installment amount, due date, payment status (pending, paid, failed), and outstanding balance. This is an entitlement-level tracking surface, distinct from the Flexible Payment Schedule feature used at offer creation; it reflects the agreed schedule after the buyer has accepted the offer and allows ISVs and RevOps teams to monitor installment collection status without querying the marketplace API directly.",
     alias:
       "Related: Flexible Payment Schedule / Installment Plan, Entitlement, Invoice",
-    source: "https://doc.suger.io/billing/payment-installments/",
+    source: "https://doc.suger.io/billing/payment/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -10380,7 +10518,7 @@ export const terms = [
     def: "An org-level integration connecting Suger to Microsoft Dynamics 365 to provide CRM and ERP capabilities within the Suger platform. Enables organizations to synchronize and automate processes between Suger's cloud marketplace operations — entitlements, offers, co-sell pipelines — and Dynamics 365 sales and operations data. Complements existing Microsoft integrations (Teams, Outlook) by adding the full CRM and ERP data layer for enterprise sellers who run Dynamics 365 as their system of record.",
     alias:
       "Related: CRM Integration, Salesforce Integration, HubSpot Integration, Microsoft Teams Integration",
-    source: "https://doc.suger.io/integrations/",
+    source: "https://doc.suger.io/integrations/microsoft-dynamics365/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["Suger Users", "ISVs / Sellers", "Enterprise Buyers"],
@@ -11278,6 +11416,231 @@ export const terms = [
     ],
   },
   {
+    name: "GitLab Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "A Suger integration for automating developer workflows in GitLab — browsing projects and groups, reading and writing repository files, branches, and commits, managing issues and merge requests, and driving CI/CD pipelines, jobs, and releases. Supports an org-level access token (service account, Group Access Token, or personal access token, including self-managed GitLab instances) or a user-level OAuth connection to GitLab.com. Access tokens expire and must be rotated and reconnected before they lapse, or GitLab calls start failing; the integration cannot be edited in place, only deleted and recreated.",
+    alias: "Related: GitHub Integration — Suger, Integration",
+    source: "https://doc.suger.io/integrations/gitlab/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Connecting a GitLab service account access token to Suger so Insulin agents can drive CI/CD pipelines and merge request workflows",
+      "Rotating an expiring GitLab access token and reconnecting the integration before API calls start failing",
+    ],
+    context: ["Suger Console", "GitLab", "Insulin Agents"],
+    related: [
+      { name: "GitHub Integration — Suger", slug: "github-integration-—-suger" },
+      { name: "Integration", slug: "integration" },
+    ],
+  },
+  {
+    name: "Databricks Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "A Suger integration with the Databricks Data Intelligence Platform for automating data and AI workflows — executing SQL queries, uploading data files, and triggering Databricks jobs from within Suger. Authenticates via a personal access token or an OAuth service principal (client ID and client secret) plus the Databricks host URL. Distinct from Databricks Marketplace, which is Databricks' own product marketplace rather than this data-platform connector. Cannot be edited after creation — credentials must be updated by deleting and recreating the integration.",
+    alias: "Related: Databricks Marketplace, Google BigQuery Integration",
+    source: "https://doc.suger.io/integrations/databricks/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Triggering a Databricks job from Suger after a marketplace entitlement event, using OAuth service principal credentials",
+      "Distinguishing the Databricks Integration (data/AI workflow connector) from Databricks Marketplace (Databricks' own product listing platform)",
+    ],
+    context: ["Suger Console", "Databricks Data Intelligence Platform"],
+    related: [
+      { name: "Databricks Marketplace", slug: "databricks-marketplace" },
+      {
+        name: "Google BigQuery Integration",
+        slug: "google-bigquery-integration",
+      },
+    ],
+  },
+  {
+    name: "Snowflake Marketplace Integration — Suger",
+    tags: ["suger", "snowflake", "integrations"],
+    def: "Suger's organization-level connection to Snowflake Marketplace, the platform vendors use to discover, evaluate, and monetize data applications and services. Distinct from Snowflake Integration, which streams Suger's own marketplace data into a Snowflake data warehouse — this integration connects to Snowflake's data-application marketplace itself for billing and product-listing management. Requires an active Snowflake account with API access and marketplace billing permissions; cannot be edited after creation, only deleted and recreated, which does not affect data already stored in Snowflake Marketplace.",
+    alias: "Related: Snowflake Integration, Snowflake Marketplace — Snowflake",
+    source: "https://doc.suger.io/integrations/snowflake-marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Suger to Snowflake Marketplace to manage billing for data application listings",
+      "Distinguishing Snowflake Marketplace Integration (Snowflake's data-app marketplace) from Snowflake Integration (streaming Suger data into a Snowflake warehouse)",
+    ],
+    context: ["Suger Console", "Snowflake Marketplace"],
+    related: [
+      { name: "Snowflake Integration", slug: "snowflake-integration" },
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
+    ],
+  },
+  {
+    name: "AWS Marketplace Integration — Suger",
+    tags: ["suger", "aws", "integrations"],
+    def: "Suger's organization-level connection to AWS Marketplace for consolidated billing, procurement, and usage metering across an ISV's SaaS listings. Setup requires an active AWS Marketplace seller account, an AWS account with marketplace API access, and appropriate IAM permissions; authorization runs through OAuth with a seller account, then selecting the linked AWS accounts to sync. Distinct from AWS ACE Integration (co-sell and funding data) and AWS Billing Integration (organization-wide cost management) — this integration is specifically the core marketplace listing, procurement, and metering connection. Cannot be edited after creation — deleting it may affect active marketplace subscriptions and billing relationships.",
+    alias:
+      "Related: AWS Marketplace — AWS, AWS ACE Integration, AWS Billing Integration — Suger",
+    source: "https://doc.suger.io/integrations/aws-marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Suger to an AWS Marketplace seller account via OAuth to centralize billing, procurement, and usage metering",
+      "Selecting the correct linked AWS accounts during setup so marketplace data syncs to the right listings",
+    ],
+    context: ["Suger Console", "AWS Marketplace", "AWS IAM"],
+    related: [
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      { name: "AWS ACE Integration", slug: "aws-ace-integration" },
+      {
+        name: "AWS Billing Integration — Suger",
+        slug: "aws-billing-integration-—-suger",
+      },
+    ],
+  },
+  {
+    name: "AWS Billing Integration — Suger",
+    tags: ["suger", "aws", "integrations"],
+    def: "Suger's organization-level connection to AWS billing infrastructure for syncing billing data, managing costs, and centralizing financial operations across an ISV's AWS accounts. Requires an AWS Organization master or linked account with Billing and Cost Management permissions; authenticated via OAuth, with no user-level option. The integration cannot be edited after creation — changes require deleting and recreating it, which can disrupt billing data sync and cost reporting until reconnected.",
+    alias:
+      "Related: Marketplace Data Feed Service (MDFS) — AWS, Marketplace Commerce Analytics Service (MCAS) — AWS",
+    source: "https://doc.suger.io/integrations/aws-billing/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Suger to an AWS Organization master account to sync billing data and centralize cost reporting",
+      "Understanding that AWS Billing Integration is organization-level only, with no user-level connection option",
+    ],
+    context: [
+      "Suger Console",
+      "AWS Organizations",
+      "Billing and Cost Management",
+    ],
+    related: [
+      {
+        name: "Marketplace Data Feed Service (MDFS) — AWS",
+        slug: "marketplace-data-feed-service-mdfs-—-aws",
+      },
+      {
+        name: "Marketplace Commerce Analytics Service (MCAS) — AWS",
+        slug: "marketplace-commerce-analytics-service-mcas-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Azure Marketplace Integration — Suger",
+    tags: ["suger", "azure", "integrations"],
+    def: "Suger's organization-level connection to Azure Marketplace for consolidated billing, procurement, and usage metering across an ISV's Azure SaaS listings. Setup requires an active Azure Marketplace seller account, a Microsoft Partner Network (MPN) account, and an Azure subscription with marketplace permissions; authorization runs through Microsoft/Azure OAuth with selectable target subscriptions. The integration cannot be edited in place — deleting and recreating it can disrupt active marketplace subscriptions and billing relationships until reconnected.",
+    alias:
+      "Related: Microsoft Marketplace — Azure, Partner Center — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
+    source: "https://doc.suger.io/integrations/azure-marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Suger to Azure Marketplace via Microsoft OAuth to centralize billing, procurement, and usage metering",
+      "Selecting the correct Azure subscriptions during setup so marketplace data syncs to the right listings",
+    ],
+    context: ["Suger Console", "Microsoft Partner Center", "Azure Marketplace"],
+    related: [
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Azure Co-sell Integration — Suger",
+    tags: ["suger", "azure", "cosell", "integrations"],
+    def: "Suger's organization-level connection to Microsoft's co-sell program through the One Commercial Partner (OCP) ecosystem, letting ISVs manage joint-selling opportunities with Microsoft sales teams inside Suger. Setup requires an active Microsoft Partner Network (MPN) account, Azure Active Directory tenant access, enrollment in the Azure Co-sell program, and the right Partner Center role; authorization runs through Microsoft OAuth with configurable opportunity-sync settings. Cannot be edited after creation — deleting and recreating it can affect active co-sell opportunities and partner relationships.",
+    alias:
+      "Related: Microsoft-Sourced Opportunity Referral (MSOR) — Azure, Co-Sell Insights — Suger, Co-sell Intelligence — Suger",
+    source: "https://doc.suger.io/integrations/azure-cosell/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Suger Users"],
+    useCases: [
+      "Connecting Suger to Microsoft's OCP ecosystem so Azure co-sell opportunities sync automatically instead of manual Partner Center tracking",
+      "Verifying MPN enrollment and Partner Center role permissions before authorizing the Azure Co-sell OAuth connection",
+    ],
+    context: [
+      "Suger Console",
+      "Microsoft Partner Center",
+      "Azure Co-sell Program",
+    ],
+    related: [
+      {
+        name: "Microsoft-Sourced Opportunity Referral (MSOR) — Azure",
+        slug: "microsoft-sourced-opportunity-referral-msor-—-azure",
+      },
+      { name: "Co-Sell Insights — Suger", slug: "co-sell-insights-—-suger" },
+      {
+        name: "Co-sell Intelligence — Suger",
+        slug: "co-sell-intelligence-—-suger",
+      },
+    ],
+  },
+  {
+    name: "GCP Marketplace Integration — Suger",
+    tags: ["suger", "gcp", "integrations"],
+    def: "Suger's organization-level connection to Google Cloud Marketplace for unified billing, procurement, and usage tracking across an ISV's GCP SaaS listings. Setup requires an active Google Cloud Marketplace seller account with completed seller onboarding and a GCP organization with billing enabled; authorization runs through Google Cloud OAuth with selectable GCP projects. Cannot be edited after creation — deleting the integration may affect active marketplace subscriptions and billing relationships.",
+    alias: "Related: GCP Marketplace — GCP, Producer Portal — GCP",
+    source: "https://doc.suger.io/integrations/gcp-marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Connecting Suger to Google Cloud Marketplace via OAuth to centralize billing and usage tracking across GCP listings",
+      "Selecting the correct GCP projects during setup so marketplace data syncs to the right products",
+    ],
+    context: ["Suger Console", "GCP Marketplace", "Google Cloud Organization"],
+    related: [
+      { name: "GCP Marketplace — GCP", slug: "gcp-marketplace-—-gcp" },
+      { name: "Producer Portal — GCP", slug: "producer-portal-—-gcp" },
+    ],
+  },
+  {
+    name: "GCP Co-sell Integration — Suger",
+    tags: ["suger", "gcp", "cosell", "integrations"],
+    def: "Suger's organization-level connection to Google Cloud's co-sell program through Partner Advantage, letting ISVs manage joint-selling opportunities with Google Cloud sales teams inside Suger. Setup requires active Google Cloud Partner Advantage membership, enrollment in the GCP Co-sell program, and Partner Administrator access; sellers add Suger's Google Service Account as an Integrator in the Partner Network Hub, then enter their Partner ID in Suger to complete the connection. Cannot be edited after creation — deleting and recreating it can affect active co-sell opportunities and partner relationships.",
+    alias:
+      "Related: Google Cloud Partner Network — GCP, Google Cloud Partner Agent — GCP, Co-Sell Insights — Suger",
+    source: "https://doc.suger.io/integrations/gcp-cosell/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Suger Users"],
+    useCases: [
+      "Adding Suger's Google Service Account as an Integrator in the Partner Network Hub to enable GCP co-sell sync",
+      "Entering a Partner ID in Suger Settings to complete the GCP Co-sell connection and start managing opportunities with Google sales teams",
+    ],
+    context: [
+      "Suger Console",
+      "Google Cloud Partner Advantage",
+      "Partner Network Hub",
+    ],
+    related: [
+      {
+        name: "Google Cloud Partner Network — GCP",
+        slug: "google-cloud-partner-network-—-gcp",
+      },
+      {
+        name: "Google Cloud Partner Agent — GCP",
+        slug: "google-cloud-partner-agent-—-gcp",
+      },
+      { name: "Co-Sell Insights — Suger", slug: "co-sell-insights-—-suger" },
+    ],
+  },
+  {
     name: "AWS China Marketplace Integration — Suger",
     tags: ["suger", "aws", "integrations"],
     def: "An org-level OAuth integration that connects a Suger organization to AWS China Marketplace — a localized marketplace for mainland China operated by AWS's local China partners. Enables marketplace seller operations within the China region, distinct from the standard global AWS Marketplace integration. Requires an AWS China Marketplace seller account, an AWS China region account with marketplace access, and localized business credentials for the China region. Deletion may impact active marketplace subscriptions in the China region.",
@@ -11438,7 +11801,7 @@ export const terms = [
     def: "Searchable document collections stored within Suger Insulin that agents retrieve at query time to ground responses in org-specific content — runbooks, deal notes, product documentation, and playbooks. Knowledge Bases extend Insulin Agents beyond platform data by ingesting proprietary internal files, chunking and indexing them for semantic search, and automatically surfacing the most relevant chunks when a Knowledge Base is attached to an agent's configuration. Agents can answer questions and generate outputs requiring company-specific context without that information needing to live inside the Suger platform itself.",
     alias:
       "Related: Insulin Agent — Suger, Insulin Skill — Suger, Insulin Chat — Suger",
-    source: "https://doc.suger.io/insulin/knowledge-bases/",
+    source: "https://doc.suger.io/insulin/knowledge-base/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["Suger Users", "ISVs / Sellers"],
