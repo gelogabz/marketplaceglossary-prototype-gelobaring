@@ -2,6 +2,11 @@ import { terms } from "../data/terms.js";
 import { slug } from "../app/render.js";
 import { escHtml, PLATFORM_SUFFIX_RE as SUFFIX_RE } from "../app/utils.js";
 
+// Display-only suffix strip — includes Suger, unlike the shared PLATFORM_SUFFIX_RE
+// (which deliberately excludes it so Suger terms route through the tag-based filter
+// below instead of the platform-suffix filter). Used only for label/cell text.
+const DISPLAY_SUFFIX_RE = / — (AWS|Azure|GCP|Snowflake|Alibaba|Suger)$/;
+
 const PLATFORMS = [
   { key: "Suger" },
   { key: "AWS" },
@@ -147,9 +152,11 @@ function conceptLabel(byPlatform) {
   }
   for (const p of LABEL_PRIORITY) {
     if (byPlatform[p]?.length)
-      return byPlatform[p][0].name.replace(SUFFIX_RE, "").trim();
+      return byPlatform[p][0].name.replace(DISPLAY_SUFFIX_RE, "").trim();
   }
-  return Object.values(byPlatform)[0][0].name.replace(SUFFIX_RE, "").trim();
+  return Object.values(byPlatform)[0][0].name
+    .replace(DISPLAY_SUFFIX_RE, "")
+    .trim();
 }
 
 // Only groups that span 2+ platforms, sorted alphabetically by concept label
@@ -184,7 +191,7 @@ function buildTable(filter) {
         const links = termArr
           .map((term) => {
             const termSlug = slug(term.name);
-            const shortName = term.name.replace(SUFFIX_RE, "").trim();
+            const shortName = term.name.replace(DISPLAY_SUFFIX_RE, "").trim();
             return `<a href="../index.html#term-${termSlug}" class="compare-link">${shortName}</a>`;
           })
           .join("");
