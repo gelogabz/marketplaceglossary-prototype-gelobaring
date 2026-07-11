@@ -1,6 +1,28 @@
 {
-  "lastUpdated": "2026-07-10T09:18:05.196Z",
+  "lastUpdated": "2026-07-11T07:39:31.841Z",
   "updates": [
+    {
+      "id": "aws-2026-07-10-announcing-2026-aws-partner-award-nominations",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-07-10",
+      "title": "Announcing 2026 AWS Partner Award Nominations",
+      "summary": "The 2026 AWS Partner Awards honor partners who have demonstrated outstanding results and innovation with the use of AWS products and solutions. AWS Partners can self-nominate themselves to be considered across a select number of AWS Partner Award categories.",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/apn/announcing-2026-aws-partner-award-nominations/",
+      "impact": "low"
+    },
+    {
+      "id": "azure-2026-07-10-azure-ip-co-sell-updates",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-10",
+      "title": "Azure IP co-sell updates",
+      "summary": "In FY27, Microsoft is making strategic changes to Azure IP co-sell to drive greater partner impact.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
+      "impact": "medium"
+    },
     {
       "id": "aws-2026-07-09-amazon-sagemaker-feature-store-now-supports-batch-",
       "platform": "AWS",
