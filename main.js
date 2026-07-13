@@ -561,7 +561,20 @@ function render() {
 
 // ---- Init -------------------------------------------------------------------
 
-const MONTHS_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const MONTHS_SHORT = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 function formatReviewedDate(iso) {
   const [y, m] = iso.split("-");
   return `Reviewed ${MONTHS_SHORT[parseInt(m, 10) - 1]} ${y}`;

@@ -35,7 +35,8 @@ export const walkthroughs = [
       "Set up your Suger organization, invite stakeholders, and align on the implementation timeline before integrations begin.",
     estimated: "~30 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-107651/5123698cb8a6d0c/18476e-73291",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-107651/5123698cb8a6d0c/18476e-73291",
     steps: [
       {
         title: "Create your Suger Console and invite stakeholders",
@@ -105,7 +106,8 @@ export const walkthroughs = [
       "Connect Suger to Slack to receive real-time alerts for marketplace events — offer creation, entitlement changes, billing events, and co-sell updates.",
     estimated: "~10 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78511",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78511",
     steps: [
       {
         title: "Install the Suger App for Slack",
@@ -164,7 +166,8 @@ export const walkthroughs = [
       "Connect your AWS Marketplace seller account to Suger through a secure IAM connection, MCAS, and MDFS data feed configuration.",
     estimated: "~30 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78011",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78011",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -280,7 +283,8 @@ export const walkthroughs = [
       "Connect Suger to AWS Partner Central to sync ACE co-sell opportunities and automate referral workflows. Requires active ISV Accelerate enrollment.",
     estimated: "~15 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77991",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77991",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -358,7 +362,8 @@ export const walkthroughs = [
       "Connect your Azure Marketplace publisher account to Suger through Azure App Registration, API permissions, and Partner Center linking.",
     estimated: "~30 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78031",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78031",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -451,7 +456,8 @@ export const walkthroughs = [
       "Connect your GCP Marketplace producer account to Suger using keyless Workload Identity Federation — a secure, credential-free authentication method.",
     estimated: "~45 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78051",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78051",
     steps: [
       {
         title: "Confirm prerequisites and define environment variables",
@@ -563,7 +569,8 @@ export const walkthroughs = [
       "Connect Suger to Google Cloud Partner Network to enable automated GCP co-sell workflows and opportunity management.",
     estimated: "~15 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78091",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78091",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -619,7 +626,8 @@ export const walkthroughs = [
       "Connect your Snowflake Marketplace provider account to Suger using key-pair authentication to manage listings, entitlements, and revenue.",
     estimated: "~20 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78111",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78111",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -669,7 +677,8 @@ export const walkthroughs = [
       "Connect Salesforce to Suger: install the Suger app, configure two-way sync, set up the integration user, enable the Suger widget, and configure co-sell field mapping.",
     estimated: "~30 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78131",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78131",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -761,7 +770,8 @@ export const walkthroughs = [
       "Connect HubSpot to Suger: establish the OAuth connection, enable the Suger widget on Deal pages, and configure co-sell field mapping.",
     estimated: "~20 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78151",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78151",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -828,7 +838,8 @@ export const walkthroughs = [
       "Create, configure, test, and publish an AWS Marketplace product listing through Suger — from product draft through AWS review and go-live.",
     estimated: "~30 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75251",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75251",
     steps: [
       {
         title: "Understand products vs. listings and confirm prerequisites",
@@ -918,7 +929,8 @@ export const walkthroughs = [
       "Create and publish a transactable SaaS offer on Azure Marketplace through Suger and Microsoft Partner Center.",
     estimated: "~45 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75291",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75291",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -1019,7 +1031,8 @@ export const walkthroughs = [
       "Create and publish a product listing on Google Cloud Marketplace through Suger and the GCP Producer Portal — from draft through approval phases and billing tests.",
     estimated: "~45 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75331",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75331",
     steps: [
       {
         title: "Understand Product vs. Listing and confirm prerequisites",
@@ -1141,7 +1154,8 @@ export const walkthroughs = [
       "Configure CRM-to-cloud-partner field mappings, enable automation, and validate with a test referral for AWS, Azure, and GCP co-sell.",
     estimated: "~45 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77511",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77511",
     steps: [
       {
         title: "Confirm cloud partner connections are active",
@@ -1237,7 +1251,8 @@ export const walkthroughs = [
       "Map CRM fields to cloud marketplace private offer requirements for AWS, Azure, GCP, and Snowflake — and test the configuration before going live.",
     estimated: "~45 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77591",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77591",
     steps: [
       {
         title: "Access private offer mapping settings",
@@ -1324,7 +1339,8 @@ export const walkthroughs = [
       "Walk through creating, pricing, and sending a custom-priced AWS Marketplace private offer to a specific buyer through the Suger Console.",
     estimated: "~15 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75551",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75551",
     steps: [
       {
         title: "Prepare AWS and Suger requirements",
@@ -1419,7 +1435,8 @@ export const walkthroughs = [
       "Walk through creating, configuring, and activating a custom-priced Azure Marketplace private offer for a specific buyer through Suger.",
     estimated: "~15 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75611",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75611",
     steps: [
       {
         title: "Create the private offer in Suger",
@@ -1489,7 +1506,8 @@ export const walkthroughs = [
       "Create and share a custom-priced Google Cloud Marketplace private offer for a specific buyer through Suger, with flexible pricing and payment options.",
     estimated: "~15 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75631",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75631",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -1541,7 +1559,8 @@ export const walkthroughs = [
       "Create a resale authorization for an AWS Marketplace product so a channel partner can create Channel Partner Private Offers (CPPOs) for their customers.",
     estimated: "~20 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75751",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75751",
     steps: [
       {
         title: "Complete AWS and Suger resale requirements",
@@ -1611,7 +1630,8 @@ export const walkthroughs = [
       "Create a resale authorization for an Azure Marketplace product so channel partners can create Multiparty Private Offers (MPOs) for their customers.",
     estimated: "~20 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75771",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75771",
     steps: [
       {
         title: "Complete Azure resale requirements",
@@ -1770,7 +1790,8 @@ export const walkthroughs = [
       "A guided checklist of the first post-go-live actions: verify entitlements, configure notifications, set up webhooks, create an API client, and run your first data export.",
     estimated: "~25 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
     steps: [
       {
         title: "Verify entitlement sync is live",
@@ -1874,7 +1895,8 @@ export const walkthroughs = [
       "Create a Suger API client for your integration layer and configure a signed webhook to automate provisioning and marketplace event handling.",
     estimated: "~15 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77431",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77431",
     steps: [
       {
         title: "Create an API client (API Key)",
@@ -1959,7 +1981,8 @@ export const walkthroughs = [
       "Set up billable metrics in Suger to connect product consumption data with cloud marketplace billing engines across AWS, Azure, and GCP.",
     estimated: "~20 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77451",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77451",
     steps: [
       {
         title: "Define your billable metrics",
@@ -2030,7 +2053,8 @@ export const walkthroughs = [
       "Set up Suger's notification system to route marketplace events to the right recipients, and optionally build branded custom email templates.",
     estimated: "~20 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
     steps: [
       {
         title: "Enable Global Email Notifications",
@@ -2099,7 +2123,8 @@ export const walkthroughs = [
       "Integrate Okta OIDC Single Sign-On with SCIM provisioning to automate user management and enforce role-based access in the Suger Console.",
     estimated: "~30 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77651",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77651",
     steps: [
       {
         title: "Initialize the Suger Application in Okta",
@@ -2158,7 +2183,8 @@ export const walkthroughs = [
       "Submit, track, and manage AWS Proof of Concept (POC) and Marketing Development Fund (MDF) funding requests through Suger.",
     estimated: "~15 min",
     status: "complete",
-    sourceUrl: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-76371",
+    sourceUrl:
+      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-76371",
     steps: [
       {
         title: "Confirm prerequisites and activate funding",

@@ -267,7 +267,7 @@ export const terms = [
     alias:
       "Related: AWS Marketplace Management Portal (AMMP) — AWS, Suger Console",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/APIReference/welcome.html",
+      "https://docs.aws.amazon.com/marketplace/latest/developerguide/about-apis.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -1288,7 +1288,7 @@ export const terms = [
   {
     name: "ISV Accelerate — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Partners must achieve Validated or Differentiated status in AWS Partner Central (via the Partner Path) as a baseline enrollment prerequisite; AWS Specialization status unlocks premium co-sell benefit tiers above the standard program. Required for SPPO participation. As of 2026, ISV Accelerate explicitly covers agentic SaaS co-sell activities and AI agent marketplace listings, extending the program's scope beyond conventional software products.",
+    def: "An AWS program offering ISVs co-sell support, AWS sales team introductions, and go-to-market resources. Requires: (1) one or more products listed as GA in AWS Marketplace, (2) minimum 5 launched opportunities (ACE or private offers) in past 12 months excluding FVO, (3) minimum 15 qualified ACE opportunities in past 12 months, (4) at least one team member who completed the Co-Selling with AWS learning module, and (5) ≥$2,000 in recognized AWS Account revenue. Also requires an approved Foundational Technical Review (FTR) for co-sell eligibility and funding access. Partners must achieve Validated or Differentiated status in AWS Partner Central (via the Partner Path) as a baseline enrollment prerequisite; AWS Specialization status unlocks premium co-sell benefit tiers above the standard program. Required for SPPO participation. As of 2026, ISV Accelerate explicitly covers agentic SaaS co-sell activities and AI agent marketplace listings, extending the program's scope beyond conventional software products. Partners enrolled after January 1, 2026 have MDF access gated behind Partner Revenue Measurement (PRM) implementation plus co-sell engagement thresholds; the program also adds in-person GTM workshops and real-time conversational deal-intelligence surfaced directly on the ACE Opportunity page.",
     alias:
       "Azure equivalent: ISV Success Program — Azure | GCP equivalent: Build Engagement Model — GCP | Related: APN Customer Engagements (ACE) — AWS, Solution Provider Private Offer (SPPO) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
@@ -5051,7 +5051,7 @@ export const terms = [
   {
     name: "Partner Revenue Measurement (PRM) — AWS",
     tags: ["aws", "cosell", "funding"],
-    def: "An AWS Partner Network capability that measures and quantifies the revenue impact an ISV's product has on AWS service consumption — across both partner-managed and customer-managed accounts. Launched in January 2026. Partners implement PRM via resource tagging to demonstrate their AWS contribution, unlock APN funding benefits, and gain consumption insights.",
+    def: "An AWS Partner Network capability that measures and quantifies the revenue impact an ISV's product has on AWS service consumption — across both partner-managed and customer-managed accounts. Launched in January 2026. Partners implement PRM via resource tagging to demonstrate their AWS contribution, unlock APN funding benefits, and gain consumption insights. Compliance deadline is July 31, 2026 (May 31, 2026 for AI Competency holders); PRM becomes the required foundation for co-sell funding eligibility starting January 2027.",
     alias:
       "Related: APN ID Tag (aws-apn-id), PRM Resource Tagging, Revenue Attribution — AWS, AWS Partner Network (APN) — AWS",
     source: "https://aws.amazon.com/partners/aws-marketplace/",
@@ -5080,7 +5080,8 @@ export const terms = [
     tags: ["aws"],
     def: "The AWS resource tag key used for Partner Revenue Measurement. Partners tag their AWS resources with key `aws-apn-id` and value `pc:<product-code>` (e.g. `pc:5ugbbrmu7ud3u5hsipfzug61p`) to attribute AWS service consumption to their marketplace product. Revenue attribution continues until the tag is removed or the resource is terminated.",
     alias: "",
-    source: "https://aws.amazon.com/partners/aws-marketplace/",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/01/new-partner-revenue-measurement/",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
@@ -5478,7 +5479,7 @@ export const terms = [
   {
     name: "AWS Solution Provider Program (SPP) — AWS",
     tags: ["aws", "cosell"],
-    def: "AWS's primary channel reseller program allowing authorized partners to resell AWS services to end customers, with consolidated billing and discounts. Updated significantly in 2026 with streamlined incentives: a new Streamlined Base Benefit, New Customer Incentive, and Partner Growth Incentive replacing several prior discount mechanisms. Distinct from CPPO/SPPO, which are ISV-specific marketplace channel programs.",
+    def: "AWS's primary channel reseller program allowing authorized partners to resell AWS services to end customers, with consolidated billing and discounts. Updated significantly in 2026 with streamlined incentives: a new Streamlined Base Benefit, New Customer Incentive, and Partner Growth Incentive replacing several prior discount mechanisms. The 2026 overhaul also introduces Deal Registration for Private Pricing Resell, a net-new channel sales mechanism for resold private-pricing deals. Distinct from CPPO/SPPO, which are ISV-specific marketplace channel programs.",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, SPPO (Solution Provider Private Offer), Channel Partner (CP), Partner Development Manager (PDM) — AWS",
     source: "https://aws.amazon.com/partners/programs/",
@@ -7652,7 +7653,7 @@ export const terms = [
   {
     name: "Partner Reported Azure Consumed Revenue (PRACR) — Azure",
     tags: ["azure", "cosell"],
-    def: "A Microsoft program that lets qualifying ISVs self-report the Azure consumed revenue attributable to their SaaS solutions, aligning Microsoft field incentives with actual customer Azure consumption. Partners submit monthly CSV reports via Partner Center listing customer Subscription GUIDs and contract values; Microsoft calculates reportable revenue using an Estimated Azure Consumption (EAC) percentage proxy applied to monthly contract value. PRACR eligibility requires Solutions Partner with certified software designation (for Azure or Industry AI) and an approved Deal Registration for each reported deal. Participation signals partner-driven Azure impact to Microsoft's field teams and unlocks top-tier co-sell support benefits.",
+    def: "A Microsoft program that lets qualifying ISVs self-report the Azure consumed revenue attributable to their SaaS solutions, aligning Microsoft field incentives with actual customer Azure consumption. Partners submit monthly CSV reports via Partner Center listing customer Subscription GUIDs and contract values; Microsoft calculates reportable revenue using an Estimated Azure Consumption (EAC) percentage proxy applied to monthly contract value. PRACR eligibility requires Solutions Partner with certified software designation (for Azure or Industry AI) and an approved Deal Registration for each reported deal. Microsoft is retiring PRACR as the primary co-sell attribution mechanism starting FY27 (July 2026) in favor of Marketplace-transaction-based crediting (Marketplace Billed Sales) — PRACR continues to apply to legacy-tracked revenue during the transition, but partners should shift toward transactable Marketplace listings as the durable co-sell credit path.",
     alias:
       "Related: Azure Consumed Revenue (ACR) — Azure | Related: Deal Registration — Azure | Related: Co-sell Eligible / Incentivized — Azure | Related: Partner Center — Azure",
     source:
@@ -9843,6 +9844,25 @@ export const terms = [
     ],
   },
   {
+    name: "Avalara Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "Suger's real-time tax compliance integration with Avalara AvaTax. A Suger AI agent computes sales tax and VAT on invoices, validates and normalizes customer addresses, and manages the tax transaction commit/void lifecycle — a functionally distinct category from Suger's billing/CRM/dev-tool integrations, none of which handle tax computation.",
+    alias: "Related: Invoice, Integration",
+    source: "https://doc.suger.io/integrations/avalara/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Computing sales tax and VAT automatically on Suger-generated invoices via Avalara AvaTax",
+      "Validating and normalizing customer billing addresses before tax calculation to reduce compliance errors",
+    ],
+    context: ["Suger Console", "Billing", "Tax Compliance"],
+    related: [
+      { name: "Invoice", slug: "invoice" },
+      { name: "Integration", slug: "integration" },
+    ],
+  },
+  {
     name: "Global System Integrator (GSI)",
     tags: ["general", "cosell"],
     def: "A large professional services and technology firm — such as Accenture, Deloitte, Infosys, Wipro, TCS, Capgemini, IBM, or Cognizant — that designs, implements, and manages complex cloud infrastructure and software deployments for enterprise clients. GSIs are key partners in cloud GTM strategies: they are typically enrolled in multiple hyperscaler partner programs, influence large enterprise purchasing decisions through multi-year transformation engagements, and often co-sell ISV software alongside their own services. ISVs who establish GSI partnerships can access major enterprise accounts and attach their marketplace listings to GSI-led cloud workloads.",
@@ -10482,6 +10502,22 @@ export const terms = [
     ],
   },
   {
+    name: "Oracle Cloud Marketplace Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "Suger's connection to Oracle Cloud Marketplace — OCI API signing-key authentication, product listing sync, and the full private offer lifecycle (draft, contract attach, send, subscription monitoring). Extends Suger's marketplace coverage beyond AWS, Azure, GCP, Snowflake, and Alibaba to Oracle's cloud marketplace.",
+    alias: "Related: Integration, AWS Marketplace Integration — Suger",
+    source: "https://doc.suger.io/oracle-marketplace/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Syncing Oracle Cloud Marketplace product listings into Suger using OCI API signing-key authentication",
+      "Managing the full Oracle private offer lifecycle — draft, contract attach, send, subscription monitoring — from the Suger Console",
+    ],
+    context: ["Suger Console", "Oracle Cloud Marketplace"],
+    related: [{ name: "Integration", slug: "integration" }],
+  },
+  {
     name: "People Data Labs Integration — Suger",
     tags: ["suger", "integrations"],
     def: "An org-level API key integration connecting Suger to People Data Labs for bulk lead and account data enrichment. Enriches professional profiles with verified employment histories, person profiles, and company firmographics from People Data Labs' datasets. Unlike user-level OAuth integrations, this integration operates at the organization level, making enriched data accessible to all Suger users and workflows within the organization. Designed for systematic enrichment of marketplace buyer and prospect records rather than per-contact lookup.",
@@ -10715,6 +10751,37 @@ export const terms = [
       {
         name: "AWS Partner Central Agents — AWS",
         slug: "aws-partner-central-agents-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Forward Deployed Engineering for Partners — AWS",
+    tags: ["aws", "cosell"],
+    def: "An AWS initiative (announced June 2026, backed by a $1B investment) that embeds AWS-credentialed engineering teams within select consulting partners to deliver production agentic AI systems for enterprise customers. Partner engineers must pass an AWS-defined technical bar before engaging customers; AWS provides a reusable delivery harness that compounds expertise across engagements, with the resulting delivery IP staying with the partner. Currently launching with a limited set of partners before broader network rollout.",
+    alias:
+      "Related: Generative AI Innovation Center (GenAIIC) — AWS, Partner Agent Factory (PAF) — AWS",
+    source:
+      "https://aws.amazon.com/blogs/apn/introducing-forward-deployed-engineering-for-partners-winning-the-future-of-enterprise-ai/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Building an AWS-credentialed internal engineering team to qualify for the Partner-Led Forward Deployed Engineering motion",
+      "Delivering a production agentic AI system for an enterprise customer using AWS's reusable delivery harness, retaining the resulting delivery IP",
+    ],
+    context: [
+      "AWS Partner Network",
+      "Enterprise AI",
+      "Generative AI Innovation Center",
+    ],
+    related: [
+      {
+        name: "Generative AI Innovation Center (GenAIIC) — AWS",
+        slug: "generative-ai-innovation-center-genaiic-—-aws",
+      },
+      {
+        name: "Partner Agent Factory (PAF) — AWS",
+        slug: "partner-agent-factory-paf-—-aws",
       },
     ],
   },
@@ -11430,7 +11497,10 @@ export const terms = [
     ],
     context: ["Suger Console", "GitLab", "Insulin Agents"],
     related: [
-      { name: "GitHub Integration — Suger", slug: "github-integration-—-suger" },
+      {
+        name: "GitHub Integration — Suger",
+        slug: "github-integration-—-suger",
+      },
       { name: "Integration", slug: "integration" },
     ],
   },

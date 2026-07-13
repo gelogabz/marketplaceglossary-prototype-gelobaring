@@ -3,2203 +3,2627 @@
 export const lastUpdated = "2026-07-13T08:47:24.091Z";
 export const updates = [
   {
-    "id": "aws-2026-07-10-announcing-2026-aws-partner-award-nominations",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-10",
-    "title": "Announcing 2026 AWS Partner Award Nominations",
-    "summary": "The 2026 AWS Partner Awards honor partners who have demonstrated outstanding results and innovation with the use of AWS products and solutions. AWS Partners can self-nominate themselves to be considered across a select number of AWS Partner Award categories.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/announcing-2026-aws-partner-award-nominations/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-07-10-azure-ip-co-sell-updates",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-10",
-    "title": "Azure IP co-sell updates",
-    "summary": "In FY27, Microsoft is making strategic changes to Azure IP co-sell to drive greater partner impact.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-07-09-amazon-sagemaker-feature-store-now-supports-batch-",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-09",
-    "title": "Amazon SageMaker Feature Store now supports batch feature writes and record listing",
-    "summary": "Amazon SageMaker Feature Store is a fully managed capability that makes it easy to compute, store, and retrieve features for training and deploying AI models.",
-    "type": "feature",
-    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/amzn-sgm-feature-store-batch-write-list/",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-07-09-microsoft-365-copilot-specialization-updates",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-09",
-    "title": "Microsoft 365 Copilot specialization updates",
-    "summary": "Starting July 2026, Microsoft will update the Microsoft Copilot specialization. Here's what to do now.",
-    "type": "policy",
-    "sourceUrl": "https://partner.microsoft.com/partnership/specialization/microsoft-copilot?wt.mc_id=7fr6rqckgo",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-08-azure-promotions-for-cloud-solution-providers-csps",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-08",
-    "title": "Azure promotions for cloud solution providers (CSPs) available in sandbox environments",
-    "summary": "Start preparing for Azure consumptive promotions and per-user promotional targeting.",
-    "type": "feature",
-    "sourceUrl": "https://aka.ms/cspazurepromotions",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-08-cloud-accelerate-factory-expands",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-08",
-    "title": "Cloud Accelerate Factory expands",
-    "summary": "More partners can now use Cloud Accelerate Factory to deliver faster, more competitive customer engagements.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/asset/collection/cloud-accelerate-factory?wt.mc_id=n537oralxe#/",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-07-08-annual-local-currency-pricing-updates-for-commerci",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-08",
-    "title": "Annual local currency pricing updates for Commercial Cloud",
-    "summary": "Starting in FY27, Microsoft is moving to annual local currency pricing updates for Commercial Cloud services every January.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/fx-currency-blog",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-07-new-access-to-move-customers-from-ea-to-csp",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-07",
-    "title": "New access to move customers from EA to CSP",
-    "summary": "Expanded access to the EA-to-CSP for Azure tool helps partners transition customers to drive recurring revenue.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/benefits/technical-benefits",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-07-07-growth-margins-cloud-solution-providers-csps-avail",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-07",
-    "title": "Growth margins cloud solution providers (CSPs) available",
-    "summary": "Sandbox access now available for CSP growth margins",
-    "type": "blog",
-    "sourceUrl": "https://aka.ms/cspgrowthmargins",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-07-06-say-hello-to-184-new-aws-competency-service-delive",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-06",
-    "title": "Say Hello to 184 New AWS Competency, Service Delivery, and MSP Partners Added in June",
-    "summary": "We are excited to highlight 184 AWS Partners that received new or renewed specializations in June for our global AWS Competency, AWS Managed Service Provider (MSP), and AWS Service Delivery programs.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/say-hello-to-184-new-aws-competency-service-delivery-and-msp-partners-added-in-june/",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-07-06-custom-contract-lengths-now-available",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-06",
-    "title": "Custom contract lengths now available",
-    "summary": "Secure deals for up to 10 years with custom contract lengths, now generally available in Microsoft Marketplace.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/manage-isv-customer-private-offers#2-create-a-private-offer-with-absolute-pricing-as-a-new-saas-or-professional-services-plan",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-06-dlp-in-defender-for-cloud-apps-deprecation",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-06",
-    "title": "DLP in Defender for Cloud Apps deprecation",
-    "summary": "DLP in Defender for Cloud Apps will be deprecated on January 6, 2027. Microsoft Purview will become the unified home for data security and compliance.",
-    "type": "policy",
-    "sourceUrl": "https://aka.ms/MDAPartnerFAQ",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-07-02-how-interwiz-reduced-ai-costs-by-90-with-amazon-be",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-02",
-    "title": "How InterWiz reduced AI costs by 90% with Amazon Bedrock",
-    "summary": "When AI infrastructure costs consumed 40% of per-interview revenue, InterWiz knew their single-provider architecture couldn't support profitable growth.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/how-interwiz-reduced-ai-costs-by-90-with-amazon-bedrock/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-07-02-reimagining-legacy-applications-with-pega-and-aws-",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-02",
-    "title": "Reimagining legacy applications with Pega and AWS through AI-driven approach",
-    "summary": "The AI-Driven App Modernization Platform from Pega and AWS enables enterprises to incrementally transform legacy applications from mainframes to monolithic applications into intelligent, cloud-native workflows using AI-powered discovery, low-code design, and the strangler fig pa…",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/reimagining-legacy-applications-with-pega-and-aws-through-ai-driven-approach/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-07-02-designing-enterprise-ai-agents-with-devrev-guardra",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-02",
-    "title": "Designing enterprise AI agents with DevRev guardrails powered by Amazon Nova",
-    "summary": "DevRev built real-time AI guardrails into its enterprise agent system, powered by Amazon Nova 2 Lite through Amazon Bedrock.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/designing-enterprise-ai-agents-with-devrev-guardrails-powered-by-amazon-nova/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-07-02-fy27-growth-margins-for-select-ai-workloads",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-02",
-    "title": "FY27 Growth Margins for Select AI Workloads",
-    "summary": "Earn more margin in FY27 for driving qualifying growth—new-to-offer, seat expansion, and adoption—across select strategic AI workloads. Date : July 2, 2026 Workspace : General Impacted audience : Cloud Solution Provider (CSP) partners, including distributors, indirect resellers, ",
-    "type": "release",
-    "sourceUrl": "https://aka.ms/Growth-Margin-FAQ",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-07-01-aws-partner-central-now-supports-aws-marketplace-l",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-01",
-    "title": "AWS Partner Central now supports AWS Marketplace listings for co-selling",
-    "summary": "Today, AWS announces that partners can associate one or more AWS Marketplace solutions and product listings from their AWS Marketplace catalog directly to co-sell opportunities in AWS Partner Central.",
-    "type": "release",
-    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-marketplace-co-selling-support/",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-07-01-publishing-your-saas-products-in-aws-marketplace-i",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-01",
-    "title": "Publishing your SaaS products in AWS Marketplace in the AWS European Sovereign Cloud",
-    "summary": "This post is the third in a three-part series on listing software products in the AWS European Sovereign Cloud: Part 1: Registering as a seller — covers account setup and seller registration. Part 2: Publishing Amazon Machine Image (AMI) products.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/publishing-saas-products-aws-marketplace-european-sovereign-cloud/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-07-01-aws-and-elastio-deliver-comprehensive-ransomware-r",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-07-01",
-    "title": "AWS and Elastio deliver comprehensive ransomware resilience",
-    "summary": "AWS and Elastio deliver a modern approach to ransomware resilience by combining immutable, air-gapped data vaults with continuous integrity validation, so organizations can confidently recover from cyberattacks with clean, verified data.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/aws-and-elastio-deliver-comprehensive-ransomware-resilience/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-07-01-new-licensing-prerequisite-for-agent-365",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-01",
-    "title": "New Licensing Prerequisite for Agent 365",
-    "summary": "New licensing prerequisite for Agent 365: Microsoft 365 E5 required for new purchases starting June 1, 2026. Date : July 1, 2026 Workspace : General Impacted audience : Partners supporting Agent 365 customer engagements Details Effective June 1, Microsoft is introducing an expand",
-    "type": "policy",
-    "sourceUrl": "https://www.microsoft.com/licensing/terms/productoffering/Agent365/EAEAS",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-01-new-windows-365-promotions-csp-promotions-save-up-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-01",
-    "title": "New Windows 365 Promotions CSP promotions - Save up to 25% for new and existing subscribers",
-    "summary": "Unlock new growth with Windows 365 CSP promotions. New and existing subscribers can now save up to 25% on Windows 365 editions.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/resources/detail/operations-promo-guide-pdf",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-01-fy27-promotions-for-microsoft-365-and-copilot",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-01",
-    "title": "FY27 promotions for Microsoft 365 and Copilot",
-    "summary": "Take advantage of FY27 Cloud Solution Provider (CSP) promotions for Microsoft 365 and Microsoft 365 Copilot to accelerate deals and AI adoption.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/ASPX",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-07-01-partner-code-of-conduct-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-01",
-    "title": "Partner Code of Conduct update",
-    "summary": "Microsoft is updating the Partner Code of Conduct (PCoC) to clarify expectations for partner compliance, effective August 1, 2026.",
-    "type": "policy",
-    "sourceUrl": "https://aka.ms/PCoC-Updates-FY27",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-01-now-available-microsoft-365-business-with-copilot-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-01",
-    "title": "Now available: Microsoft 365 Business with Copilot SKUs",
-    "summary": "Turn durable pricing into a predictable renewal engine for SMB customers.",
-    "type": "pricing",
-    "sourceUrl": "https://www.microsoft.com/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-07-01-explore-mcaps-start-for-partners-sessions",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-01",
-    "title": "Explore MCAPS Start for Partners sessions",
-    "summary": "Join us on July 22 for the sessions, strategies, and playbooks to execute from day one—across AI, security, cloud, and beyond.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/MCAPS2026PCA",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-07-01-update-to-microsoft-365-nonprofit-e3-e5-three-year",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-07-01",
-    "title": "Update to Microsoft 365 Nonprofit E3/E5 three-Year CSP SKUs",
-    "summary": "To simplify the CSP catalog and reduce confusion, Microsoft is updating the Microsoft 365 E3 and E5 Nonprofit 3‑year offers.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-06-30-introducing-forward-deployed-engineering-for-partn",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-30",
-    "title": "Introducing Forward Deployed Engineering for Partners: Winning the Future of Enterprise AI",
-    "summary": "AWS has launched the Partner-Led Forward Deployed Engineering (FDE) motion, extending its $1 billion investment in agentic AI deployment to strategic consulting partners.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/introducing-forward-deployed-engineering-for-partners-winning-the-future-of-enterprise-ai/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-30-specialization-skilling-updates",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-30",
-    "title": "Specialization skilling updates",
-    "summary": "Several Microsoft specialization certifications are retiring and being replaced by new AI-focused criteria.",
-    "type": "policy",
-    "sourceUrl": "https://partner.microsoft.com/partnership/specialization/build-and-modernize-ai-apps?wt.mc_id=7olym9s2ya",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-29-how-dxc-technology-upgraded-angular-and-net-applic",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-29",
-    "title": "How DXC Technology upgraded Angular and .NET applications with Amazon Q Developer",
-    "summary": "Learn how DXC Technology used Amazon Q Developer to help its customer modernize over 80 microservices and multiple micro-frontend applications, upgrading from older Angular and .NET versions while achieving a 60–75% reduction in overall upgrade effort.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/how-dxc-technology-upgraded-angular-and-net-applications-with-amazon-q-developer/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-29-microsoft-365-copilot-cowork-updated-partner-resou",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-29",
-    "title": "Microsoft 365 Copilot Cowork: Updated Partner Resources and Enablement",
-    "summary": "Following the general availability of Microsoft 365 Copilot Cowork, partner resources and enablement materials are now available to support customer conversations, planning, and readiness.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/CoworkPartnerLaunchKit",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-29-action-required-use-the-updated-microsoft-entra-id",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-29",
-    "title": "Action required: Use the updated Microsoft Entra ID P2 Education Student SKU for renewals",
-    "summary": "Use the new Microsoft Entra ID P2 Education Student stock-keeping unit (SKU) for renewals beginning July 1.",
-    "type": "pricing",
-    "sourceUrl": "mailto:M365PILicensingQ@microsoft.com",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-26-sentinel-50-gb-tier-promo-extended",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-26",
-    "title": "Sentinel 50-GB tier promo extended",
-    "summary": "We’ve extended the Microsoft Sentinel 50 GB commitment tier promotion, giving partners more time to drive adoption. Announcement date : June 26, 2026 Workspace : General Impacted audience : All partners Details On October 1, 2025, Microsoft launched a new 50-GB commitment tier fo",
-    "type": "pricing",
-    "sourceUrl": "https://microsoftpartners.microsoft.com/Downloads/?filename=Microsoft-Security-Partners%2FPartner-GTM%2FSell-Through-CSP%2FFY26_Q3-%20MSFT%20Sentinel%20Promo%20-%20customer%20pitch%20deck.pptx",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-26-july-price-list-won-t-include-an-august-preview-fo",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-26",
-    "title": "July price list won't include an August preview for NCE license-based services",
-    "summary": "We're informing all Cloud Solution Provider (CSP) partners of an important update regarding the new commerce (NCE) license-based services preview (future) price list scheduled for publication on July 1, 2026.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/pricing/pricelist",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-06-25-aws-network-firewall-now-supports-managed-threat-i",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-25",
-    "title": "AWS Network Firewall now supports managed threat intelligence rules from VisionHeight",
-    "summary": "AWS Network Firewall now supports two new managed rule groups from VisionHeight, available through AWS Marketplace: Zero-Day Threat Protection, and Noisy Scanners and Tor Protection.",
-    "type": "release",
-    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/network-firewall-visionheight-managed-rules",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-06-25-guidance-on-marketplace-rewards-azure-sponsorship-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-25",
-    "title": "Guidance on Marketplace Rewards Azure sponsorship use cases",
-    "summary": "Marketplace Rewards partners can use Azure sponsorships to support customer deployments and no-cost trials of Marketplace offers.",
-    "type": "pricing",
-    "sourceUrl": "https://onedrive.live.com/view.aspx?resid=6C423AE231DA44BB!1796&ithint=file%2cpptx&wdo=2&authkey=!AGu503LujTgALh0",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-24-aws-genaiic-partner-agent-factory-new-ai-agents-no",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-24",
-    "title": "AWS GenAIIC Partner Agent Factory: New AI agents now in AWS Marketplace",
-    "summary": "In this post, we introduce the latest PAF solutions and explain how you can discover these solutions and co-innovate through the program.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/aws-genaiic-partner-agent-factory-new-ai-agents-now-in-aws-marketplace/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-24-windows-365-gpu-enterprise-select-256-gb-sku-avail",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-24",
-    "title": "Windows 365 GPU Enterprise Select 256 GB SKU available on July 1",
-    "summary": "The temporary CSP limitation on the \"Windows 365 GPU Enterprise Select 256-GB\" SKU lifts on July 1, 2026. Plan customer conversations now.",
-    "type": "blog",
-    "sourceUrl": "https://partner.microsoft.com/support?wt.mc_id=z1s4rndxcs",
-    "impact": "high"
-  },
-  {
-    "id": "suger-2026-06-24-prm-launching-a-new-path-for-partnerships-partners",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-06-24",
-    "title": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes ",
-    "summary": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes the plumbing. Jun 24, 2026 Read article",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/partner-relationship-management",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-23-claude-tag-is-now-available-in-beta-via-claude-ent",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-23",
-    "title": "Claude Tag is now available in beta via Claude Enterprise in AWS Marketplace",
-    "summary": "Anthropic is launching Claude Tag — bringing Claude directly into the channels where your team already works, starting with Slack. Claude Tag is available today in beta to AWS customers who access Claude Enterprise through AWS Marketplace.",
-    "type": "feature",
-    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/claude-tag-aws-marketplace/",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-23-securing-ai-driven-apis-on-aws-with-wallarm",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-23",
-    "title": "Securing AI-driven APIs on AWS with Wallarm",
-    "summary": "As AI workloads scale on AWS, the API layer becomes the primary security surface where every prompt, model response, and agent action flows through.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/securing-ai-driven-apis-on-aws-with-wallarm/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-23-new-check-inventory-by-resource-type-api-available",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-23",
-    "title": "New Check Inventory by Resource Type API available—Check Inventory API retiring September 25, 2026",
-    "summary": "A new Check Inventory by Resource Type API is now available. The existing Check Inventory API will be retired on September 25, 2026.",
-    "type": "release",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/developer/check-inventory",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-18-automate-security-and-observability-with-elastic-a",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-18",
-    "title": "Automate security and observability with Elastic and Amazon Bedrock",
-    "summary": "As cloud-native environments expand, security and operations leaders face mounting pressure to reduce response times while managing growing alert volumes and team capacity.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/automate-security-and-observability-with-elastic-and-amazon-bedrock/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-18-securing-enterprise-ready-ai-agents-with-auth0-for",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-18",
-    "title": "Securing enterprise ready AI agents with Auth0 for AI Agents and Amazon Bedrock AgentCore",
-    "summary": "As AI agents take actions across systems on behalf of your users, identity and access management must sit at the center of your security strategy.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/securing-enterprise-ready-ai-agents-with-auth0-for-ai-agents-and-amazon-bedrock-agentcore/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-17-transform-enterprise-visual-content-with-amazon-no",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-17",
-    "title": "Transform enterprise visual content with Amazon Nova and Bria Fibo",
-    "summary": "Learn how the integration of Amazon Nova multimodal intelligence with Bria Fibo's deterministic visual foundation model solves the enterprise challenges of unpredictable outputs, inconsistent branding, and legal uncertainty in AI image generation.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/transform-enterprise-visual-content-with-amazon-nova-and-bria-fibo/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-17-build-a-complete-soc-solution-with-amazon-security",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-17",
-    "title": "Build a complete SOC solution with Amazon Security Lake, Splunk, and Recorded Future Autonomous Threat Operations",
-    "summary": "Learn how to close the detection-to-response gap in your security operations by integrating Amazon Security Lake, Splunk Enterprise Security, and Recorded Future Autonomous Threat Operations into a unified SOC architecture that centralizes dispersed security data, automates even…",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/build-a-complete-soc-solution-with-amazon-security-lake-splunk-and-recorded-future-autonomous-threat-operations/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-17-updated-microsoft-partner-agreement-takes-effect-d",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-17",
-    "title": "Updated Microsoft Partner Agreement takes effect December 1, 2026",
-    "summary": "Preview the updated Microsoft Partner Agreement (MPA) in Partner Center.",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/enroll/microsoft-partner-agreement",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-16-agentic-saas-your-next-growth-market-is-already-he",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-16",
-    "title": "Agentic SaaS: Your next growth market is already here",
-    "summary": "Agentic AI represents the third major platform shift in enterprise software, transforming how SaaS is built, priced, distributed, and consumed by a hybrid workforce of humans and autonomous agents.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/agentic-saas-your-next-growth-market-is-already-here/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-16-sell-smarter-with-aws-new-agentic-capabilities-acc",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-16",
-    "title": "Sell smarter with AWS: New agentic capabilities accelerate time to revenue",
-    "summary": "New agentic capabilities in AWS Partner Central support you at every stage of your selling journey—from identifying the right leads to getting real-time insights and support on every deal you share with AWS.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/sell-smarter-with-aws/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-16-new-agentic-capabilities-to-take-you-from-register",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-16",
-    "title": "New agentic capabilities to take you from registered to ready-to-sell in days",
-    "summary": "We're expanding agentic capabilities in AWS Partner Central that get you ready to sell in days—from automated profile setup and AWS Marketplace listing creation to streamlined Foundational Technical Review validation. Now you can now unlock badging, benefits, and funding faster.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/get-ready-to-sell/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-16-from-legacy-to-ai-powered-transform-your-customer-",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-16",
-    "title": "From legacy to AI-powered: Transform your customer experience with Amazon Connect Customer Competency Partners",
-    "summary": "We're announcing the Amazon Connect Customer Competency, helping customers find validated Partners who can migrate legacy contact centers and build AI-powered customer experiences on Amazon Connect.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/from-legacy-to-ai-powered-transform-your-customer-experience-with-amazon-connect-customer-competency-partners/",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-16-accelerate-customer-outcomes-with-the-aws-business",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-16",
-    "title": "Accelerate customer outcomes with the AWS Business Value Realization motion",
-    "summary": "Customers are shifting toward outcome-based engagements—and they're willing to pay a premium for Partners who can prove results.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/accelerate-customer-outcomes-with-the-aws-business-value-realization-motion/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-16-copilot-cowork-and-microsoft-scout-what-partners-n",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-16",
-    "title": "Copilot Cowork and Microsoft Scout: What partners need to know",
-    "summary": "Copilot Cowork is now available alongside Microsoft Scout agent experience.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/CoworkGA",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-15-how-public-ai-delivers-sovereign-llm-inference-on-",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-15",
-    "title": "How Public AI delivers sovereign LLM inference on AWS and Intel",
-    "summary": "Open-weight large language models are being released by research institutions worldwide, but turning published weights into production inference services remains a challenge—especially under strict data residency requirements.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/how-public-ai-delivers-sovereign-llm-inference-on-aws-and-intel/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-15-view-promotion-details-directly-in-partner-center",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-15",
-    "title": "View promotion details directly in Partner Center",
-    "summary": "Partners can now view promotion details in the Partner Center UX in addition to downloading the promotions list.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march#promotions-are-now-available-to-download-in-the-pricing-workspace",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-15-new-end-of-sale-pricelist-for-software-now-availab",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-15",
-    "title": "New: End of Sale Pricelist for Software now available",
-    "summary": "A new End of Sale Pricelist for Software is being added to Partner Center, effective July 1, 2026.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/software-pricing#end-of-sale-pricelist-for-software",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-15-reminder-referenceid-format-update-in-reconciliati",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-15",
-    "title": "Reminder: ReferenceId format update in reconciliation files",
-    "summary": "Reminder: The ReferenceId attribute in Billed and Unbilled Reconciliation files is updated to a structured JSON format effective June 15, 2026.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april#update-effective-date-change-for-referenceid-format-update-in-reconciliation-files",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-15-reminder-microsoft-365-pricing-and-packaging-updat",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-15",
-    "title": "Reminder: Microsoft 365 pricing and packaging updates coming in 2026",
-    "summary": "Reminder: Microsoft 365 pricing and packaging updates coming in 2026. Lock in current pricing by closing renewals before July 1.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/M365-PIBlog",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-15-new-partner-skilling-discussion-board",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-15",
-    "title": "New: Partner Skilling discussion board",
-    "summary": "Introducing the new Partner Skilling discussion board on Tech Community—your go-to destination for skilling opportunities and expertise.",
-    "type": "release",
-    "sourceUrl": "https://techcommunity.microsoft.com/category/mcpp/discussions/partner-skilling",
-    "impact": "low"
-  },
-  {
-    "id": "aws-2026-06-11-detecting-misconfigurations-and-mitigating-ai-risk",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-11",
-    "title": "Detecting misconfigurations and mitigating AI risks to secure Amazon Bedrock with TrendAI Vision One™",
-    "summary": "In this post, you’ll learn how TrendAI Vision One™ helps secure Amazon Bedrock deployments by detecting misconfigurations, monitoring for data exposure, and providing actionable remediation guidance.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/detecting-misconfigurations-and-mitigating-ai-risks-to-secure-amazon-bedrock-with-trendai-vision-one/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-11-every-technical-update-delivered-right-to-your-inb",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-11",
-    "title": "Every technical update, delivered right to your inbox",
-    "summary": "Stay ahead of API changes, compliance requirements, and security updates with clear technical guidance.",
-    "type": "pricing",
-    "sourceUrl": "https://info.microsoft.com/ww-landing-partner-technical-updates",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-06-10-monthly-microsoft-ai-cloud-partner-program-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-10",
-    "title": "Monthly Microsoft AI Cloud Partner Program update",
-    "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/?practice-assessment-type=certification",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-09-unified-secrets-security-with-gitguardian-and-aws-",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-09",
-    "title": "Unified Secrets Security with GitGuardian and AWS Secrets Manager",
-    "summary": "AI coding assistants and MCP servers have made development faster, but they've also made secrets exposure harder to catch. Developers share credentials through config files, Git repos, and CI/CD logs without realizing it.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-09-security-insights-now-available-in-copilot-tab-of-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-09",
-    "title": "Security insights now available in Copilot tab of ASPX",
-    "summary": "A new, singular view of your data security signals and Copilot opportunity data.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/ASPXDataSecurityPlaybook",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-09-introducing-pitch-maker-agent-beta",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-09",
-    "title": "Introducing Pitch Maker Agent (beta)",
-    "summary": "Turn Copilot Chat usage into Microsoft 365 Copilot deals with the Pitch Maker Agent (beta) experience.",
-    "type": "blog",
-    "sourceUrl": "https://techcommunity.microsoft.com/blog/partnernews/pitch-maker-agent-turn-copilot-chat-signals-into-microsoft-365-copilot-deals/4518958?wt.mc_id=o6hvnmiu0k",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-06-08-complete-guide-to-upgrading-your-saas-product-to-a",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-08",
-    "title": "Complete guide to upgrading your SaaS product to AWS Marketplace Concurrent Agreements",
-    "summary": "This guide walks you through the technical migration steps to implement Concurrent Agreements. It covers the transition from Amazon Simple Notification Service (Amazon SNS) to Amazon EventBridge, API updates, and best practices for managing multiple licenses within your SaaS int…",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/complete-guide-to-upgrading-your-saas-product-to-aws-marketplace-concurrent-agreements/",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-06-08-automate-compliance-session-review-with-teleport-a",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-08",
-    "title": "Automate compliance session review with Teleport and Amazon Bedrock",
-    "summary": "Organizations accumulate thousands of hours of session recordings that satisfy compliance mandates but rarely get reviewed.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/automate-compliance-session-review-with-teleport-and-amazon-bedrock/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-08-mfa-enforcement-for-partner-center-apis",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-08",
-    "title": "MFA enforcement for Partner Center APIs",
-    "summary": "Multifactor authentication (MFA) enforcement for Partner Center APIs: Take action immediately.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#4",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-06-08-new-microsoft-365-copilot-promotion-customers-can-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-08",
-    "title": "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses",
-    "summary": "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#new-three-year-cloud-solution-provider-csp-purchasing-option-for-microsoft-365-copilot-now-available",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-06-05-dynamics-365-business-central-dual-use-rights-lice",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-05",
-    "title": "Dynamics 365 Business Central Dual Use Rights license keys update",
-    "summary": "Download and replace license keys every six months to continue using on-premises Dynamics 365 Business Central online.",
-    "type": "release",
-    "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/download-software-licenses-csp?view=o365-worldwide&wt.mc_id=62vzgd0e3r",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-06-04-build-in-demand-capabilities-at-microsoft-ai-skill",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-04",
-    "title": "Build in-demand capabilities at Microsoft AI Skills Fest",
-    "summary": "Free digital skilling event for Microsoft partners, June 8–12.",
-    "type": "release",
-    "sourceUrl": "https://aiskillsnavigator.microsoft.com/events/AISF2026?UTM_Source=AISF_comms&UTM_Medium=comms&UTM_Campaign=PBON",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-04-new-licensing-prerequisite-for-agent-365",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-04",
-    "title": "New licensing prerequisite for Agent 365",
-    "summary": "New licensing prerequisite for Agent 365: Microsoft 365 E5 required for new purchases starting June 1, 2026.",
-    "type": "policy",
-    "sourceUrl": "https://microsoftpartners.microsoft.com/abs/frontier-transformation/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-03-work-iq-api-and-consumptive-pricing-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-03",
-    "title": "Work IQ API and consumptive pricing update",
-    "summary": "Work IQ API reaches GA June 16 with consumption-based pricing using Copilot Credits.",
-    "type": "pricing",
-    "sourceUrl": "https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-06-02-hybrid-cloud-from-data-gravity-to-business-agility",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-06-02",
-    "title": "Hybrid cloud from data gravity to business agility with Cloudera on AWS",
-    "summary": "Discover how hybrid elasticity introduces a zero-migration data access model that decouples data residency from compute elasticity, enabling enterprises to transform existing data centers into dynamic hybrid data hubs with on-demand cloud scale without moving data.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/apn/hybrid-cloud-from-data-gravity-to-business-agility-with-cloudera-on-aws/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-06-02-updated-skilling-for-two-solutions-partner-designa",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-02",
-    "title": "Updated skilling for two Solutions Partner designations",
-    "summary": "We've updated skilling requirements for Solutions Partner designations for Modern Work and Digital & App Innovation.",
-    "type": "policy",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/overview?wt.mc_id=fqddacdrqs",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-02-introducing-azure-linux-now-available-in-public-pr",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-02",
-    "title": "Introducing Azure Linux—now available in public preview",
-    "summary": "Deliver trusted solutions on a Linux platform built for Azure.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/azure/azure-linux/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-01-new-microsoft-365-business-with-copilot-skus-avail",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-01",
-    "title": "New Microsoft 365 Business with Copilot SKUs available July 1",
-    "summary": "Simplify AI selling and scale SMB growth with Microsoft 365 Business with Copilot.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/home?wt.mc_id=viqnc6oy1r",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-06-01-minor-pricing-precision-updates-for-select-microso",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-06-01",
-    "title": "Minor pricing precision updates for select Microsoft 365 and Office 365 SKUs in EEA currencies",
-    "summary": "With teams",
-    "type": "pricing",
-    "sourceUrl": "https://www.microsoft.com/licensing/news/Microsoft365-Teams-2025",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-29-2026-agents-move-into-action",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-29",
-    "title": "2026: Agents move into action",
-    "summary": "This is the year agents move from assistants to operators across Microsoft 365 - and partners lead the shift.",
-    "type": "pricing",
-    "sourceUrl": "https://news.microsoft.com/annual-work-trend-index-2026/?msockid=38d2c9eb06866e8c3c72deb507296f82%3Fwt.mc_id%3Dddqtwyvcox",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-28-microsoft-publisher-agreement-version-8-0-july-202",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-28",
-    "title": "Microsoft Publisher Agreement version 8.0 - July 2026 updates",
-    "summary": "The updated Microsoft Publisher Agreement has been updated and is now available for your review.",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/legal/marketplace/msft-publisher-agreement",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-28-accelerate-campaign-activation-using-partner-marke",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-28",
-    "title": "Accelerate campaign activation using Partner Marketing Center Pro",
-    "summary": "With robust AI-powered features and suites of prebuilt campaign assets, Partner Marketing Center Pro is your new go-to-market hub.",
-    "type": "program",
-    "sourceUrl": "https://pmc.partner.microsoft.com/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-28-updated-microsoft-partner-agreement-mpa-and-progra",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-28",
-    "title": "Updated Microsoft Partner Agreement (MPA) and Program Guide",
-    "summary": "Review the updated Microsoft Partner Agreement and program guide, effective December 1, 2026.",
-    "type": "policy",
-    "sourceUrl": "https://aka.ms/MPADirect2026",
-    "impact": "high"
-  },
-  {
-    "id": "gcp-2026-05-27-change-we-ve-reduced-the-processing-and-delivery-d",
-    "platform": "GCP",
-    "platformTag": "gcp",
-    "date": "2026-05-27",
-    "title": "Change We've reduced the processing and delivery delay for Google Cloud Marketplace partner reports from 2 days (D+2) to",
-    "summary": "Change We've reduced the processing and delivery delay for Google Cloud Marketplace partner reports from 2 days (D+2) to 1 day (D+1), accelerating by one day the delivery of the Customer Insights reports to Cloud Marketplace partners.",
-    "type": "blog",
-    "sourceUrl": "https://cloud.google.com/marketplace/docs/partners/release-notes",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-27-multiparty-private-offers-are-expanding-across-eur",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-27",
-    "title": "Multiparty private offers are expanding across Europe",
-    "summary": "Microsoft Marketplace expands the channel-led sales opportunity by bringing multiparty private offers to 30 countries/regions in Europe.",
-    "type": "release",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-27-co-sell-referral-quality-updates",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-27",
-    "title": "Co-sell referral quality updates",
-    "summary": "How to submit high-quality co-sell referrals for faster seller engagement",
-    "type": "program",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities?wt.mc_id=l0jgagm9kc",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-26-action-required-partner-communications",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-26",
-    "title": "Action required: partner communications",
-    "summary": "Action required to ensure you receive Microsoft partner communications",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/account-settings/permissions-frequently-asked-questions",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-05-22-publishing-ami-products-in-aws-marketplace-in-the-",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-05-22",
-    "title": "Publishing AMI products in AWS Marketplace in the AWS European Sovereign Cloud",
-    "summary": "Ready to reach customers with strict sovereignty requirements? The AWS European Sovereign Cloud is a new independent Amazon Web Services (AWS) partition designed to help public sector organizations and customers in highly regulated industries meet their evolving sovereignty need…",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/publishing-ami-products-in-aws-marketplace-in-the-aws-european-sovereign-cloud/",
-    "impact": "low"
-  },
-  {
-    "id": "suger-2026-05-22-ai-meet-suger-ai-the-in-product-copilot-for-market",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-05-22",
-    "title": "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers,",
-    "summary": "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers, diagnoses failures, fills forms, and navigates your console — without leaving the page. May 22, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/meet-suger-ai-the-in-product-copilot",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-19-help-maintain-secure-boot-certificate-updates",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-19",
-    "title": "Help maintain Secure Boot certificate updates",
-    "summary": "Certificates issued in 2011 expire starting in June 2026. Monitor your device status and take action as needed.",
-    "type": "policy",
-    "sourceUrl": "https://support.microsoft.com/topic/monitoring-secure-boot-certificate-status-with-microsoft-intune-remediations-6696a27b-fa09-4570-b112-124965adc87f?wt.mc_id=z2o6ozz3tq",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-05-18-new-capability-auto-activation-for-saas-in-microso",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-18",
-    "title": "New capability: Auto activation for SaaS in Microsoft Marketplace",
-    "summary": "With auto activation, billing begins as soon as a customer buys your SaaS offer in Microsoft Marketplace, even if product activation happens later.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-18-plan-migrations-faster-with-azure-migrate",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-18",
-    "title": "Plan migrations faster with Azure Migrate",
-    "summary": "Move from manual assessments to migration-ready recommendations faster with Azure Migrate, the repeatable workshop-to-deck motion.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate&preserve-view=true",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-15-boost-marketplace-discoverability-with-ai-powered-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-15",
-    "title": "Boost Marketplace discoverability with AI-powered feedback",
-    "summary": "Enhance listings with personalized guidance delivered in seconds via App Advisor.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/ImproveMyListing?ocid=cmm03cz6ebg",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-13-monthly-microsoft-ai-cloud-partner-program-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-13",
-    "title": "Monthly Microsoft AI Cloud Partner Program update",
-    "summary": "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/?practice-assessment-type=certification",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-13-new-three-year-cloud-solution-provider-csp-purchas",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-13",
-    "title": "New three-year Cloud Solution Provider (CSP) purchasing option for Microsoft 365 Copilot now available",
-    "summary": "New 3-year purchasing option for Microsoft 365 Copilot now available in CSP, which brings Microsoft 365 Copilot in line with existing Microsoft 365 E3 and E5 3-year SKUs.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/CSPM365CopilotPartnerFAQ",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-05-08-how-to-use-aws-partner-central-agents",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-05-08",
-    "title": "How to use AWS Partner Central Agents",
-    "summary": "Partners have used customer relationship management (CRM) systems and integrated with AWS Partner Central to streamline co-selling, manage leads, and share opportunities.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/how-to-use-aws-partner-central-agents/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-08-security-store-expands-to-microsoft-entra-purview",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-08",
-    "title": "Security Store expands to Microsoft Entra, Purview",
-    "summary": "Microsoft Security Store is now embedded in Microsoft Entra and Purview, and the AI-guided Security Store Advisor is now generally available.",
-    "type": "policy",
-    "sourceUrl": "https://securitystore.microsoft.com/?wt.mc_id=ve093ls8hr",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-07-windows-365-business-end-of-sale-for-windows-hybri",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-07",
-    "title": "Windows 365 Business – End of Sale for Windows Hybrid Benefit (WHB)",
-    "summary": "Windows 365 Windows Hybrid Benefit (WHB) SKUs are being retired from sale to simplify the portfolio. Existing customers can continue to renew and use their current subscriptions without interruption, but no automatic migration to new SKUs occur.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april#9",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-06-business-applications-designation-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-06",
-    "title": "Business Applications designation update",
-    "summary": "Attaining or renewing your designation just got easier—Dynamics 365 Contact Center and Copilot Studio are now eligible workloads.",
-    "type": "policy",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/bizapps?wt.mc_id=ykm2b8pwda",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-05-06-oracle-to-postgresql-ai-assisted-migration-tooling",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-06",
-    "title": "Oracle‑to‑PostgreSQL AI‑assisted migration tooling expands partner opportunity on Azure",
-    "summary": "Migrate customers off legacy Oracle databases with new capabilities designed for efficiency.",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-schema-conversions/schema-conversions-overview?wt.mc_id=vpflq57sc2",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-06-keep-skilling-on-track-as-az-500-transitions-to-sc",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-06",
-    "title": "Keep skilling on track as AZ‑500 transitions to SC‑500",
-    "summary": "AZ‑500 is retiring. SC‑500 offers a flexible transition.",
-    "type": "policy",
-    "sourceUrl": "https://techcommunity.microsoft.com/blog/skills-hub-blog/the-ai-job-boom-is-here-are-you-ready-to-showcase-your-skills/4494128",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-05-05-deploy-the-aws-marketplace-spg-dashboard-for-unifi",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-05-05",
-    "title": "Deploy the AWS Marketplace SPG Dashboard for Unified Insights",
-    "summary": "AWS Marketplace customers, including independent software vendors (ISVs) and consulting partners (CPs), can set up the AWS Marketplace Single Pane of Glass (SPG) dashboard.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/deploy-aws-marketplace-spg-dashboard-unified-insights/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-05-important-updates-to-the-teamwork-deployment-speci",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-05",
-    "title": "Important updates to the Teamwork Deployment specialization",
-    "summary": "The Teamwork Deployment specialization is evolving so partners can better prepare customers for secure, AI‑ready environments.",
-    "type": "policy",
-    "sourceUrl": "https://partner.microsoft.com/partnership/specialization",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-05-microsoft-marketplace-terms-of-use-is-being-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-05",
-    "title": "Microsoft Marketplace Terms of Use is being updated, effective May 27, 2026",
-    "summary": "The Microsoft Publisher Agreement is updated and is now available for your review.",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-04-save-the-date-mcaps-start-for-partners",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-04",
-    "title": "Save the date: MCAPS Start for Partners",
-    "summary": "Prepare for FY27 with early insights into Microsoft priorities and go-to-market direction at MCAPS Start for Partners.",
-    "type": "blog",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-04-switzerland-microsoft-365-e3-three-year-term-prici",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-04",
-    "title": "Switzerland Microsoft 365 E3 (three-year term) pricing alignment",
-    "summary": "Effective June 1, 2026, Microsoft will update the Switzerland (CHF) price for the Microsoft 365 E3 prepaid three-year commitment SKU to better align with the equivalent one-year commitment pricing over a three-year period.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-04-changes-to-azure-reserved-vm-instances",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-04",
-    "title": "Changes to Azure Reserved VM Instances",
-    "summary": "Azure Reserved Virtual Machine (VM) Instances for select VM series will no longer be available for purchase or renewal starting July 1, 2026.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/manage-reserved-vm-instance",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-05-04-mandatory-multifactor-authentication-mfa-for-partn",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-04",
-    "title": "Mandatory multifactor authentication (MFA) for Partner Center APIs",
-    "summary": "Microsoft is enforcing MFA across all Partner Center app+user APIs. Inventory, validate, and test your integrations now.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/security/partner-security-requirements?wt.mc_id=rygpsn38be",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-04-extended-service-terms-enforcement-for-csp-in-effe",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-04",
-    "title": "Extended service terms enforcement for CSP in effect",
-    "summary": "Extended service terms enforcement for CSPs are in effect.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms?wt.mc_id=wrdvrql8ie",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-05-02-new-commerce-license-based-may-price-lists-are-upd",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-02",
-    "title": "New commerce license-based May price lists are updated",
-    "summary": "Minor updates were made to the May 2026 price lists and are now available.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-01-resale-offers-expand-to-new-zealand",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-01",
-    "title": "Resale offers expand to New Zealand",
-    "summary": "Strengthening partner-led sales in New Zealand through Microsoft Marketplace",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/resale-enabled-offers-overview",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-05-01-register-for-mcaps-start-for-partners",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-01",
-    "title": "Register for MCAPS Start for Partners",
-    "summary": "Meet us where FY27 takes shape. MCAPS Start for Partners gives you a preview of where Microsoft is investing and how you can position your business for growth.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/MCAPS2026PCA",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-05-01-microsoft-365-e7-and-agent-365-are-now-generally-a",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-05-01",
-    "title": "Microsoft 365 E7 and Agent 365 are now generally available",
-    "summary": "Guide customers through Frontier Transformation with Microsoft 365 E7, which includes Agent 365, Microsoft Entra Suite, and more for productivity and security.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/microsoft-365-e7-general-availability",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-04-30-aws-marketplace-in-the-aws-european-sovereign-clou",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-04-30",
-    "title": "AWS Marketplace in the AWS European Sovereign Cloud: Register as a seller",
-    "summary": "This post is the first in a three-post series covering how to register as a seller in AWS Marketplace in the AWS European Sovereign Cloud.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/aws-marketplace-in-the-aws-european-sovereign-cloud-register-as-a-seller/",
-    "impact": "low"
-  },
-  {
-    "id": "suger-2026-04-30-product-update-product-updates-april-2026-what-shi",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-04-30",
-    "title": "Product Update Product Updates: April 2026 What shipped in Suger April 2026: Suger MCP, AI mapping for co-sell and fundi",
-    "summary": "Product Update Product Updates: April 2026 What shipped in Suger April 2026: Suger MCP, AI mapping for co-sell and funding, Account Mapping, AWS funding insights, and the Co-Sell Metrics Dashboard. Apr 30, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/product-updates-april-2026",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-04-28-streamline-identity-management-with-okta-mcp-and-k",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-04-28",
-    "title": "Streamline identity management with Okta MCP and Kiro CLI",
-    "summary": "This post walks you through deploying the Okta MCP server and integrating it with Kiro to help manage identity operations through natural language commands.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/streamline-identity-management-with-okta-mcp-and-kiro-cli/",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-04-27-microsoft-defender-for-sql-fairfax",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-27",
-    "title": "Microsoft Defender for SQL Fairfax",
-    "summary": "Improved reliability and easier onboarding with Defender for SQL Servers on Machines government (Fairfax).",
-    "type": "release",
-    "sourceUrl": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-usage?wt.mc_id=vcblmu8bnt",
-    "impact": "medium"
-  },
-  {
-    "id": "aws-2026-04-23-how-to-reduce-aws-marketplace-costs-by-automating-",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-04-23",
-    "title": "How to reduce AWS Marketplace costs by automating AMI subscription monitoring",
-    "summary": "In this post, we show you how to capture instance modifications in real-time, compares them against active subscriptions, and notifies you when action is required—helping you maintain purchased subscriptions that provide significant discounts compared to on-demand pricing.",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/how-to-reduce-aws-marketplace-costs-by-automating-ami-subscription-monitoring/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-23-microsoft-365-e7-agent-365-gtm-resources-and-enabl",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-23",
-    "title": "Microsoft 365 E7 & Agent 365: GTM resources and enablement",
-    "summary": "Access new and upcoming readiness resources to accelerate your engagement strategy with customers ahead of Microsoft 365 E7 and Microsoft Agent 365 general availability on May 1.",
-    "type": "pricing",
-    "sourceUrl": "https://microsoftpartners.microsoft.com/abs/gtm/copilot/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-22-introducing-standardized-pricing-for-extended-secu",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-22",
-    "title": "Introducing standardized pricing for Extended Security Updates",
-    "summary": "The new pricing model applies to new Extended Security Updates offerings for Windows products and SQL Server.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/asset/collection/cloud-accelerate-factory?wt.mc_id=vb4bpi52mu",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-04-21-extended-promotion-on-microsoft-purview-suite-for-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-21",
-    "title": "Extended promotion on Microsoft Purview Suite for Microsoft 365 Business Premium",
-    "summary": "Microsoft is extending the 50% promotional offer on Microsoft Purview Suite for Business Premium to July 1, 2026.",
-    "type": "policy",
-    "sourceUrl": "https://partner.microsoft.com/resources/detail/operations-promo-guide-pdf",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-04-21-annual-capabilities-assessment-refinements-and-int",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-21",
-    "title": "Annual capabilities assessment—refinements and interim approach",
-    "summary": "Microsoft is updating the annual CSP capabilities assessment experience for existing direct bill and distributor partners.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/account-settings/permissions-overview#how-to-look-up-my-organizations-account-admin-or-global-admin-or-owner-or-users-in-other-roles-in-partner-center",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-20-office-ltsc-2021-project-ltsc-2021-and-visio-ltsc-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-20",
-    "title": "Office LTSC 2021, Project LTSC 2021, and Visio LTSC 2021 nearing end of support",
-    "summary": "Office LTSC 2021, Project LTSC 2021, and Visio LTSC 2021 are nearing end of support.",
-    "type": "pricing",
-    "sourceUrl": "https://www.microsoft.com/microsoft-365/enterprise/e3",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-04-17-mca-iframe-event-signal-now-available",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-17",
-    "title": "MCA iframe event signal now available",
-    "summary": "Partners can build one-click customer workflows with a new optional event signal from the MCA acceptance iframe, which is available now in production.",
-    "type": "feature",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/integrate-sandbox-confirm-customer-accept",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-16-reminder-microsoft-365-pricing-and-packaging-updat",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-16",
-    "title": "Reminder: Microsoft 365 pricing and packaging updates coming in 2026",
-    "summary": "Microsoft 365 pricing and packaging updates are coming in 2026—start renewal and upsell conversations now.",
-    "type": "pricing",
-    "sourceUrl": "https://www.microsoft.com/microsoft-365/blog/2025/12/04/advancing-microsoft-365-new-capabilities-and-pricing-update/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-14-expanded-copilot-for-all-promo-updates-to-help-you",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-14",
-    "title": "Expanded Copilot for All promo updates to help you unlock more revenue opportunities",
-    "summary": "We’re updating the 30% and 40% off Copilot for All CSP promotional offers to expand customer eligibility.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/insights/abss/growthopportunities?wt.mc_id=6a51nk9966",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-10-monthly-microsoft-ai-cloud-partner-program-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-10",
-    "title": "Monthly Microsoft AI Cloud Partner Program update",
-    "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
-    "type": "pricing",
-    "sourceUrl": "https://appsource.microsoft.com",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-10-upcoming-update-pricelist-schema-enhancement-to-su",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-10",
-    "title": "Upcoming Update: Pricelist schema enhancement to support mid‑month republishing",
-    "summary": "Date : April 10, 2026 Effective date : May 1, 2026 Workspace : Pricing To improve pricing data clarity and support critical updates, we are enhancing the License-based Current Month Pricelist schema and Software Current Month Pricelist schema to enable mid‑month republishes when ",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers#new-commerce-price-list",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-06-update-effective-date-change-for-referenceid-forma",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-06",
-    "title": "Update: Effective date change for ReferenceId format update in reconciliation files",
-    "summary": "Date : April 06, 2026 Workspace : Billing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective June 15, 2026 , the ReferenceId attribute in Billed Reconciliation and Unbilled Reconciliation files will be updated to use a structured JS",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-03-validate-your-support-capabilities-and-prepare-for",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-03",
-    "title": "Validate your support capabilities and prepare for the future of partner support",
-    "summary": "Access new resources on Unified for Partner.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/partnership/solutions-partner#tab-5",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-04-03-sku-naming-update-microsoft-teams-premium-and-micr",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-03",
-    "title": "SKU Naming Update: Microsoft Teams Premium and Microsoft Teams Events",
-    "summary": "SKU naming update: Microsoft Teams Premium and Microsoft Teams Events",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-01-windows-365-business-20-price-decrease-coming-may-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-01",
-    "title": "Windows 365 Business - 20% price decrease coming May 1, 2026",
-    "summary": "Windows 365 Business - 20% price decrease, making Cloud personal computers (PCs) more cost effective for small and medium business customers.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/windows-365/business/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-01-download-targeted-offers-for-your-customers-using-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-01",
-    "title": "Download targeted offers for your customers using AI assistant in Partner Center",
-    "summary": "Date : April 01, 2026 Workspace : Customers Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. We’ve introduced a new AI assistant capability in Partner Center that helps Cloud Solution Provider (CSP) partners discover and download targeted o",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/home",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-04-01-announcing-reduced-microsoft-dragon-copilot-pricin",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-01",
-    "title": "Announcing reduced Microsoft Dragon Copilot pricing",
-    "summary": "We’re pleased to share an update to Dragon Copilot’s commercial model, designed to better reflect the current market environment and support partner growth.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/asset/collection/dragon-copilot-partner-assets#/?wt.mc_id=3vwhc6hn8k",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-01-license-mobility-for-windows-server-and-sql-server",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-01",
-    "title": "License Mobility for Windows Server and SQL Server subscriptions",
-    "summary": "Windows Server and SQL Server CSP subscriptions include License Mobility rights starting April 1, 2026.",
-    "type": "program",
-    "sourceUrl": "https://www.microsoft.com/licensing/guidance/LicenseMobility?wt.mc_id=leo5rf4hxo",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-01-skus-and-promotions-for-csp-transactability-may-1",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-01",
-    "title": "SKUs and promotions for CSP transactability May 1",
-    "summary": "Microsoft 365 E5 + Entra Suite, Copilot, and Agent 365 become transactable as Microsoft 365 E7, the Frontier Suite. Price list preview for one-year terms available on April 1.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/pricing/pricelist",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-01-global-tax-id-modernization-launch",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-01",
-    "title": "Global Tax ID modernization launch",
-    "summary": "To support evolving global tax compliance requirements, Microsoft is enhancing the way Tax IDs are collected, validated, and stored, thus improving accuracy, and regulatory alignment across all countries/regions.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/account/v3/accountsettings/billingprofile",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-04-01-sku-naming-update-microsoft-teams-shared-devices-m",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-04-01",
-    "title": "SKU Naming Update: Microsoft Teams Shared Devices → Microsoft Teams Shared Space – Single Space",
-    "summary": "Date : April 01, 2026 Workspace : General Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Microsoft identified a naming inconsistency affecting a subset of Microsoft Teams Shared Devices SKUs in Partner Center. To better align with our upd",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-27-retirement-of-the-qualified-referral-program-qrp",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-27",
-    "title": "Retirement of the Qualified Referral Program (QRP)",
-    "summary": "Microsoft retires the Qualified Referral Program (QRP) at the end of March 2026 and consolidates lead/referral sharing into our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for co-sell and Marketplace conversions.",
-    "type": "program",
-    "sourceUrl": "https://info.microsoft.com/ww-landing-microsoft-ai-cloud-partner-program-concierge-qrp.html?lcid=en-us",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-03-26-power-apps-per-app-sku-returning-to-csp-price-list",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-26",
-    "title": "Power Apps per App SKU returning to CSP price list in early April",
-    "summary": "Power Apps per app SKU will be restored to the CSP price list in early April following a temporary operational issue.",
-    "type": "pricing",
-    "sourceUrl": "https://www.microsoft.com/licensing/news/power-app-per-app-end-of-sale",
-    "impact": "low"
-  },
-  {
-    "id": "suger-2026-03-26-product-update-product-updates-march-2026-suger-ma",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-03-26",
-    "title": "Product Update Product Updates: March 2026 Suger March 2026: AWS Partner Central agents, redesigned widget, Seller Prime",
-    "summary": "Product Update Product Updates: March 2026 Suger March 2026: AWS Partner Central agents, redesigned widget, Seller Prime dashboards, three new funding types, SCABA, and more. Mar 26, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/product-updates-march-2026",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-03-25-business-applications-ui-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-25",
-    "title": "Business Applications UI update",
-    "summary": "Partners can now easily find baseline monthly consumed value (MCV) status for Solutions Partner designation (SPD) for Business Applications in Partner Center.",
-    "type": "policy",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/bizapps?wt.mc_id=nehxc6kmml",
-    "impact": "high"
-  },
-  {
-    "id": "aws-2026-03-23-accelerate-your-cloud-journey-with-aws-professiona",
-    "platform": "AWS",
-    "platformTag": "aws",
-    "date": "2026-03-23",
-    "title": "Accelerate your cloud journey with AWS Professional Services in AWS Marketplace",
-    "summary": "AWS first-party Professional Services are now available directly in AWS Marketplace, bringing agentic AI–led data center migration, application modernization, generative AI implementation, and cloud optimization backed by deep-rooted AWS expertise to where millions of customers …",
-    "type": "blog",
-    "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/accelerate-your-cloud-journey-with-aws-professional-services-in-aws-marketplace/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-23-update-to-specialization-criteria",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-23",
-    "title": "Update to specialization criteria",
-    "summary": "Performance metrics now use standard rounding—partners within 0.5% of the requirement may now qualify to enroll in or renew a specialization.",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-03-23-build-publish-fy26-what-s-new-and-how-partners-can",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-23",
-    "title": "Build & Publish FY26: What’s new and how partners can get started",
-    "summary": "Build & Publish FY26: what’s new and how partners can get started.",
-    "type": "program",
-    "sourceUrl": "https://assetsprod.microsoft.com/mpn/isv-partner-incentive-walking-deck.pdf",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-03-20-new-process-to-redeem-cloud-benefits",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-20",
-    "title": "New process to redeem cloud benefits",
-    "summary": "Your partner benefits package has powerful cloud benefits. Activate them today with a streamlined process.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/benefits/cloud-services?wt.mc_id=r5j371cee1",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-16-new-microsoft-azure-assets-for-smb-audiences",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-16",
-    "title": "​New Microsoft Azure assets for SMB audiences",
-    "summary": "Engage customers in the small and medium-sized business (SMB) market with this purpose-built go-to-market content covering all things Microsoft Azure.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/asset/collection/cloud-and-ai-platforms-smb-partner-resources#/",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-03-13-explore-aspx-actionable-growth-insights-in-partner",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-13",
-    "title": "Explore ASPX: Actionable Growth Insights in Partner Center",
-    "summary": "Explore ASPX: actionable growth insights in partner center.",
-    "type": "program",
-    "sourceUrl": "https://msit.events.teams.microsoft.com/event/msit.0df85206-37b0-4d7f-8869-711c1fa79075@72f988bf-86f1-41af-91ab-2d7cd011db47",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-03-12-extended-promotion-on-microsoft-sentinel-50-gb-com",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-12",
-    "title": "Extended promotion on Microsoft Sentinel 50-GB commitment tier in public preview",
-    "summary": "Extended Microsoft Sentinel 50-GB commitment tier and promotion.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/MSSentinelPromoCustomerPitchDeck",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-12-final-reminder-mfa-enforcement-for-partner-center-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-12",
-    "title": "Final reminder: MFA enforcement for Partner Center APIs begins April 1",
-    "summary": "Enable multifactor authentication before April 1, 2026, to avoid blocked API calls and service disruptions.",
-    "type": "policy",
-    "sourceUrl": "https://www.microsoft.com/research/publication/how-effective-is-multifactor-authentication-at-deterring-cyberattacks/?wt.mc_id=z1rc7z7wos",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-03-11-promotions-are-now-available-to-download-in-the-pr",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-11",
-    "title": "Promotions are now available to download in the Pricing workspace",
-    "summary": "Date : March 11, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Promotions are now available directly through the Pricing workspace to download in Partner Center. What's new Partners can now download active promot",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-march/promotions.png#lightbox",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-11-upcoming-change-to-referenceid-attribute-in-reconc",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-11",
-    "title": "Upcoming change to ReferenceId attribute in Reconciliation files",
-    "summary": "Date : March 11, 2026 Workspace : Billing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective April 15, 2026 , the ReferenceId attribute in Billed Reconciliation and Unbilled Reconciliation files will be updated to use a structured J",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-09-reminders-and-updates-to-extended-service-terms-es",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-09",
-    "title": "Reminders and updates to extended service terms (EST)",
-    "summary": "New EST download capability and update to specialized offer EST availability dates.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms#download-est-subscriptions",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-09-introducing-microsoft-365-e7-a-new-productivity-su",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-09",
-    "title": "Introducing Microsoft 365 E7—a new productivity suite designed to drive Frontier transformation",
-    "summary": "Unlock new, repeatable revenue and monetization streams for your business.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/incentivesguide",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-04-security-dashboard-for-ai-now-in-public-preview",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-04",
-    "title": "Security Dashboard for AI: Now in Public Preview",
-    "summary": "Security Dashboard for AI is now in public preview.",
-    "type": "pricing",
-    "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/introducing-security-dashboard-for-ai-now-in-public-preview/4494637",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-04-monthly-microsoft-ai-cloud-partner-program-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-04",
-    "title": "Monthly Microsoft AI Cloud Partner Program update",
-    "summary": "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
-    "type": "policy",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/specializations",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-03-04-sri-lanka-vat-id-submission-for-microsoft-invoicin",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-04",
-    "title": "Sri Lanka VAT ID Submission for Microsoft Invoicing",
-    "summary": "A new regulation is in effect for nonresident companies that provide services and digital products to customers in Sri Lanka. Beginning April 1, 2026, all digital service invoiced from nonresident companies will include 18% VAT.",
-    "type": "pricing",
-    "sourceUrl": "https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0V4K35dh9tBhKF9WPdv5BpUMTc1WEs3QjlQSlRGR0FTRjIyUjdOSlYwMi4u",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-01-the-automated-support-services-designation-experie",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-01",
-    "title": "The ​automated Support Services designation experience is now available in Partner Center",
-    "summary": "Partners can self-nominate, enroll in, and access relevant information related to the Support Services designation in Partner Center.",
-    "type": "program",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/support-services-designation",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-03-01-accelerated-file-download-for-unbilled-usage-and-r",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-03-01",
-    "title": "Accelerated file download for Unbilled usage and reconciliation files from Partner Center",
-    "summary": "Effective May 15th 2026, all unbilled usage and reconciliation files will be delivered in .CSV.GZIP format to enable faster and more efficient downloads",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-march/disable-download.png#lightbox",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-02-27-march-price-list-availability-update-for-modern-az",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-27",
-    "title": "March price list availability update for Modern Azure",
-    "summary": "Date : February 27, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. The Modern Azure price list for March 1, 2026 is behind schedule and will not be available on the originally planned date. Updated availability Ne",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-02-26-legacy-azure-pricelists-updates",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-26",
-    "title": "Legacy Azure pricelists updates",
-    "summary": "Date : February 26, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective March 1, 2026 , the following Legacy Azure Price Lists will transition from Excel (.xlsx) to CSV (.csv) format: Global → Azure in Global",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-02-23-new-resources-available-to-help-customers-advance-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-23",
-    "title": "New resources available to help customers advance their Frontier Firm journey with Microsoft 365 Copilot",
-    "summary": "New resources available to help customers advance their Frontier Firm journey with Microsoft 365 Copilot.",
-    "type": "pricing",
-    "sourceUrl": "https://microsoftpartners.microsoft.com/Downloads/?filename=abs/protected/Copilot-Business-Partner-Economics-Update.pptx",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-02-23-issue-update-business-premium-copilot-bundle-prere",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-23",
-    "title": "Issue update: Business Premium + Copilot Bundle prerequisite validation error",
-    "summary": "Issue update: Business Premium + Copilot Bundle prerequisite validation error.",
-    "type": "release",
-    "sourceUrl": "https://partner.microsoft.com/support?stage=1",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-02-20-partners-can-download-promotions-effective-march-1",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-20",
-    "title": "Partners can download promotions effective March 11, 2026",
-    "summary": "Date : February 20, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Partners can download promotions from Pricelist workspace. Effective March 11, 2026, to see the latest Cloud Solution Provider (CSP) promotions, f",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/home",
-    "impact": "medium"
-  },
-  {
-    "id": "suger-2026-02-19-product-update-product-updates-february-2026-suger",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-02-19",
-    "title": "Product Update Product Updates: February 2026 Suger Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights",
-    "summary": "Product Update Product Updates: February 2026 Suger Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights, offer history in Salesforce, Azure application product offer. Feb 19, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/product-updates-february-2026",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-02-17-csp-unbilled-invoice-reconciliation-api-v1-to-reti",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-17",
-    "title": "CSP unbilled invoice reconciliation API v1 to retire March 15, 2026",
-    "summary": "Migrate to API v2 before March 15, 2026, to avoid service disruption.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/developer/get-invoice-unbilled-line-items-asynchronously?wt.mc_id=qeowlup25z",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-02-13-expanded-partner-benefits-are-here",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-13",
-    "title": "Expanded partner benefits are here",
-    "summary": "Explore updates to benefits packages, Solutions Partner designations, and specializations that can accelerate your AI, security, and GTM execution.",
-    "type": "program",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/v2/membership/offers",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-02-12-marketplace-rewards-update-azure-sponsorship-now-s",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-12",
-    "title": "Marketplace rewards update: Azure sponsorship now supported on more MCA billing profiles",
-    "summary": "We’re pleased to share an update that simplifies how partners in Marketplace Rewards can use Azure Sponsorship credits if they or their customers have Microsoft Customer Agreement (MCA) billing profiles.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-02-12-update-extended-timeline-for-microsoft-sentinel-az",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-12",
-    "title": "Update: Extended timeline for Microsoft Sentinel (Azure portal) transition to the Defender portal",
-    "summary": "Extended timeline for Microsoft Sentinel (Azure portal) transition to the Defender portal.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/unified-secops/playbook-managed-security",
-    "impact": "medium"
-  },
-  {
-    "id": "suger-2026-02-11-cloud-gtm-sales-101-how-to-close-deals-faster-on-a",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-02-11",
-    "title": "Cloud GTM Sales 101: How to Close Deals Faster on AWS, Azure & GCP A Sales Leader's guide to marketplace success. Alread",
-    "summary": "Cloud GTM Sales 101: How to Close Deals Faster on AWS, Azure & GCP A Sales Leader's guide to marketplace success. Already listed on AWS, Azure, or GCP? Build a cloud marketplace sales motion to close bigger deals, faster. Feb 11, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/sales-101-how-to-close-deals-faster-on-aws-azure-gcp",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-02-09-unlock-growth-through-joint-planning-and-coselling",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-09",
-    "title": "Unlock growth through Joint Planning and coselling",
-    "summary": "Access Joint Planning resources in Partner Center to accelerate coselling opportunities and coordinate upsell engagements.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/referrals/joint-planning-leads?wt.mc_id=kv7o5yo2h1",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-02-06-incorrect-partner-margin-published-for-microsoft-3",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-06",
-    "title": "Incorrect Partner Margin Published for Microsoft 365 Business Basic + Copilot Business Bundles",
-    "summary": "Incorrect partner margin published for Microsoft 365 Business Basic + Copilot Business Bundles.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/support?stage=1",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-02-06-new-capability-estimated-azure-consumed-revenue-ac",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-06",
-    "title": "New capability: Estimated Azure Consumed Revenue (ACR) for IP Co Sell referrals",
-    "summary": "We’re pleased to announce the general availability of the Estimated Azure Consumed Revenue (ACR) field in the Referral Submission experience in Partner Center.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-02-05-revised-timelines-extended-service-terms-in-csp",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-05",
-    "title": "Revised timelines: Extended Service Terms in CSP",
-    "summary": "Enforcement of Extended Service Terms in CSP is extended from the previously announced April 1, 2026, to May 4, 2026.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-january#extended-service-term-est-production-availability-for-ux-and-api-are-delayed",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-02-05-update-csp-promo-license-cap-increased-for-microso",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-05",
-    "title": "Update: CSP promo license cap increased for Microsoft 365 E3/E5 and Copilot",
-    "summary": "Cloud Solution Provider (CSP) promo license cap increased for Microsoft 365 E3/E5 and Copilot.",
-    "type": "program",
-    "sourceUrl": "https://partner.microsoft.com/resources/detail/operations-promo-guide-pdf",
-    "impact": "medium"
-  },
-  {
-    "id": "suger-2026-02-05-alliances-partnerships-101-build-a-winning-co-sell",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-02-05",
-    "title": "Alliances Partnerships 101: Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide t",
-    "summary": "Alliances Partnerships 101: Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide to scale co-sell: proven strategies for driving marketplace revenue and winning with AWS, Azure & GCP account teams. Feb 5, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/partnerships-101-build-a-winning-co-sell-motion-with-aws-azure-gcp",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-02-04-security-immersion-briefing-update-no-cap-unlimite",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-04",
-    "title": "Security Immersion Briefing update: No Cap Unlimited Execution, Expanded Partner Eligibility, New focus on SMB",
-    "summary": "We’re introducing a new Security immersion briefing, focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50–300 licenses).",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/ImmersionBriefingsMCIWalkThrough",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-02-04-monthly-microsoft-ai-cloud-partner-program-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-04",
-    "title": "Monthly Microsoft AI Cloud Partner Program update",
-    "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/?practice-assessment-type=certification",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-02-02-mca-attestation-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-02",
-    "title": "MCA attestation update",
-    "summary": "Blocking changes now live for Microsoft Customer Agreement partner attestation.",
-    "type": "blog",
-    "sourceUrl": "https://admin.microsoft.com/AdminPortal/Home?ref=/BillingAccounts/agreement?wt.mc_id=bnbxx8u7mt",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-02-02-new-content-types-supported-in-multitenant-content",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-02",
-    "title": "New content types supported in multitenant content distribution",
-    "summary": "New content types supported in multitenant content distribution.",
-    "type": "feature",
-    "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/new-content-types-supported-in-multi-tenant-content-distribution/4457948",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-02-01-requirements-updated-for-certified-software-design",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-02-01",
-    "title": "Requirements updated for certified software designations via Industry AI pathway",
-    "summary": "Microsoft is strengthening the requirements to become a Solutions Partner with certified software through the Industry AI pathway.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/CertifiedSoftwareWalkingDeck",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-01-30-february-price-list-won-t-include-a-march-preview-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-30",
-    "title": "February price list won't include a March preview for NCE license-based services",
-    "summary": "We're informing all Cloud Solution Provider (CSP) partners of an important update regarding the new commerce (NCE) license-based services preview (future) price list scheduled for publication on February 1, 2026.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/dashboard/pricing/pricelist",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-01-29-solutions-partner-for-modern-work-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-29",
-    "title": "Solutions Partner for Modern Work update",
-    "summary": "Review expanded eligible workloads for the Solutions Partner for Modern Work (MW) designation.",
-    "type": "program",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-modern-work?wt.mc_id=dqpzssqi28",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-01-29-mfa-enforcement-for-partner-center-apis-begins-apr",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-29",
-    "title": "MFA enforcement for Partner Center APIs begins April 1",
-    "summary": "Enable multifactor authentication ahead of the deadline to avoid blocked API calls and service disruptions.",
-    "type": "policy",
-    "sourceUrl": "https://www.microsoft.com/research/publication/how-effective-is-multifactor-authentication-at-deterring-cyberattacks/?wt.mc_id=z1rc7z7wos",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-01-28-retirement-of-standalone-sharepoint-online-and-one",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-28",
-    "title": "Retirement of standalone SharePoint Online and OneDrive for Business plans (plan 1 and plan 2)",
-    "summary": "Partner advisory: retirement of standalone SharePoint Online and OneDrive for Business plans.",
-    "type": "pricing",
-    "sourceUrl": "https://aka.ms/CloudAscent",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-01-27-announcing-new-dragon-copilot-physician-practice-o",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-27",
-    "title": "Announcing new Dragon Copilot Physician Practice offer",
-    "summary": "Announcing new Dragon Copilot Physician Practice offer.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/asset/collection/dragon-copilot-partner-assets#/",
-    "impact": "high"
-  },
-  {
-    "id": "suger-2026-01-27-finance-finance-101-bridging-the-gaap-on-marketpla",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-01-27",
-    "title": "Finance Finance 101: Bridging the GAAP on Marketplace Revenue A Finance leader's guide to cloud marketplace accounting, ",
-    "summary": "Finance Finance 101: Bridging the GAAP on Marketplace Revenue A Finance leader's guide to cloud marketplace accounting, covering revenue recognition, fees, AR, cash flow and reconciliation across AWS, Azure and GCP. Jan 27, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/finance-101-bridging-the-gaap-on-marketplace-revenue",
-    "impact": "low"
-  },
-  {
-    "id": "suger-2026-01-26-product-update-product-updates-january-2026-see-wh",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-01-26",
-    "title": "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-",
-    "summary": "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-cloud marketplace dashboards, and co-sell partner analytics. Jan 26, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/product-updates-january-2026",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-01-23-unlock-new-security-revenue-with-csp-add-ons",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-23",
-    "title": "Unlock new Security revenue with CSP add‑ons",
-    "summary": "Entra ID P2 and Defender for Endpoint P2 now available in Cloud Solution Program.",
-    "type": "pricing",
-    "sourceUrl": "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-01-21-target-upcoming-renewals-for-microsoft-365-copilot",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-21",
-    "title": "Target upcoming renewals for Microsoft 365 + Copilot bundle",
-    "summary": "Beginning January 21, 2026 partners can download a report with customers renewing Microsoft 365 Business with upsell recommendations.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-january/ai-assistant-zero-prompt.png#lightbox",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-01-19-smarter-referral-submissions-are-here",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-19",
-    "title": "Smarter referral submissions are here",
-    "summary": "Partner Center will offer a modernized referral submission experience designed to accelerate partner success",
-    "type": "program",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities#add-deal-details",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-01-16-extended-service-term-est-production-availability-",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-16",
-    "title": "Extended service term (EST) production availability for UX and API are delayed",
-    "summary": "The new date for extended service term (EST) production availability for UX and API will be provided as soon as possible",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-01-16-retirement-of-the-qualified-referral-program",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-16",
-    "title": "Retirement of the Qualified Referral Program",
-    "summary": "Microsoft will retire the Qualified Referral Program (QRP) in Q3 FY26 and consolidate lead/referral intake into our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for Co-sell and Marketplace conversions.",
-    "type": "program",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-january",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-01-14-extended-discount-on-microsoft-purview-suite-for-m",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-14",
-    "title": "Extended discount on Microsoft Purview Suite for Microsoft 365 Copilot Customers",
-    "summary": "Microsoft extends its 50% discount on Microsoft Purview Suite (formerly E5 Compliance) for customers with Microsoft 365 Copilot licenses until 30 June 2026.",
-    "type": "pricing",
-    "sourceUrl": "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/sell-through-csp/#offers",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-01-14-monthly-microsoft-ai-cloud-partner-program-update",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-14",
-    "title": "Monthly Microsoft AI Cloud Partner Program update",
-    "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
-    "type": "pricing",
-    "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/?practice-assessment-type=certification",
-    "impact": "high"
-  },
-  {
-    "id": "suger-2026-01-13-revops-revops-101-running-marketplace-deals-like-a",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-01-13",
-    "title": "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader’s first guide to understanding why clou",
-    "summary": "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader’s first guide to understanding why cloud marketplace deals create policy, workflow, and ownership failures, and what to do about it. Jan 13, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/revops-cloud-gtm-playbook-101",
-    "impact": "low"
-  },
-  {
-    "id": "azure-2026-01-12-mpa-csp-program-guide-update-is-available",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-12",
-    "title": "MPA (CSP) Program Guide update is available",
-    "summary": "The Guide to the Online Services and Software Channel Authorization (MPA Program Guide) was recently updated. For existing partners, it takes effect February 12, 2026.",
-    "type": "program",
-    "sourceUrl": "https://aka.ms/MPAProgramGuide",
-    "impact": "medium"
-  },
-  {
-    "id": "suger-2026-01-12-product-update-product-updates-winter-2025-discove",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-01-12",
-    "title": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS fu",
-    "summary": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS funding, Snowflake Marketplace, and HubSpot improvements. Jan 12, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/product-updates-winter-2025",
-    "impact": "medium"
-  },
-  {
-    "id": "azure-2026-01-08-new-product-availability-advanced-security-add-ons",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-08",
-    "title": "New Product Availability: Advanced Security Add-ons for Microsoft 365 Business Premium",
-    "summary": "New product availability: advanced Security add-ons for Microsoft 365 Business Premium.",
-    "type": "pricing",
-    "sourceUrl": "https://partner.microsoft.com/support?stage=1",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-01-05-smarter-referral-submissions-are-coming",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-05",
-    "title": "Smarter referral submissions are coming!",
-    "summary": "Smarter referral submissions are coming.",
-    "type": "release",
-    "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2025-december#2",
-    "impact": "high"
-  },
-  {
-    "id": "azure-2026-01-05-security-immersion-briefing-update-no-cap-unlimite",
-    "platform": "Azure",
-    "platformTag": "azure",
-    "date": "2026-01-05",
-    "title": "Security Immersion Briefing Update: No Cap- Unlimited Execution, Expanded Partner Eligibility, New focus on Small and Me",
-    "summary": "We’re introducing a new Security immersion briefing , focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50–300 licenses).",
-    "type": "pricing",
-    "sourceUrl": "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/Immersion-Briefings",
-    "impact": "medium"
-  },
-  {
-    "id": "suger-2026-01-05-aws-aws-re-invent-2025-recap-key-changes-your-clou",
-    "platform": "Suger",
-    "platformTag": "suger",
-    "date": "2026-01-05",
-    "title": "AWS AWS re:Invent 2025 Recap: Key Changes + Your Cloud GTM Strategy for 2026 AWS re:Invent 2025 recap covering Agent Mod",
-    "summary": "AWS AWS re:Invent 2025 Recap: Key Changes + Your Cloud GTM Strategy for 2026 AWS re:Invent 2025 recap covering Agent Mode, Express Private Offers, Partner Incentives, and what ISVs must change in their Cloud GTM strategy for 2026. Jan 5, 2026",
-    "type": "blog",
-    "sourceUrl": "https://www.suger.io/resources/blog/your-cloud-gtm-strategy-for-2026-post-aws-reinvent",
-    "impact": "low"
-  }
+    id: "aws-2026-07-10-announcing-2026-aws-partner-award-nominations",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-10",
+    title: "Announcing 2026 AWS Partner Award Nominations",
+    summary:
+      "The 2026 AWS Partner Awards honor partners who have demonstrated outstanding results and innovation with the use of AWS products and solutions. AWS Partners can self-nominate themselves to be considered across a select number of AWS Partner Award categories.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/announcing-2026-aws-partner-award-nominations/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-07-10-azure-ip-co-sell-updates",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-10",
+    title: "Azure IP co-sell updates",
+    summary:
+      "In FY27, Microsoft is making strategic changes to Azure IP co-sell to drive greater partner impact.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-07-09-amazon-sagemaker-feature-store-now-supports-batch-",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-09",
+    title:
+      "Amazon SageMaker Feature Store now supports batch feature writes and record listing",
+    summary:
+      "Amazon SageMaker Feature Store is a fully managed capability that makes it easy to compute, store, and retrieve features for training and deploying AI models.",
+    type: "feature",
+    sourceUrl:
+      "https://aws.amazon.com/about-aws/whats-new/2026/07/amzn-sgm-feature-store-batch-write-list/",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-07-09-microsoft-365-copilot-specialization-updates",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-09",
+    title: "Microsoft 365 Copilot specialization updates",
+    summary:
+      "Starting July 2026, Microsoft will update the Microsoft Copilot specialization. Here's what to do now.",
+    type: "policy",
+    sourceUrl:
+      "https://partner.microsoft.com/partnership/specialization/microsoft-copilot?wt.mc_id=7fr6rqckgo",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-08-azure-promotions-for-cloud-solution-providers-csps",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-08",
+    title:
+      "Azure promotions for cloud solution providers (CSPs) available in sandbox environments",
+    summary:
+      "Start preparing for Azure consumptive promotions and per-user promotional targeting.",
+    type: "feature",
+    sourceUrl: "https://aka.ms/cspazurepromotions",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-08-cloud-accelerate-factory-expands",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-08",
+    title: "Cloud Accelerate Factory expands",
+    summary:
+      "More partners can now use Cloud Accelerate Factory to deliver faster, more competitive customer engagements.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/asset/collection/cloud-accelerate-factory?wt.mc_id=n537oralxe#/",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-07-08-annual-local-currency-pricing-updates-for-commerci",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-08",
+    title: "Annual local currency pricing updates for Commercial Cloud",
+    summary:
+      "Starting in FY27, Microsoft is moving to annual local currency pricing updates for Commercial Cloud services every January.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/fx-currency-blog",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-07-new-access-to-move-customers-from-ea-to-csp",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-07",
+    title: "New access to move customers from EA to CSP",
+    summary:
+      "Expanded access to the EA-to-CSP for Azure tool helps partners transition customers to drive recurring revenue.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/benefits/technical-benefits",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-07-07-growth-margins-cloud-solution-providers-csps-avail",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-07",
+    title: "Growth margins cloud solution providers (CSPs) available",
+    summary: "Sandbox access now available for CSP growth margins",
+    type: "blog",
+    sourceUrl: "https://aka.ms/cspgrowthmargins",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-07-06-say-hello-to-184-new-aws-competency-service-delive",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-06",
+    title:
+      "Say Hello to 184 New AWS Competency, Service Delivery, and MSP Partners Added in June",
+    summary:
+      "We are excited to highlight 184 AWS Partners that received new or renewed specializations in June for our global AWS Competency, AWS Managed Service Provider (MSP), and AWS Service Delivery programs.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/say-hello-to-184-new-aws-competency-service-delivery-and-msp-partners-added-in-june/",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-07-06-custom-contract-lengths-now-available",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-06",
+    title: "Custom contract lengths now available",
+    summary:
+      "Secure deals for up to 10 years with custom contract lengths, now generally available in Microsoft Marketplace.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/manage-isv-customer-private-offers#2-create-a-private-offer-with-absolute-pricing-as-a-new-saas-or-professional-services-plan",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-06-dlp-in-defender-for-cloud-apps-deprecation",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-06",
+    title: "DLP in Defender for Cloud Apps deprecation",
+    summary:
+      "DLP in Defender for Cloud Apps will be deprecated on January 6, 2027. Microsoft Purview will become the unified home for data security and compliance.",
+    type: "policy",
+    sourceUrl: "https://aka.ms/MDAPartnerFAQ",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-07-02-how-interwiz-reduced-ai-costs-by-90-with-amazon-be",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-02",
+    title: "How InterWiz reduced AI costs by 90% with Amazon Bedrock",
+    summary:
+      "When AI infrastructure costs consumed 40% of per-interview revenue, InterWiz knew their single-provider architecture couldn't support profitable growth.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/how-interwiz-reduced-ai-costs-by-90-with-amazon-bedrock/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-07-02-reimagining-legacy-applications-with-pega-and-aws-",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-02",
+    title:
+      "Reimagining legacy applications with Pega and AWS through AI-driven approach",
+    summary:
+      "The AI-Driven App Modernization Platform from Pega and AWS enables enterprises to incrementally transform legacy applications from mainframes to monolithic applications into intelligent, cloud-native workflows using AI-powered discovery, low-code design, and the strangler fig pa…",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/reimagining-legacy-applications-with-pega-and-aws-through-ai-driven-approach/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-07-02-designing-enterprise-ai-agents-with-devrev-guardra",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-02",
+    title:
+      "Designing enterprise AI agents with DevRev guardrails powered by Amazon Nova",
+    summary:
+      "DevRev built real-time AI guardrails into its enterprise agent system, powered by Amazon Nova 2 Lite through Amazon Bedrock.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/designing-enterprise-ai-agents-with-devrev-guardrails-powered-by-amazon-nova/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-07-02-fy27-growth-margins-for-select-ai-workloads",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-02",
+    title: "FY27 Growth Margins for Select AI Workloads",
+    summary:
+      "Earn more margin in FY27 for driving qualifying growth—new-to-offer, seat expansion, and adoption—across select strategic AI workloads. Date : July 2, 2026 Workspace : General Impacted audience : Cloud Solution Provider (CSP) partners, including distributors, indirect resellers, ",
+    type: "release",
+    sourceUrl: "https://aka.ms/Growth-Margin-FAQ",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-07-01-aws-partner-central-now-supports-aws-marketplace-l",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-01",
+    title:
+      "AWS Partner Central now supports AWS Marketplace listings for co-selling",
+    summary:
+      "Today, AWS announces that partners can associate one or more AWS Marketplace solutions and product listings from their AWS Marketplace catalog directly to co-sell opportunities in AWS Partner Central.",
+    type: "release",
+    sourceUrl:
+      "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-marketplace-co-selling-support/",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-07-01-publishing-your-saas-products-in-aws-marketplace-i",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-01",
+    title:
+      "Publishing your SaaS products in AWS Marketplace in the AWS European Sovereign Cloud",
+    summary:
+      "This post is the third in a three-part series on listing software products in the AWS European Sovereign Cloud: Part 1: Registering as a seller — covers account setup and seller registration. Part 2: Publishing Amazon Machine Image (AMI) products.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/publishing-saas-products-aws-marketplace-european-sovereign-cloud/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-07-01-aws-and-elastio-deliver-comprehensive-ransomware-r",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-07-01",
+    title: "AWS and Elastio deliver comprehensive ransomware resilience",
+    summary:
+      "AWS and Elastio deliver a modern approach to ransomware resilience by combining immutable, air-gapped data vaults with continuous integrity validation, so organizations can confidently recover from cyberattacks with clean, verified data.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/aws-and-elastio-deliver-comprehensive-ransomware-resilience/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-07-01-new-licensing-prerequisite-for-agent-365",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-01",
+    title: "New Licensing Prerequisite for Agent 365",
+    summary:
+      "New licensing prerequisite for Agent 365: Microsoft 365 E5 required for new purchases starting June 1, 2026. Date : July 1, 2026 Workspace : General Impacted audience : Partners supporting Agent 365 customer engagements Details Effective June 1, Microsoft is introducing an expand",
+    type: "policy",
+    sourceUrl:
+      "https://www.microsoft.com/licensing/terms/productoffering/Agent365/EAEAS",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-01-new-windows-365-promotions-csp-promotions-save-up-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-01",
+    title:
+      "New Windows 365 Promotions CSP promotions - Save up to 25% for new and existing subscribers",
+    summary:
+      "Unlock new growth with Windows 365 CSP promotions. New and existing subscribers can now save up to 25% on Windows 365 editions.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/resources/detail/operations-promo-guide-pdf",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-01-fy27-promotions-for-microsoft-365-and-copilot",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-01",
+    title: "FY27 promotions for Microsoft 365 and Copilot",
+    summary:
+      "Take advantage of FY27 Cloud Solution Provider (CSP) promotions for Microsoft 365 and Microsoft 365 Copilot to accelerate deals and AI adoption.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/ASPX",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-07-01-partner-code-of-conduct-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-01",
+    title: "Partner Code of Conduct update",
+    summary:
+      "Microsoft is updating the Partner Code of Conduct (PCoC) to clarify expectations for partner compliance, effective August 1, 2026.",
+    type: "policy",
+    sourceUrl: "https://aka.ms/PCoC-Updates-FY27",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-01-now-available-microsoft-365-business-with-copilot-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-01",
+    title: "Now available: Microsoft 365 Business with Copilot SKUs",
+    summary:
+      "Turn durable pricing into a predictable renewal engine for SMB customers.",
+    type: "pricing",
+    sourceUrl:
+      "https://www.microsoft.com/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-07-01-explore-mcaps-start-for-partners-sessions",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-01",
+    title: "Explore MCAPS Start for Partners sessions",
+    summary:
+      "Join us on July 22 for the sessions, strategies, and playbooks to execute from day one—across AI, security, cloud, and beyond.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/MCAPS2026PCA",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-07-01-update-to-microsoft-365-nonprofit-e3-e5-three-year",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-07-01",
+    title: "Update to Microsoft 365 Nonprofit E3/E5 three-Year CSP SKUs",
+    summary:
+      "To simplify the CSP catalog and reduce confusion, Microsoft is updating the Microsoft 365 E3 and E5 Nonprofit 3‑year offers.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-06-30-introducing-forward-deployed-engineering-for-partn",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-30",
+    title:
+      "Introducing Forward Deployed Engineering for Partners: Winning the Future of Enterprise AI",
+    summary:
+      "AWS has launched the Partner-Led Forward Deployed Engineering (FDE) motion, extending its $1 billion investment in agentic AI deployment to strategic consulting partners.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/introducing-forward-deployed-engineering-for-partners-winning-the-future-of-enterprise-ai/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-30-specialization-skilling-updates",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-30",
+    title: "Specialization skilling updates",
+    summary:
+      "Several Microsoft specialization certifications are retiring and being replaced by new AI-focused criteria.",
+    type: "policy",
+    sourceUrl:
+      "https://partner.microsoft.com/partnership/specialization/build-and-modernize-ai-apps?wt.mc_id=7olym9s2ya",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-29-how-dxc-technology-upgraded-angular-and-net-applic",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-29",
+    title:
+      "How DXC Technology upgraded Angular and .NET applications with Amazon Q Developer",
+    summary:
+      "Learn how DXC Technology used Amazon Q Developer to help its customer modernize over 80 microservices and multiple micro-frontend applications, upgrading from older Angular and .NET versions while achieving a 60–75% reduction in overall upgrade effort.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/how-dxc-technology-upgraded-angular-and-net-applications-with-amazon-q-developer/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-29-microsoft-365-copilot-cowork-updated-partner-resou",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-29",
+    title:
+      "Microsoft 365 Copilot Cowork: Updated Partner Resources and Enablement",
+    summary:
+      "Following the general availability of Microsoft 365 Copilot Cowork, partner resources and enablement materials are now available to support customer conversations, planning, and readiness.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/CoworkPartnerLaunchKit",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-29-action-required-use-the-updated-microsoft-entra-id",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-29",
+    title:
+      "Action required: Use the updated Microsoft Entra ID P2 Education Student SKU for renewals",
+    summary:
+      "Use the new Microsoft Entra ID P2 Education Student stock-keeping unit (SKU) for renewals beginning July 1.",
+    type: "pricing",
+    sourceUrl: "mailto:M365PILicensingQ@microsoft.com",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-26-sentinel-50-gb-tier-promo-extended",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-26",
+    title: "Sentinel 50-GB tier promo extended",
+    summary:
+      "We’ve extended the Microsoft Sentinel 50 GB commitment tier promotion, giving partners more time to drive adoption. Announcement date : June 26, 2026 Workspace : General Impacted audience : All partners Details On October 1, 2025, Microsoft launched a new 50-GB commitment tier fo",
+    type: "pricing",
+    sourceUrl:
+      "https://microsoftpartners.microsoft.com/Downloads/?filename=Microsoft-Security-Partners%2FPartner-GTM%2FSell-Through-CSP%2FFY26_Q3-%20MSFT%20Sentinel%20Promo%20-%20customer%20pitch%20deck.pptx",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-26-july-price-list-won-t-include-an-august-preview-fo",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-26",
+    title:
+      "July price list won't include an August preview for NCE license-based services",
+    summary:
+      "We're informing all Cloud Solution Provider (CSP) partners of an important update regarding the new commerce (NCE) license-based services preview (future) price list scheduled for publication on July 1, 2026.",
+    type: "pricing",
+    sourceUrl: "https://partner.microsoft.com/dashboard/pricing/pricelist",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-06-25-aws-network-firewall-now-supports-managed-threat-i",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-25",
+    title:
+      "AWS Network Firewall now supports managed threat intelligence rules from VisionHeight",
+    summary:
+      "AWS Network Firewall now supports two new managed rule groups from VisionHeight, available through AWS Marketplace: Zero-Day Threat Protection, and Noisy Scanners and Tor Protection.",
+    type: "release",
+    sourceUrl:
+      "https://aws.amazon.com/about-aws/whats-new/2026/06/network-firewall-visionheight-managed-rules",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-06-25-guidance-on-marketplace-rewards-azure-sponsorship-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-25",
+    title: "Guidance on Marketplace Rewards Azure sponsorship use cases",
+    summary:
+      "Marketplace Rewards partners can use Azure sponsorships to support customer deployments and no-cost trials of Marketplace offers.",
+    type: "pricing",
+    sourceUrl:
+      "https://onedrive.live.com/view.aspx?resid=6C423AE231DA44BB!1796&ithint=file%2cpptx&wdo=2&authkey=!AGu503LujTgALh0",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-24-aws-genaiic-partner-agent-factory-new-ai-agents-no",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-24",
+    title:
+      "AWS GenAIIC Partner Agent Factory: New AI agents now in AWS Marketplace",
+    summary:
+      "In this post, we introduce the latest PAF solutions and explain how you can discover these solutions and co-innovate through the program.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/aws-genaiic-partner-agent-factory-new-ai-agents-now-in-aws-marketplace/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-24-windows-365-gpu-enterprise-select-256-gb-sku-avail",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-24",
+    title: "Windows 365 GPU Enterprise Select 256 GB SKU available on July 1",
+    summary:
+      'The temporary CSP limitation on the "Windows 365 GPU Enterprise Select 256-GB" SKU lifts on July 1, 2026. Plan customer conversations now.',
+    type: "blog",
+    sourceUrl: "https://partner.microsoft.com/support?wt.mc_id=z1s4rndxcs",
+    impact: "high",
+  },
+  {
+    id: "suger-2026-06-24-prm-launching-a-new-path-for-partnerships-partners",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-06-24",
+    title:
+      "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes ",
+    summary:
+      "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes the plumbing. Jun 24, 2026 Read article",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/partner-relationship-management",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-23-claude-tag-is-now-available-in-beta-via-claude-ent",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-23",
+    title:
+      "Claude Tag is now available in beta via Claude Enterprise in AWS Marketplace",
+    summary:
+      "Anthropic is launching Claude Tag — bringing Claude directly into the channels where your team already works, starting with Slack. Claude Tag is available today in beta to AWS customers who access Claude Enterprise through AWS Marketplace.",
+    type: "feature",
+    sourceUrl:
+      "https://aws.amazon.com/about-aws/whats-new/2026/06/claude-tag-aws-marketplace/",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-23-securing-ai-driven-apis-on-aws-with-wallarm",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-23",
+    title: "Securing AI-driven APIs on AWS with Wallarm",
+    summary:
+      "As AI workloads scale on AWS, the API layer becomes the primary security surface where every prompt, model response, and agent action flows through.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/securing-ai-driven-apis-on-aws-with-wallarm/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-23-new-check-inventory-by-resource-type-api-available",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-23",
+    title:
+      "New Check Inventory by Resource Type API available—Check Inventory API retiring September 25, 2026",
+    summary:
+      "A new Check Inventory by Resource Type API is now available. The existing Check Inventory API will be retired on September 25, 2026.",
+    type: "release",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/developer/check-inventory",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-18-automate-security-and-observability-with-elastic-a",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-18",
+    title:
+      "Automate security and observability with Elastic and Amazon Bedrock",
+    summary:
+      "As cloud-native environments expand, security and operations leaders face mounting pressure to reduce response times while managing growing alert volumes and team capacity.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/automate-security-and-observability-with-elastic-and-amazon-bedrock/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-18-securing-enterprise-ready-ai-agents-with-auth0-for",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-18",
+    title:
+      "Securing enterprise ready AI agents with Auth0 for AI Agents and Amazon Bedrock AgentCore",
+    summary:
+      "As AI agents take actions across systems on behalf of your users, identity and access management must sit at the center of your security strategy.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/securing-enterprise-ready-ai-agents-with-auth0-for-ai-agents-and-amazon-bedrock-agentcore/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-17-transform-enterprise-visual-content-with-amazon-no",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-17",
+    title: "Transform enterprise visual content with Amazon Nova and Bria Fibo",
+    summary:
+      "Learn how the integration of Amazon Nova multimodal intelligence with Bria Fibo's deterministic visual foundation model solves the enterprise challenges of unpredictable outputs, inconsistent branding, and legal uncertainty in AI image generation.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/transform-enterprise-visual-content-with-amazon-nova-and-bria-fibo/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-17-build-a-complete-soc-solution-with-amazon-security",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-17",
+    title:
+      "Build a complete SOC solution with Amazon Security Lake, Splunk, and Recorded Future Autonomous Threat Operations",
+    summary:
+      "Learn how to close the detection-to-response gap in your security operations by integrating Amazon Security Lake, Splunk Enterprise Security, and Recorded Future Autonomous Threat Operations into a unified SOC architecture that centralizes dispersed security data, automates even…",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/build-a-complete-soc-solution-with-amazon-security-lake-splunk-and-recorded-future-autonomous-threat-operations/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-17-updated-microsoft-partner-agreement-takes-effect-d",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-17",
+    title: "Updated Microsoft Partner Agreement takes effect December 1, 2026",
+    summary:
+      "Preview the updated Microsoft Partner Agreement (MPA) in Partner Center.",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/enroll/microsoft-partner-agreement",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-16-agentic-saas-your-next-growth-market-is-already-he",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-16",
+    title: "Agentic SaaS: Your next growth market is already here",
+    summary:
+      "Agentic AI represents the third major platform shift in enterprise software, transforming how SaaS is built, priced, distributed, and consumed by a hybrid workforce of humans and autonomous agents.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/agentic-saas-your-next-growth-market-is-already-here/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-16-sell-smarter-with-aws-new-agentic-capabilities-acc",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-16",
+    title:
+      "Sell smarter with AWS: New agentic capabilities accelerate time to revenue",
+    summary:
+      "New agentic capabilities in AWS Partner Central support you at every stage of your selling journey—from identifying the right leads to getting real-time insights and support on every deal you share with AWS.",
+    type: "blog",
+    sourceUrl: "https://aws.amazon.com/blogs/apn/sell-smarter-with-aws/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-16-new-agentic-capabilities-to-take-you-from-register",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-16",
+    title:
+      "New agentic capabilities to take you from registered to ready-to-sell in days",
+    summary:
+      "We're expanding agentic capabilities in AWS Partner Central that get you ready to sell in days—from automated profile setup and AWS Marketplace listing creation to streamlined Foundational Technical Review validation. Now you can now unlock badging, benefits, and funding faster.",
+    type: "blog",
+    sourceUrl: "https://aws.amazon.com/blogs/apn/get-ready-to-sell/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-16-from-legacy-to-ai-powered-transform-your-customer-",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-16",
+    title:
+      "From legacy to AI-powered: Transform your customer experience with Amazon Connect Customer Competency Partners",
+    summary:
+      "We're announcing the Amazon Connect Customer Competency, helping customers find validated Partners who can migrate legacy contact centers and build AI-powered customer experiences on Amazon Connect.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/from-legacy-to-ai-powered-transform-your-customer-experience-with-amazon-connect-customer-competency-partners/",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-16-accelerate-customer-outcomes-with-the-aws-business",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-16",
+    title:
+      "Accelerate customer outcomes with the AWS Business Value Realization motion",
+    summary:
+      "Customers are shifting toward outcome-based engagements—and they're willing to pay a premium for Partners who can prove results.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/accelerate-customer-outcomes-with-the-aws-business-value-realization-motion/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-16-copilot-cowork-and-microsoft-scout-what-partners-n",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-16",
+    title: "Copilot Cowork and Microsoft Scout: What partners need to know",
+    summary:
+      "Copilot Cowork is now available alongside Microsoft Scout agent experience.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/CoworkGA",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-15-how-public-ai-delivers-sovereign-llm-inference-on-",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-15",
+    title: "How Public AI delivers sovereign LLM inference on AWS and Intel",
+    summary:
+      "Open-weight large language models are being released by research institutions worldwide, but turning published weights into production inference services remains a challenge—especially under strict data residency requirements.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/how-public-ai-delivers-sovereign-llm-inference-on-aws-and-intel/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-15-view-promotion-details-directly-in-partner-center",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-15",
+    title: "View promotion details directly in Partner Center",
+    summary:
+      "Partners can now view promotion details in the Partner Center UX in addition to downloading the promotions list.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march#promotions-are-now-available-to-download-in-the-pricing-workspace",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-15-new-end-of-sale-pricelist-for-software-now-availab",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-15",
+    title: "New: End of Sale Pricelist for Software now available",
+    summary:
+      "A new End of Sale Pricelist for Software is being added to Partner Center, effective July 1, 2026.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/pricing/software-pricing#end-of-sale-pricelist-for-software",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-15-reminder-referenceid-format-update-in-reconciliati",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-15",
+    title: "Reminder: ReferenceId format update in reconciliation files",
+    summary:
+      "Reminder: The ReferenceId attribute in Billed and Unbilled Reconciliation files is updated to a structured JSON format effective June 15, 2026.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april#update-effective-date-change-for-referenceid-format-update-in-reconciliation-files",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-15-reminder-microsoft-365-pricing-and-packaging-updat",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-15",
+    title:
+      "Reminder: Microsoft 365 pricing and packaging updates coming in 2026",
+    summary:
+      "Reminder: Microsoft 365 pricing and packaging updates coming in 2026. Lock in current pricing by closing renewals before July 1.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/M365-PIBlog",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-15-new-partner-skilling-discussion-board",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-15",
+    title: "New: Partner Skilling discussion board",
+    summary:
+      "Introducing the new Partner Skilling discussion board on Tech Community—your go-to destination for skilling opportunities and expertise.",
+    type: "release",
+    sourceUrl:
+      "https://techcommunity.microsoft.com/category/mcpp/discussions/partner-skilling",
+    impact: "low",
+  },
+  {
+    id: "aws-2026-06-11-detecting-misconfigurations-and-mitigating-ai-risk",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-11",
+    title:
+      "Detecting misconfigurations and mitigating AI risks to secure Amazon Bedrock with TrendAI Vision One™",
+    summary:
+      "In this post, you’ll learn how TrendAI Vision One™ helps secure Amazon Bedrock deployments by detecting misconfigurations, monitoring for data exposure, and providing actionable remediation guidance.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/detecting-misconfigurations-and-mitigating-ai-risks-to-secure-amazon-bedrock-with-trendai-vision-one/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-11-every-technical-update-delivered-right-to-your-inb",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-11",
+    title: "Every technical update, delivered right to your inbox",
+    summary:
+      "Stay ahead of API changes, compliance requirements, and security updates with clear technical guidance.",
+    type: "pricing",
+    sourceUrl:
+      "https://info.microsoft.com/ww-landing-partner-technical-updates",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-06-10-monthly-microsoft-ai-cloud-partner-program-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-10",
+    title: "Monthly Microsoft AI Cloud Partner Program update",
+    summary:
+      "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/?practice-assessment-type=certification",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-09-unified-secrets-security-with-gitguardian-and-aws-",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-09",
+    title: "Unified Secrets Security with GitGuardian and AWS Secrets Manager",
+    summary:
+      "AI coding assistants and MCP servers have made development faster, but they've also made secrets exposure harder to catch. Developers share credentials through config files, Git repos, and CI/CD logs without realizing it.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-09-security-insights-now-available-in-copilot-tab-of-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-09",
+    title: "Security insights now available in Copilot tab of ASPX",
+    summary:
+      "A new, singular view of your data security signals and Copilot opportunity data.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/ASPXDataSecurityPlaybook",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-09-introducing-pitch-maker-agent-beta",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-09",
+    title: "Introducing Pitch Maker Agent (beta)",
+    summary:
+      "Turn Copilot Chat usage into Microsoft 365 Copilot deals with the Pitch Maker Agent (beta) experience.",
+    type: "blog",
+    sourceUrl:
+      "https://techcommunity.microsoft.com/blog/partnernews/pitch-maker-agent-turn-copilot-chat-signals-into-microsoft-365-copilot-deals/4518958?wt.mc_id=o6hvnmiu0k",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-06-08-complete-guide-to-upgrading-your-saas-product-to-a",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-08",
+    title:
+      "Complete guide to upgrading your SaaS product to AWS Marketplace Concurrent Agreements",
+    summary:
+      "This guide walks you through the technical migration steps to implement Concurrent Agreements. It covers the transition from Amazon Simple Notification Service (Amazon SNS) to Amazon EventBridge, API updates, and best practices for managing multiple licenses within your SaaS int…",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/complete-guide-to-upgrading-your-saas-product-to-aws-marketplace-concurrent-agreements/",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-06-08-automate-compliance-session-review-with-teleport-a",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-08",
+    title:
+      "Automate compliance session review with Teleport and Amazon Bedrock",
+    summary:
+      "Organizations accumulate thousands of hours of session recordings that satisfy compliance mandates but rarely get reviewed.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/automate-compliance-session-review-with-teleport-and-amazon-bedrock/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-08-mfa-enforcement-for-partner-center-apis",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-08",
+    title: "MFA enforcement for Partner Center APIs",
+    summary:
+      "Multifactor authentication (MFA) enforcement for Partner Center APIs: Take action immediately.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#4",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-06-08-new-microsoft-365-copilot-promotion-customers-can-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-08",
+    title:
+      "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses",
+    summary:
+      "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#new-three-year-cloud-solution-provider-csp-purchasing-option-for-microsoft-365-copilot-now-available",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-06-05-dynamics-365-business-central-dual-use-rights-lice",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-05",
+    title: "Dynamics 365 Business Central Dual Use Rights license keys update",
+    summary:
+      "Download and replace license keys every six months to continue using on-premises Dynamics 365 Business Central online.",
+    type: "release",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/download-software-licenses-csp?view=o365-worldwide&wt.mc_id=62vzgd0e3r",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-06-04-build-in-demand-capabilities-at-microsoft-ai-skill",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-04",
+    title: "Build in-demand capabilities at Microsoft AI Skills Fest",
+    summary: "Free digital skilling event for Microsoft partners, June 8–12.",
+    type: "release",
+    sourceUrl:
+      "https://aiskillsnavigator.microsoft.com/events/AISF2026?UTM_Source=AISF_comms&UTM_Medium=comms&UTM_Campaign=PBON",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-04-new-licensing-prerequisite-for-agent-365",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-04",
+    title: "New licensing prerequisite for Agent 365",
+    summary:
+      "New licensing prerequisite for Agent 365: Microsoft 365 E5 required for new purchases starting June 1, 2026.",
+    type: "policy",
+    sourceUrl:
+      "https://microsoftpartners.microsoft.com/abs/frontier-transformation/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-03-work-iq-api-and-consumptive-pricing-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-03",
+    title: "Work IQ API and consumptive pricing update",
+    summary:
+      "Work IQ API reaches GA June 16 with consumption-based pricing using Copilot Credits.",
+    type: "pricing",
+    sourceUrl:
+      "https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-06-02-hybrid-cloud-from-data-gravity-to-business-agility",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-06-02",
+    title:
+      "Hybrid cloud from data gravity to business agility with Cloudera on AWS",
+    summary:
+      "Discover how hybrid elasticity introduces a zero-migration data access model that decouples data residency from compute elasticity, enabling enterprises to transform existing data centers into dynamic hybrid data hubs with on-demand cloud scale without moving data.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/apn/hybrid-cloud-from-data-gravity-to-business-agility-with-cloudera-on-aws/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-06-02-updated-skilling-for-two-solutions-partner-designa",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-02",
+    title: "Updated skilling for two Solutions Partner designations",
+    summary:
+      "We've updated skilling requirements for Solutions Partner designations for Modern Work and Digital & App Innovation.",
+    type: "policy",
+    sourceUrl:
+      "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/overview?wt.mc_id=fqddacdrqs",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-02-introducing-azure-linux-now-available-in-public-pr",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-02",
+    title: "Introducing Azure Linux—now available in public preview",
+    summary: "Deliver trusted solutions on a Linux platform built for Azure.",
+    type: "pricing",
+    sourceUrl: "https://learn.microsoft.com/en-us/azure/azure-linux/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-01-new-microsoft-365-business-with-copilot-skus-avail",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-01",
+    title: "New Microsoft 365 Business with Copilot SKUs available July 1",
+    summary:
+      "Simplify AI selling and scale SMB growth with Microsoft 365 Business with Copilot.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/dashboard/home?wt.mc_id=viqnc6oy1r",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-06-01-minor-pricing-precision-updates-for-select-microso",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-06-01",
+    title:
+      "Minor pricing precision updates for select Microsoft 365 and Office 365 SKUs in EEA currencies",
+    summary: "With teams",
+    type: "pricing",
+    sourceUrl:
+      "https://www.microsoft.com/licensing/news/Microsoft365-Teams-2025",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-29-2026-agents-move-into-action",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-29",
+    title: "2026: Agents move into action",
+    summary:
+      "This is the year agents move from assistants to operators across Microsoft 365 - and partners lead the shift.",
+    type: "pricing",
+    sourceUrl:
+      "https://news.microsoft.com/annual-work-trend-index-2026/?msockid=38d2c9eb06866e8c3c72deb507296f82%3Fwt.mc_id%3Dddqtwyvcox",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-28-microsoft-publisher-agreement-version-8-0-july-202",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-28",
+    title: "Microsoft Publisher Agreement version 8.0 - July 2026 updates",
+    summary:
+      "The updated Microsoft Publisher Agreement has been updated and is now available for your review.",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/legal/marketplace/msft-publisher-agreement",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-28-accelerate-campaign-activation-using-partner-marke",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-28",
+    title: "Accelerate campaign activation using Partner Marketing Center Pro",
+    summary:
+      "With robust AI-powered features and suites of prebuilt campaign assets, Partner Marketing Center Pro is your new go-to-market hub.",
+    type: "program",
+    sourceUrl: "https://pmc.partner.microsoft.com/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-28-updated-microsoft-partner-agreement-mpa-and-progra",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-28",
+    title: "Updated Microsoft Partner Agreement (MPA) and Program Guide",
+    summary:
+      "Review the updated Microsoft Partner Agreement and program guide, effective December 1, 2026.",
+    type: "policy",
+    sourceUrl: "https://aka.ms/MPADirect2026",
+    impact: "high",
+  },
+  {
+    id: "gcp-2026-05-27-change-we-ve-reduced-the-processing-and-delivery-d",
+    platform: "GCP",
+    platformTag: "gcp",
+    date: "2026-05-27",
+    title:
+      "Change We've reduced the processing and delivery delay for Google Cloud Marketplace partner reports from 2 days (D+2) to",
+    summary:
+      "Change We've reduced the processing and delivery delay for Google Cloud Marketplace partner reports from 2 days (D+2) to 1 day (D+1), accelerating by one day the delivery of the Customer Insights reports to Cloud Marketplace partners.",
+    type: "blog",
+    sourceUrl:
+      "https://cloud.google.com/marketplace/docs/partners/release-notes",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-27-multiparty-private-offers-are-expanding-across-eur",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-27",
+    title: "Multiparty private offers are expanding across Europe",
+    summary:
+      "Microsoft Marketplace expands the channel-led sales opportunity by bringing multiparty private offers to 30 countries/regions in Europe.",
+    type: "release",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-27-co-sell-referral-quality-updates",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-27",
+    title: "Co-sell referral quality updates",
+    summary:
+      "How to submit high-quality co-sell referrals for faster seller engagement",
+    type: "program",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities?wt.mc_id=l0jgagm9kc",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-26-action-required-partner-communications",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-26",
+    title: "Action required: partner communications",
+    summary:
+      "Action required to ensure you receive Microsoft partner communications",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/account-settings/permissions-frequently-asked-questions",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-05-22-publishing-ami-products-in-aws-marketplace-in-the-",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-05-22",
+    title:
+      "Publishing AMI products in AWS Marketplace in the AWS European Sovereign Cloud",
+    summary:
+      "Ready to reach customers with strict sovereignty requirements? The AWS European Sovereign Cloud is a new independent Amazon Web Services (AWS) partition designed to help public sector organizations and customers in highly regulated industries meet their evolving sovereignty need…",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/publishing-ami-products-in-aws-marketplace-in-the-aws-european-sovereign-cloud/",
+    impact: "low",
+  },
+  {
+    id: "suger-2026-05-22-ai-meet-suger-ai-the-in-product-copilot-for-market",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-05-22",
+    title:
+      "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers,",
+    summary:
+      "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers, diagnoses failures, fills forms, and navigates your console — without leaving the page. May 22, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/meet-suger-ai-the-in-product-copilot",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-19-help-maintain-secure-boot-certificate-updates",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-19",
+    title: "Help maintain Secure Boot certificate updates",
+    summary:
+      "Certificates issued in 2011 expire starting in June 2026. Monitor your device status and take action as needed.",
+    type: "policy",
+    sourceUrl:
+      "https://support.microsoft.com/topic/monitoring-secure-boot-certificate-status-with-microsoft-intune-remediations-6696a27b-fa09-4570-b112-124965adc87f?wt.mc_id=z2o6ozz3tq",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-05-18-new-capability-auto-activation-for-saas-in-microso",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-18",
+    title: "New capability: Auto activation for SaaS in Microsoft Marketplace",
+    summary:
+      "With auto activation, billing begins as soon as a customer buys your SaaS offer in Microsoft Marketplace, even if product activation happens later.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-18-plan-migrations-faster-with-azure-migrate",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-18",
+    title: "Plan migrations faster with Azure Migrate",
+    summary:
+      "Move from manual assessments to migration-ready recommendations faster with Azure Migrate, the repeatable workshop-to-deck motion.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/azure/migrate/how-to-discover-using-collector?view=migrate&preserve-view=true",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-15-boost-marketplace-discoverability-with-ai-powered-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-15",
+    title: "Boost Marketplace discoverability with AI-powered feedback",
+    summary:
+      "Enhance listings with personalized guidance delivered in seconds via App Advisor.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/ImproveMyListing?ocid=cmm03cz6ebg",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-13-monthly-microsoft-ai-cloud-partner-program-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-13",
+    title: "Monthly Microsoft AI Cloud Partner Program update",
+    summary:
+      "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/?practice-assessment-type=certification",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-13-new-three-year-cloud-solution-provider-csp-purchas",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-13",
+    title:
+      "New three-year Cloud Solution Provider (CSP) purchasing option for Microsoft 365 Copilot now available",
+    summary:
+      "New 3-year purchasing option for Microsoft 365 Copilot now available in CSP, which brings Microsoft 365 Copilot in line with existing Microsoft 365 E3 and E5 3-year SKUs.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/CSPM365CopilotPartnerFAQ",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-05-08-how-to-use-aws-partner-central-agents",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-05-08",
+    title: "How to use AWS Partner Central Agents",
+    summary:
+      "Partners have used customer relationship management (CRM) systems and integrated with AWS Partner Central to streamline co-selling, manage leads, and share opportunities.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/how-to-use-aws-partner-central-agents/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-08-security-store-expands-to-microsoft-entra-purview",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-08",
+    title: "Security Store expands to Microsoft Entra, Purview",
+    summary:
+      "Microsoft Security Store is now embedded in Microsoft Entra and Purview, and the AI-guided Security Store Advisor is now generally available.",
+    type: "policy",
+    sourceUrl: "https://securitystore.microsoft.com/?wt.mc_id=ve093ls8hr",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-07-windows-365-business-end-of-sale-for-windows-hybri",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-07",
+    title:
+      "Windows 365 Business – End of Sale for Windows Hybrid Benefit (WHB)",
+    summary:
+      "Windows 365 Windows Hybrid Benefit (WHB) SKUs are being retired from sale to simplify the portfolio. Existing customers can continue to renew and use their current subscriptions without interruption, but no automatic migration to new SKUs occur.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april#9",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-06-business-applications-designation-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-06",
+    title: "Business Applications designation update",
+    summary:
+      "Attaining or renewing your designation just got easier—Dynamics 365 Contact Center and Copilot Studio are now eligible workloads.",
+    type: "policy",
+    sourceUrl:
+      "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/bizapps?wt.mc_id=ykm2b8pwda",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-05-06-oracle-to-postgresql-ai-assisted-migration-tooling",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-06",
+    title:
+      "Oracle‑to‑PostgreSQL AI‑assisted migration tooling expands partner opportunity on Azure",
+    summary:
+      "Migrate customers off legacy Oracle databases with new capabilities designed for efficiency.",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-schema-conversions/schema-conversions-overview?wt.mc_id=vpflq57sc2",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-06-keep-skilling-on-track-as-az-500-transitions-to-sc",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-06",
+    title: "Keep skilling on track as AZ‑500 transitions to SC‑500",
+    summary: "AZ‑500 is retiring. SC‑500 offers a flexible transition.",
+    type: "policy",
+    sourceUrl:
+      "https://techcommunity.microsoft.com/blog/skills-hub-blog/the-ai-job-boom-is-here-are-you-ready-to-showcase-your-skills/4494128",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-05-05-deploy-the-aws-marketplace-spg-dashboard-for-unifi",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-05-05",
+    title: "Deploy the AWS Marketplace SPG Dashboard for Unified Insights",
+    summary:
+      "AWS Marketplace customers, including independent software vendors (ISVs) and consulting partners (CPs), can set up the AWS Marketplace Single Pane of Glass (SPG) dashboard.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/deploy-aws-marketplace-spg-dashboard-unified-insights/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-05-important-updates-to-the-teamwork-deployment-speci",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-05",
+    title: "Important updates to the Teamwork Deployment specialization",
+    summary:
+      "The Teamwork Deployment specialization is evolving so partners can better prepare customers for secure, AI‑ready environments.",
+    type: "policy",
+    sourceUrl: "https://partner.microsoft.com/partnership/specialization",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-05-microsoft-marketplace-terms-of-use-is-being-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-05",
+    title:
+      "Microsoft Marketplace Terms of Use is being updated, effective May 27, 2026",
+    summary:
+      "The Microsoft Publisher Agreement is updated and is now available for your review.",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-04-save-the-date-mcaps-start-for-partners",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-04",
+    title: "Save the date: MCAPS Start for Partners",
+    summary:
+      "Prepare for FY27 with early insights into Microsoft priorities and go-to-market direction at MCAPS Start for Partners.",
+    type: "blog",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-04-switzerland-microsoft-365-e3-three-year-term-prici",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-04",
+    title: "Switzerland Microsoft 365 E3 (three-year term) pricing alignment",
+    summary:
+      "Effective June 1, 2026, Microsoft will update the Switzerland (CHF) price for the Microsoft 365 E3 prepaid three-year commitment SKU to better align with the equivalent one-year commitment pricing over a three-year period.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-04-changes-to-azure-reserved-vm-instances",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-04",
+    title: "Changes to Azure Reserved VM Instances",
+    summary:
+      "Azure Reserved Virtual Machine (VM) Instances for select VM series will no longer be available for purchase or renewal starting July 1, 2026.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/manage-reserved-vm-instance",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-05-04-mandatory-multifactor-authentication-mfa-for-partn",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-04",
+    title: "Mandatory multifactor authentication (MFA) for Partner Center APIs",
+    summary:
+      "Microsoft is enforcing MFA across all Partner Center app+user APIs. Inventory, validate, and test your integrations now.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/security/partner-security-requirements?wt.mc_id=rygpsn38be",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-04-extended-service-terms-enforcement-for-csp-in-effe",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-04",
+    title: "Extended service terms enforcement for CSP in effect",
+    summary: "Extended service terms enforcement for CSPs are in effect.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms?wt.mc_id=wrdvrql8ie",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-05-02-new-commerce-license-based-may-price-lists-are-upd",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-02",
+    title: "New commerce license-based May price lists are updated",
+    summary:
+      "Minor updates were made to the May 2026 price lists and are now available.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-01-resale-offers-expand-to-new-zealand",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-01",
+    title: "Resale offers expand to New Zealand",
+    summary:
+      "Strengthening partner-led sales in New Zealand through Microsoft Marketplace",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/resale-enabled-offers-overview",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-05-01-register-for-mcaps-start-for-partners",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-01",
+    title: "Register for MCAPS Start for Partners",
+    summary:
+      "Meet us where FY27 takes shape. MCAPS Start for Partners gives you a preview of where Microsoft is investing and how you can position your business for growth.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/MCAPS2026PCA",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-05-01-microsoft-365-e7-and-agent-365-are-now-generally-a",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-05-01",
+    title: "Microsoft 365 E7 and Agent 365 are now generally available",
+    summary:
+      "Guide customers through Frontier Transformation with Microsoft 365 E7, which includes Agent 365, Microsoft Entra Suite, and more for productivity and security.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/microsoft-365-e7-general-availability",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-04-30-aws-marketplace-in-the-aws-european-sovereign-clou",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-04-30",
+    title:
+      "AWS Marketplace in the AWS European Sovereign Cloud: Register as a seller",
+    summary:
+      "This post is the first in a three-post series covering how to register as a seller in AWS Marketplace in the AWS European Sovereign Cloud.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/aws-marketplace-in-the-aws-european-sovereign-cloud-register-as-a-seller/",
+    impact: "low",
+  },
+  {
+    id: "suger-2026-04-30-product-update-product-updates-april-2026-what-shi",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-04-30",
+    title:
+      "Product Update Product Updates: April 2026 What shipped in Suger April 2026: Suger MCP, AI mapping for co-sell and fundi",
+    summary:
+      "Product Update Product Updates: April 2026 What shipped in Suger April 2026: Suger MCP, AI mapping for co-sell and funding, Account Mapping, AWS funding insights, and the Co-Sell Metrics Dashboard. Apr 30, 2026",
+    type: "blog",
+    sourceUrl: "https://www.suger.io/resources/blog/product-updates-april-2026",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-04-28-streamline-identity-management-with-okta-mcp-and-k",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-04-28",
+    title: "Streamline identity management with Okta MCP and Kiro CLI",
+    summary:
+      "This post walks you through deploying the Okta MCP server and integrating it with Kiro to help manage identity operations through natural language commands.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/streamline-identity-management-with-okta-mcp-and-kiro-cli/",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-04-27-microsoft-defender-for-sql-fairfax",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-27",
+    title: "Microsoft Defender for SQL Fairfax",
+    summary:
+      "Improved reliability and easier onboarding with Defender for SQL Servers on Machines government (Fairfax).",
+    type: "release",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-usage?wt.mc_id=vcblmu8bnt",
+    impact: "medium",
+  },
+  {
+    id: "aws-2026-04-23-how-to-reduce-aws-marketplace-costs-by-automating-",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-04-23",
+    title:
+      "How to reduce AWS Marketplace costs by automating AMI subscription monitoring",
+    summary:
+      "In this post, we show you how to capture instance modifications in real-time, compares them against active subscriptions, and notifies you when action is required—helping you maintain purchased subscriptions that provide significant discounts compared to on-demand pricing.",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/how-to-reduce-aws-marketplace-costs-by-automating-ami-subscription-monitoring/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-23-microsoft-365-e7-agent-365-gtm-resources-and-enabl",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-23",
+    title: "Microsoft 365 E7 & Agent 365: GTM resources and enablement",
+    summary:
+      "Access new and upcoming readiness resources to accelerate your engagement strategy with customers ahead of Microsoft 365 E7 and Microsoft Agent 365 general availability on May 1.",
+    type: "pricing",
+    sourceUrl: "https://microsoftpartners.microsoft.com/abs/gtm/copilot/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-22-introducing-standardized-pricing-for-extended-secu",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-22",
+    title: "Introducing standardized pricing for Extended Security Updates",
+    summary:
+      "The new pricing model applies to new Extended Security Updates offerings for Windows products and SQL Server.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/asset/collection/cloud-accelerate-factory?wt.mc_id=vb4bpi52mu",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-04-21-extended-promotion-on-microsoft-purview-suite-for-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-21",
+    title:
+      "Extended promotion on Microsoft Purview Suite for Microsoft 365 Business Premium",
+    summary:
+      "Microsoft is extending the 50% promotional offer on Microsoft Purview Suite for Business Premium to July 1, 2026.",
+    type: "policy",
+    sourceUrl:
+      "https://partner.microsoft.com/resources/detail/operations-promo-guide-pdf",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-04-21-annual-capabilities-assessment-refinements-and-int",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-21",
+    title: "Annual capabilities assessment—refinements and interim approach",
+    summary:
+      "Microsoft is updating the annual CSP capabilities assessment experience for existing direct bill and distributor partners.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/account-settings/permissions-overview#how-to-look-up-my-organizations-account-admin-or-global-admin-or-owner-or-users-in-other-roles-in-partner-center",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-20-office-ltsc-2021-project-ltsc-2021-and-visio-ltsc-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-20",
+    title:
+      "Office LTSC 2021, Project LTSC 2021, and Visio LTSC 2021 nearing end of support",
+    summary:
+      "Office LTSC 2021, Project LTSC 2021, and Visio LTSC 2021 are nearing end of support.",
+    type: "pricing",
+    sourceUrl: "https://www.microsoft.com/microsoft-365/enterprise/e3",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-04-17-mca-iframe-event-signal-now-available",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-17",
+    title: "MCA iframe event signal now available",
+    summary:
+      "Partners can build one-click customer workflows with a new optional event signal from the MCA acceptance iframe, which is available now in production.",
+    type: "feature",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/customers/integrate-sandbox-confirm-customer-accept",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-16-reminder-microsoft-365-pricing-and-packaging-updat",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-16",
+    title:
+      "Reminder: Microsoft 365 pricing and packaging updates coming in 2026",
+    summary:
+      "Microsoft 365 pricing and packaging updates are coming in 2026—start renewal and upsell conversations now.",
+    type: "pricing",
+    sourceUrl:
+      "https://www.microsoft.com/microsoft-365/blog/2025/12/04/advancing-microsoft-365-new-capabilities-and-pricing-update/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-14-expanded-copilot-for-all-promo-updates-to-help-you",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-14",
+    title:
+      "Expanded Copilot for All promo updates to help you unlock more revenue opportunities",
+    summary:
+      "We’re updating the 30% and 40% off Copilot for All CSP promotional offers to expand customer eligibility.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/dashboard/insights/abss/growthopportunities?wt.mc_id=6a51nk9966",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-10-monthly-microsoft-ai-cloud-partner-program-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-10",
+    title: "Monthly Microsoft AI Cloud Partner Program update",
+    summary:
+      "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+    type: "pricing",
+    sourceUrl: "https://appsource.microsoft.com",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-10-upcoming-update-pricelist-schema-enhancement-to-su",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-10",
+    title:
+      "Upcoming Update: Pricelist schema enhancement to support mid‑month republishing",
+    summary:
+      "Date : April 10, 2026 Effective date : May 1, 2026 Workspace : Pricing To improve pricing data clarity and support critical updates, we are enhancing the License-based Current Month Pricelist schema and Software Current Month Pricelist schema to enable mid‑month republishes when ",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers#new-commerce-price-list",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-06-update-effective-date-change-for-referenceid-forma",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-06",
+    title:
+      "Update: Effective date change for ReferenceId format update in reconciliation files",
+    summary:
+      "Date : April 06, 2026 Workspace : Billing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective June 15, 2026 , the ReferenceId attribute in Billed Reconciliation and Unbilled Reconciliation files will be updated to use a structured JS",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-03-validate-your-support-capabilities-and-prepare-for",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-03",
+    title:
+      "Validate your support capabilities and prepare for the future of partner support",
+    summary: "Access new resources on Unified for Partner.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/partnership/solutions-partner#tab-5",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-04-03-sku-naming-update-microsoft-teams-premium-and-micr",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-03",
+    title:
+      "SKU Naming Update: Microsoft Teams Premium and Microsoft Teams Events",
+    summary:
+      "SKU naming update: Microsoft Teams Premium and Microsoft Teams Events",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-01-windows-365-business-20-price-decrease-coming-may-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-01",
+    title: "Windows 365 Business - 20% price decrease coming May 1, 2026",
+    summary:
+      "Windows 365 Business - 20% price decrease, making Cloud personal computers (PCs) more cost effective for small and medium business customers.",
+    type: "pricing",
+    sourceUrl: "https://learn.microsoft.com/en-us/windows-365/business/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-01-download-targeted-offers-for-your-customers-using-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-01",
+    title:
+      "Download targeted offers for your customers using AI assistant in Partner Center",
+    summary:
+      "Date : April 01, 2026 Workspace : Customers Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. We’ve introduced a new AI assistant capability in Partner Center that helps Cloud Solution Provider (CSP) partners discover and download targeted o",
+    type: "pricing",
+    sourceUrl: "https://partner.microsoft.com/dashboard/home",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-04-01-announcing-reduced-microsoft-dragon-copilot-pricin",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-01",
+    title: "Announcing reduced Microsoft Dragon Copilot pricing",
+    summary:
+      "We’re pleased to share an update to Dragon Copilot’s commercial model, designed to better reflect the current market environment and support partner growth.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/asset/collection/dragon-copilot-partner-assets#/?wt.mc_id=3vwhc6hn8k",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-01-license-mobility-for-windows-server-and-sql-server",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-01",
+    title: "License Mobility for Windows Server and SQL Server subscriptions",
+    summary:
+      "Windows Server and SQL Server CSP subscriptions include License Mobility rights starting April 1, 2026.",
+    type: "program",
+    sourceUrl:
+      "https://www.microsoft.com/licensing/guidance/LicenseMobility?wt.mc_id=leo5rf4hxo",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-01-skus-and-promotions-for-csp-transactability-may-1",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-01",
+    title: "SKUs and promotions for CSP transactability May 1",
+    summary:
+      "Microsoft 365 E5 + Entra Suite, Copilot, and Agent 365 become transactable as Microsoft 365 E7, the Frontier Suite. Price list preview for one-year terms available on April 1.",
+    type: "pricing",
+    sourceUrl: "https://partner.microsoft.com/dashboard/pricing/pricelist",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-01-global-tax-id-modernization-launch",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-01",
+    title: "Global Tax ID modernization launch",
+    summary:
+      "To support evolving global tax compliance requirements, Microsoft is enhancing the way Tax IDs are collected, validated, and stored, thus improving accuracy, and regulatory alignment across all countries/regions.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/dashboard/account/v3/accountsettings/billingprofile",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-04-01-sku-naming-update-microsoft-teams-shared-devices-m",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-04-01",
+    title:
+      "SKU Naming Update: Microsoft Teams Shared Devices → Microsoft Teams Shared Space – Single Space",
+    summary:
+      "Date : April 01, 2026 Workspace : General Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Microsoft identified a naming inconsistency affecting a subset of Microsoft Teams Shared Devices SKUs in Partner Center. To better align with our upd",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-27-retirement-of-the-qualified-referral-program-qrp",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-27",
+    title: "Retirement of the Qualified Referral Program (QRP)",
+    summary:
+      "Microsoft retires the Qualified Referral Program (QRP) at the end of March 2026 and consolidates lead/referral sharing into our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for co-sell and Marketplace conversions.",
+    type: "program",
+    sourceUrl:
+      "https://info.microsoft.com/ww-landing-microsoft-ai-cloud-partner-program-concierge-qrp.html?lcid=en-us",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-03-26-power-apps-per-app-sku-returning-to-csp-price-list",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-26",
+    title: "Power Apps per App SKU returning to CSP price list in early April",
+    summary:
+      "Power Apps per app SKU will be restored to the CSP price list in early April following a temporary operational issue.",
+    type: "pricing",
+    sourceUrl:
+      "https://www.microsoft.com/licensing/news/power-app-per-app-end-of-sale",
+    impact: "low",
+  },
+  {
+    id: "suger-2026-03-26-product-update-product-updates-march-2026-suger-ma",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-03-26",
+    title:
+      "Product Update Product Updates: March 2026 Suger March 2026: AWS Partner Central agents, redesigned widget, Seller Prime",
+    summary:
+      "Product Update Product Updates: March 2026 Suger March 2026: AWS Partner Central agents, redesigned widget, Seller Prime dashboards, three new funding types, SCABA, and more. Mar 26, 2026",
+    type: "blog",
+    sourceUrl: "https://www.suger.io/resources/blog/product-updates-march-2026",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-03-25-business-applications-ui-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-25",
+    title: "Business Applications UI update",
+    summary:
+      "Partners can now easily find baseline monthly consumed value (MCV) status for Solutions Partner designation (SPD) for Business Applications in Partner Center.",
+    type: "policy",
+    sourceUrl:
+      "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/bizapps?wt.mc_id=nehxc6kmml",
+    impact: "high",
+  },
+  {
+    id: "aws-2026-03-23-accelerate-your-cloud-journey-with-aws-professiona",
+    platform: "AWS",
+    platformTag: "aws",
+    date: "2026-03-23",
+    title:
+      "Accelerate your cloud journey with AWS Professional Services in AWS Marketplace",
+    summary:
+      "AWS first-party Professional Services are now available directly in AWS Marketplace, bringing agentic AI–led data center migration, application modernization, generative AI implementation, and cloud optimization backed by deep-rooted AWS expertise to where millions of customers …",
+    type: "blog",
+    sourceUrl:
+      "https://aws.amazon.com/blogs/awsmarketplace/accelerate-your-cloud-journey-with-aws-professional-services-in-aws-marketplace/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-23-update-to-specialization-criteria",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-23",
+    title: "Update to specialization criteria",
+    summary:
+      "Performance metrics now use standard rounding—partners within 0.5% of the requirement may now qualify to enroll in or renew a specialization.",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-03-23-build-publish-fy26-what-s-new-and-how-partners-can",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-23",
+    title: "Build & Publish FY26: What’s new and how partners can get started",
+    summary:
+      "Build & Publish FY26: what’s new and how partners can get started.",
+    type: "program",
+    sourceUrl:
+      "https://assetsprod.microsoft.com/mpn/isv-partner-incentive-walking-deck.pdf",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-03-20-new-process-to-redeem-cloud-benefits",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-20",
+    title: "New process to redeem cloud benefits",
+    summary:
+      "Your partner benefits package has powerful cloud benefits. Activate them today with a streamlined process.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/benefits/cloud-services?wt.mc_id=r5j371cee1",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-16-new-microsoft-azure-assets-for-smb-audiences",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-16",
+    title: "​New Microsoft Azure assets for SMB audiences",
+    summary:
+      "Engage customers in the small and medium-sized business (SMB) market with this purpose-built go-to-market content covering all things Microsoft Azure.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/asset/collection/cloud-and-ai-platforms-smb-partner-resources#/",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-03-13-explore-aspx-actionable-growth-insights-in-partner",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-13",
+    title: "Explore ASPX: Actionable Growth Insights in Partner Center",
+    summary: "Explore ASPX: actionable growth insights in partner center.",
+    type: "program",
+    sourceUrl:
+      "https://msit.events.teams.microsoft.com/event/msit.0df85206-37b0-4d7f-8869-711c1fa79075@72f988bf-86f1-41af-91ab-2d7cd011db47",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-03-12-extended-promotion-on-microsoft-sentinel-50-gb-com",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-12",
+    title:
+      "Extended promotion on Microsoft Sentinel 50-GB commitment tier in public preview",
+    summary: "Extended Microsoft Sentinel 50-GB commitment tier and promotion.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/MSSentinelPromoCustomerPitchDeck",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-12-final-reminder-mfa-enforcement-for-partner-center-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-12",
+    title:
+      "Final reminder: MFA enforcement for Partner Center APIs begins April 1",
+    summary:
+      "Enable multifactor authentication before April 1, 2026, to avoid blocked API calls and service disruptions.",
+    type: "policy",
+    sourceUrl:
+      "https://www.microsoft.com/research/publication/how-effective-is-multifactor-authentication-at-deterring-cyberattacks/?wt.mc_id=z1rc7z7wos",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-03-11-promotions-are-now-available-to-download-in-the-pr",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-11",
+    title: "Promotions are now available to download in the Pricing workspace",
+    summary:
+      "Date : March 11, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Promotions are now available directly through the Pricing workspace to download in Partner Center. What's new Partners can now download active promot",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-march/promotions.png#lightbox",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-11-upcoming-change-to-referenceid-attribute-in-reconc",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-11",
+    title: "Upcoming change to ReferenceId attribute in Reconciliation files",
+    summary:
+      "Date : March 11, 2026 Workspace : Billing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective April 15, 2026 , the ReferenceId attribute in Billed Reconciliation and Unbilled Reconciliation files will be updated to use a structured J",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-09-reminders-and-updates-to-extended-service-terms-es",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-09",
+    title: "Reminders and updates to extended service terms (EST)",
+    summary:
+      "New EST download capability and update to specialized offer EST availability dates.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms#download-est-subscriptions",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-09-introducing-microsoft-365-e7-a-new-productivity-su",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-09",
+    title:
+      "Introducing Microsoft 365 E7—a new productivity suite designed to drive Frontier transformation",
+    summary:
+      "Unlock new, repeatable revenue and monetization streams for your business.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/incentivesguide",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-04-security-dashboard-for-ai-now-in-public-preview",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-04",
+    title: "Security Dashboard for AI: Now in Public Preview",
+    summary: "Security Dashboard for AI is now in public preview.",
+    type: "pricing",
+    sourceUrl:
+      "https://techcommunity.microsoft.com/blog/microsoft-security-blog/introducing-security-dashboard-for-ai-now-in-public-preview/4494637",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-04-monthly-microsoft-ai-cloud-partner-program-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-04",
+    title: "Monthly Microsoft AI Cloud Partner Program update",
+    summary:
+      "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
+    type: "policy",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/membership/specializations",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-03-04-sri-lanka-vat-id-submission-for-microsoft-invoicin",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-04",
+    title: "Sri Lanka VAT ID Submission for Microsoft Invoicing",
+    summary:
+      "A new regulation is in effect for nonresident companies that provide services and digital products to customers in Sri Lanka. Beginning April 1, 2026, all digital service invoiced from nonresident companies will include 18% VAT.",
+    type: "pricing",
+    sourceUrl:
+      "https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR0V4K35dh9tBhKF9WPdv5BpUMTc1WEs3QjlQSlRGR0FTRjIyUjdOSlYwMi4u",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-01-the-automated-support-services-designation-experie",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-01",
+    title:
+      "The ​automated Support Services designation experience is now available in Partner Center",
+    summary:
+      "Partners can self-nominate, enroll in, and access relevant information related to the Support Services designation in Partner Center.",
+    type: "program",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/membership/support-services-designation",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-03-01-accelerated-file-download-for-unbilled-usage-and-r",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-03-01",
+    title:
+      "Accelerated file download for Unbilled usage and reconciliation files from Partner Center",
+    summary:
+      "Effective May 15th 2026, all unbilled usage and reconciliation files will be delivered in .CSV.GZIP format to enable faster and more efficient downloads",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-march/disable-download.png#lightbox",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-02-27-march-price-list-availability-update-for-modern-az",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-27",
+    title: "March price list availability update for Modern Azure",
+    summary:
+      "Date : February 27, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. The Modern Azure price list for March 1, 2026 is behind schedule and will not be available on the originally planned date. Updated availability Ne",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-02-26-legacy-azure-pricelists-updates",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-26",
+    title: "Legacy Azure pricelists updates",
+    summary:
+      "Date : February 26, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective March 1, 2026 , the following Legacy Azure Price Lists will transition from Excel (.xlsx) to CSV (.csv) format: Global → Azure in Global",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-02-23-new-resources-available-to-help-customers-advance-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-23",
+    title:
+      "New resources available to help customers advance their Frontier Firm journey with Microsoft 365 Copilot",
+    summary:
+      "New resources available to help customers advance their Frontier Firm journey with Microsoft 365 Copilot.",
+    type: "pricing",
+    sourceUrl:
+      "https://microsoftpartners.microsoft.com/Downloads/?filename=abs/protected/Copilot-Business-Partner-Economics-Update.pptx",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-02-23-issue-update-business-premium-copilot-bundle-prere",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-23",
+    title:
+      "Issue update: Business Premium + Copilot Bundle prerequisite validation error",
+    summary:
+      "Issue update: Business Premium + Copilot Bundle prerequisite validation error.",
+    type: "release",
+    sourceUrl: "https://partner.microsoft.com/support?stage=1",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-02-20-partners-can-download-promotions-effective-march-1",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-20",
+    title: "Partners can download promotions effective March 11, 2026",
+    summary:
+      "Date : February 20, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Partners can download promotions from Pricelist workspace. Effective March 11, 2026, to see the latest Cloud Solution Provider (CSP) promotions, f",
+    type: "pricing",
+    sourceUrl: "https://partner.microsoft.com/dashboard/home",
+    impact: "medium",
+  },
+  {
+    id: "suger-2026-02-19-product-update-product-updates-february-2026-suger",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-02-19",
+    title:
+      "Product Update Product Updates: February 2026 Suger Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights",
+    summary:
+      "Product Update Product Updates: February 2026 Suger Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights, offer history in Salesforce, Azure application product offer. Feb 19, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/product-updates-february-2026",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-02-17-csp-unbilled-invoice-reconciliation-api-v1-to-reti",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-17",
+    title:
+      "CSP unbilled invoice reconciliation API v1 to retire March 15, 2026",
+    summary:
+      "Migrate to API v2 before March 15, 2026, to avoid service disruption.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/developer/get-invoice-unbilled-line-items-asynchronously?wt.mc_id=qeowlup25z",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-02-13-expanded-partner-benefits-are-here",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-13",
+    title: "Expanded partner benefits are here",
+    summary:
+      "Explore updates to benefits packages, Solutions Partner designations, and specializations that can accelerate your AI, security, and GTM execution.",
+    type: "program",
+    sourceUrl: "https://partner.microsoft.com/dashboard/v2/membership/offers",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-02-12-marketplace-rewards-update-azure-sponsorship-now-s",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-12",
+    title:
+      "Marketplace rewards update: Azure sponsorship now supported on more MCA billing profiles",
+    summary:
+      "We’re pleased to share an update that simplifies how partners in Marketplace Rewards can use Azure Sponsorship credits if they or their customers have Microsoft Customer Agreement (MCA) billing profiles.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-02-12-update-extended-timeline-for-microsoft-sentinel-az",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-12",
+    title:
+      "Update: Extended timeline for Microsoft Sentinel (Azure portal) transition to the Defender portal",
+    summary:
+      "Extended timeline for Microsoft Sentinel (Azure portal) transition to the Defender portal.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/unified-secops/playbook-managed-security",
+    impact: "medium",
+  },
+  {
+    id: "suger-2026-02-11-cloud-gtm-sales-101-how-to-close-deals-faster-on-a",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-02-11",
+    title:
+      "Cloud GTM Sales 101: How to Close Deals Faster on AWS, Azure & GCP A Sales Leader's guide to marketplace success. Alread",
+    summary:
+      "Cloud GTM Sales 101: How to Close Deals Faster on AWS, Azure & GCP A Sales Leader's guide to marketplace success. Already listed on AWS, Azure, or GCP? Build a cloud marketplace sales motion to close bigger deals, faster. Feb 11, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/sales-101-how-to-close-deals-faster-on-aws-azure-gcp",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-02-09-unlock-growth-through-joint-planning-and-coselling",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-09",
+    title: "Unlock growth through Joint Planning and coselling",
+    summary:
+      "Access Joint Planning resources in Partner Center to accelerate coselling opportunities and coordinate upsell engagements.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/joint-planning-leads?wt.mc_id=kv7o5yo2h1",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-02-06-incorrect-partner-margin-published-for-microsoft-3",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-06",
+    title:
+      "Incorrect Partner Margin Published for Microsoft 365 Business Basic + Copilot Business Bundles",
+    summary:
+      "Incorrect partner margin published for Microsoft 365 Business Basic + Copilot Business Bundles.",
+    type: "pricing",
+    sourceUrl: "https://partner.microsoft.com/support?stage=1",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-02-06-new-capability-estimated-azure-consumed-revenue-ac",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-06",
+    title:
+      "New capability: Estimated Azure Consumed Revenue (ACR) for IP Co Sell referrals",
+    summary:
+      "We’re pleased to announce the general availability of the Estimated Azure Consumed Revenue (ACR) field in the Referral Submission experience in Partner Center.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-02-05-revised-timelines-extended-service-terms-in-csp",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-05",
+    title: "Revised timelines: Extended Service Terms in CSP",
+    summary:
+      "Enforcement of Extended Service Terms in CSP is extended from the previously announced April 1, 2026, to May 4, 2026.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-january#extended-service-term-est-production-availability-for-ux-and-api-are-delayed",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-02-05-update-csp-promo-license-cap-increased-for-microso",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-05",
+    title:
+      "Update: CSP promo license cap increased for Microsoft 365 E3/E5 and Copilot",
+    summary:
+      "Cloud Solution Provider (CSP) promo license cap increased for Microsoft 365 E3/E5 and Copilot.",
+    type: "program",
+    sourceUrl:
+      "https://partner.microsoft.com/resources/detail/operations-promo-guide-pdf",
+    impact: "medium",
+  },
+  {
+    id: "suger-2026-02-05-alliances-partnerships-101-build-a-winning-co-sell",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-02-05",
+    title:
+      "Alliances Partnerships 101: Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide t",
+    summary:
+      "Alliances Partnerships 101: Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide to scale co-sell: proven strategies for driving marketplace revenue and winning with AWS, Azure & GCP account teams. Feb 5, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/partnerships-101-build-a-winning-co-sell-motion-with-aws-azure-gcp",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-02-04-security-immersion-briefing-update-no-cap-unlimite",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-04",
+    title:
+      "Security Immersion Briefing update: No Cap Unlimited Execution, Expanded Partner Eligibility, New focus on SMB",
+    summary:
+      "We’re introducing a new Security immersion briefing, focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50–300 licenses).",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/ImmersionBriefingsMCIWalkThrough",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-02-04-monthly-microsoft-ai-cloud-partner-program-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-04",
+    title: "Monthly Microsoft AI Cloud Partner Program update",
+    summary:
+      "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/?practice-assessment-type=certification",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-02-02-mca-attestation-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-02",
+    title: "MCA attestation update",
+    summary:
+      "Blocking changes now live for Microsoft Customer Agreement partner attestation.",
+    type: "blog",
+    sourceUrl:
+      "https://admin.microsoft.com/AdminPortal/Home?ref=/BillingAccounts/agreement?wt.mc_id=bnbxx8u7mt",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-02-02-new-content-types-supported-in-multitenant-content",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-02",
+    title: "New content types supported in multitenant content distribution",
+    summary: "New content types supported in multitenant content distribution.",
+    type: "feature",
+    sourceUrl:
+      "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/new-content-types-supported-in-multi-tenant-content-distribution/4457948",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-02-01-requirements-updated-for-certified-software-design",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-02-01",
+    title:
+      "Requirements updated for certified software designations via Industry AI pathway",
+    summary:
+      "Microsoft is strengthening the requirements to become a Solutions Partner with certified software through the Industry AI pathway.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/CertifiedSoftwareWalkingDeck",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-01-30-february-price-list-won-t-include-a-march-preview-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-30",
+    title:
+      "February price list won't include a March preview for NCE license-based services",
+    summary:
+      "We're informing all Cloud Solution Provider (CSP) partners of an important update regarding the new commerce (NCE) license-based services preview (future) price list scheduled for publication on February 1, 2026.",
+    type: "pricing",
+    sourceUrl: "https://partner.microsoft.com/dashboard/pricing/pricelist",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-01-29-solutions-partner-for-modern-work-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-29",
+    title: "Solutions Partner for Modern Work update",
+    summary:
+      "Review expanded eligible workloads for the Solutions Partner for Modern Work (MW) designation.",
+    type: "program",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-modern-work?wt.mc_id=dqpzssqi28",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-01-29-mfa-enforcement-for-partner-center-apis-begins-apr",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-29",
+    title: "MFA enforcement for Partner Center APIs begins April 1",
+    summary:
+      "Enable multifactor authentication ahead of the deadline to avoid blocked API calls and service disruptions.",
+    type: "policy",
+    sourceUrl:
+      "https://www.microsoft.com/research/publication/how-effective-is-multifactor-authentication-at-deterring-cyberattacks/?wt.mc_id=z1rc7z7wos",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-01-28-retirement-of-standalone-sharepoint-online-and-one",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-28",
+    title:
+      "Retirement of standalone SharePoint Online and OneDrive for Business plans (plan 1 and plan 2)",
+    summary:
+      "Partner advisory: retirement of standalone SharePoint Online and OneDrive for Business plans.",
+    type: "pricing",
+    sourceUrl: "https://aka.ms/CloudAscent",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-01-27-announcing-new-dragon-copilot-physician-practice-o",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-27",
+    title: "Announcing new Dragon Copilot Physician Practice offer",
+    summary: "Announcing new Dragon Copilot Physician Practice offer.",
+    type: "pricing",
+    sourceUrl:
+      "https://partner.microsoft.com/asset/collection/dragon-copilot-partner-assets#/",
+    impact: "high",
+  },
+  {
+    id: "suger-2026-01-27-finance-finance-101-bridging-the-gaap-on-marketpla",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-01-27",
+    title:
+      "Finance Finance 101: Bridging the GAAP on Marketplace Revenue A Finance leader's guide to cloud marketplace accounting, ",
+    summary:
+      "Finance Finance 101: Bridging the GAAP on Marketplace Revenue A Finance leader's guide to cloud marketplace accounting, covering revenue recognition, fees, AR, cash flow and reconciliation across AWS, Azure and GCP. Jan 27, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/finance-101-bridging-the-gaap-on-marketplace-revenue",
+    impact: "low",
+  },
+  {
+    id: "suger-2026-01-26-product-update-product-updates-january-2026-see-wh",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-01-26",
+    title:
+      "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-",
+    summary:
+      "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-cloud marketplace dashboards, and co-sell partner analytics. Jan 26, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/product-updates-january-2026",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-01-23-unlock-new-security-revenue-with-csp-add-ons",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-23",
+    title: "Unlock new Security revenue with CSP add‑ons",
+    summary:
+      "Entra ID P2 and Defender for Endpoint P2 now available in Cloud Solution Program.",
+    type: "pricing",
+    sourceUrl:
+      "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-01-21-target-upcoming-renewals-for-microsoft-365-copilot",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-21",
+    title: "Target upcoming renewals for Microsoft 365 + Copilot bundle",
+    summary:
+      "Beginning January 21, 2026 partners can download a report with customers renewing Microsoft 365 Business with upsell recommendations.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/media/announcements/2026-january/ai-assistant-zero-prompt.png#lightbox",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-01-19-smarter-referral-submissions-are-here",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-19",
+    title: "Smarter referral submissions are here",
+    summary:
+      "Partner Center will offer a modernized referral submission experience designed to accelerate partner success",
+    type: "program",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities#add-deal-details",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-01-16-extended-service-term-est-production-availability-",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-16",
+    title:
+      "Extended service term (EST) production availability for UX and API are delayed",
+    summary:
+      "The new date for extended service term (EST) production availability for UX and API will be provided as soon as possible",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-01-16-retirement-of-the-qualified-referral-program",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-16",
+    title: "Retirement of the Qualified Referral Program",
+    summary:
+      "Microsoft will retire the Qualified Referral Program (QRP) in Q3 FY26 and consolidate lead/referral intake into our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for Co-sell and Marketplace conversions.",
+    type: "program",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-january",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-01-14-extended-discount-on-microsoft-purview-suite-for-m",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-14",
+    title:
+      "Extended discount on Microsoft Purview Suite for Microsoft 365 Copilot Customers",
+    summary:
+      "Microsoft extends its 50% discount on Microsoft Purview Suite (formerly E5 Compliance) for customers with Microsoft 365 Copilot licenses until 30 June 2026.",
+    type: "pricing",
+    sourceUrl:
+      "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/sell-through-csp/#offers",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-01-14-monthly-microsoft-ai-cloud-partner-program-update",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-14",
+    title: "Monthly Microsoft AI Cloud Partner Program update",
+    summary:
+      "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+    type: "pricing",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/?practice-assessment-type=certification",
+    impact: "high",
+  },
+  {
+    id: "suger-2026-01-13-revops-revops-101-running-marketplace-deals-like-a",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-01-13",
+    title:
+      "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader’s first guide to understanding why clou",
+    summary:
+      "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader’s first guide to understanding why cloud marketplace deals create policy, workflow, and ownership failures, and what to do about it. Jan 13, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/revops-cloud-gtm-playbook-101",
+    impact: "low",
+  },
+  {
+    id: "azure-2026-01-12-mpa-csp-program-guide-update-is-available",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-12",
+    title: "MPA (CSP) Program Guide update is available",
+    summary:
+      "The Guide to the Online Services and Software Channel Authorization (MPA Program Guide) was recently updated. For existing partners, it takes effect February 12, 2026.",
+    type: "program",
+    sourceUrl: "https://aka.ms/MPAProgramGuide",
+    impact: "medium",
+  },
+  {
+    id: "suger-2026-01-12-product-update-product-updates-winter-2025-discove",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-01-12",
+    title:
+      "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS fu",
+    summary:
+      "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS funding, Snowflake Marketplace, and HubSpot improvements. Jan 12, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/product-updates-winter-2025",
+    impact: "medium",
+  },
+  {
+    id: "azure-2026-01-08-new-product-availability-advanced-security-add-ons",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-08",
+    title:
+      "New Product Availability: Advanced Security Add-ons for Microsoft 365 Business Premium",
+    summary:
+      "New product availability: advanced Security add-ons for Microsoft 365 Business Premium.",
+    type: "pricing",
+    sourceUrl: "https://partner.microsoft.com/support?stage=1",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-01-05-smarter-referral-submissions-are-coming",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-05",
+    title: "Smarter referral submissions are coming!",
+    summary: "Smarter referral submissions are coming.",
+    type: "release",
+    sourceUrl:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2025-december#2",
+    impact: "high",
+  },
+  {
+    id: "azure-2026-01-05-security-immersion-briefing-update-no-cap-unlimite",
+    platform: "Azure",
+    platformTag: "azure",
+    date: "2026-01-05",
+    title:
+      "Security Immersion Briefing Update: No Cap- Unlimited Execution, Expanded Partner Eligibility, New focus on Small and Me",
+    summary:
+      "We’re introducing a new Security immersion briefing , focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50–300 licenses).",
+    type: "pricing",
+    sourceUrl:
+      "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/Immersion-Briefings",
+    impact: "medium",
+  },
+  {
+    id: "suger-2026-01-05-aws-aws-re-invent-2025-recap-key-changes-your-clou",
+    platform: "Suger",
+    platformTag: "suger",
+    date: "2026-01-05",
+    title:
+      "AWS AWS re:Invent 2025 Recap: Key Changes + Your Cloud GTM Strategy for 2026 AWS re:Invent 2025 recap covering Agent Mod",
+    summary:
+      "AWS AWS re:Invent 2025 Recap: Key Changes + Your Cloud GTM Strategy for 2026 AWS re:Invent 2025 recap covering Agent Mode, Express Private Offers, Partner Incentives, and what ISVs must change in their Cloud GTM strategy for 2026. Jan 5, 2026",
+    type: "blog",
+    sourceUrl:
+      "https://www.suger.io/resources/blog/your-cloud-gtm-strategy-for-2026-post-aws-reinvent",
+    impact: "low",
+  },
 ];

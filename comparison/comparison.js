@@ -154,8 +154,8 @@ function conceptLabel(byPlatform) {
     if (byPlatform[p]?.length)
       return byPlatform[p][0].name.replace(DISPLAY_SUFFIX_RE, "").trim();
   }
-  return Object.values(byPlatform)[0][0].name
-    .replace(DISPLAY_SUFFIX_RE, "")
+  return Object.values(byPlatform)[0][0]
+    .name.replace(DISPLAY_SUFFIX_RE, "")
     .trim();
 }
 
