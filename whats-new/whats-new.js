@@ -8,6 +8,7 @@ const PLATFORM_LABELS = {
   azure: "Azure",
   gcp: "GCP",
   snowflake: "Snowflake",
+  oracle: "Oracle",
   suger: "Suger",
 };
 const TYPE_LABELS = {

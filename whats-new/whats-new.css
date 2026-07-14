@@ -142,6 +142,10 @@
     background: #29b5e8;
     border-color: #29b5e8;
 }
+.wn-pill[data-platform="oracle"].active {
+    background: #8c231a;
+    border-color: #8c231a;
+}
 .wn-pill[data-platform="suger"].active {
     background: #6830ff;
     border-color: #6830ff;
@@ -311,6 +315,10 @@
 .wn-badge--snowflake {
     background: rgba(41, 181, 232, 0.12);
     color: #1273a0;
+}
+.wn-badge--oracle {
+    background: rgba(140, 35, 26, 0.12);
+    color: #8c231a;
 }
 .wn-badge--suger {
     background: rgba(104, 48, 255, 0.12);

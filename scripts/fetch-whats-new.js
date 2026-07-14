@@ -13,7 +13,7 @@
  *
  * ── WHAT IT DOES ─────────────────────────────────────────────────────────────
  *
- *   1. Fetches entries from 7 sources (see SOURCE LIST below).
+ *   1. Fetches entries from 10 sources (see SOURCE LIST below).
  *   2. Loads any existing entries already in data/whats-new.js.
  *   3. Merges: fresh entries overwrite existing ones with the same ID.
  *      Old entries not in the current fetch are kept (avoids data loss
@@ -29,13 +29,26 @@
  *   AWS APN Blog        https://aws.amazon.com/blogs/apn/feed/  (RSS)
  *   GCP Marketplace     https://cloud.google.com/marketplace/docs/partners/release-notes (HTML)
  *   Azure Partner Center https://learn.microsoft.com/en-us/partner-center/announcements/{year}-{month} (HTML, 3 months)
- *   Snowflake           https://docs.snowflake.com/en/whats-new  (HTML)
+ *   Snowflake Release Notes https://docs.snowflake.com/en/release-notes/all-release-notes (HTML)
+ *   Oracle Marketplace Release Notes https://docs.oracle.com/en-us/iaas/releasenotes/services/marketplace/index.htm (HTML)
+ *   Oracle Marketplace Blog https://blogs.oracle.com/oraclemarketplace/feed (RSS)
  *   Suger Blog          https://www.suger.io/resources/blog/      (HTML)
  *
  *   AWS What's New is keyword-filtered to marketplace-relevant entries only.
  *   AWS Marketplace Blog and AWS APN Blog entries are included (no keyword filter).
- *   GCP, Snowflake entries are keyword-filtered for marketplace relevance.
+ *   GCP and Snowflake entries are keyword-filtered for marketplace relevance
+ *   (Snowflake's release notes feed covers every product area, not just
+ *   Marketplace, so title+summary keyword matching is what narrows it down).
+ *   Oracle's release notes page is Marketplace-specific already — no filter needed.
+ *   Oracle's blog is filtered by category ("Oracle Cloud Marketplace" /
+ *   "Oracle Marketplace Insights") with a keyword fallback for uncategorized posts.
  *   Azure and Suger Blog entries are included without additional filtering.
+ *
+ *   KNOWN FLAKY: Oracle Marketplace Blog returns 403 (Akamai bot mitigation) from
+ *   every environment tested so far — may or may not work from GitHub Actions'
+ *   IP range. A failure here is non-fatal and just logs "✗ FAILED" without
+ *   affecting other sources. Alibaba is intentionally not included as a source —
+ *   deprioritized (<0.1% of Suger customers use it).
  *
  * ── ADDING A NEW SOURCE ───────────────────────────────────────────────────────
  *
@@ -264,8 +277,12 @@ function* parseRssItems(xml) {
       link: get("link"),
       description: get("description"),
       pubDate: get("pubDate"),
-      category: [...block.matchAll(/<category[^>]*>([^<]+)<\/category>/g)]
-        .map((c) => c[1])
+      category: [
+        ...block.matchAll(
+          /<category[^>]*>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([^<]+))<\/category>/g,
+        ),
+      ]
+        .map((c) => c[1] ?? c[2] ?? "")
         .join(" "),
     };
   }
@@ -512,44 +529,131 @@ async function fetchAzurePartnerCenter() {
   return results;
 }
 
-// ── Source: Snowflake What's New (HTML) ───────────────────────────────────────
+// ── Source: Snowflake Release Notes (HTML) ────────────────────────────────────
+//
+// The old /en/whats-new page 404s — Snowflake replaced it with a card-based
+// "all release notes" feed covering every product area (Cortex, Snowpark,
+// Marketplace, etc.), not just Marketplace. Each entry is a
+// `<div class="release-card ...">` containing a date, a linked <h2> title,
+// and a summary <p class="main-text">. There's no per-entry category tag for
+// "Marketplace" specifically, so — same as the AWS What's New feed — we
+// keyword-filter on title+summary against MARKETPLACE_KEYWORDS to keep only
+// Marketplace-relevant entries out of the full firehose.
 
 async function fetchSnowflake() {
-  const html = await fetchText("https://docs.snowflake.com/en/whats-new");
+  const html = await fetchText(
+    "https://docs.snowflake.com/en/release-notes/all-release-notes",
+  );
   const results = [];
-  // h2 = date heading, followed by feature items
-  const sectionRe = /<h2[^>]*>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|$)/g;
-  let sm;
-  while ((sm = sectionRe.exec(html)) !== null) {
-    const rawDate = scrub(sm[1]);
-    const sectionHtml = sm[2];
-    const date = parseIsoDate(rawDate);
+  const cardRe =
+    /<div class="release-card[^"]*"[\s\S]*?<p class="text-card-label">([\s\S]*?)<\/p>[\s\S]*?<a href="([^"]+)"><h2[^>]*>([\s\S]*?)<\/h2><\/a>[\s\S]*?<p class="main-text">([\s\S]*?)<\/p>/g;
+  let cm;
+  while ((cm = cardRe.exec(html)) !== null) {
+    const date = parseIsoDate(scrub(cm[1]));
     if (!date || !isRecent(date)) continue;
+    const href = cm[2];
+    const title = scrub(cm[3]);
+    const summary = scrub(cm[4]);
+    const combined = title + " " + summary;
+    if (!hasKeyword(combined)) continue;
+    const absUrl = href.startsWith("http")
+      ? href
+      : `https://docs.snowflake.com${href}`;
+    results.push({
+      id: stableId("snowflake", date, title),
+      platform: "Snowflake",
+      platformTag: "snowflake",
+      date,
+      title: title.slice(0, 120),
+      summary: oneLiner(summary),
+      type: inferType(title, summary),
+      sourceUrl: absUrl,
+      impact: scoreImpact(combined),
+    });
+  }
+  return results;
+}
 
-    const liRe = /<li[^>]*>([\s\S]*?)<\/li>/g;
-    let lm;
-    while ((lm = liRe.exec(sectionHtml)) !== null) {
-      const raw = scrub(lm[1]);
-      if (raw.length < 15 || !hasKeyword(raw)) continue;
-      const linkM = lm[1].match(/href="([^"]+)"/);
-      const href = linkM ? linkM[1] : null;
-      const absUrl = href
-        ? href.startsWith("http")
-          ? href
-          : `https://docs.snowflake.com${href}`
-        : "https://docs.snowflake.com/en/whats-new";
-      results.push({
-        id: stableId("snowflake", date, raw),
-        platform: "Snowflake",
-        platformTag: "snowflake",
-        date,
-        title: raw.slice(0, 120),
-        summary: oneLiner(raw),
-        type: inferType(raw, ""),
-        sourceUrl: absUrl,
-        impact: scoreImpact(raw),
-      });
-    }
+// ── Source: Oracle Cloud Marketplace Release Notes (HTML) ────────────────────
+//
+// Release notes at docs.oracle.com: each entry is an
+// `<article class="vl-releasenote ...">` with a linked <h2> title, a
+// `<span class="vl-relnotedate">` date, and a summary paragraph. This page is
+// Marketplace-specific already (no keyword filtering needed).
+
+async function fetchOracleMarketplace() {
+  const html = await fetchText(
+    "https://docs.oracle.com/en-us/iaas/releasenotes/services/marketplace/index.htm",
+  );
+  const results = [];
+  const entryRe =
+    /<h2 id="[^"]*"><a href="([^"]+)"[^>]*>([\s\S]*?)<\/a><\/h2>[\s\S]*?<span class="vl-relnotedate">([^<]+)<\/span>[\s\S]*?(?:<div class="rnsummarydesc">[\s\S]*?<p>([\s\S]*?)<\/p>)?/g;
+  let em;
+  while ((em = entryRe.exec(html)) !== null) {
+    const date = parseIsoDate(scrub(em[3]));
+    if (!date || !isRecent(date)) continue;
+    const href = em[1];
+    const title = scrub(em[2]);
+    const summary = em[4] ? scrub(em[4]) : title;
+    const absUrl = href.startsWith("http")
+      ? href
+      : `https://docs.oracle.com${href}`;
+    results.push({
+      id: stableId("oracle", date, title),
+      platform: "Oracle",
+      platformTag: "oracle",
+      date,
+      title: title.slice(0, 120),
+      summary: oneLiner(summary),
+      type: inferType(title, summary),
+      sourceUrl: absUrl,
+      impact: scoreImpact(title + " " + summary),
+    });
+  }
+  return results;
+}
+
+// ── Source: Oracle Marketplace Blog RSS ───────────────────────────────────────
+//
+// Standard RSS 2.0 (same shape as the AWS blog feeds — reuses parseRssItems()).
+// NOTE: this URL returns 403 from every environment tested so far (curl with a
+// browser User-Agent, and the WebFetch tool) — Akamai bot mitigation on
+// blogs.oracle.com blocks it regardless of client. Registered anyway since a
+// failure here is non-fatal (main() catches per-fetcher errors and continues);
+// if GitHub Actions' IP range gets the same block, this will just log
+// "✗ Oracle Marketplace Blog: FAILED" in the run output and contribute 0
+// entries — that's expected, not a bug to chase. Remove this fetcher if it
+// never once succeeds after a few weeks of scheduled runs.
+//
+// The blog mixes Marketplace posts with unrelated OCI content (health,
+// networking, security workshops) — categories like "Oracle Cloud Marketplace"
+// and "Oracle Marketplace Insights" catch most of them, with a keyword
+// fallback on title+description for marketplace-relevant posts that aren't
+// tagged with either category.
+
+async function fetchOracleBlog() {
+  const xml = await fetchText("https://blogs.oracle.com/oraclemarketplace/feed");
+  const results = [];
+  for (const item of parseRssItems(xml)) {
+    const title = scrub(item.title);
+    const summary = oneLiner(scrub(item.description));
+    const inMpCategory = /oracle cloud marketplace|oracle marketplace insights/i.test(
+      item.category,
+    );
+    if (!inMpCategory && !hasKeyword(title + " " + summary)) continue;
+    const date = parseIsoDate(item.pubDate);
+    if (!date || !isRecent(date)) continue;
+    results.push({
+      id: stableId("oracle", date, title),
+      platform: "Oracle",
+      platformTag: "oracle",
+      date,
+      title,
+      summary,
+      type: "blog",
+      sourceUrl: item.link,
+      impact: scoreImpact(title + " " + summary),
+    });
   }
   return results;
 }
@@ -630,7 +734,9 @@ async function main() {
     ["AWS APN Blog RSS", fetchAwsApnBlog],
     ["GCP Marketplace", fetchGcpMarketplace],
     ["Azure Partner Center", fetchAzurePartnerCenter],
-    // ["Snowflake What's New", fetchSnowflake], // URL needs fixing — disabled
+    ["Snowflake Release Notes", fetchSnowflake],
+    ["Oracle Marketplace Release Notes", fetchOracleMarketplace],
+    ["Oracle Marketplace Blog", fetchOracleBlog],
     ["Suger Blog", fetchSugerBlog],
   ];
 
