@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-07-13T08:47:24.091Z",
+  "lastUpdated": "2026-07-14T07:46:27.622Z",
   "updates": [
+    {
+      "id": "aws-2026-07-10-aws-partner-central-subsidiary-connections-now-sup",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-07-10",
+      "title": "AWS Partner Central subsidiary connections now support qualification sharing",
+      "summary": "AWS Partner Central subsidiary connections now enable partners to share qualifications across their connected partner and seller accounts.",
+      "type": "release",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/subsidiary-qualification-sharing/",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-07-10-announcing-2026-aws-partner-award-nominations",
       "platform": "AWS",
@@ -365,17 +376,6 @@
       "impact": "medium"
     },
     {
-      "id": "aws-2026-06-25-aws-network-firewall-now-supports-managed-threat-i",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-25",
-      "title": "AWS Network Firewall now supports managed threat intelligence rules from VisionHeight",
-      "summary": "AWS Network Firewall now supports two new managed rule groups from VisionHeight, available through AWS Marketplace: Zero-Day Threat Protection, and Noisy Scanners and Tor Protection.",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/network-firewall-visionheight-managed-rules",
-      "impact": "medium"
-    },
-    {
       "id": "azure-2026-06-25-guidance-on-marketplace-rewards-azure-sponsorship-",
       "platform": "Azure",
       "platformTag": "azure",
@@ -417,17 +417,6 @@
       "summary": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes the plumbing. Jun 24, 2026 Read article",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/partner-relationship-management",
-      "impact": "high"
-    },
-    {
-      "id": "aws-2026-06-23-claude-tag-is-now-available-in-beta-via-claude-ent",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-23",
-      "title": "Claude Tag is now available in beta via Claude Enterprise in AWS Marketplace",
-      "summary": "Anthropic is launching Claude Tag — bringing Claude directly into the channels where your team already works, starting with Slack. Claude Tag is available today in beta to AWS customers who access Claude Enterprise through AWS Marketplace.",
-      "type": "feature",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/06/claude-tag-aws-marketplace/",
       "impact": "high"
     },
     {
@@ -717,17 +706,6 @@
       "impact": "medium"
     },
     {
-      "id": "aws-2026-06-08-automate-compliance-session-review-with-teleport-a",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-08",
-      "title": "Automate compliance session review with Teleport and Amazon Bedrock",
-      "summary": "Organizations accumulate thousands of hours of session recordings that satisfy compliance mandates but rarely get reviewed.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/automate-compliance-session-review-with-teleport-and-amazon-bedrock/",
-      "impact": "low"
-    },
-    {
       "id": "azure-2026-06-08-mfa-enforcement-for-partner-center-apis",
       "platform": "Azure",
       "platformTag": "azure",
@@ -792,17 +770,6 @@
       "type": "pricing",
       "sourceUrl": "https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/",
       "impact": "high"
-    },
-    {
-      "id": "aws-2026-06-02-hybrid-cloud-from-data-gravity-to-business-agility",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-02",
-      "title": "Hybrid cloud from data gravity to business agility with Cloudera on AWS",
-      "summary": "Discover how hybrid elasticity introduces a zero-migration data access model that decouples data residency from compute elasticity, enabling enterprises to transform existing data centers into dynamic hybrid data hubs with on-demand cloud scale without moving data.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/hybrid-cloud-from-data-gravity-to-business-agility-with-cloudera-on-aws/",
-      "impact": "low"
     },
     {
       "id": "azure-2026-06-02-updated-skilling-for-two-solutions-partner-designa",
