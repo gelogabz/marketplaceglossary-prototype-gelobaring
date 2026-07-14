@@ -241,4 +241,69 @@ export const linkSections = [
       },
     ],
   },
+  {
+    platform: "Alibaba",
+    platformTag: "alibaba",
+    links: [
+      {
+        title: "Alibaba Cloud Marketplace (browse)",
+        url: "https://marketplace.alibabacloud.com/",
+        type: "portal",
+        desc: "The public-facing Alibaba Cloud Marketplace where buyers discover and deploy image, SaaS, and service products across global and China regions.",
+      },
+      {
+        title: "Alibaba Cloud Marketplace — Seller Guide",
+        url: "https://www.alibabacloud.com/help/en/marketplace/marketplace-seller-guide",
+        type: "doc",
+        desc: "Alibaba's official documentation for Marketplace sellers — product listing types (image, SaaS, service), vendor onboarding, and product management.",
+      },
+      {
+        title: "Alibaba Cloud — Become a Partner",
+        url: "https://www.alibabacloud.com/en/partner/become_partner",
+        type: "program",
+        desc: "Registration for Alibaba Cloud's technology partner program — the prerequisite for listing as a Marketplace vendor.",
+      },
+      {
+        title: "Alibaba Cloud Blog",
+        url: "https://www.alibabacloud.com/blog",
+        type: "blog",
+        desc: "Official Alibaba Cloud community blog — product updates, technical content, and partner ecosystem news.",
+      },
+    ],
+  },
+  {
+    platform: "Oracle",
+    platformTag: "oracle",
+    links: [
+      {
+        title: "Oracle Cloud Marketplace (browse)",
+        url: "https://marketplace.oracle.com/",
+        type: "portal",
+        desc: "The public-facing Oracle Cloud Marketplace where buyers discover SaaS, image, stack, container, and Helm chart listings without needing an OCI login. Useful for checking how your listing appears to buyers before they sign in.",
+        confusesWith: {
+          otherTitle: "Oracle Cloud Infrastructure (OCI)",
+          otherUrl: "https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm",
+          note: "OCI is Oracle's underlying cloud infrastructure platform (compute, storage, networking). Oracle Cloud Marketplace is the separate commerce layer built on top of OCI where ISVs list and sell software — they are not the same product.",
+        },
+      },
+      {
+        title: "Oracle Cloud Marketplace — Docs",
+        url: "https://docs.oracle.com/en-us/iaas/Content/Marketplace/home.htm",
+        type: "doc",
+        desc: "Oracle's official documentation hub for Marketplace — listing types, publisher registration, Service Catalog, private offers, and the Marketplace API/CLI.",
+      },
+      {
+        title: "Oracle Partner Network (OPN) — Join",
+        url: "https://www.oracle.com/partnernetwork/program/join/",
+        type: "program",
+        desc: "Registration for Oracle Partner Network — the prerequisite enrollment program before publishing on Oracle Cloud Marketplace.",
+      },
+      {
+        title: "Oracle Cloud Infrastructure Blog",
+        url: "https://blogs.oracle.com/cloud-infrastructure/",
+        type: "blog",
+        desc: "Official OCI blog — platform updates, Marketplace announcements, and partner ecosystem news.",
+      },
+    ],
+  },
 ];

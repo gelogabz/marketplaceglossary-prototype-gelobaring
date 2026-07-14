@@ -10532,7 +10532,7 @@ export const terms = [
   {
     name: "Oracle Cloud Marketplace — Oracle",
     tags: ["oracle"],
-    def: "Oracle's digital catalog for SaaS, container image, Helm chart, and machine image listings, discoverable and purchasable by Oracle Cloud Infrastructure (OCI) customers. Only SaaS listings (Oracle package type `SAAS`) are supported by Suger's sync; other listing types are not imported. Unlike AWS, Azure, and GCP marketplaces, Oracle Cloud Marketplace does not currently support usage-based metering or channel reseller private offers (the CPPO/MPO/MCPO pattern) — private offers are direct ISV-to-buyer only.",
+    def: 'Oracle\'s digital catalog for SaaS, container image, Helm chart, and machine image listings, discoverable and purchasable by Oracle Cloud Infrastructure (OCI) customers. Only SaaS listings (Oracle package type `SAAS`) are supported by Suger\'s sync; other listing types are not imported. Buyers reach it either through the OCI Console (login required) or the public storefront at <a href="https://marketplace.oracle.com/" target="_blank" rel="noopener">marketplace.oracle.com</a>, which lets prospects browse before committing to an OCI account. Oracle\'s own terminology distinguishes Customer (the transacting entity), Consumer (the person deploying software), Partner (the entity with a payout agreement), and Publisher (the person publishing listings). Unlike AWS, Azure, and GCP marketplaces, Oracle Cloud Marketplace does not currently support usage-based metering or channel reseller private offers (the CPPO/MPO/MCPO pattern) — private offers are direct ISV-to-buyer only.',
     alias:
       "Related: AWS Marketplace — AWS, Microsoft Marketplace — Azure, GCP Marketplace — GCP, Private Offer — Oracle",
     source: "https://doc.suger.io/oracle-marketplace/",
@@ -10581,6 +10581,84 @@ export const terms = [
       },
       { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
       { name: "Entitlement", slug: "entitlement" },
+    ],
+  },
+  {
+    name: "Oracle Cloud Infrastructure (OCI) — Oracle",
+    tags: ["oracle"],
+    def: "Oracle's cloud infrastructure platform — compute, storage, networking, and database services, offered across 50+ interconnected regions — equivalent in scope to AWS, Azure, or Google Cloud Platform. Commonly confused with Oracle Cloud Marketplace: OCI is the underlying infrastructure a workload runs on, while Oracle Cloud Marketplace is the separate commerce layer built on top of it where ISVs list and sell software. The two are operationally linked — OCI identifiers (Tenancy OCID, User OCID, Compartment OCID) are required to authenticate a Marketplace integration — but they are not the same product.",
+    alias:
+      "Related: Oracle Cloud Marketplace — Oracle, Oracle Cloud Marketplace Integration — Suger",
+    source: "https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Distinguishing OCI (Oracle's cloud infrastructure platform) from Oracle Cloud Marketplace (the commerce layer built on top of it) when scoping a new listing",
+      "Locating Tenancy OCID and User OCID values in the OCI Console to authenticate a Suger Marketplace integration",
+    ],
+    context: ["OCI Console", "Oracle Cloud Marketplace"],
+    related: [
+      {
+        name: "Oracle Cloud Marketplace — Oracle",
+        slug: "oracle-cloud-marketplace-—-oracle",
+      },
+      {
+        name: "Oracle Cloud Marketplace Integration — Suger",
+        slug: "oracle-cloud-marketplace-integration-—-suger",
+      },
+    ],
+  },
+  {
+    name: "Service Catalog — Oracle",
+    tags: ["oracle", "procurement"],
+    def: "An OCI governance feature that lets administrators create curated catalogs of pre-approved applications — public (sourced from Oracle Cloud Marketplace) or private (offered only within the organization) — scoped to a tenancy or compartment. End users can only browse and deploy applications on their organization's approved list, reducing the risk of unapproved spend or unvetted software. Functionally equivalent to AWS Private Marketplace, applied to Oracle's marketplace.",
+    alias: "AWS equivalent: Private Marketplace — AWS | Related: Oracle Cloud Marketplace — Oracle",
+    source:
+      "https://docs.oracle.com/en-us/iaas/Content/Marketplace/overview_of_service_catalog.htm",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["Enterprise Buyers", "ISVs / Sellers"],
+    useCases: [
+      "Restricting an organization's OCI tenancy to a curated set of pre-approved Marketplace applications via Service Catalog",
+      "Offering a private, org-only application listing through Service Catalog without publishing it to the public Oracle Cloud Marketplace",
+    ],
+    context: ["OCI Console", "Oracle Cloud Marketplace", "Enterprise Procurement"],
+    related: [
+      {
+        name: "Private Marketplace — AWS",
+        slug: "private-marketplace-—-aws",
+      },
+      {
+        name: "Oracle Cloud Marketplace — Oracle",
+        slug: "oracle-cloud-marketplace-—-oracle",
+      },
+    ],
+  },
+  {
+    name: "Oracle Partner Network (OPN) — Oracle",
+    tags: ["oracle", "cosell"],
+    def: "Oracle's partner enrollment program — the prerequisite for becoming an approved Oracle Cloud Marketplace publisher. Registration requires creating an Oracle account, joining OPN as a company (receiving an OPN membership ID), accepting the Oracle Marketplace Publisher Agreement, and — for paid package listings — completing supplier registration (company details, tax forms, bank account) and U.S.-domicile requirements (U.S. incorporation, USD bank account, signed U.S. Marketplace OCMA agreement). Non-package listings skip the U.S.-domicile requirement. The AWS/Azure/GCP equivalent of enrolling in the Partner Network before publishing on the marketplace.",
+    alias:
+      "AWS equivalent: AWS Partner Network (APN) — AWS | Azure equivalent: Microsoft AI Cloud Partner Program (MPN) — Azure | GCP equivalent: Google Cloud Partner Network — GCP | Related: Oracle Cloud Marketplace — Oracle",
+    source: "https://docs.oracle.com/en-us/iaas/Content/Marketplace/become-oci-partner.htm",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Joining Oracle Partner Network as a company prerequisite to publishing on Oracle Cloud Marketplace",
+      "Determining whether a paid package listing triggers the U.S.-domicile and supplier-registration requirements before publishing",
+    ],
+    context: ["Oracle Partner Network", "Oracle Cloud Marketplace", "OCI Console"],
+    related: [
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
+      {
+        name: "Oracle Cloud Marketplace — Oracle",
+        slug: "oracle-cloud-marketplace-—-oracle",
+      },
     ],
   },
   {
