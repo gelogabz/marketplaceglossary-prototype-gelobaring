@@ -14,7 +14,8 @@ export function escHtml(str) {
 }
 
 // Matches platform suffix on term names — e.g. "ACE — AWS", "MPO — Azure"
-export const PLATFORM_SUFFIX_RE = / — (AWS|Azure|GCP|Snowflake|Alibaba|Oracle)$/;
+export const PLATFORM_SUFFIX_RE =
+  / — (AWS|Azure|GCP|Snowflake|Alibaba|Oracle)$/;
 
 // Walkthrough status labels — single source of truth for hub + detail pages
 export const STATUS_LABELS = {
