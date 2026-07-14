@@ -5,7 +5,7 @@ import { escHtml, PLATFORM_SUFFIX_RE as SUFFIX_RE } from "../app/utils.js";
 // Display-only suffix strip — includes Suger, unlike the shared PLATFORM_SUFFIX_RE
 // (which deliberately excludes it so Suger terms route through the tag-based filter
 // below instead of the platform-suffix filter). Used only for label/cell text.
-const DISPLAY_SUFFIX_RE = / — (AWS|Azure|GCP|Snowflake|Alibaba|Suger)$/;
+const DISPLAY_SUFFIX_RE = / — (AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger)$/;
 
 const PLATFORMS = [
   { key: "Suger" },
@@ -14,6 +14,7 @@ const PLATFORMS = [
   { key: "GCP" },
   { key: "Snowflake" },
   { key: "Alibaba" },
+  { key: "Oracle" },
 ];
 
 // Platform-suffixed terms (all hyperscalers + Snowflake + Alibaba)
@@ -60,7 +61,7 @@ Object.values(byBase).forEach((names) => {
 // Pass 2: union terms linked by "X equivalent: Y" patterns in alias fields
 // Covers "GCP equivalent: MCPO — GCP", "Suger equivalent: Entitlement", etc.
 const EQUIV_RE =
-  /(?:(?:AWS|Azure|GCP|Snowflake|Alibaba|Suger)\s+)?[Ee]quivalent:\s*([^|]+?)(?=\s*\||$)/g;
+  /(?:(?:AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger)\s+)?[Ee]quivalent:\s*([^|]+?)(?=\s*\||$)/g;
 allComparableTerms.forEach((t) => {
   if (!t.alias) return;
   for (const m of t.alias.matchAll(EQUIV_RE)) {
@@ -73,7 +74,7 @@ allComparableTerms.forEach((t) => {
 // Covers Suger terms like: Entitlement → "AWS: Agreement — AWS | Azure: Subscription — Azure"
 // Tries exact name match first; falls back to appending " — Platform" suffix for base-name refs
 const PLATFORM_MAP_RE =
-  /\b(AWS|Azure|GCP|Snowflake|Alibaba|Suger):\s*([^|]+?)(?=\s*\||$)/g;
+  /\b(AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger):\s*([^|]+?)(?=\s*\||$)/g;
 allComparableTerms.forEach((t) => {
   if (!t.alias) return;
   for (const m of t.alias.matchAll(PLATFORM_MAP_RE)) {
@@ -141,7 +142,15 @@ const CONCEPT_OVERRIDES = {
 };
 
 // Concept label: check override map first (all terms per platform), then Suger name, then AWS...
-const LABEL_PRIORITY = ["Suger", "AWS", "Azure", "GCP", "Snowflake", "Alibaba"];
+const LABEL_PRIORITY = [
+  "Suger",
+  "AWS",
+  "Azure",
+  "GCP",
+  "Snowflake",
+  "Alibaba",
+  "Oracle",
+];
 function conceptLabel(byPlatform) {
   for (const p of LABEL_PRIORITY) {
     const arr = byPlatform[p];

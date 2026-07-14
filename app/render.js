@@ -162,6 +162,7 @@ const PLATFORMS = [
   { key: "gcp", label: "GCP", cls: "pb-gcp" },
   { key: "snowflake", label: "Snowflake", cls: "pb-snowflake" },
   { key: "alibaba", label: "Alibaba", cls: "pb-alibaba" },
+  { key: "oracle", label: "Oracle", cls: "pb-oracle" },
 ];
 
 // PLATFORM_SUFFIX_RE imported from ./utils.js

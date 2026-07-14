@@ -10,6 +10,7 @@ const PLATFORM_COLORS = {
   gcp: "#1b5e20",
   snowflake: "#0c4f7a",
   alibaba: "#8c3d00",
+  oracle: "#8c231a",
 };
 
 const TYPE_LABELS = {

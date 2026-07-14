@@ -10507,19 +10507,81 @@ export const terms = [
   },
   {
     name: "Oracle Cloud Marketplace Integration — Suger",
-    tags: ["suger", "integrations"],
-    def: "Suger's connection to Oracle Cloud Marketplace — OCI API signing-key authentication, product listing sync, and the full private offer lifecycle (draft, contract attach, send, subscription monitoring). Extends Suger's marketplace coverage beyond AWS, Azure, GCP, Snowflake, and Alibaba to Oracle's cloud marketplace.",
-    alias: "Related: Integration, AWS Marketplace Integration — Suger",
-    source: "https://doc.suger.io/oracle-marketplace/",
+    tags: ["suger", "oracle", "integrations"],
+    def: "Suger's organization-level connection to Oracle Cloud Marketplace via OCI API signing-key authentication — product listing sync, and the full private offer lifecycle (draft, contract attach, send, subscription monitoring). Setup requires an OCI account enrolled as a Marketplace publisher, an IAM user with permissions to read listings and manage offers, and an uploaded RSA API signing key; connecting requires five fields from the OCI console (Tenancy OCID, User OCID, Region, Fingerprint, Private Key), plus an optional Compartment OCID to scope operations. Usage metering and channel offers (CPPO) are not part of the Oracle integration. Extends Suger's marketplace coverage beyond AWS, Azure, GCP, Snowflake, and Alibaba to Oracle's cloud marketplace.",
+    alias:
+      "Related: Integration, Oracle Cloud Marketplace — Oracle, AWS Marketplace Integration — Suger",
+    source: "https://doc.suger.io/oracle-marketplace/integration/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
     useCases: [
       "Syncing Oracle Cloud Marketplace product listings into Suger using OCI API signing-key authentication",
       "Managing the full Oracle private offer lifecycle — draft, contract attach, send, subscription monitoring — from the Suger Console",
+      "Gathering the five required OCI console fields (Tenancy OCID, User OCID, Region, Fingerprint, Private Key) before connecting Oracle Marketplace in Settings",
     ],
-    context: ["Suger Console", "Oracle Cloud Marketplace"],
-    related: [{ name: "Integration", slug: "integration" }],
+    context: ["Suger Console", "Oracle Cloud Marketplace", "OCI Console"],
+    related: [
+      { name: "Integration", slug: "integration" },
+      {
+        name: "Oracle Cloud Marketplace — Oracle",
+        slug: "oracle-cloud-marketplace-—-oracle",
+      },
+    ],
+  },
+  {
+    name: "Oracle Cloud Marketplace — Oracle",
+    tags: ["oracle"],
+    def: "Oracle's digital catalog for SaaS, container image, Helm chart, and machine image listings, discoverable and purchasable by Oracle Cloud Infrastructure (OCI) customers. Only SaaS listings (Oracle package type `SAAS`) are supported by Suger's sync; other listing types are not imported. Unlike AWS, Azure, and GCP marketplaces, Oracle Cloud Marketplace does not currently support usage-based metering or channel reseller private offers (the CPPO/MPO/MCPO pattern) — private offers are direct ISV-to-buyer only.",
+    alias:
+      "Related: AWS Marketplace — AWS, Microsoft Marketplace — Azure, GCP Marketplace — GCP, Private Offer — Oracle",
+    source: "https://doc.suger.io/oracle-marketplace/",
+    difficulty: "beginner",
+    category: "fundamentals",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Listing a SaaS product on Oracle Cloud Marketplace to reach OCI customers alongside AWS, Azure, and GCP listings",
+      "Understanding that Oracle Cloud Marketplace has no usage-metering or channel-resale support, unlike the other major hyperscaler marketplaces",
+    ],
+    context: ["OCI Console", "Suger Console"],
+    related: [
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+      { name: "Private Offer — Oracle", slug: "private-offer-—-oracle" },
+    ],
+  },
+  {
+    name: "Private Offer — Oracle",
+    tags: ["oracle", "offers"],
+    group: "private-offer",
+    def: "A custom pricing and terms agreement issued to a specific buyer through Oracle Cloud Marketplace. Offers move through a defined lifecycle — Draft → Pending Marketplace → Pending Buyer → Accepted → Active → Ended — and default to a one-year term. Sellers attach a contract document by URL or file upload, then send the offer for Oracle's review before the buyer is notified; once active, Suger derives an entitlement for the buyer, which closes when the offer ends. Offers can bundle multiple listings via Oracle's resource bundle functionality, and can be withdrawn only before buyer acceptance. Unlike AWS, Azure, and GCP, Oracle has no channel-partner private offer (CPPO-equivalent) mechanism — every Oracle private offer is direct ISV-to-buyer.",
+    alias:
+      "AWS equivalent: Private Offer — AWS | Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Related: Oracle Cloud Marketplace — Oracle",
+    source: "https://doc.suger.io/oracle-marketplace/private-offers/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating an Oracle Cloud Marketplace private offer with a custom price and attached contract for a specific buyer",
+      "Bundling multiple Oracle Marketplace listings into a single private offer using Oracle's resource bundle functionality",
+      "Withdrawing an Oracle private offer before the buyer accepts it, since withdrawal is unavailable afterward",
+    ],
+    context: [
+      "Oracle Cloud Marketplace",
+      "Suger Console",
+      "Private Offer Flows",
+    ],
+    related: [
+      {
+        name: "Oracle Cloud Marketplace — Oracle",
+        slug: "oracle-cloud-marketplace-—-oracle",
+      },
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+      { name: "Entitlement", slug: "entitlement" },
+    ],
   },
   {
     name: "People Data Labs Integration — Suger",

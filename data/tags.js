@@ -21,6 +21,7 @@ export const tagMeta = {
   gcp: { label: "GCP", bg: "#e8f5e9", color: "#1b5e20" },
   snowflake: { label: "Snowflake", bg: "#e8f4fd", color: "#0c4f7a" },
   alibaba: { label: "Alibaba", bg: "#fff0e0", color: "#8c3d00" },
+  oracle: { label: "Oracle", bg: "#fbe9e7", color: "#8c231a" },
   offers: { label: "Offers", bg: "#fff8e8", color: "#7a4f00" },
   channel: { label: "Channel", bg: "#f0e8ff", color: "#5320aa" },
   integrations: { label: "Integrations", bg: "#e8f0fe", color: "#1a56cc" },

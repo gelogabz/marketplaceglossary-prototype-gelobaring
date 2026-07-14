@@ -130,6 +130,9 @@
 .compare-th-alibaba {
     color: #bf360c;
 }
+.compare-th-oracle {
+    color: #8c231a;
+}
 
 .compare-table td {
     padding: 10px 14px;
@@ -188,6 +191,9 @@
 }
 .compare-cell--alibaba {
     background: #fff5f0;
+}
+.compare-cell--oracle {
+    background: #fdf0ee;
 }
 
 .compare-cell-multi {
