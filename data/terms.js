@@ -2144,7 +2144,7 @@ export const terms = [
   {
     name: "Product Code — AWS",
     tags: ["aws"],
-    def: "The unique identifier for a product listed on AWS Marketplace. Used in API calls, entitlement lookups, and metering. The Suger equivalent is Product External ID.",
+    def: "The unique identifier for a product listed on AWS Marketplace. Used in API calls, entitlement lookups, and metering. Retrieved from the AWS Marketplace Management Portal's Products page under Product Summary — not to be confused with the listing's Product ID or its UUID-formatted product ID, which are different values commonly mistaken for the product code. The Suger equivalent is Product External ID.",
     alias:
       "Related: Amazon Machine Image (AMI) — AWS, AWS Marketplace Catalog API — AWS",
     source:
@@ -5051,7 +5051,7 @@ export const terms = [
   {
     name: "Partner Revenue Measurement (PRM) — AWS",
     tags: ["aws", "cosell", "funding"],
-    def: "An AWS Partner Network capability that measures and quantifies the revenue impact an ISV's product has on AWS service consumption — across both partner-managed and customer-managed accounts. Launched in January 2026. Partners implement PRM via resource tagging to demonstrate their AWS contribution, unlock APN funding benefits, and gain consumption insights. Compliance deadline is July 31, 2026 (May 31, 2026 for AI Competency holders); PRM becomes the required foundation for co-sell funding eligibility starting January 2027.",
+    def: "An AWS Partner Network capability that measures and quantifies the revenue impact an ISV's product has on AWS service consumption — across both partner-managed and customer-managed accounts. Launched in January 2026. Partners implement PRM via resource tagging to demonstrate their AWS contribution, unlock APN funding benefits, and gain consumption insights. Minimum compliance requires three things: a public or limited AWS Marketplace listing, a primary AWS account linked to Partner Central, and at least one eligible resource tagged with the partner's product code — AWS Cost Explorer must also be enabled on any account where resources are tagged, since PRM uses it to track consumption. Compliance deadline is July 31, 2026 (May 31, 2026 for AI Competency holders); PRM becomes the required foundation for co-sell funding eligibility starting January 2027. Supported in all Commercial AWS Regions only — European Sovereign Cloud and US GovCloud / Amazon Dedicated Cloud are not supported, though GovCloud-only partners may be eligible for an exception via their AWS partner team.",
     alias:
       "Related: APN ID Tag (aws-apn-id), PRM Resource Tagging, Revenue Attribution — AWS, AWS Partner Network (APN) — AWS",
     source: "https://aws.amazon.com/partners/aws-marketplace/",
@@ -5078,16 +5078,17 @@ export const terms = [
   {
     name: "APN ID Tag (aws-apn-id) — AWS",
     tags: ["aws"],
-    def: "The AWS resource tag key used for Partner Revenue Measurement. Partners tag their AWS resources with key `aws-apn-id` and value `pc:<product-code>` (e.g. `pc:5ugbbrmu7ud3u5hsipfzug61p`) to attribute AWS service consumption to their marketplace product. Revenue attribution continues until the tag is removed or the resource is terminated.",
-    alias: "",
+    def: "The AWS resource tag key used for Partner Revenue Measurement. Partners tag their AWS resources with key `aws-apn-id` and value `pc:<product-code>` (e.g. `pc:5ugbbrmu7ud3u5hsipfzug61p`) to attribute AWS service consumption to their marketplace product. Revenue attribution continues until the tag is removed or the resource is terminated. PRM measures production workloads specifically — dev/test/staging environments can be used to validate the tagging implementation before rolling out to production. A resource can only carry one `aws-apn-id` tag, so multi-partner scenarios require the User Agent String method instead of resource tagging. For IaC-managed resources (CloudFormation, Terraform, CDK), tags should be applied through the IaC tool itself — tagging via the console or CLI directly triggers drift detection on the next IaC run.",
+    alias:
+      "Related: Partner Revenue Measurement (PRM) — AWS, PRM Resource Tagging — AWS, Product Code — AWS",
     source:
-      "https://aws.amazon.com/about-aws/whats-new/2026/01/new-partner-revenue-measurement/",
+      "https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/manual-tagging.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
     useCases: [
       "Tagging AWS resources with the aws-apn-id key and your marketplace product code to begin attributing consumption to your product via PRM",
-      "Understanding that revenue attribution persists as long as the aws-apn-id tag remains on a billable resource",
+      "Applying the aws-apn-id tag through your IaC tool (CloudFormation, Terraform, CDK) rather than the console to avoid triggering drift detection",
     ],
     context: [
       "AWS Resource Tagging",
@@ -5109,9 +5110,11 @@ export const terms = [
   {
     name: "PRM Resource Tagging — AWS",
     tags: ["aws"],
-    def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect.",
-    alias: "",
-    source: "https://aws.amazon.com/partners/aws-marketplace/",
+    def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code, using any of six supported methods — AWS Management Console, AWS Tag Editor (bulk manual), AWS CLI, CloudFormation, CDK, or Terraform. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect, and some sub-features of otherwise-supported services are excluded (e.g. Fargate under EKS, S3 Requests costs). For multi-tenant SaaS, a single product code tags all resources representing the whole solution — tagging is not done per-tenant. A resource holds only one `aws-apn-id` tag at a time, so multi-partner deployments need the User Agent String method instead; resources under IaC management should be tagged through the IaC tool to avoid drift detection.",
+    alias:
+      "Related: APN ID Tag (aws-apn-id) — AWS, Partner Revenue Measurement (PRM) — AWS, PRM Architecture Patterns — AWS",
+    source:
+      "https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/manual-tagging.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
@@ -5142,8 +5145,9 @@ export const terms = [
   {
     name: "PRM Architecture Patterns — AWS",
     tags: ["aws"],
-    def: "The three deployment models supported by AWS Partner Revenue Measurement: Partner Account (all components in the partner's AWS account), Customer Account (all components in the customer's AWS account), and Hybrid (components split across both). Determines where tagging must be applied.",
-    alias: "",
+    def: "The three deployment models supported by AWS Partner Revenue Measurement: Partner Account (all components in the partner's AWS account — full control over tagging, no customer-side dependency), Customer Account (fully deployed in the customer's account — requires either provisioning-time tagging via CloudFormation or guiding the customer through tagging themselves), and Hybrid (components split across both — the most common pattern for complex SaaS platforms, requiring coordinated tagging across environments). Determines where tagging must be applied.",
+    alias:
+      "Related: PRM Resource Tagging — AWS, Partner Revenue Measurement (PRM) — AWS",
     source: "https://aws.amazon.com/partners/aws-marketplace/",
     difficulty: "advanced",
     category: "operations",
@@ -5171,7 +5175,7 @@ export const terms = [
   {
     name: "Revenue Attribution — AWS",
     tags: ["aws"],
-    def: "The process by which AWS associates a customer's consumption of AWS services with a specific partner's product, using PRM resource tags. Attribution is maintained as long as the `aws-apn-id` tag remains on the resource. Used by AWS to quantify partner impact and determine APN funding eligibility.",
+    def: "The process by which AWS associates a customer's consumption of AWS services with a specific partner's product, using PRM resource tags. Attribution is maintained as long as the `aws-apn-id` tag remains on the resource — any user with account access, including the customer, can remove the tag and stop attribution. Attribution reflects actual billing cycles, so it appears in subsequent billing periods after tagging; AWS partner teams typically take 3–5 business days to validate a new tagging setup. Used by AWS to quantify partner impact and determine APN funding eligibility.",
     alias:
       "Related: PRM (Partner Revenue Measurement), APN ID Tag (aws-apn-id), Product Code — AWS",
     source: "https://aws.amazon.com/partners/aws-marketplace/",
