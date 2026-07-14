@@ -200,9 +200,41 @@ function applyFilters(override = null) {
   renderFeed(filterUpdates(state));
 }
 
+// Grey out (and disable) any platform/type pill with zero entries in the full
+// dataset — no point letting someone click into a filter that can only ever
+// show "No updates match your filters." Computed once against the unfiltered
+// `updates` array, not the currently-active search/filter combination.
+function disableEmptyPills() {
+  const platformCounts = {};
+  const typeCounts = {};
+  for (const e of updates) {
+    platformCounts[e.platformTag] = (platformCounts[e.platformTag] || 0) + 1;
+    typeCounts[e.type] = (typeCounts[e.type] || 0) + 1;
+  }
+
+  document.querySelectorAll("[data-platform]").forEach((btn) => {
+    if (btn.dataset.platform === "all") return;
+    if (!platformCounts[btn.dataset.platform]) {
+      btn.disabled = true;
+      btn.title = `No ${PLATFORM_LABELS[btn.dataset.platform] || btn.dataset.platform} updates yet`;
+    }
+  });
+
+  document.querySelectorAll("[data-type]").forEach((btn) => {
+    if (btn.dataset.type === "all") return;
+    if (!typeCounts[btn.dataset.type]) {
+      btn.disabled = true;
+      btn.title = `No ${TYPE_LABELS[btn.dataset.type] || btn.dataset.type} updates yet`;
+    }
+  });
+}
+
 function initFilters() {
+  disableEmptyPills();
+
   document.querySelectorAll("[data-platform]").forEach((btn) => {
     btn.addEventListener("click", () => {
+      if (btn.disabled) return;
       const cur = getState();
       const next =
         cur.platform === btn.dataset.platform ? "all" : btn.dataset.platform;
@@ -212,6 +244,7 @@ function initFilters() {
 
   document.querySelectorAll("[data-type]").forEach((btn) => {
     btn.addEventListener("click", () => {
+      if (btn.disabled) return;
       const cur = getState();
       const next = cur.type === btn.dataset.type ? "all" : btn.dataset.type;
       applyFilters({ ...cur, type: next });
