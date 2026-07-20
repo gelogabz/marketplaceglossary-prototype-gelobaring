@@ -792,7 +792,7 @@ export const terms = [
   {
     name: "Cloud Solution Provider (CSP) — Azure",
     tags: ["azure", "cosell", "channel"],
-    def: "A Microsoft partner program that lets authorized partners resell Microsoft cloud services and ISV Marketplace solutions to end customers. ISVs can create margin-sharing private offers for CSP partners via Multiparty Private Offers.",
+    def: "A Microsoft partner program that lets authorized partners resell Microsoft cloud services and ISV Marketplace solutions to end customers. ISVs can create margin-sharing private offers for CSP partners via Multiparty Private Offers. Starting August 1, 2026, CSP New Commerce trials become transactable for the first time — previously trial subscriptions weren't billable or trackable through this channel.",
     alias:
       "Related: Multiparty Private Offer (MPO) — Azure, Microsoft Marketplace — Azure",
     source: "https://learn.microsoft.com/en-us/partner-center/csp-overview",
@@ -5202,7 +5202,7 @@ export const terms = [
   {
     name: "Subsidiary Account Connection — AWS",
     tags: ["aws"],
-    def: "An AWS Partner Central feature allowing partners with multiple AWS Marketplace accounts to link them all under a single primary account. Required for partners managing multiple marketplace storefronts who want unified PRM tracking and APN program management.",
+    def: "An AWS Partner Central feature allowing partners with multiple AWS Marketplace accounts to link them all under a single primary account. Required for partners managing multiple marketplace storefronts who want unified PRM tracking and APN program management. Connected accounts can now share qualifications — specializations, certifications, and program enrollments — across the group, with a consolidated public profile and scorecard, and tier recalculation based on combined metrics.",
     alias: "",
     source: "https://aws.amazon.com/partners/partner-central/",
     difficulty: "advanced",
@@ -8370,7 +8370,7 @@ export const terms = [
     name: "Private Offer — Azure",
     tags: ["azure", "offers"],
     group: "private-offer",
-    def: "A direct ISV-to-customer custom-priced Microsoft Marketplace offer. The ISV creates a private offer in Partner Center for a specific customer, configuring a custom price, discount, or terms on top of an existing published plan. Distinct from Private Plan (a hidden plan within a published offer) and from Multiparty Private Offer (a tri-party ISV+partner+customer deal). Private Offer is the bilateral foundation on which MPO and Resale-Enabled Offers are built.",
+    def: "A direct ISV-to-customer custom-priced Microsoft Marketplace offer. The ISV creates a private offer in Partner Center for a specific customer, configuring a custom price, discount, or terms on top of an existing published plan. Distinct from Private Plan (a hidden plan within a published offer) and from Multiparty Private Offer (a tri-party ISV+partner+customer deal). Private Offer is the bilateral foundation on which MPO and Resale-Enabled Offers are built. As of July 6, 2026, SaaS and Professional Services private offers support custom contract lengths from 1–120 months (up to 10 years), including non-standard durations, raising the prior 5-year cap.",
     alias:
       "AWS equivalent: Private Offer — AWS | GCP equivalent: Private Offer — GCP | Related: Multiparty Private Offer (MPO) — Azure, Private Plan — Azure, Microsoft Marketplace — Azure",
     source:
@@ -8427,7 +8427,7 @@ export const terms = [
   {
     name: "Solutions Partner Designation — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation.",
+    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome.",
     alias:
       "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
     source:
@@ -10483,7 +10483,7 @@ export const terms = [
     tags: ["suger", "alibaba", "integrations"],
     def: "An org-level OAuth integration that connects a Suger organization to Alibaba Cloud Marketplace, enabling marketplace operations for sellers and buyers in China and international Alibaba Cloud markets. Configuration requires OAuth credentials for the integration and an SPI key for marketplace event notifications, which Alibaba uses to push real-time subscription and billing events to Suger. The integration supports both seller and buyer marketplace workflows; deleting it may affect active marketplace subscriptions and billing relationships, so deactivation must be coordinated with any live Alibaba transactions.",
     alias: "Related: Alibaba Cloud Marketplace, Integration, Suger",
-    source: "https://doc.suger.io/integrations/alibaba-marketplace/",
+    source: "https://doc.suger.io/alibaba-marketplace/integration/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["Suger Users", "ISVs / Sellers"],
@@ -11675,7 +11675,7 @@ export const terms = [
     tags: ["suger", "snowflake", "integrations"],
     def: "Suger's organization-level connection to Snowflake Marketplace, the platform vendors use to discover, evaluate, and monetize data applications and services. Distinct from Snowflake Integration, which streams Suger's own marketplace data into a Snowflake data warehouse — this integration connects to Snowflake's data-application marketplace itself for billing and product-listing management. Requires an active Snowflake account with API access and marketplace billing permissions; cannot be edited after creation, only deleted and recreated, which does not affect data already stored in Snowflake Marketplace.",
     alias: "Related: Snowflake Integration, Snowflake Marketplace — Snowflake",
-    source: "https://doc.suger.io/integrations/snowflake-marketplace/",
+    source: "https://doc.suger.io/snowflake-marketplace/integration/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -11698,7 +11698,7 @@ export const terms = [
     def: "Suger's organization-level connection to AWS Marketplace for consolidated billing, procurement, and usage metering across an ISV's SaaS listings. Setup requires an active AWS Marketplace seller account, an AWS account with marketplace API access, and appropriate IAM permissions; authorization runs through OAuth with a seller account, then selecting the linked AWS accounts to sync. Distinct from AWS ACE Integration (co-sell and funding data) and AWS Billing Integration (organization-wide cost management) — this integration is specifically the core marketplace listing, procurement, and metering connection. Cannot be edited after creation — deleting it may affect active marketplace subscriptions and billing relationships.",
     alias:
       "Related: AWS Marketplace — AWS, AWS ACE Integration, AWS Billing Integration — Suger",
-    source: "https://doc.suger.io/integrations/aws-marketplace/",
+    source: "https://doc.suger.io/aws-marketplace/integration/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -11752,7 +11752,7 @@ export const terms = [
     def: "Suger's organization-level connection to Azure Marketplace for consolidated billing, procurement, and usage metering across an ISV's Azure SaaS listings. Setup requires an active Azure Marketplace seller account, a Microsoft Partner Network (MPN) account, and an Azure subscription with marketplace permissions; authorization runs through Microsoft/Azure OAuth with selectable target subscriptions. The integration cannot be edited in place — deleting and recreating it can disrupt active marketplace subscriptions and billing relationships until reconnected.",
     alias:
       "Related: Microsoft Marketplace — Azure, Partner Center — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
-    source: "https://doc.suger.io/integrations/azure-marketplace/",
+    source: "https://doc.suger.io/azure-marketplace/integration/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -11809,7 +11809,7 @@ export const terms = [
     tags: ["suger", "gcp", "integrations"],
     def: "Suger's organization-level connection to Google Cloud Marketplace for unified billing, procurement, and usage tracking across an ISV's GCP SaaS listings. Setup requires an active Google Cloud Marketplace seller account with completed seller onboarding and a GCP organization with billing enabled; authorization runs through Google Cloud OAuth with selectable GCP projects. Cannot be edited after creation — deleting the integration may affect active marketplace subscriptions and billing relationships.",
     alias: "Related: GCP Marketplace — GCP, Producer Portal — GCP",
-    source: "https://doc.suger.io/integrations/gcp-marketplace/",
+    source: "https://doc.suger.io/gcp-marketplace/integration/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -12200,6 +12200,99 @@ export const terms = [
       },
       { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
       { name: "Listing", slug: "listing" },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+    ],
+  },
+  {
+    name: "PostHog Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "A Suger integration with PostHog, connected via a personal API key, giving Suger's AI agent 66 actions across events, insights, cohorts, feature flags, and experiments. It is the first product-analytics integration in Suger, distinct from existing data-warehouse connectors like BigQuery and Databricks, which move data rather than surface product usage signals.",
+    alias: "Related: Google BigQuery Integration, Databricks Integration — Suger",
+    source: "https://doc.suger.io/integrations/posthog/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Connecting PostHog so Suger's AI agent can query product usage events, cohorts, and feature flags alongside marketplace data",
+      "Triggering a PostHog experiment or cohort update from a Suger workflow using the personal API key connection",
+    ],
+    context: ["Suger Console", "PostHog"],
+    related: [
+      {
+        name: "Google BigQuery Integration",
+        slug: "google-bigquery-integration",
+      },
+      {
+        name: "Databricks Integration — Suger",
+        slug: "databricks-integration-—-suger",
+      },
+    ],
+  },
+  {
+    name: "Mailchimp Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "A Suger integration with Mailchimp, connected via OAuth, giving Suger's AI agent 34 actions across audiences, contacts, campaigns, segments, and e-commerce data. It is the first email-marketing automation integration in Suger, distinct from existing comms integrations like Slack, Teams, or Gmail, which handle messaging rather than campaign and audience management.",
+    alias: "Related: HubSpot Integration, Salesforce Integration",
+    source: "https://doc.suger.io/integrations/mailchimp/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Syncing Mailchimp audiences and contacts with Suger customer data via the OAuth connection",
+      "Triggering a Mailchimp campaign or segment update from a Suger workflow",
+    ],
+    context: ["Suger Console", "Mailchimp"],
+    related: [
+      { name: "HubSpot Integration", slug: "hubspot-integration" },
+      { name: "Salesforce Integration", slug: "salesforce-integration" },
+    ],
+  },
+  {
+    name: "QuickBooks Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "Suger's connection to QuickBooks accounting software, enabling ISVs to sync invoices, payments, and revenue data from Suger into their QuickBooks instance for financial reporting.",
+    alias: "Related: NetSuite Integration",
+    source: "https://doc.suger.io/integrations/quickbooks/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Syncing Suger invoices and revenue data into QuickBooks for automated financial reporting",
+      "Eliminating manual accounting data entry by connecting Suger to QuickBooks",
+    ],
+    context: ["Suger Console", "QuickBooks", "Finance Operations"],
+    related: [
+      { name: "Invoice", slug: "invoice" },
+      { name: "Revenue", slug: "revenue" },
+      { name: "NetSuite Integration", slug: "netsuite-integration" },
+    ],
+  },
+  {
+    name: "Partner Lead Prospecting — AWS",
+    tags: ["aws", "cosell"],
+    def: "An AI-powered feature in AWS Partner Central that generates personalized sales plays, call scripts, and email templates tailored to a target customer's industry and the partner's own portfolio. Available to all ACE-eligible partners via the Leads page or the AWS Partner Central MCP server, announced July 9, 2026.",
+    alias: "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Central Agents — AWS",
+    source: "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central-prospecting/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales"],
+    useCases: [
+      "Generating a personalized sales play and call script for a target account using the customer's industry and the partner's portfolio",
+      "Drafting outbound email templates for ACE-eligible leads directly from the AWS Partner Central Leads page",
+    ],
+    context: [
+      "AWS Partner Central",
+      "APN Customer Engagements (ACE)",
+      "AWS Partner Central MCP server",
+    ],
+    related: [
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
       {
         name: "AWS Partner Central Agents — AWS",
         slug: "aws-partner-central-agents-—-aws",
