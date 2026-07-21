@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-07-20T08:39:27.681Z",
+  "lastUpdated": "2026-07-21T08:07:15.311Z",
   "updates": [
+    {
+      "id": "azure-2026-07-20-request-private-offer-now-available",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-20",
+      "title": "\"Request private offer\" now available",
+      "summary": "Help customers start pricing and terms discussions faster by letting them request a private offer directly from the listing page.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/determine-your-listing-type#listing-options-by-offer-type",
+      "impact": "high"
+    },
     {
       "id": "azure-2026-07-16-multiparty-private-offers-expand-to-more-markets",
       "platform": "Azure",
@@ -55,6 +66,17 @@
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/dashboard/account/v3/accountsettings/billingprofile",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-07-15-prm-from-onboarding-to-platinum-tier-partners-how-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-15",
+      "title": "PRM From Onboarding to Platinum Tier Partners: How PRM Journeys Keep Partners Engaged How do you keep partners engaged i",
+      "summary": "PRM From Onboarding to Platinum Tier Partners: How PRM Journeys Keep Partners Engaged How do you keep partners engaged in your PRM? PRM Journeys guide partners from onboarding to certification to Platinum tier with a clear path forward. Jul 15, 2026 Read article",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/prm-journeys-keep-partners-engaged",
+      "impact": "low"
     },
     {
       "id": "aws-2026-07-14-want-more-deals-from-aws-sellers-enable-express-pr",
@@ -513,7 +535,7 @@
       "platformTag": "suger",
       "date": "2026-06-24",
       "title": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes ",
-      "summary": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes the plumbing. Jun 24, 2026 Read article",
+      "summary": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes the plumbing. Jun 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/partner-relationship-management",
       "impact": "high"
