@@ -1,6 +1,28 @@
 {
-  "lastUpdated": "2026-07-21T08:07:15.311Z",
+  "lastUpdated": "2026-07-22T08:07:54.850Z",
   "updates": [
+    {
+      "id": "azure-2026-07-21-fy27-cloud-ai-gtm-launch",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-21",
+      "title": "FY27 Cloud & AI GTM launch",
+      "summary": "Start FY27 with customer-ready Cloud & AI conversations",
+      "type": "blog",
+      "sourceUrl": "https://partner.microsoft.com/explore/solution-areas/cloud-ai-platforms",
+      "impact": "high"
+    },
+    {
+      "id": "aws-2026-07-20-aws-partner-central-agents-expand-funding-guidance",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-07-20",
+      "title": "AWS Partner Central agents expand funding guidance to all programs",
+      "summary": "AWS Partner Central agents now support all AWS Partner funding programs. AWS Partners can get guidance on eligibility requirements, application processes, and program details for any funding program and receive documentation-backed answers in seconds.",
+      "type": "policy",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central/",
+      "impact": "low"
+    },
     {
       "id": "azure-2026-07-20-request-private-offer-now-available",
       "platform": "Azure",
