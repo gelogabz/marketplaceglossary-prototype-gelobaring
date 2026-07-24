@@ -1,6 +1,28 @@
 {
-  "lastUpdated": "2026-07-23T08:11:02.852Z",
+  "lastUpdated": "2026-07-24T08:06:44.741Z",
   "updates": [
+    {
+      "id": "azure-2026-07-23-mdti-reaches-end-of-life-august-1-2026",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-23",
+      "title": "MDTI reaches end of life August 1, 2026",
+      "summary": "Microsoft Defender Threat Intelligence (MDTI) reaches end of life on August 1, 2026 – here's what that means for you.",
+      "type": "pricing",
+      "sourceUrl": "https://techcommunity.microsoft.com/blog/defenderthreatintelligence/mdti-is-converging-into-microsoft-sentinel-and-defender-xdr/4427991?wt.mc_id=uzoeywo5sa",
+      "impact": "high"
+    },
+    {
+      "id": "azure-2026-07-23-wsa-validation-updates",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-23",
+      "title": "WSA validation updates",
+      "summary": "WSA validation updates make setup problems easier to identify and keep contract processing moving.",
+      "type": "release",
+      "sourceUrl": "https://learn.microsoft.com/en-us/volume-licensing-central/enablement/wsa-partner#latest-improvements-for-wsa-validation-in-vl-central-may-2026",
+      "impact": "medium"
+    },
     {
       "id": "aws-2026-07-21-aws-marketplace-now-supports-self-service-seller-s",
       "platform": "AWS",
