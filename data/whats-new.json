@@ -1,6 +1,28 @@
 {
-  "lastUpdated": "2026-07-24T08:06:44.741Z",
+  "lastUpdated": "2026-07-25T07:49:55.892Z",
   "updates": [
+    {
+      "id": "azure-2026-07-24-windows-365-gpu-frontline-select-256-gb-sku-availa",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-24",
+      "title": "Windows 365 GPU Frontline Select 256 GB SKU available on Aug 1",
+      "summary": "The temporary CSP limitation on the \"Windows 365 GPU Frontline Select 256-GB\" SKU lifts on August 1, 2026. Plan your customer conversations now.",
+      "type": "blog",
+      "sourceUrl": "https://partner.microsoft.com/support?wt.mc_id=z1s4rndxcs",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-07-24-convert-more-trials-into-revenue-on-microsoft-mark",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-24",
+      "title": "Convert more trials into revenue on Microsoft Marketplace",
+      "summary": "Now available for Microsoft Marketplace trials: Expanded coverage, flexible durations, and deeper insights.",
+      "type": "pricing",
+      "sourceUrl": "https://partner.microsoft.com/partner-activation-zone?wt.mc_id=e612i5e5uq",
+      "impact": "high"
+    },
     {
       "id": "azure-2026-07-23-mdti-reaches-end-of-life-august-1-2026",
       "platform": "Azure",
