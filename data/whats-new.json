@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-07-26T08:07:33.929Z",
+  "lastUpdated": "2026-07-27T09:29:33.940Z",
   "updates": [
+    {
+      "id": "gcp-2026-07-24-feature-you-can-now-use-the-cloud-commerce-produce",
+      "platform": "GCP",
+      "platformTag": "gcp",
+      "date": "2026-07-24",
+      "title": "Feature You can now use the Cloud Commerce Producer API to programmatically create, manage, and publish private offers. ",
+      "summary": "Feature You can now use the Cloud Commerce Producer API to programmatically create, manage, and publish private offers.",
+      "type": "pricing",
+      "sourceUrl": "https://cloud.google.com/marketplace/docs/partners/release-notes",
+      "impact": "low"
+    },
     {
       "id": "azure-2026-07-24-windows-365-gpu-frontline-select-256-gb-sku-availa",
       "platform": "Azure",
