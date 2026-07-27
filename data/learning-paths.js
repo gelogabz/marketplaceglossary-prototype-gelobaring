@@ -216,6 +216,11 @@ export const learningPaths = [
         why: "ACE is the platform where AWS co-sell actually happens. Now that you understand referrals conceptually, learn the system you'll use to register opportunities and engage AWS field teams.",
       },
       {
+        name: "Marketplace Listing Association — AWS",
+        slug: "marketplace-listing-association-—-aws",
+        why: "As of July 2026, AWS requires an ACE opportunity to be linked to an actual Marketplace listing before it can advance to Committed or Launched stage. Learn this requirement right after ACE itself, since it now gates the stage progression you just learned about.",
+      },
+      {
         name: "AWS Partner Central Agents — AWS",
         slug: "aws-partner-central-agents-—-aws",
         why: "When you open ACE today, you'll encounter AI agents that auto-populate opportunity fields, recommend funding, and automate pipeline management. Learn what these agents do so you can use them — not work around them.",
@@ -281,6 +286,11 @@ export const learningPaths = [
         why: "PRACR is Azure's mechanism for ISVs to self-report the customer Azure consumption their SaaS solution drives, directly tying co-sell support level to real cloud impact. It's the Azure equivalent of demonstrating marketplace traction — but measured in downstream infrastructure spend rather than transactions.",
       },
       {
+        name: "Solutions Partner Designation — Azure",
+        slug: "solutions-partner-designation-—-azure",
+        why: "PRACR eligibility and Azure co-sell benefit tiers both gate on holding a Solutions Partner Designation — now that you understand PRACR, learn the designation itself that unlocks it.",
+      },
+      {
         name: "Google Cloud Partner Network — GCP",
         slug: "google-cloud-partner-network-—-gcp",
         why: "GCP's co-sell program is structured differently from AWS and Azure. Google Cloud Partner Network is the framework that governs how ISVs qualify for and access GCP field co-sell support.",
@@ -333,6 +343,11 @@ export const learningPaths = [
         name: "Marketplace Capacity Drawdown (MCD) — Snowflake",
         slug: "marketplace-capacity-drawdown-mcd-—-snowflake",
         why: "After covering AWS EDP, MACC, and GCP CUD, complete the committed spend picture with Snowflake's equivalent. MCD lets buyers draw down Snowflake capacity commitments through marketplace purchases — a critical lever for ISVs targeting Snowflake-heavy enterprise accounts.",
+      },
+      {
+        name: "Integrated SaaS Listing — Snowflake",
+        slug: "integrated-saas-listing-—-snowflake",
+        why: "Integrated SaaS listings let buyers start a free trial directly from a Marketplace listing and fund it via the same capacity commitments you just learned about in MCD — the trial-to-purchase path draws down the identical mechanism.",
       },
       {
         name: "Metered Billing",
@@ -566,6 +581,16 @@ export const learningPaths = [
         why: "CRM Enrichment pushes hyperscaler signals into your CRM; Co-sell Insights is Suger's AI layer that interprets those signals and recommends next actions for co-sell opportunities. Understanding this feature completes the picture of how Suger turns raw hyperscaler data into actionable co-sell guidance.",
       },
       {
+        name: "Collaboration Score — Suger",
+        slug: "collaboration-score-—-suger",
+        why: "Co-sell Insights tells you which opportunities to act on; Collaboration Score narrows further to which specific partner contacts within those opportunities are worth engaging, ranked by quality rather than raw activity.",
+      },
+      {
+        name: "Co-Sell Metrics Dashboard — Suger",
+        slug: "co-sell-metrics-dashboard-—-suger",
+        why: "Once you're acting on insights and prioritizing contacts by Collaboration Score, the Co-Sell Metrics Dashboard is where you track the results — win rates by cloud provider and sync health — closing the loop on Suger's co-sell tooling.",
+      },
+      {
         name: "Suger MCP Server",
         slug: "suger-mcp-server",
         why: "Once you understand what Suger does operationally, the MCP Server shows how AI agents can interact with it directly. The Suger MCP Server exposes Suger's API capabilities to AI coding assistants and automation agents — enabling teams to build, query, and manage marketplace workflows without leaving their AI toolchain.",
@@ -581,9 +606,9 @@ export const learningPaths = [
         why: "Insulin Agents are the named units of work inside Insulin — each one is an AI specialist with defined tools and instructions. Suger ships 20+ pre-built agents and lets you create custom ones. Knowing what an Agent is tells you what you're configuring when you set up a Watch or assign agents to a Channel.",
       },
       {
-        name: "Insulin Watch — Suger",
-        slug: "insulin-watch-—-suger",
-        why: "Watches are how you turn Insulin from a chat tool into a background automation layer. A Watch runs an Agent on a cron schedule or event trigger — so your agents can monitor revenue changes, entitlement events, or deal activity without you having to invoke them manually.",
+        name: "Insulin Jobs — Suger",
+        slug: "insulin-jobs-—-suger",
+        why: "Jobs are how you turn Insulin from a chat tool into a background automation layer. A Job runs an Agent on a cron schedule or event trigger — so your agents can monitor revenue changes, entitlement events, or deal activity without you having to invoke them manually.",
       },
       {
         name: "Insulin Channel — Suger",
@@ -1497,6 +1522,11 @@ export const learningPaths = [
         name: "Learning Management System (LMS) — Suger",
         slug: "learning-management-system-lms-—-suger",
         why: "Partner enablement lives inside the portal. The LMS module lets you publish certification tracks, onboarding courses, and product training — organized by tier — so partners arrive at deal registration already qualified. Completion can gate commission eligibility, turning the LMS into a program governance lever, not just a training tool.",
+      },
+      {
+        name: "PRM Journeys — Suger",
+        slug: "prm-journeys-—-suger",
+        why: "Portal, tiers, and LMS are the building blocks — PRM Journeys is the automation layer on top of them, sequencing partners through onboarding, certification, and tier progression automatically instead of you tracking status by hand.",
       },
       {
         name: "SCORM",

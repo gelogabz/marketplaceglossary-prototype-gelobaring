@@ -217,8 +217,7 @@ export const terms = [
     tags: ["azure"],
     def: "Microsoft's former marketplace storefront for business applications integrating with Microsoft 365, Dynamics 365, and Power Platform. As of September 2025, AppSource has been consolidated into the unified Microsoft Marketplace alongside Azure Marketplace.",
     alias: "Now part of: Microsoft Marketplace — Azure",
-    source:
-      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
+    source: "https://learn.microsoft.com/en-us/marketplace/appsource-overview",
     difficulty: "beginner",
     category: "fundamentals",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -3047,7 +3046,7 @@ export const terms = [
     tags: ["suger"],
     def: "The start day of a billing period in Suger — either the start date of the entitlement or the 1st of the month. Determines when each billing period begins relative to the contract.",
     alias: "",
-    source: "https://doc.suger.io/billing/",
+    source: "https://doc.suger.io/billing/price-model/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -3067,7 +3066,7 @@ export const terms = [
     tags: ["suger", "general"],
     def: "The frequency at which a buyer is charged within a contract — monthly, quarterly, annually, etc. Configured per price model in a Suger offer.",
     alias: "",
-    source: "https://doc.suger.io/billing/",
+    source: "https://doc.suger.io/billing/price-model/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -3733,7 +3732,8 @@ export const terms = [
     tags: ["aws", "cosell"],
     def: "An approved funding grant issued to a partner through the AWS Benefits API. Can take the form of cash disbursements, AWS credits, consumable wallets, access grants, or recognition. Each allocation has a lifecycle status tracked via the Partner Central API.",
     alias: "",
-    source: "https://aws.amazon.com/partners/funding/",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/APIReference/working-with-benefit-allocations.html",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -4399,7 +4399,7 @@ export const terms = [
     name: "Express Private Offer — AWS",
     tags: ["aws", "offers"],
     group: "private-offer",
-    def: "An AI-powered AWS Marketplace feature (launched Nov 2025) where sellers pre-configure a rate card and AWS automatically generates and delivers personalized private offers to qualified buyers in minutes — without manual negotiation. Available for SaaS Contract and SaaS Contract with Consumption products.",
+    def: "An AI-powered AWS Marketplace feature (launched Nov 2025) where sellers pre-configure a rate card and AWS automatically generates and delivers personalized private offers to qualified buyers in minutes — without manual negotiation. Available for SaaS Contract and SaaS Contract with Consumption products. A July 2026 update lets sellers with active SaaS Contract or Consumption listings auto-send EPO links directly within shared ACE co-sell opportunities, and adds an 'EPO Enabled' badge on qualifying listings for improved buyer visibility.",
     alias:
       "Related: Private Offer — AWS, Agreement-Based Offer (ABO) — AWS, Marketplace Private Offer Promotion Program (MPOPP) — AWS",
     source:
@@ -5510,7 +5510,7 @@ export const terms = [
   {
     name: "AWS Partner Central Agents — AWS",
     tags: ["aws", "cosell"],
-    def: "Agentic AI capabilities embedded in AWS Partner Central (launched March 2026) that assist partner teams with pipeline insights, sales play recommendations, and automated ACE opportunity management. Can auto-populate opportunity fields from meeting transcripts or emails, recommend funding at the opportunity level, and generate pre-filled fund requests. A June 2026 expansion extended agent-assisted co-sell qualification to every deal — enabling partners to apply agentic acceleration across their full pipeline without manually selecting eligible opportunities. Available in all commercial AWS Regions.",
+    def: "Agentic AI capabilities embedded in AWS Partner Central (launched March 2026) that assist partner teams with pipeline insights, sales play recommendations, and automated ACE opportunity management. Can auto-populate opportunity fields from meeting transcripts or emails, recommend funding at the opportunity level, and generate pre-filled fund requests. A June 2026 expansion extended agent-assisted co-sell qualification to every deal — enabling partners to apply agentic acceleration across their full pipeline without manually selecting eligible opportunities. A July 2026 expansion broadened agent-generated funding guidance beyond opportunity-level recommendations to cover eligibility and application guidance across all AWS partner funding programs. Available in all commercial AWS Regions.",
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Funding — AWS, Partner Central 3.0 (PC3.0) — AWS",
     source:
@@ -8427,7 +8427,7 @@ export const terms = [
   {
     name: "Solutions Partner Designation — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome.",
+    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome. For FY27, Microsoft is merging several specializations (Analytics with Data Warehouse Migration; Low Code with Intelligent Automation into 'Agentic Business Solutions'; Kubernetes with Migrate Enterprise Applications into 'App Modernization') and adding a new Agentic Security Specialization, with affected partners auto-enrolled into the merged specialization under their existing designation. Designation and benefits-package renewals also move to a standardized 30-day pre-anniversary-date (AD-30) window.",
     alias:
       "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
     source:
@@ -12297,6 +12297,155 @@ export const terms = [
         name: "AWS Partner Central Agents — AWS",
         slug: "aws-partner-central-agents-—-aws",
       },
+    ],
+  },
+  // ── TD1 2026-07-27 additions ────────────────────────────────────────
+  {
+    name: "Collaboration Score — Suger",
+    tags: ["suger", "cosell"],
+    def: "A Suger feature (shipped June 2026) that ranks cloud partner contacts by engagement quality rather than raw activity volume, surfacing which AWS, Azure, or GCP partner-side contacts are most likely to drive a successful co-sell outcome. The score appears in the Salesforce widget, account mapping views, and cloud rep profiles, helping ISVs prioritize outreach toward the relationships most likely to convert into active co-sell engagement.",
+    alias:
+      "Related: Account Mapping — Suger, Co-sell, APN Customer Engagements (ACE) — AWS",
+    source: "https://www.suger.io/resources/blog/product-updates-june-2026",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Prioritizing outreach to cloud partner contacts with the highest Collaboration Score instead of contacting every mapped account equally",
+      "Surfacing Collaboration Score in the Salesforce widget so reps see contact quality alongside account mapping data without leaving their CRM",
+      "Using Collaboration Score on cloud rep profiles to decide which AWS, Azure, or GCP relationships to invest relationship-building time in",
+    ],
+    context: [
+      "Suger Console",
+      "Salesforce Widget",
+      "Account Mapping",
+      "Cloud Rep Profiles",
+    ],
+    related: [
+      { name: "Account Mapping — Suger", slug: "account-mapping-—-suger" },
+      { name: "Co-sell", slug: "co-sell" },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Co-Sell Metrics Dashboard — Suger",
+    tags: ["suger", "cosell"],
+    def: "A three-tab reporting dashboard in Suger (shipped April 2026) that tracks co-sell performance across cloud providers — win rates by provider, closed-won revenue, and pipeline health. It includes AI-assisted failure and duplicate detection that flags broken co-sell referral syncs and auto-suggests fixes, plus a sync workflow log for auditing CRM-to-cloud-partner data flows. Designed to give partner managers a single reporting surface instead of stitching together per-cloud exports.",
+    alias: "Related: Account Mapping — Suger, Co-sell",
+    source: "https://www.suger.io/resources/blog/product-updates-april-2026",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Reviewing win rates by cloud provider and closed-won co-sell revenue in one dashboard instead of separate ACE/Azure/GCP reports",
+      "Using AI-assisted failure and duplicate detection to catch broken co-sell referral syncs before they stall a deal",
+      "Auditing sync workflow logs to troubleshoot why a co-sell record didn't propagate correctly between CRM and a cloud partner program",
+    ],
+    context: ["Suger Console", "Co-sell Reporting", "CRM Sync"],
+    related: [
+      { name: "Account Mapping — Suger", slug: "account-mapping-—-suger" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
+  },
+  {
+    name: "PRM Journeys — Suger",
+    tags: ["suger"],
+    def: "A Suger PRM feature that sequences partners through a structured lifecycle — onboarding, certification, content refreshers, and tier progression from Gold to Platinum — with automated tracking of training completion, certification status, and engagement. Partners get self-service visibility into their own progress, while partner managers get a single view of where every partner sits in the journey without manually chasing status updates. Journeys sit on top of the existing Partner Portal and LMS, turning static tier structures into an actively managed progression path.",
+    alias:
+      "Related: Partner Relationship Management (PRM) — Suger, Learning Management System (LMS) — Suger, Partner Portal — Suger",
+    source:
+      "https://www.suger.io/resources/blog/prm-journeys-keep-partners-engaged",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Partner Managers", "Channel Partners", "Suger Users"],
+    useCases: [
+      "Sequencing new partners through onboarding, certification, and content refreshers automatically instead of tracking status in a spreadsheet",
+      "Advancing a partner from Gold to Platinum tier based on tracked training completion and engagement rather than manual review",
+      "Giving partners self-service visibility into their own journey progress to reduce partner-manager status-check overhead",
+    ],
+    context: ["Suger PRM Portal", "Partner Enablement", "Tier Management"],
+    related: [
+      {
+        name: "Partner Relationship Management (PRM) — Suger",
+        slug: "partner-relationship-management-prm-—-suger",
+      },
+      {
+        name: "Learning Management System (LMS) — Suger",
+        slug: "learning-management-system-lms-—-suger",
+      },
+      { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
+    ],
+  },
+  {
+    name: "Cloud Commerce Producer API — GCP",
+    tags: ["gcp", "offers"],
+    def: "Google Cloud's API (announced July 2026) that lets ISVs (producers) programmatically create, manage, and publish private offers on GCP Marketplace — extending Google's existing Procurement API, which only handles entitlement-lifecycle events, to cover offer creation itself. Before this API, private offers could only be created through the Producer Portal UI, so this brings GCP's private-offer workflow in line with the programmatic offer-management APIs already available on AWS and Azure.",
+    alias:
+      "AWS equivalent: AWS Marketplace Catalog API — AWS | Azure equivalent: SaaS Fulfillment API — Azure | Related: Procurement API — GCP",
+    source: "https://cloud.google.com/marketplace/docs/partners/release-notes",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Programmatically creating and publishing private offers on GCP Marketplace without using the Producer Portal UI",
+      "Automating private-offer management across a large customer base via the Producer API instead of manual portal-driven workflows",
+    ],
+    context: ["GCP Marketplace", "Producer Portal — GCP", "ISV Backend Integration"],
+    related: [
+      { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
+      {
+        name: "AWS Marketplace Catalog API — AWS",
+        slug: "aws-marketplace-catalog-api-—-aws",
+      },
+      {
+        name: "SaaS Fulfillment API — Azure",
+        slug: "saas-fulfillment-api-—-azure",
+      },
+    ],
+  },
+  {
+    name: "AWS Marketplace Single Pane of Glass (SPG) Dashboard — AWS",
+    tags: ["aws"],
+    def: "A unified reporting dashboard for AWS Marketplace ISVs and channel partners that consolidates listing performance, customer agreements, and search performance metrics into a single view. Replaces the need to cross-reference multiple separate seller reports for a consolidated picture of marketplace performance.",
+    alias: "Related: AWS Marketplace Management Portal (AMMP) — AWS",
+    source:
+      "https://aws.amazon.com/blogs/awsmarketplace/deploy-aws-marketplace-spg-dashboard-unified-insights/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Reviewing listing performance, customer agreements, and search performance metrics in one consolidated dashboard instead of separate reports",
+      "Deploying the SPG Dashboard to give partner-facing teams unified visibility into marketplace performance without manual report stitching",
+    ],
+    context: ["AWS Marketplace Management Portal", "AWS Marketplace", "Seller Reporting"],
+    related: [
+      {
+        name: "AWS Marketplace Management Portal (AMMP) — AWS",
+        slug: "aws-marketplace-management-portal-ammp-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Co-Sell MCP Server — Suger",
+    tags: ["suger", "cosell", "integrations"],
+    def: "A Model Context Protocol (MCP) server, narrower in scope than the general-purpose Suger MCP Server, that lets reps run co-sell operations in natural language directly from Claude Desktop, Cursor, or VS Code — drafting referrals, checking opportunity status, and syncing updates to Salesforce without switching tools. Shipped June 2026 as a co-sell-focused companion to Suger's broader MCP offering.",
+    alias: "Related: Suger MCP Server, Co-sell, Account Mapping — Suger",
+    source: "https://www.suger.io/resources/blog/product-updates-june-2026",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
+    useCases: [
+      "Drafting a co-sell referral in natural language from an MCP-compatible AI client instead of navigating the Suger Console",
+      "Checking co-sell opportunity status and syncing updates to Salesforce via natural-language commands from Claude Desktop, Cursor, or VS Code",
+    ],
+    context: ["Suger Console", "MCP-compatible AI Clients", "Salesforce Integration"],
+    related: [
+      { name: "Suger MCP Server", slug: "suger-mcp-server" },
+      { name: "Co-sell", slug: "co-sell" },
+      { name: "Account Mapping — Suger", slug: "account-mapping-—-suger" },
     ],
   },
 ];
