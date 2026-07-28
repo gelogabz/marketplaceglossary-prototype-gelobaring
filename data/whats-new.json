@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-07-27T09:29:33.940Z",
+  "lastUpdated": "2026-07-28T08:13:23.870Z",
   "updates": [
+    {
+      "id": "azure-2026-07-27-microsoft-365-copilot-nonprofit-offer-partner-marg",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-27",
+      "title": "Microsoft 365 Copilot nonprofit offer: partner margin update",
+      "summary": "Microsoft 365 Copilot nonprofit offer: partner margin update.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+      "impact": "high"
+    },
     {
       "id": "gcp-2026-07-24-feature-you-can-now-use-the-cloud-commerce-produce",
       "platform": "GCP",
