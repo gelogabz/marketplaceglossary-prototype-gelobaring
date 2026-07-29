@@ -14,24 +14,6 @@ export const linkSections = [
         url: "https://doc.suger.io/get-started/",
         type: "doc",
         desc: "Concept and configuration documentation for the Suger platform. Covers billing, metering, co-sell, integrations, APIs, and workflows.",
-        confusesWith: {
-          otherTitle: "Suger Enablement Hub",
-          otherUrl:
-            "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75011",
-          note: "The Enablement Hub has step-by-step how-to articles and onboarding guides. The product docs at doc.suger.io cover concepts, configuration, and API reference.",
-        },
-      },
-      {
-        title: "Suger Enablement Hub",
-        url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75011",
-        type: "doc",
-        desc: "Step-by-step task guides and onboarding resources for Suger — from connecting a marketplace integration to creating private offers and configuring co-sell.",
-      },
-      {
-        title: "Suger Terminology Sheet",
-        url: "https://docs.google.com/spreadsheets/d/1fSTPiLuS8XiHwbMnwdWv2ID4gLRxvcrezoYN8WXGBpA/edit?gid=1958209474#gid=1958209474",
-        type: "doc",
-        desc: "Internal Google Sheets glossary of Suger-specific terms, field names, and product vocabulary maintained by the Suger team.",
       },
       {
         title: "Suger Blog",

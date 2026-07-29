@@ -2,9 +2,10 @@
 // data/walkthroughs.js — Procedural step-by-step guides
 // ============================================================
 //
-// Steps are aligned to the Suger Help Center articles listed in
+// Steps are aligned to the Suger product docs (doc.suger.io) listed in
 // info-sources.md. Each walkthrough has a sourceUrl pointing
-// to the primary Help Center article.
+// to the primary doc.suger.io page. ClickUp (formerly the Suger
+// Enablement Hub) is deprecated — do not reintroduce clickup.com links.
 //
 // Categories follow the Suger Implementation V2 phase sequence:
 //   kickoff → integrations → listings → cosell → cpq → go-live → operations
@@ -36,7 +37,7 @@ export const walkthroughs = [
     estimated: "~30 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-107651/5123698cb8a6d0c/18476e-73291",
+      "https://doc.suger.io/get-started/",
     steps: [
       {
         title: "Create your Suger Console and invite stakeholders",
@@ -107,7 +108,7 @@ export const walkthroughs = [
     estimated: "~10 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78511",
+      "https://doc.suger.io/integrations/slack/",
     steps: [
       {
         title: "Install the Suger App for Slack",
@@ -137,8 +138,8 @@ export const walkthroughs = [
         title: "Understand notification types and test delivery",
         body: "Suger sends notifications for: marketplace events (offer lifecycle, entitlement changes), co-sell events (referral accepted, inbound submissions), and billing events (disbursements). To test, navigate to <strong>Settings → Notifications</strong> and click the <strong>Test</strong> button on a configured trigger. Confirm the test message arrives in the expected Slack channel within 30 seconds.",
         link: {
-          label: "Configure Notifications (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
+          label: "Configure Notifications (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/email-notification/",
         },
         checks: [
           "Did the test notification arrive in the correct Slack channel?",
@@ -167,7 +168,7 @@ export const walkthroughs = [
     estimated: "~30 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78011",
+      "https://doc.suger.io/aws-marketplace/integration/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -284,7 +285,7 @@ export const walkthroughs = [
     estimated: "~15 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77991",
+      "https://doc.suger.io/integrations/aws-partner-network-api/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -471,7 +472,7 @@ export const walkthroughs = [
     estimated: "~45 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78051",
+      "https://doc.suger.io/gcp-marketplace/integration/",
     steps: [
       {
         title: "Confirm prerequisites and define environment variables",
@@ -584,7 +585,7 @@ export const walkthroughs = [
     estimated: "~15 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78091",
+      "https://doc.suger.io/cosell/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -641,7 +642,7 @@ export const walkthroughs = [
     estimated: "~20 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78111",
+      "https://doc.suger.io/snowflake-marketplace/integration/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -692,7 +693,7 @@ export const walkthroughs = [
     estimated: "~30 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78131",
+      "https://doc.suger.io/integrations/salesforce/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -762,8 +763,8 @@ export const walkthroughs = [
           },
         ],
         link: {
-          label: "Configure Co-Sell Settings for Salesforce (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77551",
+          label: "Configure Co-Sell Settings for Salesforce (Suger Docs) →",
+          url: "https://doc.suger.io/cosell/cosell-outbound/",
         },
         checks: [
           "Is the Salesforce integration showing VERIFIED in Suger Console → Settings → Integrations → Salesforce?",
@@ -785,7 +786,7 @@ export const walkthroughs = [
     estimated: "~20 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-78151",
+      "https://doc.suger.io/integrations/hubspot/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -823,11 +824,11 @@ export const walkthroughs = [
       },
       {
         title: "Configure Co-Sell field mapping",
-        body: "With HubSpot connected, configure how HubSpot Deal properties map to cloud partner required fields. Start by creating a custom <strong>Referral State</strong> property on the HubSpot Deal object (see Help Center article for the exact setup), then follow the <strong>Co-Sell Field Mapping</strong> walkthrough or navigate to <strong>Co-Sell → Settings → + New Config</strong> in Suger Console. After mapping, validate end-to-end: open a deal, click <strong>Share</strong>, and confirm all required fields populate in the Share modal without errors. Enable <strong>Auto-Enrich</strong> to automatically fill in missing company and contact data.",
+        body: "With HubSpot connected, configure how HubSpot Deal properties map to cloud partner required fields. Start by creating a custom <strong>Referral State</strong> property on the HubSpot Deal object (see Suger Docs for the exact setup), then follow the <strong>Co-Sell Field Mapping</strong> walkthrough or navigate to <strong>Co-Sell → Settings → + New Config</strong> in Suger Console. After mapping, validate end-to-end: open a deal, click <strong>Share</strong>, and confirm all required fields populate in the Share modal without errors. Enable <strong>Auto-Enrich</strong> to automatically fill in missing company and contact data.",
         terms: [{ name: "Outbound Referral", slug: "outbound-referral" }],
         link: {
-          label: "Configure Co-Sell Settings for HubSpot (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77571",
+          label: "Configure Co-Sell Settings for HubSpot (Suger Docs) →",
+          url: "https://doc.suger.io/cosell/cosell-outbound/",
         },
         checks: [
           "Is the HubSpot integration showing VERIFIED (not just CREATED) in Suger Console? Note: it shows CREATED immediately, then updates to VERIFIED after Suger reads your deals.",
@@ -853,7 +854,7 @@ export const walkthroughs = [
     estimated: "~30 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75251",
+      "https://doc.suger.io/aws-marketplace/list-product/",
     steps: [
       {
         title: "Understand products vs. listings and confirm prerequisites",
@@ -922,8 +923,8 @@ export const walkthroughs = [
         title: "Test and publish your AWS listing",
         body: "Once AWS approves the listing, it enters <strong>Limited</strong> status — visible only to you. Create a test subscription using a test buyer AWS account and verify: (1) the fulfillment URL redirects correctly post-subscribe, (2) the SaaS registration page works, (3) the entitlement syncs to Suger. After successful testing, change listing visibility to <strong>Public</strong> in Suger Console to go live.",
         link: {
-          label: "Create and publish an AWS listing (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75251",
+          label: "Create and publish an AWS listing (Suger Docs) →",
+          url: "https://doc.suger.io/aws-marketplace/list-product/",
         },
         checks: [
           "Did the test subscription fulfillment URL redirect work correctly?",
@@ -944,7 +945,7 @@ export const walkthroughs = [
     estimated: "~45 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75291",
+      "https://doc.suger.io/azure-marketplace/list-product/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -1022,8 +1023,8 @@ export const walkthroughs = [
         title: "Publish, review, and go live",
         body: "Before submitting for review, do a final content check: no placeholder or AI-generated text left in descriptions, all required logos and screenshots uploaded, no broken or missing URLs (Privacy Policy, documentation, support). In Microsoft Partner Center, click <strong>Review and Publish</strong>. Microsoft reviews the offer — typically 1–3 business days. If you have an active deal waiting, let your Suger contact know — listings can be expedited. Once approved, the offer enters <strong>Publisher Preview</strong>: only you can see it. Test a purchase using a test account. After confirming everything works, click <strong>Go Live</strong> in Partner Center to make it publicly available. Finalize in Suger by verifying the listing status updates to Published.",
         link: {
-          label: "Create and publish an Azure listing (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75291",
+          label: "Create and publish an Azure listing (Suger Docs) →",
+          url: "https://doc.suger.io/azure-marketplace/list-product/",
         },
         checks: [
           "Does the listing have no placeholder or AI-generated text that wasn't updated?",
@@ -1046,7 +1047,7 @@ export const walkthroughs = [
     estimated: "~45 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75331",
+      "https://doc.suger.io/gcp-marketplace/list-product/",
     steps: [
       {
         title: "Understand Product vs. Listing and confirm prerequisites",
@@ -1103,8 +1104,8 @@ export const walkthroughs = [
         title: "Conduct billing tests and publish",
         body: "After GCP approves both phases, conduct billing tests: create a test private offer to a GCP test account and verify the subscription flow. Confirm: (1) the fulfillment URL redirect works post-purchase, (2) the entitlement syncs to Suger → Entitlements, (3) usage reporting works if applicable. Once billing tests pass, submit for final GCP review to make the listing publicly available.",
         link: {
-          label: "Create and publish a GCP listing (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75331",
+          label: "Create and publish a GCP listing (Suger Docs) →",
+          url: "https://doc.suger.io/gcp-marketplace/list-product/",
         },
         checks: [
           "Did the test subscription flow work end-to-end?",
@@ -1169,7 +1170,7 @@ export const walkthroughs = [
     estimated: "~45 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77511",
+      "https://doc.suger.io/cosell/",
     steps: [
       {
         title: "Confirm cloud partner connections are active",
@@ -1184,8 +1185,8 @@ export const walkthroughs = [
         title: "Activate Co-Sell Intelligence",
         body: "In Suger Console, navigate to <strong>Settings → Co-sell</strong>. In the Co-sell Intelligence section, click <strong>Edit</strong>. Toggle <strong>Enable Co-sell Intelligence Signals</strong> ON and select the cloud partners you're enabling (AWS, Azure, GCP). Co-Sell Intelligence surfaces engagement scores (Low/Medium/High) in your CRM's Suger Quick Panel, helping prioritize high-propensity accounts.",
         link: {
-          label: "Set up Co-Sell in Settings (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77511",
+          label: "Set up Co-Sell in Settings (Suger Docs) →",
+          url: "https://doc.suger.io/cosell/",
         },
         checks: [
           "Is Co-sell Intelligence toggled ON?",
@@ -1204,10 +1205,10 @@ export const walkthroughs = [
       },
       {
         title: "Configure field mapping (CRM → partner)",
-        body: "Map CRM fields to cloud partner required fields. See the Help Center article for complete field lists per platform. Key required fields for all platforms: <strong>Customer Website</strong> (Auto-Enrich lookup key), <strong>Owner Email</strong>, <strong>Geography</strong> (ISO 2-letter code — use Picklist Mapping to transform 'United States' → 'US'), <strong>Close Date</strong> (no past dates), <strong>Customer Problem</strong>. Use <strong>Expression Mode (Go Templates)</strong> for fields needing transformation.",
+        body: "Map CRM fields to cloud partner required fields. See the Suger Docs page for complete field lists per platform. Key required fields for all platforms: <strong>Customer Website</strong> (Auto-Enrich lookup key), <strong>Owner Email</strong>, <strong>Geography</strong> (ISO 2-letter code — use Picklist Mapping to transform 'United States' → 'US'), <strong>Close Date</strong> (no past dates), <strong>Customer Problem</strong>. Use <strong>Expression Mode (Go Templates)</strong> for fields needing transformation.",
         link: {
-          label: "Understand Fields & Mapping (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77531",
+          label: "Understand Fields & Mapping (Suger Docs) →",
+          url: "https://doc.suger.io/cosell/cosell-outbound/",
         },
         checks: [
           "Does geography output ISO 2-letter codes — not full country names?",
@@ -1241,8 +1242,8 @@ export const walkthroughs = [
         body: "Configure inbound settings to map cloud partner fields to your CRM objects when referrals come in from partners. Enable Auto-Accept if appropriate. After go-live, monitor co-sell performance in Suger under <strong>Co-Sell → Insights</strong> for referral acceptance rates, pipeline attribution, and partner engagement trends.",
         terms: [{ name: "Inbound Referral", slug: "inbound-referral" }],
         link: {
-          label: "Manage Co-Sell Opportunities (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-76291",
+          label: "Manage Co-Sell Opportunities (Suger Docs) →",
+          url: "https://doc.suger.io/cosell/co-sell-insights/",
         },
         checks: [
           "Is your inbound referral mapping configured for CRM objects?",
@@ -1266,7 +1267,7 @@ export const walkthroughs = [
     estimated: "~45 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77591",
+      "https://doc.suger.io/billing/offer/",
     steps: [
       {
         title: "Access private offer mapping settings",
@@ -1285,8 +1286,8 @@ export const walkthroughs = [
         title: "Define outbound field mappings (CRM → Offer)",
         body: "Select the Cloud Partner and define how CRM fields map to offer fields. Three mapping methods: (1) <strong>Static Values</strong> — hardcoded defaults (e.g., EULA type), (2) <strong>Direct 1:1 field links</strong> — direct CRM field references, (3) <strong>Expression Mode (Go Templates)</strong> — for transformations, date formatting, or conditional logic. Use Expression Mode for any field requiring transformation.",
         link: {
-          label: "Configure Private Offer Field Mappings (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77591",
+          label: "Configure Private Offer Field Mappings (Suger Docs) →",
+          url: "https://doc.suger.io/billing/offer/",
         },
         checks: [
           "Have you identified which fields need Expression Mode vs. Direct mapping?",
@@ -1354,7 +1355,7 @@ export const walkthroughs = [
     estimated: "~15 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75551",
+      "https://doc.suger.io/billing/offer/",
     steps: [
       {
         title: "Prepare AWS and Suger requirements",
@@ -1429,8 +1430,8 @@ export const walkthroughs = [
         title: "Share the offer with your buyer",
         body: "After submission, use Suger's <strong>Share Offer</strong> button to send the offer URL to the buyer. The buyer will receive an email with a link to accept the offer in AWS Marketplace. You can also copy the offer URL directly. Track acceptance status in Suger under <strong>Offer</strong> — the status will update to Accepted once the buyer completes the transaction.",
         link: {
-          label: "Manage Offers (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75551",
+          label: "Manage Offers (Suger Docs) →",
+          url: "https://doc.suger.io/billing/offer/",
         },
         checks: [
           "Did you share the offer URL with the buyer?",
@@ -1450,7 +1451,7 @@ export const walkthroughs = [
     estimated: "~15 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75611",
+      "https://doc.suger.io/billing/offer/",
     steps: [
       {
         title: "Create the private offer in Suger",
@@ -1499,8 +1500,8 @@ export const walkthroughs = [
         title: "Activate the subscription in Suger",
         body: "Once the buyer completes the purchase, the entitlement syncs to Suger under <strong>Entitlements</strong>. The offer status in Suger updates to <strong>Accepted</strong>. If you have a provisioning webhook configured, it fires automatically to trigger your onboarding flow. Verify the entitlement details match the agreed terms.",
         link: {
-          label: "Create an Azure private offer (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75611",
+          label: "Create an Azure private offer (Suger Docs) →",
+          url: "https://doc.suger.io/billing/offer/",
         },
         checks: [
           "Does the entitlement appear in Suger → Entitlements with correct status?",
@@ -1521,7 +1522,7 @@ export const walkthroughs = [
     estimated: "~15 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75631",
+      "https://doc.suger.io/billing/offer/",
     steps: [
       {
         title: "Confirm prerequisites",
@@ -1553,8 +1554,8 @@ export const walkthroughs = [
         title: "Share the offer with your buyer",
         body: "After creating the offer, click <strong>Share</strong> in Suger to send the offer link to the buyer. The buyer navigates to GCP Marketplace, reviews the offer terms, and accepts. Once accepted, the entitlement syncs to Suger. Monitor status in Suger → Offer.",
         link: {
-          label: "Create a GCP private offer (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75631",
+          label: "Create a GCP private offer (Suger Docs) →",
+          url: "https://doc.suger.io/billing/offer/",
         },
         checks: [
           "Did you send the offer link to the buyer?",
@@ -1574,7 +1575,7 @@ export const walkthroughs = [
     estimated: "~20 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75751",
+      "https://doc.suger.io/billing/offer/",
     steps: [
       {
         title: "Complete AWS and Suger resale requirements",
@@ -1624,8 +1625,8 @@ export const walkthroughs = [
         title: "Track buyer acceptance and entitlements",
         body: "In Suger Console, monitor the resale authorization under <strong>Resale</strong>. When the partner creates a CPPO and a buyer accepts it, you'll see a new entitlement under <strong>Entitlements</strong> labeled as a wholesale/CPPO entitlement. The partner's offer (CPPO) is tracked separately from your direct offers. Confirm entitlements appear correctly and revenue records sync.",
         link: {
-          label: "Track and manage Resale Authorizations (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75751",
+          label: "Track and manage Resale Authorizations (Suger Docs) →",
+          url: "https://doc.suger.io/billing/offer/",
         },
         checks: [
           "Is the resale authorization visible in Suger → Resale?",
@@ -1645,7 +1646,7 @@ export const walkthroughs = [
     estimated: "~20 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75771",
+      "https://doc.suger.io/billing/offer/",
     steps: [
       {
         title: "Complete Azure resale requirements",
@@ -1691,8 +1692,8 @@ export const walkthroughs = [
         title: "Track buyer acceptance and manage active entitlements",
         body: "Monitor the resale authorization in Suger → Resale. Azure's checkout has a two-step process: <strong>Pending Purchase</strong> (offer accepted, purchase not yet finalized) and then <strong>Active</strong>. Once a buyer completes purchase, the entitlement appears in Suger. Azure MPPO entitlements are linked to the partner's transaction — confirm revenue splits are correct in Suger → Revenue.",
         link: {
-          label: "Create a Resale Authorization for Azure (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-75771",
+          label: "Create a Resale Authorization for Azure (Suger Docs) →",
+          url: "https://doc.suger.io/billing/offer/",
         },
         checks: [
           "Does the MPPO entitlement appear in Suger → Entitlements after buyer completes purchase?",
@@ -1744,8 +1745,8 @@ export const walkthroughs = [
         title: "Grant production access to stakeholders",
         body: "In Suger Console, go to <strong>Settings → Users</strong>. Confirm all production team members have the correct roles. Remove any temporary implementation team accounts or test user accounts added during sandbox testing. Do not leave implementation-only accounts active in production.",
         link: {
-          label: "Manage Users and Roles (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77111",
+          label: "Manage Users and Roles (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/",
         },
         checks: [
           "Do all production team members have the correct access role?",
@@ -1805,7 +1806,7 @@ export const walkthroughs = [
     estimated: "~25 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
+      "https://doc.suger.io/get-started/email-notification/",
     steps: [
       {
         title: "Verify entitlement sync is live",
@@ -1825,8 +1826,8 @@ export const walkthroughs = [
         title: "Configure email notification recipients",
         body: "Navigate to <strong>Settings → Notifications</strong>. Toggle <strong>Enable Global Email Notifications</strong> ON. Define trigger routing: for each event type (Create Entitlement, Accept Offer, Cancel Entitlement), set To/CC/BCC recipients. Use team distribution list emails — not individual employee addresses.",
         link: {
-          label: "Configure Notifications (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
+          label: "Configure Notifications (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/email-notification/",
         },
         checks: [
           "Is Enable Global Email Notifications ON?",
@@ -1841,8 +1842,8 @@ export const walkthroughs = [
         terms: [{ name: "Webhook", slug: "webhook" }],
         path: "marketplace-integrations",
         link: {
-          label: "Configure Webhooks (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77391",
+          label: "Configure Webhooks (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/webhook/",
         },
         checks: [
           "Is the Payload URL HTTPS?",
@@ -1856,8 +1857,8 @@ export const walkthroughs = [
         body: "Navigate to <strong>Settings → API Client</strong>, click <strong>+ CREATE API CLIENT</strong>, select <strong>API_KEY</strong>. Copy the key immediately — shown only once. Store in a secrets manager. Authenticate all API calls with header: <code>Authorization: Key YOUR_KEY</code> (capital K required).",
         terms: [{ name: "Suger API Client", slug: "suger-api-client" }],
         link: {
-          label: "Configure an API Client (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77431",
+          label: "Configure an API Client (Suger Docs) →",
+          url: "https://doc.suger.io/api/",
         },
         checks: [
           "Did you copy the key before leaving the creation page?",
@@ -1870,8 +1871,8 @@ export const walkthroughs = [
         title: "Configure your customer signup page",
         body: "Navigate to <strong>Settings → New Client Signup</strong>. Configure branding (company name, logo URL, welcome message) and notification emails. Copy the Suger-generated <strong>Fulfillment URL</strong> and paste it into your cloud marketplace portal as the SaaS setup URL. Preview the page before publishing.",
         link: {
-          label: "Configure Signup Journey (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77491",
+          label: "Configure Signup Journey (Suger Docs) →",
+          url: "https://doc.suger.io/as-buyer/buyer-journey/",
         },
         checks: [
           "Is your logo and welcome message configured?",
@@ -1884,8 +1885,8 @@ export const walkthroughs = [
         title: "Run your first data export",
         body: "Navigate to <strong>Settings → Data Export</strong>, click <strong>+ New Task</strong>. Select Entitlements as source, Console Download as destination, Last 30 days as range. Click Create. Once Completed, download and verify the data is clean.",
         link: {
-          label: "Export Platform Data (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77611",
+          label: "Export Platform Data (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/table-export/",
         },
         checks: [
           "Did the export reach 'Completed' status?",
@@ -1910,7 +1911,7 @@ export const walkthroughs = [
     estimated: "~15 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77431",
+      "https://doc.suger.io/api/",
     steps: [
       {
         title: "Create an API client (API Key)",
@@ -1955,8 +1956,8 @@ export const walkthroughs = [
         body: "In Suger Console, go to <strong>Settings → Notifications</strong>, click <strong>+ New Webhook</strong>. Enter your <strong>Payload URL</strong> — a publicly accessible HTTPS endpoint. Enter a <strong>Webhook Secret</strong> (32+ random characters). Suger signs every payload with HMAC-SHA256 using this secret — your server must verify the <code>X-Suger-Signature</code> header before processing.",
         terms: [{ name: "Webhook", slug: "webhook" }],
         link: {
-          label: "Configure Webhooks (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77391",
+          label: "Configure Webhooks (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/webhook/",
         },
         checks: [
           "Is the Payload URL HTTPS?",
@@ -1996,7 +1997,7 @@ export const walkthroughs = [
     estimated: "~20 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77451",
+      "https://doc.suger.io/billing/billable-metrics/",
     steps: [
       {
         title: "Define your billable metrics",
@@ -2068,7 +2069,7 @@ export const walkthroughs = [
     estimated: "~20 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77351",
+      "https://doc.suger.io/get-started/email-notification/",
     steps: [
       {
         title: "Enable Global Email Notifications",
@@ -2084,8 +2085,8 @@ export const walkthroughs = [
         title: "Define triggers and routing (To / CC / BCC)",
         body: "For each notification scope (event type), define recipient routing. Key scopes to configure: <strong>Create Entitlement</strong> (new customer subscribed), <strong>Accept Offer</strong>, <strong>Cancel Entitlement</strong>, <strong>Update Entitlement</strong>, <strong>Create Co-Sell</strong>, <strong>Usage Metering Alert</strong>. Set <strong>To</strong>, <strong>CC</strong>, and <strong>BCC</strong> per scope using team distribution lists — not individual email addresses. Some scopes (co-sell, commission) are always-on and cannot be disabled.",
         link: {
-          label: "About Email Notification Scopes (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77411",
+          label: "About Email Notification Scopes (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/email-notification/",
         },
         checks: [
           "Are team distribution lists set for Create Entitlement, Cancel Entitlement, and Accept Offer?",
@@ -2107,8 +2108,8 @@ export const walkthroughs = [
         title: "Build custom email templates (optional)",
         body: "To create a custom template: in Settings → Notifications, click the template dropdown for an event and select <strong>+ New Template</strong>. Set the template name, <strong>Evaluator Type</strong> (Golang Template recommended), and <strong>Event Type</strong>. Use the drag-and-drop builder to add content blocks. Inject dynamic data via <strong>Merge Tags</strong> (e.g., customer name, offer amount, contract dates). Test the template using the Diagnostics → Test button with a mock event.",
         link: {
-          label: "Build custom email templates (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77371",
+          label: "Build custom email templates (Suger Docs) →",
+          url: "https://doc.suger.io/get-started/email-notification/",
         },
         checks: [
           "Does the custom template render correctly with merge tag data?",
@@ -2138,7 +2139,7 @@ export const walkthroughs = [
     estimated: "~30 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77651",
+      "https://doc.suger.io/integrations/okta-sso/",
     steps: [
       {
         title: "Initialize the Suger Application in Okta",
@@ -2176,8 +2177,8 @@ export const walkthroughs = [
         title: "Implement Role-Based Access Control (RBAC)",
         body: "Map Okta groups to Suger roles so users are automatically assigned the correct permissions on login. In Okta's <strong>Profile Editor</strong>, create a custom attribute called <code>sugerRole</code> with allowed values: <code>ADMIN</code>, <code>EDITOR</code>, <code>VIEWER</code>. Assign the correct <code>sugerRole</code> value to each Okta group (e.g., Suger-Admins → ADMIN, Suger-Users → EDITOR). Once configured, Okta sends the role attribute in the OIDC token and Suger applies it on login.",
         link: {
-          label: "Configure and manage Okta SSO (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-77651",
+          label: "Configure and manage Okta SSO (Suger Docs) →",
+          url: "https://doc.suger.io/integrations/okta-sso/",
         },
         checks: [
           "Is the sugerRole attribute created in Okta Profile Editor?",
@@ -2198,7 +2199,7 @@ export const walkthroughs = [
     estimated: "~15 min",
     status: "complete",
     sourceUrl:
-      "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-76371",
+      "https://doc.suger.io/cosell/cosell-funding/",
     steps: [
       {
         title: "Confirm prerequisites and activate funding",
@@ -2238,8 +2239,8 @@ export const walkthroughs = [
         title: "Submit and track cash claims",
         body: "Once approved funding activities are completed, submit a <strong>Cash Claim</strong> in Suger to receive the funds. Navigate to the approved funding request, click <strong>Submit Claim</strong>, attach proof of activity (receipts, event reports, etc.), and submit. Track claim status in the same Funding view. Monitor wallets and purchase orders to confirm disbursement.",
         link: {
-          label: "Manage AWS funding requests (Help Center) →",
-          url: "https://doc.clickup.com/42081486/d/h/18476e-108291/674f5a6ad9187cb/18476e-76371",
+          label: "Manage AWS funding requests (Suger Docs) →",
+          url: "https://doc.suger.io/cosell/cosell-funding/",
         },
         checks: [
           "Is the claim submitted with all required proof of activity attached?",
