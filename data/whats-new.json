@@ -1,6 +1,39 @@
 {
-  "lastUpdated": "2026-07-28T08:13:23.870Z",
+  "lastUpdated": "2026-07-29T08:19:15.634Z",
   "updates": [
+    {
+      "id": "aws-2026-07-28-how-to-fit-aws-partner-central-agents-into-your-en",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-07-28",
+      "title": "How to fit AWS Partner Central agents into your environment with your own AI agent",
+      "summary": "This post shows how to integrate the AWS Partner Central Agent MCP Server into your existing environment. You'll build a lightweight orchestrator that connects your current tools to Partner Central using agent-to-agent communication via Model Context Protocol (MCP).",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/how-to-fit-aws-partner-central-agents-into-your-environment-with-your-own-ai-agent/",
+      "impact": "low"
+    },
+    {
+      "id": "aws-2026-07-28-orca-just-in-time-access-aws-iam-identity-center-s",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-07-28",
+      "title": "Orca just-in-time access & AWS IAM Identity Center solve permission sprawl",
+      "summary": "Learn how Orca Security's Just-in-Time (JIT) integration with AWS IAM Identity Center helps organizations address permission sprawl by replacing persistent access with time-bound, approval-based permissions that automatically revoke when the time window expires.",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/apn/orca-just-in-time-access-aws-iam-identity-center-solve-permission-sprawl/",
+      "impact": "low"
+    },
+    {
+      "id": "azure-2026-07-28-coming-soon-updated-partner-center-vetting-experie",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-28",
+      "title": "Coming soon: Updated Partner Center vetting experience for the Microsoft AI Cloud Partner Program and Cloud Solution Pro",
+      "summary": "Updated Partner Center vetting experience starting July 28, 2026 for the Microsoft AI Cloud Partner Program and Cloud Solution Provider.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/account-settings/update-your-partner-profile?tabs=legacy%2clegacy-2%2clegacy-3#verify-or-update-your-company-profile-information",
+      "impact": "high"
+    },
     {
       "id": "azure-2026-07-27-microsoft-365-copilot-nonprofit-offer-partner-marg",
       "platform": "Azure",
@@ -99,6 +132,17 @@
       "type": "policy",
       "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central/",
       "impact": "low"
+    },
+    {
+      "id": "azure-2026-07-20-partner-center-agent-available-for-integration",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-20",
+      "title": "Partner Center agent available for integration",
+      "summary": "Date : July 20, 2026 Workspace : General Impacted audience : All partners enrolled in commercial programs like MAICPP, CSP, Surface, Azure Marketplace Partner Center launched AI assistant in 2025 with support for eight locales, predominantly catering to all Commercial and Marketp",
+      "type": "program",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/enroll/partner-center-agent",
+      "impact": "high"
     },
     {
       "id": "azure-2026-07-20-request-private-offer-now-available",
