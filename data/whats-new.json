@@ -1,6 +1,39 @@
 {
-  "lastUpdated": "2026-07-30T08:06:33.122Z",
+  "lastUpdated": "2026-07-31T08:33:16.600Z",
   "updates": [
+    {
+      "id": "azure-2026-07-30-azure-reservation-exchange-policy-update",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-30",
+      "title": "Azure reservation exchange policy update",
+      "summary": "Azure reservation exchanges for savings plan eligible services end February 1, 2027. Guide customers to the right mix of savings plans and reservations.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-exchange-policy-changes?wt.mc_id=5fip9onogx",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-07-30-specialization-skilling-updates",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-30",
+      "title": "Specialization skilling updates",
+      "summary": "Microsoft is retiring specialization certifications and introducing new AI-focused replacements. Review what's changing and the updated skilling needs.",
+      "type": "policy",
+      "sourceUrl": "https://learn.microsoft.com/en-us/certifications/azure-developer/?wt.mc_id=fpzrr96lcd",
+      "impact": "high"
+    },
+    {
+      "id": "azure-2026-07-29-august-price-list-won-t-include-a-september-previe",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-07-29",
+      "title": "August price list won't include a September preview for NCE license-based services",
+      "summary": "We're informing all Cloud Solution Provider (CSP) partners of an important update regarding the new commerce (NCE) license-based services preview (future) price list scheduled for publication on August 1, 2026.",
+      "type": "pricing",
+      "sourceUrl": "https://partner.microsoft.com/dashboard/pricing/pricelist",
+      "impact": "medium"
+    },
     {
       "id": "azure-2026-07-29-important-updates-to-partner-benefits",
       "platform": "Azure",
