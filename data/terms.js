@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-07-06";
+export const lastReviewed = "2026-08-03";
 
 export const terms = [
   {
@@ -389,7 +389,7 @@ export const terms = [
     def: "A marketplace listing model where the buyer has already purchased a license directly from the ISV outside the marketplace. The marketplace handles deployment but not billing. Not eligible for committed spend drawdown.",
     alias: "Related: Transactable Offer, Listing",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/BYOL-pricing.html",
     difficulty: "beginner",
     category: "fundamentals",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -418,7 +418,7 @@ export const terms = [
     def: "In Suger, the entity that has purchased a product through a marketplace. Has a tracked ID and maps to different entities across platforms.",
     alias:
       "AWS: Customer Identifier | Azure: Purchaser PUID | GCP: User Account Id",
-    source: "https://doc.suger.io/get-started/",
+    source: "https://doc.suger.io/get-started/resources/",
     difficulty: "beginner",
     category: "fundamentals",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -435,7 +435,6 @@ export const terms = [
     related: [
       { name: "Entitlement", slug: "entitlement" },
       { name: "Offer", slug: "offer" },
-      { name: "Buyer Wallet", slug: "buyer-wallet" },
     ],
   },
   {
@@ -593,8 +592,8 @@ export const terms = [
     name: "Commit / Prepaid Commit",
     tags: ["general", "aws", "azure", "gcp"],
     def: "An upfront amount or quantity a buyer commits to paying at contract start, regardless of actual usage. Often combined with metered overage billing for usage above the committed amount.",
-    alias: "Related: Commit with Additional Usage Metering, Overage",
-    source: "https://doc.suger.io/billing/metering/",
+    alias: "Related: Overage",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Suger Users"],
@@ -609,32 +608,8 @@ export const terms = [
       "GCP Marketplace",
     ],
     related: [
-      {
-        name: "Commit with Additional Usage Metering",
-        slug: "commit-with-additional-usage-metering",
-      },
       { name: "Overage", slug: "overage" },
       { name: "Metered Billing", slug: "metered-billing" },
-    ],
-  },
-  {
-    name: "Commit with Additional Usage Metering",
-    tags: ["suger"],
-    def: "A Suger feature that accumulates all reported usage against the entitlement commit. Only usage exceeding the commit is forwarded to the marketplace as billable overage — simplifying ISV-side metering logic.",
-    alias: "Related: Commit / Prepaid Commit, Overage, Usage Metering",
-    source: "https://doc.suger.io/billing/metering/",
-    difficulty: "advanced",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Simplifying metering logic by letting Suger track cumulative usage and only forward overage to the marketplace",
-      "Avoiding double-billing by ensuring usage within the commit is absorbed before reporting to AWS or Azure",
-    ],
-    context: ["Suger Console", "Usage Metering Configuration"],
-    related: [
-      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
-      { name: "Overage", slug: "overage" },
-      { name: "Usage Metering", slug: "usage-metering" },
     ],
   },
   {
@@ -674,7 +649,7 @@ export const terms = [
     def: "Suger's cross-cloud comparison of how a marketplace purchase retires a customer's committed-spend agreement — AWS EDP/PPA, Azure MACC, or GCP CUD. Azure draws down 100% of the pretax purchase with no cap; AWS and GCP channel offers typically cap drawdown around 25%, a negotiated term rather than a published figure, so the exact cap must be confirmed in the customer's agreement. AWS and Azure only retire commit when the product is hosted on their own cloud — AWS requires the 'Deployed on AWS' badge and Azure requires 'Azure benefit eligible' status plus a purchase through the Azure portal path — while GCP has no hosting requirement and any transactable listing is auto-eligible.",
     alias:
       "Related: Committed Spend / Cloud Commit, Enterprise Discount Program (EDP) — AWS, Azure Consumption Commitment (MACC) — Azure, Committed Use Discount (CUD) — GCP",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/get-started/commit-drawdown/",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
@@ -708,7 +683,7 @@ export const terms = [
     name: "Contract — AWS",
     tags: ["aws"],
     def: "An AWS pricing model where a buyer commits upfront to a fixed fee for a defined term (up to 3 years). Can include a consumption/PAYG component for usage above the contract amount. Cannot be cancelled mid-term.",
-    alias: "",
+    alias: "Related: Private Offer, Agreement — AWS, Entitlement",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/contract-pricing.html",
     difficulty: "intermediate",
@@ -858,7 +833,7 @@ export const terms = [
     tags: ["suger"],
     def: "A Suger setting that maps dimension keys from your internal metering system to marketplace dimension names using a multiplier factor. Avoids needing to rename dimensions in either system.",
     alias: "Related: Metering Dimension, Usage Metering, Billable Metric",
-    source: "https://doc.suger.io/billing/metering/",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -883,7 +858,7 @@ export const terms = [
     def: "The payment a cloud marketplace sends to the seller after collecting from the buyer, net of marketplace fees and taxes. Typically processed monthly. Suger provides disbursement reports for all connected marketplaces.",
     alias:
       "Related: Revenue, Disbursement Date, Marketplace Fee / Transaction Fee",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/revenue/cash-and-disbursements/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -905,8 +880,8 @@ export const terms = [
     name: "Divide Entitlement Commit",
     tags: ["suger"],
     def: "A Suger feature that splits a single annual upfront commit into monthly sub-entitlements, enabling monthly overage metering against a fraction of the total commitment.",
-    alias: "Related: Commit with Additional Usage Metering, Overage",
-    source: "https://doc.suger.io/billing/metering/",
+    alias: "Related: Overage",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -916,10 +891,6 @@ export const terms = [
     ],
     context: ["Suger Console", "Entitlement Configuration", "Usage Metering"],
     related: [
-      {
-        name: "Commit with Additional Usage Metering",
-        slug: "commit-with-additional-usage-metering",
-      },
       { name: "Overage", slug: "overage" },
       { name: "Entitlement", slug: "entitlement" },
     ],
@@ -960,7 +931,7 @@ export const terms = [
     def: "Suger's unified term for the contract/subscription created when a buyer purchases a product on a marketplace. Represents active access rights, billing terms, and the unit for metering.",
     alias:
       "AWS: Agreement — AWS | Azure: Subscription — Azure | GCP: Subscription — GCP",
-    source: "https://doc.suger.io/billing/entitlement/",
+    source: "https://doc.suger.io/api/get-entitlement/",
     difficulty: "beginner",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -1013,7 +984,8 @@ export const terms = [
     name: "Flat Rate Pricing — Azure",
     tags: ["azure"],
     def: "An Azure pricing model with a fixed monthly or annual fee. Can include a metered overage component where usage above the included quantity triggers additional charges.",
-    alias: "",
+    alias:
+      "Related: Included Quantity — Azure, Per User Pricing — Azure, Overage",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
     difficulty: "beginner",
@@ -1247,7 +1219,7 @@ export const terms = [
     name: "Integration",
     tags: ["suger", "integrations"],
     def: "A Suger connection to an external platform — Salesforce, HubSpot, Slack, billing engines (Metronome, Orb, Lago), or marketplaces — that automatically syncs data with your existing workflows.",
-    alias: "",
+    alias: "Related: CRM Integration, Webhook",
     source: "https://doc.suger.io/integrations/",
     difficulty: "beginner",
     category: "operations",
@@ -1260,7 +1232,6 @@ export const terms = [
     related: [
       { name: "CRM Integration", slug: "crm-integration" },
       { name: "Webhook", slug: "webhook" },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -1545,7 +1516,7 @@ export const terms = [
     tags: ["general", "suger"],
     def: "A billing mechanism where buyers are charged based on actual consumption of defined usage dimensions. Suger normalizes metered billing across AWS, Azure, and GCP through its unified metering API.",
     alias: "Related: Usage Metering, Billable Metric, Metering Dimension",
-    source: "https://doc.suger.io/billing/metering/",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -1571,7 +1542,7 @@ export const terms = [
     def: "A specific unit of measure used to track and bill usage (e.g., seats, API calls, GB processed). Each entitlement can have multiple dimensions, referenced by Dimension Key or Dimension Name in Suger's API.",
     alias:
       "Related: Usage Metering, Billable Metric, Metering Dimension Conversion — Suger",
-    source: "https://doc.suger.io/billing/metering/",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -1663,7 +1634,7 @@ export const terms = [
   {
     name: "Multiparty Private Offer (MPO) — Azure",
     tags: ["azure", "cosell", "offers", "channel"],
-    def: "Microsoft Marketplace's channel reseller mechanism — the Azure equivalent of AWS's CPPO. An ISV and channel partner collaborate to create a single private offer for an end customer; the partner sets their own margin, and the purchase counts toward the customer's MACC. With Resale-Enabled Offers, authorized channel partners can initiate MPOs independently for each customer deal without requiring per-deal ISV involvement. As of May 27, 2026, MPO is available across 30 European countries, with further expansion to Japan, Australia, and South Africa planned for July 15, 2026.",
+    def: "Microsoft Marketplace's channel reseller mechanism — the Azure equivalent of AWS's CPPO. An ISV and channel partner collaborate to create a single private offer for an end customer; the partner sets their own margin, and the purchase counts toward the customer's MACC. With Resale-Enabled Offers, authorized channel partners can initiate MPOs independently for each customer deal without requiring per-deal ISV involvement. As of May 27, 2026, MPO is available across 30 European countries, and expanded to Japan, Australia, and South Africa on July 15, 2026.",
     alias:
       "AWS equivalent: Channel Partner Private Offer (CPPO) — AWS | GCP equivalent: Marketplace Channel Private Offer (MCPO) — GCP | Related: Resale-Enabled Offer — Azure",
     source:
@@ -1729,9 +1700,9 @@ export const terms = [
   {
     name: "Offer",
     tags: ["suger", "general", "offers"],
-    def: "In Suger, a pricing and terms proposal (public or private) that a buyer can accept to purchase a product. Must be linked to a Product. Maps differently across marketplaces.",
+    def: "In Suger, a pricing and terms proposal that a buyer can accept to purchase a product — most commonly a private offer with custom pricing, term, and buyer-specific conditions, tracked and managed through the Suger Console across AWS, Azure, and GCP marketplaces. Must be linked to a Product, and maps differently to each marketplace's own offer construct.",
     alias: "AWS: Private Offer | Azure: Plan — Azure | Related: Private Offer",
-    source: "https://doc.suger.io/billing/offer/",
+    source: "https://doc.suger.io/get-started/private-offers/",
     difficulty: "beginner",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -1877,7 +1848,7 @@ export const terms = [
     tags: ["suger", "general"],
     def: "Usage that exceeds a buyer's prepaid commit. Cloud marketplaces bill overage separately via metered usage. Suger can auto-track cumulative usage and report only the portion above the commit.",
     alias: "Related: Commit / Prepaid Commit, Usage Metering",
-    source: "https://doc.suger.io/billing/metering/",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -1889,10 +1860,6 @@ export const terms = [
     related: [
       { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
       { name: "Usage Metering", slug: "usage-metering" },
-      {
-        name: "Commit with Additional Usage Metering",
-        slug: "commit-with-additional-usage-metering",
-      },
     ],
   },
   {
@@ -1929,7 +1896,8 @@ export const terms = [
     name: "PAYG / Pay-as-you-go",
     tags: ["general", "aws", "gcp"],
     def: "A pricing model with no upfront commitment — buyers are billed only for what they consume. Called 'Subscription' on AWS; 'Usage-based' on GCP.",
-    alias: "",
+    alias:
+      "Related: Metered Billing, Commit / Prepaid Commit, Subscription — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
     difficulty: "beginner",
@@ -1999,7 +1967,8 @@ export const terms = [
     name: "Private Offer Success Team (POST) — AWS",
     tags: ["aws"],
     def: "AWS's dedicated support team for sellers with questions or issues related to private offer creation, buyer errors, and CPPO transactions. Contactable via the AWS Marketplace support form.",
-    alias: "",
+    alias:
+      "Related: Private Offer, Channel Partner Private Offer (CPPO) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
     difficulty: "beginner",
@@ -2684,7 +2653,8 @@ export const terms = [
     name: "Subscription — AWS",
     tags: ["aws"],
     def: "An AWS Marketplace pay-as-you-go pricing model. Buyers can cancel any time and are billed based on metered usage only, with no upfront commitment. Different from Azure and Snowflake subscriptions, which may be commit-based.",
-    alias: "",
+    alias:
+      "Related: PAYG / Pay-as-you-go, Metered Billing, Contract — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
     difficulty: "beginner",
@@ -2828,16 +2798,15 @@ export const terms = [
     related: [
       { name: "Entitlement", slug: "entitlement" },
       { name: "Usage Metering", slug: "usage-metering" },
-      { name: "Buyer Wallet", slug: "buyer-wallet" },
     ],
   },
   {
     name: "Usage Metering",
     tags: ["suger", "general"],
-    def: "The process of tracking and reporting a buyer's consumption of a product in a billing period. Suger provides a unified metering API normalizing reporting across AWS, Azure, and GCP — handling deduplication, validation, and aggregation.",
+    def: "The process of tracking and reporting a buyer's consumption of a product in a billing period. Suger provides a unified metering interface normalizing reporting across AWS, Azure, GCP, Oracle, Alibaba, and Snowflake — supporting manual console reporting, API-driven batch submissions, and CSV upload, with unique-ID deduplication to prevent duplicate submissions.",
     alias:
       "AWS equivalent: BatchMeterUsage API — AWS | Related: Metering Dimension, Billable Metric, Usage Record",
-    source: "https://doc.suger.io/billing/metering/",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -2864,7 +2833,7 @@ export const terms = [
     def: "A metering event sent to Suger's API reporting a buyer's consumption of one or more dimensions for a given entitlement. Suger deduplicates by ID, validates, and forwards to the correct marketplace.",
     alias:
       "Also known as: Usage Record Group | Related: Usage Metering, Metering Dimension",
-    source: "https://doc.suger.io/billing/metering/",
+    source: "https://doc.suger.io/get-started/metering/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -2904,7 +2873,7 @@ export const terms = [
     name: "Webhook",
     tags: ["suger"],
     def: "An HTTP callback configured in Suger that pushes real-time event notifications — new entitlements, cancellations, plan changes, usage alerts — to an ISV's service endpoint.",
-    alias: "Related: Email Notification, Workflow, Integration",
+    alias: "Related: Email Notification, Integration",
     source: "https://doc.suger.io/get-started/webhook/",
     difficulty: "intermediate",
     category: "operations",
@@ -2915,36 +2884,16 @@ export const terms = [
     ],
     context: ["Suger Console", "ISV Backend Systems"],
     related: [
-      { name: "Workflow", slug: "workflow" },
       { name: "Email Notification", slug: "email-notification" },
       { name: "Entitlement", slug: "entitlement" },
-    ],
-  },
-  {
-    name: "Workflow",
-    tags: ["suger"],
-    def: "An automation rule in Suger that triggers actions (CRM updates, Slack notifications, metering) based on marketplace events such as new entitlement creation or subscription cancellation.",
-    alias: "Related: Webhook, Integration, CRM Integration",
-    source: "https://doc.suger.io/workflow/",
-    difficulty: "intermediate",
-    category: "operations",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Automating CRM updates, Slack alerts, or metering triggers when a new entitlement is created in Suger",
-      "Building no-code automation rules in Suger to handle marketplace events across connected platforms",
-    ],
-    context: ["Suger Console", "Automation Rules"],
-    related: [
-      { name: "Webhook", slug: "webhook" },
-      { name: "Integration", slug: "integration" },
-      { name: "CRM Integration", slug: "crm-integration" },
     ],
   },
   {
     name: "Workload Identity Federation — GCP",
     tags: ["gcp", "suger"],
     def: "A GCP mechanism Suger uses to authenticate as the ISV's service account without storing long-lived keys. Allows Suger's AWS-based infrastructure to securely call GCP Marketplace APIs on the ISV's behalf.",
-    alias: "",
+    alias:
+      "Related: Service Account — GCP, Procurement API — GCP, GCP Marketplace — GCP",
     source:
       "https://docs.cloud.google.com/iam/docs/workload-identity-federation",
     difficulty: "advanced",
@@ -3005,8 +2954,8 @@ export const terms = [
     name: "Billable Metric",
     tags: ["suger"],
     def: "A named, reusable definition in Suger that specifies what usage to track and how to aggregate it — by COUNT, SUM, MAX, UNIQUE COUNT, or LATEST. Billable metrics are created before offers and referenced in price models to calculate charges. Distinct from Metering Dimension, which is marketplace-specific.",
-    alias: "",
-    source: "https://doc.suger.io/billing/billable-metrics/",
+    alias: "Related: Price Model, Metering Dimension",
+    source: "https://doc.suger.io/api/get-billable-metric/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -3016,37 +2965,16 @@ export const terms = [
     ],
     context: ["Suger Console", "Price Model Configuration"],
     related: [
-      { name: "Billable Dimension", slug: "billable-dimension" },
       { name: "Price Model", slug: "price-model" },
       { name: "Metering Dimension", slug: "metering-dimension" },
     ],
   },
   {
-    name: "Billable Dimension",
-    tags: ["suger"],
-    def: "The combination of a Billable Metric and a usage metering price model within an offer. Defines both what gets measured and how it gets priced. Multiple billable dimensions can be configured in a single offer.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Configuring multiple pricing dimensions in a single offer — e.g., one for API calls and another for storage",
-      "Pairing a billable metric with a tiered or volume price model to create a specific billing dimension",
-    ],
-    context: ["Suger Console", "Offer Configuration"],
-    related: [
-      { name: "Billable Metric", slug: "billable-metric" },
-      { name: "Price Model", slug: "price-model" },
-      { name: "Offer", slug: "offer" },
-    ],
-  },
-  {
     name: "Billing Cycle",
     tags: ["suger"],
-    def: "The start day of a billing period in Suger — either the start date of the entitlement or the 1st of the month. Determines when each billing period begins relative to the contract.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
+    def: "The recurring interval at which a buyer's usage or subscription is billed — for example, Suger's own AI-feature usage is billed monthly, with an invoice generated automatically at the end of each billing period based on that period's total usage. The specific start day and length of a billing cycle are configured per contract or price model.",
+    alias: "Related: Billing Period, Billing Interval, Entitlement",
+    source: "https://doc.suger.io/get-started/billing/overview/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -3064,9 +2992,9 @@ export const terms = [
   {
     name: "Billing Interval",
     tags: ["suger", "general"],
-    def: "The frequency at which a buyer is charged within a contract — monthly, quarterly, annually, etc. Configured per price model in a Suger offer.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
+    def: "The frequency at which a buyer is charged within a contract — monthly, quarterly, annually, etc. Suger's own AI-feature billing, for example, runs on a monthly interval, with an invoice generated automatically at the end of each period.",
+    alias: "Related: Billing Cycle, Billing Period, Price Model",
+    source: "https://doc.suger.io/get-started/billing/overview/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -3084,9 +3012,9 @@ export const terms = [
   {
     name: "Billing Period",
     tags: ["suger", "general"],
-    def: "A single charging cycle within a contract's duration. The price model is applied once per billing period. Multiple billing periods span the full contract term.",
-    alias: "",
-    source: "https://doc.suger.io/billing/",
+    def: "A single charging cycle within a contract's duration, at the end of which an invoice is generated based on that period's usage or charges — for example, Suger's own AI-feature billing runs on monthly periods. Multiple billing periods span the full contract term.",
+    alias: "Related: Billing Cycle, Billing Interval, Invoice",
+    source: "https://doc.suger.io/get-started/billing/overview/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -3105,7 +3033,7 @@ export const terms = [
     name: "Chargebee Integration",
     tags: ["suger", "integrations"],
     def: "Suger's connection to Chargebee, a subscription billing platform. Allows ISVs already using Chargebee to sync billing data and entitlements with Suger's marketplace and co-sell workflows.",
-    alias: "",
+    alias: "Related: Stripe Integration, Billing, Entitlement",
     source: "https://doc.suger.io/integrations/chargebee/",
     difficulty: "intermediate",
     category: "operations",
@@ -3125,7 +3053,8 @@ export const terms = [
     name: "Databricks Marketplace",
     tags: ["general"],
     def: "Databricks' marketplace for data products and AI applications within the Databricks Data Intelligence Platform. Suger supports integration with Databricks to automate workflows, execute queries, and sync marketplace data.",
-    alias: "",
+    alias:
+      "Related: Listing, Entitlement, Snowflake Marketplace — Snowflake",
     source: "https://docs.databricks.com/aws/en/marketplace",
     difficulty: "intermediate",
     category: "fundamentals",
@@ -3148,7 +3077,7 @@ export const terms = [
     name: "Email Notification",
     tags: ["suger"],
     def: "Suger's event-driven email alert and transactional email system. ISVs configure recipient lists to receive notifications on marketplace events — new entitlements, cancellations, usage alerts, and invoice issuance — distinct from Webhooks, which push to service endpoints. Suger also provides a full custom template builder powered by a Golang Template evaluator: templates support merge tags (buyer name, offer details, entitlement ID, and more), images, buttons, headings, and raw HTML blocks, with a test-against-mock-data capability that lets sellers preview rendered emails before activating.",
-    alias: "Related: Webhook, Workflow, Entitlement",
+    alias: "Related: Webhook, Entitlement",
     source: "https://doc.suger.io/get-started/email-notification/",
     difficulty: "beginner",
     category: "operations",
@@ -3160,17 +3089,16 @@ export const terms = [
     context: ["Suger Console", "Notification Settings"],
     related: [
       { name: "Webhook", slug: "webhook" },
-      { name: "Workflow", slug: "workflow" },
       { name: "Entitlement", slug: "entitlement" },
     ],
   },
   {
     name: "Invoice",
     tags: ["suger"],
-    def: "A billing document automatically generated by Suger per entitlement for non-cloud marketplace billing (e.g. Stripe). Four types exist: Commit, Installment, Usage, and Addon. Invoices can be issued automatically on due date or manually, edited while in Draft state, and exported as PDF.",
+    def: "An accounts-receivable record in Suger tracking what a buyer or channel owes — issue and due dates, invoice amount, balance due, status, and aging. Invoices move through statuses (Draft, Invoiced, Overdue, Partial, Paid, Written Off, Voided); end-buyer invoices (including Stripe direct billing) age from the due date, while marketplace and reseller invoices age from the expected disbursement date.",
     alias:
       "Types: Commit, Installment, Usage, Addon | Related: Revenue, Stripe Integration, Disbursement",
-    source: "https://doc.suger.io/billing/invoice/",
+    source: "https://doc.suger.io/revenue/invoices/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -3186,50 +3114,10 @@ export const terms = [
     ],
   },
   {
-    name: "Matrix Pricing",
-    tags: ["suger"],
-    def: "A Suger usage metering price model that determines per-unit cost based on combinations of two or more properties (e.g. cloud provider + region). Each property combination maps to a distinct price; unmatched combinations fall back to a default price.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "advanced",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Pricing usage differently based on a combination of properties — e.g., cloud provider × region — using a matrix lookup",
-      "Configuring a fallback default price for usage events that don't match any matrix property combination",
-    ],
-    context: ["Suger Console", "Price Model Configuration"],
-    related: [
-      { name: "Price Model", slug: "price-model" },
-      { name: "Tiered Pricing", slug: "tiered-pricing" },
-      { name: "Billable Metric", slug: "billable-metric" },
-    ],
-  },
-  {
-    name: "Minimum Spend",
-    tags: ["suger", "general"],
-    def: "A floor amount set on a usage-based price model ensuring a buyer is charged at least a defined minimum per billing period, regardless of actual consumption.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
-    useCases: [
-      "Setting a minimum monthly charge on a usage-based offer to protect revenue floor even in low-usage periods",
-      "Communicating minimum spend requirements to buyers as part of the offer terms",
-    ],
-    context: ["Suger Console", "Price Model Configuration", "Offer Terms"],
-    related: [
-      { name: "Price Model", slug: "price-model" },
-      { name: "Metered Billing", slug: "metered-billing" },
-      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
-    ],
-  },
-  {
     name: "NetSuite Integration",
     tags: ["suger", "integrations"],
     def: "Suger's connection to Oracle NetSuite ERP, enabling ISVs to sync marketplace revenue, invoices, and entitlement data with their financial management system for automated reconciliation.",
-    alias: "",
+    alias: "Related: Revenue, Invoice, Disbursement",
     source: "https://doc.suger.io/integrations/netsuite/",
     difficulty: "intermediate",
     category: "operations",
@@ -3271,10 +3159,10 @@ export const terms = [
   {
     name: "Price Model",
     tags: ["suger"],
-    def: "Suger's configuration for how a buyer is charged within an offer. Two top-level types: Flat Fee (fixed installments or recurring commits) and Usage Metering (consumption-based). Supports seven sub-types: Basic, Tiered, Bulk, Volume, Percentage, Tiered Percentage, and Matrix pricing.",
+    def: "The configuration governing how a buyer is charged for a marketplace offer — spanning flat-fee (fixed installments or recurring commit) and usage-based (consumption-metered) structures. Suger configures a price model per offer, with each marketplace exposing its own set of supported pricing structures (for example, AWS Marketplace offers Subscription pay-as-you-go, Contract upfront-commitment, combined Contract-with-Subscription, and Free pricing).",
     alias:
       "Sub-types: Basic, Tiered, Bulk, Volume, Percentage, Tiered Percentage, Matrix | Related: Billable Metric, Billable Dimension, Offer",
-    source: "https://doc.suger.io/billing/price-model/",
+    source: "https://doc.suger.io/aws-marketplace/pricing-model/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -3285,37 +3173,16 @@ export const terms = [
     context: ["Suger Console", "Offer Configuration"],
     related: [
       { name: "Billable Metric", slug: "billable-metric" },
-      { name: "Billable Dimension", slug: "billable-dimension" },
       { name: "Metered Billing", slug: "metered-billing" },
     ],
   },
 
   {
-    name: "Recurring Commit",
-    tags: ["suger"],
-    def: "A flat fee price model in Suger that charges a buyer a fixed amount per billing period (quantity × rate). Supports prepay or postpay, and can be updated mid-contract — useful for per-seat pricing where seat count changes during the term.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Configuring per-seat pricing in Suger where the seat count can be updated mid-contract as headcount changes",
-      "Using a recurring commit price model for monthly SaaS fees with prepay or postpay flexibility",
-    ],
-    context: ["Suger Console", "Price Model Configuration"],
-    related: [
-      { name: "Price Model", slug: "price-model" },
-      { name: "Commit / Prepaid Commit", slug: "commit-/-prepaid-commit" },
-      { name: "Billing Interval", slug: "billing-interval" },
-    ],
-  },
-  {
     name: "Revenue",
     tags: ["suger"],
-    def: "Suger's revenue tracking layer that generates per-entitlement revenue records and aggregated reports by product and buyer. Distinct from Disbursement — Revenue tracks what was earned; Disbursement tracks what was paid out by the marketplace.",
+    def: "Suger's revenue lifecycle dashboard, tracking bookings through billing, cash collection, and disbursement across every connected marketplace and direct billing channel in one view. Distinct from Disbursement — Revenue tracks what was earned and invoiced; Disbursement tracks what has actually been paid out.",
     alias: "Related: Disbursement, Invoice, Suger Analytics",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/revenue/overview/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -3334,7 +3201,8 @@ export const terms = [
     name: "Salesforce App",
     tags: ["suger", "cosell", "integrations"],
     def: "Suger's native Salesforce application that embeds marketplace entitlement data, co-sell referral status, and metering information directly inside Salesforce — beyond the standard CRM Integration's bi-directional sync.",
-    alias: "",
+    alias:
+      "Related: Salesforce Integration, CRM Integration, Co-sell",
     source: "https://doc.suger.io/integrations/salesforce/",
     difficulty: "intermediate",
     category: "operations",
@@ -3354,7 +3222,7 @@ export const terms = [
     name: "HubSpot App",
     tags: ["suger", "cosell", "integrations"],
     def: "Suger's native HubSpot application that surfaces marketplace and co-sell data inside HubSpot deals and contacts, enabling sales teams to act on entitlement events without leaving their CRM.",
-    alias: "",
+    alias: "Related: HubSpot Integration, CRM Integration, Co-sell",
     source: "https://doc.suger.io/integrations/hubspot/",
     difficulty: "intermediate",
     category: "operations",
@@ -3374,7 +3242,7 @@ export const terms = [
     name: "Service Quotas",
     tags: ["suger"],
     def: "Suger-enforced limits on API request rates and resource counts per organization — such as the number of products, offers, or usage records that can be created. Quotas can be reviewed and increase requests submitted via the Suger Console.",
-    alias: "",
+    alias: "Related: Suger API Client, Organization",
     source: "https://doc.suger.io/get-started/",
     difficulty: "beginner",
     category: "operations",
@@ -3393,7 +3261,7 @@ export const terms = [
     name: "Stripe Integration",
     tags: ["suger", "integrations"],
     def: "Suger's connection to Stripe for non-marketplace (direct) billing. When Stripe is selected as the billing partner on a product, Suger uses Stripe to collect payments, issue invoices, and deposit funds to the ISV's Stripe account.",
-    alias: "",
+    alias: "Related: Invoice, Payment, Billing",
     source: "https://doc.suger.io/integrations/stripe/",
     difficulty: "intermediate",
     category: "operations",
@@ -3431,86 +3299,6 @@ export const terms = [
     ],
   },
   {
-    name: "Tiered Pricing",
-    tags: ["suger", "general"],
-    def: "A usage metering price model where the cost per unit depends on which tier range the unit falls into. Each tier can have its own per-unit rate and optional flat fee. Lower tiers are charged at their own rate even when higher tiers are reached — contrast with Volume Pricing.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
-    useCases: [
-      "Pricing usage where each consumption tier has a distinct per-unit rate — lower tiers stay at their own price",
-      "Explaining tiered pricing to buyers so they understand how usage in each band is independently priced",
-    ],
-    context: ["Suger Console", "Price Model Configuration"],
-    related: [
-      { name: "Volume Pricing", slug: "volume-pricing" },
-      { name: "Price Model", slug: "price-model" },
-      { name: "Metered Billing", slug: "metered-billing" },
-    ],
-  },
-  {
-    name: "Volume Pricing",
-    tags: ["suger", "general"],
-    def: "A usage metering price model where the total quantity purchased determines the per-unit rate applied to all units. Reaching a higher volume tier changes the price retroactively for the entire quantity — contrast with Tiered Pricing.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
-    useCases: [
-      "Incentivizing higher usage with volume discounts where hitting a tier retroactively reprices all units",
-      "Explaining to buyers how volume pricing differs from tiered pricing — all units get repriced when a volume threshold is hit",
-    ],
-    context: ["Suger Console", "Price Model Configuration"],
-    related: [
-      { name: "Tiered Pricing", slug: "tiered-pricing" },
-      { name: "Price Model", slug: "price-model" },
-      { name: "Metered Billing", slug: "metered-billing" },
-    ],
-  },
-  {
-    name: "Bulk Pricing",
-    tags: ["suger"],
-    def: "A Suger usage metering price model that charges usage in fixed bundles. If a buyer uses fewer units than a bundle size, they are billed for the full bundle. Usage above one bundle rolls into the next.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
-    useCases: [
-      "Pricing products in fixed unit bundles where partial bundle usage is still billed as a full bundle",
-      "Structuring a token or credit pack pricing model where buyers purchase in fixed increments",
-    ],
-    context: ["Suger Console", "Price Model Configuration"],
-    related: [
-      { name: "Price Model", slug: "price-model" },
-      { name: "Tiered Pricing", slug: "tiered-pricing" },
-      { name: "Metered Billing", slug: "metered-billing" },
-    ],
-  },
-  {
-    name: "Percentage Pricing",
-    tags: ["suger"],
-    def: "A Suger usage metering price model that charges a percentage of a value carried in the usage event — for example, a percentage of a transaction amount. Supports an optional flat fee per event.",
-    alias: "",
-    source: "https://doc.suger.io/billing/price-model/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
-    useCases: [
-      "Charging a revenue-share or take-rate model where billing is a percentage of transaction value reported in usage events",
-      "Adding a flat fee per transaction on top of the percentage-based charge",
-    ],
-    context: ["Suger Console", "Price Model Configuration"],
-    related: [
-      { name: "Price Model", slug: "price-model" },
-      { name: "Billable Metric", slug: "billable-metric" },
-      { name: "Metered Billing", slug: "metered-billing" },
-    ],
-  },
-  {
     name: "AWS Partner Funding — AWS",
     tags: ["aws", "cosell", "funding"],
     def: "AWS's program that provides financial support (credits or cash) to partners pursuing co-sell opportunities. In Suger, funding requests are submitted, tracked, and managed directly from the Co-sell module via the Partner Central Funding Benefits API.",
@@ -3544,7 +3332,8 @@ export const terms = [
     name: "Funding Wallet",
     tags: ["aws", "cosell", "suger"],
     def: "A balance and budget tracker within Suger's Funding tab showing a partner's available funding balance and the history of submitted and approved funding requests from AWS.",
-    alias: "",
+    alias:
+      "Related: AWS Partner Funding — AWS, Benefit Allocation — AWS, AWS Partner Funding Portal (APFP) — AWS",
     source: "https://doc.suger.io/cosell/cosell-funding/",
     difficulty: "beginner",
     category: "cosell",
@@ -3595,7 +3384,8 @@ export const terms = [
     name: "Partner Central 3.0 (PC3.0) — AWS",
     tags: ["aws", "cosell"],
     def: "The latest version of AWS's partner portal. Required for access to the Funding Benefits API — ISVs must complete migration to PC3.0 before AWS Funding can be activated in Suger. Migration status is confirmed via the AWS Partner Manager.",
-    alias: "",
+    alias:
+      "Related: Funding Benefits API — AWS, AWS Partner Funding — AWS, APN Customer Engagements (ACE) — AWS",
     source: "https://aws.amazon.com/partners/partner-central/",
     difficulty: "intermediate",
     category: "cosell",
@@ -3621,7 +3411,8 @@ export const terms = [
     name: "Funding Benefits API — AWS",
     tags: ["aws", "cosell"],
     def: "The AWS Partner Central API endpoint enabling programmatic submission and tracking of funding requests. Only available after a partner's migration to Partner Central 3.0 is confirmed.",
-    alias: "",
+    alias:
+      "Related: Partner Central 3.0 (PC3.0) — AWS, AWS Partner Funding — AWS, AWS ACE Integration",
     source: "https://aws.amazon.com/partners/funding/",
     difficulty: "advanced",
     category: "cosell",
@@ -3705,7 +3496,8 @@ export const terms = [
     name: "AWS Partner Funding Portal (APFP) — AWS",
     tags: ["aws", "cosell"],
     def: "The AWS portal where partners submit, track, and manage fund requests across all funding programs (MDF, MAP, POC, PIF, etc.). Accessible via the Funding tab in AWS Partner Central.",
-    alias: "",
+    alias:
+      "Related: AWS Partner Funding — AWS, Marketing Development Funds (MDF) — AWS, Partner Opportunity Acceleration (POA) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
     difficulty: "beginner",
     category: "cosell",
@@ -3731,7 +3523,8 @@ export const terms = [
     name: "Benefit Allocation — AWS",
     tags: ["aws", "cosell"],
     def: "An approved funding grant issued to a partner through the AWS Benefits API. Can take the form of cash disbursements, AWS credits, consumable wallets, access grants, or recognition. Each allocation has a lifecycle status tracked via the Partner Central API.",
-    alias: "",
+    alias:
+      "Related: Funding Benefits API — AWS, AWS Partner Funding — AWS, Funding Wallet",
     source:
       "https://docs.aws.amazon.com/partner-central/latest/APIReference/working-with-benefit-allocations.html",
     difficulty: "intermediate",
@@ -3759,7 +3552,8 @@ export const terms = [
     name: "Amazon Payee Central — AWS",
     tags: ["aws", "cosell"],
     def: "Amazon's payment registration system where partners must set up bank account and tax information before receiving any cash-based AWS funding benefits (MDF, MAP, etc.). Required prerequisite for cash disbursements.",
-    alias: "",
+    alias:
+      "Related: Marketing Development Funds (MDF) — AWS, Partner Opportunity Acceleration (POA) — AWS, AWS Partner Funding — AWS",
     source: "https://aws.amazon.com/marketplace/management/paymentstatus/",
     difficulty: "beginner",
     category: "cosell",
@@ -3782,7 +3576,7 @@ export const terms = [
     ],
   },
   {
-    name: "Proof of Concept (POC) Funding  — AWS",
+    name: "Proof of Concept (POC) Funding — AWS",
     tags: ["aws", "cosell", "funding"],
     group: "cloud-partner-funding",
     def: "AWS funding that offsets up to 10% of the cost of building a proof of concept for a customer, capped at $25,000. Submitted through the AWS Partner Funding Portal. Requires Validated+ stage in any Partner Path. The ACE opportunity must be in Technical Validation stage or beyond.",
@@ -3881,7 +3675,8 @@ export const terms = [
     name: "AWS Promotional Credits — AWS",
     tags: ["aws", "cosell"],
     def: "Non-cash credits applied to an AWS account to offset usage costs. Awarded through programs like Innovation Sandbox, ISV WMP, and MAP. Not redeemable for cash. Subject to AWS Promotional Credit Terms.",
-    alias: "",
+    alias:
+      "Related: Innovation Sandbox (APN) — AWS, Marketing Development Funds (MDF) — AWS, Marketplace Private Offer Promotion Program (MPOPP) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
     difficulty: "beginner",
     category: "cosell",
@@ -3941,7 +3736,8 @@ export const terms = [
     name: "Marketplace Commerce Analytics Service (MCAS) — AWS",
     tags: ["aws", "suger", "integrations"],
     def: "An AWS service giving sellers programmatic access to marketplace business data (usage, subscriptions, billing, customer info) via the AWS SDK. Data is delivered to an S3 bucket; delivery notifications use SNS (verify against current docs — EventBridge migration may affect this pipeline). Suger uses MCAS as part of the AWS integration setup.",
-    alias: "",
+    alias:
+      "Related: Marketplace Data Feed Service (MDFS) — AWS, AWS Partner Network Integration (API), Suger Analytics",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/commerce-analytics-service.html",
     difficulty: "advanced",
@@ -3968,7 +3764,8 @@ export const terms = [
     name: "Marketplace Data Feed Service (MDFS) — AWS",
     tags: ["aws", "suger", "integrations"],
     def: "AWS's structured data pipeline that delivers product billing and customer information (company name, address, email domain) to an S3 bucket. Recommended alongside MCAS for complete revenue and buyer data sync in Suger.",
-    alias: "",
+    alias:
+      "Related: Marketplace Commerce Analytics Service (MCAS) — AWS, AWS Partner Network Integration (API), Entitlement",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-service.html",
     difficulty: "advanced",
@@ -4047,7 +3844,7 @@ export const terms = [
     ],
     related: [
       {
-        name: "Proof of Concept (POC) Funding  — AWS",
+        name: "Proof of Concept (POC) Funding — AWS",
         slug: "proof-of-concept-poc-funding-—-aws",
       },
       {
@@ -4064,7 +3861,8 @@ export const terms = [
     name: "Funding Dashboard — AWS",
     tags: ["aws", "cosell", "suger"],
     def: "A native AWS Partner Central view providing real-time visibility into fund allocation, utilization, and performance metrics across all funding programs. Also mirrored in Suger's Funding tab.",
-    alias: "",
+    alias:
+      "Related: AWS Partner Funding — AWS, Funding Wallet, AWS Partner Funding Portal (APFP) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
     difficulty: "beginner",
     category: "cosell",
@@ -4087,7 +3885,8 @@ export const terms = [
     name: "Training & Certification Funding — AWS",
     tags: ["aws", "cosell"],
     def: "An AWS funding benefit offering discounted training to help partner teams prepare for AWS certification exams. Accessible via the Funding tab in AWS Partner Central.",
-    alias: "",
+    alias:
+      "Related: AWS Partner Funding — AWS, AWS Partner Network (APN) — AWS, Foundational Technical Review (FTR) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
     difficulty: "beginner",
     category: "cosell",
@@ -4113,7 +3912,8 @@ export const terms = [
     name: "Strategic Collaboration Agreement (SCA) — AWS",
     tags: ["aws", "cosell"],
     def: "A formal, multi-year agreement between AWS and a select partner — typically Premier Tier — committing both sides to joint business goals across Build-Market-Sell-Grow motions: co-sell targets, go-to-market investment, training, and funding. Anchored in outcome-driven business plans with defined metrics and milestones. MDF can stack on top of SCA benefits.",
-    alias: "",
+    alias:
+      "Related: Marketing Development Funds (MDF) — AWS, Partner Development Manager (PDM) — AWS, ISV Accelerate — AWS",
     source: "https://aws.amazon.com/partners/",
     difficulty: "advanced",
     category: "cosell",
@@ -4143,7 +3943,8 @@ export const terms = [
     name: "SaaS Co-sell Benefit (SCB) — AWS",
     tags: ["aws", "cosell"],
     def: "An AWS program where AWS sales reps earn quota retirement credit for co-selling SaaS/PaaS solutions transacted as private offers in AWS Marketplace. Incentivizes AWS sellers to prioritize ISV partners. Available to ISV Accelerate partners.",
-    alias: "",
+    alias:
+      "Related: ISV Accelerate — AWS, Quota Retirement — AWS, APN Customer Engagements (ACE) — AWS",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
     difficulty: "intermediate",
     category: "cosell",
@@ -4166,7 +3967,8 @@ export const terms = [
     name: "Quota Retirement — AWS",
     tags: ["aws", "cosell"],
     def: "When an AWS seller earns credit toward their sales quota for a deal transacted through AWS Marketplace. The SCB program grants this to AWS reps on co-sold SaaS private offers — the core mechanic that motivates AWS sellers to co-sell your product.",
-    alias: "",
+    alias:
+      "Related: SaaS Co-sell Benefit (SCB) — AWS, ISV Accelerate — AWS, Private Offer",
     source: "https://aws.amazon.com/partners/programs/isv-accelerate/",
     difficulty: "intermediate",
     category: "cosell",
@@ -4193,7 +3995,8 @@ export const terms = [
     name: "Partner Development Manager (PDM) — AWS",
     tags: ["aws", "cosell"],
     def: "The AWS-assigned contact responsible for managing a partner's relationship with AWS. Helps with APN program navigation, SCA setup, co-sell strategy, and funding access.",
-    alias: "",
+    alias:
+      "Related: AWS Partner Network (APN) — AWS, ISV Accelerate — AWS, Strategic Collaboration Agreement (SCA) — AWS",
     source: "https://aws.amazon.com/partners/",
     difficulty: "beginner",
     category: "cosell",
@@ -4793,7 +4596,6 @@ export const terms = [
         name: "Microsoft Outlook Integration",
         slug: "microsoft-outlook-integration",
       },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -4816,7 +4618,6 @@ export const terms = [
         name: "User Microsoft Outlook Integration",
         slug: "user-microsoft-outlook-integration",
       },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -4839,7 +4640,6 @@ export const terms = [
         name: "Google Cloud Storage Integration",
         slug: "google-cloud-storage-integration",
       },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -4911,7 +4711,6 @@ export const terms = [
         slug: "user-microsoft-outlook-integration",
       },
       { name: "Gmail Integration", slug: "gmail-integration" },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -4934,7 +4733,6 @@ export const terms = [
         slug: "microsoft-outlook-integration",
       },
       { name: "User Gmail Integration", slug: "user-gmail-integration" },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -4954,7 +4752,6 @@ export const terms = [
     related: [
       { name: "Google Gemini Integration", slug: "google-gemini-integration" },
       { name: "Anthropic Integration", slug: "anthropic-integration" },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -4974,7 +4771,6 @@ export const terms = [
     related: [
       { name: "OpenAI Integration", slug: "openai-integration" },
       { name: "Anthropic Integration", slug: "anthropic-integration" },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -4994,7 +4790,6 @@ export const terms = [
     related: [
       { name: "OpenAI Integration", slug: "openai-integration" },
       { name: "Google Gemini Integration", slug: "google-gemini-integration" },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -5203,8 +4998,10 @@ export const terms = [
     name: "Subsidiary Account Connection — AWS",
     tags: ["aws"],
     def: "An AWS Partner Central feature allowing partners with multiple AWS Marketplace accounts to link them all under a single primary account. Required for partners managing multiple marketplace storefronts who want unified PRM tracking and APN program management. Connected accounts can now share qualifications — specializations, certifications, and program enrollments — across the group, with a consolidated public profile and scorecard, and tier recalculation based on combined metrics.",
-    alias: "",
-    source: "https://aws.amazon.com/partners/partner-central/",
+    alias:
+      "Related: Partner Revenue Measurement (PRM) — AWS, AWS Partner Network (APN) — AWS",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/07/subsidiary-qualification-sharing/",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -5243,10 +5040,6 @@ export const terms = [
     related: [
       { name: "CRM Integration", slug: "crm-integration" },
       { name: "Co-sell", slug: "co-sell" },
-      {
-        name: "Partner Revenue Management (PRM)",
-        slug: "partner-revenue-management-prm",
-      },
     ],
   },
   {
@@ -5267,7 +5060,6 @@ export const terms = [
     context: ["AWS Marketplace", "Suger Console", "Agreement Management"],
     related: [
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
-      { name: "Refund", slug: "refund" },
       { name: "CRM Integration", slug: "crm-integration" },
     ],
   },
@@ -5536,31 +5328,11 @@ export const terms = [
     ],
   },
   {
-    name: "Partner Revenue Management (PRM)",
-    tags: ["suger", "general"],
-    def: "The practice of tracking, reconciling, and reporting revenue generated through cloud marketplace and direct billing channels. In Suger, PRM spans the full billing lifecycle — from offer creation and usage metering through invoicing, payment collection, disbursement, and revenue reporting — across both marketplace and direct (Stripe) billing.",
-    alias: "Related: Revenue, Disbursement, Invoice, Billing Integration",
-    source: "https://doc.suger.io/billing/revenue/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Using Suger's PRM layer to track, reconcile, and report all revenue across both marketplace and direct Stripe billing channels in one place",
-      "Understanding PRM as the full billing lifecycle — offer → metering → invoicing → payment → disbursement → reporting — in Suger",
-    ],
-    context: ["Suger Console", "Revenue Dashboard", "Billing Operations"],
-    related: [
-      { name: "Revenue", slug: "revenue" },
-      { name: "Disbursement", slug: "disbursement" },
-      { name: "Invoice", slug: "invoice" },
-    ],
-  },
-  {
     name: "Payment",
     tags: ["suger"],
-    def: "Suger's automated payment processing layer that triggers when an invoice becomes Finalized. Processes payments via Stripe, applying buyer wallet credits first before charging the remaining balance. Supports payment retry, dispute handling via Stripe webhooks, and abnormal payment alerts.",
-    alias: "Related: Invoice, Stripe Integration, Refund, Buyer Wallet",
-    source: "https://doc.suger.io/billing/payment/",
+    def: "A completed payment record in Suger tied to one or more invoices, confirming funds have moved from buyer to marketplace or Stripe. Payment records are searchable and viewable across vendors for reference and tracking; detailed processor-level payment mechanics remain with the underlying cloud marketplace or Stripe rather than being fully re-exposed in Suger's buyer-facing views.",
+    alias: "Related: Invoice, Stripe Integration",
+    source: "https://doc.suger.io/as-buyer/invoice-and-payment/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5571,76 +5343,14 @@ export const terms = [
     context: ["Suger Console", "Stripe", "Invoice Management"],
     related: [
       { name: "Invoice", slug: "invoice" },
-      { name: "Refund", slug: "refund" },
-      { name: "Buyer Wallet", slug: "buyer-wallet" },
-    ],
-  },
-  {
-    name: "Refund",
-    tags: ["suger"],
-    def: "Suger's manual refund capability for successful payments. Supports partial refunds, multiple refunds per payment, and both credit wallet refunds and Stripe payment refunds. Refunds are processed at the transaction level, not the invoice level.",
-    alias: "Related: Payment, Invoice, Stripe Integration",
-    source: "https://doc.suger.io/billing/payment/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Issuing a partial or full refund on a successful Suger payment at the transaction level",
-      "Choosing between a Buyer Wallet credit refund and a Stripe payment refund based on the customer's preferred resolution",
-    ],
-    context: ["Suger Console", "Stripe", "Payment Management"],
-    related: [
-      { name: "Payment", slug: "payment" },
-      { name: "Buyer Wallet", slug: "buyer-wallet" },
-      { name: "Stripe Integration", slug: "stripe-integration" },
-    ],
-  },
-  {
-    name: "Buyer Wallet",
-    tags: ["suger"],
-    def: "A credit balance held for a specific buyer in Suger. During payment processing, credits in the wallet are applied first before any Stripe charge is made. Wallets must be in active status to accept credit refunds.",
-    alias: "Related: Usage Credit, Payment, Refund",
-    source: "https://doc.suger.io/billing/payment/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
-    useCases: [
-      "Applying buyer wallet credits to reduce the Stripe charge on an invoice — credits are consumed before any card or ACH payment",
-      "Issuing a credit refund to a buyer's wallet rather than a direct Stripe refund for billing corrections",
-    ],
-    context: ["Suger Console", "Invoice Payment", "Credit Management"],
-    related: [
-      { name: "Usage Credit", slug: "usage-credit" },
-      { name: "Payment", slug: "payment" },
-      { name: "Refund", slug: "refund" },
-    ],
-  },
-  {
-    name: "Payment Transaction",
-    tags: ["suger"],
-    def: "A single atomic payment attempt within Suger's payment pipeline. One invoice may have multiple transactions — for example, a credit deduction followed by a Stripe charge. Each transaction has its own status (Pending, Processing, Success, Failed). The invoice's payment status always reflects the latest transaction.",
-    alias: "Related: Payment, Invoice, Revenue Record",
-    source: "https://doc.suger.io/billing/payment/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Reviewing individual payment transaction records to diagnose a failed or pending payment on a Suger invoice",
-      "Understanding that a single invoice can have multiple transactions — wallet credit deduction followed by Stripe charge",
-    ],
-    context: ["Suger Console", "Payment Debugging", "Invoice Management"],
-    related: [
-      { name: "Payment", slug: "payment" },
-      { name: "Invoice", slug: "invoice" },
-      { name: "Revenue Record", slug: "revenue-record" },
     ],
   },
   {
     name: "Revenue Record",
     tags: ["suger"],
-    def: "A financial record generated in Suger on successful invoice payment. Two types: Joined Records (one per invoice, consolidating all payment transactions) and Raw Records (one per individual payment transaction). Used for reconciliation and financial reporting.",
-    alias: "Related: Revenue, Payment Transaction, Disbursement",
-    source: "https://doc.suger.io/billing/revenue/",
+    def: "Suger's unified financial ledger, normalizing revenue data across every connected marketplace and direct billing channel into a consistent format. Two complementary views exist: All Records (one normalized row per revenue event, with consistent columns across every channel — product, entitlement, buyer, lifecycle stage, invoice detail, partner fees, collectable amounts, disbursement data) and Raw Records (source-level records as each channel originally reported them, for comparing against the normalized row). Used for reconciliation and financial reporting.",
+    alias: "Related: Revenue, Disbursement",
+    source: "https://doc.suger.io/revenue/revenue-records/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5651,7 +5361,6 @@ export const terms = [
     context: ["Suger Console", "Revenue Reporting", "Financial Reconciliation"],
     related: [
       { name: "Revenue", slug: "revenue" },
-      { name: "Payment Transaction", slug: "payment-transaction" },
       { name: "Disbursement", slug: "disbursement" },
     ],
   },
@@ -5660,7 +5369,7 @@ export const terms = [
     tags: ["suger", "general"],
     def: "The total amount billed to a buyer on an invoice — what the customer owes. Distinct from Collectable Amount, which accounts for marketplace fees and credits. Tracked per invoice issue date in Suger's revenue reports.",
     alias: "Related: Collectable Amount, Disbursed Amount, Invoice",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/revenue/invoices/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5681,7 +5390,7 @@ export const terms = [
     def: "The amount an ISV can expect to receive from a buyer after deducting marketplace/partner fees and applying credits. Formula: (Total Payment − Partner Fee) + Credits. Tracked per payment due date in Suger's revenue reports.",
     alias:
       "Related: Invoiced Amount, Disbursed Amount, Marketplace Fee / Transaction Fee",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/revenue/overview/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5701,7 +5410,7 @@ export const terms = [
     tags: ["suger", "general"],
     def: "The net amount paid out to the seller after deducting all partner/marketplace fees from the total payment. Formula: Total Payment − Partner Fee. Tracked per disbursement date. Distinct from Collectable Amount, which also includes credits.",
     alias: "Related: Collectable Amount, Invoiced Amount, Disbursement",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/revenue/cash-and-disbursements/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5722,7 +5431,7 @@ export const terms = [
     def: "The fee deducted from a buyer's payment by the marketplace or billing partner before disbursement to the ISV. In Suger's revenue reporting, this is subtracted from the total payment to calculate both Collectable Amount and Disbursed Amount.",
     alias:
       "Related: Marketplace Fee / Transaction Fee, Disbursed Amount, Collectable Amount",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/revenue/cash-and-disbursements/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5745,7 +5454,7 @@ export const terms = [
     tags: ["suger", "general"],
     def: "The deadline by which a buyer must complete payment on a finalized invoice. Used as the key date for Collectable Amount in Suger's revenue reports.",
     alias: "Related: Invoice, Payment, Collectable Amount",
-    source: "https://doc.suger.io/billing/invoice/",
+    source: "https://doc.suger.io/revenue/invoices/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
@@ -5763,9 +5472,9 @@ export const terms = [
   {
     name: "Disbursement Date",
     tags: ["suger", "general"],
-    def: "The date when a successful payment is processed and transferred to the seller's account. Used as the key date for Disbursed Amount in Suger's revenue reports.",
+    def: "The date a payout is expected or actually received from a marketplace or payment processor. Suger's dashboard distinguishes an 'Expected' date (when the channel owed payout) from a 'Received' date (when it actually arrived), falling back to the received date only when no expected date exists. Used as the key date for Disbursed Amount in Suger's revenue reports.",
     alias: "Related: Disbursement, Disbursed Amount, Payment",
-    source: "https://doc.suger.io/billing/revenue/",
+    source: "https://doc.suger.io/revenue/cash-and-disbursements/",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5781,51 +5490,11 @@ export const terms = [
     ],
   },
   {
-    name: "Payment Dispute",
-    tags: ["suger", "general"],
-    def: "A buyer-initiated challenge to a payment charge, handled by Stripe. Suger receives dispute notifications via Stripe webhooks and displays them in the relevant payment transaction record in the Suger console.",
-    alias: "Related: Payment, Stripe Integration, Payment Transaction",
-    source: "https://doc.suger.io/billing/payment/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Monitoring Stripe dispute notifications surfaced in Suger's payment transaction records to respond within Stripe's response window",
-      "Investigating a disputed payment by reviewing the transaction record in Suger and responding through Stripe's dispute resolution flow",
-    ],
-    context: ["Suger Console", "Stripe", "Payment Management"],
-    related: [
-      { name: "Payment", slug: "payment" },
-      { name: "Stripe Integration", slug: "stripe-integration" },
-      { name: "Payment Transaction", slug: "payment-transaction" },
-    ],
-  },
-  {
-    name: "ACH Debit",
-    tags: ["suger", "general"],
-    def: "An electronic bank transfer payment method supported via Stripe in Suger. ACH refunds are processed as bank credits rather than explicit refunds. Payments may take a few hours to complete — refunds initiated before completion cancel the original payment rather than creating a separate refund.",
-    alias: "Related: Payment, Stripe Integration, Refund",
-    source: "https://doc.suger.io/billing/payment/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users", "Enterprise Buyers"],
-    useCases: [
-      "Enabling ACH Debit as a payment method for enterprise buyers who prefer bank transfer over card payment via Stripe",
-      "Understanding ACH refund behavior — initiated before completion cancels the original payment rather than creating a separate refund",
-    ],
-    context: ["Suger Console", "Stripe", "Enterprise Billing"],
-    related: [
-      { name: "Payment", slug: "payment" },
-      { name: "Refund", slug: "refund" },
-      { name: "Stripe Integration", slug: "stripe-integration" },
-    ],
-  },
-  {
     name: "Billing",
     tags: ["suger"],
-    def: "Suger's end-to-end billing system for direct (non-marketplace) revenue. Covers the full lifecycle: product setup → billable metrics → offer creation → entitlement management → usage metering → invoicing → payment collection → revenue reporting. Uses Stripe as the payment provider.",
-    alias: "Related: Partner Revenue Management, Invoice, Payment, Revenue",
-    source: "https://doc.suger.io/billing/",
+    def: "Suger's umbrella term for the end-to-end revenue lifecycle spanning both marketplace and direct billing channels — product and offer setup, usage metering, invoicing, payment collection, and disbursement, all rolled up into the Revenue dashboard's bookings-through-cash-collection view.",
+    alias: "Related: Invoice, Payment, Revenue",
+    source: "https://doc.suger.io/revenue/overview/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -5837,10 +5506,6 @@ export const terms = [
     related: [
       { name: "Invoice", slug: "invoice" },
       { name: "Payment", slug: "payment" },
-      {
-        name: "Partner Revenue Management (PRM)",
-        slug: "partner-revenue-management-prm",
-      },
     ],
   },
 
@@ -8427,7 +8092,7 @@ export const terms = [
   {
     name: "Solutions Partner Designation — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome. For FY27, Microsoft is merging several specializations (Analytics with Data Warehouse Migration; Low Code with Intelligent Automation into 'Agentic Business Solutions'; Kubernetes with Migrate Enterprise Applications into 'App Modernization') and adding a new Agentic Security Specialization, with affected partners auto-enrolled into the merged specialization under their existing designation. Designation and benefits-package renewals also move to a standardized 30-day pre-anniversary-date (AD-30) window.",
+    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome. For FY27, Microsoft is merging several specializations (Analytics with Data Warehouse Migration; Low Code with Intelligent Automation into 'Agentic Business Solutions'; Kubernetes with Migrate Enterprise Applications into 'App Modernization') and adding a new Agentic Security Specialization, with affected partners auto-enrolled into the merged specialization under their existing designation. Designation and benefits-package renewals also move to a standardized 30-day pre-anniversary-date (AD-30) window. As of July 31, 2026, Microsoft also removed the Azure Consumed Revenue (ACR) threshold for SMB-track eligibility across the Data & AI, Digital & App Innovation, and Infrastructure (Azure) solution paths — partners with at least 80% of customers in SMB/SMC-C segments now qualify for the SMB track without meeting the prior ACR minimum.",
     alias:
       "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
     source:
@@ -9057,7 +8722,6 @@ export const terms = [
     related: [
       { name: "Integration", slug: "integration" },
       { name: "Suger API Client", slug: "suger-api-client" },
-      { name: "Workflow", slug: "workflow" },
     ],
   },
   {
@@ -9668,35 +9332,6 @@ export const terms = [
     ],
   },
   {
-    name: "Payment Installments — Suger",
-    tags: ["suger", "billing"],
-    def: "A Suger console view that provides post-signing visibility into the installment payment schedule for an active entitlement — displaying each scheduled installment amount, due date, payment status (pending, paid, failed), and outstanding balance. This is an entitlement-level tracking surface, distinct from the Flexible Payment Schedule feature used at offer creation; it reflects the agreed schedule after the buyer has accepted the offer and allows ISVs and RevOps teams to monitor installment collection status without querying the marketplace API directly.",
-    alias:
-      "Related: Flexible Payment Schedule / Installment Plan, Entitlement, Invoice",
-    source: "https://doc.suger.io/billing/payment/",
-    difficulty: "intermediate",
-    category: "billing",
-    whoFor: ["ISVs / Sellers", "Suger Users"],
-    useCases: [
-      "Monitoring the collection status of each scheduled installment payment on an active enterprise entitlement without logging into the cloud marketplace portal",
-      "Identifying failed or overdue installment payments across the entitlement portfolio from the Suger console for RevOps follow-up",
-    ],
-    context: [
-      "Suger Console",
-      "Entitlement Detail View",
-      "Billing Management",
-      "Revenue Tracking",
-    ],
-    related: [
-      {
-        name: "Flexible Payment Schedule / Installment Plan",
-        slug: "flexible-payment-schedule-/-installment-plan",
-      },
-      { name: "Entitlement", slug: "entitlement" },
-      { name: "Invoice", slug: "invoice" },
-    ],
-  },
-  {
     name: "Zuora Integration — Suger",
     tags: ["suger", "integrations"],
     def: "Suger's native connection to Zuora's subscription billing and revenue management platform, enabling ISVs to sync marketplace entitlement data, usage records, and revenue events between Suger and Zuora without custom engineering. The integration maps Suger entitlement lifecycle events (creation, update, cancellation) to Zuora subscription objects and can push metered usage to Zuora's revenue recognition workflows, supporting unified billing for customers who transact across both cloud marketplace and direct channels.",
@@ -9898,8 +9533,8 @@ export const terms = [
       { name: "System Integrator (SI)", slug: "system-integrator-si" },
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
       {
-        name: "Partner Relationship Management (PRM)",
-        slug: "partner-relationship-management-prm",
+        name: "Partner Relationship Management (PRM) System",
+        slug: "partner-relationship-management-prm-system",
       },
       { name: "Co-sell", slug: "co-sell" },
     ],
@@ -9949,8 +9584,8 @@ export const terms = [
         slug: "global-system-integrator-gsi",
       },
       {
-        name: "Distribution Sell-Out Reseller Reporting (DSOR)",
-        slug: "distribution-sell-out-reseller-reporting-dsor",
+        name: "DSOR (Distribution Sell-Out Reseller Reporting)",
+        slug: "dsor-distribution-sell-out-reseller-reporting",
       },
       {
         name: "Partner Relationship Management (PRM) System",
@@ -12446,6 +12081,58 @@ export const terms = [
       { name: "Suger MCP Server", slug: "suger-mcp-server" },
       { name: "Co-sell", slug: "co-sell" },
       { name: "Account Mapping — Suger", slug: "account-mapping-—-suger" },
+    ],
+  },
+  // ── TD1 2026-08-03 additions ────────────────────────────────────────
+  {
+    name: "Partner Center Agent — Azure",
+    tags: ["azure", "operations"],
+    def: "Microsoft's AI assistant embedded in Partner Center, launched in 2025 with support for eight locales and focused on Commercial and Marketplace partner workflows — guiding ISVs through program enrollment, offer publishing, and co-sell steps via natural language. Broader integration opened up in July 2026, extending the assistant's reach across more partner workflows. Partner Center Agent parallels AWS Partner Central Agents and Google Cloud Partner Agent as Microsoft's own AI-native layer within its partner operations platform.",
+    alias:
+      "AWS equivalent: AWS Partner Central Agents — AWS | GCP equivalent: Google Cloud Partner Agent — GCP | Related: Partner Center — Azure",
+    source: "https://learn.microsoft.com/en-us/partner-center/enroll/partner-center-agent",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Getting natural-language guidance inside Partner Center for program enrollment, offer publishing, and co-sell workflow steps",
+      "Comparing Microsoft's AI-native partner portal layer against AWS Partner Central Agents and Google Cloud Partner Agent when evaluating cross-platform partner tooling",
+    ],
+    context: ["Microsoft Partner Center", "Azure Marketplace", "AI Features", "ISV Onboarding"],
+    related: [
+      { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
+      {
+        name: "AWS Partner Central Agents — AWS",
+        slug: "aws-partner-central-agents-—-aws",
+      },
+      {
+        name: "Google Cloud Partner Agent — GCP",
+        slug: "google-cloud-partner-agent-—-gcp",
+      },
+    ],
+  },
+  {
+    name: "Request Private Offer — Azure",
+    tags: ["azure", "offers"],
+    def: "A self-service option ISVs can enable on a Microsoft Marketplace listing that lets buyers request a private offer with custom pricing and terms directly from the listing page, instead of starting a separate sales conversation. Requests route through existing lead-management channels — Marketplace referrals, APIs, or connected CRMs — into the ISV's normal pipeline. Available for SaaS offers, Azure application offers, Azure container offers, and Azure Virtual Machines offers; disabled by default and toggled per listing.",
+    alias:
+      "Related: Multiparty Private Offer (MPO) — Azure, Private Plan — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/determine-your-listing-type#listing-options-by-offer-type",
+    difficulty: "intermediate",
+    category: "offers",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Enabling a self-service request-private-offer toggle on a Microsoft Marketplace listing to capture buyer-initiated custom pricing requests",
+      "Routing listing-page private offer requests into existing CRM or referral pipelines instead of building a separate intake process",
+    ],
+    context: ["Microsoft Marketplace", "Partner Center — Azure", "Listing Types"],
+    related: [
+      {
+        name: "Multiparty Private Offer (MPO) — Azure",
+        slug: "multiparty-private-offer-mpo-—-azure",
+      },
+      { name: "Private Plan — Azure", slug: "private-plan-—-azure" },
     ],
   },
 ];

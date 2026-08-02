@@ -305,6 +305,31 @@ export const learningPaths = [
         slug: "account-mapping-—-suger",
         why: "Account Mapping is how you turn your CRM pipeline into a co-sell targeting list. Suger maps your existing accounts against cloud partner account data across AWS, Azure, and GCP — surfacing which of your deals already have an active cloud partner relationship. These overlaps are the highest-probability co-sell engagements, because the hyperscaler already knows the account.",
       },
+      {
+        name: "Subsidiary Account Connection — AWS",
+        slug: "subsidiary-account-connection-—-aws",
+        why: "Once you're mapping accounts across a single AWS Partner Central account, Subsidiary Account Connection extends that to organizations running multiple AWS Marketplace seller accounts — linking them so qualifications, specializations, and program enrollments share across the whole group instead of being tracked separately per account.",
+      },
+      {
+        name: "Business Value Realization (BVR) Motion — AWS",
+        slug: "business-value-realization-bvr-motion-—-aws",
+        why: "As co-sell deals mature, customers increasingly expect partners to prove outcomes, not just close deals. The BVR Motion is AWS's framework for demonstrating measurable customer value — understanding it explains why outcome-based proof points are becoming a standard part of enterprise co-sell conversations.",
+      },
+      {
+        name: "Forward Deployed Engineering for Partners — AWS",
+        slug: "forward-deployed-engineering-for-partners-—-aws",
+        why: "For strategic consulting partners, AWS extends its agentic AI investment through the Forward Deployed Engineering motion — hands-on technical delivery embedded with partners on enterprise AI deployments. Relevant once your co-sell motion moves from software licensing into complex, high-touch implementation work.",
+      },
+      {
+        name: "Partner Agent Factory (PAF) — AWS",
+        slug: "partner-agent-factory-paf-—-aws",
+        why: "Partner Agent Factory is where AWS surfaces and co-develops AI agent solutions with partners for AWS Marketplace distribution — the productized end state of the agentic AI push that BVR and Forward Deployed Engineering feed into.",
+      },
+      {
+        name: "Partner Lead Prospecting — AWS",
+        slug: "partner-lead-prospecting-—-aws",
+        why: "Everything so far has been about executing on opportunities that already exist. Partner Lead Prospecting flips that — an AI-powered AWS Partner Central feature that generates net-new sales plays, call scripts, and outreach templates for ACE-eligible partners, extending co-sell motion further upstream into pipeline generation itself.",
+      },
     ],
   },
   {
@@ -368,11 +393,6 @@ export const learningPaths = [
         name: "Disbursement",
         slug: "disbursement",
         why: "After committed spend purchases are billed and fees are deducted, ISVs receive their proceeds through disbursement. Understand the payout schedule, currency handling, and reconciliation process.",
-      },
-      {
-        name: "Payment Installments — Suger",
-        slug: "payment-installments-—-suger",
-        why: "For enterprise deals with installment billing schedules, the Payment Installments view in Suger shows the post-signing state of each scheduled payment — amounts, due dates, and collection status. This is the RevOps surface for monitoring whether installments are hitting on time and flagging failures before they become disputes.",
       },
     ],
   },
@@ -1170,6 +1190,16 @@ export const learningPaths = [
         slug: "aws-marketplace-vendor-insights",
         why: "Enterprise buyers increasingly run security questionnaire processes before approving marketplace purchases. Vendor Insights gives your listing a continuously-updated security and compliance profile — aggregating SOC 2, ISO certifications, and AWS Security Hub data — so buyers can approve faster without repeated manual questionnaire responses.",
       },
+      {
+        name: "AWS Marketplace Single Pane of Glass (SPG) Dashboard — AWS",
+        slug: "aws-marketplace-single-pane-of-glass-spg-dashboard-—-aws",
+        why: "Vendor Insights covers buyer-facing trust signals — the SPG Dashboard is the seller-side counterpart, consolidating listing performance, customer agreements, and search performance into one reporting view instead of cross-referencing separate reports.",
+      },
+      {
+        name: "Amazon Connect Customer Services Competency — AWS",
+        slug: "amazon-connect-customer-services-competency-—-aws",
+        why: "AWS Competencies validate partners in specific solution areas — the Amazon Connect Customer Services Competency is the relevant one for partners migrating legacy contact centers to AI-powered customer experiences on Amazon Connect, a vertical worth knowing if your marketplace listing touches contact-center modernization.",
+      },
     ],
   },
   {
@@ -1193,6 +1223,11 @@ export const learningPaths = [
         name: "Partner Center — Azure",
         slug: "partner-center-—-azure",
         why: "Partner Center is where ISVs publish and manage every offer on Microsoft Marketplace. Learn how it's structured, what's configured there, and how it connects to the SaaS Fulfillment API and co-sell workflows.",
+      },
+      {
+        name: "Partner Center Agent — Azure",
+        slug: "partner-center-agent-—-azure",
+        why: "Partner Center is where you manage every Microsoft Marketplace offer — Partner Center Agent is the AI layer now built into it, guiding you through workflows in natural language. It parallels AWS Partner Central Agents and Google Cloud Partner Agent, giving Microsoft its own AI-native layer inside the partner portal.",
       },
       {
         name: "Plan — Azure",
@@ -1245,6 +1280,11 @@ export const learningPaths = [
         why: "As ISVs transact more revenue through Microsoft Marketplace, they unlock Marketplace Rewards — marketing, technical, and sales benefits. Learn what's available at each revenue tier and how to activate rewards.",
       },
       {
+        name: "Frontier Accelerate for Marketplace — Azure",
+        slug: "frontier-accelerate-for-marketplace-—-azure",
+        why: "Marketplace Rewards is one of three programs — alongside ISV Success and Azure IP co-sell — that Frontier Accelerate consolidates into a single FY27 enrollment. Understanding Frontier Accelerate now prevents confusion when these separate programs merge at renewal.",
+      },
+      {
         name: "SaaS Fulfillment API — Azure",
         slug: "saas-fulfillment-api-—-azure",
         why: "The SaaS Fulfillment API is how ISVs integrate their SaaS products with Microsoft Marketplace — handling subscription lifecycle events, activation, and plan changes. Learn the required endpoints and what Suger abstracts.",
@@ -1268,6 +1308,11 @@ export const learningPaths = [
         name: "Microsoft Preferred Solutions Badge — Azure",
         slug: "microsoft-preferred-solutions-badge-—-azure",
         why: "The Preferred Solutions Badge is Azure's top-tier quality signal — awarded annually by Microsoft solution area teams to ISVs with outstanding customer impact and technology alignment. It unlocks elevated search placement and co-sell prioritization by Microsoft field sellers, making it the highest-leverage trust credential available to a transactable Azure offer.",
+      },
+      {
+        name: "Partner Marketing Center Pro — Azure",
+        slug: "partner-marketing-center-pro-—-azure",
+        why: "Frontier Accelerate bundles ISV Success and Solutions Partner eligibility — Partner Marketing Center Pro is one of the AI-powered benefits ISVs unlock through that eligibility, generating campaign assets from a guided profile instead of building them from scratch.",
       },
     ],
   },
@@ -1342,6 +1387,11 @@ export const learningPaths = [
         name: "Procurement API — GCP",
         slug: "procurement-api-—-gcp",
         why: "The Procurement API is how ISVs integrate with GCP Marketplace — handling entitlement events, subscription approvals, and usage reporting. Learn the core endpoints and what Suger wraps for GCP integrations.",
+      },
+      {
+        name: "Cloud Commerce Producer API — GCP",
+        slug: "cloud-commerce-producer-api-—-gcp",
+        why: "The Procurement API handles entitlement events; the Cloud Commerce Producer API extends that programmatic layer to private-offer creation itself — letting ISVs publish and manage GCP Marketplace private offers without the Producer Portal UI, closing the gap with AWS and Azure's offer-management APIs.",
       },
     ],
   },
@@ -1426,11 +1476,6 @@ export const learningPaths = [
     ],
     next: "cloud-funding-incentives",
     steps: [
-      {
-        name: "Partner Revenue Management (PRM)",
-        slug: "partner-revenue-management-prm",
-        why: "Start with the concept: PRM is the full billing lifecycle from offer creation through disbursement and reporting. This is Suger's framing — before going into AWS-specific mechanics, understand what you're ultimately trying to measure and reconcile.",
-      },
       {
         name: "Disbursement",
         slug: "disbursement",
@@ -1619,11 +1664,6 @@ export const learningPaths = [
         name: "CRM Enrichment",
         slug: "crm-enrichment",
         why: "Signals are only actionable if they reach your reps. CRM Enrichment is how Suger pushes PTB scores and intelligence signals into Salesforce and HubSpot on a 12-hour sync cycle. Understand the field mapping model so your RevOps team can build scoring views and routing rules on top of live data.",
-      },
-      {
-        name: "Buyer Wallet",
-        slug: "buyer-wallet",
-        why: "PTB score measures intent — Buyer Wallet measures capacity. An account with high intent but a fully drawn-down committed spend balance may not be able to transact this quarter. Layer wallet visibility onto PTB data to separate true tier-1 targets from accounts to nurture for next cycle.",
       },
       {
         name: "APN Customer Engagements (ACE) — AWS",

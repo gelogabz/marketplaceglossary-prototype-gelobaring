@@ -580,7 +580,38 @@ function formatReviewedDate(iso) {
   return `Reviewed ${MONTHS_SHORT[parseInt(m, 10) - 1]} ${y}`;
 }
 
+// Keeps the meta description, OG description, and JSON-LD numberOfItems in
+// sync with the live term count — no manual HTML edit needed when terms.js changes.
+function syncTermCountMeta() {
+  const count = terms.length;
+  const text = `${count} cloud marketplace terms covering AWS, Azure, GCP, Snowflake, Alibaba, and Suger. Search, filter, and explore the complete Cloud GTM reference.`;
+
+  const desc = document.querySelector('meta[name="description"]');
+  if (desc) desc.setAttribute("content", text);
+
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.setAttribute("content", text);
+
+  const jsonLd = document.getElementById("glossaryJsonLd");
+  if (jsonLd) {
+    try {
+      const data = JSON.parse(jsonLd.textContent);
+      const definedTermSet = data["@graph"]?.find(
+        (node) => node["@type"] === "DefinedTermSet",
+      );
+      if (definedTermSet) {
+        definedTermSet.numberOfItems = count;
+        definedTermSet.description = `${count} cloud marketplace terms covering AWS, Azure, GCP, Snowflake, Alibaba, and Suger.`;
+        jsonLd.textContent = JSON.stringify(data);
+      }
+    } catch {
+      // malformed JSON-LD — leave as-is rather than break the page
+    }
+  }
+}
+
 window.onload = () => {
+  syncTermCountMeta();
   const badge = document.getElementById("reviewedBadge");
   if (badge) badge.textContent = formatReviewedDate(lastReviewed);
   buildLPFilterButtons();
