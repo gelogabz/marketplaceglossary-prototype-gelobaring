@@ -787,7 +787,13 @@ async function main() {
   );
 
   // Write CSV mirror
-  const csvEsc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+  // Commas inside field content are replaced with semicolons (not just quote-escaped)
+  // because some third-party CSV-to-table converters split columns on any comma,
+  // ignoring quoting entirely. RFC 4180 quoting alone doesn't protect against that.
+  const csvEsc = (v) =>
+    `"${String(v ?? "")
+      .replace(/,\s*/g, "; ")
+      .replace(/"/g, '""')}"`;
   const CSV_COLS = [
     "id",
     "platform",
