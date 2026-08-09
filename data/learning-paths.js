@@ -132,6 +132,11 @@ export const learningPaths = [
         why: "Start with the foundation — direct seller-to-buyer custom pricing on any cloud marketplace. Understanding what a private offer is sets the stage for everything else in this path.",
       },
       {
+        name: "Private Offer — AWS",
+        slug: "private-offer-—-aws",
+        why: "Now that you understand the generic private-offer concept, see how AWS implements it specifically — custom pricing, payment schedules (including the new Net 30/45/60/90 net payment terms), and contract durations sent directly to a buyer's AWS account. This is the base mechanic the Express, ABO, and CPPO variants all build on.",
+      },
+      {
         name: "Express Private Offer — AWS",
         slug: "express-private-offer-—-aws",
         why: "Launched November 2025, Express Private Offers use AI to auto-generate and deliver personalized offers to buyers without manual negotiation. If you're building a private offer today on AWS, this is the flow you'll encounter in AMMP.",
@@ -604,6 +609,11 @@ export const learningPaths = [
         name: "Collaboration Score — Suger",
         slug: "collaboration-score-—-suger",
         why: "Co-sell Insights tells you which opportunities to act on; Collaboration Score narrows further to which specific partner contacts within those opportunities are worth engaging, ranked by quality rather than raw activity.",
+      },
+      {
+        name: "SCA Goal Tracking — Suger",
+        slug: "sca-goal-tracking-—-suger",
+        why: "Collaboration Score tells you which partner contacts to prioritize; SCA Goal Tracking rolls that activity up against the formal joint business goals in an AWS Strategic Collaboration Agreement — the aggregate view before you get to the Co-Sell Metrics Dashboard.",
       },
       {
         name: "Co-Sell Metrics Dashboard — Suger",
@@ -1189,6 +1199,11 @@ export const learningPaths = [
         name: "AWS Marketplace Vendor Insights",
         slug: "aws-marketplace-vendor-insights",
         why: "Enterprise buyers increasingly run security questionnaire processes before approving marketplace purchases. Vendor Insights gives your listing a continuously-updated security and compliance profile — aggregating SOC 2, ISO certifications, and AWS Security Hub data — so buyers can approve faster without repeated manual questionnaire responses.",
+      },
+      {
+        name: "AI Insights — AWS",
+        slug: "ai-insights-—-aws",
+        why: "Vendor Insights builds buyer trust on compliance; AI Insights builds buyer trust on pricing — AI-generated, plain-language explanations of what a listing's pricing unit means and how costs scale, shown directly on the listing page before purchase.",
       },
       {
         name: "AWS Marketplace Single Pane of Glass (SPG) Dashboard — AWS",

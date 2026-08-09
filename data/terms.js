@@ -1061,7 +1061,7 @@ export const terms = [
     alias:
       "Related: Agreement-Based Offer (ABO) — AWS, Resale Authorization — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-seller-future-dated-private-offers-and-agreements.html",
     difficulty: "advanced",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -1197,10 +1197,10 @@ export const terms = [
   {
     name: "Included Quantity — Azure",
     tags: ["azure"],
-    def: "In Azure Flat Rate and Per User pricing, the usage amount included in the base subscription price. Any consumption above this triggers metered overage charges.",
+    def: "In Azure Flat Rate SaaS pricing, the usage amount (per billing dimension) included in the base subscription price — configured as a 1-month, 1-year, 2-year, or 3-year 'quantity included in base.' Consumption beyond that quantity is reported to Microsoft via the Marketplace metering service API and billed as overage on the next billing cycle. This mechanism is exclusive to the flat-rate pricing model — Azure's per-user pricing model does not support metered billing or included quantities.",
     alias: "Related: Flat Rate Pricing — Azure, Overage",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/saas-metered-billing",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -5777,7 +5777,7 @@ export const terms = [
     name: "Private Offer — AWS",
     tags: ["aws", "offers"],
     group: "private-offer",
-    def: "A custom pricing and terms agreement sent directly to a specific AWS account through AWS Marketplace. ISVs use private offers to negotiate custom pricing, payment schedules, contract durations, and EULA terms outside the public listing price. Private offers are accessed via a unique URL and must be accepted before the expiry date set by the seller. Variants include Express Private Offer (simplified flow), Agreement-Based Offer (ABO, for renewals on existing agreements), and Channel Partner Private Offer (CPPO, for reseller transactions).",
+    def: "A custom pricing and terms agreement sent directly to a specific AWS account through AWS Marketplace. ISVs use private offers to negotiate custom pricing, payment schedules — including, as of August 2026, explicit net payment terms of Net 30, 45, 60, or 90 days, with channel partners able to offer terms within ISV-defined maximums — contract durations, and EULA terms outside the public listing price. Private offers are accessed via a unique URL and must be accepted before the expiry date set by the seller. Variants include Express Private Offer (simplified flow), Agreement-Based Offer (ABO, for renewals on existing agreements), and Channel Partner Private Offer (CPPO, for reseller transactions).",
     alias:
       "Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Related: Express Private Offer — AWS, Agreement-Based Offer (ABO) — AWS, Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
     source:
@@ -5788,6 +5788,7 @@ export const terms = [
     useCases: [
       "Closing a custom-priced enterprise deal by sending a private offer with negotiated terms directly to the buyer's AWS account",
       "Setting a flexible payment schedule on an AWS private offer to match the buyer's budget cadence without changing the public listing price",
+      "Configuring Net 30/45/60/90 payment terms on a private offer to give buyers upfront clarity on payment due dates",
     ],
     context: [
       "AWS Marketplace",
@@ -6829,7 +6830,7 @@ export const terms = [
   {
     name: "CRM Enrichment",
     tags: ["suger"],
-    def: "A Suger feature that automatically pushes hyperscaler engagement scores, propensity signals, and marketplace activity metrics into Salesforce and HubSpot custom fields via configurable field mappings. Runs on a 12-hour sync schedule and covers all three cloud providers: AWS (Marketplace Engagement Score, Solution Engagement Score), Azure (Engagement Score, Event Score, Usage Score), and GCP (Engagement Score, Marketplace Count, Review Count, Purchase Count). Configured inside the Suger Console under integrations — no PDM or manual export required.",
+    def: "A Suger feature that automatically pushes hyperscaler engagement scores, propensity signals, and marketplace activity metrics into Salesforce and HubSpot custom fields via configurable field mappings — including, as of June 2026, AI-generated mapping suggestions that recommend destination fields based on the source hyperscaler signal. Runs on a 12-hour sync schedule and covers all three cloud providers: AWS (Marketplace Engagement Score, Solution Engagement Score), Azure (Engagement Score, Event Score, Usage Score), and GCP (Engagement Score, Marketplace Count, Review Count, Purchase Count). Configured inside the Suger Console under integrations — no PDM or manual export required.",
     alias:
       "Related: Propensity to Buy (PTB) Score, AWS Intelligence Signals — AWS, Azure Intelligence Signals — Azure, GCP Intelligence Signals — GCP",
     source: "https://doc.suger.io/integrations/salesforce/",
@@ -8092,7 +8093,7 @@ export const terms = [
   {
     name: "Solutions Partner Designation — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome. For FY27, Microsoft is merging several specializations (Analytics with Data Warehouse Migration; Low Code with Intelligent Automation into 'Agentic Business Solutions'; Kubernetes with Migrate Enterprise Applications into 'App Modernization') and adding a new Agentic Security Specialization, with affected partners auto-enrolled into the merged specialization under their existing designation. Designation and benefits-package renewals also move to a standardized 30-day pre-anniversary-date (AD-30) window. As of July 31, 2026, Microsoft also removed the Azure Consumed Revenue (ACR) threshold for SMB-track eligibility across the Data & AI, Digital & App Innovation, and Infrastructure (Azure) solution paths — partners with at least 80% of customers in SMB/SMC-C segments now qualify for the SMB track without meeting the prior ACR minimum.",
+    def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome. For FY27, Microsoft is merging several specializations (Analytics with Data Warehouse Migration; Low Code with Intelligent Automation into 'Agentic Business Solutions'; Kubernetes with Migrate Enterprise Applications into 'App Modernization') and adding a new Agentic Security Specialization, with affected partners auto-enrolled into the merged specialization under their existing designation. Designation and benefits-package renewals also move to a standardized 30-day pre-anniversary-date (AD-30) window. As of July 31, 2026, Microsoft also removed the Azure Consumed Revenue (ACR) threshold for SMB-track eligibility across the Data & AI, Digital & App Innovation, and Infrastructure (Azure) solution paths — partners with at least 80% of customers in SMB/SMC-C segments now qualify for the SMB track without meeting the prior ACR minimum. In August 2026, Microsoft renamed the customer-facing badges for these designations to align with three commercial solution areas — AI Business Solutions, Cloud & AI Platforms, and Security — while the underlying six solution paths, requirements, and scoring are unchanged.",
     alias:
       "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
     source:
@@ -12133,6 +12134,58 @@ export const terms = [
         slug: "multiparty-private-offer-mpo-—-azure",
       },
       { name: "Private Plan — Azure", slug: "private-plan-—-azure" },
+    ],
+  },
+  // ── TD1 2026-08-09 additions ────────────────────────────────────────
+  {
+    name: "AI Insights — AWS",
+    tags: ["aws"],
+    def: "AI-generated explanations that appear directly in the pricing section of an AWS Marketplace listing, translating a product's pricing model into plain language before a buyer purchases. AI Insights clarifies what a pricing unit corresponds to and projects how a buyer's bill changes as usage scales, citing the underlying pricing data as its source. Rolled out across all AWS Marketplace commercial regions in August 2026 to reduce pre-purchase pricing confusion on usage-based and tiered listings.",
+    alias: "Related: Listing, SaaS Subscription Pricing — AWS, Buyer",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-ai-insights",
+    difficulty: "beginner",
+    category: "procurement",
+    whoFor: ["Enterprise Buyers", "ISVs / Sellers"],
+    useCases: [
+      "Reviewing AI Insights on a listing's pricing section to understand how a usage-based pricing unit will affect total spend before purchasing",
+      "Comparing AI Insights explanations across competing listings to evaluate pricing structures without contacting a seller",
+    ],
+    context: ["AWS Marketplace", "AWS Marketplace Listing Pages"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      {
+        name: "SaaS Subscription Pricing — AWS",
+        slug: "saas-subscription-pricing-—-aws",
+      },
+      { name: "Buyer", slug: "buyer" },
+    ],
+  },
+  {
+    name: "SCA Goal Tracking — Suger",
+    tags: ["suger", "cosell"],
+    def: "A Suger Console feature that tracks a partner's progress against the joint business goals and co-sell targets defined in an AWS Strategic Collaboration Agreement (SCA), surfacing milestone attainment alongside other co-sell metrics. Shipped in Suger's June 2026 product update alongside Co-Sell MCP Server and Collaboration Score. It gives Partner Managers a single view of SCA commitment progress without manually cross-referencing AWS Partner Central.",
+    alias:
+      "Related: Strategic Collaboration Agreement (SCA) — AWS, Co-Sell Metrics Dashboard — Suger, Collaboration Score — Suger",
+    source: "https://www.suger.io/resources/blog/product-updates-june-2026/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["Suger Users", "Partner Managers"],
+    useCases: [
+      "Monitoring progress toward AWS SCA co-sell and GTM investment milestones directly inside the Suger Console",
+      "Surfacing SCA goal attainment alongside Collaboration Score and Co-Sell Metrics Dashboard data ahead of a quarterly business review",
+    ],
+    context: ["Suger Console", "AWS Strategic Collaboration Agreement", "Co-sell Programs"],
+    related: [
+      {
+        name: "Strategic Collaboration Agreement (SCA) — AWS",
+        slug: "strategic-collaboration-agreement-sca-—-aws",
+      },
+      {
+        name: "Co-Sell Metrics Dashboard — Suger",
+        slug: "co-sell-metrics-dashboard-—-suger",
+      },
+      { name: "Collaboration Score — Suger", slug: "collaboration-score-—-suger" },
     ],
   },
 ];
