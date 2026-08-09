@@ -106,7 +106,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--orange-text);
-    margin-top: 8px;
+    margin: 12px 0 2rem;
     cursor: pointer;
     text-decoration: none;
     padding: 4px 10px;

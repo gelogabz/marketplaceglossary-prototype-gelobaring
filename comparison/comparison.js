@@ -139,6 +139,7 @@ const CONCEPT_OVERRIDES = {
   "Tax Details Dashboard — AWS": "Marketplace Tax Configuration",
   "Offer Set — AWS": "Offer Set",
   "Offer Set — Suger": "Offer Set",
+  "AWS Marketplace Catalog API — AWS": "Marketplace Catalog & Offer API",
 };
 
 // Concept label: check override map first (all terms per platform), then Suger name, then AWS...
@@ -172,6 +173,22 @@ function conceptLabel(byPlatform) {
 const rows = Object.values(groups)
   .filter((g) => Object.keys(g).length >= 2)
   .sort((a, b) => conceptLabel(a).localeCompare(conceptLabel(b)));
+
+// Dev guard: the Concept column must stay platform-agnostic — only the platform
+// cells should carry hyperscaler branding. If a new cross-link lands without a
+// CONCEPT_OVERRIDES entry and its raw term name is platform-branded, warn loudly
+// instead of letting it silently ship (e.g. "AWS Marketplace Catalog API — AWS").
+const BRAND_LEAK_RE =
+  /\b(AWS|Amazon|Azure|Microsoft|GCP|Google Cloud|Google|Snowflake|Alibaba|Oracle|Suger)\b/i;
+rows.forEach((g) => {
+  const label = conceptLabel(g);
+  if (BRAND_LEAK_RE.test(label)) {
+    console.warn(
+      `[comparison] Concept label "${label}" leaks a platform brand name. ` +
+        `Add a CONCEPT_OVERRIDES entry for the underlying term.`,
+    );
+  }
+});
 
 // ---- Render ----
 
