@@ -1,6 +1,116 @@
 {
-  "lastUpdated": "2026-08-09T06:37:27.980Z",
+  "lastUpdated": "2026-08-10T07:09:08.231Z",
   "updates": [
+    {
+      "id": "suger-2026-08-09-aws-the-aws-isv-partner-path-is-now-the-software-p",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is t",
+      "summary": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is the least interesting part. What matters is which stage you are at, and what each one actually unlocks. Aug 9, 2026 Read article",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-isv-partner-path/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-aws-aws-marketplace-contract-pricing-vs-usage-pric",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS AWS Marketplace Contract Pricing vs Usage Pricing The difference is not commercial, it's architectural. A contract p",
+      "summary": "AWS AWS Marketplace Contract Pricing vs Usage Pricing The difference is not commercial, it's architectural. A contract product verifies entitlements and never meters. A subscription product meters every hour or you don't get paid. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-contract-vs-usage-pricing/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-aws-aws-marketplace-renewals-an-operating-playbook",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS AWS Marketplace Renewals: An Operating Playbook A marketplace renewal is not a renewal conversation with a purchase ",
+      "summary": "AWS AWS Marketplace Renewals: An Operating Playbook A marketplace renewal is not a renewal conversation with a purchase order at the end. It is a dated event with an automatic default, and the default fires whether or not anyone is watching. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-renewals/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-aws-what-aws-marketplace-seller-insights-actually-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS What AWS Marketplace Seller Insights Actually Show AWS gives sellers eight dashboards for free, and most teams use o",
+      "summary": "AWS What AWS Marketplace Seller Insights Actually Show AWS gives sellers eight dashboards for free, and most teams use one of them. Here is what each actually reports — and the specific blind spot each one carries. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-seller-insights/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-aws-how-to-cancel-an-aws-marketplace-subscription-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A sub",
+      "summary": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A subscription ends from a console page; a contract goes through AWS Support inside a 48-hour window most people miss. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cancel-aws-marketplace-subscription/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-cloud-gtm-cloud-marketplace-metrics-worth-a-dashbo",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metr",
+      "summary": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metrics worth building are the ones that change a decision — and each one needs a named source dataset. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cloud-marketplace-metrics/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-cloud-gtm-cloud-marketplace-pricing-models-how-to-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "Cloud GTM Cloud Marketplace Pricing Models: How to Choose AWS, Microsoft, and Google Cloud each support a different set ",
+      "summary": "Cloud GTM Cloud Marketplace Pricing Models: How to Choose AWS, Microsoft, and Google Cloud each support a different set of pricing models — and all three make the choice permanent. Here is the cross-cloud comparison nobody publishes. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cloud-marketplace-pricing-models/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-cloud-gtm-marketplace-vs-direct-sales-when-each-wi",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "Cloud GTM Marketplace vs Direct Sales: When Each Wins Most writing on this question is produced by companies paid when y",
+      "summary": "Cloud GTM Marketplace vs Direct Sales: When Each Wins Most writing on this question is produced by companies paid when you choose the marketplace. Here is the honest version, including the deals where direct is plainly the better channel. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-vs-direct-sales/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-prm-partner-sourced-vs-partner-influenced-revenue-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "PRM Partner-Sourced vs Partner-Influenced Revenue Every partnerships leader has been asked to prove partner revenue is r",
+      "summary": "PRM Partner-Sourced vs Partner-Influenced Revenue Every partnerships leader has been asked to prove partner revenue is real. The answer depends on a distinction most teams have never written down — and cannot defend when a CFO pushes. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/partner-sourced-vs-partner-influenced/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-cloud-gtm-who-should-own-cloud-marketplace-revenue",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "Cloud GTM Who Should Own Cloud Marketplace Revenue at an ISV? Marketplace revenue usually lands wherever the first deal ",
+      "summary": "Cloud GTM Who Should Own Cloud Marketplace Revenue at an ISV? Marketplace revenue usually lands wherever the first deal happened to land. Four ownership models exist, each optimises for something different, and the wrong one is expensive. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/who-owns-cloud-marketplace-revenue/",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-08-07-enhance-dns-protection-with-palo-alto-networks-on-",
       "platform": "AWS",
@@ -73,7 +183,7 @@
       "platformTag": "suger",
       "date": "2026-08-06",
       "title": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sell",
-      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment — and what can't be undone. Aug 6, 2026 Read article",
+      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment — and what can't be undone. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-refunds-and-cancellations/",
       "impact": "low"
@@ -233,17 +343,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-aws-marketplace-for-sellers-the-complete-guide",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, f",
-      "summary": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, fees, private offers, resell (CPPO), co-sell with ACE, and payouts. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-for-sellers-complete-guide/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-gcp-google-cloud-marketplace-the-isv-seller-guide-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -285,6 +384,17 @@
       "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-aws-marketplace-for-sellers-the-complete-guide",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, f",
+      "summary": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, fees, private offers, resell (CPPO), co-sell with ACE, and payouts. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-for-sellers-complete-guide/",
       "impact": "low"
     },
     {
