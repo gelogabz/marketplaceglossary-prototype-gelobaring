@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-11T06:46:32.228Z",
+  "lastUpdated": "2026-08-12T07:07:21.456Z",
   "updates": [
     {
       "id": "azure-2026-08-10-enter-the-csp-copilot-partner-council-contest",
@@ -387,17 +387,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-marketplaces-oracle-cloud-marketplace-a-guide-for-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committ",
-      "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-06-gcp-bringing-resellers-into-google-cloud-marketpla",
       "platform": "Suger",
       "platformTag": "suger",
@@ -406,6 +395,17 @@
       "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/resellers-on-google-cloud-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-marketplaces-oracle-cloud-marketplace-a-guide-for-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committ",
+      "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
       "impact": "low"
     },
     {
