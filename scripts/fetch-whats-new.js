@@ -33,6 +33,8 @@
  *   Oracle Marketplace Release Notes https://docs.oracle.com/en-us/iaas/releasenotes/services/marketplace/index.htm (HTML)
  *   Oracle Marketplace Blog https://blogs.oracle.com/oraclemarketplace/feed (RSS)
  *   Suger Blog          https://www.suger.io/resources/blog/      (HTML)
+ *   Suger Changelog     https://www.suger.io/resources/changelog/ (HTML)
+ *   Insulin Changelog   https://www.insulin.dev/changelog/        (HTML)
  *
  *   AWS What's New is keyword-filtered to marketplace-relevant entries only.
  *   AWS Marketplace Blog and AWS APN Blog entries are included (no keyword filter).
@@ -43,6 +45,9 @@
  *   Oracle's blog is filtered by category ("Oracle Cloud Marketplace" /
  *   "Oracle Marketplace Insights") with a keyword fallback for uncategorized posts.
  *   Azure and Suger Blog entries are included without additional filtering.
+ *   Suger Changelog and Insulin Changelog are one entry per release date (not
+ *   per bullet) — title is "{Product}: As of {date}", summary joins that
+ *   date's bullets into one line.
  *
  *   KNOWN FLAKY: Oracle Marketplace Blog returns 403 (Akamai bot mitigation) from
  *   every environment tested so far — may or may not work from GitHub Actions'
@@ -711,6 +716,89 @@ async function fetchSugerBlog() {
   return results;
 }
 
+// ── Source: Suger + Insulin Changelogs (HTML) ─────────────────────────────────
+//
+// Both suger.io/resources/changelog/ and insulin.dev/changelog/ share the exact
+// same page template: one <div id="release-YYYY-MM-DD"> per release, containing
+// a <ul> of <li> bullets for that date. The ISO date lives directly in the id
+// attribute — no date-string parsing needed. One entry per release date (not
+// per bullet): title is "{Product}: As of {display date}", summary is all of
+// that date's bullets joined into one line. The product prefix matters because
+// both sites can ship on the same calendar date — without it, two same-day
+// entries under platform "Suger" would collide on the stable ID and one would
+// silently overwrite the other.
+
+const MONTH_NAMES = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+];
+function formatDisplayDate(isoDate) {
+  const [y, m, d] = isoDate.split("-").map(Number);
+  return `${MONTH_NAMES[m - 1]} ${d}, ${y}`;
+}
+
+function parseReleaseChangelog(html, pageUrl) {
+  const releases = [];
+  const markerRe = /id="release-(\d{4}-\d{2}-\d{2})"/g;
+  const marks = [...html.matchAll(markerRe)];
+  for (let i = 0; i < marks.length; i++) {
+    const date = marks[i][1];
+    if (!isRecent(date)) continue;
+    const start = marks[i].index;
+    const end = i + 1 < marks.length ? marks[i + 1].index : html.length;
+    const block = html.slice(start, end);
+    const bullets = [];
+    const liRe = /<li[^>]*>([\s\S]*?)<\/li>/g;
+    let lm;
+    while ((lm = liRe.exec(block)) !== null) {
+      const text = scrub(lm[1]);
+      if (text) bullets.push(text);
+    }
+    if (!bullets.length) continue;
+    releases.push({
+      date,
+      bullets,
+      sourceUrl: `${pageUrl}#release-${date}`,
+    });
+  }
+  return releases;
+}
+
+async function fetchProductChangelog(pageUrl, productLabel) {
+  const html = await fetchText(pageUrl);
+  return parseReleaseChangelog(html, pageUrl).map(
+    ({ date, bullets, sourceUrl }) => {
+      const title = `${productLabel}: As of ${formatDisplayDate(date)}`;
+      const combined = bullets.join(" ");
+      return {
+        id: stableId("suger", date, title),
+        platform: "Suger",
+        platformTag: "suger",
+        date,
+        title,
+        summary: oneLiner(combined),
+        type: "release",
+        sourceUrl,
+        impact: scoreImpact(combined),
+      };
+    },
+  );
+}
+
+async function fetchSugerChangelog() {
+  return fetchProductChangelog(
+    "https://www.suger.io/resources/changelog/",
+    "Suger",
+  );
+}
+
+async function fetchInsulinChangelog() {
+  return fetchProductChangelog(
+    "https://www.insulin.dev/changelog/",
+    "Insulin",
+  );
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -738,6 +826,8 @@ async function main() {
     ["Oracle Marketplace Release Notes", fetchOracleMarketplace],
     ["Oracle Marketplace Blog", fetchOracleBlog],
     ["Suger Blog", fetchSugerBlog],
+    ["Suger Changelog", fetchSugerChangelog],
+    ["Insulin Changelog", fetchInsulinChangelog],
   ];
 
   const fresh = [];

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T07:11:09.238Z",
+  "lastUpdated": "2026-08-13T14:55:52.333Z",
   "updates": [
     {
       "id": "azure-2026-08-12-csp-software-pricing-update-effective-october-1-20",
@@ -783,6 +783,28 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-03-suger-as-of-aug-3-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-03",
+      "title": "Suger: As of Aug 3, 2026",
+      "summary": "Aligned AWS co-sell contacts with Partner Central across the create form and the detail pages in Salesforce, HubSpot, and the console. Co-sell docs Split partner commission tiles by direction, so payable and receivable are visible separately.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-08-03",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-08-03-insulin-as-of-aug-3-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-03",
+      "title": "Insulin: As of Aug 3, 2026",
+      "summary": "Put agent-initiated Slack messages behind an approval gate, so nothing is sent on your behalf without a human confirming it. Agents Surfaced how jobs, channels, and apps relate to each other, so it is clear what a scheduled run will touch.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-08-03",
+      "impact": "medium"
+    },
+    {
       "id": "azure-2026-07-31-expanded-smb-track-eligibility",
       "platform": "Azure",
       "platformTag": "azure",
@@ -891,6 +913,28 @@
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-07-27-suger-as-of-jul-27-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-27",
+      "title": "Suger: As of Jul 27, 2026",
+      "summary": "Moved Google Cloud Marketplace catalog and private-offer sync onto the Commerce Producer SDK. Added Broadcasts, which compose one message and send it to every partner Slack channel. PRM docs Hardened authentication between internal services.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-07-27",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-07-27-insulin-as-of-jul-27-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-27",
+      "title": "Insulin: As of Jul 27, 2026",
+      "summary": "Released the Inbox app, with a rebuilt interface and full email support. Inbox App Unified the job detail page and added a runs table, so every past execution of a job is visible in one place. Jobs Fixed disabled cron schedules that could still fire.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-07-27",
+      "impact": "medium"
     },
     {
       "id": "gcp-2026-07-24-feature-you-can-now-use-the-cloud-commerce-produce",
@@ -1003,6 +1047,28 @@
       "impact": "high"
     },
     {
+      "id": "suger-2026-07-20-suger-as-of-jul-20-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-20",
+      "title": "Suger: As of Jul 20, 2026",
+      "summary": "Added AWS opportunity quality-score prediction and AI-generated business problems to the co-sell referral form. How co-sell works Made the partner portal Overview page customizable with templates and CMS content.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-07-20",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-07-20-insulin-as-of-jul-20-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-20",
+      "title": "Insulin: As of Jul 20, 2026",
+      "summary": "Added integration-introspection tools, so an agent can list the integrations available to it, inspect one, and check its connection before acting. Agents Added a download button to every renderer in the Preview app. Fixed connecting integrations that do not use OAuth.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-07-20",
+      "impact": "medium"
+    },
+    {
       "id": "azure-2026-07-16-multiparty-private-offers-expand-to-more-markets",
       "platform": "Azure",
       "platformTag": "azure",
@@ -1100,6 +1166,28 @@
       "type": "pricing",
       "sourceUrl": "https://aka.ms/Copilotin30Kit",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-07-13-suger-as-of-jul-13-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-13",
+      "title": "Suger: As of Jul 13, 2026",
+      "summary": "Added multi-partner attribution to co-sell, with commission terms owned by the reseller. Added hourly auto-sync for Oracle Cloud Marketplace and revenue sync from the OCI publisher disbursement report.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-07-13",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-07-13-insulin-as-of-jul-13-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-13",
+      "title": "Insulin: As of Jul 13, 2026",
+      "summary": "Added organization-level knowledge base connectors for GitHub and Google Drive, with sync status visible per connector and per document. Knowledge bases Extended the Email app with a Salesforce trigger and Outlook as a source. Inbox App",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-07-13",
+      "impact": "medium"
     },
     {
       "id": "aws-2026-07-10-aws-partner-central-subsidiary-connections-now-sup",
@@ -1253,6 +1341,28 @@
       "summary": "DLP in Defender for Cloud Apps will be deprecated on January 6, 2027. Microsoft Purview will become the unified home for data security and compliance.",
       "type": "policy",
       "sourceUrl": "https://aka.ms/MDAPartnerFAQ",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-07-06-suger-as-of-jul-6-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-06",
+      "title": "Suger: As of Jul 6, 2026",
+      "summary": "Added bulk upload of deal registrations from a CSV or from opportunities, with per-row results. Deal registration Brought dimension-tag discounts for AWS, Azure, and Google Cloud into Salesforce, matching the console. Added Oracle Cloud private offer creation from Salesforce.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-07-06",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-07-06-insulin-as-of-jul-6-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-07-06",
+      "title": "Insulin: As of Jul 6, 2026",
+      "summary": "Fixed currency amounts being reformatted as mathematical notation in chat. Chat",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-07-06",
       "impact": "low"
     },
     {
@@ -1465,6 +1575,28 @@
       "impact": "high"
     },
     {
+      "id": "suger-2026-06-29-suger-as-of-jun-29-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-29",
+      "title": "Suger: As of Jun 29, 2026",
+      "summary": "Added organization-level integrations for GitLab, Notion, Dropbox Business, Asana, and Avalara. Integrations Added invoice-based billing, which reports issued invoices to the marketplace rather than raw usage.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-29",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-06-29-insulin-as-of-jun-29-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-29",
+      "title": "Insulin: As of Jun 29, 2026",
+      "summary": "Added organization-level agents and skills to the agent marketplace, so one install can serve a whole team. Marketplace Hardened the desktop window manager — snapping, focus, persistence, minimize, and windows inside windows.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-06-29",
+      "impact": "medium"
+    },
+    {
       "id": "azure-2026-06-26-sentinel-50-gb-tier-promo-extended",
       "platform": "Azure",
       "platformTag": "azure",
@@ -1496,6 +1628,17 @@
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-june-2026/",
       "impact": "medium"
+    },
+    {
+      "id": "suger-2026-06-26-suger-as-of-jun-26-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-26",
+      "title": "Suger: As of Jun 26, 2026",
+      "summary": "Launched the Suger Co-Sell MCP so co-sell referrals can be drafted, shared, and synced from inside an AI assistant — including drafting outbound referrals, listing inbound referrals pending acceptance, diagnosing stuck referrals, and syncing status back to Salesforce.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-26",
+      "impact": "high"
     },
     {
       "id": "azure-2026-06-25-guidance-on-marketplace-rewards-azure-sponsorship-",
@@ -1751,6 +1894,28 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-06-15-suger-as-of-jun-15-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-15",
+      "title": "Suger: As of Jun 15, 2026",
+      "summary": "Added the first Oracle Cloud Marketplace integration, covering adding and verifying a marketplace. Oracle Marketplace Added embeddable partner sign-up forms, with an allowlist controlling which sites may embed them.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-15",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-06-15-insulin-as-of-jun-15-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-15",
+      "title": "Insulin: As of Jun 15, 2026",
+      "summary": "Added knowledge bases, so agents can answer from your own documents. Knowledge bases Added fuzzy search across agent and channel names, descriptions, and message history. Merged the viewer apps into one Preview app, which now renders xlsx and docx alongside the existing formats.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-06-15",
+      "impact": "medium"
+    },
+    {
       "id": "aws-2026-06-11-detecting-misconfigurations-and-mitigating-ai-risk",
       "platform": "AWS",
       "platformTag": "aws",
@@ -1850,6 +2015,28 @@
       "impact": "medium"
     },
     {
+      "id": "suger-2026-06-08-suger-as-of-jun-8-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-08",
+      "title": "Suger: As of Jun 8, 2026",
+      "summary": "Added SCORM package upload with an in-house runtime for Partner Training. Partner Training Added certificate expiry and renewal — statuses, retakes, automatic re-enrolment, and notifications.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-08",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-06-08-insulin-as-of-jun-8-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-08",
+      "title": "Insulin: As of Jun 8, 2026",
+      "summary": "Agents now fail loudly when a model is unreachable, instead of appearing to stall. Fixed the file viewer in sub-threads and for images, PDFs, and HTML. Fixed the integration card menu in the desktop app.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-06-08",
+      "impact": "low"
+    },
+    {
       "id": "azure-2026-06-05-dynamics-365-business-central-dual-use-rights-lice",
       "platform": "Azure",
       "platformTag": "azure",
@@ -1936,6 +2123,28 @@
       "type": "pricing",
       "sourceUrl": "https://www.microsoft.com/licensing/news/Microsoft365-Teams-2025",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-06-01-suger-as-of-jun-1-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-01",
+      "title": "Suger: As of Jun 1, 2026",
+      "summary": "Released Partner Training end to end — author, share, learn, certify. Partner Training Added dimension tagging and tag-filtered discount groups to offers. Private offers Added per-organization fine-grained permission selection to the OAuth consent flow.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-01",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-06-01-insulin-as-of-jun-1-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-06-01",
+      "title": "Insulin: As of Jun 1, 2026",
+      "summary": "Reworked skills and added support for installing them from the marketplace. Marketplace Fixed image handling in tool results.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-06-01",
+      "impact": "medium"
     },
     {
       "id": "azure-2026-05-29-2026-agents-move-into-action",
@@ -2334,6 +2543,17 @@
       "impact": "medium"
     },
     {
+      "id": "suger-2026-04-30-suger-as-of-apr-30-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-04-30",
+      "title": "Suger: As of Apr 30, 2026",
+      "summary": "Launched the Suger MCP server, letting an AI assistant run the marketplace motion in natural language — creating private offers, listing expiring entitlements, generating revenue reports, reporting usage, and checking open support tickets.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-04-30",
+      "impact": "high"
+    },
+    {
       "id": "aws-2026-04-28-streamline-identity-management-with-okta-mcp-and-k",
       "platform": "AWS",
       "platformTag": "aws",
@@ -2673,6 +2893,17 @@
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/benefits/cloud-services?wt.mc_id=r5j371cee1",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-03-18-suger-as-of-mar-18-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-03-18",
+      "title": "Suger: As of Mar 18, 2026",
+      "summary": "Fixed an issue where buyer organization entitlements were displaying 'USD 0.00' in the Invoice column. Addressed a problem where clone offers were not showing or allowing the editing of pricing plan fields.",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-03-18",
+      "impact": "medium"
     },
     {
       "id": "azure-2026-03-16-new-microsoft-azure-assets-for-smb-audiences",
