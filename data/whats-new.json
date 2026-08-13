@@ -1,6 +1,138 @@
 {
-  "lastUpdated": "2026-08-12T07:07:21.456Z",
+  "lastUpdated": "2026-08-13T07:11:09.238Z",
   "updates": [
+    {
+      "id": "azure-2026-08-12-csp-software-pricing-update-effective-october-1-20",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-08-12",
+      "title": "CSP software pricing update effective October 1, 2026",
+      "summary": "A 5% cost of capital uplift applies to annual-term CSP software subscriptions billed monthly.",
+      "type": "pricing",
+      "sourceUrl": "https://aka.ms/CostofCapital_FAQ",
+      "impact": "high"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-ai-agents-on-aws-marketplace-a-seller-s-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM AI Agents on AWS Marketplace: A Seller's Guide AWS now has a category for AI agents and agentic tools, with tw",
+      "summary": "Cloud GTM AI Agents on AWS Marketplace: A Seller's Guide AWS now has a category for AI agents and agentic tools, with two deployment options and a quality bar attached. The mechanics are familiar; the pricing question is not. Aug 12, 2026 Read article",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/ai-agents-on-aws-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-the-aws-standard-contract-or-your-own-pa",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM The AWS Standard Contract, or Your Own Paper? The SCMP is free, pre-vetted, and reversible — three things your",
+      "summary": "Cloud GTM The AWS Standard Contract, or Your Own Paper? The SCMP is free, pre-vetted, and reversible — three things your own EULA is not. Here is what it actually contains, what opting in commits you to, and when to decline. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-standard-contract-or-your-own-paper/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-changing-your-marketplace-price-after-la",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM Changing Your Marketplace Price After Launch You can change the number. You mostly cannot change the model. He",
+      "summary": "Cloud GTM Changing Your Marketplace Price After Launch You can change the number. You mostly cannot change the model. Here is exactly what each cloud lets you edit once a listing is public — and how long it takes to bite. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/change-marketplace-price-after-launch/",
+      "impact": "high"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-connecting-your-crm-to-cloud-marketplace",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM Connecting Your CRM to Cloud Marketplace Data Marketplace records sit in three consoles your CRM cannot see. H",
+      "summary": "Cloud GTM Connecting Your CRM to Cloud Marketplace Data Marketplace records sit in three consoles your CRM cannot see. Here are the four sync patterns teams actually use, what each one costs, and which records belong where. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/connect-crm-to-cloud-marketplace-data/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-marketplace-access-who-should-have-which",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details",
+      "summary": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details in one console. Most teams grant everyone admin and find out at the audit. Here is a least-privilege default. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-access-roles/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-entitlement-management-on-cloud-marketpl",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM Entitlement Management on Cloud Marketplaces A purchase event is not an entitlement, and an entitlement is not",
+      "summary": "Cloud GTM Entitlement Management on Cloud Marketplaces A purchase event is not an entitlement, and an entitlement is not access. The three-hop path between them is where marketplace products quietly break. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-entitlement-management/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-eulas-and-custom-terms-in-marketplace-de",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM EULAs and Custom Terms in Marketplace Deals Every marketplace offers you a standard contract and lets you refu",
+      "summary": "Cloud GTM EULAs and Custom Terms in Marketplace Deals Every marketplace offers you a standard contract and lets you refuse it. That choice sets your close time for years, and on one cloud it is irreversible. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-eulas-and-custom-terms/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-what-it-takes-to-get-listed-a-readiness-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM What It Takes to Get Listed: A Readiness Checklist Marketplace review rejections are boring: a logo at the wro",
+      "summary": "Cloud GTM What It Takes to Get Listed: A Readiness Checklist Marketplace review rejections are boring: a logo at the wrong ratio, a EULA behind a login, a default password. Here is the checklist that gets you through first time. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-listing-readiness-checklist/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-billing-metering-seller-of-record-why-it-changes-y",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Billing & Metering Seller of Record: Why It Changes Your Books On a marketplace, somebody else invoices your customer an",
+      "summary": "Billing & Metering Seller of Record: Why It Changes Your Books On a marketplace, somebody else invoices your customer and collects the cash. That one fact reshapes your AR, your tax exposure and the conversation with your auditor. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-seller-of-record/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-how-to-run-a-paid-poc-through-a-marketpl",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM How to Run a Paid POC Through a Marketplace A paid pilot on the buyer's cloud bill draws down committed spend ",
+      "summary": "Cloud GTM How to Run a Paid POC Through a Marketplace A paid pilot on the buyer's cloud bill draws down committed spend and skips a procurement cycle. The mechanics are simple; the conversion path is where deals die. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/paid-poc-through-a-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "aws-2026-08-10-aws-marketplace-now-supports-category-based-notifi",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-08-10",
+      "title": "AWS Marketplace now supports category-based notification subscriptions and multi-channel delivery for buyers",
+      "summary": "AWS Marketplace buyers can now configure category-based notifications and multi-channel delivery through AWS User Notifications.",
+      "type": "release",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-managed-buyer-notifications/",
+      "impact": "medium"
+    },
     {
       "id": "azure-2026-08-10-enter-the-csp-copilot-partner-council-contest",
       "platform": "Azure",
@@ -29,20 +161,9 @@
       "platformTag": "suger",
       "date": "2026-08-10",
       "title": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website",
-      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website — which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026 Read article",
+      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website — which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/buy-with-aws-metrics/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against",
-      "summary": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against and a commission rate nobody can compute. Here is what channel PRM has to hold, and how to design tiers that survive an audit. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/channel-partner-relationship-management/",
       "impact": "low"
     },
     {
@@ -83,21 +204,21 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-10",
-      "title": "Co-sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None t",
-      "summary": "Co-sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None tell you what actually happens to the record after you submit it. This is the mechanics — the statuses, the gates, and the fields that get you rejected.",
+      "title": "Co-Sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None t",
+      "summary": "Co-Sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None tell you what actually happens to the record after you submit it. This is the mechanics — the statuses, the gates, and the fields that get you rejected.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-co-sell-works/",
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
+      "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-10",
-      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
-      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
+      "title": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against",
+      "summary": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against and a commission rate nobody can compute. Here is what channel PRM has to hold, and how to design tiers that survive an audit. Aug 10, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
+      "sourceUrl": "https://www.suger.io/resources/blog/channel-partner-relationship-management/",
       "impact": "low"
     },
     {
@@ -109,6 +230,17 @@
       "summary": "AWS When a Buyer Pays but Provisioning Never Happens The worst marketplace support ticket: a customer who has been charged and has no access. There are six places that handshake breaks, and five of them are silent. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-provisioning-failures/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
+      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
       "impact": "low"
     },
     {
@@ -387,17 +519,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-gcp-bringing-resellers-into-google-cloud-marketpla",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — temp",
-      "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/resellers-on-google-cloud-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-06-marketplaces-oracle-cloud-marketplace-a-guide-for-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -406,6 +527,17 @@
       "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-gcp-bringing-resellers-into-google-cloud-marketpla",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — temp",
+      "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/resellers-on-google-cloud-marketplace/",
       "impact": "low"
     },
     {
