@@ -182,8 +182,9 @@
                 <p class="wn-hero-sub">
                     Automatically collected from AWS, Azure, GCP, Snowflake,
                     Oracle, and Suger — features, program changes, pricing
-                    updates, and blog posts, filtered for marketplace
-                    relevance.
+                    updates, and blog posts, filtered for marketplace relevance.
+                    Suger's product docs are tracked separately in the Suger
+                    Docs column.
                 </p>
                 <div class="wn-hero-meta">
                     <span class="wn-last-updated" id="wnLastUpdated"></span>
@@ -192,58 +193,126 @@
             </section>
 
             <div class="wn-body">
-                <div class="wn-toolbar">
-                    <div class="wn-filter-row">
-                        <span class="wn-filter-label">Platform</span>
-                        <button class="wn-pill" data-platform="all">All</button>
-                        <button class="wn-pill" data-platform="aws">AWS</button>
-                        <button class="wn-pill" data-platform="azure">
-                            Azure
+                <div class="wn-columns">
+                    <section class="wn-col wn-col-main">
+                        <button
+                            class="wn-col-header"
+                            type="button"
+                            aria-expanded="true"
+                            data-col="main"
+                        >
+                            <span class="wn-col-title">Marketplace News</span>
+                            <span
+                                class="wn-col-chevron"
+                                aria-hidden="true"
+                            ></span>
                         </button>
-                        <button class="wn-pill" data-platform="gcp">GCP</button>
-                        <button class="wn-pill" data-platform="snowflake">
-                            Snowflake
-                        </button>
-                        <button class="wn-pill" data-platform="oracle">
-                            Oracle
-                        </button>
-                        <button class="wn-pill" data-platform="suger">
-                            Suger
-                        </button>
-                    </div>
-                    <div class="wn-filter-row">
-                        <span class="wn-filter-label">Type</span>
-                        <button class="wn-pill" data-type="all">All</button>
-                        <button class="wn-pill" data-type="feature">
-                            Feature
-                        </button>
-                        <button class="wn-pill" data-type="program">
-                            Program
-                        </button>
-                        <button class="wn-pill" data-type="pricing">
-                            Pricing
-                        </button>
-                        <button class="wn-pill" data-type="policy">
-                            Policy
-                        </button>
-                        <button class="wn-pill" data-type="blog">Blog</button>
-                        <button class="wn-pill" data-type="release">
-                            Release
-                        </button>
-                    </div>
-                    <div class="wn-search-row">
-                        <input
-                            type="search"
-                            id="wnSearch"
-                            placeholder="Search updates…"
-                            autocomplete="off"
-                            spellcheck="false"
-                        />
-                        <span id="wnCount" class="wn-count"></span>
-                    </div>
-                </div>
+                        <div class="wn-col-body">
+                            <div class="wn-toolbar">
+                                <div class="wn-filter-row">
+                                    <span class="wn-filter-label"
+                                        >Platform</span
+                                    >
+                                    <button class="wn-pill" data-platform="all">
+                                        All
+                                    </button>
+                                    <button class="wn-pill" data-platform="aws">
+                                        AWS
+                                    </button>
+                                    <button
+                                        class="wn-pill"
+                                        data-platform="azure"
+                                    >
+                                        Azure
+                                    </button>
+                                    <button class="wn-pill" data-platform="gcp">
+                                        GCP
+                                    </button>
+                                    <button
+                                        class="wn-pill"
+                                        data-platform="snowflake"
+                                    >
+                                        Snowflake
+                                    </button>
+                                    <button
+                                        class="wn-pill"
+                                        data-platform="oracle"
+                                    >
+                                        Oracle
+                                    </button>
+                                    <button
+                                        class="wn-pill"
+                                        data-platform="suger"
+                                    >
+                                        Suger
+                                    </button>
+                                </div>
+                                <div class="wn-filter-row">
+                                    <span class="wn-filter-label">Type</span>
+                                    <button class="wn-pill" data-type="all">
+                                        All
+                                    </button>
+                                    <button class="wn-pill" data-type="feature">
+                                        Feature
+                                    </button>
+                                    <button class="wn-pill" data-type="program">
+                                        Program
+                                    </button>
+                                    <button class="wn-pill" data-type="pricing">
+                                        Pricing
+                                    </button>
+                                    <button class="wn-pill" data-type="policy">
+                                        Policy
+                                    </button>
+                                    <button class="wn-pill" data-type="blog">
+                                        Blog
+                                    </button>
+                                    <button class="wn-pill" data-type="release">
+                                        Release
+                                    </button>
+                                </div>
+                                <div class="wn-search-row">
+                                    <input
+                                        type="search"
+                                        id="wnSearch"
+                                        placeholder="Search updates…"
+                                        autocomplete="off"
+                                        spellcheck="false"
+                                    />
+                                    <span id="wnCount" class="wn-count"></span>
+                                </div>
+                            </div>
 
-                <div id="wnFeed" aria-live="polite"></div>
+                            <div id="wnFeed" aria-live="polite"></div>
+                        </div>
+                    </section>
+
+                    <aside class="wn-col wn-col-docs">
+                        <button
+                            class="wn-col-header"
+                            type="button"
+                            aria-expanded="true"
+                            data-col="docs"
+                        >
+                            <span class="wn-col-title">Suger Docs</span>
+                            <span
+                                class="wn-docs-count-badge"
+                                id="wnDocsCount"
+                            ></span>
+                            <span
+                                class="wn-col-chevron"
+                                aria-hidden="true"
+                            ></span>
+                        </button>
+                        <div class="wn-col-body">
+                            <p class="wn-docs-sub">
+                                New pages published on Suger's product
+                                documentation, checked daily.
+                            </p>
+                            <div id="wnDocsList" aria-live="polite"></div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
 

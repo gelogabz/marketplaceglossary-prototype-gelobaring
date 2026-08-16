@@ -63,9 +63,142 @@
 /* ── Body ──────────────────────────────────────────────────────────────────── */
 
 .wn-body {
-    max-width: 900px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 1.75rem 1.5rem 4rem;
+}
+
+/* ── Two-column layout ────────────────────────────────────────────────────── */
+
+.wn-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    align-items: start;
+    gap: 2rem;
+}
+
+/* Each column is its own card — consistent background/border treatment for
+   both, per design review. Inner .wn-card feed items stay white so they pop
+   against this slightly deeper card background instead of blending into it. */
+.wn-col {
+    background: #fafafa;
+    border: 1px solid #e8e8ec;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.wn-col-docs {
+    position: sticky;
+    top: calc(var(--topnav-h) + 20px);
+}
+
+/* Column headers are static, non-interactive labels on desktop — the
+   collapse/expand interaction only exists on mobile (see media query below).
+   Rendered as <button> in the markup regardless, for progressive enhancement
+   and so the mobile styling below has an aria-expanded element to hook into. */
+.wn-col-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0 0 0.75rem;
+    margin: 0 0 0.75rem;
+    border-bottom: 2px solid #e8e8ec;
+    cursor: default;
+    text-align: left;
+    font: inherit;
+}
+
+.wn-col-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.01em;
+}
+
+.wn-docs-count-badge {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gray-400);
+    background: var(--gray-100);
+    border-radius: 10px;
+    padding: 1px 8px;
+    min-width: 8px;
+    text-align: center;
+}
+
+.wn-col-chevron {
+    display: none;
+}
+
+/* Collapse state has no visual effect by default (desktop) — only the
+   mobile media query below makes .is-collapsed actually hide content. */
+.wn-col-body.is-collapsed {
+    display: block;
+}
+
+/* ── Suger Docs column ────────────────────────────────────────────────────── */
+
+.wn-docs-sub {
+    font-size: 12px;
+    color: var(--gray-400);
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
+.wn-docs-rows {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.wn-docs-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.wn-docs-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.wn-docs-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray-900);
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.wn-docs-link:hover {
+    color: var(--orange-text);
+    text-decoration: underline;
+}
+
+.wn-docs-date {
+    font-size: 11px;
+    color: var(--gray-400);
+}
+
+.wn-docs-empty {
+    font-size: 12px;
+    color: var(--gray-400);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.wn-docs-empty a {
+    color: var(--orange-text);
 }
 
 /* ── Toolbar ───────────────────────────────────────────────────────────────── */
@@ -76,7 +209,7 @@
     gap: 0.6rem;
     margin-bottom: 2rem;
     padding: 1rem 1.25rem;
-    background: #f8f8fb;
+    background: #fff;
     border: 1px solid #e8e8ec;
     border-radius: 10px;
 }
@@ -455,6 +588,48 @@
     .wn-stats {
         padding-left: 0;
         border-left: none;
+    }
+
+    /* Stack the two columns and make each one collapsible — same interaction
+       pattern as the Links page's per-platform sections. Desktop never sees
+       this: the column headers are inert labels there (see base rules above). */
+    .wn-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .wn-col-docs {
+        position: static;
+    }
+
+    .wn-col-header {
+        cursor: pointer;
+        transition: border-color 0.15s;
+    }
+
+    .wn-col-header:hover {
+        border-bottom-color: var(--gray-400);
+    }
+
+    .wn-col-chevron {
+        display: block;
+        margin-left: auto;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid var(--gray-400);
+        border-bottom: 2px solid var(--gray-400);
+        transform: rotate(45deg);
+        transition: transform 0.2s ease;
+        flex-shrink: 0;
+    }
+
+    .wn-col-header[aria-expanded="true"] .wn-col-chevron {
+        transform: rotate(-135deg);
+    }
+
+    .wn-col-body.is-collapsed {
+        display: none;
     }
 }
 

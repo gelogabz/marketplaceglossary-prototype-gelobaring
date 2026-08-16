@@ -1,5 +1,13 @@
-import { updates, lastUpdated } from "../data/whats-new.js";
+import { updates as allUpdates, lastUpdated } from "../data/whats-new.js";
 import { escHtml } from "../app/utils.js";
+
+// Suger Docs entries (platformTag "suger-docs") live in their own column and
+// are deliberately excluded from the main feed, its filters, and its stats —
+// they're page-diff pointers from a sitemap scan, not scored marketplace news.
+const updates = allUpdates.filter((e) => e.platformTag !== "suger-docs");
+const docsUpdates = allUpdates
+  .filter((e) => e.platformTag === "suger-docs")
+  .sort((a, b) => b.date.localeCompare(a.date));
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -147,6 +155,30 @@ function renderCard(e) {
   </article>`;
 }
 
+function renderDocsRow(e) {
+  return `<li class="wn-docs-row">
+    <a class="wn-docs-link" href="${escHtml(e.sourceUrl)}" target="_blank" rel="noopener">${escHtml(e.title)}</a>
+    <time class="wn-docs-date" datetime="${escHtml(e.date)}">${escHtml(formatDate(e.date))}</time>
+  </li>`;
+}
+
+function renderDocsColumn() {
+  const list = document.getElementById("wnDocsList");
+  const countEl = document.getElementById("wnDocsCount");
+  if (!list) return;
+
+  if (countEl) {
+    countEl.textContent = String(docsUpdates.length);
+  }
+
+  if (!docsUpdates.length) {
+    list.innerHTML = `<p class="wn-docs-empty">No new doc pages detected yet. Checked daily against <a href="https://doc.suger.io/" target="_blank" rel="noopener">doc.suger.io</a>.</p>`;
+    return;
+  }
+
+  list.innerHTML = `<ul class="wn-docs-rows">${docsUpdates.map(renderDocsRow).join("")}</ul>`;
+}
+
 function renderFeed(entries) {
   const feed = document.getElementById("wnFeed");
   const countEl = document.getElementById("wnCount");
@@ -269,6 +301,50 @@ function initFilters() {
   }
 }
 
+// ── Collapsible columns (mobile only) ────────────────────────────────────────
+//
+// Desktop: both columns are always fully expanded, headers are static labels —
+// CSS alone forces this (see .wn-col-body base rule), no JS gating needed.
+// Mobile (≤767px): each column collapses independently, same interaction
+// pattern as the Links page's per-platform sections (button + chevron +
+// aria-expanded, state remembered in sessionStorage). Clicking on desktop is
+// harmless — the CSS override makes the toggle a no-op visually.
+
+const COL_STORAGE_KEY = "gtm-whatsnew-open";
+
+function getColOpenState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(COL_STORAGE_KEY) || "{}");
+  } catch (_) {
+    return {};
+  }
+}
+
+function setColOpenState(state) {
+  sessionStorage.setItem(COL_STORAGE_KEY, JSON.stringify(state));
+}
+
+function initCollapsibleColumns() {
+  const state = getColOpenState();
+
+  document.querySelectorAll(".wn-col-header").forEach((btn) => {
+    const col = btn.dataset.col;
+    const isOpen = state[col] !== false;
+    btn.setAttribute("aria-expanded", String(isOpen));
+    const body = btn.closest(".wn-col")?.querySelector(".wn-col-body");
+    if (body) body.classList.toggle("is-collapsed", !isOpen);
+
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!expanded));
+      if (body) body.classList.toggle("is-collapsed", expanded);
+      const cur = getColOpenState();
+      cur[col] = !expanded;
+      setColOpenState(cur);
+    });
+  });
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 function initMeta() {
@@ -308,4 +384,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initFilters();
     applyFilters();
   }
+  renderDocsColumn();
+  initCollapsibleColumns();
 });

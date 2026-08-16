@@ -264,7 +264,8 @@ export const linkSections = [
         desc: "The public-facing Oracle Cloud Marketplace where buyers discover SaaS, image, stack, container, and Helm chart listings without needing an OCI login. Useful for checking how your listing appears to buyers before they sign in.",
         confusesWith: {
           otherTitle: "Oracle Cloud Infrastructure (OCI)",
-          otherUrl: "https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm",
+          otherUrl:
+            "https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm",
           note: "OCI is Oracle's underlying cloud infrastructure platform (compute, storage, networking). Oracle Cloud Marketplace is the separate commerce layer built on top of OCI where ISVs list and sell software — they are not the same product.",
         },
       },

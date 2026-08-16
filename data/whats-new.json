@@ -1,6 +1,94 @@
 {
-  "lastUpdated": "2026-08-16T06:21:50.017Z",
+  "lastUpdated": "2026-08-16T21:55:30.760Z",
   "updates": [
+    {
+      "id": "suger-docs-2026-08-16-cosell-cosell-microsoft-fields",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Cosell › Cosell Microsoft Fields",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/cosell/cosell-microsoft-fields/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-hubspot-app-hubspot-app-funding",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Hubspot App › Hubspot App Funding",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/hubspot-app/hubspot-app-funding/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-insulin-aws-support",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Insulin › Aws Support",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/insulin/aws-support/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-broadcasts",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Broadcasts",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/broadcasts/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-connect-slack-for-partners",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Connect Slack For Partners",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/connect-slack-for-partners/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-customize-the-partner-overview",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Customize The Partner Overview",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/customize-the-partner-overview/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-partner-events",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Partner Events",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/partner-events/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-work-a-partner-record",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Work A Partner Record",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/work-a-partner-record/",
+      "impact": "low"
+    },
     {
       "id": "suger-2026-08-16-co-sell-your-aws-sca-is-signed-now-operationalize-",
       "platform": "Suger",
@@ -772,6 +860,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
+      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-06-cloud-gtm-free-trials-on-cloud-marketplaces-an-isv",
       "platform": "Suger",
       "platformTag": "suger",
@@ -791,17 +890,6 @@
       "summary": "GCP Google Cloud Private Offers: Setup and Pitfalls Most failed Google Cloud private offers fail on the buyer's billing account, not your pricing. Here's the prerequisite checklist and the errors that block acceptance. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-private-offers-setup-and-pitfalls/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
-      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
       "impact": "low"
     },
     {
@@ -882,17 +970,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-aws-marketplace-express-private-offers-explain",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS AWS Marketplace Express Private Offers, Explained Express private offers let AWS Marketplace buyers self-serve an AI",
-      "summary": "AWS AWS Marketplace Express Private Offers, Explained Express private offers let AWS Marketplace buyers self-serve an AI-generated offer from your pre-set rate cards. Here's what changed and how to set it up. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-express-private-offers/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-aws-aws-marketplace-for-sellers-the-complete-guide",
       "platform": "Suger",
       "platformTag": "suger",
@@ -904,14 +981,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-cloud-gtm-how-to-choose-the-right-cloud-marketplac",
+      "id": "suger-2026-08-05-aws-aws-marketplace-express-private-offers-explain",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-05",
-      "title": "Cloud GTM How to Choose the Right Cloud Marketplace Platform A buyer's guide to evaluating cloud marketplace platforms: ",
-      "summary": "Cloud GTM How to Choose the Right Cloud Marketplace Platform A buyer's guide to evaluating cloud marketplace platforms: the criteria that separate real automation from a prettier console. Aug 5, 2026",
+      "title": "AWS AWS Marketplace Express Private Offers, Explained Express private offers let AWS Marketplace buyers self-serve an AI",
+      "summary": "AWS AWS Marketplace Express Private Offers, Explained Express private offers let AWS Marketplace buyers self-serve an AI-generated offer from your pre-set rate cards. Here's what changed and how to set it up. Aug 5, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/how-to-choose-a-cloud-marketplace-platform/",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-express-private-offers/",
       "impact": "low"
     },
     {
@@ -923,6 +1000,17 @@
       "summary": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Portal, listing types, private offers, resellers, and committed spend. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-marketplace-isv-seller-guide/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-cloud-gtm-how-to-choose-the-right-cloud-marketplac",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "Cloud GTM How to Choose the Right Cloud Marketplace Platform A buyer's guide to evaluating cloud marketplace platforms: ",
+      "summary": "Cloud GTM How to Choose the Right Cloud Marketplace Platform A buyer's guide to evaluating cloud marketplace platforms: the criteria that separate real automation from a prettier console. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-to-choose-a-cloud-marketplace-platform/",
       "impact": "low"
     },
     {

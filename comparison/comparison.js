@@ -140,6 +140,7 @@ const CONCEPT_OVERRIDES = {
   "Offer Set — AWS": "Offer Set",
   "Offer Set — Suger": "Offer Set",
   "AWS Marketplace Catalog API — AWS": "Marketplace Catalog & Offer API",
+  Insulin: "AI Agents & Tools",
 };
 
 // Concept label: check override map first (all terms per platform), then Suger name, then AWS...

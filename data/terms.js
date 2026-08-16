@@ -1967,8 +1967,7 @@ export const terms = [
     name: "Private Offer Success Team (POST) — AWS",
     tags: ["aws"],
     def: "AWS's dedicated support team for sellers with questions or issues related to private offer creation, buyer errors, and CPPO transactions. Contactable via the AWS Marketplace support form.",
-    alias:
-      "Related: Private Offer, Channel Partner Private Offer (CPPO) — AWS",
+    alias: "Related: Private Offer, Channel Partner Private Offer (CPPO) — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
     difficulty: "beginner",
@@ -2653,8 +2652,7 @@ export const terms = [
     name: "Subscription — AWS",
     tags: ["aws"],
     def: "An AWS Marketplace pay-as-you-go pricing model. Buyers can cancel any time and are billed based on metered usage only, with no upfront commitment. Different from Azure and Snowflake subscriptions, which may be commit-based.",
-    alias:
-      "Related: PAYG / Pay-as-you-go, Metered Billing, Contract — AWS",
+    alias: "Related: PAYG / Pay-as-you-go, Metered Billing, Contract — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
     difficulty: "beginner",
@@ -3053,8 +3051,7 @@ export const terms = [
     name: "Databricks Marketplace",
     tags: ["general"],
     def: "Databricks' marketplace for data products and AI applications within the Databricks Data Intelligence Platform. Suger supports integration with Databricks to automate workflows, execute queries, and sync marketplace data.",
-    alias:
-      "Related: Listing, Entitlement, Snowflake Marketplace — Snowflake",
+    alias: "Related: Listing, Entitlement, Snowflake Marketplace — Snowflake",
     source: "https://docs.databricks.com/aws/en/marketplace",
     difficulty: "intermediate",
     category: "fundamentals",
@@ -3201,8 +3198,7 @@ export const terms = [
     name: "Salesforce App",
     tags: ["suger", "cosell", "integrations"],
     def: "Suger's native Salesforce application that embeds marketplace entitlement data, co-sell referral status, and metering information directly inside Salesforce — beyond the standard CRM Integration's bi-directional sync.",
-    alias:
-      "Related: Salesforce Integration, CRM Integration, Co-sell",
+    alias: "Related: Salesforce Integration, CRM Integration, Co-sell",
     source: "https://doc.suger.io/integrations/salesforce/",
     difficulty: "intermediate",
     category: "operations",
@@ -5341,9 +5337,7 @@ export const terms = [
       "Configuring abnormal payment alerts so finance teams are notified when a payment fails or requires retry",
     ],
     context: ["Suger Console", "Stripe", "Invoice Management"],
-    related: [
-      { name: "Invoice", slug: "invoice" },
-    ],
+    related: [{ name: "Invoice", slug: "invoice" }],
   },
   {
     name: "Revenue Record",
@@ -7590,7 +7584,7 @@ export const terms = [
     tags: ["suger"],
     def: "Suger's AI-powered workspace embedded in the Suger Console, designed for ISVs operating across cloud marketplaces. Provides an AI chat interface with streaming responses and tool execution, specialized agents for marketplace tasks, shared team channels for multi-user collaboration, and Jobs — automated recurring agent runs that fire on a schedule or in response to external events. A built-in Skills & Marketplace catalog lets users install pre-built agents and instruction files with a single click.",
     alias:
-      "Related: Insulin Agent — Suger, Insulin Jobs — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
+      "AWS equivalent: AI Agents & Tools — AWS | Azure equivalent: AI Apps and Agents — Azure | GCP equivalent: AI Agent Listing — GCP | Related: Insulin Agent — Suger, Insulin Jobs — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/",
     difficulty: "beginner",
     category: "operations",
@@ -7978,7 +7972,7 @@ export const terms = [
     tags: ["azure", "offers"],
     def: "A dedicated Microsoft Marketplace category and certification layer for AI and agentic solutions, surfaced in Azure Portal, Azure AI Foundry, Microsoft 365 Copilot, and Teams. Publishers choose between two deployment subtypes — Azure Agents (infrastructure-side, running on Azure compute) and Microsoft 365/Copilot Agents (client-side, integrated with Microsoft 365 surfaces) — and must select an underlying transactable offer type (SaaS, Container, VM, or Azure Application) before the AI Apps and Agents category layer is applied. The Standard Contract for Cloud Marketplace was extended in March 2026 to explicitly cover AI Apps and Agents offers. ISVs listing AI solutions here gain placement in AI-native discovery surfaces alongside the standard Marketplace catalog.",
     alias:
-      "AWS equivalent: AI Agents & Tools — AWS | GCP equivalent: AI Agent Listing — GCP | Related: Microsoft Marketplace — Azure, ISV Success Program — Azure, Azure Container Offer (Kubernetes Application) — Azure",
+      "AWS equivalent: AI Agents & Tools — AWS | GCP equivalent: AI Agent Listing — GCP | Suger equivalent: Insulin | Related: Microsoft Marketplace — Azure, ISV Success Program — Azure, Azure Container Offer (Kubernetes Application) — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/artificial-intelligence-apps-agents-publish",
     difficulty: "intermediate",
@@ -8204,7 +8198,7 @@ export const terms = [
     tags: ["gcp", "offers"],
     def: "A first-class Google Cloud Marketplace listing type for AI agents, distinct from SaaS, VM, and Kubernetes product types. Announced at Google Cloud Next '26, AI Agent Listings allow ISVs to publish conversational and autonomous AI agents that buyers can deploy and integrate with Google Cloud AI services. Listings require an Agent Card JSON spec file and are discoverable through Google Cloud Marketplace and Google Agentspace.",
     alias:
-      "AWS equivalent: AI Agents & Tools — AWS | Azure equivalent: AI Apps and Agents — Azure | Related: Agent Card — GCP, GCP Marketplace — GCP, Agentic Earnings Hub — GCP",
+      "AWS equivalent: AI Agents & Tools — AWS | Azure equivalent: AI Apps and Agents — Azure | Suger equivalent: Insulin | Related: Agent Card — GCP, GCP Marketplace — GCP, Agentic Earnings Hub — GCP",
     source: "https://docs.cloud.google.com/marketplace/docs",
     difficulty: "intermediate",
     category: "procurement",
@@ -10064,8 +10058,7 @@ export const terms = [
     name: "Insulin Marketplace — Suger",
     tags: ["suger"],
     def: "A curated catalog of pre-built agents and skills within the Suger Insulin workspace for common cloud GTM workflows. Users browse, install with a single click, and customize installed items — each installation copies the agent's system prompt, configuration, conversation starters, and icon into the user's Insulin workspace as an editable copy. The Insulin Marketplace is Suger's distribution layer for sharing reusable AI automation components across marketplace operations teams.",
-    alias:
-      "Related: Insulin Agent — Suger, Insulin Skill — Suger, Insulin",
+    alias: "Related: Insulin Agent — Suger, Insulin Skill — Suger, Insulin",
     source: "https://doc.suger.io/insulin/marketplace/",
     difficulty: "beginner",
     category: "operations",
@@ -10225,7 +10218,8 @@ export const terms = [
     def: "Oracle's cloud infrastructure platform — compute, storage, networking, and database services, offered across 50+ interconnected regions — equivalent in scope to AWS, Azure, or Google Cloud Platform. Commonly confused with Oracle Cloud Marketplace: OCI is the underlying infrastructure a workload runs on, while Oracle Cloud Marketplace is the separate commerce layer built on top of it where ISVs list and sell software. The two are operationally linked — OCI identifiers (Tenancy OCID, User OCID, Compartment OCID) are required to authenticate a Marketplace integration — but they are not the same product.",
     alias:
       "Related: Oracle Cloud Marketplace — Oracle, Oracle Cloud Marketplace Integration — Suger",
-    source: "https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm",
+    source:
+      "https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm",
     difficulty: "beginner",
     category: "fundamentals",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -10249,7 +10243,8 @@ export const terms = [
     name: "Service Catalog — Oracle",
     tags: ["oracle", "procurement"],
     def: "An OCI governance feature that lets administrators create curated catalogs of pre-approved applications — public (sourced from Oracle Cloud Marketplace) or private (offered only within the organization) — scoped to a tenancy or compartment. End users can only browse and deploy applications on their organization's approved list, reducing the risk of unapproved spend or unvetted software. Functionally equivalent to AWS Private Marketplace, applied to Oracle's marketplace.",
-    alias: "AWS equivalent: Private Marketplace — AWS | Related: Oracle Cloud Marketplace — Oracle",
+    alias:
+      "AWS equivalent: Private Marketplace — AWS | Related: Oracle Cloud Marketplace — Oracle",
     source:
       "https://docs.oracle.com/en-us/iaas/Content/Marketplace/overview_of_service_catalog.htm",
     difficulty: "intermediate",
@@ -10259,7 +10254,11 @@ export const terms = [
       "Restricting an organization's OCI tenancy to a curated set of pre-approved Marketplace applications via Service Catalog",
       "Offering a private, org-only application listing through Service Catalog without publishing it to the public Oracle Cloud Marketplace",
     ],
-    context: ["OCI Console", "Oracle Cloud Marketplace", "Enterprise Procurement"],
+    context: [
+      "OCI Console",
+      "Oracle Cloud Marketplace",
+      "Enterprise Procurement",
+    ],
     related: [
       {
         name: "Private Marketplace — AWS",
@@ -10277,7 +10276,8 @@ export const terms = [
     def: "Oracle's partner enrollment program — the prerequisite for becoming an approved Oracle Cloud Marketplace publisher. Registration requires creating an Oracle account, joining OPN as a company (receiving an OPN membership ID), accepting the Oracle Marketplace Publisher Agreement, and — for paid package listings — completing supplier registration (company details, tax forms, bank account) and U.S.-domicile requirements (U.S. incorporation, USD bank account, signed U.S. Marketplace OCMA agreement). Non-package listings skip the U.S.-domicile requirement. The AWS/Azure/GCP equivalent of enrolling in the Partner Network before publishing on the marketplace.",
     alias:
       "AWS equivalent: AWS Partner Network (APN) — AWS | Azure equivalent: Microsoft AI Cloud Partner Program (MPN) — Azure | GCP equivalent: Google Cloud Partner Network — GCP | Related: Oracle Cloud Marketplace — Oracle",
-    source: "https://docs.oracle.com/en-us/iaas/Content/Marketplace/become-oci-partner.htm",
+    source:
+      "https://docs.oracle.com/en-us/iaas/Content/Marketplace/become-oci-partner.htm",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -10285,7 +10285,11 @@ export const terms = [
       "Joining Oracle Partner Network as a company prerequisite to publishing on Oracle Cloud Marketplace",
       "Determining whether a paid package listing triggers the U.S.-domicile and supplier-registration requirements before publishing",
     ],
-    context: ["Oracle Partner Network", "Oracle Cloud Marketplace", "OCI Console"],
+    context: [
+      "Oracle Partner Network",
+      "Oracle Cloud Marketplace",
+      "OCI Console",
+    ],
     related: [
       {
         name: "AWS Partner Network (APN) — AWS",
@@ -11846,7 +11850,8 @@ export const terms = [
     name: "PostHog Integration — Suger",
     tags: ["suger", "integrations"],
     def: "A Suger integration with PostHog, connected via a personal API key, giving Suger's AI agent 66 actions across events, insights, cohorts, feature flags, and experiments. It is the first product-analytics integration in Suger, distinct from existing data-warehouse connectors like BigQuery and Databricks, which move data rather than surface product usage signals.",
-    alias: "Related: Google BigQuery Integration, Databricks Integration — Suger",
+    alias:
+      "Related: Google BigQuery Integration, Databricks Integration — Suger",
     source: "https://doc.suger.io/integrations/posthog/",
     difficulty: "intermediate",
     category: "operations",
@@ -11910,8 +11915,10 @@ export const terms = [
     name: "Partner Lead Prospecting — AWS",
     tags: ["aws", "cosell"],
     def: "An AI-powered feature in AWS Partner Central that generates personalized sales plays, call scripts, and email templates tailored to a target customer's industry and the partner's own portfolio. Available to all ACE-eligible partners via the Leads page or the AWS Partner Central MCP server, announced July 9, 2026.",
-    alias: "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Central Agents — AWS",
-    source: "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central-prospecting/",
+    alias:
+      "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Central Agents — AWS",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central-prospecting/",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "AWS Sales"],
@@ -12029,7 +12036,11 @@ export const terms = [
       "Programmatically creating and publishing private offers on GCP Marketplace without using the Producer Portal UI",
       "Automating private-offer management across a large customer base via the Producer API instead of manual portal-driven workflows",
     ],
-    context: ["GCP Marketplace", "Producer Portal — GCP", "ISV Backend Integration"],
+    context: [
+      "GCP Marketplace",
+      "Producer Portal — GCP",
+      "ISV Backend Integration",
+    ],
     related: [
       { name: "Procurement API — GCP", slug: "procurement-api-—-gcp" },
       {
@@ -12056,7 +12067,11 @@ export const terms = [
       "Reviewing listing performance, customer agreements, and search performance metrics in one consolidated dashboard instead of separate reports",
       "Deploying the SPG Dashboard to give partner-facing teams unified visibility into marketplace performance without manual report stitching",
     ],
-    context: ["AWS Marketplace Management Portal", "AWS Marketplace", "Seller Reporting"],
+    context: [
+      "AWS Marketplace Management Portal",
+      "AWS Marketplace",
+      "Seller Reporting",
+    ],
     related: [
       {
         name: "AWS Marketplace Management Portal (AMMP) — AWS",
@@ -12077,7 +12092,11 @@ export const terms = [
       "Drafting a co-sell referral in natural language from an MCP-compatible AI client instead of navigating the Suger Console",
       "Checking co-sell opportunity status and syncing updates to Salesforce via natural-language commands from Claude Desktop, Cursor, or VS Code",
     ],
-    context: ["Suger Console", "MCP-compatible AI Clients", "Salesforce Integration"],
+    context: [
+      "Suger Console",
+      "MCP-compatible AI Clients",
+      "Salesforce Integration",
+    ],
     related: [
       { name: "Suger MCP Server", slug: "suger-mcp-server" },
       { name: "Co-sell", slug: "co-sell" },
@@ -12091,7 +12110,8 @@ export const terms = [
     def: "Microsoft's AI assistant embedded in Partner Center, launched in 2025 with support for eight locales and focused on Commercial and Marketplace partner workflows — guiding ISVs through program enrollment, offer publishing, and co-sell steps via natural language. Broader integration opened up in July 2026, extending the assistant's reach across more partner workflows. Partner Center Agent parallels AWS Partner Central Agents and Google Cloud Partner Agent as Microsoft's own AI-native layer within its partner operations platform.",
     alias:
       "AWS equivalent: AWS Partner Central Agents — AWS | GCP equivalent: Google Cloud Partner Agent — GCP | Related: Partner Center — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/enroll/partner-center-agent",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/enroll/partner-center-agent",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -12099,7 +12119,12 @@ export const terms = [
       "Getting natural-language guidance inside Partner Center for program enrollment, offer publishing, and co-sell workflow steps",
       "Comparing Microsoft's AI-native partner portal layer against AWS Partner Central Agents and Google Cloud Partner Agent when evaluating cross-platform partner tooling",
     ],
-    context: ["Microsoft Partner Center", "Azure Marketplace", "AI Features", "ISV Onboarding"],
+    context: [
+      "Microsoft Partner Center",
+      "Azure Marketplace",
+      "AI Features",
+      "ISV Onboarding",
+    ],
     related: [
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
       {
@@ -12127,7 +12152,11 @@ export const terms = [
       "Enabling a self-service request-private-offer toggle on a Microsoft Marketplace listing to capture buyer-initiated custom pricing requests",
       "Routing listing-page private offer requests into existing CRM or referral pipelines instead of building a separate intake process",
     ],
-    context: ["Microsoft Marketplace", "Partner Center — Azure", "Listing Types"],
+    context: [
+      "Microsoft Marketplace",
+      "Partner Center — Azure",
+      "Listing Types",
+    ],
     related: [
       {
         name: "Multiparty Private Offer (MPO) — Azure",
@@ -12175,7 +12204,11 @@ export const terms = [
       "Monitoring progress toward AWS SCA co-sell and GTM investment milestones directly inside the Suger Console",
       "Surfacing SCA goal attainment alongside Collaboration Score and Co-Sell Metrics Dashboard data ahead of a quarterly business review",
     ],
-    context: ["Suger Console", "AWS Strategic Collaboration Agreement", "Co-sell Programs"],
+    context: [
+      "Suger Console",
+      "AWS Strategic Collaboration Agreement",
+      "Co-sell Programs",
+    ],
     related: [
       {
         name: "Strategic Collaboration Agreement (SCA) — AWS",
@@ -12185,7 +12218,10 @@ export const terms = [
         name: "Co-Sell Metrics Dashboard — Suger",
         slug: "co-sell-metrics-dashboard-—-suger",
       },
-      { name: "Collaboration Score — Suger", slug: "collaboration-score-—-suger" },
+      {
+        name: "Collaboration Score — Suger",
+        slug: "collaboration-score-—-suger",
+      },
     ],
   },
   {
@@ -12193,8 +12229,9 @@ export const terms = [
     tags: ["aws", "offers"],
     def: "A dedicated AWS Marketplace listing category for AI agents (autonomous systems that reason, plan, and act on a buyer's behalf) and AI tools (guardrails, knowledge bases, integration protocols, and business-logic components that support them). Listings support two deployment options — API-based access to a vendor-hosted agent, or container deployment into the buyer's own AWS environment — and many integrate with Amazon Bedrock AgentCore and the Model Context Protocol (MCP) for use in agentic workflows. Buyers discover listings via semantic search or category browsing, distinct from the standard SaaS/AMI/container catalog structure.",
     alias:
-      "GCP equivalent: AI Agent Listing — GCP | Azure equivalent: AI Apps and Agents — Azure | Related: Agent Mode — AWS, AWS AI Competency — Agentic AI Categories — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ai-agents-products.html",
+      "GCP equivalent: AI Agent Listing — GCP | Azure equivalent: AI Apps and Agents — Azure | Suger equivalent: Insulin | Related: Agent Mode — AWS, AWS AI Competency — Agentic AI Categories — AWS",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ai-agents-products.html",
     difficulty: "intermediate",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -12202,7 +12239,11 @@ export const terms = [
       "Publishing an AI agent or AI tool as an AWS Marketplace listing to reach buyers through semantic search and category browsing",
       "Choosing between API-based and container deployment when listing an AI agent product on AWS Marketplace",
     ],
-    context: ["AWS Marketplace", "Amazon Bedrock AgentCore", "AI Agent Ecosystem"],
+    context: [
+      "AWS Marketplace",
+      "Amazon Bedrock AgentCore",
+      "AI Agent Ecosystem",
+    ],
     related: [
       { name: "Agent Mode — AWS", slug: "agent-mode-—-aws" },
       {
@@ -12217,7 +12258,8 @@ export const terms = [
     def: "A procurement widget that AWS Marketplace sellers embed on their own website, letting buyers request a purchase and complete checkout through AWS Marketplace without leaving the seller's page. A buyer selects Buy with AWS and submits a short form (AWS Account ID, company name, contact details); the seller's team then creates a private offer that the buyer accepts back on AWS Marketplace to finish the transaction. It moves marketplace discovery onto partner-owned marketing pages while keeping billing, entitlements, and disbursement inside AWS Marketplace.",
     alias:
       "Related: AWS Marketplace Storefront — AWS, Private Offer — AWS, Express Private Offer — AWS",
-    source: "https://docs.aws.amazon.com/marketplace/latest/storefrontguide/storefronts-buy-with-aws.html",
+    source:
+      "https://docs.aws.amazon.com/marketplace/latest/storefrontguide/storefronts-buy-with-aws.html",
     difficulty: "intermediate",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -12227,9 +12269,15 @@ export const terms = [
     ],
     context: ["AWS Marketplace", "Seller Website", "Private Offer Workflow"],
     related: [
-      { name: "AWS Marketplace Storefront — AWS", slug: "aws-marketplace-storefront-—-aws" },
+      {
+        name: "AWS Marketplace Storefront — AWS",
+        slug: "aws-marketplace-storefront-—-aws",
+      },
       { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
-      { name: "Express Private Offer — AWS", slug: "express-private-offer-—-aws" },
+      {
+        name: "Express Private Offer — AWS",
+        slug: "express-private-offer-—-aws",
+      },
     ],
   },
   {
@@ -12246,15 +12294,25 @@ export const terms = [
       "Enrolling in the Software Path to unlock AWS Marketplace listing, Partner Central access, and the Foundational Technical Review",
       "Progressing from Registered to Validated to Differentiated stage on the Software Path to qualify for ISV Accelerate and AWS Competencies",
     ],
-    context: ["AWS Partner Network", "AWS Partner Central", "Partner Scorecard"],
+    context: [
+      "AWS Partner Network",
+      "AWS Partner Central",
+      "Partner Scorecard",
+    ],
     related: [
-      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      {
+        name: "AWS Partner Network (APN) — AWS",
+        slug: "aws-partner-network-apn-—-aws",
+      },
       {
         name: "Foundational Technical Review (FTR) — AWS",
         slug: "foundational-technical-review-ftr-—-aws",
       },
       { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
-      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+      {
+        name: "Partner Central 3.0 (PC3.0) — AWS",
+        slug: "partner-central-3.0-pc3.0-—-aws",
+      },
     ],
   },
   {
@@ -12263,7 +12321,8 @@ export const terms = [
     def: "AWS Marketplace's buyer-facing notification system, built on AWS User Notifications, that lets buyers subscribe to four categories — Products and Solutions, Agreements and Subscriptions, Private Offers, and Pricing Changes — and route each to a channel of their choice, including email, the AWS Console Mobile Application, Slack, or Microsoft Teams. It replaces the prior model where every buyer notification went only to the AWS account root email with no category control. All categories are enabled by default and delivered to the root email until reconfigured; category-based subscriptions become mandatory behavior in January 2027.",
     alias:
       "Related: Private Offer — AWS, Amazon EventBridge Marketplace Integration — AWS",
-    source: "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-managed-buyer-notifications/",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-managed-buyer-notifications/",
     difficulty: "beginner",
     category: "operations",
     whoFor: ["Enterprise Buyers"],

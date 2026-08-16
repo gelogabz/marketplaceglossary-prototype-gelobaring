@@ -13,7 +13,7 @@
  *
  * ── WHAT IT DOES ─────────────────────────────────────────────────────────────
  *
- *   1. Fetches entries from 10 sources (see SOURCE LIST below).
+ *   1. Fetches entries from 13 sources (see SOURCE LIST below).
  *   2. Loads any existing entries already in data/whats-new.js.
  *   3. Merges: fresh entries overwrite existing ones with the same ID.
  *      Old entries not in the current fetch are kept (avoids data loss
@@ -35,6 +35,7 @@
  *   Suger Blog          https://www.suger.io/resources/blog/      (HTML)
  *   Suger Changelog     https://www.suger.io/resources/changelog/ (HTML)
  *   Insulin Changelog   https://www.insulin.dev/changelog/        (HTML)
+ *   Suger Docs Updates  https://doc.suger.io/sitemap-0.xml        (sitemap diff)
  *
  *   AWS What's New is keyword-filtered to marketplace-relevant entries only.
  *   AWS Marketplace Blog and AWS APN Blog entries are included (no keyword filter).
@@ -48,6 +49,10 @@
  *   Suger Changelog and Insulin Changelog are one entry per release date (not
  *   per bullet) — title is "{Product}: As of {date}", summary joins that
  *   date's bullets into one line.
+ *   Suger Docs Updates diffs the live sitemap against data/suger-docs-known-urls.json
+ *   (a persisted last-seen URL set) and emits one entry per genuinely new page —
+ *   rendered in its own "Suger Docs" column on the What's New page, not mixed into
+ *   the main feed or its platform/type filters (platformTag "suger-docs").
  *
  *   KNOWN FLAKY: Oracle Marketplace Blog returns 403 (Akamai bot mitigation) from
  *   every environment tested so far — may or may not work from GitHub Actions'
@@ -95,6 +100,8 @@ import { dirname, join } from "path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "../data/whats-new.js");
 const OUT_CSV = join(__dirname, "../data/whats-new.csv");
+const DOCS_KNOWN_URLS = join(__dirname, "../data/suger-docs-known-urls.json");
+const DOCS_ARCHIVE = join(__dirname, "../data/suger-docs-archive.md");
 const CUTOFF_DATE = "2026-01-01"; // keep all entries from Jan 1 2026 onward
 
 // ── Keyword filter ────────────────────────────────────────────────────────────
@@ -637,14 +644,17 @@ async function fetchOracleMarketplace() {
 // tagged with either category.
 
 async function fetchOracleBlog() {
-  const xml = await fetchText("https://blogs.oracle.com/oraclemarketplace/feed");
+  const xml = await fetchText(
+    "https://blogs.oracle.com/oraclemarketplace/feed",
+  );
   const results = [];
   for (const item of parseRssItems(xml)) {
     const title = scrub(item.title);
     const summary = oneLiner(scrub(item.description));
-    const inMpCategory = /oracle cloud marketplace|oracle marketplace insights/i.test(
-      item.category,
-    );
+    const inMpCategory =
+      /oracle cloud marketplace|oracle marketplace insights/i.test(
+        item.category,
+      );
     if (!inMpCategory && !hasKeyword(title + " " + summary)) continue;
     const date = parseIsoDate(item.pubDate);
     if (!date || !isRecent(date)) continue;
@@ -729,8 +739,18 @@ async function fetchSugerBlog() {
 // silently overwrite the other.
 
 const MONTH_NAMES = [
-  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 function formatDisplayDate(isoDate) {
   const [y, m, d] = isoDate.split("-").map(Number);
@@ -793,10 +813,113 @@ async function fetchSugerChangelog() {
 }
 
 async function fetchInsulinChangelog() {
-  return fetchProductChangelog(
-    "https://www.insulin.dev/changelog/",
-    "Insulin",
-  );
+  return fetchProductChangelog("https://www.insulin.dev/changelog/", "Insulin");
+}
+
+// ── Source: Suger Docs sitemap diff ───────────────────────────────────────────
+//
+// Tracks doc.suger.io's sitemap for newly published pages — mirrors a manual
+// two-sheet Google Sheets workflow (pull today's sitemap, diff against
+// yesterday's pull) with two files instead: data/suger-docs-known-urls.json
+// holds the last-seen URL set, this fetcher diffs the live sitemap against
+// it on every run. First run ever (no known-urls file yet) seeds the
+// baseline silently and emits zero entries — otherwise every one of the
+// ~470 existing doc pages would show up as "new" in one flood. Every run
+// after that only reports genuinely new pages. Rendered in its own "Suger
+// Docs" column on the What's New page — platformTag "suger-docs" is
+// deliberately excluded from the main marketplace/blog feed and its
+// platform/type filters (see whats-new.js).
+
+const ARCHIVE_HEADER =
+  "# Suger Docs Archive\n\n" +
+  'Chronological record of new pages detected on [doc.suger.io](https://doc.suger.io/), backing up every change the "Suger Docs Updates" fetcher finds. Auto-appended by `scripts/fetch-whats-new.js` — do not edit manually. Newest entry first.\n';
+
+function appendDocsArchiveEntry(isoDate, newEntries) {
+  const [y, m, d] = isoDate.split("-");
+  const mmddyyyy = `${m}/${d}/${y}`;
+  const count = newEntries.length;
+  const bullets = newEntries
+    .map((e) => `- [${e.title}](${e.sourceUrl})`)
+    .join("\n");
+  const block = `\n## ${mmddyyyy} — ${count} new page${count === 1 ? "" : "s"}\n\n${bullets}\n`;
+
+  const existing = existsSync(DOCS_ARCHIVE)
+    ? readFileSync(DOCS_ARCHIVE, "utf8")
+    : ARCHIVE_HEADER;
+
+  // Newest entry goes right after the intro, before the first existing "## " block.
+  const firstHeadingIdx = existing.indexOf("\n## ");
+  const output =
+    firstHeadingIdx === -1
+      ? existing.trimEnd() + "\n" + block
+      : existing.slice(0, firstHeadingIdx) +
+        block +
+        existing.slice(firstHeadingIdx);
+
+  writeFileSync(DOCS_ARCHIVE, output, "utf8");
+}
+
+function titleFromDocUrl(url) {
+  const path = url
+    .replace(/^https?:\/\/doc\.suger\.io\//, "")
+    .replace(/\/$/, "");
+  if (!path) return "Suger Docs Home";
+  return path
+    .split("/")
+    .map((seg) =>
+      seg
+        .split("-")
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(" "),
+    )
+    .join(" › ");
+}
+
+async function fetchSugerDocsUpdates() {
+  const xml = await fetchText("https://doc.suger.io/sitemap-0.xml");
+  const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1].trim());
+
+  const isBootstrap = !existsSync(DOCS_KNOWN_URLS);
+  let knownUrls = [];
+  if (!isBootstrap) {
+    try {
+      knownUrls = JSON.parse(readFileSync(DOCS_KNOWN_URLS, "utf8"));
+    } catch (e) {
+      console.warn("  Could not parse suger-docs-known-urls.json:", e.message);
+    }
+  }
+  const knownSet = new Set(knownUrls);
+
+  writeFileSync(DOCS_KNOWN_URLS, JSON.stringify(urls, null, 2) + "\n", "utf8");
+
+  if (isBootstrap) {
+    console.log(
+      `  (bootstrap: seeded ${urls.length} known doc URLs, no entries emitted)`,
+    );
+    return [];
+  }
+
+  const newUrls = urls.filter((u) => !knownSet.has(u));
+  const today = new Date().toISOString().slice(0, 10);
+
+  const entries = newUrls.map((url) => {
+    const title = titleFromDocUrl(url);
+    return {
+      id: stableId("suger-docs", today, title),
+      platform: "Suger",
+      platformTag: "suger-docs",
+      date: today,
+      title,
+      summary: "New page published on Suger's product documentation.",
+      type: "docs",
+      sourceUrl: url,
+      impact: "low",
+    };
+  });
+
+  if (entries.length) appendDocsArchiveEntry(today, entries);
+
+  return entries;
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
@@ -828,6 +951,7 @@ async function main() {
     ["Suger Blog", fetchSugerBlog],
     ["Suger Changelog", fetchSugerChangelog],
     ["Insulin Changelog", fetchInsulinChangelog],
+    ["Suger Docs Updates", fetchSugerDocsUpdates],
   ];
 
   const fresh = [];
@@ -841,10 +965,14 @@ async function main() {
     }
   }
 
-  // Azure + Suger: replace strategy — both fetchers scrape a full listing page so we have
-  // complete coverage; drop stale existing entries to avoid off-by-one date duplicates.
+  // Azure + Suger (blog/changelog): replace strategy — these fetchers scrape a full
+  // listing page each run, so we have complete coverage; drop stale existing entries
+  // to avoid off-by-one date duplicates. Keyed on platformTag, not platform, so
+  // "suger-docs" entries (Suger Docs Updates) are excluded from this drop — that
+  // fetcher only ever emits genuinely-new-today pages, never a full page rescan, so
+  // its past entries must be preserved via the normal merge-by-id path below instead.
   existing = existing.filter(
-    (e) => e.platform !== "Azure" && e.platform !== "Suger",
+    (e) => e.platform !== "Azure" && e.platformTag !== "suger",
   );
 
   // Merge: fresh entries overwrite existing ones with same ID
