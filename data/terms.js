@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-08-03";
+export const lastReviewed = "2026-08-17";
 
 export const terms = [
   {
@@ -1626,7 +1626,7 @@ export const terms = [
       { name: "Outbound Referral", slug: "outbound-referral" },
       {
         name: "Co-sell Eligible / Incentivized — Azure",
-        slug: "co-sell-eligible-incentivized-—-azure",
+        slug: "co-sell-eligible-/-incentivized-—-azure",
       },
       { name: "Partner Center — Azure", slug: "partner-center-—-azure" },
     ],
@@ -7978,7 +7978,7 @@ export const terms = [
     tags: ["azure", "offers"],
     def: "A dedicated Microsoft Marketplace category and certification layer for AI and agentic solutions, surfaced in Azure Portal, Azure AI Foundry, Microsoft 365 Copilot, and Teams. Publishers choose between two deployment subtypes — Azure Agents (infrastructure-side, running on Azure compute) and Microsoft 365/Copilot Agents (client-side, integrated with Microsoft 365 surfaces) — and must select an underlying transactable offer type (SaaS, Container, VM, or Azure Application) before the AI Apps and Agents category layer is applied. The Standard Contract for Cloud Marketplace was extended in March 2026 to explicitly cover AI Apps and Agents offers. ISVs listing AI solutions here gain placement in AI-native discovery surfaces alongside the standard Marketplace catalog.",
     alias:
-      "Related: Microsoft Marketplace — Azure, ISV Success Program — Azure, Azure Container Offer (Kubernetes Application) — Azure",
+      "AWS equivalent: AI Agents & Tools — AWS | GCP equivalent: AI Agent Listing — GCP | Related: Microsoft Marketplace — Azure, ISV Success Program — Azure, Azure Container Offer (Kubernetes Application) — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/artificial-intelligence-apps-agents-publish",
     difficulty: "intermediate",
@@ -8204,7 +8204,7 @@ export const terms = [
     tags: ["gcp", "offers"],
     def: "A first-class Google Cloud Marketplace listing type for AI agents, distinct from SaaS, VM, and Kubernetes product types. Announced at Google Cloud Next '26, AI Agent Listings allow ISVs to publish conversational and autonomous AI agents that buyers can deploy and integrate with Google Cloud AI services. Listings require an Agent Card JSON spec file and are discoverable through Google Cloud Marketplace and Google Agentspace.",
     alias:
-      "Related: Agent Card — GCP, GCP Marketplace — GCP, Agentic Earnings Hub — GCP",
+      "AWS equivalent: AI Agents & Tools — AWS | Azure equivalent: AI Apps and Agents — Azure | Related: Agent Card — GCP, GCP Marketplace — GCP, Agentic Earnings Hub — GCP",
     source: "https://docs.cloud.google.com/marketplace/docs",
     difficulty: "intermediate",
     category: "procurement",
@@ -8302,7 +8302,7 @@ export const terms = [
   {
     name: "Insulin Jobs — Suger",
     tags: ["suger"],
-    def: "An automated execution system within Suger Insulin that connects an Insulin Agent to a trigger and runs the agent when the trigger fires — without manual intervention. Supports three trigger modes: manual (on-demand run), cron schedule (recurring time pattern), and external push event (webhook or event signal from an external system). Renamed from Insulin Watch in 2026 to reflect expanded trigger capabilities beyond scheduled monitoring. Jobs enable ISV operations teams to automate recurring marketplace tasks — monitoring entitlements, generating reports, flagging stale co-sell referrals — as background processes that run independently of the Insulin Chat interface.",
+    def: "An automated execution system within Suger Insulin that connects an Insulin Agent to a trigger and runs the agent when the trigger fires — without manual intervention. Supports three trigger modes: manual (on-demand run), cron schedule (recurring time pattern), and external push event (webhook or event signal from an external system). Jobs enable ISV operations teams to automate recurring marketplace tasks — monitoring entitlements, generating reports, flagging stale co-sell referrals — as background processes that run independently of the Insulin Chat interface.",
     alias:
       "Related: Insulin Agent — Suger, Insulin Chat — Suger, Insulin Channel — Suger, Insulin Skill — Suger",
     source: "https://doc.suger.io/insulin/jobs/",
@@ -8330,7 +8330,7 @@ export const terms = [
   {
     name: "Insulin Agent — Suger",
     tags: ["suger"],
-    def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, system prompt, model configuration, and optional tool access. Insulin ships with 20+ pre-built agents organized by function (development, communication, project management, data analytics, sales CRM), and supports fully custom agent creation. Agents can be invoked manually in chat, triggered via an Insulin Job, or assigned to run within an Insulin Channel. Role-based permissions (Admin, Editor, User, Viewer) control who can edit or use each agent, with ownership transfer supported. Pre-built and community agents are available to install through the Insulin Marketplace.",
+    def: "The named unit of work within Suger's Insulin platform — an AI specialist with a defined role, system prompt, model configuration, and optional tool access. Insulin ships with 20+ pre-built agents organized by function (development, productivity, data, analytics, sales, business, security), and supports fully custom agent creation. Agents can be invoked manually in chat, triggered via an Insulin Job, or assigned to run within an Insulin Channel. Role-based permissions (Admin, Editor, User) control who can edit or use each agent, with ownership transfer supported. Pre-built and community agents are available to install through the Insulin Marketplace.",
     alias:
       "Related: Insulin, Insulin Jobs — Suger, Insulin Channel — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
     source: "https://doc.suger.io/insulin/agents/",
@@ -8362,7 +8362,7 @@ export const terms = [
     def: "A persistent, multi-user and multi-agent group conversation space within Suger's Insulin platform. Channels support role-based access control and up to 20 agents simultaneously, enabling collaborative workflows where multiple team members and multiple specialized agents operate in shared context. Distinct from a direct 1:1 agent chat — Channels are designed for ongoing operational processes such as a nightly deal review or a revenue operations war room.",
     alias:
       "Related: Insulin, Insulin Agent — Suger, Insulin Jobs — Suger, Insulin Skill — Suger, Insulin Marketplace — Suger",
-    source: "https://doc.suger.io/insulin/",
+    source: "https://doc.suger.io/insulin/channels/",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["Suger Users", "ISVs / Sellers", "Partner Managers"],
@@ -9601,7 +9601,7 @@ export const terms = [
     alias:
       "Related: Marketplace Capacity Drawdown (MCD) — Snowflake, Snowflake Marketplace — Snowflake | AWS equivalent: SaaS Subscription Pricing — AWS | Azure equivalent: Subscription — Azure",
     source:
-      "https://docs.snowflake.com/en/release-notes/2026/other/2026-06-30-integrated-saas-listings-ga",
+      "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-integrated-saas-listings-ga",
     difficulty: "intermediate",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -10029,9 +10029,9 @@ export const terms = [
   {
     name: "Insulin Skill — Suger",
     tags: ["suger"],
-    def: "An instruction file — implemented as a Markdown document — that provides Suger Insulin agents with specialized knowledge, procedures, and domain expertise for specific cloud GTM workflows. Agents automatically discover and load relevant skills based on conversation context without requiring manual invocation. Skills can be created by uploading Markdown files, building interactively with an agent, importing from a GitHub repository, or installing from the Insulin Marketplace. Once installed, a skill's content becomes part of the agent's active context for all relevant conversations in that workspace.",
+    def: "An instruction file — implemented as a Markdown document — that provides Suger Insulin agents with specialized knowledge, procedures, and domain expertise for specific cloud GTM workflows. Agents automatically discover and load relevant skills based on conversation context without requiring manual invocation. Skills can be created by uploading a Markdown or `.zip` file, building interactively with an agent, importing from a GitHub repository, installing from the Insulin Marketplace catalog, or importing from the public SkillsMP registry (skillsmp.com). Once installed, a skill's content becomes part of the agent's active context for all relevant conversations in that workspace.",
     alias:
-      "Related: Insulin Agent — Suger, Insulin Marketplace — Suger, Insulin — Suger, Insulin Jobs — Suger",
+      "Related: Insulin Agent — Suger, Insulin Marketplace — Suger, Insulin, Insulin Jobs — Suger",
     source: "https://doc.suger.io/insulin/marketplace/",
     difficulty: "intermediate",
     category: "operations",
@@ -10063,9 +10063,9 @@ export const terms = [
   {
     name: "Insulin Marketplace — Suger",
     tags: ["suger"],
-    def: "A curated catalog of pre-built agents and skills within the Suger Insulin workspace, covering 20+ agents and 29+ skills across domains including document generation, CRM workflows, code review, and meeting preparation. Users browse, install with a single click, and customize installed items — each installation copies the agent's system prompt, configuration, conversation starters, and icon into the user's Insulin workspace as an editable copy. The Insulin Marketplace is Suger's distribution layer for sharing reusable AI automation components across marketplace operations teams.",
+    def: "A curated catalog of pre-built agents and skills within the Suger Insulin workspace for common cloud GTM workflows. Users browse, install with a single click, and customize installed items — each installation copies the agent's system prompt, configuration, conversation starters, and icon into the user's Insulin workspace as an editable copy. The Insulin Marketplace is Suger's distribution layer for sharing reusable AI automation components across marketplace operations teams.",
     alias:
-      "Related: Insulin Agent — Suger, Insulin Skill — Suger, Insulin — Suger",
+      "Related: Insulin Agent — Suger, Insulin Skill — Suger, Insulin",
     source: "https://doc.suger.io/insulin/marketplace/",
     difficulty: "beginner",
     category: "operations",
@@ -12186,6 +12186,136 @@ export const terms = [
         slug: "co-sell-metrics-dashboard-—-suger",
       },
       { name: "Collaboration Score — Suger", slug: "collaboration-score-—-suger" },
+    ],
+  },
+  {
+    name: "AI Agents & Tools — AWS",
+    tags: ["aws", "offers"],
+    def: "A dedicated AWS Marketplace listing category for AI agents (autonomous systems that reason, plan, and act on a buyer's behalf) and AI tools (guardrails, knowledge bases, integration protocols, and business-logic components that support them). Listings support two deployment options — API-based access to a vendor-hosted agent, or container deployment into the buyer's own AWS environment — and many integrate with Amazon Bedrock AgentCore and the Model Context Protocol (MCP) for use in agentic workflows. Buyers discover listings via semantic search or category browsing, distinct from the standard SaaS/AMI/container catalog structure.",
+    alias:
+      "GCP equivalent: AI Agent Listing — GCP | Azure equivalent: AI Apps and Agents — Azure | Related: Agent Mode — AWS, AWS AI Competency — Agentic AI Categories — AWS",
+    source: "https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ai-agents-products.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Publishing an AI agent or AI tool as an AWS Marketplace listing to reach buyers through semantic search and category browsing",
+      "Choosing between API-based and container deployment when listing an AI agent product on AWS Marketplace",
+    ],
+    context: ["AWS Marketplace", "Amazon Bedrock AgentCore", "AI Agent Ecosystem"],
+    related: [
+      { name: "Agent Mode — AWS", slug: "agent-mode-—-aws" },
+      {
+        name: "AWS AI Competency — Agentic AI Categories — AWS",
+        slug: "aws-ai-competency-—-agentic-ai-categories-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Buy with AWS — AWS",
+    tags: ["aws", "offers"],
+    def: "A procurement widget that AWS Marketplace sellers embed on their own website, letting buyers request a purchase and complete checkout through AWS Marketplace without leaving the seller's page. A buyer selects Buy with AWS and submits a short form (AWS Account ID, company name, contact details); the seller's team then creates a private offer that the buyer accepts back on AWS Marketplace to finish the transaction. It moves marketplace discovery onto partner-owned marketing pages while keeping billing, entitlements, and disbursement inside AWS Marketplace.",
+    alias:
+      "Related: AWS Marketplace Storefront — AWS, Private Offer — AWS, Express Private Offer — AWS",
+    source: "https://docs.aws.amazon.com/marketplace/latest/storefrontguide/storefronts-buy-with-aws.html",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Embedding a Buy with AWS button on a product marketing page to let buyers start an AWS Marketplace purchase without navigating to the Marketplace first",
+      "Reviewing AWS-provided funnel metrics on Buy with AWS traffic to measure how the embedded checkout affects conversion from a seller's own website",
+    ],
+    context: ["AWS Marketplace", "Seller Website", "Private Offer Workflow"],
+    related: [
+      { name: "AWS Marketplace Storefront — AWS", slug: "aws-marketplace-storefront-—-aws" },
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+      { name: "Express Private Offer — AWS", slug: "express-private-offer-—-aws" },
+    ],
+  },
+  {
+    name: "Software Path — AWS",
+    tags: ["aws", "cosell"],
+    def: "One of five AWS Partner Paths — alongside Hardware, Services, Training, and Distribution — for organizations that develop software running on or integrating with AWS. Enrolling in the Software Path is the entry point into the AWS Partner Network for most ISVs, unlocking Partner Central, technical enablement content, AWS Marketplace listing, and the Foundational Technical Review; it's a prerequisite for ISV Accelerate, AWS Competencies, and every AWS funding program. AWS renamed the prior 'ISV Partner Path' to the Software Path in 2026, and partners progress through Registered, Validated, and Differentiated stages tracked in the Partner Scorecard.",
+    alias:
+      "Related: AWS Partner Network (APN) — AWS, Foundational Technical Review (FTR) — AWS, ISV Accelerate — AWS, Partner Central 3.0 (PC3.0) — AWS",
+    source: "https://aws.amazon.com/partners/paths/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Enrolling in the Software Path to unlock AWS Marketplace listing, Partner Central access, and the Foundational Technical Review",
+      "Progressing from Registered to Validated to Differentiated stage on the Software Path to qualify for ISV Accelerate and AWS Competencies",
+    ],
+    context: ["AWS Partner Network", "AWS Partner Central", "Partner Scorecard"],
+    related: [
+      { name: "AWS Partner Network (APN) — AWS", slug: "aws-partner-network-apn-—-aws" },
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
+      { name: "ISV Accelerate — AWS", slug: "isv-accelerate-—-aws" },
+      { name: "Partner Central 3.0 (PC3.0) — AWS", slug: "partner-central-3.0-pc3.0-—-aws" },
+    ],
+  },
+  {
+    name: "Managed Buyer Notifications — AWS",
+    tags: ["aws", "operations"],
+    def: "AWS Marketplace's buyer-facing notification system, built on AWS User Notifications, that lets buyers subscribe to four categories — Products and Solutions, Agreements and Subscriptions, Private Offers, and Pricing Changes — and route each to a channel of their choice, including email, the AWS Console Mobile Application, Slack, or Microsoft Teams. It replaces the prior model where every buyer notification went only to the AWS account root email with no category control. All categories are enabled by default and delivered to the root email until reconfigured; category-based subscriptions become mandatory behavior in January 2027.",
+    alias:
+      "Related: Private Offer — AWS, Amazon EventBridge Marketplace Integration — AWS",
+    source: "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-managed-buyer-notifications/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["Enterprise Buyers"],
+    useCases: [
+      "Subscribing to the Agreements and Subscriptions notification category to route renewal alerts to a dedicated Slack channel instead of the AWS root email",
+      "Configuring separate notification channels per category so pricing-change alerts reach finance while private-offer alerts reach procurement",
+    ],
+    context: ["AWS Marketplace", "AWS User Notifications", "Buyer Console"],
+    related: [
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+      {
+        name: "Amazon EventBridge Marketplace Integration — AWS",
+        slug: "amazon-eventbridge-marketplace-integration-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Broadcasts — Suger",
+    tags: ["suger", "integrations"],
+    def: "Broadcasts is a Suger PRM feature that lets a partner manager compose a single message and send it simultaneously to every connected partner Slack channel, rather than posting to each channel individually. It complements Slack Integration's automated per-channel event notifications by giving teams a manual, one-to-many channel for announcements, program updates, or time-sensitive partner asks. Shipped in Suger's July 27, 2026 release.",
+    alias: "Related: Slack Integration, Partner Portal — Suger",
+    source: "https://www.suger.io/resources/changelog/#release-2026-07-27",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["Partner Managers", "Suger Users"],
+    useCases: [
+      "Composing a single Broadcast to notify every partner Slack channel of a program update or upcoming deadline at once",
+      "Using Broadcasts for time-sensitive partner asks instead of manually posting the same message to each partner channel",
+    ],
+    context: ["Suger PRM", "Partner Portal", "Slack"],
+    related: [
+      { name: "Slack Integration", slug: "slack-integration" },
+      { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
+    ],
+  },
+  {
+    name: "Insulin Inbox App — Suger",
+    tags: ["suger"],
+    def: "Insulin Inbox App is a rebuilt email interface within Suger Insulin that gives agents and users full email support alongside Insulin's existing Chat and Channel surfaces. It lets teams read, send, and act on email directly inside the Insulin workspace, extending Insulin's communication surfaces beyond Slack- and Teams-style channel messaging into email-based workflows. Shipped in Insulin's July 27, 2026 release.",
+    alias: "Related: Insulin Chat — Suger, Insulin Channel — Suger",
+    source: "https://www.insulin.dev/changelog/#release-2026-07-27",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Reading and responding to email directly inside the Insulin workspace instead of switching to a separate mail client",
+      "Acting on an email thread from within Insulin Inbox App to trigger a follow-up agent task or update a marketplace record",
+    ],
+    context: ["Suger Insulin", "Insulin Workspace", "Email"],
+    related: [
+      { name: "Insulin Chat — Suger", slug: "insulin-chat-—-suger" },
+      { name: "Insulin Channel — Suger", slug: "insulin-channel-—-suger" },
     ],
   },
 ];
