@@ -1,6 +1,127 @@
 {
-  "lastUpdated": "2026-08-15T06:19:41.131Z",
+  "lastUpdated": "2026-08-16T06:21:50.017Z",
   "updates": [
+    {
+      "id": "suger-2026-08-16-co-sell-your-aws-sca-is-signed-now-operationalize-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Co-Sell Your AWS SCA Is Signed. Now Operationalize It The signing is the easy part. An SCA is a multi-year plan with num",
+      "summary": "Co-Sell Your AWS SCA Is Signed. Now Operationalize It The signing is the easy part. An SCA is a multi-year plan with numbers in it, and the numbers only mean something if somebody can see them before the quarterly review. Aug 16, 2026 Read article",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-sca-operating-plan/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-aws-what-buy-with-aws-does-to-your-website-funnel-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "AWS What Buy with AWS Does to Your Website Funnel Adding a purchase button to your own site does not shorten the funnel.",
+      "summary": "AWS What Buy with AWS Does to Your Website Funnel Adding a purchase button to your own site does not shorten the funnel. It moves the qualification work upstream, onto a page that was never designed to do it. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/buy-with-aws-funnel/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-aws-co-terming-and-expanding-marketplace-agreement",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "AWS Co-Terming and Expanding Marketplace Agreements A mid-term expansion is either an amendment that replaces the agreem",
+      "summary": "AWS Co-Terming and Expanding Marketplace Agreements A mid-term expansion is either an amendment that replaces the agreement or a second agreement beside it. Those are different contracts, different invoices, and increasingly a real choice. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/co-terming-and-expanding-marketplace-agreements/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-creating-private-offers-without-the-cons",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM Creating Private Offers Without the Console Generating an offer from CRM data is a small amount of code and a ",
+      "summary": "Cloud GTM Creating Private Offers Without the Console Generating an offer from CRM data is a small amount of code and a large amount of failure handling. The asynchronous parts are what decide whether the integration holds. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/creating-private-offers-without-the-console/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-how-enterprise-buyers-buy-through-a-mark",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a ",
+      "summary": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a billing account, a role assignment and a procurement queue — and any one of them can hold the deal for a week. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-enterprise-buyers-buy-through-a-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-mcp-for-cloud-gtm-connecting-agents-to-d",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM MCP for Cloud GTM: Connecting Agents to Data An assistant that can read your marketplace data is useful. One t",
+      "summary": "Cloud GTM MCP for Cloud GTM: Connecting Agents to Data An assistant that can read your marketplace data is useful. One that can change it needs a permission model, and MCP is where that model has to be enforced. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/mcp-for-cloud-gtm/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
+      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-aws-packaging-software-and-services-in-one-offer-a",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "AWS Packaging Software and Services in One Offer AWS offer sets let a buyer accept licence and implementation together i",
+      "summary": "AWS Packaging Software and Services in One Offer AWS offer sets let a buyer accept licence and implementation together in one action. The constraints on getting there are strict, and most of them cannot be fixed after release. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/packaging-software-and-services-in-one-offer/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-security-how-security-reviews-shape-marketplace-de",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Security How Security Reviews Shape Marketplace Deals Being on a cloud marketplace means the provider vetted your artifa",
+      "summary": "Security How Security Reviews Shape Marketplace Deals Being on a cloud marketplace means the provider vetted your artifact. It does not mean the buyer's security team will skip theirs, and confusing the two costs weeks. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/security-reviews-in-marketplace-deals/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-marketplaces-selling-on-snowflake-oracle-and-aliba",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Marketplaces Selling on Snowflake, Oracle and Alibaba Cloud The marketplaces past AWS, Microsoft and Google Cloud are no",
+      "summary": "Marketplaces Selling on Snowflake, Oracle and Alibaba Cloud The marketplaces past AWS, Microsoft and Google Cloud are not smaller copies of them. Each gates sellers differently, and one of them caps how much of a customer's commitment you can take. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-on-snowflake-oracle-and-alibaba-cloud/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-billing-metering-when-usage-records-fail-batching-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a dead",
+      "summary": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a deadline on it. The response codes tell you which failures to retry and which to fix — and they are not the same failures. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/when-usage-records-fail/",
+      "impact": "low"
+    },
     {
       "id": "azure-2026-08-14-grow-your-security-practice-at-it-nation",
       "platform": "Azure",
@@ -29,7 +150,7 @@
       "platformTag": "suger",
       "date": "2026-08-14",
       "title": "Cloud GTM How Authentication Works for Marketplace APIs Marketplace API access is machine-to-machine, long-lived and org",
-      "summary": "Cloud GTM How Authentication Works for Marketplace APIs Marketplace API access is machine-to-machine, long-lived and organisation-scoped. That combination breaks most of the credential habits teams bring to it. Aug 14, 2026 Read article",
+      "summary": "Cloud GTM How Authentication Works for Marketplace APIs Marketplace API access is machine-to-machine, long-lived and organisation-scoped. That combination breaks most of the credential habits teams bring to it. Aug 14, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/authentication-for-marketplace-apis/",
       "impact": "low"
@@ -651,17 +772,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
-      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-06-cloud-gtm-free-trials-on-cloud-marketplaces-an-isv",
       "platform": "Suger",
       "platformTag": "suger",
@@ -681,6 +791,17 @@
       "summary": "GCP Google Cloud Private Offers: Setup and Pitfalls Most failed Google Cloud private offers fail on the buyer's billing account, not your pricing. Here's the prerequisite checklist and the errors that block acceptance. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-private-offers-setup-and-pitfalls/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
+      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
       "impact": "low"
     },
     {
@@ -783,17 +904,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-gcp-google-cloud-marketplace-the-isv-seller-guide-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Port",
-      "summary": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Portal, listing types, private offers, resellers, and committed spend. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-marketplace-isv-seller-guide/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-cloud-gtm-how-to-choose-the-right-cloud-marketplac",
       "platform": "Suger",
       "platformTag": "suger",
@@ -802,6 +912,17 @@
       "summary": "Cloud GTM How to Choose the Right Cloud Marketplace Platform A buyer's guide to evaluating cloud marketplace platforms: the criteria that separate real automation from a prettier console. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-to-choose-a-cloud-marketplace-platform/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-gcp-google-cloud-marketplace-the-isv-seller-guide-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Port",
+      "summary": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Portal, listing types, private offers, resellers, and committed spend. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-marketplace-isv-seller-guide/",
       "impact": "low"
     },
     {
