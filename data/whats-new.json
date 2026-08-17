@@ -123,6 +123,94 @@
       "impact": "low"
     },
     {
+      "id": "suger-docs-2026-08-16-cosell-cosell-microsoft-fields",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Cosell › Cosell Microsoft Fields",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/cosell/cosell-microsoft-fields/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-hubspot-app-hubspot-app-funding",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Hubspot App › Hubspot App Funding",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/hubspot-app/hubspot-app-funding/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-insulin-aws-support",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Insulin › Aws Support",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/insulin/aws-support/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-broadcasts",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Broadcasts",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/broadcasts/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-connect-slack-for-partners",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Connect Slack For Partners",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/connect-slack-for-partners/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-customize-the-partner-overview",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Customize The Partner Overview",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/customize-the-partner-overview/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-partner-events",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Partner Events",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/partner-events/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-docs-2026-08-16-prm-work-a-partner-record",
+      "platform": "Suger",
+      "platformTag": "suger-docs",
+      "date": "2026-08-16",
+      "title": "Prm › Work A Partner Record",
+      "summary": "New page published on Suger's product documentation.",
+      "type": "docs",
+      "sourceUrl": "https://doc.suger.io/prm/work-a-partner-record/",
+      "impact": "low"
+    },
+    {
       "id": "azure-2026-08-14-grow-your-security-practice-at-it-nation",
       "platform": "Azure",
       "platformTag": "azure",
