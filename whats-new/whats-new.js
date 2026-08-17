@@ -156,9 +156,20 @@ function renderCard(e) {
 }
 
 function renderDocsRow(e) {
-  return `<li class="wn-docs-row">
-    <a class="wn-docs-link" href="${escHtml(e.sourceUrl)}" target="_blank" rel="noopener">${escHtml(e.title)}</a>
-    <time class="wn-docs-date" datetime="${escHtml(e.date)}">${escHtml(formatDate(e.date))}</time>
+  const isRemoved = e.type === "docs-removed";
+  const marker = isRemoved
+    ? `<span class="wn-docs-marker wn-docs-marker--removed" aria-hidden="true">−</span>`
+    : `<span class="wn-docs-marker wn-docs-marker--added" aria-hidden="true">+</span>`;
+  const titleEl = isRemoved
+    ? `<span class="wn-docs-link wn-docs-link--removed">${escHtml(e.title)}</span>`
+    : `<a class="wn-docs-link" href="${escHtml(e.sourceUrl)}" target="_blank" rel="noopener">${escHtml(e.title)}</a>`;
+
+  return `<li class="wn-docs-row${isRemoved ? " wn-docs-row--removed" : ""}">
+    ${marker}
+    <div class="wn-docs-row-body">
+      ${titleEl}
+      <time class="wn-docs-date" datetime="${escHtml(e.date)}">${escHtml(formatDate(e.date))}</time>
+    </div>
   </li>`;
 }
 

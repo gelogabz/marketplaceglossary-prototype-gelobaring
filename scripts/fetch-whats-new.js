@@ -818,30 +818,50 @@ async function fetchInsulinChangelog() {
 
 // ── Source: Suger Docs sitemap diff ───────────────────────────────────────────
 //
-// Tracks doc.suger.io's sitemap for newly published pages — mirrors a manual
+// Tracks doc.suger.io's sitemap for published/removed pages — mirrors a manual
 // two-sheet Google Sheets workflow (pull today's sitemap, diff against
 // yesterday's pull) with two files instead: data/suger-docs-known-urls.json
 // holds the last-seen URL set, this fetcher diffs the live sitemap against
-// it on every run. First run ever (no known-urls file yet) seeds the
-// baseline silently and emits zero entries — otherwise every one of the
+// it on every run — both directions: URLs in today's pull but not the known
+// set are new pages, URLs in the known set but not today's pull are pages
+// that were removed or moved. First run ever (no known-urls file yet) seeds
+// the baseline silently and emits zero entries — otherwise every one of the
 // ~470 existing doc pages would show up as "new" in one flood. Every run
-// after that only reports genuinely new pages. Rendered in its own "Suger
+// after that only reports genuine adds/removals. Rendered in its own "Suger
 // Docs" column on the What's New page — platformTag "suger-docs" is
 // deliberately excluded from the main marketplace/blog feed and its
 // platform/type filters (see whats-new.js).
 
 const ARCHIVE_HEADER =
   "# Suger Docs Archive\n\n" +
-  'Chronological record of new pages detected on [doc.suger.io](https://doc.suger.io/), backing up every change the "Suger Docs Updates" fetcher finds. Auto-appended by `scripts/fetch-whats-new.js` — do not edit manually. Newest entry first.\n';
+  'Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/), backing up every change the "Suger Docs Updates" fetcher finds. Auto-appended by `scripts/fetch-whats-new.js` — do not edit manually. Newest entry first.\n';
 
-function appendDocsArchiveEntry(isoDate, newEntries) {
+const DIFF_FENCE = "```";
+
+function appendDocsArchiveEntry(isoDate, newEntries, removedEntries) {
   const [y, m, d] = isoDate.split("-");
   const mmddyyyy = `${m}/${d}/${y}`;
-  const count = newEntries.length;
-  const bullets = newEntries
-    .map((e) => `- [${e.title}](${e.sourceUrl})`)
-    .join("\n");
-  const block = `\n## ${mmddyyyy} — ${count} new page${count === 1 ? "" : "s"}\n\n${bullets}\n`;
+
+  const summaryBits = [];
+  if (newEntries.length)
+    summaryBits.push(
+      `${newEntries.length} added page${newEntries.length === 1 ? "" : "s"}`,
+    );
+  if (removedEntries.length)
+    summaryBits.push(
+      `${removedEntries.length} removed page${removedEntries.length === 1 ? "" : "s"}`,
+    );
+
+  // Real diff-fenced block — GitHub renders `+`/`-` lines in a ```diff fence
+  // with native green/red coloring, same as a PR diff view.
+  const diffLines = [
+    ...newEntries.map((e) => `+ ${e.title} — ${e.sourceUrl}`),
+    ...removedEntries.map((e) => `- ${e.title} — ${e.sourceUrl}`),
+  ].join("\n");
+
+  const block =
+    `\n## ${mmddyyyy} — ${summaryBits.join(", ")}\n\n` +
+    `${DIFF_FENCE}diff\n${diffLines}\n${DIFF_FENCE}\n`;
 
   const existing = existsSync(DOCS_ARCHIVE)
     ? readFileSync(DOCS_ARCHIVE, "utf8")
@@ -889,6 +909,7 @@ async function fetchSugerDocsUpdates() {
     }
   }
   const knownSet = new Set(knownUrls);
+  const currentSet = new Set(urls);
 
   writeFileSync(DOCS_KNOWN_URLS, JSON.stringify(urls, null, 2) + "\n", "utf8");
 
@@ -900,9 +921,10 @@ async function fetchSugerDocsUpdates() {
   }
 
   const newUrls = urls.filter((u) => !knownSet.has(u));
+  const removedUrls = knownUrls.filter((u) => !currentSet.has(u));
   const today = new Date().toISOString().slice(0, 10);
 
-  const entries = newUrls.map((url) => {
+  const newEntries = newUrls.map((url) => {
     const title = titleFromDocUrl(url);
     return {
       id: stableId("suger-docs", today, title),
@@ -917,9 +939,25 @@ async function fetchSugerDocsUpdates() {
     };
   });
 
-  if (entries.length) appendDocsArchiveEntry(today, entries);
+  const removedEntries = removedUrls.map((url) => {
+    const title = titleFromDocUrl(url);
+    return {
+      id: stableId("suger-docs-removed", today, title),
+      platform: "Suger",
+      platformTag: "suger-docs",
+      date: today,
+      title,
+      summary: "This page was removed or moved on Suger's product documentation.",
+      type: "docs-removed",
+      sourceUrl: url,
+      impact: "low",
+    };
+  });
 
-  return entries;
+  if (newEntries.length || removedEntries.length)
+    appendDocsArchiveEntry(today, newEntries, removedEntries);
+
+  return [...newEntries, ...removedEntries];
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
