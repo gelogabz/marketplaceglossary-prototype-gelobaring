@@ -1,94 +1,6 @@
 {
-  "lastUpdated": "2026-08-16T21:55:30.760Z",
+  "lastUpdated": "2026-08-17T06:32:23.339Z",
   "updates": [
-    {
-      "id": "suger-docs-2026-08-16-cosell-cosell-microsoft-fields",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Cosell › Cosell Microsoft Fields",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/cosell/cosell-microsoft-fields/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-hubspot-app-hubspot-app-funding",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Hubspot App › Hubspot App Funding",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/hubspot-app/hubspot-app-funding/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-insulin-aws-support",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Insulin › Aws Support",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/aws-support/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-broadcasts",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm › Broadcasts",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/broadcasts/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-connect-slack-for-partners",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm › Connect Slack For Partners",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/connect-slack-for-partners/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-customize-the-partner-overview",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm › Customize The Partner Overview",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/customize-the-partner-overview/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-partner-events",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm › Partner Events",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/partner-events/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-work-a-partner-record",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm › Work A Partner Record",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/work-a-partner-record/",
-      "impact": "low"
-    },
     {
       "id": "suger-2026-08-16-co-sell-your-aws-sca-is-signed-now-operationalize-",
       "platform": "Suger",
@@ -541,17 +453,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against",
-      "summary": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against and a commission rate nobody can compute. Here is what channel PRM has to hold, and how to design tiers that survive an audit. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/channel-partner-relationship-management/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-10-prm-attribution-rules-that-stop-channel-conflict-c",
       "platform": "Suger",
       "platformTag": "suger",
@@ -583,6 +484,17 @@
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/first-90-days-cloud-marketplace/",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against",
+      "summary": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against and a commission rate nobody can compute. Here is what channel PRM has to hold, and how to design tiers that survive an audit. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/channel-partner-relationship-management/",
+      "impact": "low"
     },
     {
       "id": "suger-2026-08-10-co-sell-how-co-sell-works-on-aws-azure-and-google-",
@@ -772,6 +684,17 @@
       "impact": "high"
     },
     {
+      "id": "aws-2026-08-06-aws-waf-now-supports-a-salt-security-managed-rule-",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-08-06",
+      "title": "AWS WAF now supports a Salt Security managed rule group for API and MCP threat detection",
+      "summary": "AWS WAF now supports the Salt Security managed rule group, available through AWS Marketplace: Salt Managed Rules for AWS WAF - AI Agent API Security .",
+      "type": "release",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-waf-salt-security-managed-rules/",
+      "impact": "medium"
+    },
+    {
       "id": "aws-2026-08-06-aws-marketplace-now-lets-sellers-configure-net-pay",
       "platform": "AWS",
       "platformTag": "aws",
@@ -792,17 +715,6 @@
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/how-ascendings-jarvis-registry-bridges-agents-and-developer-tools/",
       "impact": "low"
-    },
-    {
-      "id": "aws-2026-08-06-aws-waf-now-supports-a-salt-security-managed-rule-",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-08-06",
-      "title": "AWS WAF now supports a Salt Security managed rule group for API and MCP threat detection",
-      "summary": "AWS WAF now supports the Salt Security managed rule group, available through AWS Marketplace: Salt Managed Rules for AWS WAF - AI Agent API Security .",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-waf-salt-security-managed-rules/",
-      "impact": "medium"
     },
     {
       "id": "azure-2026-08-06-security-and-compliance-offers-for-partners",
@@ -860,17 +772,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
-      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-06-cloud-gtm-free-trials-on-cloud-marketplaces-an-isv",
       "platform": "Suger",
       "platformTag": "suger",
@@ -893,17 +794,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-marketplaces-oracle-cloud-marketplace-a-guide-for-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committ",
-      "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-06-gcp-bringing-resellers-into-google-cloud-marketpla",
       "platform": "Suger",
       "platformTag": "suger",
@@ -912,6 +802,28 @@
       "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/resellers-on-google-cloud-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
+      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-marketplaces-oracle-cloud-marketplace-a-guide-for-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committ",
+      "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
       "impact": "low"
     },
     {
@@ -970,17 +882,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-aws-marketplace-for-sellers-the-complete-guide",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, f",
-      "summary": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, fees, private offers, resell (CPPO), co-sell with ACE, and payouts. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-for-sellers-complete-guide/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-aws-aws-marketplace-express-private-offers-explain",
       "platform": "Suger",
       "platformTag": "suger",
@@ -989,6 +890,17 @@
       "summary": "AWS AWS Marketplace Express Private Offers, Explained Express private offers let AWS Marketplace buyers self-serve an AI-generated offer from your pre-set rate cards. Here's what changed and how to set it up. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-express-private-offers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-aws-marketplace-for-sellers-the-complete-guide",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, f",
+      "summary": "AWS AWS Marketplace for Sellers: The Complete Guide Everything an ISV needs to sell on AWS Marketplace: listing types, fees, private offers, resell (CPPO), co-sell with ACE, and payouts. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-for-sellers-complete-guide/",
       "impact": "low"
     },
     {
@@ -1025,17 +937,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
-      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-aws-what-buyers-see-when-you-send-a-private-offer-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1044,6 +945,17 @@
       "summary": "AWS What Buyers See When You Send a Private Offer Sellers obsess over creating the offer. Here's the other side: exactly what a buyer sees and does when an AWS Marketplace private offer lands. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/what-buyers-see-when-you-send-a-private-offer/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
+      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
       "impact": "low"
     },
     {
@@ -1078,17 +990,6 @@
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/support?wt.mc_id=z1s4rndxcs",
       "impact": "high"
-    },
-    {
-      "id": "aws-2026-08-03-aws-waf-now-supports-miggo-security-managed-rule-g",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-08-03",
-      "title": "AWS WAF now supports Miggo Security managed rule groups for emerging threats and AI/ML application protection",
-      "summary": "AWS WAF now supports two new partner managed rule groups from Miggo Security, available through AWS Marketplace: Miggo Rules for AWS WAF – High Emerging Application Threats , and Miggo Rules for AWS WAF – AI/ML Application Protection .",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-waf-miggo-managed-rule-groups",
-      "impact": "medium"
     },
     {
       "id": "aws-2026-08-03-say-hello-to-149-new-aws-competency-and-msp-partne",
@@ -1388,17 +1289,6 @@
       "impact": "medium"
     },
     {
-      "id": "aws-2026-07-21-aws-marketplace-now-supports-self-service-seller-s",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-07-21",
-      "title": "AWS Marketplace now supports self-service seller signature management for India-based sellers",
-      "summary": "AWS Marketplace now enables India-based sellers to upload and manage their seller signatures directly through AWS Partner Central, eliminating the previous manual, email-based submission process.",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-marketplace-india/",
-      "impact": "medium"
-    },
-    {
       "id": "azure-2026-07-21-fy27-cloud-ai-gtm-launch",
       "platform": "Azure",
       "platformTag": "azure",
@@ -1408,17 +1298,6 @@
       "type": "blog",
       "sourceUrl": "https://partner.microsoft.com/explore/solution-areas/cloud-ai-platforms",
       "impact": "high"
-    },
-    {
-      "id": "aws-2026-07-20-aws-partner-central-agents-expand-funding-guidance",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-07-20",
-      "title": "AWS Partner Central agents expand funding guidance to all programs",
-      "summary": "AWS Partner Central agents now support all AWS Partner funding programs. AWS Partners can get guidance on eligibility requirements, application processes, and program details for any funding program and receive documentation-backed answers in seconds.",
-      "type": "policy",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central/",
-      "impact": "low"
     },
     {
       "id": "azure-2026-07-20-partner-center-agent-available-for-integration",
@@ -1474,17 +1353,6 @@
       "type": "blog",
       "sourceUrl": "https://marketplace.microsoft.com/?wt.mc_id=1m4l1t8129",
       "impact": "low"
-    },
-    {
-      "id": "snowflake-2026-07-15-integrated-saas-listings-on-snowflake-marketplace-",
-      "platform": "Snowflake",
-      "platformTag": "snowflake",
-      "date": "2026-07-15",
-      "title": "Integrated SaaS listings on Snowflake Marketplace (General availability)",
-      "summary": "Select Integrated SaaS listings now let you start a free trial of a provider's application directly from a Marketplace listing.",
-      "type": "release",
-      "sourceUrl": "https://docs.snowflake.com/en/release-notes/2026/other/2026-07-15-integrated-saas-listings-ga",
-      "impact": "high"
     },
     {
       "id": "azure-2026-07-15-monthly-microsoft-ai-cloud-partner-program-update",
@@ -1586,17 +1454,6 @@
       "impact": "medium"
     },
     {
-      "id": "aws-2026-07-10-aws-partner-central-subsidiary-connections-now-sup",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-07-10",
-      "title": "AWS Partner Central subsidiary connections now support qualification sharing",
-      "summary": "AWS Partner Central subsidiary connections now enable partners to share qualifications across their connected partner and seller accounts.",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/subsidiary-qualification-sharing/",
-      "impact": "low"
-    },
-    {
       "id": "aws-2026-07-10-announcing-2026-aws-partner-award-nominations",
       "platform": "AWS",
       "platformTag": "aws",
@@ -1617,28 +1474,6 @@
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
       "impact": "medium"
-    },
-    {
-      "id": "aws-2026-07-09-amazon-sagemaker-feature-store-now-supports-batch-",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-07-09",
-      "title": "Amazon SageMaker Feature Store now supports batch feature writes and record listing",
-      "summary": "Amazon SageMaker Feature Store is a fully managed capability that makes it easy to compute, store, and retrieve features for training and deploying AI models.",
-      "type": "feature",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/amzn-sgm-feature-store-batch-write-list/",
-      "impact": "medium"
-    },
-    {
-      "id": "aws-2026-07-09-aws-partner-central-introduces-partner-lead-prospe",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-07-09",
-      "title": "AWS Partner Central introduces Partner Lead Prospecting",
-      "summary": "AWS Partner Central now offers Partner Lead Prospecting, an AI-powered capability that helps APN Customer Engagements (ACE)-eligible AWS Partners act on and convert their leads faster.",
-      "type": "feature",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central-prospecting/",
-      "impact": "low"
     },
     {
       "id": "azure-2026-07-09-microsoft-365-copilot-specialization-updates",
@@ -1804,17 +1639,6 @@
       "type": "release",
       "sourceUrl": "https://aka.ms/Growth-Margin-FAQ",
       "impact": "low"
-    },
-    {
-      "id": "aws-2026-07-01-aws-partner-central-now-supports-aws-marketplace-l",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-07-01",
-      "title": "AWS Partner Central now supports AWS Marketplace listings for co-selling",
-      "summary": "Today, AWS announces that partners can associate one or more AWS Marketplace solutions and product listings from their AWS Marketplace catalog directly to co-sell opportunities in AWS Partner Central.",
-      "type": "release",
-      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-marketplace-co-selling-support/",
-      "impact": "medium"
     },
     {
       "id": "aws-2026-07-01-publishing-your-saas-products-in-aws-marketplace-i",
@@ -2169,50 +1993,6 @@
       "impact": "low"
     },
     {
-      "id": "aws-2026-06-16-sell-smarter-with-aws-new-agentic-capabilities-acc",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "Sell smarter with AWS: New agentic capabilities accelerate time to revenue",
-      "summary": "New agentic capabilities in AWS Partner Central support you at every stage of your selling journey—from identifying the right leads to getting real-time insights and support on every deal you share with AWS.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/sell-smarter-with-aws/",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-new-agentic-capabilities-to-take-you-from-register",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "New agentic capabilities to take you from registered to ready-to-sell in days",
-      "summary": "We're expanding agentic capabilities in AWS Partner Central that get you ready to sell in days—from automated profile setup and AWS Marketplace listing creation to streamlined Foundational Technical Review validation. Now you can now unlock badging, benefits, and funding faster.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/get-ready-to-sell/",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-from-legacy-to-ai-powered-transform-your-customer-",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "From legacy to AI-powered: Transform your customer experience with Amazon Connect Customer Competency Partners",
-      "summary": "We're announcing the Amazon Connect Customer Competency, helping customers find validated Partners who can migrate legacy contact centers and build AI-powered customer experiences on Amazon Connect.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/from-legacy-to-ai-powered-transform-your-customer-experience-with-amazon-connect-customer-competency-partners/",
-      "impact": "low"
-    },
-    {
-      "id": "aws-2026-06-16-accelerate-customer-outcomes-with-the-aws-business",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-16",
-      "title": "Accelerate customer outcomes with the AWS Business Value Realization motion",
-      "summary": "Customers are shifting toward outcome-based engagements—and they're willing to pay a premium for Partners who can prove results.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/accelerate-customer-outcomes-with-the-aws-business-value-realization-motion/",
-      "impact": "low"
-    },
-    {
       "id": "azure-2026-06-16-copilot-cowork-and-microsoft-scout-what-partners-n",
       "platform": "Azure",
       "platformTag": "azure",
@@ -2222,17 +2002,6 @@
       "type": "pricing",
       "sourceUrl": "https://aka.ms/CoworkGA",
       "impact": "high"
-    },
-    {
-      "id": "aws-2026-06-15-how-public-ai-delivers-sovereign-llm-inference-on-",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-15",
-      "title": "How Public AI delivers sovereign LLM inference on AWS and Intel",
-      "summary": "Open-weight large language models are being released by research institutions worldwide, but turning published weights into production inference services remains a challenge—especially under strict data residency requirements.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/how-public-ai-delivers-sovereign-llm-inference-on-aws-and-intel/",
-      "impact": "low"
     },
     {
       "id": "azure-2026-06-15-view-promotion-details-directly-in-partner-center",
@@ -2343,17 +2112,6 @@
       "type": "policy",
       "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/?practice-assessment-type=certification",
       "impact": "high"
-    },
-    {
-      "id": "aws-2026-06-09-unified-secrets-security-with-gitguardian-and-aws-",
-      "platform": "AWS",
-      "platformTag": "aws",
-      "date": "2026-06-09",
-      "title": "Unified Secrets Security with GitGuardian and AWS Secrets Manager",
-      "summary": "AI coding assistants and MCP servers have made development faster, but they've also made secrets exposure harder to catch. Developers share credentials through config files, Git repos, and CI/CD logs without realizing it.",
-      "type": "blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/unified-secrets-security-with-gitguardian-and-aws-secrets-manager/",
-      "impact": "low"
     },
     {
       "id": "azure-2026-06-09-security-insights-now-available-in-copilot-tab-of-",
