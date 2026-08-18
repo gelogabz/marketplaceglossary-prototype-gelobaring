@@ -2,6 +2,12 @@
 
 Chronological record of new pages detected on [doc.suger.io](https://doc.suger.io/), backing up every change the "Suger Docs Updates" fetcher finds. Auto-appended by `scripts/fetch-whats-new.js` — do not edit manually. Newest entry first.
 
+## 08/18/2026 — 1 added page
+
+```diff
++ Api › Get Onboarding Status — https://doc.suger.io/api/get-onboarding-status/
+```
+
 ## 08/16/2026 — 8 new pages
 
 - [Cosell › Cosell Microsoft Fields](https://doc.suger.io/cosell/cosell-microsoft-fields/)
