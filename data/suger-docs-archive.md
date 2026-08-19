@@ -2,6 +2,23 @@
 
 Chronological record of new pages detected on [doc.suger.io](https://doc.suger.io/), backing up every change the "Suger Docs Updates" fetcher finds. Auto-appended by `scripts/fetch-whats-new.js` — do not edit manually. Newest entry first.
 
+## 08/19/2026 — 8 added pages, 4 removed pages
+
+```diff
++ Get Started › Faq — https://doc.suger.io/get-started/faq/
++ Insulin › Billing — https://doc.suger.io/insulin/billing/
++ Insulin › Billing › Faq — https://doc.suger.io/insulin/billing/faq/
++ Insulin › Billing › Metering — https://doc.suger.io/insulin/billing/metering/
++ Insulin › Billing › Overview — https://doc.suger.io/insulin/billing/overview/
++ Insulin › Billing › Spend Controls — https://doc.suger.io/insulin/billing/spend-controls/
++ Insulin › Billing › Usage — https://doc.suger.io/insulin/billing/usage/
++ Insulin › Billing › When Ai Pauses — https://doc.suger.io/insulin/billing/when-ai-pauses/
+- Get Started › Billing — https://doc.suger.io/get-started/billing/
+- Get Started › Billing › Dashboard Guide — https://doc.suger.io/get-started/billing/dashboard-guide/
+- Get Started › Billing › Faq — https://doc.suger.io/get-started/billing/faq/
+- Get Started › Billing › Overview — https://doc.suger.io/get-started/billing/overview/
+```
+
 ## 08/18/2026 — 1 added page
 
 ```diff
