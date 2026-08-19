@@ -853,10 +853,13 @@ function appendDocsArchiveEntry(isoDate, newEntries, removedEntries) {
     );
 
   // Real diff-fenced block — GitHub renders `+`/`-` lines in a ```diff fence
-  // with native green/red coloring, same as a PR diff view.
+  // with native green/red coloring, same as a PR diff view. Markdown link
+  // syntax `[title](url)` inside the fence won't render clickable (code
+  // fences are literal), but the user wants uniform formatting across
+  // sources (ClickUp, etc.) over clickability in this archive-only file.
   const diffLines = [
-    ...newEntries.map((e) => `+ ${e.title} — ${e.sourceUrl}`),
-    ...removedEntries.map((e) => `- ${e.title} — ${e.sourceUrl}`),
+    ...newEntries.map((e) => `+ [${e.title}](${e.sourceUrl})`),
+    ...removedEntries.map((e) => `- [${e.title}](${e.sourceUrl})`),
   ].join("\n");
 
   const block =

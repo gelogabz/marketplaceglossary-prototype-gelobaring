@@ -5,9 +5,18 @@ import { escHtml } from "../app/utils.js";
 // are deliberately excluded from the main feed, its filters, and its stats —
 // they're page-diff pointers from a sitemap scan, not scored marketplace news.
 const updates = allUpdates.filter((e) => e.platformTag !== "suger-docs");
-const docsUpdates = allUpdates
+const allDocsUpdates = allUpdates
   .filter((e) => e.platformTag === "suger-docs")
   .sort((a, b) => b.date.localeCompare(a.date));
+
+// The live column shows only the most recent detected batch (added/removed
+// together, since they're always recorded on the same run) — not the full
+// history, which would just keep growing forever. The complete history lives
+// in data/suger-docs-archive.md, downloadable from this page (see initMeta).
+const latestDocsDate = allDocsUpdates[0]?.date;
+const docsUpdates = latestDocsDate
+  ? allDocsUpdates.filter((e) => e.date === latestDocsDate)
+  : [];
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -176,6 +185,7 @@ function renderDocsRow(e) {
 function renderDocsColumn() {
   const list = document.getElementById("wnDocsList");
   const countEl = document.getElementById("wnDocsCount");
+  const asOfEl = document.getElementById("wnDocsAsOf");
   if (!list) return;
 
   if (countEl) {
@@ -183,9 +193,12 @@ function renderDocsColumn() {
   }
 
   if (!docsUpdates.length) {
+    if (asOfEl) asOfEl.textContent = "";
     list.innerHTML = `<p class="wn-docs-empty">No new doc pages detected yet. Checked daily against <a href="https://doc.suger.io/" target="_blank" rel="noopener">doc.suger.io</a>.</p>`;
     return;
   }
+
+  if (asOfEl) asOfEl.textContent = ` As of ${formatDate(latestDocsDate)}.`;
 
   list.innerHTML = `<ul class="wn-docs-rows">${docsUpdates.map(renderDocsRow).join("")}</ul>`;
 }

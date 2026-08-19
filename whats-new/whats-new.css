@@ -239,6 +239,21 @@
     color: var(--orange-text);
 }
 
+.wn-docs-archive-link {
+    display: block;
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--gray-100);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--orange-text);
+    text-decoration: none;
+}
+
+.wn-docs-archive-link:hover {
+    text-decoration: underline;
+}
+
 /* ── Toolbar ───────────────────────────────────────────────────────────────── */
 
 .wn-toolbar {
