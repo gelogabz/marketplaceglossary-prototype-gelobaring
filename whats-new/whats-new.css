@@ -90,6 +90,14 @@
 .wn-col-docs {
     position: sticky;
     top: calc(var(--topnav-h) + 20px);
+    max-height: calc(100vh - var(--topnav-h) - 40px);
+    display: flex;
+    flex-direction: column;
+}
+
+.wn-col-docs .wn-col-body {
+    overflow-y: auto;
+    min-height: 0;
 }
 
 /* Column headers are static, non-interactive labels on desktop — the
@@ -631,6 +639,11 @@
 
     .wn-col-docs {
         position: static;
+        max-height: none;
+    }
+
+    .wn-col-docs .wn-col-body {
+        overflow-y: visible;
     }
 
     .wn-col-header {
