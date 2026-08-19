@@ -834,7 +834,7 @@ async function fetchInsulinChangelog() {
 
 const ARCHIVE_HEADER =
   "# Suger Docs Archive\n\n" +
-  'Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/), backing up every change the "Suger Docs Updates" fetcher finds. Auto-appended by `scripts/fetch-whats-new.js` — do not edit manually. Newest entry first.\n';
+  "Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.\n";
 
 const DIFF_FENCE = "```";
 
@@ -1037,8 +1037,14 @@ async function main() {
 
   writeFileSync(OUT, output, "utf8");
 
+  // JSON and CSV are manual-backup exports for marketplace updates only —
+  // Suger Docs entries live in data/whats-new.js (for the live "Suger Docs"
+  // column) and in data/suger-docs-archive.md (the durable history/backup),
+  // so they're deliberately excluded here to avoid a third, redundant copy.
+  const marketplaceOnly = final.filter((e) => e.platformTag !== "suger-docs");
+
   // Write JSON mirror (for direct consumption by crawlers / AI bots)
-  const jsonOutput = { lastUpdated: iso, updates: final };
+  const jsonOutput = { lastUpdated: iso, updates: marketplaceOnly };
   writeFileSync(
     OUT.replace("whats-new.js", "whats-new.json"),
     JSON.stringify(jsonOutput, null, 2) + "\n",
@@ -1065,12 +1071,12 @@ async function main() {
   ];
   const csvRows = [
     CSV_COLS.join(","),
-    ...final.map((e) => CSV_COLS.map((k) => csvEsc(e[k])).join(",")),
+    ...marketplaceOnly.map((e) => CSV_COLS.map((k) => csvEsc(e[k])).join(",")),
   ];
   writeFileSync(OUT_CSV, csvRows.join("\n") + "\n", "utf8");
 
   console.log(
-    `\nDone. ${final.length} entries written to data/whats-new.js + data/whats-new.json + data/whats-new.csv`,
+    `\nDone. ${final.length} entries written to data/whats-new.js (${marketplaceOnly.length} marketplace-only in data/whats-new.json + data/whats-new.csv)`,
   );
 }
 

@@ -1,6 +1,6 @@
 # Suger Docs Archive
 
-Chronological record of new pages detected on [doc.suger.io](https://doc.suger.io/), backing up every change the "Suger Docs Updates" fetcher finds. Auto-appended by `scripts/fetch-whats-new.js` — do not edit manually. Newest entry first.
+Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
 ## 08/19/2026 — 8 added pages, 4 removed pages
 

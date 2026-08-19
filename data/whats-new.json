@@ -2,149 +2,6 @@
   "lastUpdated": "2026-08-19T15:31:22.870Z",
   "updates": [
     {
-      "id": "suger-docs-2026-08-19-get-started-faq",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Get Started \u203a Faq",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/get-started/faq/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-19-insulin-billing",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Insulin \u203a Billing",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/billing/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-19-insulin-billing-faq",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Insulin \u203a Billing \u203a Faq",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/billing/faq/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-19-insulin-billing-metering",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Insulin \u203a Billing \u203a Metering",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/billing/metering/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-19-insulin-billing-overview",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Insulin \u203a Billing \u203a Overview",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/billing/overview/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-19-insulin-billing-spend-controls",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Insulin \u203a Billing \u203a Spend Controls",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/billing/spend-controls/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-19-insulin-billing-usage",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Insulin \u203a Billing \u203a Usage",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/billing/usage/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-19-insulin-billing-when-ai-pauses",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Insulin \u203a Billing \u203a When Ai Pauses",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/billing/when-ai-pauses/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-removed-2026-08-19-get-started-billing",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Get Started \u203a Billing",
-      "summary": "This page was removed or moved on Suger's product documentation.",
-      "type": "docs-removed",
-      "sourceUrl": "https://doc.suger.io/get-started/billing/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-removed-2026-08-19-get-started-billing-dashboard-guide",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Get Started \u203a Billing \u203a Dashboard Guide",
-      "summary": "This page was removed or moved on Suger's product documentation.",
-      "type": "docs-removed",
-      "sourceUrl": "https://doc.suger.io/get-started/billing/dashboard-guide/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-removed-2026-08-19-get-started-billing-faq",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Get Started \u203a Billing \u203a Faq",
-      "summary": "This page was removed or moved on Suger's product documentation.",
-      "type": "docs-removed",
-      "sourceUrl": "https://doc.suger.io/get-started/billing/faq/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-removed-2026-08-19-get-started-billing-overview",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-19",
-      "title": "Get Started \u203a Billing \u203a Overview",
-      "summary": "This page was removed or moved on Suger's product documentation.",
-      "type": "docs-removed",
-      "sourceUrl": "https://doc.suger.io/get-started/billing/overview/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-18-api-get-onboarding-status",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-18",
-      "title": "Api \u203a Get Onboarding Status",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/api/get-onboarding-status/",
-      "impact": "low"
-    },
-    {
       "id": "aws-2026-08-18-enabling-mandatory-purchase-orders-and-custom-guid",
       "platform": "AWS",
       "platformTag": "aws",
@@ -249,7 +106,7 @@
       "platformTag": "suger",
       "date": "2026-08-18",
       "title": "Billing & Metering Usage-Based Renewal Risk: The Leading Signals The leading indicators of renewal risk in usage-based m",
-      "summary": "Billing & Metering Usage-Based Renewal Risk: The Leading Signals The leading indicators of renewal risk in usage-based marketplace deals \u2014 declining usage, single-team concentration, commit burndown pace, ticket signals, champion departure \u2014 and where each is visible.",
+      "summary": "Billing & Metering Usage-Based Renewal Risk: The Leading Signals The leading indicators of renewal risk in usage-based marketplace deals — declining usage, single-team concentration, commit burndown pace, ticket signals, champion departure — and where each is visible.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/renewal-risk-signals-usage-based-deals/",
       "impact": "low"
@@ -285,94 +142,6 @@
       "summary": "Grubhub and Vody are proving that the winners of AI-powered commerce won't be defined by a single breakthrough feature, they'll be the retailers who invest early in unified, AI-ready data foundations built on AWS.",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/building-intelligent-data-foundations-the-grubhub-and-vody-partnership-on-aws/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-cosell-cosell-microsoft-fields",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Cosell \u203a Cosell Microsoft Fields",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/cosell/cosell-microsoft-fields/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-hubspot-app-hubspot-app-funding",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Hubspot App \u203a Hubspot App Funding",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/hubspot-app/hubspot-app-funding/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-insulin-aws-support",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Insulin \u203a Aws Support",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/insulin/aws-support/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-broadcasts",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm \u203a Broadcasts",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/broadcasts/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-connect-slack-for-partners",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm \u203a Connect Slack For Partners",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/connect-slack-for-partners/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-customize-the-partner-overview",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm \u203a Customize The Partner Overview",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/customize-the-partner-overview/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-partner-events",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm \u203a Partner Events",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/partner-events/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-docs-2026-08-16-prm-work-a-partner-record",
-      "platform": "Suger",
-      "platformTag": "suger-docs",
-      "date": "2026-08-16",
-      "title": "Prm \u203a Work A Partner Record",
-      "summary": "New page published on Suger's product documentation.",
-      "type": "docs",
-      "sourceUrl": "https://doc.suger.io/prm/work-a-partner-record/",
       "impact": "low"
     },
     {
@@ -425,7 +194,7 @@
       "platformTag": "suger",
       "date": "2026-08-16",
       "title": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a ",
-      "summary": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a billing account, a role assignment and a procurement queue \u2014 and any one of them can hold the deal for a week. Aug 16, 2026",
+      "summary": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a billing account, a role assignment and a procurement queue — and any one of them can hold the deal for a week. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-enterprise-buyers-buy-through-a-marketplace/",
       "impact": "low"
@@ -491,7 +260,7 @@
       "platformTag": "suger",
       "date": "2026-08-16",
       "title": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a dead",
-      "summary": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a deadline on it. The response codes tell you which failures to retry and which to fix \u2014 and they are not the same failures. Aug 16, 2026",
+      "summary": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a deadline on it. The response codes tell you which failures to retry and which to fix — and they are not the same failures. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/when-usage-records-fail/",
       "impact": "low"
@@ -502,7 +271,7 @@
       "platformTag": "azure",
       "date": "2026-08-14",
       "title": "Grow your security practice at IT Nation",
-      "summary": "Help SMB customers become AI-ready while sharpening your security practice\u2014meet Microsoft at IT Nation Connect ANZ 2026.",
+      "summary": "Help SMB customers become AI-ready while sharpening your security practice—meet Microsoft at IT Nation Connect ANZ 2026.",
       "type": "pricing",
       "sourceUrl": "https://connectwise.cventevents.com/event/cde6c3ea-b8bb-4247-a546-7dc660d6ee64/regProcessStep1?wt.mc_id=s3lu9eb9c0",
       "impact": "medium"
@@ -645,7 +414,7 @@
       "platformTag": "azure",
       "date": "2026-08-13",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "This month\u2019s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to\u2026",
+      "summary": "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
       "type": "policy",
       "sourceUrl": "https://assetsprod.microsoft.com/maicpp-agreement-preview.pdf",
       "impact": "medium"
@@ -656,7 +425,7 @@
       "platformTag": "azure",
       "date": "2026-08-13",
       "title": "Windows Server 2016 Extended Security Updates: CSP price list republish",
-      "summary": "The Windows Server 2016 Extended Security Updates (ESU) Year 1\u20133 offers are now available . Due to a publishing delay, these offers were not included in the August 2026 CSP price list at its regular monthly publication.",
+      "summary": "The Windows Server 2016 Extended Security Updates (ESU) Year 1–3 offers are now available . Due to a publishing delay, these offers were not included in the August 2026 CSP price list at its regular monthly publication.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
       "impact": "high"
@@ -688,8 +457,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-12",
-      "title": "Cloud GTM The AWS Standard Contract, or Your Own Paper? The SCMP is free, pre-vetted, and reversible \u2014 three things your",
-      "summary": "Cloud GTM The AWS Standard Contract, or Your Own Paper? The SCMP is free, pre-vetted, and reversible \u2014 three things your own EULA is not. Here is what it actually contains, what opting in commits you to, and when to decline. Aug 12, 2026",
+      "title": "Cloud GTM The AWS Standard Contract, or Your Own Paper? The SCMP is free, pre-vetted, and reversible — three things your",
+      "summary": "Cloud GTM The AWS Standard Contract, or Your Own Paper? The SCMP is free, pre-vetted, and reversible — three things your own EULA is not. Here is what it actually contains, what opting in commits you to, and when to decline. Aug 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-standard-contract-or-your-own-paper/",
       "impact": "low"
@@ -700,7 +469,7 @@
       "platformTag": "suger",
       "date": "2026-08-12",
       "title": "Cloud GTM Changing Your Marketplace Price After Launch You can change the number. You mostly cannot change the model. He",
-      "summary": "Cloud GTM Changing Your Marketplace Price After Launch You can change the number. You mostly cannot change the model. Here is exactly what each cloud lets you edit once a listing is public \u2014 and how long it takes to bite. Aug 12, 2026",
+      "summary": "Cloud GTM Changing Your Marketplace Price After Launch You can change the number. You mostly cannot change the model. Here is exactly what each cloud lets you edit once a listing is public — and how long it takes to bite. Aug 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/change-marketplace-price-after-launch/",
       "impact": "high"
@@ -821,7 +590,7 @@
       "platformTag": "suger",
       "date": "2026-08-10",
       "title": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website",
-      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website \u2014 which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026",
+      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website — which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/buy-with-aws-metrics/",
       "impact": "low"
@@ -832,7 +601,7 @@
       "platformTag": "suger",
       "date": "2026-08-10",
       "title": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule",
-      "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment \u2014 when two parties have already claimed the same deal. Aug 10, 2026",
+      "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment — when two parties have already claimed the same deal. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/deal-registration-conflict-rules/",
       "impact": "low"
@@ -843,7 +612,7 @@
       "platformTag": "suger",
       "date": "2026-08-10",
       "title": "Azure Connect Dynamics 365 to Your Marketplace Pipeline Marketplace tooling is built for Salesforce and HubSpot. If your",
-      "summary": "Azure Connect Dynamics 365 to Your Marketplace Pipeline Marketplace tooling is built for Salesforce and HubSpot. If your CRM is Dynamics 365 \u2014 which it often is at a Microsoft-first ISV \u2014 here is what connecting it actually involves. Aug 10, 2026",
+      "summary": "Azure Connect Dynamics 365 to Your Marketplace Pipeline Marketplace tooling is built for Salesforce and HubSpot. If your CRM is Dynamics 365 — which it often is at a Microsoft-first ISV — here is what connecting it actually involves. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/dynamics-365-marketplace-integration/",
       "impact": "low"
@@ -887,7 +656,7 @@
       "platformTag": "suger",
       "date": "2026-08-10",
       "title": "Co-Sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None t",
-      "summary": "Co-Sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None tell you what actually happens to the record after you submit it. This is the mechanics \u2014 the statuses, the gates, and the fields that get you rejected.",
+      "summary": "Co-Sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None tell you what actually happens to the record after you submit it. This is the mechanics — the statuses, the gates, and the fields that get you rejected.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-co-sell-works/",
       "impact": "low"
@@ -898,7 +667,7 @@
       "platformTag": "suger",
       "date": "2026-08-10",
       "title": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wr",
-      "summary": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wrong. The differences are structural \u2014 different clocks, different payout triggers, different definitions of the same dollar. Aug 10, 2026",
+      "summary": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wrong. The differences are structural — different clocks, different payout triggers, different definitions of the same dollar. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-revenue-reconciliation/",
       "impact": "low"
@@ -931,7 +700,7 @@
       "platformTag": "suger",
       "date": "2026-08-10",
       "title": "Suger: As of Aug 10, 2026",
-      "summary": "You can now register a co-sell on a partner's behalf \u2014 for partners who send deals by email \u2014 with the deal gated on that partner's own emailed confirmation before it can be marked won.",
+      "summary": "You can now register a co-sell on a partner's behalf — for partners who send deals by email — with the deal gated on that partner's own emailed confirmation before it can be marked won.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-08-10",
       "impact": "high"
@@ -975,7 +744,7 @@
       "platformTag": "suger",
       "date": "2026-08-09",
       "title": "AWS What AWS Marketplace Seller Insights Actually Show AWS gives sellers nine dashboards on the Insights tab, and most t",
-      "summary": "AWS What AWS Marketplace Seller Insights Actually Show AWS gives sellers nine dashboards on the Insights tab, and most teams use one of them. Here is what each actually reports \u2014 and the specific blind spot each one carries. Aug 9, 2026",
+      "summary": "AWS What AWS Marketplace Seller Insights Actually Show AWS gives sellers nine dashboards on the Insights tab, and most teams use one of them. Here is what each actually reports — and the specific blind spot each one carries. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-seller-insights/",
       "impact": "low"
@@ -1008,7 +777,7 @@
       "platformTag": "suger",
       "date": "2026-08-09",
       "title": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metr",
-      "summary": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metrics worth building are the ones that change a decision \u2014 and each one needs a named source dataset. Aug 9, 2026",
+      "summary": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metrics worth building are the ones that change a decision — and each one needs a named source dataset. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/cloud-marketplace-metrics/",
       "impact": "low"
@@ -1019,7 +788,7 @@
       "platformTag": "suger",
       "date": "2026-08-09",
       "title": "Cloud GTM Cloud Marketplace Pricing Models: How to Choose AWS, Microsoft, and Google Cloud each support a different set ",
-      "summary": "Cloud GTM Cloud Marketplace Pricing Models: How to Choose AWS, Microsoft, and Google Cloud each support a different set of pricing models \u2014 and all three make the choice permanent. Here is the cross-cloud comparison nobody publishes. Aug 9, 2026",
+      "summary": "Cloud GTM Cloud Marketplace Pricing Models: How to Choose AWS, Microsoft, and Google Cloud each support a different set of pricing models — and all three make the choice permanent. Here is the cross-cloud comparison nobody publishes. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/cloud-marketplace-pricing-models/",
       "impact": "low"
@@ -1041,7 +810,7 @@
       "platformTag": "suger",
       "date": "2026-08-09",
       "title": "PRM Partner-Sourced vs Partner-Influenced Revenue Every partnerships leader has been asked to prove partner revenue is r",
-      "summary": "PRM Partner-Sourced vs Partner-Influenced Revenue Every partnerships leader has been asked to prove partner revenue is real. The answer depends on a distinction most teams have never written down \u2014 and cannot defend when a CFO pushes. Aug 9, 2026",
+      "summary": "PRM Partner-Sourced vs Partner-Influenced Revenue Every partnerships leader has been asked to prove partner revenue is real. The answer depends on a distinction most teams have never written down — and cannot defend when a CFO pushes. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/partner-sourced-vs-partner-influenced/",
       "impact": "low"
@@ -1063,7 +832,7 @@
       "platformTag": "aws",
       "date": "2026-08-07",
       "title": "Enhance DNS protection with Palo Alto Networks on Amazon Route 53 DNS Firewall",
-      "summary": "Amazon Route 53 Resolver DNS Firewall now integrates Palo Alto Networks Advanced DNS Security, bringing more than 30 advanced DNS threat detections including fast flux, DNS hijacking, domain generation algorithms, and newly registered domains\u2014directly into your DNS Firewall rule\u2026",
+      "summary": "Amazon Route 53 Resolver DNS Firewall now integrates Palo Alto Networks Advanced DNS Security, bringing more than 30 advanced DNS threat detections including fast flux, DNS hijacking, domain generation algorithms, and newly registered domains—directly into your DNS Firewall rule…",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/enhance-dns-protection-with-palo-alto-networks-on-amazon-route-53-dns-firewall/",
       "impact": "low"
@@ -1106,7 +875,7 @@
       "platform": "AWS",
       "platformTag": "aws",
       "date": "2026-08-06",
-      "title": "How ASCENDING\u2019s Jarvis Registry bridges agents and developer tools",
+      "title": "How ASCENDING’s Jarvis Registry bridges agents and developer tools",
       "summary": "You've deployed your agents on Amazon Bedrock AgentCore but making them reachable from Claude Desktop, VS Code, Cursor, or GitHub Copilot means building an \"experience layer\" that handles identity, authorization, discovery, and developer UX.",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/how-ascendings-jarvis-registry-bridges-agents-and-developer-tools/",
@@ -1129,7 +898,7 @@
       "platformTag": "suger",
       "date": "2026-08-06",
       "title": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sell",
-      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment \u2014 and what can't be undone. Aug 6, 2026",
+      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment — and what can't be undone. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-refunds-and-cancellations/",
       "impact": "low"
@@ -1140,7 +909,7 @@
       "platformTag": "suger",
       "date": "2026-08-06",
       "title": "AWS AWS Partner Funding: POC, MDF, ISV Workload, PIF Four AWS partner funding programs, four different jobs. Here's whic",
-      "summary": "AWS AWS Partner Funding: POC, MDF, ISV Workload, PIF Four AWS partner funding programs, four different jobs. Here's which one fits which deal stage \u2014 and why the funding request usually fails on the opportunity, not the form. Aug 6, 2026",
+      "summary": "AWS AWS Partner Funding: POC, MDF, ISV Workload, PIF Four AWS partner funding programs, four different jobs. Here's which one fits which deal stage — and why the funding request usually fails on the opportunity, not the form. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-partner-funding-programs/",
       "impact": "low"
@@ -1162,7 +931,7 @@
       "platformTag": "suger",
       "date": "2026-08-06",
       "title": "Cloud GTM Cloud GTM Glossary: 40 Marketplace Terms Defined Forty terms every Cloud GTM job depends on, grouped by the st",
-      "summary": "Cloud GTM Cloud GTM Glossary: 40 Marketplace Terms Defined Forty terms every Cloud GTM job depends on, grouped by the stage of the deal where you'll first hit them \u2014 from listing type to drawdown to disbursement. Aug 6, 2026",
+      "summary": "Cloud GTM Cloud GTM Glossary: 40 Marketplace Terms Defined Forty terms every Cloud GTM job depends on, grouped by the stage of the deal where you'll first hit them — from listing type to drawdown to disbursement. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/cloud-gtm-glossary/",
       "impact": "low"
@@ -1173,7 +942,7 @@
       "platformTag": "suger",
       "date": "2026-08-06",
       "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
-      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan \u2014 and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
+      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
       "impact": "low"
@@ -1184,7 +953,7 @@
       "platformTag": "suger",
       "date": "2026-08-06",
       "title": "Cloud GTM Free Trials on Cloud Marketplaces: An ISV Guide A marketplace free trial isn't your website trial with a diffe",
-      "summary": "Cloud GTM Free Trials on Cloud Marketplaces: An ISV Guide A marketplace free trial isn't your website trial with a different button. The entitlement, the expiry, and the conversion all run on the cloud's rails \u2014 here's how to design one. Aug 6, 2026",
+      "summary": "Cloud GTM Free Trials on Cloud Marketplaces: An ISV Guide A marketplace free trial isn't your website trial with a different button. The entitlement, the expiry, and the conversion all run on the cloud's rails — here's how to design one. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/free-trials-on-cloud-marketplaces/",
       "impact": "low"
@@ -1216,8 +985,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-06",
-      "title": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans \u2014 temp",
-      "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans \u2014 templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
+      "title": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — temp",
+      "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/resellers-on-google-cloud-marketplace/",
       "impact": "low"
@@ -1228,7 +997,7 @@
       "platformTag": "suger",
       "date": "2026-08-06",
       "title": "AWS What a Marketplace Dollar Actually Costs You AWS Marketplace fees are not one number. They move with product type, o",
-      "summary": "AWS What a Marketplace Dollar Actually Costs You AWS Marketplace fees are not one number. They move with product type, offer type, contract value, the channel, and the buyer's country \u2014 with worked arithmetic for each. Aug 6, 2026",
+      "summary": "AWS What a Marketplace Dollar Actually Costs You AWS Marketplace fees are not one number. They move with product type, offer type, contract value, the channel, and the buyer's country — with worked arithmetic for each. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/what-a-marketplace-dollar-costs-you/",
       "impact": "low"
@@ -1239,7 +1008,7 @@
       "platformTag": "aws",
       "date": "2026-08-05",
       "title": "AWS Marketplace adds AI Insights so buyers can understand pricing before they buy",
-      "summary": "You can now understand how a product's pricing works before you buy it. Available in the pricing section of the listing in AWS Marketplace, AI Insights explains each product's pricing in plain language: what a pricing unit maps to, how your bill changes as usage scales, how mult\u2026",
+      "summary": "You can now understand how a product's pricing works before you buy it. Available in the pricing section of the listing in AWS Marketplace, AI Insights explains each product's pricing in plain language: what a pricing unit maps to, how your bill changes as usage scales, how mult…",
       "type": "pricing",
       "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-ai-insights/",
       "impact": "low"
@@ -1271,8 +1040,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-05",
-      "title": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer \u2014 a",
-      "summary": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer \u2014 and marketplace purchases can draw it down. Here's why sellers should care. Aug 5, 2026",
+      "title": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — a",
+      "summary": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — and marketplace purchases can draw it down. Here's why sellers should care. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-edp-what-sellers-need-to-know/",
       "impact": "low"
@@ -1359,8 +1128,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-05",
-      "title": "Azure What Is a MACC? Azure Committed Spend, Explained A MACC is Microsoft's version of committed cloud spend \u2014 and Azur",
-      "summary": "Azure What Is a MACC? Azure Committed Spend, Explained A MACC is Microsoft's version of committed cloud spend \u2014 and Azure Marketplace purchases draw it down. Here's why that matters to ISVs. Aug 5, 2026",
+      "title": "Azure What Is a MACC? Azure Committed Spend, Explained A MACC is Microsoft's version of committed cloud spend — and Azur",
+      "summary": "Azure What Is a MACC? Azure Committed Spend, Explained A MACC is Microsoft's version of committed cloud spend — and Azure Marketplace purchases draw it down. Here's why that matters to ISVs. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/what-is-a-macc-azure-committed-spend-explained/",
       "impact": "low"
@@ -1481,7 +1250,7 @@
       "platformTag": "azure",
       "date": "2026-08-01",
       "title": "Changes to Specializations and Solutions Partner Designations",
-      "summary": "(New addition \u2014 no retirement)",
+      "summary": "(New addition — no retirement)",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/blog/article/new-benefits-designations-specializations",
       "impact": "high"
@@ -1668,7 +1437,7 @@
       "platformTag": "azure",
       "date": "2026-07-23",
       "title": "MDTI reaches end of life August 1, 2026",
-      "summary": "Microsoft Defender Threat Intelligence (MDTI) reaches end of life on August 1, 2026 \u2013 here's what that means for you.",
+      "summary": "Microsoft Defender Threat Intelligence (MDTI) reaches end of life on August 1, 2026 – here's what that means for you.",
       "type": "pricing",
       "sourceUrl": "https://techcommunity.microsoft.com/blog/defenderthreatintelligence/mdti-is-converging-into-microsoft-sentinel-and-defender-xdr/4427991?wt.mc_id=uzoeywo5sa",
       "impact": "high"
@@ -1756,7 +1525,7 @@
       "platformTag": "azure",
       "date": "2026-07-15",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "What\u2019s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+      "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
       "type": "pricing",
       "sourceUrl": "https://assetsprod.microsoft.com/en-us/copilot-specialization-audit-checklist.pdf",
       "impact": "high"
@@ -1767,7 +1536,7 @@
       "platformTag": "azure",
       "date": "2026-07-15",
       "title": "Meet the MCAPS Start for Partners speakers",
-      "summary": "Don't miss a moment of MCAPS Start for Partners\u2014bookmark the Partner Activation Zone.",
+      "summary": "Don't miss a moment of MCAPS Start for Partners—bookmark the Partner Activation Zone.",
       "type": "blog",
       "sourceUrl": "https://aka.ms/MCAPS2026PCA",
       "impact": "high"
@@ -2009,7 +1778,7 @@
       "platformTag": "aws",
       "date": "2026-07-02",
       "title": "Reimagining legacy applications with Pega and AWS through AI-driven approach",
-      "summary": "The AI-Driven App Modernization Platform from Pega and AWS enables enterprises to incrementally transform legacy applications from mainframes to monolithic applications into intelligent, cloud-native workflows using AI-powered discovery, low-code design, and the strangler fig pa\u2026",
+      "summary": "The AI-Driven App Modernization Platform from Pega and AWS enables enterprises to incrementally transform legacy applications from mainframes to monolithic applications into intelligent, cloud-native workflows using AI-powered discovery, low-code design, and the strangler fig pa…",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/reimagining-legacy-applications-with-pega-and-aws-through-ai-driven-approach/",
       "impact": "low"
@@ -2031,7 +1800,7 @@
       "platformTag": "azure",
       "date": "2026-07-02",
       "title": "FY27 Growth Margins for Select AI Workloads",
-      "summary": "Earn more margin in FY27 for driving qualifying growth\u2014new-to-offer, seat expansion, and adoption\u2014across select strategic AI workloads. Date : July 2, 2026 Workspace : General Impacted audience : Cloud Solution Provider (CSP) partners, including distributors, indirect resellers, ",
+      "summary": "Earn more margin in FY27 for driving qualifying growth—new-to-offer, seat expansion, and adoption—across select strategic AI workloads. Date : July 2, 2026 Workspace : General Impacted audience : Cloud Solution Provider (CSP) partners, including distributors, indirect resellers, ",
       "type": "release",
       "sourceUrl": "https://aka.ms/Growth-Margin-FAQ",
       "impact": "low"
@@ -2042,7 +1811,7 @@
       "platformTag": "aws",
       "date": "2026-07-01",
       "title": "Publishing your SaaS products in AWS Marketplace in the AWS European Sovereign Cloud",
-      "summary": "This post is the third in a three-part series on listing software products in the AWS European Sovereign Cloud: Part 1: Registering as a seller \u2014 covers account setup and seller registration. Part 2: Publishing Amazon Machine Image (AMI) products.",
+      "summary": "This post is the third in a three-part series on listing software products in the AWS European Sovereign Cloud: Part 1: Registering as a seller — covers account setup and seller registration. Part 2: Publishing Amazon Machine Image (AMI) products.",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/publishing-saas-products-aws-marketplace-european-sovereign-cloud/",
       "impact": "low"
@@ -2064,7 +1833,7 @@
       "platformTag": "azure",
       "date": "2026-07-01",
       "title": "New Licensing Prerequisite for Agent 365",
-      "summary": "New licensing prerequisite for Agent 365: Microsoft 365 E5\u202frequired\u202ffor new purchases starting June 1, 2026. Date : July 1, 2026 Workspace : General Impacted audience : Partners supporting Agent 365 customer engagements Details Effective June 1, Microsoft is introducing an expand",
+      "summary": "New licensing prerequisite for Agent 365: Microsoft 365 E5 required for new purchases starting June 1, 2026. Date : July 1, 2026 Workspace : General Impacted audience : Partners supporting Agent 365 customer engagements Details Effective June 1, Microsoft is introducing an expand",
       "type": "policy",
       "sourceUrl": "https://www.microsoft.com/licensing/terms/productoffering/Agent365/EAEAS",
       "impact": "high"
@@ -2119,7 +1888,7 @@
       "platformTag": "azure",
       "date": "2026-07-01",
       "title": "Explore MCAPS Start for Partners sessions",
-      "summary": "Join us on July 22 for the sessions, strategies, and playbooks to execute from day one\u2014across AI, security, cloud, and beyond.",
+      "summary": "Join us on July 22 for the sessions, strategies, and playbooks to execute from day one—across AI, security, cloud, and beyond.",
       "type": "pricing",
       "sourceUrl": "https://aka.ms/MCAPS2026PCA",
       "impact": "medium"
@@ -2130,7 +1899,7 @@
       "platformTag": "azure",
       "date": "2026-07-01",
       "title": "Update to Microsoft 365 Nonprofit E3/E5 three-Year CSP SKUs",
-      "summary": "To simplify the CSP catalog and reduce confusion, Microsoft is updating the Microsoft 365 E3 and E5 Nonprofit 3\u2011year offers.",
+      "summary": "To simplify the CSP catalog and reduce confusion, Microsoft is updating the Microsoft 365 E3 and E5 Nonprofit 3‑year offers.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
       "impact": "medium"
@@ -2163,7 +1932,7 @@
       "platformTag": "aws",
       "date": "2026-06-29",
       "title": "How DXC Technology upgraded Angular and .NET applications with Amazon Q Developer",
-      "summary": "Learn how DXC Technology used Amazon Q Developer to help its customer modernize over 80 microservices and multiple micro-frontend applications, upgrading from older Angular and .NET versions while achieving a 60\u201375% reduction in overall upgrade effort.",
+      "summary": "Learn how DXC Technology used Amazon Q Developer to help its customer modernize over 80 microservices and multiple micro-frontend applications, upgrading from older Angular and .NET versions while achieving a 60–75% reduction in overall upgrade effort.",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/how-dxc-technology-upgraded-angular-and-net-applications-with-amazon-q-developer/",
       "impact": "low"
@@ -2207,7 +1976,7 @@
       "platformTag": "suger",
       "date": "2026-06-29",
       "title": "Insulin: As of Jun 29, 2026",
-      "summary": "Added organization-level agents and skills to the agent marketplace, so one install can serve a whole team. Marketplace Hardened the desktop window manager \u2014 snapping, focus, persistence, minimize, and windows inside windows.",
+      "summary": "Added organization-level agents and skills to the agent marketplace, so one install can serve a whole team. Marketplace Hardened the desktop window manager — snapping, focus, persistence, minimize, and windows inside windows.",
       "type": "release",
       "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-06-29",
       "impact": "medium"
@@ -2218,7 +1987,7 @@
       "platformTag": "azure",
       "date": "2026-06-26",
       "title": "Sentinel 50-GB tier promo extended",
-      "summary": "We\u2019ve extended the Microsoft Sentinel 50 GB commitment tier promotion, giving partners more time to drive adoption. Announcement date : June 26, 2026 Workspace : General Impacted audience : All partners Details On October 1, 2025, Microsoft launched a new 50-GB commitment tier fo",
+      "summary": "We’ve extended the Microsoft Sentinel 50 GB commitment tier promotion, giving partners more time to drive adoption. Announcement date : June 26, 2026 Workspace : General Impacted audience : All partners Details On October 1, 2025, Microsoft launched a new 50-GB commitment tier fo",
       "type": "pricing",
       "sourceUrl": "https://microsoftpartners.microsoft.com/Downloads/?filename=Microsoft-Security-Partners%2FPartner-GTM%2FSell-Through-CSP%2FFY26_Q3-%20MSFT%20Sentinel%20Promo%20-%20customer%20pitch%20deck.pptx",
       "impact": "high"
@@ -2251,7 +2020,7 @@
       "platformTag": "suger",
       "date": "2026-06-26",
       "title": "Suger: As of Jun 26, 2026",
-      "summary": "Launched the Suger Co-Sell MCP so co-sell referrals can be drafted, shared, and synced from inside an AI assistant \u2014 including drafting outbound referrals, listing inbound referrals pending acceptance, diagnosing stuck referrals, and syncing status back to Salesforce.",
+      "summary": "Launched the Suger Co-Sell MCP so co-sell referrals can be drafted, shared, and synced from inside an AI assistant — including drafting outbound referrals, listing inbound referrals pending acceptance, diagnosing stuck referrals, and syncing status back to Salesforce.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-26",
       "impact": "high"
@@ -2316,7 +2085,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-06-23",
-      "title": "New Check Inventory by Resource Type API available\u2014Check Inventory API retiring September 25, 2026",
+      "title": "New Check Inventory by Resource Type API available—Check Inventory API retiring September 25, 2026",
       "summary": "A new Check Inventory by Resource Type API is now available. The existing Check Inventory API will be retired on September 25, 2026.",
       "type": "release",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/developer/check-inventory",
@@ -2328,7 +2097,7 @@
       "platformTag": "suger",
       "date": "2026-06-22",
       "title": "Insulin: As of Jun 22, 2026",
-      "summary": "Released the first version of the Email app \u2014 an AI inbox that reads your Gmail, classifies and routes each message, and drafts replies in your own voice. Inbox App Added a sub-threads sidebar with a Recents list, automatically generated thread titles, and synced unread badges.",
+      "summary": "Released the first version of the Email app — an AI inbox that reads your Gmail, classifies and routes each message, and drafts replies in your own voice. Inbox App Added a sub-threads sidebar with a Recents list, automatically generated thread titles, and synced unread badges.",
       "type": "release",
       "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-06-22",
       "impact": "medium"
@@ -2372,7 +2141,7 @@
       "platformTag": "aws",
       "date": "2026-06-17",
       "title": "Build a complete SOC solution with Amazon Security Lake, Splunk, and Recorded Future Autonomous Threat Operations",
-      "summary": "Learn how to close the detection-to-response gap in your security operations by integrating Amazon Security Lake, Splunk Enterprise Security, and Recorded Future Autonomous Threat Operations into a unified SOC architecture that centralizes dispersed security data, automates even\u2026",
+      "summary": "Learn how to close the detection-to-response gap in your security operations by integrating Amazon Security Lake, Splunk Enterprise Security, and Recorded Future Autonomous Threat Operations into a unified SOC architecture that centralizes dispersed security data, automates even…",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/build-a-complete-soc-solution-with-amazon-security-lake-splunk-and-recorded-future-autonomous-threat-operations/",
       "impact": "low"
@@ -2460,7 +2229,7 @@
       "platformTag": "azure",
       "date": "2026-06-15",
       "title": "New: Partner Skilling discussion board",
-      "summary": "Introducing the new Partner Skilling\u202fdiscussion\u202fboard on Tech Community\u2014your go-to destination for skilling opportunities and\u202fexpertise.",
+      "summary": "Introducing the new Partner Skilling discussion board on Tech Community—your go-to destination for skilling opportunities and expertise.",
       "type": "release",
       "sourceUrl": "https://techcommunity.microsoft.com/category/mcpp/discussions/partner-skilling",
       "impact": "low"
@@ -2492,8 +2261,8 @@
       "platform": "AWS",
       "platformTag": "aws",
       "date": "2026-06-11",
-      "title": "Detecting misconfigurations and mitigating AI risks to secure Amazon Bedrock with TrendAI Vision One\u2122",
-      "summary": "In this post, you\u2019ll learn how TrendAI Vision One\u2122 helps secure Amazon Bedrock deployments by detecting misconfigurations, monitoring for data exposure, and providing actionable remediation guidance.",
+      "title": "Detecting misconfigurations and mitigating AI risks to secure Amazon Bedrock with TrendAI Vision One™",
+      "summary": "In this post, you’ll learn how TrendAI Vision One™ helps secure Amazon Bedrock deployments by detecting misconfigurations, monitoring for data exposure, and providing actionable remediation guidance.",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/detecting-misconfigurations-and-mitigating-ai-risks-to-secure-amazon-bedrock-with-trendai-vision-one/",
       "impact": "low"
@@ -2515,7 +2284,7 @@
       "platformTag": "azure",
       "date": "2026-06-10",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "What\u2019s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+      "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
       "type": "policy",
       "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/?practice-assessment-type=certification",
       "impact": "high"
@@ -2526,7 +2295,7 @@
       "platformTag": "azure",
       "date": "2026-06-09",
       "title": "Security insights now available in Copilot tab of ASPX",
-      "summary": "A new,\u202fsingular\u202fview of your data security signals and Copilot opportunity data.",
+      "summary": "A new, singular view of your data security signals and Copilot opportunity data.",
       "type": "pricing",
       "sourceUrl": "https://aka.ms/ASPXDataSecurityPlaybook",
       "impact": "high"
@@ -2537,7 +2306,7 @@
       "platformTag": "azure",
       "date": "2026-06-09",
       "title": "Introducing Pitch Maker Agent (beta)",
-      "summary": "Turn Copilot Chat usage into Microsoft 365 Copilot deals with the Pitch Maker Agent (beta)\u202fexperience.",
+      "summary": "Turn Copilot Chat usage into Microsoft 365 Copilot deals with the Pitch Maker Agent (beta) experience.",
       "type": "blog",
       "sourceUrl": "https://techcommunity.microsoft.com/blog/partnernews/pitch-maker-agent-turn-copilot-chat-signals-into-microsoft-365-copilot-deals/4518958?wt.mc_id=o6hvnmiu0k",
       "impact": "medium"
@@ -2548,7 +2317,7 @@
       "platformTag": "aws",
       "date": "2026-06-08",
       "title": "Complete guide to upgrading your SaaS product to AWS Marketplace Concurrent Agreements",
-      "summary": "This guide walks you through the technical migration steps to implement Concurrent Agreements. It covers the transition from Amazon Simple Notification Service (Amazon SNS) to Amazon EventBridge, API updates, and best practices for managing multiple licenses within your SaaS int\u2026",
+      "summary": "This guide walks you through the technical migration steps to implement Concurrent Agreements. It covers the transition from Amazon Simple Notification Service (Amazon SNS) to Amazon EventBridge, API updates, and best practices for managing multiple licenses within your SaaS int…",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/complete-guide-to-upgrading-your-saas-product-to-aws-marketplace-concurrent-agreements/",
       "impact": "medium"
@@ -2559,7 +2328,7 @@
       "platformTag": "azure",
       "date": "2026-06-08",
       "title": "MFA enforcement for Partner Center APIs",
-      "summary": "Multifactor authentication (MFA)\u202fenforcement for Partner Center APIs:\u202fTake action\u202fimmediately.",
+      "summary": "Multifactor authentication (MFA) enforcement for Partner Center APIs: Take action immediately.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#4",
       "impact": "medium"
@@ -2570,7 +2339,7 @@
       "platformTag": "azure",
       "date": "2026-06-08",
       "title": "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses",
-      "summary": "New\u202fMicrosoft 365 Copilot\u202fpromotion:\u202fCustomers\u202fcan save 15% on three-year commitments for 300+ licenses.",
+      "summary": "New Microsoft 365 Copilot promotion: Customers can save 15% on three-year commitments for 300+ licenses.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#new-three-year-cloud-solution-provider-csp-purchasing-option-for-microsoft-365-copilot-now-available",
       "impact": "medium"
@@ -2581,7 +2350,7 @@
       "platformTag": "suger",
       "date": "2026-06-08",
       "title": "Suger: As of Jun 8, 2026",
-      "summary": "Added SCORM package upload with an in-house runtime for Partner Training. Partner Training Added certificate expiry and renewal \u2014 statuses, retakes, automatic re-enrolment, and notifications.",
+      "summary": "Added SCORM package upload with an in-house runtime for Partner Training. Partner Training Added certificate expiry and renewal — statuses, retakes, automatic re-enrolment, and notifications.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-08",
       "impact": "medium"
@@ -2603,7 +2372,7 @@
       "platformTag": "azure",
       "date": "2026-06-05",
       "title": "Dynamics 365 Business Central Dual Use Rights license keys update",
-      "summary": "Download and replace license keys every\u202fsix\u202fmonths to continue using on-premises\u202fDynamics 365 Business Central online.",
+      "summary": "Download and replace license keys every six months to continue using on-premises Dynamics 365 Business Central online.",
       "type": "release",
       "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/download-software-licenses-csp?view=o365-worldwide&wt.mc_id=62vzgd0e3r",
       "impact": "medium"
@@ -2613,8 +2382,8 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-06-04",
-      "title": "Build in-demand capabilities at\u202fMicrosoft\u202fAI Skills Fest",
-      "summary": "Free digital skilling event for Microsoft partners, June 8\u201312.",
+      "title": "Build in-demand capabilities at Microsoft AI Skills Fest",
+      "summary": "Free digital skilling event for Microsoft partners, June 8–12.",
       "type": "release",
       "sourceUrl": "https://aiskillsnavigator.microsoft.com/events/AISF2026?UTM_Source=AISF_comms&UTM_Medium=comms&UTM_Campaign=PBON",
       "impact": "low"
@@ -2625,7 +2394,7 @@
       "platformTag": "azure",
       "date": "2026-06-04",
       "title": "New licensing prerequisite for Agent 365",
-      "summary": "New licensing prerequisite for Agent 365: Microsoft 365 E5\u202frequired\u202ffor new purchases starting June 1, 2026.",
+      "summary": "New licensing prerequisite for Agent 365: Microsoft 365 E5 required for new purchases starting June 1, 2026.",
       "type": "policy",
       "sourceUrl": "https://microsoftpartners.microsoft.com/abs/frontier-transformation/",
       "impact": "high"
@@ -2647,7 +2416,7 @@
       "platformTag": "azure",
       "date": "2026-06-02",
       "title": "Updated skilling for two Solutions Partner designations",
-      "summary": "We've updated skilling requirements for\u202fSolutions Partner designations for Modern Work and Digital & App Innovation.",
+      "summary": "We've updated skilling requirements for Solutions Partner designations for Modern Work and Digital & App Innovation.",
       "type": "policy",
       "sourceUrl": "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/overview?wt.mc_id=fqddacdrqs",
       "impact": "high"
@@ -2657,7 +2426,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-06-02",
-      "title": "Introducing Azure Linux\u2014now available in public preview",
+      "title": "Introducing Azure Linux—now available in public preview",
       "summary": "Deliver trusted solutions on a Linux platform built for Azure.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/azure/azure-linux/",
@@ -2691,7 +2460,7 @@
       "platformTag": "suger",
       "date": "2026-06-01",
       "title": "Suger: As of Jun 1, 2026",
-      "summary": "Released Partner Training end to end \u2014 author, share, learn, certify. Partner Training Added dimension tagging and tag-filtered discount groups to offers. Private offers Added per-organization fine-grained permission selection to the OAuth consent flow.",
+      "summary": "Released Partner Training end to end — author, share, learn, certify. Partner Training Added dimension tagging and tag-filtered discount groups to offers. Private offers Added per-organization fine-grained permission selection to the OAuth consent flow.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-01",
       "impact": "medium"
@@ -2801,7 +2570,7 @@
       "platformTag": "aws",
       "date": "2026-05-22",
       "title": "Publishing AMI products in AWS Marketplace in the AWS European Sovereign Cloud",
-      "summary": "Ready to reach customers with strict sovereignty requirements? The AWS European Sovereign Cloud is a new independent Amazon Web Services (AWS) partition designed to help public sector organizations and customers in highly regulated industries meet their evolving sovereignty need\u2026",
+      "summary": "Ready to reach customers with strict sovereignty requirements? The AWS European Sovereign Cloud is a new independent Amazon Web Services (AWS) partition designed to help public sector organizations and customers in highly regulated industries meet their evolving sovereignty need…",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/publishing-ami-products-in-aws-marketplace-in-the-aws-european-sovereign-cloud/",
       "impact": "low"
@@ -2812,7 +2581,7 @@
       "platformTag": "suger",
       "date": "2026-05-22",
       "title": "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers,",
-      "summary": "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers, diagnoses failures, fills forms, and navigates your console \u2014 without leaving the page. May 22, 2026",
+      "summary": "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers, diagnoses failures, fills forms, and navigates your console — without leaving the page. May 22, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/meet-suger-ai-the-in-product-copilot/",
       "impact": "low"
@@ -2823,7 +2592,7 @@
       "platformTag": "azure",
       "date": "2026-05-19",
       "title": "Help maintain Secure Boot certificate updates",
-      "summary": "Certificates issued in 2011 expire starting\u202fin\u202fJune 2026.\u202fMonitor your device status and\u202ftake action\u202fas needed.",
+      "summary": "Certificates issued in 2011 expire starting in June 2026. Monitor your device status and take action as needed.",
       "type": "policy",
       "sourceUrl": "https://support.microsoft.com/topic/monitoring-secure-boot-certificate-status-with-microsoft-intune-remediations-6696a27b-fa09-4570-b112-124965adc87f?wt.mc_id=z2o6ozz3tq",
       "impact": "medium"
@@ -2834,7 +2603,7 @@
       "platformTag": "azure",
       "date": "2026-05-18",
       "title": "New capability: Auto activation for SaaS in Microsoft Marketplace",
-      "summary": "With auto activation, billing begins as soon as a customer buys your SaaS offer in Microsoft Marketplace, even if product activation happens\u202flater.",
+      "summary": "With auto activation, billing begins as soon as a customer buys your SaaS offer in Microsoft Marketplace, even if product activation happens later.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
       "impact": "high"
@@ -2856,7 +2625,7 @@
       "platformTag": "azure",
       "date": "2026-05-15",
       "title": "Boost Marketplace discoverability with AI-powered feedback",
-      "summary": "Enhance listings with personalized guidance delivered in seconds via\u202fApp Advisor.",
+      "summary": "Enhance listings with personalized guidance delivered in seconds via App Advisor.",
       "type": "pricing",
       "sourceUrl": "https://aka.ms/ImproveMyListing?ocid=cmm03cz6ebg",
       "impact": "high"
@@ -2867,7 +2636,7 @@
       "platformTag": "azure",
       "date": "2026-05-13",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "This month\u2019s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to\u2026",
+      "summary": "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
       "type": "policy",
       "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/?practice-assessment-type=certification",
       "impact": "high"
@@ -2878,7 +2647,7 @@
       "platformTag": "azure",
       "date": "2026-05-13",
       "title": "New three-year Cloud Solution Provider (CSP) purchasing option for Microsoft 365 Copilot now available",
-      "summary": "New 3-year\u202fpurchasing\u202foption for Microsoft 365 Copilot now available in CSP, which brings Microsoft 365 Copilot in line with\u202fexisting\u202fMicrosoft 365 E3 and E5 3-year SKUs.",
+      "summary": "New 3-year purchasing option for Microsoft 365 Copilot now available in CSP, which brings Microsoft 365 Copilot in line with existing Microsoft 365 E3 and E5 3-year SKUs.",
       "type": "pricing",
       "sourceUrl": "https://aka.ms/CSPM365CopilotPartnerFAQ",
       "impact": "high"
@@ -2910,7 +2679,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-05-07",
-      "title": "Windows 365 Business \u2013 End of Sale for Windows Hybrid Benefit (WHB)",
+      "title": "Windows 365 Business – End of Sale for Windows Hybrid Benefit (WHB)",
       "summary": "Windows 365 Windows Hybrid Benefit (WHB) SKUs are being retired from sale to simplify the portfolio. Existing customers can continue to renew and use their current subscriptions without interruption, but no automatic migration to new SKUs occur.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april#9",
@@ -2922,7 +2691,7 @@
       "platformTag": "azure",
       "date": "2026-05-06",
       "title": "Business Applications designation update",
-      "summary": "Attaining or renewing your designation just got easier\u2014Dynamics 365 Contact Center and Copilot Studio are now eligible workloads.",
+      "summary": "Attaining or renewing your designation just got easier—Dynamics 365 Contact Center and Copilot Studio are now eligible workloads.",
       "type": "policy",
       "sourceUrl": "https://partner.microsoft.com/dashboard/v2/membership/program/solutionspartner/solutionareas/bizapps?wt.mc_id=ykm2b8pwda",
       "impact": "medium"
@@ -2932,7 +2701,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-05-06",
-      "title": "Oracle\u2011to\u2011PostgreSQL AI\u2011assisted migration tooling expands partner opportunity on Azure",
+      "title": "Oracle‑to‑PostgreSQL AI‑assisted migration tooling expands partner opportunity on Azure",
       "summary": "Migrate customers off legacy Oracle databases with new capabilities designed for efficiency.",
       "type": "policy",
       "sourceUrl": "https://learn.microsoft.com/en-us/azure/postgresql/migrate/oracle-schema-conversions/schema-conversions-overview?wt.mc_id=vpflq57sc2",
@@ -2943,8 +2712,8 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-05-06",
-      "title": "Keep skilling on track as AZ\u2011500 transitions to SC\u2011500",
-      "summary": "AZ\u2011500 is\u202fretiring. SC\u2011500 offers a flexible transition.",
+      "title": "Keep skilling on track as AZ‑500 transitions to SC‑500",
+      "summary": "AZ‑500 is retiring. SC‑500 offers a flexible transition.",
       "type": "policy",
       "sourceUrl": "https://techcommunity.microsoft.com/blog/skills-hub-blog/the-ai-job-boom-is-here-are-you-ready-to-showcase-your-skills/4494128",
       "impact": "high"
@@ -2966,7 +2735,7 @@
       "platformTag": "azure",
       "date": "2026-05-05",
       "title": "Important updates to the Teamwork Deployment specialization",
-      "summary": "The Teamwork Deployment specialization is evolving so partners can better prepare customers for secure,\u202fAI\u2011ready\u202fenvironments.",
+      "summary": "The Teamwork Deployment specialization is evolving so partners can better prepare customers for secure, AI‑ready environments.",
       "type": "policy",
       "sourceUrl": "https://partner.microsoft.com/partnership/specialization",
       "impact": "high"
@@ -2977,7 +2746,7 @@
       "platformTag": "azure",
       "date": "2026-05-05",
       "title": "Microsoft Marketplace Terms of Use is being updated, effective May 27, 2026",
-      "summary": "The Microsoft Publisher Agreement\u202fis updated and is now available for your review.",
+      "summary": "The Microsoft Publisher Agreement is updated and is now available for your review.",
       "type": "policy",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
       "impact": "high"
@@ -2988,7 +2757,7 @@
       "platformTag": "azure",
       "date": "2026-05-04",
       "title": "Save the date: MCAPS Start for Partners",
-      "summary": "Prepare for\u202fFY27 with\u202fearly\u202finsights\u202finto\u202fMicrosoft priorities and\u202fgo-to-market\u202fdirection at MCAPS Start for Partners.",
+      "summary": "Prepare for FY27 with early insights into Microsoft priorities and go-to-market direction at MCAPS Start for Partners.",
       "type": "blog",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may",
       "impact": "low"
@@ -3010,7 +2779,7 @@
       "platformTag": "azure",
       "date": "2026-05-04",
       "title": "Changes to Azure Reserved VM Instances",
-      "summary": "Azure Reserved\u202fVirtual Machine (VM)\u202fInstances for select VM series will no longer be available for purchase or renewal\u202fstarting July 1, 2026.",
+      "summary": "Azure Reserved Virtual Machine (VM) Instances for select VM series will no longer be available for purchase or renewal starting July 1, 2026.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/manage-reserved-vm-instance",
       "impact": "low"
@@ -3021,7 +2790,7 @@
       "platformTag": "azure",
       "date": "2026-05-04",
       "title": "Mandatory multifactor authentication (MFA) for Partner Center APIs",
-      "summary": "Microsoft is enforcing MFA across all Partner Center\u202fapp+user\u202fAPIs. Inventory,\u202fvalidate, and test your integrations now.",
+      "summary": "Microsoft is enforcing MFA across all Partner Center app+user APIs. Inventory, validate, and test your integrations now.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/security/partner-security-requirements?wt.mc_id=rygpsn38be",
       "impact": "high"
@@ -3032,7 +2801,7 @@
       "platformTag": "azure",
       "date": "2026-05-04",
       "title": "Extended service terms enforcement for CSP in effect",
-      "summary": "Extended service terms\u202fenforcement for\u202fCSPs\u202fare in effect.",
+      "summary": "Extended service terms enforcement for CSPs are in effect.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/extended-service-terms?wt.mc_id=wrdvrql8ie",
       "impact": "medium"
@@ -3065,7 +2834,7 @@
       "platformTag": "azure",
       "date": "2026-05-01",
       "title": "Register for MCAPS Start for Partners",
-      "summary": "Meet us where FY27 takes shape.\u202fMCAPS Start for Partners\u202fgives you\u202fa\u202fpreview\u202fof where Microsoft is investing\u202fand\u202fhow you can\u202fposition your business for growth.",
+      "summary": "Meet us where FY27 takes shape. MCAPS Start for Partners gives you a preview of where Microsoft is investing and how you can position your business for growth.",
       "type": "pricing",
       "sourceUrl": "https://aka.ms/MCAPS2026PCA",
       "impact": "medium"
@@ -3109,7 +2878,7 @@
       "platformTag": "suger",
       "date": "2026-04-30",
       "title": "Suger: As of Apr 30, 2026",
-      "summary": "Launched the Suger MCP server, letting an AI assistant run the marketplace motion in natural language \u2014 creating private offers, listing expiring entitlements, generating revenue reports, reporting usage, and checking open support tickets.",
+      "summary": "Launched the Suger MCP server, letting an AI assistant run the marketplace motion in natural language — creating private offers, listing expiring entitlements, generating revenue reports, reporting usage, and checking open support tickets.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-04-30",
       "impact": "high"
@@ -3131,7 +2900,7 @@
       "platformTag": "azure",
       "date": "2026-04-27",
       "title": "Microsoft Defender for SQL Fairfax",
-      "summary": "Improved reliability and easier onboarding\u202fwith\u202fDefender for SQL Servers on Machines\u202fgovernment (Fairfax).",
+      "summary": "Improved reliability and easier onboarding with Defender for SQL Servers on Machines government (Fairfax).",
       "type": "release",
       "sourceUrl": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-sql-usage?wt.mc_id=vcblmu8bnt",
       "impact": "medium"
@@ -3142,7 +2911,7 @@
       "platformTag": "aws",
       "date": "2026-04-23",
       "title": "How to reduce AWS Marketplace costs by automating AMI subscription monitoring",
-      "summary": "In this post, we show you how to capture instance modifications in real-time, compares them against active subscriptions, and notifies you when action is required\u2014helping you maintain purchased subscriptions that provide significant discounts compared to on-demand pricing.",
+      "summary": "In this post, we show you how to capture instance modifications in real-time, compares them against active subscriptions, and notifies you when action is required—helping you maintain purchased subscriptions that provide significant discounts compared to on-demand pricing.",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/how-to-reduce-aws-marketplace-costs-by-automating-ami-subscription-monitoring/",
       "impact": "high"
@@ -3153,7 +2922,7 @@
       "platformTag": "azure",
       "date": "2026-04-23",
       "title": "Microsoft 365 E7 & Agent 365: GTM resources and enablement",
-      "summary": "Access new\u202fand upcoming\u202freadiness resources to accelerate\u202fyour\u202fengagement\u202fstrategy with customers\u202fahead of Microsoft 365 E7 and Microsoft Agent 365 general availability on May\u202f1.",
+      "summary": "Access new and upcoming readiness resources to accelerate your engagement strategy with customers ahead of Microsoft 365 E7 and Microsoft Agent 365 general availability on May 1.",
       "type": "pricing",
       "sourceUrl": "https://microsoftpartners.microsoft.com/abs/gtm/copilot/",
       "impact": "high"
@@ -3164,7 +2933,7 @@
       "platformTag": "azure",
       "date": "2026-04-22",
       "title": "Introducing standardized pricing for Extended Security Updates",
-      "summary": "The new pricing model applies\u202fto\u202fnew Extended Security Updates offerings for Windows products and SQL Server.",
+      "summary": "The new pricing model applies to new Extended Security Updates offerings for Windows products and SQL Server.",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/asset/collection/cloud-accelerate-factory?wt.mc_id=vb4bpi52mu",
       "impact": "medium"
@@ -3185,7 +2954,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-04-21",
-      "title": "Annual capabilities assessment\u2014refinements and interim approach",
+      "title": "Annual capabilities assessment—refinements and interim approach",
       "summary": "Microsoft is updating the annual CSP capabilities assessment experience for existing direct bill and distributor partners.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/account-settings/permissions-overview#how-to-look-up-my-organizations-account-admin-or-global-admin-or-owner-or-users-in-other-roles-in-partner-center",
@@ -3208,7 +2977,7 @@
       "platformTag": "azure",
       "date": "2026-04-17",
       "title": "MCA iframe event signal now available",
-      "summary": "Partners can build\u202fone-click customer workflows with a new optional event signal from the MCA acceptance\u202fiframe, which is available now in production.",
+      "summary": "Partners can build one-click customer workflows with a new optional event signal from the MCA acceptance iframe, which is available now in production.",
       "type": "feature",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/customers/integrate-sandbox-confirm-customer-accept",
       "impact": "high"
@@ -3219,7 +2988,7 @@
       "platformTag": "azure",
       "date": "2026-04-16",
       "title": "Reminder: Microsoft 365 pricing and packaging updates coming in 2026",
-      "summary": "Microsoft 365 pricing and packaging updates are coming in 2026\u2014start renewal and upsell conversations now.",
+      "summary": "Microsoft 365 pricing and packaging updates are coming in 2026—start renewal and upsell conversations now.",
       "type": "pricing",
       "sourceUrl": "https://www.microsoft.com/microsoft-365/blog/2025/12/04/advancing-microsoft-365-new-capabilities-and-pricing-update/",
       "impact": "high"
@@ -3230,7 +2999,7 @@
       "platformTag": "azure",
       "date": "2026-04-14",
       "title": "Expanded Copilot for All promo updates to help you unlock more revenue opportunities",
-      "summary": "We\u2019re\u202fupdating\u202fthe\u202f30% and 40%\u202foff\u202fCopilot for All\u202fCSP promotional offers\u202fto\u202fexpand\u202fcustomer eligibility.",
+      "summary": "We’re updating the 30% and 40% off Copilot for All CSP promotional offers to expand customer eligibility.",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/dashboard/insights/abss/growthopportunities?wt.mc_id=6a51nk9966",
       "impact": "high"
@@ -3241,7 +3010,7 @@
       "platformTag": "azure",
       "date": "2026-04-10",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "What\u2019s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+      "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
       "type": "pricing",
       "sourceUrl": "https://appsource.microsoft.com",
       "impact": "high"
@@ -3251,8 +3020,8 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-04-10",
-      "title": "Upcoming Update: Pricelist schema enhancement to support mid\u2011month republishing",
-      "summary": "Date : April 10, 2026 Effective date : May 1, 2026 Workspace : Pricing To improve pricing data clarity and support critical updates, we are enhancing the License-based Current Month Pricelist schema and Software Current Month Pricelist schema to enable mid\u2011month republishes when ",
+      "title": "Upcoming Update: Pricelist schema enhancement to support mid‑month republishing",
+      "summary": "Date : April 10, 2026 Effective date : May 1, 2026 Workspace : Pricing To improve pricing data clarity and support critical updates, we are enhancing the License-based Current Month Pricelist schema and Software Current Month Pricelist schema to enable mid‑month republishes when ",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers#new-commerce-price-list",
       "impact": "high"
@@ -3274,7 +3043,7 @@
       "platformTag": "azure",
       "date": "2026-04-03",
       "title": "Validate your support capabilities and prepare for the future of partner support",
-      "summary": "Access\u202fnew resources\u202fon Unified for Partner.",
+      "summary": "Access new resources on Unified for Partner.",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/partnership/solutions-partner#tab-5",
       "impact": "medium"
@@ -3307,7 +3076,7 @@
       "platformTag": "azure",
       "date": "2026-04-01",
       "title": "Download targeted offers for your customers using AI assistant in Partner Center",
-      "summary": "Date : April 01, 2026 Workspace : Customers Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. We\u2019ve introduced a new AI assistant capability in Partner Center that helps Cloud Solution Provider (CSP) partners discover and download targeted o",
+      "summary": "Date : April 01, 2026 Workspace : Customers Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. We’ve introduced a new AI assistant capability in Partner Center that helps Cloud Solution Provider (CSP) partners discover and download targeted o",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/dashboard/home",
       "impact": "medium"
@@ -3318,7 +3087,7 @@
       "platformTag": "azure",
       "date": "2026-04-01",
       "title": "Announcing reduced Microsoft Dragon Copilot pricing",
-      "summary": "We\u2019re\u202fpleased to share an update to\u202fDragon Copilot\u2019s commercial model,\u202fdesigned to better reflect the current market environment and support partner growth.",
+      "summary": "We’re pleased to share an update to Dragon Copilot’s commercial model, designed to better reflect the current market environment and support partner growth.",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/asset/collection/dragon-copilot-partner-assets#/?wt.mc_id=3vwhc6hn8k",
       "impact": "high"
@@ -3340,7 +3109,7 @@
       "platformTag": "azure",
       "date": "2026-04-01",
       "title": "SKUs and promotions for CSP transactability May 1",
-      "summary": "Microsoft 365 E5 + Entra Suite, Copilot, and Agent 365 become transactable as\u202fMicrosoft 365 E7, the Frontier Suite.\u202fPrice\u202flist preview for one-year terms available on April 1.",
+      "summary": "Microsoft 365 E5 + Entra Suite, Copilot, and Agent 365 become transactable as Microsoft 365 E7, the Frontier Suite. Price list preview for one-year terms available on April 1.",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/dashboard/pricing/pricelist",
       "impact": "high"
@@ -3361,7 +3130,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-04-01",
-      "title": "SKU Naming Update: Microsoft Teams Shared Devices \u2192 Microsoft Teams Shared Space \u2013 Single Space",
+      "title": "SKU Naming Update: Microsoft Teams Shared Devices → Microsoft Teams Shared Space – Single Space",
       "summary": "Date : April 01, 2026 Workspace : General Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Microsoft identified a naming inconsistency affecting a subset of Microsoft Teams Shared Devices SKUs in Partner Center. To better align with our upd",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
@@ -3373,7 +3142,7 @@
       "platformTag": "azure",
       "date": "2026-03-27",
       "title": "Retirement of the Qualified Referral Program (QRP)",
-      "summary": "Microsoft retires the Qualified Referral Program (QRP)\u202fat the end of\u202fMarch\u202f2026 and\u202fconsolidates\u202flead/referral\u202fsharing\u202finto our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for\u202fco-sell\u202fand\u202fMarketplace conversions.",
+      "summary": "Microsoft retires the Qualified Referral Program (QRP) at the end of March 2026 and consolidates lead/referral sharing into our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for co-sell and Marketplace conversions.",
       "type": "program",
       "sourceUrl": "https://info.microsoft.com/ww-landing-microsoft-ai-cloud-partner-program-concierge-qrp.html?lcid=en-us",
       "impact": "medium"
@@ -3384,7 +3153,7 @@
       "platformTag": "azure",
       "date": "2026-03-26",
       "title": "Power Apps per App SKU returning to CSP price list in early April",
-      "summary": "Power Apps per\u202fapp SKU will be restored to the CSP price list in early April following a temporary operational issue.",
+      "summary": "Power Apps per app SKU will be restored to the CSP price list in early April following a temporary operational issue.",
       "type": "pricing",
       "sourceUrl": "https://www.microsoft.com/licensing/news/power-app-per-app-end-of-sale",
       "impact": "low"
@@ -3417,7 +3186,7 @@
       "platformTag": "aws",
       "date": "2026-03-23",
       "title": "Accelerate your cloud journey with AWS Professional Services in AWS Marketplace",
-      "summary": "AWS first-party Professional Services are now available directly in AWS Marketplace, bringing agentic AI\u2013led data center migration, application modernization, generative AI implementation, and cloud optimization backed by deep-rooted AWS expertise to where millions of customers \u2026",
+      "summary": "AWS first-party Professional Services are now available directly in AWS Marketplace, bringing agentic AI–led data center migration, application modernization, generative AI implementation, and cloud optimization backed by deep-rooted AWS expertise to where millions of customers …",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/accelerate-your-cloud-journey-with-aws-professional-services-in-aws-marketplace/",
       "impact": "high"
@@ -3428,7 +3197,7 @@
       "platformTag": "azure",
       "date": "2026-03-23",
       "title": "Update to specialization criteria",
-      "summary": "Performance metrics now use standard rounding\u2014partners within 0.5% of the requirement may now qualify to enroll in or renew a specialization.",
+      "summary": "Performance metrics now use standard rounding—partners within 0.5% of the requirement may now qualify to enroll in or renew a specialization.",
       "type": "policy",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-march",
       "impact": "medium"
@@ -3438,8 +3207,8 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-03-23",
-      "title": "Build & Publish FY26: What\u2019s new and how partners can get started",
-      "summary": "Build & Publish FY26: what\u2019s new and how partners can get started.",
+      "title": "Build & Publish FY26: What’s new and how partners can get started",
+      "summary": "Build & Publish FY26: what’s new and how partners can get started.",
       "type": "program",
       "sourceUrl": "https://assetsprod.microsoft.com/mpn/isv-partner-incentive-walking-deck.pdf",
       "impact": "medium"
@@ -3471,8 +3240,8 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-03-16",
-      "title": "\u200bNew Microsoft Azure assets for SMB audiences",
-      "summary": "Engage customers in the small and medium-sized\u202fbusiness (SMB) market with this purpose-built go-to-market content covering all\u202fthings\u202fMicrosoft Azure.",
+      "title": "​New Microsoft Azure assets for SMB audiences",
+      "summary": "Engage customers in the small and medium-sized business (SMB) market with this purpose-built go-to-market content covering all things Microsoft Azure.",
       "type": "pricing",
       "sourceUrl": "https://partner.microsoft.com/asset/collection/cloud-and-ai-platforms-smb-partner-resources#/",
       "impact": "medium"
@@ -3548,7 +3317,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-03-09",
-      "title": "Introducing Microsoft 365 E7\u2014a new productivity suite designed to drive Frontier transformation",
+      "title": "Introducing Microsoft 365 E7—a new productivity suite designed to drive Frontier transformation",
       "summary": "Unlock new, repeatable revenue and monetization streams for your business.",
       "type": "pricing",
       "sourceUrl": "https://aka.ms/incentivesguide",
@@ -3571,7 +3340,7 @@
       "platformTag": "azure",
       "date": "2026-03-04",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "This month\u2019s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to\u2026",
+      "summary": "This month’s updates continue to enhance partner differentiation and readiness across high-demand solution areas. Key changes include specialization updates that integrate AI capabilities, revised skilling and performance requirements, and streamlined qualification frameworks to…",
       "type": "policy",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/specializations",
       "impact": "medium"
@@ -3592,8 +3361,8 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-03-01",
-      "title": "The \u200bautomated Support Services designation experience is now available in Partner Center",
-      "summary": "Partners can\u202fself-nominate, enroll\u202fin,\u202fand\u202faccess relevant information related to the Support Services designation\u202fin Partner Center.",
+      "title": "The ​automated Support Services designation experience is now available in Partner Center",
+      "summary": "Partners can self-nominate, enroll in, and access relevant information related to the Support Services designation in Partner Center.",
       "type": "program",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/membership/support-services-designation",
       "impact": "high"
@@ -3626,7 +3395,7 @@
       "platformTag": "azure",
       "date": "2026-02-26",
       "title": "Legacy Azure pricelists updates",
-      "summary": "Date : February 26, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective March 1, 2026 , the following Legacy Azure Price Lists will transition from Excel (.xlsx) to CSV (.csv) format: Global \u2192 Azure in Global",
+      "summary": "Date : February 26, 2026 Workspace : Pricing Impacted audience : Cloud Solution Provider (CSP) direct bill partners and distributors. Effective March 1, 2026 , the following Legacy Azure Price Lists will transition from Excel (.xlsx) to CSV (.csv) format: Global → Azure in Global",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/pricing/pricing-and-offers",
       "impact": "high"
@@ -3681,7 +3450,7 @@
       "platformTag": "azure",
       "date": "2026-02-17",
       "title": "CSP unbilled invoice reconciliation API v1 to retire March 15, 2026",
-      "summary": "Migrate to API v2\u202fbefore\u202fMarch 15,\u202f2026,\u202fto avoid service disruption.",
+      "summary": "Migrate to API v2 before March 15, 2026, to avoid service disruption.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/developer/get-invoice-unbilled-line-items-asynchronously?wt.mc_id=qeowlup25z",
       "impact": "low"
@@ -3703,7 +3472,7 @@
       "platformTag": "azure",
       "date": "2026-02-12",
       "title": "Marketplace rewards update: Azure sponsorship now supported on more MCA billing profiles",
-      "summary": "We\u2019re pleased to share an update that simplifies how partners in Marketplace Rewards can use Azure Sponsorship credits if they or their customers have Microsoft Customer Agreement (MCA) billing profiles.",
+      "summary": "We’re pleased to share an update that simplifies how partners in Marketplace Rewards can use Azure Sponsorship credits if they or their customers have Microsoft Customer Agreement (MCA) billing profiles.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
       "impact": "medium"
@@ -3758,7 +3527,7 @@
       "platformTag": "azure",
       "date": "2026-02-06",
       "title": "New capability: Estimated Azure Consumed Revenue (ACR) for IP Co Sell referrals",
-      "summary": "We\u2019re pleased to announce the general availability of the Estimated Azure Consumed Revenue (ACR) field in the Referral Submission experience in Partner Center.",
+      "summary": "We’re pleased to announce the general availability of the Estimated Azure Consumed Revenue (ACR) field in the Referral Submission experience in Partner Center.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-february",
       "impact": "high"
@@ -3790,8 +3559,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-02-05",
-      "title": "Alliances Partnerships 101:\u00a0Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide t",
-      "summary": "Alliances Partnerships 101:\u00a0Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide to scale co-sell: proven strategies for driving marketplace revenue and winning with AWS, Azure & GCP account teams. Feb 5, 2026",
+      "title": "Alliances Partnerships 101: Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide t",
+      "summary": "Alliances Partnerships 101: Build a Winning Co-Sell Motion with AWS, Azure & GCP Partnerships & Alliance Leaders guide to scale co-sell: proven strategies for driving marketplace revenue and winning with AWS, Azure & GCP account teams. Feb 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/partnerships-101-build-a-winning-co-sell-motion-with-aws-azure-gcp/",
       "impact": "low"
@@ -3802,7 +3571,7 @@
       "platformTag": "azure",
       "date": "2026-02-04",
       "title": "Security Immersion Briefing update: No Cap Unlimited Execution, Expanded Partner Eligibility, New focus on SMB",
-      "summary": "We\u2019re introducing a new\u202fSecurity immersion briefing, focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50\u2013300 licenses).",
+      "summary": "We’re introducing a new Security immersion briefing, focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50–300 licenses).",
       "type": "pricing",
       "sourceUrl": "https://aka.ms/ImmersionBriefingsMCIWalkThrough",
       "impact": "medium"
@@ -3813,7 +3582,7 @@
       "platformTag": "azure",
       "date": "2026-02-04",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "What\u2019s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+      "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/?practice-assessment-type=certification",
       "impact": "high"
@@ -3922,8 +3691,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-01-26",
-      "title": "Product Update Product Updates: January 2026 See what\u2019s new in Suger January 2026: multi-partner Azure referrals, cross-",
-      "summary": "Product Update Product Updates: January 2026 See what\u2019s new in Suger January 2026: multi-partner Azure referrals, cross-cloud marketplace dashboards, and co-sell partner analytics. Jan 26, 2026",
+      "title": "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-",
+      "summary": "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-cloud marketplace dashboards, and co-sell partner analytics. Jan 26, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-january-2026/",
       "impact": "medium"
@@ -3933,7 +3702,7 @@
       "platform": "Azure",
       "platformTag": "azure",
       "date": "2026-01-23",
-      "title": "Unlock new Security revenue with CSP add\u2011ons",
+      "title": "Unlock new Security revenue with CSP add‑ons",
       "summary": "Entra ID P2 and Defender for Endpoint P2 now available in Cloud Solution Program.",
       "type": "pricing",
       "sourceUrl": "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/",
@@ -3978,7 +3747,7 @@
       "platformTag": "azure",
       "date": "2026-01-16",
       "title": "Retirement of the Qualified Referral Program",
-      "summary": "Microsoft will retire the Qualified Referral Program (QRP) in Q3 FY26 and consolidate lead/referral intake into our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for\u202fCo-sell\u202fand Marketplace conversions.",
+      "summary": "Microsoft will retire the Qualified Referral Program (QRP) in Q3 FY26 and consolidate lead/referral intake into our standard motions to simplify partner experience, improve lead quality, and provide a single system of record for Co-sell and Marketplace conversions.",
       "type": "program",
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-january",
       "impact": "medium"
@@ -4000,7 +3769,7 @@
       "platformTag": "azure",
       "date": "2026-01-14",
       "title": "Monthly Microsoft AI Cloud Partner Program update",
-      "summary": "What\u2019s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
+      "summary": "What’s new for Solutions Partner designations, specializations, and other Microsoft AI Cloud Partner Program offerings and benefits.",
       "type": "pricing",
       "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/?practice-assessment-type=certification",
       "impact": "high"
@@ -4010,8 +3779,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-01-13",
-      "title": "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader\u2019s first guide to understanding why clou",
-      "summary": "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader\u2019s first guide to understanding why cloud marketplace deals create policy, workflow, and ownership failures, and what to do about it. Jan 13, 2026",
+      "title": "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader’s first guide to understanding why clou",
+      "summary": "RevOps RevOps 101: Running Marketplace Deals Like Any Other Deal A RevOps leader’s first guide to understanding why cloud marketplace deals create policy, workflow, and ownership failures, and what to do about it. Jan 13, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/revops-cloud-gtm-playbook-101/",
       "impact": "low"
@@ -4032,8 +3801,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-01-12",
-      "title": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger\u2019s Winter 2025 release: CRM enrichment, AWS fu",
-      "summary": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger\u2019s Winter 2025 release: CRM enrichment, AWS funding, Snowflake Marketplace, and HubSpot improvements. Jan 12, 2026",
+      "title": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS fu",
+      "summary": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS funding, Snowflake Marketplace, and HubSpot improvements. Jan 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-winter-2025/",
       "impact": "medium"
@@ -4066,7 +3835,7 @@
       "platformTag": "azure",
       "date": "2026-01-05",
       "title": "Security Immersion Briefing Update: No Cap- Unlimited Execution, Expanded Partner Eligibility, New focus on Small and Me",
-      "summary": "We\u2019re introducing a new Security immersion briefing , focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50\u2013300 licenses).",
+      "summary": "We’re introducing a new Security immersion briefing , focused on Microsoft Defender for Business premium and Microsoft Purview for Business Premium customers (50–300 licenses).",
       "type": "pricing",
       "sourceUrl": "https://microsoftpartners.microsoft.com/Microsoft-Security-Partners/Immersion-Briefings",
       "impact": "medium"
