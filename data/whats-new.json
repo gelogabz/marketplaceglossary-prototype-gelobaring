@@ -1,6 +1,127 @@
 {
-  "lastUpdated": "2026-08-19T15:31:22.870Z",
+  "lastUpdated": "2026-08-20T06:26:00.866Z",
   "updates": [
+    {
+      "id": "aws-2026-08-19-aws-marketplace-launches-support-for-amazon-lights",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-08-19",
+      "title": "AWS Marketplace launches support for Amazon Lightsail",
+      "summary": "Today, AWS Marketplace announces support for launching select Amazon Machine Images (AMIs) on Amazon Lightsail. Customers who want simple, predictable pricing and a streamlined instance-creation experience can now easily deploy eligible AWS Marketplace AMIs on Amazon Lightsail i…",
+      "type": "pricing",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-launch-ami-amazon-lightsail",
+      "impact": "high"
+    },
+    {
+      "id": "suger-2026-08-19-aws-aws-competencies-worth-the-work-an-aws-compete",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framew",
+      "summary": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framework for weighing the effort of an application against the differentiation AWS says it unlocks — before you commit the headcount. Aug 19, 2026 Read article",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-competencies-worth-the-work/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-billing-metering-aws-marketplace-net-payment-terms",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Billing & Metering AWS Marketplace Net Payment Terms for Private Offers AWS now lets sellers set Net 30, 45, 60, or 90 p",
+      "summary": "Billing & Metering AWS Marketplace Net Payment Terms for Private Offers AWS now lets sellers set Net 30, 45, 60, or 90 payment terms on a private offer. Here's what each term does, what the buyer sees, and how the CPPO ceiling works. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-net-payment-terms-for-private-offers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-cloud-gtm-how-fast-can-a-marketplace-deal-actually",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Cloud GTM How Fast Can a Marketplace Deal Actually Close? Your AE says the marketplace path is too slow for a Q4 deal. H",
+      "summary": "Cloud GTM How Fast Can a Marketplace Deal Actually Close? Your AE says the marketplace path is too slow for a Q4 deal. Here is the real cloud marketplace deal timeline, step by step, and which step is actually the bottleneck. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-fast-can-a-marketplace-deal-actually-close/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-aws-listing-ai-models-on-cloud-marketplaces-ai-mod",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "AWS Listing AI Models on Cloud Marketplaces AI models, agents and data products each list through a different marketplac",
+      "summary": "AWS Listing AI Models on Cloud Marketplaces AI models, agents and data products each list through a different marketplace path. Here are the current mechanics on AWS and Google Cloud, and which one your product fits. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/listing-ai-models-on-cloud-marketplaces/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-azure-per-market-pricing-on-azure-marketplace-expl",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketpla",
+      "summary": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketplace. You set one USD price, or upload local ones, and Microsoft's fixed currency-per-market map does the rest. Here is the mechanic. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/per-market-pricing-on-azure-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-cloud-gtm-public-sector-vs-commercial-marketplace-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Cloud GTM Public Sector vs Commercial Marketplace Deals A commercial marketplace deal and a public sector one start the ",
+      "summary": "Cloud GTM Public Sector vs Commercial Marketplace Deals A commercial marketplace deal and a public sector one start the same and diverge fast. Here is the government buying path, mapped for the team you are selling to. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/public-sector-vs-commercial-marketplace-deals/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-cloud-gtm-the-cloud-marketplace-operations-runbook",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Cloud GTM The Cloud Marketplace Operations Runbook The recurring work of running a marketplace business, sorted by how o",
+      "summary": "Cloud GTM The Cloud Marketplace Operations Runbook The recurring work of running a marketplace business, sorted by how often it comes due — daily, weekly, monthly, quarterly — with a link to the deep dive for each. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/the-cloud-marketplace-operations-runbook/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-billing-metering-the-monthly-marketplace-close-che",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Billing & Metering The Monthly Marketplace Close Checklist The monthly marketplace close is the same five moves every cy",
+      "summary": "Billing & Metering The Monthly Marketplace Close Checklist The monthly marketplace close is the same five moves every cycle. Here they are in dependency order, so each step has the data the next one needs. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/the-monthly-marketplace-close-checklist/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-cloud-gtm-what-moves-when-you-switch-marketplace-p",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Cloud GTM What Moves When You Switch Marketplace Platforms Switching marketplace platforms feels like moving your revenu",
+      "summary": "Cloud GTM What Moves When You Switch Marketplace Platforms Switching marketplace platforms feels like moving your revenue. It is not. Here is what actually moves, and what stays put with the cloud provider. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/what-moves-when-you-switch-platforms/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-cloud-gtm-what-to-alert-on-in-marketplace-operatio",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Cloud GTM What to Alert On in Marketplace Operations Not every marketplace event deserves a page at 2am. Here is which o",
+      "summary": "Cloud GTM What to Alert On in Marketplace Operations Not every marketplace event deserves a page at 2am. Here is which ones do, how urgent each is, and where each should route — email, Slack, or Teams. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/what-to-alert-on-in-marketplace-operations/",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-08-18-enabling-mandatory-purchase-orders-and-custom-guid",
       "platform": "AWS",
@@ -24,17 +145,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-18-azure-azure-marketplace-changes-2026-what-s-new-fo",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Azure Azure Marketplace Changes 2026: What's New for ISVs Microsoft's FY27 Azure Marketplace changes for ISVs: PRACR ret",
-      "summary": "Azure Azure Marketplace Changes 2026: What's New for ISVs Microsoft's FY27 Azure Marketplace changes for ISVs: PRACR retires as a broad co-sell mechanism, co-sell goes Marketplace-first, and what to watch at Ignite. Aug 18, 2026 Read article",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/azure-marketplace-fy27-changes-for-isvs/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-18-billing-metering-the-aws-marketplace-professional-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -43,6 +153,17 @@
       "summary": "Billing & Metering The AWS Marketplace Professional Services Listing Fee Cut AWS cut the professional services listing fee from 2.5% to 0.5% in June 2026. Here's the exact before/after and the new margin math on a services attach. Aug 18, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-professional-services-fee-cut/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-18-azure-azure-marketplace-changes-2026-what-s-new-fo",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Azure Azure Marketplace Changes 2026: What's New for ISVs Microsoft's FY27 Azure Marketplace changes for ISVs: PRACR ret",
+      "summary": "Azure Azure Marketplace Changes 2026: What's New for ISVs Microsoft's FY27 Azure Marketplace changes for ISVs: PRACR retires as a broad co-sell mechanism, co-sell goes Marketplace-first, and what to watch at Ignite. Aug 18, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/azure-marketplace-fy27-changes-for-isvs/",
       "impact": "low"
     },
     {
@@ -365,17 +486,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-14-cloud-gtm-the-first-marketplace-hire-what-to-look-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-14",
-      "title": "Cloud GTM The First Marketplace Hire: What to Look For The first marketplace hire is not a salesperson and not an engine",
-      "summary": "Cloud GTM The First Marketplace Hire: What to Look For The first marketplace hire is not a salesperson and not an engineer. Here is the shape of the role, the four skills that matter, and how to test for them. Aug 14, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/the-first-marketplace-hire/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-14-billing-metering-tax-and-withholding-on-marketplac",
       "platform": "Suger",
       "platformTag": "suger",
@@ -384,6 +494,17 @@
       "summary": "Billing & Metering Tax and Withholding on Marketplace Revenue Who remits tax on a marketplace sale depends on the country, and the marketplace decides. The structure finance needs before the first payout. Aug 14, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/tax-and-withholding-on-marketplace-revenue/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-14-cloud-gtm-the-first-marketplace-hire-what-to-look-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-14",
+      "title": "Cloud GTM The First Marketplace Hire: What to Look For The first marketplace hire is not a salesperson and not an engine",
+      "summary": "Cloud GTM The First Marketplace Hire: What to Look For The first marketplace hire is not a salesperson and not an engineer. Here is the shape of the role, the four skills that matter, and how to test for them. Aug 14, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/the-first-marketplace-hire/",
       "impact": "low"
     },
     {
@@ -596,28 +717,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-10-prm-attribution-rules-that-stop-channel-conflict-c",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule",
-      "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment — when two parties have already claimed the same deal. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/deal-registration-conflict-rules/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-10-azure-connect-dynamics-365-to-your-marketplace-pip",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "Azure Connect Dynamics 365 to Your Marketplace Pipeline Marketplace tooling is built for Salesforce and HubSpot. If your",
-      "summary": "Azure Connect Dynamics 365 to Your Marketplace Pipeline Marketplace tooling is built for Salesforce and HubSpot. If your CRM is Dynamics 365 — which it often is at a Microsoft-first ISV — here is what connecting it actually involves. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/dynamics-365-marketplace-integration/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
       "platform": "Suger",
       "platformTag": "suger",
@@ -626,6 +725,17 @@
       "summary": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against and a commission rate nobody can compute. Here is what channel PRM has to hold, and how to design tiers that survive an audit. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/channel-partner-relationship-management/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-prm-attribution-rules-that-stop-channel-conflict-c",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule",
+      "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment — when two parties have already claimed the same deal. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/deal-registration-conflict-rules/",
       "impact": "low"
     },
     {
@@ -640,14 +750,14 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
+      "id": "suger-2026-08-10-azure-connect-dynamics-365-to-your-marketplace-pip",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-10",
-      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
-      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
+      "title": "Azure Connect Dynamics 365 to Your Marketplace Pipeline Marketplace tooling is built for Salesforce and HubSpot. If your",
+      "summary": "Azure Connect Dynamics 365 to Your Marketplace Pipeline Marketplace tooling is built for Salesforce and HubSpot. If your CRM is Dynamics 365 — which it often is at a Microsoft-first ISV — here is what connecting it actually involves. Aug 10, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
+      "sourceUrl": "https://www.suger.io/resources/blog/dynamics-365-marketplace-integration/",
       "impact": "low"
     },
     {
@@ -662,14 +772,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-10-billing-metering-why-your-marketplaces-report-diff",
+      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-10",
-      "title": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wr",
-      "summary": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wrong. The differences are structural — different clocks, different payout triggers, different definitions of the same dollar. Aug 10, 2026",
+      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
+      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-revenue-reconciliation/",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
       "impact": "low"
     },
     {
@@ -681,6 +791,17 @@
       "summary": "AWS When a Buyer Pays but Provisioning Never Happens The worst marketplace support ticket: a customer who has been charged and has no access. There are six places that handshake breaks, and five of them are silent. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-provisioning-failures/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-billing-metering-why-your-marketplaces-report-diff",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wr",
+      "summary": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wrong. The differences are structural — different clocks, different payout triggers, different definitions of the same dollar. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-revenue-reconciliation/",
       "impact": "low"
     },
     {
@@ -715,6 +836,17 @@
       "type": "release",
       "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-08-10",
       "impact": "medium"
+    },
+    {
+      "id": "suger-2026-08-09-aws-the-aws-isv-partner-path-is-now-the-software-p",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is t",
+      "summary": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is the least interesting part. What matters is which stage you are at, and what each one actually unlocks. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-isv-partner-path/",
+      "impact": "low"
     },
     {
       "id": "suger-2026-08-09-aws-aws-marketplace-contract-pricing-vs-usage-pric",
@@ -758,17 +890,6 @@
       "summary": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A subscription ends from a console page; a contract goes through AWS Support inside a 48-hour window most people miss. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/cancel-aws-marketplace-subscription/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-09-aws-the-aws-isv-partner-path-is-now-the-software-p",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-09",
-      "title": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is t",
-      "summary": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is the least interesting part. What matters is which stage you are at, and what each one actually unlocks. Aug 9, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-isv-partner-path/",
       "impact": "low"
     },
     {
@@ -1091,17 +1212,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-azure-how-to-sell-on-azure-marketplace-an-isv-guid",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "Azure How to Sell on Azure Marketplace: An ISV Guide A practical guide to selling on Azure Marketplace as an ISV: eligib",
-      "summary": "Azure How to Sell on Azure Marketplace: An ISV Guide A practical guide to selling on Azure Marketplace as an ISV: eligibility, listing types, Partner Center, private offers, MACC, and Microsoft co-sell. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/how-to-sell-on-azure-marketplace-isv-guide/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1110,6 +1220,17 @@
       "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-azure-how-to-sell-on-azure-marketplace-an-isv-guid",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "Azure How to Sell on Azure Marketplace: An ISV Guide A practical guide to selling on Azure Marketplace as an ISV: eligib",
+      "summary": "Azure How to Sell on Azure Marketplace: An ISV Guide A practical guide to selling on Azure Marketplace as an ISV: eligibility, listing types, Partner Center, private offers, MACC, and Microsoft co-sell. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-to-sell-on-azure-marketplace-isv-guide/",
       "impact": "low"
     },
     {
