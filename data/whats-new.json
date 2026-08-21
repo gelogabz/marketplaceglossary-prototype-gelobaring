@@ -1,6 +1,149 @@
 {
-  "lastUpdated": "2026-08-20T06:26:00.866Z",
+  "lastUpdated": "2026-08-21T06:27:43.795Z",
   "updates": [
+    {
+      "id": "aws-2026-08-20-aws-partner-central-agents-mcp-server-now-supports",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-08-20",
+      "title": "AWS Partner Central agents MCP Server now supports OAuth with AWS Sign-In",
+      "summary": "AWS partners can now access AWS Partner Central agents from tools they already use, such as Amazon Quick and Kiro, using OAuth through AWS Sign-In.",
+      "type": "release",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/8/aws-partner-central-mcp/",
+      "impact": "medium"
+    },
+    {
+      "id": "aws-2026-08-20-aws-marketplace-now-supports-category-based-notifi",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-08-20",
+      "title": "AWS Marketplace now supports category-based notifications and multi-channel delivery for partners",
+      "summary": "AWS partners can now configure category-based notifications and multi-channel delivery for AWS Marketplace notifications through AWS User Notifications.",
+      "type": "release",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace/",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-08-20-dragon-copilot-physician-apps-and-agents",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-08-20",
+      "title": "Dragon Copilot Physician apps and agents",
+      "summary": "Dragon Copilot Physician apps and agents in Microsoft Marketplace empower partners to embed custom capabilities directly within Dragon Copilot.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/industry/healthcare/dragon-copilot/?wt.mc_id=kfs1996da3",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-08-20-marketplaces-alibaba-cloud-marketplace-for-apac-se",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Marketplaces Alibaba Cloud Marketplace for APAC Sellers Alibaba Cloud Marketplace is the way software reaches buyers acr",
+      "summary": "Marketplaces Alibaba Cloud Marketplace for APAC Sellers Alibaba Cloud Marketplace is the way software reaches buyers across APAC and China — but the vendor gate, the paid-product agreement, and the settlement clock work nothing like AWS or Azure.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/alibaba-cloud-marketplace-for-apac-sellers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-aws-aws-vendor-insights-what-sellers-should-know-a",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "AWS AWS Vendor Insights: What Sellers Should Know AWS Marketplace Vendor Insights lets buyers monitor your security post",
+      "summary": "AWS AWS Vendor Insights: What Sellers Should Know AWS Marketplace Vendor Insights lets buyers monitor your security posture in near real time. Here is what it shows, what a seller sets up, and how it shortens a buyer's security review. Aug 20, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-vendor-insights-what-sellers-should-know/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-co-sell-co-selling-with-google-cloud-how-it-works-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Co-Sell Co-Selling with Google Cloud: How It Works Google Cloud co-sell isn't a form you submit to a portal. It's a memb",
+      "summary": "Co-Sell Co-Selling with Google Cloud: How It Works Google Cloud co-sell isn't a form you submit to a portal. It's a membership, a Marketplace transaction path, and a field-sales motion that only works when all three line up. Here's the mechanic. Aug 20, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/co-selling-with-google-cloud/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-security-fedramp-and-your-cloud-marketplace-listin",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Security FedRAMP and Your Cloud Marketplace Listing FedRAMP decides whether a US agency may run your software; your mark",
+      "summary": "Security FedRAMP and Your Cloud Marketplace Listing FedRAMP decides whether a US agency may run your software; your marketplace listing decides how they buy it. Here is how the authorization and the listing actually connect. Aug 20, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/fedramp-and-your-marketplace-listing/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-gcp-google-cloud-commitments-and-marketplace-drawd",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "GCP Google Cloud Commitments and Marketplace Drawdown A buyer's Google Cloud spend commitment can count against what the",
+      "summary": "GCP Google Cloud Commitments and Marketplace Drawdown A buyer's Google Cloud spend commitment can count against what they buy from you on the Marketplace. For a seller, that turns your invoice into money the buyer already promised to spend — which is why it de-risks the deal.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/gcp-commitments-and-marketplace-drawdown/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-gcp-google-cloud-partner-advantage-tiers-explained",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "GCP Google Cloud Partner Advantage Tiers, Explained Google Cloud Partner Advantage is not one ladder. It is a set of eng",
+      "summary": "GCP Google Cloud Partner Advantage Tiers, Explained Google Cloud Partner Advantage is not one ladder. It is a set of engagement models you choose by what you do, each with tiers that unlock progressively more marketplace and co-sell support. Here is the structure. Aug 20, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-partner-advantage-tiers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-billing-metering-migrate-marketplace-metering-with",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Billing & Metering Migrate Marketplace Metering Without Downtime Moving billing platforms is where usage-based sellers g",
+      "summary": "Billing & Metering Migrate Marketplace Metering Without Downtime Moving billing platforms is where usage-based sellers get scared, because metering is the one thing that feeds a real buyer invoice. Here is the cutover plan that drops no records and double-bills no one.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/migrating-without-breaking-metering/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-aws-selling-data-products-on-cloud-marketplaces-se",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "AWS Selling Data Products on Cloud Marketplaces Selling a data product on a marketplace is not a SaaS listing pointed at",
+      "summary": "AWS Selling Data Products on Cloud Marketplaces Selling a data product on a marketplace is not a SaaS listing pointed at data buyers. Delivery, entitlement and pricing all work differently — here is how, on AWS Data Exchange and Snowflake. Aug 20, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-data-products-on-a-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-cloud-gtm-selling-internationally-on-cloud-marketp",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Cloud GTM Selling Internationally on Cloud Marketplaces Selling across borders through a cloud marketplace changes five ",
+      "summary": "Cloud GTM Selling Internationally on Cloud Marketplaces Selling across borders through a cloud marketplace changes five things at once — currency, tax, the entity that pays you, where a listing is buyable, and how a contract localizes.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-internationally-on-cloud-marketplaces/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-cloud-gtm-selling-to-government-through-marketplac",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Cloud GTM Selling to Government Through Marketplaces Selling to a public-sector buyer on a cloud marketplace is your com",
+      "summary": "Cloud GTM Selling to Government Through Marketplaces Selling to a public-sector buyer on a cloud marketplace is your commercial motion plus three things you have to get right: the right cloud, the right procurement vehicle, and the right contract paper.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-to-government-through-marketplaces/",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-08-19-aws-marketplace-launches-support-for-amazon-lights",
       "platform": "AWS",
@@ -18,7 +161,7 @@
       "platformTag": "suger",
       "date": "2026-08-19",
       "title": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framew",
-      "summary": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framework for weighing the effort of an application against the differentiation AWS says it unlocks — before you commit the headcount. Aug 19, 2026 Read article",
+      "summary": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framework for weighing the effort of an application against the differentiation AWS says it unlocks — before you commit the headcount. Aug 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-competencies-worth-the-work/",
       "impact": "low"
@@ -46,17 +189,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-19-aws-listing-ai-models-on-cloud-marketplaces-ai-mod",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-19",
-      "title": "AWS Listing AI Models on Cloud Marketplaces AI models, agents and data products each list through a different marketplac",
-      "summary": "AWS Listing AI Models on Cloud Marketplaces AI models, agents and data products each list through a different marketplace path. Here are the current mechanics on AWS and Google Cloud, and which one your product fits. Aug 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/listing-ai-models-on-cloud-marketplaces/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-19-azure-per-market-pricing-on-azure-marketplace-expl",
       "platform": "Suger",
       "platformTag": "suger",
@@ -65,6 +197,17 @@
       "summary": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketplace. You set one USD price, or upload local ones, and Microsoft's fixed currency-per-market map does the rest. Here is the mechanic. Aug 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/per-market-pricing-on-azure-marketplace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-aws-listing-ai-models-on-cloud-marketplaces-ai-mod",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "AWS Listing AI Models on Cloud Marketplaces AI models, agents and data products each list through a different marketplac",
+      "summary": "AWS Listing AI Models on Cloud Marketplaces AI models, agents and data products each list through a different marketplace path. Here are the current mechanics on AWS and Google Cloud, and which one your product fits. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/listing-ai-models-on-cloud-marketplaces/",
       "impact": "low"
     },
     {
@@ -332,17 +475,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
-      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-aws-packaging-software-and-services-in-one-offer-a",
       "platform": "Suger",
       "platformTag": "suger",
@@ -351,6 +483,17 @@
       "summary": "AWS Packaging Software and Services in One Offer AWS offer sets let a buyer accept licence and implementation together in one action. The constraints on getting there are strict, and most of them cannot be fixed after release. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/packaging-software-and-services-in-one-offer/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
+      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
       "impact": "low"
     },
     {
@@ -453,17 +596,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-14-cloud-gtm-marketplace-events-and-webhooks-a-practi",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-14",
-      "title": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, ",
-      "summary": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, and two carry a deadline. Here is the full set, and what each one obliges you to do. Aug 14, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-events-and-webhooks/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-14-cloud-gtm-marketplace-setup-steps-teams-skip-and-r",
       "platform": "Suger",
       "platformTag": "suger",
@@ -483,6 +615,17 @@
       "summary": "Cloud GTM Running Cloud Marketplace Operations API-First Console-driven marketplace operations stop scaling sooner than teams expect. What moves to an API first, and what should stay a human decision. Aug 14, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/running-marketplace-operations-api-first/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-14-cloud-gtm-marketplace-events-and-webhooks-a-practi",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-14",
+      "title": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, ",
+      "summary": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, and two carry a deadline. Here is the full set, and what each one obliges you to do. Aug 14, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-events-and-webhooks/",
       "impact": "low"
     },
     {
@@ -739,17 +882,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-10-cloud-gtm-your-first-90-days-selling-on-a-cloud-ma",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling",
-      "summary": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling problem disguised as a technical one. Here is the 90-day calendar, with a named owner for every milestone. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/first-90-days-cloud-marketplace/",
-      "impact": "high"
-    },
-    {
       "id": "suger-2026-08-10-azure-connect-dynamics-365-to-your-marketplace-pip",
       "platform": "Suger",
       "platformTag": "suger",
@@ -761,6 +893,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-10-cloud-gtm-your-first-90-days-selling-on-a-cloud-ma",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling",
+      "summary": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling problem disguised as a technical one. Here is the 90-day calendar, with a named owner for every milestone. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/first-90-days-cloud-marketplace/",
+      "impact": "high"
+    },
+    {
       "id": "suger-2026-08-10-co-sell-how-co-sell-works-on-aws-azure-and-google-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -769,17 +912,6 @@
       "summary": "Co-Sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None tell you what actually happens to the record after you submit it. This is the mechanics — the statuses, the gates, and the fields that get you rejected.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-co-sell-works/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
-      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
       "impact": "low"
     },
     {
@@ -802,6 +934,17 @@
       "summary": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wrong. The differences are structural — different clocks, different payout triggers, different definitions of the same dollar. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-revenue-reconciliation/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
+      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
       "impact": "low"
     },
     {
@@ -1212,17 +1355,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
-      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-azure-how-to-sell-on-azure-marketplace-an-isv-guid",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1231,6 +1363,17 @@
       "summary": "Azure How to Sell on Azure Marketplace: An ISV Guide A practical guide to selling on Azure Marketplace as an ISV: eligibility, listing types, Partner Center, private offers, MACC, and Microsoft co-sell. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-to-sell-on-azure-marketplace-isv-guide/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
+      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
       "impact": "low"
     },
     {
@@ -3067,7 +3210,7 @@
       "title": "Extended promotion on Microsoft Purview Suite for Microsoft 365 Business Premium",
       "summary": "Microsoft is extending the 50% promotional offer on Microsoft Purview Suite for Business Premium to July 1, 2026.",
       "type": "policy",
-      "sourceUrl": "https://partner.microsoft.com/resources/detail/operations-promo-guide-pdf",
+      "sourceUrl": "https://aka.ms/CSPPromoGuide",
       "impact": "low"
     },
     {

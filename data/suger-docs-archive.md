@@ -2,6 +2,14 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 08/21/2026 — 3 added pages
+
+```diff
++ [Api › Propose Commission Update](https://doc.suger.io/api/propose-commission-update/)
++ [Api › Update Commission Lifecycle](https://doc.suger.io/api/update-commission-lifecycle/)
++ [Api › Update Cosell Partner](https://doc.suger.io/api/update-cosell-partner/)
+```
+
 ## 08/19/2026 — 8 added pages, 4 removed pages
 
 ```diff
