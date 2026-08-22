@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T06:27:43.795Z",
+  "lastUpdated": "2026-08-22T06:21:11.304Z",
   "updates": [
     {
       "id": "aws-2026-08-20-aws-partner-central-agents-mcp-server-now-supports",
@@ -57,17 +57,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-20-co-sell-co-selling-with-google-cloud-how-it-works-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-20",
-      "title": "Co-Sell Co-Selling with Google Cloud: How It Works Google Cloud co-sell isn't a form you submit to a portal. It's a memb",
-      "summary": "Co-Sell Co-Selling with Google Cloud: How It Works Google Cloud co-sell isn't a form you submit to a portal. It's a membership, a Marketplace transaction path, and a field-sales motion that only works when all three line up. Here's the mechanic. Aug 20, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/co-selling-with-google-cloud/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-20-security-fedramp-and-your-cloud-marketplace-listin",
       "platform": "Suger",
       "platformTag": "suger",
@@ -76,6 +65,17 @@
       "summary": "Security FedRAMP and Your Cloud Marketplace Listing FedRAMP decides whether a US agency may run your software; your marketplace listing decides how they buy it. Here is how the authorization and the listing actually connect. Aug 20, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/fedramp-and-your-marketplace-listing/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-co-sell-co-selling-with-google-cloud-how-it-works-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Co-Sell Co-Selling with Google Cloud: How It Works Google Cloud co-sell isn't a form you submit to a portal. It's a memb",
+      "summary": "Co-Sell Co-Selling with Google Cloud: How It Works Google Cloud co-sell isn't a form you submit to a portal. It's a membership, a Marketplace transaction path, and a field-sales motion that only works when all three line up. Here's the mechanic. Aug 20, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/co-selling-with-google-cloud/",
       "impact": "low"
     },
     {
@@ -123,17 +123,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-20-cloud-gtm-selling-internationally-on-cloud-marketp",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-20",
-      "title": "Cloud GTM Selling Internationally on Cloud Marketplaces Selling across borders through a cloud marketplace changes five ",
-      "summary": "Cloud GTM Selling Internationally on Cloud Marketplaces Selling across borders through a cloud marketplace changes five things at once — currency, tax, the entity that pays you, where a listing is buyable, and how a contract localizes.",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/selling-internationally-on-cloud-marketplaces/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-20-cloud-gtm-selling-to-government-through-marketplac",
       "platform": "Suger",
       "platformTag": "suger",
@@ -142,6 +131,17 @@
       "summary": "Cloud GTM Selling to Government Through Marketplaces Selling to a public-sector buyer on a cloud marketplace is your commercial motion plus three things you have to get right: the right cloud, the right procurement vehicle, and the right contract paper.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/selling-to-government-through-marketplaces/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-cloud-gtm-selling-internationally-on-cloud-marketp",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Cloud GTM Selling Internationally on Cloud Marketplaces Selling across borders through a cloud marketplace changes five ",
+      "summary": "Cloud GTM Selling Internationally on Cloud Marketplaces Selling across borders through a cloud marketplace changes five things at once — currency, tax, the entity that pays you, where a listing is buyable, and how a contract localizes.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-internationally-on-cloud-marketplaces/",
       "impact": "low"
     },
     {
@@ -154,17 +154,6 @@
       "type": "pricing",
       "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-launch-ami-amazon-lightsail",
       "impact": "high"
-    },
-    {
-      "id": "suger-2026-08-19-aws-aws-competencies-worth-the-work-an-aws-compete",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-19",
-      "title": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framew",
-      "summary": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framework for weighing the effort of an application against the differentiation AWS says it unlocks — before you commit the headcount. Aug 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-competencies-worth-the-work/",
-      "impact": "low"
     },
     {
       "id": "suger-2026-08-19-billing-metering-aws-marketplace-net-payment-terms",
@@ -189,17 +178,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-19-azure-per-market-pricing-on-azure-marketplace-expl",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-19",
-      "title": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketpla",
-      "summary": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketplace. You set one USD price, or upload local ones, and Microsoft's fixed currency-per-market map does the rest. Here is the mechanic. Aug 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/per-market-pricing-on-azure-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-19-aws-listing-ai-models-on-cloud-marketplaces-ai-mod",
       "platform": "Suger",
       "platformTag": "suger",
@@ -211,6 +189,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-19-azure-per-market-pricing-on-azure-marketplace-expl",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketpla",
+      "summary": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketplace. You set one USD price, or upload local ones, and Microsoft's fixed currency-per-market map does the rest. Here is the mechanic. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/per-market-pricing-on-azure-marketplace/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-19-cloud-gtm-public-sector-vs-commercial-marketplace-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -219,6 +208,17 @@
       "summary": "Cloud GTM Public Sector vs Commercial Marketplace Deals A commercial marketplace deal and a public sector one start the same and diverge fast. Here is the government buying path, mapped for the team you are selling to. Aug 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/public-sector-vs-commercial-marketplace-deals/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-aws-aws-competencies-worth-the-work-an-aws-compete",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framew",
+      "summary": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framework for weighing the effort of an application against the differentiation AWS says it unlocks — before you commit the headcount. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-competencies-worth-the-work/",
       "impact": "low"
     },
     {
@@ -431,28 +431,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-aws-co-terming-and-expanding-marketplace-agreement",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "AWS Co-Terming and Expanding Marketplace Agreements A mid-term expansion is either an amendment that replaces the agreem",
-      "summary": "AWS Co-Terming and Expanding Marketplace Agreements A mid-term expansion is either an amendment that replaces the agreement or a second agreement beside it. Those are different contracts, different invoices, and increasingly a real choice. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/co-terming-and-expanding-marketplace-agreements/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-16-cloud-gtm-creating-private-offers-without-the-cons",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Cloud GTM Creating Private Offers Without the Console Generating an offer from CRM data is a small amount of code and a ",
-      "summary": "Cloud GTM Creating Private Offers Without the Console Generating an offer from CRM data is a small amount of code and a large amount of failure handling. The asynchronous parts are what decide whether the integration holds. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/creating-private-offers-without-the-console/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-cloud-gtm-how-enterprise-buyers-buy-through-a-mark",
       "platform": "Suger",
       "platformTag": "suger",
@@ -475,6 +453,28 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-16-cloud-gtm-creating-private-offers-without-the-cons",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM Creating Private Offers Without the Console Generating an offer from CRM data is a small amount of code and a ",
+      "summary": "Cloud GTM Creating Private Offers Without the Console Generating an offer from CRM data is a small amount of code and a large amount of failure handling. The asynchronous parts are what decide whether the integration holds. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/creating-private-offers-without-the-console/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-aws-co-terming-and-expanding-marketplace-agreement",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "AWS Co-Terming and Expanding Marketplace Agreements A mid-term expansion is either an amendment that replaces the agreem",
+      "summary": "AWS Co-Terming and Expanding Marketplace Agreements A mid-term expansion is either an amendment that replaces the agreement or a second agreement beside it. Those are different contracts, different invoices, and increasingly a real choice. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/co-terming-and-expanding-marketplace-agreements/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-16-aws-packaging-software-and-services-in-one-offer-a",
       "platform": "Suger",
       "platformTag": "suger",
@@ -486,17 +486,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
-      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-security-how-security-reviews-shape-marketplace-de",
       "platform": "Suger",
       "platformTag": "suger",
@@ -505,6 +494,17 @@
       "summary": "Security How Security Reviews Shape Marketplace Deals Being on a cloud marketplace means the provider vetted your artifact. It does not mean the buyer's security team will skip theirs, and confusing the two costs weeks. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/security-reviews-in-marketplace-deals/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
+      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
       "impact": "low"
     },
     {
@@ -596,6 +596,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-14-cloud-gtm-marketplace-events-and-webhooks-a-practi",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-14",
+      "title": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, ",
+      "summary": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, and two carry a deadline. Here is the full set, and what each one obliges you to do. Aug 14, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-events-and-webhooks/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-14-cloud-gtm-marketplace-setup-steps-teams-skip-and-r",
       "platform": "Suger",
       "platformTag": "suger",
@@ -615,17 +626,6 @@
       "summary": "Cloud GTM Running Cloud Marketplace Operations API-First Console-driven marketplace operations stop scaling sooner than teams expect. What moves to an API first, and what should stay a human decision. Aug 14, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/running-marketplace-operations-api-first/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-14-cloud-gtm-marketplace-events-and-webhooks-a-practi",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-14",
-      "title": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, ",
-      "summary": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, and two carry a deadline. Here is the full set, and what each one obliges you to do. Aug 14, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-events-and-webhooks/",
       "impact": "low"
     },
     {
@@ -849,17 +849,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-10-aws-four-metrics-to-watch-after-you-add-buy-with-a",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website",
-      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website — which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/buy-with-aws-metrics/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
       "platform": "Suger",
       "platformTag": "suger",
@@ -879,6 +868,17 @@
       "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment — when two parties have already claimed the same deal. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/deal-registration-conflict-rules/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-aws-four-metrics-to-watch-after-you-add-buy-with-a",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website",
+      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website — which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/buy-with-aws-metrics/",
       "impact": "low"
     },
     {
@@ -915,6 +915,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
+      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-10-aws-when-a-buyer-pays-but-provisioning-never-happe",
       "platform": "Suger",
       "platformTag": "suger",
@@ -934,17 +945,6 @@
       "summary": "Billing & Metering Why Your Marketplaces Report Different Numbers Three consoles, three revenue figures, none of them wrong. The differences are structural — different clocks, different payout triggers, different definitions of the same dollar. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-revenue-reconciliation/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
-      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/how-long-marketplace-integration-takes/",
       "impact": "low"
     },
     {
