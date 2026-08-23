@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-08-17";
+export const lastReviewed = "2026-08-24";
 
 export const terms = [
   {
@@ -165,7 +165,7 @@ export const terms = [
   {
     name: "Amazon Machine Image (AMI) — AWS",
     tags: ["aws"],
-    def: "A pre-configured virtual machine image listed on AWS Marketplace. ISVs package their software as an AMI for buyers to deploy on EC2 instances. Can be priced hourly, with an annual contract, or as BYOL.",
+    def: "A pre-configured virtual machine image listed on AWS Marketplace. ISVs package their software as an AMI for buyers to deploy on EC2 instances or, as of August 2026, on Amazon Lightsail for eligible listings (currently Windows Server, SQL Server Express, Ubuntu, cPanel & WHM, and Plesk). Can be priced hourly, with an annual contract, or as BYOL.",
     alias:
       "Related: Bring Your Own License (BYOL), Contract — AWS, Product Code — AWS",
     source:
@@ -1172,7 +1172,7 @@ export const terms = [
   {
     name: "Inbound Referral",
     tags: ["cosell", "suger"],
-    def: "A co-sell opportunity initiated by a cloud provider's sales team and shared with your organization to accept, qualify, and pursue jointly. Managed in Suger's co-sell module with status tracking and CRM sync.",
+    def: "A co-sell opportunity initiated by a cloud provider's sales team and shared with your organization to accept, qualify, and pursue jointly. Managed in Suger's co-sell module with status tracking and CRM sync. Referrals aren't limited to hyperscaler sales teams — Suger also supports partner-to-partner referrals between two companies that both use Suger, treating the other Suger customer as a fourth referral counterpart alongside AWS, Azure, and GCP, complete with its own revenue-share terms and deal-value visibility controls.",
     alias:
       "Opposite: Outbound Referral | Azure equivalent: Microsoft-Sourced Opportunity Referral (MSOR) — Azure | Related: Co-sell, Referral",
     source: "https://doc.suger.io/cosell/cosell-inbound/",
@@ -1826,7 +1826,7 @@ export const terms = [
   {
     name: "Outbound Referral",
     tags: ["cosell", "suger"],
-    def: "A co-sell opportunity your organization originates and shares with a cloud provider's sales team — requesting their resources, deal support, or joint pursuit.",
+    def: "A co-sell opportunity your organization originates and shares with a cloud provider's sales team — requesting their resources, deal support, or joint pursuit. Referrals aren't limited to hyperscaler sales teams — Suger also supports partner-to-partner referrals between two companies that both use Suger, treating the other Suger customer as a fourth referral counterpart alongside AWS, Azure, and GCP, complete with its own revenue-share terms and deal-value visibility controls.",
     alias: "Opposite: Inbound Referral | Related: Co-sell, Referral",
     source: "https://doc.suger.io/cosell/cosell-outbound/",
     difficulty: "beginner",
@@ -2911,7 +2911,7 @@ export const terms = [
   {
     name: "Alibaba Cloud Marketplace",
     tags: ["general", "alibaba"],
-    def: "Alibaba Cloud's digital marketplace connecting ISVs and SaaS providers with customers globally and in China. Supports private offers, usage metering, and consolidated billing through Alibaba Cloud accounts.",
+    def: "Alibaba Cloud's digital marketplace connecting ISVs and SaaS providers with customers globally and in China. Supports private offers, usage metering, and consolidated billing through Alibaba Cloud accounts. Onboarding requires passing a vendor approval gate and signing a separate paid-product agreement before a listing can go live, and settlement follows its own timeline distinct from AWS, Azure, or GCP disbursement cycles.",
     alias: "Related: Private Offer, Usage Metering, Entitlement",
     source: "https://www.alibabacloud.com/en/marketplace",
     difficulty: "beginner",
@@ -5129,16 +5129,16 @@ export const terms = [
   {
     name: "Foundational Technical Review (FTR) — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS validation process that reviews an ISV's software product against AWS Well-Architected best practices across security, reliability, and operational excellence. Required prerequisite for ISV Accelerate, AWS Specialization, and co-sell eligibility. Valid for 3 years. Upon approval, partners earn a 'Reviewed by AWS' badge and listing in AWS Partner Solutions Finder. Can be waived with a recent Well-Architected Framework Review showing no high-risk issues. As of AWS Summit New York 2026, partners can also submit an existing SOC 2 Type II audit report and receive FTR approval or feedback within minutes rather than the previous multi-week review cycle, significantly accelerating the path to ISV Accelerate eligibility.",
+    def: "An AWS validation process that reviews an ISV's software product against AWS Well-Architected best practices across security, reliability, and operational excellence. Required prerequisite for ISV Accelerate, AWS Specialization, and co-sell eligibility. Valid for 3 years. Upon approval, partners earn a 'Reviewed by AWS' badge and listing in AWS Partner Solutions Finder. Can be waived with an AWS-led Well-Architected Framework Review completed within the past 12 months showing no high-risk issues. As of AWS Summit New York 2026, partners can also submit an existing SOC 2 Type II audit report and receive FTR approval or feedback within minutes rather than the previous multi-week review cycle, significantly accelerating the path to ISV Accelerate eligibility.",
     alias:
-      "Related: ISV Accelerate — AWS, AWS Specialization, Well-Architected Framework Review, Partner Development Manager (PDM) — AWS",
+      "Related: ISV Accelerate — AWS, AWS Specialization, Well-Architected Framework Review (WAFR) — AWS, Partner Development Manager (PDM) — AWS",
     source: "https://aws.amazon.com/partners/foundational-technical-review/",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
     useCases: [
       "Completing the FTR to unlock ISV Accelerate eligibility, AWS Specialization, and co-sell access",
-      "Waiving FTR with a recent Well-Architected Framework Review showing no high-risk issues — confirmed with your PDM",
+      "Waiving FTR with an AWS-led Well-Architected Framework Review completed within the past 12 months showing no high-risk issues — confirmed with your PDM",
     ],
     context: [
       "AWS Partner Central",
@@ -5151,6 +5151,10 @@ export const terms = [
       {
         name: "Partner Development Manager (PDM) — AWS",
         slug: "partner-development-manager-pdm-—-aws",
+      },
+      {
+        name: "Well-Architected Framework Review (WAFR) — AWS",
+        slug: "well-architected-framework-review-wafr-—-aws",
       },
     ],
   },
@@ -5298,7 +5302,7 @@ export const terms = [
   {
     name: "AWS Partner Central Agents — AWS",
     tags: ["aws", "cosell"],
-    def: "Agentic AI capabilities embedded in AWS Partner Central (launched March 2026) that assist partner teams with pipeline insights, sales play recommendations, and automated ACE opportunity management. Can auto-populate opportunity fields from meeting transcripts or emails, recommend funding at the opportunity level, and generate pre-filled fund requests. A June 2026 expansion extended agent-assisted co-sell qualification to every deal — enabling partners to apply agentic acceleration across their full pipeline without manually selecting eligible opportunities. A July 2026 expansion broadened agent-generated funding guidance beyond opportunity-level recommendations to cover eligibility and application guidance across all AWS partner funding programs. Available in all commercial AWS Regions.",
+    def: "Agentic AI capabilities embedded in AWS Partner Central (launched March 2026) that assist partner teams with pipeline insights, sales play recommendations, and automated ACE opportunity management. Can auto-populate opportunity fields from meeting transcripts or emails, recommend funding at the opportunity level, and generate pre-filled fund requests. A June 2026 expansion extended agent-assisted co-sell qualification to every deal — enabling partners to apply agentic acceleration across their full pipeline without manually selecting eligible opportunities. A July 2026 expansion broadened agent-generated funding guidance beyond opportunity-level recommendations to cover eligibility and application guidance across all AWS partner funding programs. Available in all commercial AWS Regions. An August 2026 update added OAuth support via AWS Sign-In to the Partner Central agents MCP Server (currently US East (N. Virginia) only), letting partners authorize AI tools such as Amazon Quick and Kiro to reach co-sell, funding, and Marketplace seller-setup workflows using their existing AWS credentials and IAM governance — removing the prior requirement to run an MCP proxy with SigV4 credentials.",
     alias:
       "Related: APN Customer Engagements (ACE) — AWS, AWS Partner Funding — AWS, Partner Central 3.0 (PC3.0) — AWS",
     source:
@@ -5585,7 +5589,7 @@ export const terms = [
   {
     name: "ISV Success Program — Azure",
     tags: ["azure", "cosell", "funding"],
-    def: "A Microsoft program that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace. The program has two tiers: the self-service Advanced Package (available to all eligible ISVs) includes $50K Azure credits, up to $100K cash incentives for AI/Analytics builds, and $50K in migration simplification benefits; the invitation-only Expanded Benefits tier adds $25K Azure sponsorship, 50 hours of technical consultations, and a $5K GitHub Copilot bonus. Enrollment in ISV Success is required for Business Applications co-sell eligible status for Dynamics 365 and Power Apps ISVs. ISV Success is scheduled for consolidation into Frontier Accelerate for Marketplace in fall 2026.",
+    def: "A Microsoft program that provides software providers with technical consulting, Azure credits, and marketplace rewards to help them build, publish, and grow their transactable listings on the Microsoft Marketplace. The program has three tiers: the self-service Core Package ($5K Azure credits, 3 hours technical advisory); the invitation-only Expanded Package, offered based on prior performance ($25K Azure credits, 50 hours advisory, $5K GitHub Copilot); and the invitation-only Advanced Package, gated on Certified Software Designation (CSD) status ($50K Azure credits, 50 hours advisory, $5K GitHub Copilot, plus $150K in cash incentives). Enrollment in ISV Success is required for Business Applications co-sell eligible status for Dynamics 365 and Power Apps ISVs. ISV Success is scheduled for consolidation into Frontier Accelerate for Marketplace in fall 2026.",
     alias:
       "AWS equivalent: ISV Accelerate — AWS | GCP equivalent: Build Engagement Model — GCP | Related: Microsoft Marketplace — Azure, Marketplace Rewards — Azure, MISA (Microsoft Intelligent Security Association) — Azure, Frontier Accelerate for Marketplace — Azure",
     source: "https://www.microsoft.com/isv/offer-benefits",
@@ -10439,7 +10443,7 @@ export const terms = [
   {
     name: "Commission Tracking — Suger",
     tags: ["suger", "channel"],
-    def: "Suger PRM's module for defining, managing, and paying out partner commissions. ISVs configure commission plans — flat fee, percentage of deal value, tiered, or per-deal override — and Suger calculates the payout for each partner-sourced or partner-influenced deal as it closes. Partners can see their earned commissions in the white-label portal, giving channel teams a defensible, auditable alternative to manual spreadsheet payouts at quarter end. Commission plans connect directly to deal registration records so attribution and payout flow through the same system.",
+    def: "Suger PRM's module for defining, managing, and paying out partner commissions. ISVs configure commission plans — flat fee, percentage of deal value, tiered, or per-deal override — and Suger calculates the payout for each partner-sourced or partner-influenced deal as it closes. Partners can see their earned commissions in the white-label portal, giving channel teams a defensible, auditable alternative to manual spreadsheet payouts at quarter end. Commission plans connect directly to deal registration records so attribution and payout flow through the same system. After a deal reaches Close-Won, either side can propose a commission-terms change via ProposeCommissionUpdate — the update requires the other party's approval before it takes effect. Commission records move through explicit lifecycle states (Approved, Payment Sent, Payment Rejected, Confirmed, Clawed Back, and Pending Update Approval for terms changes in flight), giving both ISV and partner an auditable payout trail beyond a simple paid/unpaid flag.",
     alias:
       "Related: Deal Registration — Suger, Partner Relationship Management (PRM) System, Distributor, DSOR (Distribution Sell-Out Reseller Reporting)",
     source: "https://doc.suger.io/get-started/",
@@ -12375,6 +12379,137 @@ export const terms = [
     related: [
       { name: "Insulin Chat — Suger", slug: "insulin-chat-—-suger" },
       { name: "Insulin Channel — Suger", slug: "insulin-channel-—-suger" },
+    ],
+  },
+  {
+    name: "Managed Partner Notifications — AWS",
+    tags: ["aws", "operations"],
+    def: "AWS Marketplace's partner-facing notification system, built on AWS User Notifications, that lets sellers subscribe to four categories — product listings (open tasks, recurring AMI/container scan findings), offers and agreements (private offers, reseller activity), payments and disbursements (payment requests, billing adjustments), and account management (verification/approval actions) — and route each to a channel of their choice. Delivery options include email to the account's root address or additional addresses, the AWS Console Mobile Application, or Amazon Q Developer in chat apps such as Slack and Microsoft Teams. It mirrors Managed Buyer Notifications — AWS on the seller side of the marketplace, configured through the same AWS User Notifications console.",
+    alias:
+      "Related: Managed Buyer Notifications — AWS, Amazon EventBridge Marketplace Integration — AWS, Slack Integration",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Subscribing to the payments and disbursements category to route billing-adjustment alerts to a finance team's Slack channel instead of the shared root email",
+      "Configuring separate notification channels per category so account-verification actions reach compliance while product-listing scan findings reach engineering",
+    ],
+    context: ["AWS Marketplace", "AWS User Notifications", "Seller Console"],
+    related: [
+      {
+        name: "Managed Buyer Notifications — AWS",
+        slug: "managed-buyer-notifications-—-aws",
+      },
+      {
+        name: "Amazon EventBridge Marketplace Integration — AWS",
+        slug: "amazon-eventbridge-marketplace-integration-—-aws",
+      },
+      { name: "Slack Integration", slug: "slack-integration" },
+    ],
+  },
+  {
+    name: "Mandatory Purchase Orders — AWS",
+    tags: ["aws", "procurement"],
+    def: "An AWS Marketplace governance control that lets an organization's administrators require a purchase order (PO) number before a purchase can complete, and display custom guidance text to specific buyer audiences during checkout. It's enforced at the AWS Organization level, giving procurement teams a way to apply internal purchasing policy across every account in the org rather than relying on buyers to self-report a PO number after the fact. Distinct from the `UpdatePurchaseOrders` operation in the AWS Marketplace Agreements API, which only edits the PO field on an agreement that already exists — this control governs whether a purchase can be made at all.",
+    alias:
+      "Related: AWS Marketplace Agreements API — AWS, Private Marketplace — AWS",
+    source:
+      "https://aws.amazon.com/blogs/awsmarketplace/enabling-mandatory-purchase-orders-and-custom-guidance-in-aws-marketplace/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["Enterprise Buyers", "Partner Managers"],
+    useCases: [
+      "Requiring a valid PO number before any AWS Marketplace purchase can complete, to enforce internal procurement policy across an AWS Organization",
+      "Showing custom guidance text to a specific buyer audience during checkout to direct them to an internal approval process before purchasing",
+    ],
+    context: ["AWS Marketplace", "AWS Organizations", "Procurement Governance"],
+    related: [
+      {
+        name: "AWS Marketplace Agreements API — AWS",
+        slug: "aws-marketplace-agreements-api-—-aws",
+      },
+      { name: "Private Marketplace — AWS", slug: "private-marketplace-—-aws" },
+    ],
+  },
+  {
+    name: "FedRAMP",
+    tags: ["general", "aws", "azure", "gcp"],
+    def: "A US government security authorization (Federal Risk and Authorization Management Program) that determines whether a federal agency is permitted to run a given piece of software, independent of whether that software is also listed on a cloud marketplace. A FedRAMP authorization and a marketplace listing are separate gates — an ISV can hold one without the other — but government buyers typically need both before they can purchase and deploy: FedRAMP to legally run the software, and a transactable marketplace listing (or GovCloud/sovereign-region equivalent) to procure it through their existing cloud spend.",
+    alias:
+      "Related: AWS European Sovereign Cloud Marketplace, AWS Specialization — AWS",
+    source:
+      "https://www.suger.io/resources/blog/fedramp-and-your-marketplace-listing/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Pursuing FedRAMP authorization alongside a marketplace listing so a federal buyer can both legally run the software and procure it through existing cloud spend",
+      "Explaining to a government buyer why a FedRAMP-authorized product still needs a transactable marketplace listing (or sovereign-region equivalent) to be purchased",
+    ],
+    context: [
+      "US Federal Procurement",
+      "AWS GovCloud",
+      "Cloud Marketplace Listings",
+    ],
+    related: [
+      {
+        name: "AWS Specialization — AWS",
+        slug: "aws-specialization-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Dragon Copilot Physician Apps and Agents — Azure",
+    tags: ["azure", "operations"],
+    def: "A Microsoft Copilot product surface for US healthcare that lets ISVs build physician-facing apps and agents on top of Dragon Copilot, Microsoft's clinical documentation and workflow assistant. Listings in this category are transactable through the Microsoft Marketplace like other Azure offers, but scoped narrowly to clinical use cases (e.g. ambient documentation, order entry assistance) rather than general-purpose SaaS or IaaS. Announced as part of Microsoft Partner Center's August 2026 update.",
+    alias: "Related: Professional Services Offer — Azure, Microsoft Marketplace — Azure",
+    source: "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Building a physician-facing clinical documentation app on Dragon Copilot and listing it as a transactable offer on the Microsoft Marketplace",
+      "Evaluating whether a healthcare-vertical product fits the Dragon Copilot Physician Apps and Agents surface versus a general-purpose Azure Marketplace listing",
+    ],
+    context: [
+      "Microsoft Marketplace",
+      "Azure Partner Center",
+      "US Healthcare",
+    ],
+    related: [
+      {
+        name: "Professional Services Offer — Azure",
+        slug: "professional-services-offer-—-azure",
+      },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Well-Architected Framework Review (WAFR) — AWS",
+    tags: ["aws", "cosell"],
+    def: "A structured evaluation of a workload's architecture against the AWS Well-Architected Framework's six pillars — operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability — conducted via the free self-service AWS Well-Architected Tool, an AWS Solutions Architect, or a certified AWS Well-Architected Partner. The review flags high-risk issues and produces a remediation plan rather than a pass/fail score. For AWS ISV partners, a WAFR that is AWS-led (not self-service or partner-led) and completed within the past 12 months, with no outstanding high-risk items, can be submitted in place of the standard Foundational Technical Review (FTR) process.",
+    alias:
+      "Related: Foundational Technical Review (FTR) — AWS, AWS Specialization — AWS",
+    source: "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Requesting an AWS-led Well-Architected Framework Review within the past 12 months to satisfy the FTR requirement without going through the standard review process",
+      "Using the free AWS Well-Architected Tool to self-assess a workload against the six pillars before pursuing an AWS-led review",
+    ],
+    context: ["AWS Partner Central", "AWS Well-Architected Tool", "ISV Accelerate Program"],
+    related: [
+      {
+        name: "Foundational Technical Review (FTR) — AWS",
+        slug: "foundational-technical-review-ftr-—-aws",
+      },
+      { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
     ],
   },
 ];
