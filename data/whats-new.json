@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T06:29:18.860Z",
+  "lastUpdated": "2026-08-26T14:04:12.912Z",
   "updates": [
     {
       "id": "azure-2026-08-24-drive-more-marketing-roi-in-fy27",
@@ -131,6 +131,226 @@
       "summary": "Billing & Metering Your Year-End Marketplace Reporting Checklist Year-end close is where a year of marketplace shortcuts comes due. The reconciliations a finance team should run before closing the books, in order. Aug 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/year-end-marketplace-reporting-checklist/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-ai-agent-lifecycle-ownership-to-retirement",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: AI Agent Lifecycle: Ownership to Retirement",
+      "summary": "Your first agent is easy. Your fortieth is a governance problem. How to manage an agent from request to retirement before the portfolio manages you.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-lifecycle-management/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-ai-agent-tools-vs-skills-vs-integrations",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: AI Agent Tools vs Skills vs Integrations",
+      "summary": "Tool, skill, integration — three words the AI agent industry uses interchangeably and shouldn't. What each one actually is in Insulin, and which your problem needs.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-tools-vs-skills-vs-integrations/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-ai-agents-for-procurement-intake-to-approv",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: AI Agents for Procurement: Intake to Approval",
+      "summary": "Procurement is document-heavy, cross-functional, and accountable — a strong fit for agents, with a hard line agents must not cross. Where they help, and where they can't.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agents-for-procurement/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-building-an-ai-center-of-excellence-that-s",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: Building an AI Center of Excellence That Sticks",
+      "summary": "Most AI Centers of Excellence become a committee that ships slide decks. How to build one that business teams actually use — light on governance, heavy on reuse.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-center-of-excellence/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-how-to-build-an-ai-executive-briefing-agen",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: How to Build an AI Executive-Briefing Agent",
+      "summary": "A daily brief a leader can trust has to be current, concise, and sourced. How to build one as a scheduled AI job that cites every claim it makes.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-executive-briefing-agent/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-byok-vs-managed-models-for-enterprise-ai",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: BYOK vs Managed Models for Enterprise AI",
+      "summary": "Use the platform's models, or bring your own provider keys? The trade is cost, control, and data path. How to decide, and what changes either way.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/byok-vs-managed-models-for-enterprise-ai/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-how-to-design-human-handoffs-for-ai-agents",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: How to Design Human Handoffs for AI Agents",
+      "summary": "Safe autonomy isn't an agent that never stops — it's one that stops well. How to design the moment an AI agent hands work back to a person.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/designing-human-handoffs-for-ai-agents/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-how-humans-and-ai-agents-share-a-workspace",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: How Humans and AI Agents Share a Workspace",
+      "summary": "The interesting question isn't whether AI agents replace people — it's how people and agents work in the same space. What good collaboration looks like day to day.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/humans-and-ai-agents-in-one-workspace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-keeping-an-ai-knowledge-base-fresh-over-ti",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: Keeping an AI Knowledge Base Fresh Over Time",
+      "summary": "A knowledge base is only as trustworthy as its most out-of-date document. The owners, refresh habits, and pruning that keep grounded answers actually current.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/keeping-an-ai-knowledge-base-fresh/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-single-agent-vs-multi-agent-when-to-split",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: Single Agent vs Multi-Agent: When to Split",
+      "summary": "Multi-agent systems are fashionable, and often one well-scoped agent is simpler and better. A complexity test for when a workflow actually needs more than one.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/single-agent-vs-multi-agent-systems/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-how-to-build-an-ai-account-research-agent",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: How to Build an AI Account-Research Agent",
+      "summary": "Reps spend hours researching an account before a call and still miss the one thing that mattered. How to build an agent that does the research and shows its sources.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-account-research-agent/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-ai-agent-audit-logs-what-enterprises-recor",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: AI Agent Audit Logs: What Enterprises Record",
+      "summary": "When an AI agent does something wrong, the first question is 'what exactly happened' — and most teams cannot answer it. What an agent audit log has to capture, and why.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-audit-logs/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-ai-agent-incident-response-for-enterprises",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: AI Agent Incident Response for Enterprises",
+      "summary": "An AI agent will eventually take an action it should not have. The teams that handle it well decided how to detect, contain, and recover before it happened — not after.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-incident-response/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-ai-agents-for-finance-operations-explained",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: AI Agents for Finance Operations, Explained",
+      "summary": "Finance runs on recurring, rule-bound work that is perfect for agents and unforgiving of mistakes. Where AI agents fit the close, reconciliation, and reporting — safely.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agents-for-finance-operations/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-ai-agents-vs-workflows-vs-copilots-which-t",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: AI Agents vs Workflows vs Copilots: Which to Use",
+      "summary": "Three words for three different things, used as if they were one. What separates an AI agent from a workflow from a copilot, and how to pick the right one per task.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agents-vs-workflows-vs-copilots/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-change-management-for-enterprise-ai-rollou",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: Change Management for Enterprise AI Rollouts",
+      "summary": "The AI rollout that fails rarely fails on the technology. It fails because people were handed a tool and left to figure out whether it was safe to trust. A rollout plan.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/change-management-for-enterprise-ai/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-enterprise-ai-adoption-metrics-that-matter",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: Enterprise AI Adoption Metrics That Matter",
+      "summary": "Logins prove people opened the tool, not that it changed their work. The adoption metrics that actually predict whether enterprise AI sticks — and how to read them.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/enterprise-ai-adoption-metrics/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-enterprise-ai-spend-governance-a-practical",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: Enterprise AI Spend Governance: A Practical Guide",
+      "summary": "AI spend does not blow up on the model price — it blows up on usage nobody is watching. How to govern AI cost by user, app, and model before the bill teaches you.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/enterprise-ai-spend-governance/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-permission-aware-enterprise-search-for-ai-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: Permission-Aware Enterprise Search for AI Agents",
+      "summary": "An AI agent that searches everything will eventually answer from a document the asker was never allowed to see. How permission-aware search stops that at retrieval.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/permission-aware-enterprise-search/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-21-insulin-shadow-ai-how-to-find-and-govern-it-at-wor",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-21",
+      "title": "Insulin: Shadow AI: How to Find and Govern It at Work",
+      "summary": "Employees are already using AI you did not sanction. Banning it drives it underground; ignoring it leaks data. How to find shadow AI and govern it into the open.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/shadow-ai-governance/",
       "impact": "low"
     },
     {

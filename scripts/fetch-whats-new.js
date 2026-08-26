@@ -13,7 +13,7 @@
  *
  * ── WHAT IT DOES ─────────────────────────────────────────────────────────────
  *
- *   1. Fetches entries from 13 sources (see SOURCE LIST below).
+ *   1. Fetches entries from 14 sources (see SOURCE LIST below).
  *   2. Loads any existing entries already in data/whats-new.js.
  *   3. Merges: fresh entries overwrite existing ones with the same ID.
  *      Old entries not in the current fetch are kept (avoids data loss
@@ -33,6 +33,7 @@
  *   Oracle Marketplace Release Notes https://docs.oracle.com/en-us/iaas/releasenotes/services/marketplace/index.htm (HTML)
  *   Oracle Marketplace Blog https://blogs.oracle.com/oraclemarketplace/feed (RSS)
  *   Suger Blog          https://www.suger.io/resources/blog/      (HTML)
+ *   Insulin Blog        https://www.insulin.dev/blog/             (HTML + JSON-LD)
  *   Suger Changelog     https://www.suger.io/resources/changelog/ (HTML)
  *   Insulin Changelog   https://www.insulin.dev/changelog/        (HTML)
  *   Suger Docs Updates  https://doc.suger.io/sitemap-0.xml        (sitemap diff)
@@ -46,6 +47,11 @@
  *   Oracle's blog is filtered by category ("Oracle Cloud Marketplace" /
  *   "Oracle Marketplace Insights") with a keyword fallback for uncategorized posts.
  *   Azure and Suger Blog entries are included without additional filtering.
+ *   Insulin Blog reads the page's Schema.org Blog JSON-LD block for headline/url/
+ *   date (reliable, no string-parsing) and matches each post back to its
+ *   `data-blog-card` excerpt attribute by URL path for the summary. Titles get
+ *   an "Insulin: " prefix, tagged platform "Suger" — same collision-avoidance
+ *   reason as Insulin Changelog below.
  *   Suger Changelog and Insulin Changelog are one entry per release date (not
  *   per bullet) — title is "{Product}: As of {date}", summary joins that
  *   date's bullets into one line.
@@ -726,6 +732,69 @@ async function fetchSugerBlog() {
   return results;
 }
 
+// ── Source: Insulin Blog (HTML + JSON-LD) ──────────────────────────────────────
+//
+// insulin.dev/blog/ embeds a Schema.org Blog JSON-LD block (<script
+// type="application/ld+json">, {"@type":"Blog", blogPost:[{headline,url,
+// datePublished}]}) covering the most recent posts (~20, two publish dates
+// deep at time of writing) — reliable dates with zero string-parsing. That
+// block has no excerpt/summary field, so summaries come from a second source
+// on the same page: each post card is `<a href="/blog/..." data-blog-card
+// data-title="..." data-tags="..." data-excerpt="...">`, matched back to the
+// JSON-LD entries by URL path. Title gets an "Insulin: " prefix — same reason
+// as the Insulin Changelog (see below): Suger Blog and Insulin Blog both use
+// platformTag "suger" and both fall under the replace-semantics filter, so an
+// unprefixed same-day title could collide with a same-day Suger Blog post on
+// the stable ID and silently overwrite it.
+
+async function fetchInsulinBlog() {
+  const html = await fetchText("https://www.insulin.dev/blog/");
+
+  let blogPosts = [];
+  const ldRe = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
+  let lm;
+  while ((lm = ldRe.exec(html)) !== null) {
+    try {
+      const data = JSON.parse(lm[1]);
+      if (data["@type"] === "Blog" && Array.isArray(data.blogPost)) {
+        blogPosts = data.blogPost;
+        break;
+      }
+    } catch {
+      // not the block we're looking for
+    }
+  }
+
+  const excerptByPath = new Map();
+  const cardRe =
+    /<a href="(\/blog\/[^"]+)" data-blog-card data-title="[^"]*" data-tags="[^"]*" data-excerpt="([^"]*)"/g;
+  let cm;
+  while ((cm = cardRe.exec(html)) !== null) {
+    excerptByPath.set(cm[1], scrub(cm[2]));
+  }
+
+  const results = [];
+  for (const post of blogPosts) {
+    const date = post.datePublished;
+    if (!date || !isRecent(date)) continue;
+    const path = post.url.replace("https://www.insulin.dev", "");
+    const excerpt = excerptByPath.get(path) || post.headline;
+    const title = `Insulin: ${post.headline}`;
+    results.push({
+      id: stableId("suger", date, title),
+      platform: "Suger",
+      platformTag: "suger",
+      date,
+      title: title.slice(0, 120),
+      summary: oneLiner(excerpt),
+      type: "blog",
+      sourceUrl: post.url,
+      impact: scoreImpact(`${post.headline} ${excerpt}`),
+    });
+  }
+  return results;
+}
+
 // ── Source: Suger + Insulin Changelogs (HTML) ─────────────────────────────────
 //
 // Both suger.io/resources/changelog/ and insulin.dev/changelog/ share the exact
@@ -990,6 +1059,7 @@ async function main() {
     ["Oracle Marketplace Release Notes", fetchOracleMarketplace],
     ["Oracle Marketplace Blog", fetchOracleBlog],
     ["Suger Blog", fetchSugerBlog],
+    ["Insulin Blog", fetchInsulinBlog],
     ["Suger Changelog", fetchSugerChangelog],
     ["Insulin Changelog", fetchInsulinChangelog],
     ["Suger Docs Updates", fetchSugerDocsUpdates],

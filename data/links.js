@@ -27,6 +27,35 @@ export const linkSections = [
         type: "blog",
         desc: "Suger's full resource library: case studies, webinars, guides, and articles on cloud GTM, marketplace strategy, and revenue operations.",
       },
+      {
+        title: "Suger Changelog",
+        url: "https://www.suger.io/resources/changelog/",
+        type: "doc",
+        desc: "Release notes for the core Suger platform — one entry per release date, covering PRM, co-sell, billing, and integration changes.",
+        confusesWith: {
+          otherTitle: "Insulin Changelog",
+          otherUrl: "https://www.insulin.dev/changelog/",
+          note: "Same release-note format, but separate products: this covers the core Suger PRM platform. Insulin's AI agent platform has its own changelog.",
+        },
+      },
+      {
+        title: "Insulin",
+        url: "https://www.insulin.dev/",
+        type: "portal",
+        desc: "Suger's AI agent platform — Insulin Chat, Channel, Jobs, Knowledge Bases, and Marketplace surfaces for automating partner and customer workflows.",
+      },
+      {
+        title: "Insulin Changelog",
+        url: "https://www.insulin.dev/changelog/",
+        type: "doc",
+        desc: "Release notes for Suger's Insulin AI agent platform — one entry per release date, covering new agent skills, channel, and billing changes.",
+      },
+      {
+        title: "Insulin Blog",
+        url: "https://www.insulin.dev/blog/",
+        type: "blog",
+        desc: "Official Insulin blog — product updates and use cases for Suger's AI agent platform.",
+      },
     ],
   },
   {
