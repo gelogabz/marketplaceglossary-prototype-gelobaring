@@ -2,6 +2,17 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 08/28/2026 — 6 added pages
+
+```diff
++ [Integrations › Ashby](https://doc.suger.io/integrations/ashby/)
++ [Integrations › Intercom](https://doc.suger.io/integrations/intercom/)
++ [Integrations › Ironclad](https://doc.suger.io/integrations/ironclad/)
++ [Integrations › Lever](https://doc.suger.io/integrations/lever/)
++ [Integrations › Servicenow](https://doc.suger.io/integrations/servicenow/)
++ [Integrations › Workday](https://doc.suger.io/integrations/workday/)
+```
+
 ## 08/21/2026 — 3 added pages
 
 ```diff
