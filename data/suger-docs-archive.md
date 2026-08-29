@@ -2,6 +2,12 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 08/29/2026 — 1 removed page
+
+```diff
+- [Azure Marketplace › Private Plan](https://doc.suger.io/azure-marketplace/private-plan/)
+```
+
 ## 08/28/2026 — 6 added pages
 
 ```diff
