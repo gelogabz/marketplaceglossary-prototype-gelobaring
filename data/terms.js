@@ -10579,7 +10579,7 @@ export const terms = [
     def: "A white-label, partner-facing web portal provisioned through Suger PRM that ISVs deploy under their own domain and branding. Partners authenticate via SSO/SAML to register deals, access enablement content, track commission status, and manage their activity — without any Suger branding visible. The portal can go live in under five days with no implementation fee.",
     alias:
       "Related: Partner Relationship Management (PRM) System, Learning Management System (LMS) — Suger, Value Added Reseller (VAR), Buyer Portal — Suger, Deal Registration — Suger",
-    source: "https://www.suger.io/prm/",
+    source: "https://doc.suger.io/prm/partner-portal-login-page/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
@@ -10609,7 +10609,7 @@ export const terms = [
     def: "A classification system within Suger PRM that groups channel partners into tiers (such as Silver, Gold, Platinum) based on performance, revenue contribution, or certification status. Tier assignments control approval routing for deal registrations, commission plan eligibility, and access to incentive programs — ensuring higher-performing partners receive differentiated treatment automatically.",
     alias:
       "Related: Partner Relationship Management (PRM) System, Deal Registration — Suger, Commission Plan — Suger",
-    source: "https://www.suger.io/prm/",
+    source: "https://doc.suger.io/prm/partner-tiers/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -10642,7 +10642,7 @@ export const terms = [
     def: "A configurable template in Suger PRM that defines the commission rate, calculation basis, and payout trigger for a class of channel partners or deal types. Plans are applied at the program level with optional per-deal overrides. When a deal closes in the connected CRM, Suger calculates the payout automatically and initiates the full payout lifecycle.",
     alias:
       "Related: Commission Tracking — Suger, Partner Tiering — Suger, SPIFF — Suger",
-    source: "https://www.suger.io/prm/",
+    source: "https://doc.suger.io/prm/commission-plans/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -10672,7 +10672,7 @@ export const terms = [
     def: "A short-term performance incentive program (SPIFF) or special performance fund (SPF) configured within Suger PRM to motivate channel partners around a specific product, time window, or deal type. SPIFFs pay a bonus on top of the standard commission plan and are tracked separately with their own payout lifecycle and reporting.",
     alias:
       "Related: Commission Plan — Suger, Commission Tracking — Suger, Partner Relationship Management (PRM) System",
-    source: "https://www.suger.io/prm/",
+    source: "https://doc.suger.io/prm/commission-plans/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Partner Managers", "Channel Partners"],
@@ -10702,18 +10702,18 @@ export const terms = [
   {
     name: "Learning Management System (LMS) — Suger",
     tags: ["suger"],
-    def: "A partner enablement module built into Suger PRM that lets ISVs create and deliver structured training — courses, certifications, and onboarding modules — directly through the partner portal. Content is organized by partner tier or role, with completion tracking for reporting and compliance visibility. Accepts SCORM-compliant course packages so organizations with existing training libraries can import them without rebuilding.",
+    def: "A partner enablement module built into Suger PRM that lets ISVs build training courses directly in Suger's editor — modules, lessons, and quizzes — or import existing content as SCORM 1.2 or SCORM 2004 packages. Courses can be shared with every active partner organization, a hand-picked subset, or kept private, and can optionally award a certificate that stays locked until every lesson is marked complete. Progress is tracked per course and per partner (Not Started, In Progress, Completed, Failed) for reporting and compliance visibility.",
     alias:
       "Related: SCORM, Partner Portal — Suger, Partner Tiering — Suger, Partner Relationship Management (PRM) System",
-    source: "https://www.suger.io/prm/",
+    source: "https://doc.suger.io/prm/build-a-training-course/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Partner Managers", "Channel Partners"],
     useCases: [
-      "Build product certification tracks for resellers organized by partner tier",
-      "Deliver onboarding courses to new partner tiers automatically on signup",
-      "Import existing SCORM training modules into the partner portal without rebuilding them",
-      "Track partner enablement completion for reporting across the partner base",
+      "Building a course directly in Suger's editor with modules, lessons, and quizzes for partner onboarding",
+      "Sharing a training course with every active partner organization at once, or hand-picking specific partners",
+      "Importing an existing SCORM 1.2 or SCORM 2004 course package instead of rebuilding content in Suger's editor",
+      "Monitoring per-partner completion status across courses to track enablement progress",
     ],
     context: [
       "Suger PRM",
@@ -11681,7 +11681,7 @@ export const terms = [
     def: "Suger's Partner Relationship Management product that unifies cloud marketplace co-sell workflows, channel partner management, commission automation, and partner enablement in one platform — eliminating the need for separate CRM plugins, spreadsheets, and standalone LMS tools. Core capabilities include deal registration via public forms that auto-sync to Salesforce or HubSpot, automated commission calculation and SPIFF programs triggered at deal closure, a white-label branded partner portal deployable in five days, and a built-in LMS for partner certification tracking. Unlike generic PRM systems, Suger PRM is purpose-built for organizations running both cloud marketplace co-sell motions and traditional channel reseller programs — giving partner managers a single interface for hyperscaler-driven and direct channel pipeline.",
     alias:
       "Related: Partner Relationship Management (PRM) System, Partner Portal — Suger, Commission Plan — Suger, Learning Management System (LMS) — Suger",
-    source: "https://www.suger.io/prm/",
+    source: "https://doc.suger.io/prm/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["Partner Managers", "ISVs / Sellers", "Channel Partners"],
