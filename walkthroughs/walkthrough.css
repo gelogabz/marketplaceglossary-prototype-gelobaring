@@ -8,7 +8,7 @@
 }
 
 .wt-page {
-    max-width: 760px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -19,12 +19,18 @@
     color: var(--gray-400);
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     transition: color 0.12s;
 }
 
 .wt-back:hover {
     color: var(--orange-text);
+}
+
+.wt-breadcrumb {
+    font-size: 12px;
+    color: var(--gray-400);
+    margin-bottom: 0.75rem;
 }
 
 /* ---- Header ---- */
@@ -86,11 +92,6 @@
     border: 1px solid #b3d9f7;
 }
 
-.wt-hdr-est {
-    font-size: 11px;
-    color: var(--gray-400);
-}
-
 .wt-hdr-title {
     font-family: "Lexend", sans-serif;
     font-size: 26px;
@@ -105,7 +106,7 @@
     color: var(--gray-700);
     line-height: 1.6;
     margin-bottom: 1rem;
-    max-width: 600px;
+    max-width: 640px;
 }
 
 /* ---- Header actions ---- */
@@ -113,7 +114,7 @@
 .wt-hdr-actions {
     display: flex;
     gap: 10px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
 }
 
@@ -142,53 +143,112 @@
     color: var(--orange-text);
 }
 
-/* ---- Step list ---- */
+/* ---- Two-column layout ---- */
+
+.wt-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.wt-main {
+    min-width: 0;
+}
+
+.wt-section {
+    margin-bottom: 2.5rem;
+    scroll-margin-top: calc(var(--topnav-h) + 16px);
+}
+
+.wt-section-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.9rem;
+}
+
+/* ---- Key details card ---- */
+
+.wt-key-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    scroll-margin-top: calc(var(--topnav-h) + 16px);
+}
+
+.wt-kd-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.wt-kd-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray-400);
+}
+
+.wt-kd-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.wt-kd-value a {
+    color: var(--orange-text);
+    text-decoration: none;
+}
+.wt-kd-value a:hover {
+    text-decoration: underline;
+}
+
+/* ---- Step cards ---- */
 
 .wt-steps {
     display: flex;
     flex-direction: column;
-    gap: 0;
-}
-
-.wt-step {
-    display: flex;
     gap: 1.25rem;
-    padding-bottom: 2rem;
-    position: relative;
 }
 
-/* vertical connector line */
-.wt-step:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    left: 18px;
-    top: 40px;
-    bottom: 0;
-    width: 2px;
-    background: var(--gray-100);
+.wt-step-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 1.5rem;
+    scroll-margin-top: calc(var(--topnav-h) + 16px);
+}
+
+.wt-step-card-hdr {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
 }
 
 .wt-step-num {
     flex-shrink: 0;
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: var(--navy);
     color: var(--white);
     font-family: "Lexend", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-
-.wt-step-body {
-    flex: 1;
-    min-width: 0;
-    padding-top: 6px;
 }
 
 .wt-step-title {
@@ -197,7 +257,6 @@
     font-weight: 700;
     color: var(--gray-900);
     letter-spacing: -0.02em;
-    margin-bottom: 8px;
 }
 
 .wt-step-text {
@@ -217,45 +276,112 @@
     color: var(--gray-900);
 }
 
-/* ---- Cross-link chips ---- */
+/* ---- Learn more (compact concept cards) ---- */
 
-.wt-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 10px;
+.wt-learn-more {
+    margin: 1rem 0;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--gray-100);
 }
 
-.wt-chip {
-    font-size: 11px;
-    font-weight: 500;
-    padding: 4px 10px;
-    border-radius: 99px;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: opacity 0.12s;
+.wt-lm-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray-400);
+    margin-bottom: 0.6rem;
 }
 
-.wt-chip:hover {
-    opacity: 0.8;
+.wt-concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
 }
 
-.wt-chip--term {
+.wt-concept-card {
     background: var(--bg);
-    border: 1px solid var(--gray-200);
-    color: var(--gray-700);
+    border: 1px solid var(--gray-100);
+    border-radius: 8px;
+    padding: 0.75rem 0.9rem;
+    min-width: 0;
 }
 
-.wt-chip--path {
-    background: #fff3e0;
-    border: 1px solid #f6c342;
+/* The compact card is sized for a name + one-line snippet — fine at 1/3
+   grid-column width. The full expanded detail (badges, use cases, related
+   terms, long URLs) needs real width, so it spans the whole row instead of
+   squeezing into that same narrow column. */
+.wt-concept-card--expanded {
+    grid-column: 1 / -1;
+    background: var(--white);
+    border-color: var(--gray-200);
+    padding: 1.25rem 1.5rem;
+}
+
+.wt-concept-card--compare {
+    background: #faf9ff;
+    border-color: #ede9ff;
+}
+
+.wt-concept-card--path {
+    background: #fffbeb;
+    border-color: #f6c342;
+}
+
+.wt-cc-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 3px;
+}
+
+.wt-cc-desc {
+    font-size: 11px;
+    color: var(--gray-700);
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.wt-cc-link {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--orange-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+.wt-concept-card--compare .wt-cc-link {
+    color: #5020cc;
+}
+.wt-concept-card--path .wt-cc-link {
     color: #8a5000;
 }
+.wt-cc-link:hover {
+    text-decoration: underline;
+}
 
-.wt-chip--compare {
-    background: #ede9ff;
-    border: 1px solid #c4b5ff;
-    color: #5020cc;
+.wt-lm-overflow {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-top: 8px;
+}
+.wt-lm-overflow a {
+    color: var(--gray-400);
+}
+
+/* Full term detail, expanded in place inside a concept card — flattened
+   (no nested border/background) since it's already inside one. */
+.wt-concept-card .inline-term {
+    border: none;
+    padding: 0;
+    background: none;
+}
+.wt-cc-full {
+    margin-top: 10px;
 }
 
 /* ---- External action link ---- */
@@ -292,28 +418,10 @@
     margin-bottom: 10px;
 }
 
-/* ---- Help Center source link ---- */
-
-.wt-source-link {
-    margin-bottom: 1.25rem;
-}
-
-.wt-source-anchor {
-    font-size: 12px;
-    color: var(--orange-text);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.wt-source-anchor:hover {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-
 /* ---- Sanity checks ---- */
 
 .wt-step-checks {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     padding: 1rem 1.25rem;
     background: #fafafa;
     border: 1px solid var(--gray-100);
@@ -369,6 +477,96 @@
     text-decoration-color: var(--gray-200);
 }
 
+/* ---- Sidebar ---- */
+
+.wt-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: sticky;
+    top: calc(var(--topnav-h) + 20px);
+}
+
+.wt-side-box {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+}
+
+.wt-side-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray-400);
+    margin-bottom: 0.75rem;
+}
+
+.wt-progress-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 0.9rem;
+}
+
+.wt-progress-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.12s;
+}
+.wt-progress-item:hover {
+    background: var(--bg);
+}
+
+.wt-progress-num {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1.5px solid var(--gray-200);
+    color: var(--gray-400);
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        border-color 0.12s,
+        background 0.12s,
+        color 0.12s;
+}
+
+.wt-progress-title {
+    font-size: 12px;
+    color: var(--gray-700);
+    line-height: 1.4;
+}
+
+.wt-progress-item.is-active .wt-progress-num {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+}
+.wt-progress-item.is-active .wt-progress-title {
+    color: var(--gray-900);
+    font-weight: 600;
+}
+
+.wt-side-link {
+    font-size: 12px;
+    color: var(--gray-400);
+    text-decoration: none;
+}
+.wt-side-link:hover {
+    color: var(--orange-text);
+}
+
 /* ---- Print styles ---- */
 
 @media print {
@@ -377,10 +575,22 @@
     .docs-bar,
     .wt-back,
     .wt-hdr-actions,
-    .wt-chips,
+    .wt-flow,
+    .wt-sidebar,
+    .wt-lm-overflow,
     .wt-step-link,
     .wt-status-badge {
         display: none !important;
+    }
+
+    .wt-layout {
+        display: block;
+    }
+
+    .wt-concept-card,
+    .wt-key-details {
+        border: 1px solid #e5e5ea !important;
+        break-inside: avoid;
     }
 
     /* Compact page shell */
@@ -406,44 +616,26 @@
         margin-bottom: 6px;
     }
 
-    /* Source link — visible, styled for print */
-    .wt-source-link {
-        margin-bottom: 0.75rem;
-    }
-
-    .wt-source-anchor {
-        color: #ae530f;
-        font-size: 11px;
-        text-decoration: underline;
-    }
-
     /* Step number — smaller, print-colored */
     .wt-step-num {
-        width: 28px;
-        height: 28px;
-        min-width: 28px;
-        font-size: 13px;
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
         background: #000;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 
-    /* Step connector line — hidden */
-    .wt-step:not(:last-child)::before {
-        display: none;
-    }
-
     /* Steps — prevent mid-step page breaks */
-    .wt-step {
+    .wt-step-card {
+        border: none;
+        padding: 0 0 0.75rem;
         break-inside: avoid;
         page-break-inside: avoid;
-        padding-bottom: 0.75rem;
-        gap: 0.75rem;
     }
 
     .wt-step-title {
         font-size: 14px;
-        margin-bottom: 3px;
     }
 
     .wt-step-text {
@@ -486,10 +678,10 @@
     }
 }
 
-/* ---- Sequential nav (prev / next walkthrough) ---- */
+/* ---- Sequential nav (prev / next guide) ---- */
 
 .wt-seq-nav {
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--gray-100);
 }
@@ -545,6 +737,20 @@
 @media (max-width: 767px) {
     .wt-outer {
         padding: 1.5rem 1rem 4rem;
+    }
+
+    .wt-layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Secondary nav/progress/feedback — hidden on mobile, same pattern as
+       the glossary's right sidebar (styles.css) and Learning Paths. */
+    .wt-sidebar {
+        display: none;
+    }
+
+    .wt-key-details {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .wt-seq-btn {
