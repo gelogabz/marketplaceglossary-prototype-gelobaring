@@ -483,11 +483,13 @@ async function fetchAzurePartnerCenter() {
       continue;
     }
 
-    // Each <h2> = one announcement; capture title + everything until next <h2>
-    const sectionRe = /<h2[^>]*>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|$)/g;
+    // Each <h2> = one announcement; capture its id (for a precise anchor link)
+    // plus title, and everything until next <h2>
+    const sectionRe = /<h2([^>]*)>([\s\S]*?)<\/h2>([\s\S]*?)(?=<h2|$)/g;
     let sm;
     while ((sm = sectionRe.exec(html)) !== null) {
-      const title = scrub(sm[1]);
+      const h2Attrs = sm[1];
+      const title = scrub(sm[2]);
       if (!title || title.length < 8) continue;
       const titleLc = title.toLowerCase();
       if (
@@ -497,7 +499,7 @@ async function fetchAzurePartnerCenter() {
       )
         continue;
 
-      const sectionHtml = sm[2];
+      const sectionHtml = sm[3];
       const sectionText = scrub(sectionHtml);
 
       // Extract date from metadata line: "Date: June 24, 2026" or "Announcement date: June 24, 2026"
@@ -516,20 +518,16 @@ async function fetchAzurePartnerCenter() {
         ? oneLiner(scrub(emMatch[1]))
         : oneLiner(sectionText.slice(0, 280));
 
-      // Source URL: prefer first explicit link in section, fall back to page URL
-      const linkM = sectionHtml.match(/href="([^"#][^"]+)"/);
-      const rawHref = linkM
-        ? linkM[1]
-            .replace(/&amp;/g, "&")
-            .replace(/&lt;/g, "<")
-            .replace(/&gt;/g, ">")
-            .replace(/&quot;/g, '"')
-        : null;
-      const absUrl = rawHref
-        ? rawHref.startsWith("http")
-          ? rawHref
-          : new URL(rawHref, url).href
-        : url;
+      // Source URL: deep-link to this announcement's own <h2 id="..."> anchor
+      // on the announcements page. Each announcement has a stable slugified id
+      // (e.g. id="introducing-the-eligibility-dashboard") — far more reliable
+      // than the prior approach of grabbing the first <a href> found anywhere
+      // in the section body, which often picked up an incidental link to an
+      // unrelated doc the announcement happened to reference in passing
+      // (e.g. "Introducing the Eligibility Dashboard" linked to a developer
+      // API doc mentioned mid-paragraph, not the announcement itself).
+      const idMatch = h2Attrs.match(/\bid="([^"]+)"/);
+      const absUrl = idMatch ? `${url}#${idMatch[1]}` : url;
 
       results.push({
         id: stableId("azure", date, title),

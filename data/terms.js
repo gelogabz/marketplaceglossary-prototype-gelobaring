@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-08-24";
+export const lastReviewed = "2026-08-31";
 
 export const terms = [
   {
@@ -9000,7 +9000,7 @@ export const terms = [
     alias:
       "Related: Concurrent Agreements — AWS, Manufacturer / Proposer Roles — AWS, BatchMeterUsage API — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-notification.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/notifications-eventbridge.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
@@ -9152,7 +9152,7 @@ export const terms = [
     def: "A Snowflake Marketplace listing type that gives prospective buyers time-limited or consumption-limited access to a Native App or data product without immediate payment commitment. Providers configure trial duration and access scope; when the trial expires, buyers must convert to a paid listing to retain access. Limited Trial listings are distinct from free-tier listings in that they are explicitly time-bounded and are designed as a conversion funnel entry point for paid Snowflake Marketplace transactions.",
     alias: "Related: Snowflake Marketplace — Snowflake, Free Trial, Listing",
     source:
-      "https://docs.snowflake.com/en/developer-guide/native-apps/listing-on-marketplace",
+      "https://docs.snowflake.com/en/collaboration/provider-listings-reference#trial",
     difficulty: "intermediate",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -10702,7 +10702,7 @@ export const terms = [
   {
     name: "Learning Management System (LMS) — Suger",
     tags: ["suger"],
-    def: "A partner enablement module built into Suger PRM that lets ISVs create and deliver structured training — courses, certifications, and onboarding modules — directly through the partner portal. Content is organized by partner tier or role, with completion tracking that can gate deal registration access or commission eligibility behind required training. Accepts SCORM-compliant course packages so organizations with existing training libraries can import them without rebuilding.",
+    def: "A partner enablement module built into Suger PRM that lets ISVs create and deliver structured training — courses, certifications, and onboarding modules — directly through the partner portal. Content is organized by partner tier or role, with completion tracking for reporting and compliance visibility. Accepts SCORM-compliant course packages so organizations with existing training libraries can import them without rebuilding.",
     alias:
       "Related: SCORM, Partner Portal — Suger, Partner Tiering — Suger, Partner Relationship Management (PRM) System",
     source: "https://www.suger.io/prm/",
@@ -10710,10 +10710,10 @@ export const terms = [
     category: "operations",
     whoFor: ["ISVs / Sellers", "Partner Managers", "Channel Partners"],
     useCases: [
-      "Build product certification tracks for resellers and gate deal registration behind completion",
+      "Build product certification tracks for resellers organized by partner tier",
       "Deliver onboarding courses to new partner tiers automatically on signup",
       "Import existing SCORM training modules into the partner portal without rebuilding them",
-      "Track partner enablement completion to qualify commission eligibility by tier",
+      "Track partner enablement completion for reporting across the partner base",
     ],
     context: [
       "Suger PRM",
@@ -10928,18 +10928,18 @@ export const terms = [
   {
     name: "Lead Enrichment — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS Partner Central capability (launched June 15, 2026) that augments partner-uploaded or AWS-sourced leads with AWS-generated propensity-to-buy signals and program eligibility recommendations. For each lead, the feature returns a Marketplace purchase likelihood score (High/Medium/Low), alignment with AWS solution categories, and eligibility flags for programs including Partner Greenfield Program (PGP), Pioneer Credits, and Partner-Led Sales Motion. Available to all ACE-eligible AWS Partners via the Partner Central console and Partner Central API (US East N. Virginia Region).",
+    def: "An AWS Partner Central capability that enriches partner-submitted leads with AWS data. Each enriched lead receives a readiness assessment (Contact Ready / Nurture Lead / Limited Potential, with a High/Medium/Low confidence level) plus AWS Marketplace engagement and solution scores estimating purchase likelihood. Enrichment also checks account eligibility for select AWS programs, funding benefits, and sales motions, and surfaces firmographic data (employee count, region, geography). Available from the Leads tab in AWS Partner Central or via the AWS Partner Central Selling API.",
     alias:
-      "Related: APN Customer Engagements (ACE) — AWS, Partner Greenfield Program (PGP) — AWS, AWS Marketplace Engagement Score — AWS, AWS Partner Central Agents — AWS",
+      "Related: APN Customer Engagements (ACE) — AWS, AWS Marketplace Engagement Score — AWS, AWS Partner Central Agents — AWS",
     source:
       "https://docs.aws.amazon.com/partner-central/latest/sales-guide/lead-enrichment.html",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Suger Users", "AWS Sales"],
     useCases: [
-      "Prioritizing high-value leads by surfacing AWS-generated propensity signals before investing in outreach or co-sell motions",
-      "Identifying which accounts are eligible for PGP, Pioneer Credits, or Partner-Led Sales Motion before submitting ACE opportunities",
-      "Enriching partner-generated leads programmatically via the Partner Central API to feed into CRM scoring workflows",
+      "Prioritizing high-value leads by surfacing AWS-generated readiness assessments and engagement scores before investing in outreach or co-sell motions",
+      "Checking a lead's eligibility for AWS programs and funding benefits before submitting an ACE opportunity",
+      "Enriching partner-generated leads programmatically via the Partner Central Selling API to feed into CRM scoring workflows",
     ],
     context: [
       "AWS Partner Central",
@@ -10951,10 +10951,6 @@ export const terms = [
       {
         name: "APN Customer Engagements (ACE) — AWS",
         slug: "apn-customer-engagements-ace-—-aws",
-      },
-      {
-        name: "Partner Greenfield Program (PGP) — AWS",
-        slug: "partner-greenfield-program-pgp-—-aws",
       },
       {
         name: "AWS Marketplace Engagement Score — AWS",
@@ -11720,7 +11716,7 @@ export const terms = [
     def: "An Amazon Resource Name (ARN) that uniquely identifies each active software license issued under AWS Marketplace Concurrent Agreements. Required in all SaaS listings supporting Concurrent Agreements (mandatory for new listings as of June 1, 2026), LicenseArn is the primary key passed to ResolveCustomer, GetEntitlements, and BatchMeterUsage API calls — replacing the prior product-code and account-ID model for entitlement and metering lookup. A single AWS account can hold multiple active LicenseArns for the same product simultaneously, each with independent terms and pricing; sellers must store and pass the correct LicenseArn per license to accurately track and bill each subscription.",
     alias: "Related: Concurrent Agreements — AWS, Entitlement, Metered Billing",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/checking-entitlements.html",
+      "https://aws.amazon.com/blogs/awsmarketplace/complete-guide-to-upgrading-your-saas-product-to-aws-marketplace-concurrent-agreements/",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -11879,7 +11875,7 @@ export const terms = [
   {
     name: "Mailchimp Integration — Suger",
     tags: ["suger", "integrations"],
-    def: "A Suger integration with Mailchimp, connected via OAuth, giving Suger's AI agent 34 actions across audiences, contacts, campaigns, segments, and e-commerce data. It is the first email-marketing automation integration in Suger, distinct from existing comms integrations like Slack, Teams, or Gmail, which handle messaging rather than campaign and audience management.",
+    def: "A Suger integration with Mailchimp, connected via OAuth on a per-user basis, giving Suger's AI agent 34 actions across audiences, contacts, campaigns, segments, templates, e-commerce data, and automations and reports. It is the first email-marketing automation integration in Suger, distinct from existing comms integrations like Slack, Teams, or Gmail, which handle messaging rather than campaign and audience management.",
     alias: "Related: HubSpot Integration, Salesforce Integration",
     source: "https://doc.suger.io/integrations/mailchimp/",
     difficulty: "intermediate",
@@ -12510,6 +12506,388 @@ export const terms = [
         slug: "foundational-technical-review-ftr-—-aws",
       },
       { name: "AWS Specialization — AWS", slug: "aws-specialization-—-aws" },
+    ],
+  },
+  {
+    name: "Growth Margins — Azure",
+    tags: ["azure", "funding"],
+    def: "A Microsoft partner incentive mechanism launching October 2026 as part of the FY27 AI Cloud Partner Program restructuring, replacing flat run-rate rebates on Modern Work and Dynamics 365 with earnings tied to specific growth motions — new-to-offer sales, customer expansion, and adoption of strategic Microsoft solutions. Eligible Cloud Solution Provider (CSP) distributors and direct-bill partners earn an additional partner price on top of standard transaction economics when a Growth Margin applies, with rates varying by growth scenario. Growth Margins roll out alongside Frontier Accelerate for Marketplace, which unifies ISV Success, Marketplace Rewards, Azure IP Co-sell, and Certified Software Designation into one program.",
+    alias:
+      "Related: Cloud Solution Provider (CSP) — Azure, Marketplace Rewards — Azure, ISV Success Program — Azure, Frontier Accelerate for Marketplace — Azure",
+    source: "https://partner.microsoft.com/asset/collection/growth-margins-partner-resources#/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
+    useCases: [
+      "Evaluating whether a CSP deal qualifies for a Growth Margin instead of the prior flat run-rate rebate structure",
+      "Positioning a new-to-offer or expansion sale to capture the added partner price a Growth Margin provides",
+    ],
+    context: ["Microsoft Partner Center", "Cloud Solution Provider Program", "Frontier Accelerate for Marketplace"],
+    related: [
+      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
+      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
+      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+      {
+        name: "Frontier Accelerate for Marketplace — Azure",
+        slug: "frontier-accelerate-for-marketplace-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Eligibility Dashboard — Azure",
+    tags: ["azure", "operations"],
+    def: "A Partner Center feature, rolling out to direct-bill partners through mid-September 2026, that consolidates a Cloud Solution Provider (CSP) partner's direct-bill authorization status into one view. It validates partner-global-account-level requirements (trailing-twelve-month revenue of at least $1M, an active support plan, Solutions Partner Designation) alongside tenant-level requirements (the Security Requirement, MAICPP enrollment), showing what's complete, what still needs action, and key deadlines. It ties to the updated CSP direct-bill authorization requirements that have applied to direct-bill partners, distributors, and indirect resellers since October 1, 2025.",
+    alias:
+      "Related: Cloud Solution Provider (CSP) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/enroll/direct-bill-eligibility-requirements",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Channel Partners", "Distributors", "Partner Managers"],
+    useCases: [
+      "Checking a direct-bill partner's CSP authorization status in one place instead of tracking revenue, support-plan, and security requirements separately",
+      "Using the dashboard's deadline view to remediate a missing MAICPP enrollment or Security Requirement before losing direct-bill status",
+    ],
+    context: ["Microsoft Partner Center", "Cloud Solution Provider Program"],
+    related: [
+      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Private Offer — Alibaba",
+    tags: ["alibaba", "offers"],
+    def: "A customized, unpaid order an Alibaba Cloud Marketplace seller creates and pushes directly to one specific buyer, referenced only by the buyer's root-account UID — RAM sub-accounts aren't accepted. Sellers configure custom pricing, duration, and quantity against a product with Contact Sales enabled, and may attach a signed contract (PDF or DOCX, up to 10MB). The order auto-cancels if unpaid within 7 days, and payment itself constitutes buyer acceptance.",
+    alias:
+      "AWS equivalent: Private Offer — AWS | Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Oracle equivalent: Private Offer — Oracle | Related: Alibaba Cloud Marketplace",
+    group: "private-offer",
+    source: "https://help.aliyun.com/en/marketplace/alibaba-cloud-marketplace-private-offer",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Creating a custom-priced order for one buyer's root-account UID with a signed contract attached",
+      "Tracking a private offer's 7-day auto-cancel window before it expires unpaid",
+    ],
+    context: ["Alibaba Cloud Marketplace"],
+    related: [
+      { name: "Alibaba Cloud Marketplace", slug: "alibaba-cloud-marketplace" },
+      { name: "Private Offer", slug: "private-offer" },
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+    ],
+  },
+  {
+    name: "Oracle Universal Credits — Oracle",
+    tags: ["oracle", "billing"],
+    def: "Oracle's annual prepaid cloud spending commitment — a customer commits to a level of annual Oracle Cloud Infrastructure (OCI) spend, then draws those credits down based on actual usage across any eligible OCI service or region. As of mid-2026, eligible Oracle Cloud Marketplace purchases — including third-party AI models such as OpenAI's, sold via a dedicated Marketplace listing — can be charged against Universal Credits, giving Oracle buyers a committed-spend drawdown path comparable to AWS EDP, Azure MACC, GCP CUD, and Snowflake MCD.",
+    alias:
+      "AWS equivalent: Enterprise Discount Program (EDP) — AWS | Azure equivalent: Azure Consumption Commitment (MACC) — Azure | GCP equivalent: Committed Use Discount (CUD) — GCP | Snowflake equivalent: Marketplace Capacity Drawdown (MCD) — Snowflake | Related: Cloud Committed Spend (CCS), Oracle Cloud Marketplace — Oracle",
+    source:
+      "https://blogs.oracle.com/oraclemarketplace/put-your-oracle-cloud-commitment-to-work-with-openai-models",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["Enterprise Buyers", "ISVs / Sellers"],
+    useCases: [
+      "Drawing down an existing Universal Credits commitment against an eligible Oracle Cloud Marketplace purchase instead of paying separately",
+      "Positioning a Marketplace-listed third-party AI model as a way to consume committed OCI spend rather than incur new cost",
+    ],
+    context: ["Oracle Cloud Marketplace", "Oracle Cloud Infrastructure"],
+    related: [
+      { name: "Cloud Committed Spend (CCS)", slug: "cloud-committed-spend-ccs" },
+      { name: "Oracle Cloud Marketplace — Oracle", slug: "oracle-cloud-marketplace-—-oracle" },
+      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+    ],
+  },
+  {
+    name: "Cortex Agents and MCP Servers — Snowflake",
+    tags: ["snowflake", "integrations"],
+    def: "A Snowflake Native App Framework capability, generally available August 7, 2026, that lets providers embed a Cortex Agent — a conversational interface over the app's shared data and functions — and a Snowflake-managed or Snowpark Container Services-hosted MCP server directly into a monetizable Snowflake Marketplace listing. The MCP server exposes app objects such as Cortex Search services, semantic views, procedures, and UDFs as MCP tools, and apps can call another app's agent or MCP server via inter-app communication, with each provider controlling what it exposes.",
+    alias:
+      "Related: Snowflake Marketplace — Snowflake, Suger MCP Server, AWS Marketplace MCP Server — AWS",
+    source:
+      "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-07-native-apps-agents-mcp-ga",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Embedding a Cortex Agent in a Snowflake Native App listing so buyers get a conversational interface over the app's data without building one from scratch",
+      "Exposing an app's semantic views and procedures as MCP tools so another app's agent can call them via inter-app communication",
+    ],
+    context: ["Snowflake Marketplace", "Snowflake Native App Framework", "Snowpark Container Services"],
+    related: [
+      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+      { name: "Suger MCP Server", slug: "suger-mcp-server" },
+      { name: "AWS Marketplace MCP Server — AWS", slug: "aws-marketplace-mcp-server-—-aws" },
+    ],
+  },
+  {
+    name: "Managed Entitlements — AWS",
+    tags: ["aws", "operations"],
+    def: "An AWS License Manager mechanism that lets an AWS Organizations payer or management account distribute usage rights for an AWS Marketplace subscription — AMI, container, ML, or foundation-model product — to other member accounts instead of each account subscribing and paying separately. The purchasing account subscribes, enables subscription sharing, then creates grants that member accounts accept and activate. For Amazon Bedrock foundation models specifically, setup must occur in the US East (N. Virginia) Region.",
+    alias: "Related: Entitlement, GetEntitlements API — AWS",
+    source: "https://aws.amazon.com/marketplace/features/managed-entitlements/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Sharing a single AWS Marketplace subscription across every member account in an AWS Organization instead of buying it per-account",
+      "Granting and activating shared usage rights for a foundation-model product purchased through the payer account",
+    ],
+    context: ["AWS Marketplace", "AWS License Manager", "AWS Organizations"],
+    related: [
+      { name: "Entitlement", slug: "entitlement" },
+      { name: "GetEntitlements API — AWS", slug: "getentitlements-api-—-aws" },
+    ],
+  },
+  {
+    name: "Insulin AWS Support — Suger",
+    tags: ["suger"],
+    def: "A built-in Insulin app that surfaces an organization's AWS Support cases inside Suger without switching consoles — listing cases with status and last update, opening new cases (subject, service, severity, description, attachments, CC list), and carrying the reply thread bidirectionally with AWS Support Center. Case resolution and closing still happen only in AWS Support Center itself. Requires a verified AWS Support integration and an AWS account on Business, Enterprise On-Ramp, or Enterprise Support — Basic and Developer support plans aren't eligible.",
+    alias: "Related: Insulin, Insulin Agent — Suger, Insulin Channel — Suger",
+    source: "https://doc.suger.io/insulin/aws-support/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Opening and tracking an AWS Support case from inside Insulin instead of switching to AWS Support Center",
+      "Replying to an open AWS Support case thread from Insulin and having it sync back to AWS Support Center",
+    ],
+    context: ["Suger Insulin", "AWS Support Center", "Insulin Workspace"],
+    related: [
+      { name: "Insulin", slug: "insulin" },
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Insulin Channel — Suger", slug: "insulin-channel-—-suger" },
+    ],
+  },
+  {
+    name: "Insulin Integration — Suger",
+    tags: ["suger"],
+    def: "A connected external system — CRM, data warehouse, ticketing tool, or knowledge source — that an Insulin agent can be granted scoped access to, functioning as the platform's security boundary for agent actions. Access isn't automatic: an agent's runtime reach depends on its ownership level (org-level agents use only org-level integrations; user-level agents use integrations the user has selected) and an optional allowlist, with knowledge-base integrations further scoped to Read or Read/Edit.",
+    alias: "Related: Insulin Agent — Suger, Insulin, Integration",
+    source: "https://doc.suger.io/insulin/agents/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Scoping an org-level Insulin agent to only the integrations approved for the whole organization, rather than every integration a user has connected",
+      "Granting Read-only access to a knowledge-base integration so an agent can reference it without being able to edit the source",
+    ],
+    context: ["Suger Insulin", "Insulin Workspace"],
+    related: [
+      { name: "Insulin Agent — Suger", slug: "insulin-agent-—-suger" },
+      { name: "Insulin", slug: "insulin" },
+      { name: "Integration", slug: "integration" },
+    ],
+  },
+  {
+    name: "Ashby Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An organization-level Suger integration with Ashby, an applicant tracking and recruiting platform, authenticated via an API key over HTTP Basic auth (validated against Ashby before saving). Gives Suger's AI agent 23 actions across five areas — candidates, applications, jobs and postings, interviews, and notes/org data — letting teams read and update the recruiting pipeline directly from Suger workflows or chat. Module-level permissions in Ashby (Candidates, Jobs, Interviews, etc.) scope what the connection can access; editing an existing key isn't supported, only delete-and-recreate.",
+    alias: "Related: Integration, Lever Integration — Suger",
+    source: "https://doc.suger.io/integrations/ashby/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Creating or updating an Ashby candidate record directly from a Suger workflow instead of switching to the ATS",
+      "Querying interview and application status across the recruiting pipeline via Suger AI",
+    ],
+    context: ["Suger Console", "Ashby", "Suger Integrations"],
+    related: [
+      { name: "Integration", slug: "integration" },
+      { name: "Lever Integration — Suger", slug: "lever-integration-—-suger" },
+    ],
+  },
+  {
+    name: "Intercom Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An organization-wide Suger integration with Intercom, a customer messaging and support platform, authenticated via OAuth 2.0 — one Intercom administrator authorizes Suger once, and Suger stores and auto-refreshes the token for the whole organization; user-level connections aren't offered since Intercom permissions are already workspace-wide. Gives Suger's AI agent 42 actions across six areas — conversations, contacts, companies, help center, tags, and notes/admin — letting teams manage support conversations and contacts from Suger workflows or chat. Currently limited to US-region Intercom workspaces; EU and Australian workspaces require contacting support first.",
+    alias: "Related: Integration, CRM Integration",
+    source: "https://doc.suger.io/integrations/intercom/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Searching and replying to Intercom conversations from inside a Suger workflow instead of switching to Intercom",
+      "Merging or updating Intercom contact and company records via Suger AI as part of a support or onboarding automation",
+    ],
+    context: ["Suger Console", "Intercom", "Suger Integrations"],
+    related: [
+      { name: "Integration", slug: "integration" },
+      { name: "CRM Integration", slug: "crm-integration" },
+    ],
+  },
+  {
+    name: "Ironclad Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An organization-level Suger integration with Ironclad, a contract lifecycle management platform, authenticated via an OAuth 2.0 client-credentials grant registered inside the customer's own Ironclad environment — Suger exchanges client credentials for access tokens under a fixed acting user, and Ironclad's per-account client registration model means only org-level connections are possible. Gives Suger's AI agent 46 actions across nine areas — workflows, approvals, signatures, documents, comments/history, workflow schemas, records, entities, and webhooks — letting teams drive contract creation, approvals, and signature status from Suger. Ironclad's own documentation recommends using a dedicated integration user rather than a real employee's account, since the acting user is fixed at connection time and applies organization-wide.",
+    alias: "Related: Integration, DocuSign Integration — Suger",
+    source: "https://doc.suger.io/integrations/ironclad/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Triggering an Ironclad contract workflow or checking approval status from a Suger automation",
+      "Retrieving signed contract documents and history from Ironclad's records repository via Suger AI",
+    ],
+    context: ["Suger Console", "Ironclad", "Suger Integrations"],
+    related: [
+      { name: "Integration", slug: "integration" },
+      { name: "DocuSign Integration — Suger", slug: "docusign-integration-—-suger" },
+    ],
+  },
+  {
+    name: "Lever Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An organization-level Suger integration with Lever, a talent acquisition and applicant tracking platform, authenticated via an API key over HTTP Basic auth — user-level OAuth isn't available because Lever gates that model behind its own partner program. Gives Suger's AI agent 61 actions spanning opportunities, candidate details, job postings, requisitions, interviews, feedback forms, notes, user accounts, webhooks, reference data, and EEO compliance data, letting teams read and modify the hiring pipeline from Suger workflows or chat. The EEO-data action returns personally identifiable information and should be treated as regulated data with appropriate access controls.",
+    alias: "Related: Integration, Ashby Integration — Suger",
+    source: "https://doc.suger.io/integrations/lever/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Advancing a Lever opportunity's pipeline stage or archiving it directly from a Suger workflow",
+      "Scheduling interviews or pulling candidate feedback from Lever via Suger AI",
+    ],
+    context: ["Suger Console", "Lever", "Suger Integrations"],
+    related: [
+      { name: "Integration", slug: "integration" },
+      { name: "Ashby Integration — Suger", slug: "ashby-integration-—-suger" },
+    ],
+  },
+  {
+    name: "ServiceNow Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An organization-level Suger integration with ServiceNow, an IT service management platform, authenticated via an OAuth 2.0 client-credentials grant against an OAuth client registered in the customer's own ServiceNow instance — tokens last roughly 30 minutes with no refresh mechanism, and per-instance client registration means user-level connections aren't practical. Gives Suger's AI agent 40 actions covering incidents, problems, change management, approvals, service catalog items, knowledge articles, users and groups, arbitrary table reads, and attachments, letting teams read and act on ITSM records from Suger workflows or chat. User and group creation or deletion requires the ServiceNow `admin` role on the connection's Application User, not just the base `itil` role.",
+    alias: "Related: Integration",
+    source: "https://doc.suger.io/integrations/servicenow/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Creating or updating a ServiceNow incident directly from a Suger workflow instead of switching consoles",
+      "Looking up change-request or approval status from ServiceNow via Suger AI",
+    ],
+    context: ["Suger Console", "ServiceNow", "Suger Integrations"],
+    related: [{ name: "Integration", slug: "integration" }],
+  },
+  {
+    name: "Workday Integration — Suger",
+    tags: ["suger", "integrations"],
+    def: "An organization-level Suger integration with Workday's enterprise HR and finance platform, authenticated via an OAuth 2.0 client-credentials flow against an API client registered in the customer's own Workday tenant — user-level connections aren't available since the client lives inside the customer's tenant, not Suger's. Gives Suger's AI agent 15 actions across five areas — workers, organizations, job requisitions, time off, and custom queries — with every action read-only except submitting a time-off request. Includes an `execute-wql-query` escape hatch for running Workday Query Language directly when the typed tools don't cover a need; requires the customer's Workday host and tenant identifier, which Suger can't discover automatically.",
+    alias: "Related: Integration",
+    source: "https://doc.suger.io/integrations/workday/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["Suger Users"],
+    useCases: [
+      "Looking up a worker's org data or job requisition details from Workday via Suger AI",
+      "Submitting a time-off request through a Suger workflow instead of logging into Workday directly",
+    ],
+    context: ["Suger Console", "Workday", "Suger Integrations"],
+    related: [{ name: "Integration", slug: "integration" }],
+  },
+  {
+    name: "Baseten Integration",
+    tags: ["suger", "integrations"],
+    def: "Suger's bring-your-own-key (BYOK) connection to Baseten, an AI model hosting platform for custom-deployed models. Users generate a Baseten API key and add it in Suger's console — validated against Baseten before storage — at either the organization level (shared, admin-managed) or the user level (personal). Once connected, Baseten-hosted models appear in Suger's model picker for Insulin agents, chat, and inference, with usage billed directly by Baseten rather than through Suger. Baseten doesn't provide embedding models, so knowledge-base embeddings still require a different provider.",
+    alias: "Related: OpenAI Integration, Fireworks AI Integration, Together AI Integration",
+    source: "https://doc.suger.io/integrations/baseten/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Running Suger's Insulin agents on a custom model hosted on the user's own Baseten account",
+      "Choosing Baseten as an alternative model provider for chat or inference without routing usage or billing through Suger",
+    ],
+    context: ["Suger Console", "AI Features", "Model Picker"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      { name: "Fireworks AI Integration", slug: "fireworks-ai-integration" },
+      { name: "Together AI Integration", slug: "together-ai-integration" },
+    ],
+  },
+  {
+    name: "DeepInfra Integration",
+    tags: ["suger", "integrations"],
+    def: "Suger's bring-your-own-key (BYOK) connection to DeepInfra, an AI model provider. Users generate a DeepInfra API key and add it in Suger's console — validated against DeepInfra before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected DeepInfra models, including its BGE-M3 and Qwen3 Embedding 0.6B embedding models, become selectable across Suger's Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by DeepInfra rather than through Suger.",
+    alias: "Related: OpenAI Integration, OpenRouter Integration, Together AI Integration",
+    source: "https://doc.suger.io/integrations/deepinfra-byok/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Generating knowledge-base embeddings using DeepInfra's BGE-M3 or Qwen3 embedding models instead of a default provider",
+      "Choosing DeepInfra as the model provider for an Insulin agent's inference without routing usage through Suger's own billing",
+    ],
+    context: ["Suger Console", "AI Features", "Model Picker", "Knowledge Bases"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      { name: "OpenRouter Integration", slug: "openrouter-integration" },
+      { name: "Together AI Integration", slug: "together-ai-integration" },
+    ],
+  },
+  {
+    name: "Fireworks AI Integration",
+    tags: ["suger", "integrations"],
+    def: "Suger's bring-your-own-key (BYOK) connection to Fireworks AI, an AI model provider. Users generate a Fireworks API key and add it in Suger's console — validated against Fireworks before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected Fireworks models, including embedding options like Nomic Embed v1.5, become selectable across Suger's Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by Fireworks rather than through Suger.",
+    alias: "Related: OpenAI Integration, Baseten Integration, Together AI Integration",
+    source: "https://doc.suger.io/integrations/fireworks/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Running an Insulin agent on a Fireworks-hosted model instead of Suger's default provider",
+      "Generating knowledge-base embeddings with Fireworks' Nomic Embed v1.5 model",
+    ],
+    context: ["Suger Console", "AI Features", "Model Picker"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      { name: "Baseten Integration", slug: "baseten-integration" },
+      { name: "Together AI Integration", slug: "together-ai-integration" },
+    ],
+  },
+  {
+    name: "OpenRouter Integration",
+    tags: ["suger", "integrations"],
+    def: "Suger's bring-your-own-key (BYOK) connection to OpenRouter, an AI model provider that routes requests to multiple underlying language models through one API. Users generate an OpenRouter API key and add it in Suger's console — validated against OpenRouter before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected OpenRouter models, including its BGE-M3 embedding model, become selectable across Suger's Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by OpenRouter rather than through Suger.",
+    alias: "Related: OpenAI Integration, DeepInfra Integration, Together AI Integration",
+    source: "https://doc.suger.io/integrations/openrouter/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Giving an Insulin agent access to multiple underlying models through a single OpenRouter connection",
+      "Falling back to an alternative model via OpenRouter without changing Suger's default provider configuration",
+    ],
+    context: ["Suger Console", "AI Features", "Model Picker"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      { name: "DeepInfra Integration", slug: "deepinfra-integration" },
+      { name: "Together AI Integration", slug: "together-ai-integration" },
+    ],
+  },
+  {
+    name: "Together AI Integration",
+    tags: ["suger", "integrations"],
+    def: "Suger's bring-your-own-key (BYOK) connection to Together AI, an AI model provider. Users generate a Together API key and add it in Suger's console — validated against Together before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected Together models, including its multilingual-e5-large-instruct embedding model, become selectable across Suger's Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by Together rather than through Suger.",
+    alias: "Related: OpenAI Integration, Baseten Integration, OpenRouter Integration",
+    source: "https://doc.suger.io/integrations/together/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Selecting a Together-hosted model as the provider for an Insulin agent or chat feature",
+      "Generating knowledge-base embeddings using Together's multilingual-e5-large-instruct model",
+    ],
+    context: ["Suger Console", "AI Features", "Model Picker"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      { name: "Baseten Integration", slug: "baseten-integration" },
+      { name: "OpenRouter Integration", slug: "openrouter-integration" },
     ],
   },
 ];
