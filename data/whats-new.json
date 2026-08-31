@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T02:01:35.585Z",
+  "lastUpdated": "2026-08-31T12:06:57.231Z",
   "updates": [
     {
       "id": "aws-2026-08-27-how-oceanbase-unifies-transactions-analytics-and-a",
@@ -29,7 +29,7 @@
       "platformTag": "suger",
       "date": "2026-08-27",
       "title": "AWS AWS re:Invent 2026: A Marketplace Prep Checklist re:Invent rewards the sellers who did the work beforehand. The mark",
-      "summary": "AWS AWS re:Invent 2026: A Marketplace Prep Checklist re:Invent rewards the sellers who did the work beforehand. The marketplace, co-sell and offer prep worth finishing before you land in Las Vegas. Aug 27, 2026 Read article",
+      "summary": "AWS AWS re:Invent 2026: A Marketplace Prep Checklist re:Invent rewards the sellers who did the work beforehand. The marketplace, co-sell and offer prep worth finishing before you land in Las Vegas. Aug 27, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-reinvent-2026-marketplace-prep/",
       "impact": "low"
@@ -46,17 +46,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-27-aws-aws-managed-entitlements-for-foundation-models",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-27",
-      "title": "AWS AWS Managed Entitlements for Foundation Models A foundation model bought once by the payer account is useless to the",
-      "summary": "AWS AWS Managed Entitlements for Foundation Models A foundation model bought once by the payer account is useless to the twelve teams that need it. Managed entitlements are how the purchase reaches them. Aug 27, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/managed-entitlements-for-foundation-models/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-27-cloud-gtm-getting-your-listing-ready-for-event-tra",
       "platform": "Suger",
       "platformTag": "suger",
@@ -66,6 +55,17 @@
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/listing-ready-for-event-traffic/",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-08-27-aws-aws-managed-entitlements-for-foundation-models",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-27",
+      "title": "AWS AWS Managed Entitlements for Foundation Models A foundation model bought once by the payer account is useless to the",
+      "summary": "AWS AWS Managed Entitlements for Foundation Models A foundation model bought once by the payer account is useless to the twelve teams that need it. Managed entitlements are how the purchase reaches them. Aug 27, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/managed-entitlements-for-foundation-models/",
+      "impact": "low"
     },
     {
       "id": "suger-2026-08-27-cloud-gtm-planning-your-2027-cloud-gtm-strategy-a-",
@@ -233,17 +233,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-24-aws-aws-marketplace-storefront-vs-buy-with-aws-aws",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "AWS AWS Marketplace Storefront vs Buy with AWS AWS now gives sellers four ways to surface Marketplace commerce: Buy with",
-      "summary": "AWS AWS Marketplace Storefront vs Buy with AWS AWS now gives sellers four ways to surface Marketplace commerce: Buy with AWS, a branded Storefront, the Discovery API, and the Agreements API. Which fits your buyer. Aug 24, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-storefront-vs-buy-with-aws/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-24-marketplaces-alibaba-marketplace-private-offers-vs",
       "platform": "Suger",
       "platformTag": "suger",
@@ -252,6 +241,17 @@
       "summary": "Marketplaces Alibaba Marketplace: Private Offers vs Promotions On Alibaba Cloud Marketplace, a private offer and a Promotion Center discount solve different deals. How to tell which one a given deal actually needs. Aug 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/alibaba-marketplace-private-offers-vs-promotions/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-aws-aws-marketplace-storefront-vs-buy-with-aws-aws",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "AWS AWS Marketplace Storefront vs Buy with AWS AWS now gives sellers four ways to surface Marketplace commerce: Buy with",
+      "summary": "AWS AWS Marketplace Storefront vs Buy with AWS AWS now gives sellers four ways to surface Marketplace commerce: Buy with AWS, a branded Storefront, the Discovery API, and the Agreements API. Which fits your buyer. Aug 24, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-storefront-vs-buy-with-aws/",
       "impact": "low"
     },
     {
@@ -343,6 +343,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-24-insulin-ai-agent-tools-vs-skills-vs-integrations",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: AI Agent Tools vs Skills vs Integrations",
+      "summary": "Tool, skill, integration — three words the AI agent industry uses interchangeably and shouldn't. What each one actually is in Insulin, and which your problem needs.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-tools-vs-skills-vs-integrations/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-24-insulin-ai-agent-lifecycle-ownership-to-retirement",
       "platform": "Suger",
       "platformTag": "suger",
@@ -362,17 +373,6 @@
       "summary": "Procurement is document-heavy, cross-functional, and accountable — a strong fit for agents, with a hard line agents must not cross. Where they help, and where they can't.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/ai-agents-for-procurement/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-24-insulin-ai-agent-tools-vs-skills-vs-integrations",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: AI Agent Tools vs Skills vs Integrations",
-      "summary": "Tool, skill, integration — three words the AI agent industry uses interchangeably and shouldn't. What each one actually is in Insulin, and which your problem needs.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-tools-vs-skills-vs-integrations/",
       "impact": "low"
     },
     {
@@ -451,6 +451,28 @@
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/single-agent-vs-multi-agent-systems/",
       "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-suger-as-of-aug-24-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Suger: As of Aug 24, 2026",
+      "summary": "Completed multi-channel revenue with bank reconciliation and ASC 606 revenue recognition. Connect a bank account through Plaid or Stripe Financial Connections, match transactions to revenue with AI-assisted suggestions and a human review queue, and generate recognition schedules…",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-08-24",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-08-24-insulin-as-of-aug-24-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Insulin: As of Aug 24, 2026",
+      "summary": "Goals now run as jobs — a goal and the jobs an agent creates render as one card in the chat transcript, with a drawer showing the round-by-round timeline. A running goal can be steered from there, including redirecting its objective, or cancelled outright.",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-08-24",
+      "impact": "medium"
     },
     {
       "id": "suger-2026-08-21-insulin-how-to-build-an-ai-account-research-agent",
@@ -629,6 +651,17 @@
       "impact": "high"
     },
     {
+      "id": "suger-2026-08-19-aws-aws-competencies-worth-the-work-an-aws-compete",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framew",
+      "summary": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framework for weighing the effort of an application against the differentiation AWS says it unlocks — before you commit the headcount. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-competencies-worth-the-work/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-19-billing-metering-aws-marketplace-net-payment-terms",
       "platform": "Suger",
       "platformTag": "suger",
@@ -681,17 +714,6 @@
       "summary": "Cloud GTM Public Sector vs Commercial Marketplace Deals A commercial marketplace deal and a public sector one start the same and diverge fast. Here is the government buying path, mapped for the team you are selling to. Aug 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/public-sector-vs-commercial-marketplace-deals/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-19-aws-aws-competencies-worth-the-work-an-aws-compete",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-19",
-      "title": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framew",
-      "summary": "AWS AWS Competencies: Worth the Work? An AWS Competency is a real credential with a real cost. Here is a decision framework for weighing the effort of an application against the differentiation AWS says it unlocks — before you commit the headcount. Aug 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-competencies-worth-the-work/",
       "impact": "low"
     },
     {
@@ -849,17 +871,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-18-marketplaces-snowflake-marketplace-for-data-and-ai",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Marketplaces Snowflake Marketplace for Data and AI Products How Snowflake Marketplace lists and transacts data products,",
-      "summary": "Marketplaces Snowflake Marketplace for Data and AI Products How Snowflake Marketplace lists and transacts data products, native apps and AI, how it differs from the hyperscaler marketplaces, and where it fits a multi-marketplace GTM. Aug 18, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/snowflake-marketplace-for-data-and-ai-products/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-18-marketplaces-where-a-signed-aws-marketplace-agreem",
       "platform": "Suger",
       "platformTag": "suger",
@@ -868,6 +879,17 @@
       "summary": "Marketplaces Where a Signed AWS Marketplace Agreement Lives Legal asked for the executed marketplace agreement. Here is which document exists at each deal stage, where each one lives on AWS Marketplace, and how to download the signed agreement. Aug 18, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/where-the-signed-marketplace-agreement-lives/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-18-marketplaces-snowflake-marketplace-for-data-and-ai",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Marketplaces Snowflake Marketplace for Data and AI Products How Snowflake Marketplace lists and transacts data products,",
+      "summary": "Marketplaces Snowflake Marketplace for Data and AI Products How Snowflake Marketplace lists and transacts data products, native apps and AI, how it differs from the hyperscaler marketplaces, and where it fits a multi-marketplace GTM. Aug 18, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/snowflake-marketplace-for-data-and-ai-products/",
       "impact": "low"
     },
     {
@@ -1520,17 +1542,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-09-cloud-gtm-cloud-marketplace-metrics-worth-a-dashbo",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-09",
-      "title": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metr",
-      "summary": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metrics worth building are the ones that change a decision — and each one needs a named source dataset. Aug 9, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/cloud-marketplace-metrics/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-09-aws-how-to-cancel-an-aws-marketplace-subscription-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1539,6 +1550,17 @@
       "summary": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A subscription ends from a console page; a contract goes through AWS Support inside a 48-hour window most people miss. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/cancel-aws-marketplace-subscription/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-cloud-gtm-cloud-marketplace-metrics-worth-a-dashbo",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metr",
+      "summary": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metrics worth building are the ones that change a decision — and each one needs a named source dataset. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cloud-marketplace-metrics/",
       "impact": "low"
     },
     {
@@ -1850,17 +1872,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
-      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-azure-how-to-sell-on-azure-marketplace-an-isv-guid",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1869,6 +1880,17 @@
       "summary": "Azure How to Sell on Azure Marketplace: An ISV Guide A practical guide to selling on Azure Marketplace as an ISV: eligibility, listing types, Partner Center, private offers, MACC, and Microsoft co-sell. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-to-sell-on-azure-marketplace-isv-guide/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
+      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
       "impact": "low"
     },
     {
