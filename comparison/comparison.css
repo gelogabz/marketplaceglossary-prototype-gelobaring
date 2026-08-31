@@ -84,6 +84,7 @@
 
 .compare-table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     background: var(--white);
     font-size: 13px;
@@ -98,13 +99,19 @@
     text-align: left;
     background: var(--bg);
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 11.7%;
     position: sticky;
     top: 0;
     z-index: 2;
 }
 
 .compare-th-concept {
-    min-width: 200px;
+    width: 18%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
     color: var(--gray-700);
     position: sticky;
     left: 0;
@@ -138,13 +145,14 @@
     padding: 10px 14px;
     border-top: 1px solid var(--gray-100);
     vertical-align: top;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .compare-concept {
     font-weight: 600;
     color: var(--gray-900);
     font-size: 13px;
-    white-space: nowrap;
     position: sticky;
     left: 0;
     z-index: 1;
@@ -235,5 +243,18 @@
     }
     .compare-outer {
         padding: 1.5rem 1rem 4rem;
+    }
+
+    /* Below the mobile breakpoint, 8 columns can't fit without either
+       squeezing every cell down to a few characters per line or scrolling —
+       revert to natural content sizing so columns stay legible and the
+       table scrolls horizontally instead. */
+    .compare-table {
+        table-layout: auto;
+        min-width: 720px;
+    }
+    .compare-th,
+    .compare-th-concept {
+        width: auto;
     }
 }

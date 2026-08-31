@@ -167,7 +167,8 @@ export const terms = [
     tags: ["aws"],
     def: "A pre-configured virtual machine image listed on AWS Marketplace. ISVs package their software as an AMI for buyers to deploy on EC2 instances or, as of August 2026, on Amazon Lightsail for eligible listings (currently Windows Server, SQL Server Express, Ubuntu, cPanel & WHM, and Plesk). Can be priced hourly, with an annual contract, or as BYOL.",
     alias:
-      "Related: Bring Your Own License (BYOL), Contract — AWS, Product Code — AWS",
+      "Azure equivalent: Azure Virtual Machine Offer — Azure | Related: Bring Your Own License (BYOL), Contract — AWS, Product Code — AWS",
+    group: "vm-image-listing",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-products.html",
     difficulty: "intermediate",
@@ -240,6 +241,7 @@ export const terms = [
     def: "Amazon's digital catalog where ISVs list and sell software, SaaS, data products, and professional services to AWS customers. Purchases are billed through the customer's AWS account.",
     alias:
       "Related: AWS Marketplace Management Portal (AMMP) — AWS, AWS Marketplace Catalog API — AWS, AWS Partner Network (APN) — AWS",
+    group: "cloud-marketplace-site",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
     difficulty: "beginner",
@@ -338,6 +340,7 @@ export const terms = [
     def: "Microsoft's unified marketplace platform launched September 25, 2025 — merging Azure Marketplace and AppSource into a single destination. Covers cloud solutions, SaaS, AI apps and agents, industry solutions, and professional services. Features a dedicated AI Apps and Agents category with 3,000+ solutions. Deeply integrated with Azure AI Foundry, Microsoft 365 Copilot, Teams, and Dynamics 365. Purchases by MACC-eligible customers count toward their Azure commitment.",
     alias:
       "Formerly: Azure Marketplace, AppSource | Related: Azure Consumption Commitment (MACC) — Azure, MISA (Microsoft Intelligent Security Association) — Azure, Marketplace Rewards — Azure",
+    group: "cloud-marketplace-site",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/overview",
     difficulty: "beginner",
@@ -567,7 +570,9 @@ export const terms = [
     name: "Combined Pricing — GCP",
     tags: ["gcp"],
     def: "A GCP pricing model pairing a flat-rate subscription commit with usage-based metering. Buyers pay a base fee plus charges for consumption above the included amount.",
-    alias: "Related: Usage Metering, Price Model",
+    alias:
+      "AWS equivalent: SaaS Contracts with Pay-As-You-Go (Overages) — AWS | Azure equivalent: Flat Rate Pricing — Azure | Related: Usage Metering, Price Model",
+    group: "committed-base-overage-pricing",
     source:
       "https://docs.cloud.google.com/marketplace/docs/partners/integrated-saas",
     difficulty: "intermediate",
@@ -648,7 +653,7 @@ export const terms = [
     tags: ["suger", "billing"],
     def: "Suger's cross-cloud comparison of how a marketplace purchase retires a customer's committed-spend agreement — AWS EDP/PPA, Azure MACC, or GCP CUD. Azure draws down 100% of the pretax purchase with no cap; AWS and GCP channel offers typically cap drawdown around 25%, a negotiated term rather than a published figure, so the exact cap must be confirmed in the customer's agreement. AWS and Azure only retire commit when the product is hosted on their own cloud — AWS requires the 'Deployed on AWS' badge and Azure requires 'Azure benefit eligible' status plus a purchase through the Azure portal path — while GCP has no hosting requirement and any transactable listing is auto-eligible.",
     alias:
-      "Related: Committed Spend / Cloud Commit, Enterprise Discount Program (EDP) — AWS, Azure Consumption Commitment (MACC) — Azure, Committed Use Discount (CUD) — GCP",
+      "AWS equivalent: Enterprise Discount Program (EDP) — AWS | Related: Committed Spend / Cloud Commit, Azure Consumption Commitment (MACC) — Azure, Committed Use Discount (CUD) — GCP",
     source: "https://doc.suger.io/get-started/commit-drawdown/",
     difficulty: "advanced",
     category: "billing",
@@ -985,7 +990,8 @@ export const terms = [
     tags: ["azure"],
     def: "An Azure pricing model with a fixed monthly or annual fee. Can include a metered overage component where usage above the included quantity triggers additional charges.",
     alias:
-      "Related: Included Quantity — Azure, Per User Pricing — Azure, Overage",
+      "AWS equivalent: SaaS Contracts with Pay-As-You-Go (Overages) — AWS | GCP equivalent: Combined Pricing — GCP | Related: Included Quantity — Azure, Per User Pricing — Azure, Overage",
+    group: "committed-base-overage-pricing",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/plan-saas-offer",
     difficulty: "beginner",
@@ -1088,6 +1094,7 @@ export const terms = [
     def: "Google Cloud's marketplace for ISVs to list and sell software and services to Google Cloud customers. Integrated with GCP billing; purchases can draw down CUD commitments.",
     alias:
       "Related: Producer Portal — GCP, Committed Use Discount (CUD) — GCP, Private Offer — GCP",
+    group: "cloud-marketplace-site",
     source: "https://docs.cloud.google.com/marketplace/docs",
     difficulty: "beginner",
     category: "fundamentals",
@@ -2529,6 +2536,7 @@ export const terms = [
     def: "Snowflake's data marketplace for sharing and monetizing data products, apps, and native apps within Snowflake environments. Suger supports Snowflake Marketplace listing and entitlement management.",
     alias:
       "Related: Snowflake Data Clean Rooms — Snowflake, Snowflake Data Appreciation (SDA) — Snowflake",
+    group: "cloud-marketplace-site",
     source:
       "https://docs.snowflake.com/en/collaboration/collaboration-listings-about",
     difficulty: "beginner",
@@ -2632,7 +2640,8 @@ export const terms = [
     name: "Suger Console",
     tags: ["suger"],
     def: "The central web-based interface for managing cloud marketplace operations, viewing analytics, configuring integrations, and executing co-sell motions across all connected platforms.",
-    alias: "Related: Suger Analytics, Entitlement, Metering Dimension",
+    alias:
+      "AWS equivalent: AWS Marketplace Management Portal (AMMP) — AWS | Related: Suger Analytics, Entitlement, Metering Dimension",
     source: "https://doc.suger.io/get-started/",
     difficulty: "beginner",
     category: "operations",
@@ -2909,10 +2918,11 @@ export const terms = [
     ],
   },
   {
-    name: "Alibaba Cloud Marketplace",
-    tags: ["general", "alibaba"],
+    name: "Alibaba Cloud Marketplace — Alibaba",
+    tags: ["alibaba"],
     def: "Alibaba Cloud's digital marketplace connecting ISVs and SaaS providers with customers globally and in China. Supports private offers, usage metering, and consolidated billing through Alibaba Cloud accounts. Onboarding requires passing a vendor approval gate and signing a separate paid-product agreement before a listing can go live, and settlement follows its own timeline distinct from AWS, Azure, or GCP disbursement cycles.",
     alias: "Related: Private Offer, Usage Metering, Entitlement",
+    group: "cloud-marketplace-site",
     source: "https://www.alibabacloud.com/en/marketplace",
     difficulty: "beginner",
     category: "fundamentals",
@@ -5163,7 +5173,8 @@ export const terms = [
     tags: ["aws", "cosell"],
     def: "AWS's validated expertise program for partners demonstrating deep technical and delivery capability in a specific domain (e.g., AI, Security, Resilience, MSP). Distinct from basic APN membership. Specialization badges appear in AWS Marketplace listings and influence the co-sell recommendation score. As of 2026, renewals require partners to demonstrate launched ACE opportunities tied to their Specialization solutions over a rolling 12-month period.",
     alias:
-      "Related: Foundational Technical Review (FTR) — AWS, ACE (APN Customer Engagements), Co-sell Recommendation Score — AWS, AWS Competency — AWS",
+      "Azure equivalent: Solutions Partner Designation — Azure | GCP equivalent: Google Cloud Partner Network Competency — GCP | Related: Foundational Technical Review (FTR) — AWS, ACE (APN Customer Engagements), Co-sell Recommendation Score — AWS, AWS Competency — AWS",
+    group: "partner-competency-program",
     source: "https://aws.amazon.com/partners/programs/specializations/",
     difficulty: "advanced",
     category: "cosell",
@@ -7179,7 +7190,8 @@ export const terms = [
     tags: ["azure", "cosell"],
     def: "A co-sell deal type in Microsoft Partner Center where the ISV/partner works independently but grants Microsoft sellers read-only pipeline visibility, created by indicating 'no help required' while allowing Microsoft to view the deal. It is distinct from a co-sell deal (where active Microsoft participation is requested) and a private deal (where Microsoft has no visibility). Partner-led deals are eligible for Azure IP co-sell deal registration — and therefore co-sell incentives and MACC contribution — without requiring Microsoft seller participation, provided the deal includes an Azure IP co-sell eligible solution, is marked won, exceeds USD 25,000, and the customer account is Microsoft-managed.",
     alias:
-      "Related: Co-sell Eligible / Incentivized — Azure, Referral, Outbound Referral, Azure Consumption Commitment (MACC) — Azure",
+      "AWS equivalent: Partner-Led Opportunity — AWS | Related: Co-sell Eligible / Incentivized — Azure, Referral, Outbound Referral, Azure Consumption Commitment (MACC) — Azure",
+    group: "partner-led-cosell",
     source:
       "https://learn.microsoft.com/en-us/partner-center/referrals/manage-co-sell-opportunities",
     difficulty: "intermediate",
@@ -7642,7 +7654,8 @@ export const terms = [
     tags: ["aws", "offers", "billing"],
     def: "A SaaS pricing model that combines a committed contract (entitlement quantities purchased upfront) with unlimited overage consumption billed through the Metering API. Unlike SaaS Subscription, the buyer commits to defined quantities; unlike SaaS Contract, additional usage above the committed quantity is billed per-unit via BatchMeterUsage. Requires both the GetEntitlements API (to check contracted quantities) and the BatchMeterUsage API (to bill overages) — the only SaaS pricing model requiring both APIs simultaneously.",
     alias:
-      "Related: SaaS Contract Pricing — AWS, SaaS Subscription Pricing — AWS, GetEntitlements API — AWS, BatchMeterUsage API — AWS",
+      "Azure equivalent: Flat Rate Pricing — Azure | GCP equivalent: Combined Pricing — GCP | Related: SaaS Contract Pricing — AWS, SaaS Subscription Pricing — AWS, GetEntitlements API — AWS, BatchMeterUsage API — AWS",
+    group: "committed-base-overage-pricing",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-contracts.html",
     difficulty: "advanced",
@@ -7675,7 +7688,8 @@ export const terms = [
     tags: ["aws", "offers"],
     def: "A free trial option configurable on SaaS Subscription and SaaS Contract AWS Marketplace listings. The buyer registers via the standard AMMP registration token flow; when the trial period ends, the listing automatically converts to paid or expires. The SNS `subscribe-success` notification includes an `isFreeTrialTermPresent` flag indicating an active trial, allowing ISV backends to distinguish trial from paid subscriptions during entitlement checks.",
     alias:
-      "Related: SaaS Subscription Pricing — AWS, SaaS Contract Pricing — AWS",
+      "Snowflake equivalent: Limited Trial Listing — Snowflake | Related: SaaS Subscription Pricing — AWS, SaaS Contract Pricing — AWS",
+    group: "time-limited-trial",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html",
     difficulty: "intermediate",
@@ -7883,7 +7897,8 @@ export const terms = [
     tags: ["azure", "offers"],
     def: "A transactable Microsoft Marketplace listing type for VM-based software solutions. Pricing models include per-hour VM-core or vCPU billing, software reservation pricing (1–5 year via VMSR), and pay-as-you-go. Azure VM Offers are distinct from Azure Application offers (which include Managed Application and Solution Template plan types) and from SaaS offers.",
     alias:
-      "Related: Azure Managed Application — Azure, VM Software Reservation (VMSR) — Azure, Microsoft Marketplace — Azure",
+      "AWS equivalent: Amazon Machine Image (AMI) — AWS | Related: Azure Managed Application — Azure, VM Software Reservation (VMSR) — Azure, Microsoft Marketplace — Azure",
+    group: "vm-image-listing",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/publisher-guide-by-offer-type",
     difficulty: "intermediate",
@@ -8093,7 +8108,8 @@ export const terms = [
     tags: ["azure", "cosell"],
     def: "Microsoft's competency-replacement program for partners, replacing Gold and Silver competencies retired September 2022. Partners earn designations by meeting a point threshold across performance, skilling, and customer success categories — assessed monthly. Designations are available across six solution areas: Azure Infrastructure, Digital & App Innovation, Data & AI, Business Applications, Modern Work, and Security. PRACR eligibility and certain co-sell benefit tiers require a Solutions Partner Designation. Starting end of July 2026, all four Security specializations move from self-attestation to a partner-funded independent third-party audit every 2 years, with a binary Pass/No Pass outcome. For FY27, Microsoft is merging several specializations (Analytics with Data Warehouse Migration; Low Code with Intelligent Automation into 'Agentic Business Solutions'; Kubernetes with Migrate Enterprise Applications into 'App Modernization') and adding a new Agentic Security Specialization, with affected partners auto-enrolled into the merged specialization under their existing designation. Designation and benefits-package renewals also move to a standardized 30-day pre-anniversary-date (AD-30) window. As of July 31, 2026, Microsoft also removed the Azure Consumed Revenue (ACR) threshold for SMB-track eligibility across the Data & AI, Digital & App Innovation, and Infrastructure (Azure) solution paths — partners with at least 80% of customers in SMB/SMC-C segments now qualify for the SMB track without meeting the prior ACR minimum. In August 2026, Microsoft renamed the customer-facing badges for these designations to align with three commercial solution areas — AI Business Solutions, Cloud & AI Platforms, and Security — while the underlying six solution paths, requirements, and scoring are unchanged.",
     alias:
-      "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
+      "AWS equivalent: AWS Specialization — AWS | GCP equivalent: Google Cloud Partner Network Competency — GCP | Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure, Co-sell Eligible / Incentivized — Azure",
+    group: "partner-competency-program",
     source:
       "https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-overview",
     difficulty: "intermediate",
@@ -8672,7 +8688,8 @@ export const terms = [
     tags: ["gcp", "cosell"],
     def: "The 2026 replacement for GCP Specializations within the Google Cloud Partner Network, consisting of 21 competencies across three categories: 6 Solution Competencies (e.g., AI, Data, Infrastructure), 5 Product Competencies (tied to specific GCP services), and 10 Industry Competencies. Each competency is evaluated on two dimensions — Capacity (partner certifications and team size) and Capability (validated customer outcomes) — and is independent of GCPN tier level (Select, Premier, or Diamond). A partner can hold competencies at any tier, and competencies influence GCP Marketplace listing visibility, co-sell recommendations, and funding program access.",
     alias:
-      "Related: Google Cloud Partner Network — GCP | Related: Google Cloud Partner Network Diamond Tier — GCP | Related: Build Engagement Model — GCP",
+      "AWS equivalent: AWS Specialization — AWS | Azure equivalent: Solutions Partner Designation — Azure | Related: Google Cloud Partner Network — GCP | Related: Google Cloud Partner Network Diamond Tier — GCP | Related: Build Engagement Model — GCP",
+    group: "partner-competency-program",
     source:
       "https://cloud.google.com/blog/topics/partners/introducing-google-cloud-partner-network/",
     difficulty: "advanced",
@@ -8755,7 +8772,8 @@ export const terms = [
     tags: ["aws", "offers"],
     def: "An AWS Marketplace product lifecycle state where a listing has passed technical validation and is published, but is visible only to the seller's own AWS account and any allowlisted test accounts — not to the general marketplace catalog. Limited Release is the pre-public testing phase that allows sellers to verify buyer purchase flows, entitlement provisioning, and SaaS integration before exposing the listing publicly. Transitioning from Limited to Public requires submitting an Update Visibility Change Request, which triggers review by the AWS Seller Operations team before the listing appears in the marketplace.",
     alias:
-      "Related: Change Request — AWS | Related: Listing | Related: Entitlement",
+      "Azure equivalent: Preview Audience — Azure | Related: Change Request — AWS | Related: Listing | Related: Entitlement",
+    group: "prelaunch-restricted-preview",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/ami-getting-started.html",
     difficulty: "intermediate",
@@ -8813,7 +8831,8 @@ export const terms = [
     tags: ["azure", "offers"],
     def: "A Partner Center offer configuration that specifies which Azure tenant IDs or subscription IDs can access and test an offer during the Publisher Sign-off stage, before the offer is published to the live Microsoft Marketplace. Preview Audience is configured per pricing plan in the Pricing and Availability section. During Publisher Sign-off, only accounts matching the Preview Audience list can find and purchase the offer — it does not appear in the marketplace catalog. After sign-off validation, the publisher triggers Go Live to make the offer publicly available and the Preview Audience restriction is removed.",
     alias:
-      "Related: Microsoft Marketplace — Azure | Related: Plan — Azure | Related: SaaS Fulfillment API — Azure",
+      "AWS equivalent: Limited Release — AWS | Related: Microsoft Marketplace — Azure | Related: Plan — Azure | Related: SaaS Fulfillment API — Azure",
+    group: "prelaunch-restricted-preview",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/test-publish-saas-offer",
     difficulty: "intermediate",
@@ -9150,7 +9169,9 @@ export const terms = [
     name: "Limited Trial Listing — Snowflake",
     tags: ["snowflake", "offers"],
     def: "A Snowflake Marketplace listing type that gives prospective buyers time-limited or consumption-limited access to a Native App or data product without immediate payment commitment. Providers configure trial duration and access scope; when the trial expires, buyers must convert to a paid listing to retain access. Limited Trial listings are distinct from free-tier listings in that they are explicitly time-bounded and are designed as a conversion funnel entry point for paid Snowflake Marketplace transactions.",
-    alias: "Related: Snowflake Marketplace — Snowflake, Free Trial, Listing",
+    alias:
+      "AWS equivalent: SaaS Free Trial — AWS | Related: Snowflake Marketplace — Snowflake, Free Trial, Listing",
+    group: "time-limited-trial",
     source:
       "https://docs.snowflake.com/en/collaboration/provider-listings-reference#trial",
     difficulty: "intermediate",
@@ -9778,7 +9799,8 @@ export const terms = [
     tags: ["aws", "cosell"],
     def: "A co-sell motion tier in AWS Partner Central where an ACE opportunity receives no AWS field seller assignment. The partner operates independently with 24/7 AI agent support via Partner Central — receiving insights, recommendations, and best practices from the Partner Central AI — but without direct human AWS seller involvement. Partner-led is the lowest tier in the three-tier opportunity routing model (below Agent-engaged and Field-engaged) and is typically assigned when the Opportunity Quality Score is insufficient to qualify for higher tiers or when the deal does not meet AWS co-sell criteria.",
     alias:
-      "Related: Agent-Engaged Opportunity — AWS, APN Customer Engagements (ACE) — AWS, Opportunity Quality Score — AWS",
+      "Azure equivalent: Partner-led Deal — Azure | Related: Agent-Engaged Opportunity — AWS, APN Customer Engagements (ACE) — AWS, Opportunity Quality Score — AWS",
+    group: "partner-led-cosell",
     source: "https://aws.amazon.com/blogs/apn/sell-smarter-with-aws/",
     difficulty: "intermediate",
     category: "cosell",
@@ -10115,7 +10137,7 @@ export const terms = [
     name: "Alibaba Marketplace Integration — Suger",
     tags: ["suger", "alibaba", "integrations"],
     def: "An org-level OAuth integration that connects a Suger organization to Alibaba Cloud Marketplace, enabling marketplace operations for sellers and buyers in China and international Alibaba Cloud markets. Configuration requires OAuth credentials for the integration and an SPI key for marketplace event notifications, which Alibaba uses to push real-time subscription and billing events to Suger. The integration supports both seller and buyer marketplace workflows; deleting it may affect active marketplace subscriptions and billing relationships, so deactivation must be coordinated with any live Alibaba transactions.",
-    alias: "Related: Alibaba Cloud Marketplace, Integration, Suger",
+    alias: "Related: Alibaba Cloud Marketplace — Alibaba, Integration, Suger",
     source: "https://doc.suger.io/alibaba-marketplace/integration/",
     difficulty: "intermediate",
     category: "operations",
@@ -10132,7 +10154,10 @@ export const terms = [
       "Marketplace Event Notifications",
     ],
     related: [
-      { name: "Alibaba Cloud Marketplace", slug: "alibaba-cloud-marketplace" },
+      {
+        name: "Alibaba Cloud Marketplace — Alibaba",
+        slug: "alibaba-cloud-marketplace-—-alibaba",
+      },
       { name: "Suger", slug: "suger" },
       { name: "Integration", slug: "integration" },
       { name: "Webhook", slug: "webhook" },
@@ -10168,6 +10193,7 @@ export const terms = [
     def: 'Oracle\'s digital catalog for SaaS, container image, Helm chart, and machine image listings, discoverable and purchasable by Oracle Cloud Infrastructure (OCI) customers. Only SaaS listings (Oracle package type `SAAS`) are supported by Suger\'s sync; other listing types are not imported. Buyers reach it either through the OCI Console (login required) or the public storefront at <a href="https://marketplace.oracle.com/" target="_blank" rel="noopener">marketplace.oracle.com</a>, which lets prospects browse before committing to an OCI account. Oracle\'s own terminology distinguishes Customer (the transacting entity), Consumer (the person deploying software), Partner (the entity with a payout agreement), and Publisher (the person publishing listings). Unlike AWS, Azure, and GCP marketplaces, Oracle Cloud Marketplace does not currently support usage-based metering or channel reseller private offers (the CPPO/MPO/MCPO pattern) — private offers are direct ISV-to-buyer only.',
     alias:
       "Related: AWS Marketplace — AWS, Microsoft Marketplace — Azure, GCP Marketplace — GCP, Private Offer — Oracle",
+    group: "cloud-marketplace-site",
     source: "https://doc.suger.io/oracle-marketplace/",
     difficulty: "beginner",
     category: "fundamentals",
@@ -12562,7 +12588,7 @@ export const terms = [
     tags: ["alibaba", "offers"],
     def: "A customized, unpaid order an Alibaba Cloud Marketplace seller creates and pushes directly to one specific buyer, referenced only by the buyer's root-account UID — RAM sub-accounts aren't accepted. Sellers configure custom pricing, duration, and quantity against a product with Contact Sales enabled, and may attach a signed contract (PDF or DOCX, up to 10MB). The order auto-cancels if unpaid within 7 days, and payment itself constitutes buyer acceptance.",
     alias:
-      "AWS equivalent: Private Offer — AWS | Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Oracle equivalent: Private Offer — Oracle | Related: Alibaba Cloud Marketplace",
+      "AWS equivalent: Private Offer — AWS | Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Oracle equivalent: Private Offer — Oracle | Related: Alibaba Cloud Marketplace — Alibaba",
     group: "private-offer",
     source: "https://help.aliyun.com/en/marketplace/alibaba-cloud-marketplace-private-offer",
     difficulty: "intermediate",
@@ -12574,7 +12600,10 @@ export const terms = [
     ],
     context: ["Alibaba Cloud Marketplace"],
     related: [
-      { name: "Alibaba Cloud Marketplace", slug: "alibaba-cloud-marketplace" },
+      {
+        name: "Alibaba Cloud Marketplace — Alibaba",
+        slug: "alibaba-cloud-marketplace-—-alibaba",
+      },
       { name: "Private Offer", slug: "private-offer" },
       { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
     ],
@@ -12888,6 +12917,51 @@ export const terms = [
       { name: "OpenAI Integration", slug: "openai-integration" },
       { name: "Baseten Integration", slug: "baseten-integration" },
       { name: "OpenRouter Integration", slug: "openrouter-integration" },
+    ],
+  },
+  {
+    name: "Console Publishing — Oracle",
+    tags: ["oracle", "operations"],
+    def: "Oracle's OCI Console-native workflow for Marketplace publishers to create and manage listings, artifacts, terms, and private offers. It replaced the standalone Partner Portal, which Oracle has deprecated and no longer makes accessible — publishers authenticate with their existing OCI tenancy credentials instead of a separate login, and manage the full listing lifecycle (creation, artifacts, terms, private offers) from within the OCI Console itself.",
+    alias:
+      "AWS equivalent: AWS Marketplace Management Portal (AMMP) — AWS | Related: Oracle Cloud Marketplace — Oracle, Private Offer — Oracle",
+    source: "https://docs.oracle.com/en-us/iaas/Content/Marketplace/console-publishing.htm",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Creating and managing a Marketplace listing's artifacts and terms directly in the OCI Console instead of a separate Partner Portal login",
+      "Creating and reviewing a private offer for a customer through Console Publishing",
+    ],
+    context: ["OCI Console", "Oracle Cloud Marketplace", "Publisher Service"],
+    related: [
+      {
+        name: "Oracle Cloud Marketplace — Oracle",
+        slug: "oracle-cloud-marketplace-—-oracle",
+      },
+      { name: "Private Offer — Oracle", slug: "private-offer-—-oracle" },
+    ],
+  },
+  {
+    name: "Alibaba Cloud Partner Network (ACPN) Console — Alibaba",
+    tags: ["alibaba", "operations"],
+    def: "Alibaba's seller-facing management console for Cloud Marketplace vendors, accessed by logging into the ACPN (Alibaba Cloud Partner Network) console and navigating to its Marketplace section. Sellers configure store branding (name, logo, promotional images), manage product listings, and use Delivery Center to track after-sales service delivery quality, which factors into a seller's product strength score.",
+    alias:
+      "AWS equivalent: AWS Marketplace Management Portal (AMMP) — AWS | Related: Alibaba Cloud Marketplace — Alibaba",
+    source: "https://www.alibabacloud.com/help/en/marketplace/store-management",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Configuring store branding and a promotional product showcase in the ACPN console's Marketplace section",
+      "Using Delivery Center to track after-sales service delivery quality and product strength score",
+    ],
+    context: ["ACPN Console", "Alibaba Cloud Marketplace", "Delivery Center"],
+    related: [
+      {
+        name: "Alibaba Cloud Marketplace — Alibaba",
+        slug: "alibaba-cloud-marketplace-—-alibaba",
+      },
     ],
   },
 ];
