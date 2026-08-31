@@ -5,7 +5,7 @@ data/*.csv
 sample-*.html
 possible-*.png
 temp/
-reports/
+reports/*.json
 .claude
 info-sources.md
 TODOFORLATER.md
