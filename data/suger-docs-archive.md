@@ -2,6 +2,16 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 09/01/2026 — 5 added pages
+
+```diff
++ [Api › Update Onboarding Info](https://doc.suger.io/api/update-onboarding-info/)
++ [Cosell › Cosell Leads](https://doc.suger.io/cosell/cosell-leads/)
++ [Revenue › Bank Reconciliation](https://doc.suger.io/revenue/bank-reconciliation/)
++ [Revenue › Revenue Recognition](https://doc.suger.io/revenue/revenue-recognition/)
++ [Salesforce App › Salesforce App Leads](https://doc.suger.io/salesforce-app/salesforce-app-leads/)
+```
+
 ## 08/29/2026 — 1 removed page
 
 ```diff

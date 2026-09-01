@@ -1,6 +1,50 @@
 {
-  "lastUpdated": "2026-08-31T12:12:46.216Z",
+  "lastUpdated": "2026-09-01T10:44:33.154Z",
   "updates": [
+    {
+      "id": "aws-2026-08-31-partner-revenue-measurement-expands-service-covera",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-08-31",
+      "title": "Partner Revenue Measurement expands service coverage for User Agent string capability",
+      "summary": "Partner Revenue Measurement User Agent string now supports additional AWS services. Partner Revenue Measurement allows Partners to better understand their AWS revenue impact and product consumption patterns.",
+      "type": "pricing",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/08/partner-revenue-measurement-user-agent-expansion/",
+      "impact": "medium"
+    },
+    {
+      "id": "aws-2026-08-31-solution-matching-engine-your-gateway-to-aws-selle",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-08-31",
+      "title": "Solution Matching Engine: Your Gateway to AWS Sellers",
+      "summary": "When customers come to AWS with a business challenge, sellers need to identify the right partner and solution—fast. Here are three actions you can take today in AWS Partner Central and AWS Marketplace to make your listings easier to find, understand, and recommend.",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/apn/solution-matching-engine-your-gateway-to-aws-sellers/",
+      "impact": "low"
+    },
+    {
+      "id": "azure-2026-08-31-fy27-august-skilling-updates",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-08-31",
+      "title": "FY27 August skilling updates",
+      "summary": "Two Microsoft certifications retired on August 31 and have new, AI-focused replacements. Review the updated specialization skilling requirements.",
+      "type": "policy",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august#fy27-august-skilling-updates",
+      "impact": "high"
+    },
+    {
+      "id": "azure-2026-08-31-showcase-your-frontier-ai-expertise",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-08-31",
+      "title": "Showcase your Frontier AI expertise",
+      "summary": "Earn the Frontier Transformation Engineer badge and show that your team is ready to deliver Microsoft Frontier AI solutions.",
+      "type": "release",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august#showcase-your-frontier-ai-expertise",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-08-27-how-oceanbase-unifies-transactions-analytics-and-a",
       "platform": "AWS",
