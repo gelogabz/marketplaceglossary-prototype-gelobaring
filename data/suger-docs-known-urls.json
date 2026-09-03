@@ -137,6 +137,7 @@
   "https://doc.suger.io/api/remove-contact-from-offer/",
   "https://doc.suger.io/api/reopen-support-ticket/",
   "https://doc.suger.io/api/report-usage-record-group/",
+  "https://doc.suger.io/api/resend-prm-invitation/",
   "https://doc.suger.io/api/retry-usage-record-group/",
   "https://doc.suger.io/api/schedule-entitlement-cancellation/",
   "https://doc.suger.io/api/search-knowledge/",
