@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-08-31";
+export const lastReviewed = "2026-09-07";
 
 export const terms = [
   {
@@ -1460,10 +1460,10 @@ export const terms = [
   {
     name: "Marketplace Fee / Transaction Fee",
     tags: ["general"],
-    def: "The revenue share cloud marketplaces charge ISVs on each transaction — typically 3–20% depending on program tier, deal type, and partner status. Disbursements are paid net of this fee.",
+    def: "The revenue share cloud marketplaces charge ISVs on each transaction. On AWS Marketplace this ranges roughly 0.5–20% depending on product type and deal structure: 3% for public SaaS listings, 20% for server products (AMI/container/ML), 0.5% for professional services, and 1.5–3% for private offers scaled by total contract value, with a 0.5% uplift for Channel Partner Private Offers. Disbursements are paid net of this fee.",
     alias: "Related: Disbursement, Seller of Record",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/listing-fees.html",
     difficulty: "beginner",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
@@ -1678,7 +1678,7 @@ export const terms = [
     tags: ["general", "cosell"],
     def: "A partner providing ongoing management of a customer's cloud environment and software. MSPs often resell ISV products through marketplace channel programs (CPPO on AWS, CSP/MPO on Azure).",
     alias: "Related: Channel Partner (CP), Co-sell",
-    source: "https://aws.amazon.com/partners/programs/msp/",
+    source: "https://aws.amazon.com/marketplace/features/cpprivateoffers",
     difficulty: "beginner",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
@@ -3470,7 +3470,7 @@ export const terms = [
     name: "Migration Acceleration Program (MAP) — AWS",
     tags: ["aws", "cosell", "funding"],
     group: "cloud-partner-funding",
-    def: "An AWS funding program providing credits and cash to partners helping customers migrate and modernize workloads on AWS. As of 2026, now covers generative AI and agentic features built during modernization — not just migrations. Funding scales with deal size.",
+    def: "An AWS funding program providing credits and cash to partners helping customers migrate and modernize workloads on AWS. AWS's 2026 partner strategy is extending MAP's scope toward generative AI and agentic features built during modernization work, not just lift-and-shift migrations, per AWS Partner Network guidance — though the core program page itself still describes MAP in terms of its three-phase (Assess, Mobilize, Migrate & Modernize) migration framework. Funding scales with deal size.",
     alias:
       "Related: AWS Partner Funding — AWS, ISV Workload Migration Program (WMP) — AWS",
     source: "https://aws.amazon.com/migration-acceleration-program/",
@@ -4541,7 +4541,7 @@ export const terms = [
   {
     name: "Slack Integration",
     tags: ["suger", "integrations"],
-    def: "Suger's connection to Slack that delivers real-time marketplace event notifications — new entitlements, cancellations, usage alerts, and co-sell updates — to designated Slack channels in your workspace.",
+    def: "Suger's connection to Slack that delivers real-time marketplace event notifications — new entitlements, cancellations, usage alerts, and co-sell updates — to designated Slack channels in your workspace. In Suger PRM, the same connection can also map individual Slack channels to specific partners, posting co-sell activity, internal notes, and broadcast announcements into each partner's own channel — separate from a designated internal-only channel — provided the Suger app has been invited to that channel; an unmapped partner is silently excluded from every broadcast.",
     alias: "Related: Webhook, Email Notification, Microsoft Teams Integration",
     source: "https://doc.suger.io/integrations/slack/",
     difficulty: "beginner",
@@ -4911,7 +4911,7 @@ export const terms = [
   {
     name: "PRM Resource Tagging — AWS",
     tags: ["aws"],
-    def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code, using any of six supported methods — AWS Management Console, AWS Tag Editor (bulk manual), AWS CLI, CloudFormation, CDK, or Terraform. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect, and some sub-features of otherwise-supported services are excluded (e.g. Fargate under EKS, S3 Requests costs). For multi-tenant SaaS, a single product code tags all resources representing the whole solution — tagging is not done per-tenant. A resource holds only one `aws-apn-id` tag at a time, so multi-partner deployments need the User Agent String method instead; resources under IaC management should be tagged through the IaC tool to avoid drift detection.",
+    def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code, using any of six supported methods — AWS Management Console, AWS Tag Editor (bulk manual), AWS CLI, CloudFormation, CDK, or Terraform. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect, and some sub-features of otherwise-supported services are excluded (e.g. Fargate under EKS, S3 Requests costs). For multi-tenant SaaS, a single product code tags all resources representing the whole solution — tagging is not done per-tenant. A resource holds only one `aws-apn-id` tag at a time, so multi-partner deployments need the User Agent String method instead; resources under IaC management should be tagged through the IaC tool to avoid drift detection. As of August 31, 2026, the User Agent String method (`APN_1.1/pc_<product-code>`, embedded in application requests rather than applied as a resource tag) expanded its service coverage to any AWS service that logs control-plane activity in AWS CloudTrail — partners already using it gain the broader coverage automatically with no re-implementation, and attributed revenue now surfaces in the Attributed Revenue Dashboard within AWS Partner Analytics.",
     alias:
       "Related: APN ID Tag (aws-apn-id) — AWS, Partner Revenue Measurement (PRM) — AWS, PRM Architecture Patterns — AWS",
     source:
@@ -5786,7 +5786,7 @@ export const terms = [
     name: "Private Offer — AWS",
     tags: ["aws", "offers"],
     group: "private-offer",
-    def: "A custom pricing and terms agreement sent directly to a specific AWS account through AWS Marketplace. ISVs use private offers to negotiate custom pricing, payment schedules — including, as of August 2026, explicit net payment terms of Net 30, 45, 60, or 90 days, with channel partners able to offer terms within ISV-defined maximums — contract durations, and EULA terms outside the public listing price. Private offers are accessed via a unique URL and must be accepted before the expiry date set by the seller. Variants include Express Private Offer (simplified flow), Agreement-Based Offer (ABO, for renewals on existing agreements), and Channel Partner Private Offer (CPPO, for reseller transactions).",
+    def: "A custom pricing and terms agreement sent directly to a specific AWS account through AWS Marketplace. ISVs use private offers to negotiate custom pricing, payment schedules — including, as of August 2026, explicit net payment terms of Net 30, 45, 60, or 90 days, with channel partners able to offer terms within ISV-defined maximums — contract durations, and EULA terms outside the public listing price. Private offers are accessed via a unique URL and must be accepted before the expiry date set by the seller. Variants include Express Private Offer (simplified flow), Agreement-Based Offer (ABO, for renewals on existing agreements), and Channel Partner Private Offer (CPPO, for reseller transactions). As of September 2026, sellers can also configure auto-renewal terms so active subscriptions continue without re-negotiation at term end — choosing no price change, a fixed price change, or a bounded price-change range, with buyers able to opt in or out at acceptance and later.",
     alias:
       "Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Related: Express Private Offer — AWS, Agreement-Based Offer (ABO) — AWS, Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
     source:
@@ -8942,7 +8942,7 @@ export const terms = [
   {
     name: "Professional Services Listing — AWS",
     tags: ["aws", "offers"],
-    def: "A distinct AWS Marketplace product type for selling time-bound, deliverable-based consulting, implementation, training, and managed services engagements. Unlike SaaS or AMI listings, Professional Services products do not provision software entitlements — instead, the buyer receives a statement of work or engagement scope. Private Offers for Professional Services support both Flexible Payment Schedules and Variable Payments as billing mechanisms, making them the primary vehicle for bundling advisory work alongside software on a single marketplace transaction. As of June 16, 2026, AWS reduced the listing fee for Professional Services private offers from 2.5% to 0.5%, applying to all new private offers across all AWS Regions and currencies. As of March 2026, AWS first-party Professional Services are also available as transactable listings in AWS Marketplace, marking the first time Amazon itself has offered consulting services for purchase through the marketplace alongside third-party ISV and SI listings.",
+    def: "A distinct AWS Marketplace product type for selling time-bound, deliverable-based consulting, implementation, training, and managed services engagements. Unlike SaaS or AMI listings, Professional Services products do not provision software entitlements — instead, the buyer receives a statement of work or engagement scope. Private Offers for Professional Services support both Flexible Payment Schedules and Variable Payments as billing mechanisms, making them the primary vehicle for bundling advisory work alongside software on a single marketplace transaction. As of June 16, 2026, AWS reduced the listing fee for Professional Services private offers from 2.5% to 0.5%, applying to all new private offers across all AWS Regions and currencies. As of September 2026, professional services sold as part of a qualifying multi-product solution carry a further-reduced 0% listing fee, on top of the flat 0.5% rate for standalone professional-services private offers. As of March 2026, AWS first-party Professional Services are also available as transactable listings in AWS Marketplace, marking the first time Amazon itself has offered consulting services for purchase through the marketplace alongside third-party ISV and SI listings.",
     alias:
       "Azure equivalent: Professional Services Offer — Azure | Related: Variable Payments — AWS, Flexible Payment Schedule / Installment Plan, Private Offer",
     source:
@@ -12436,7 +12436,7 @@ export const terms = [
     tags: ["aws", "procurement"],
     def: "An AWS Marketplace governance control that lets an organization's administrators require a purchase order (PO) number before a purchase can complete, and display custom guidance text to specific buyer audiences during checkout. It's enforced at the AWS Organization level, giving procurement teams a way to apply internal purchasing policy across every account in the org rather than relying on buyers to self-report a PO number after the fact. Distinct from the `UpdatePurchaseOrders` operation in the AWS Marketplace Agreements API, which only edits the PO field on an agreement that already exists — this control governs whether a purchase can be made at all.",
     alias:
-      "Related: AWS Marketplace Agreements API — AWS, Private Marketplace — AWS",
+      "Azure equivalent: Purchase Order Mapping — Azure | Related: AWS Marketplace Agreements API — AWS, Private Marketplace — AWS",
     source:
       "https://aws.amazon.com/blogs/awsmarketplace/enabling-mandatory-purchase-orders-and-custom-guidance-in-aws-marketplace/",
     difficulty: "intermediate",
@@ -12962,6 +12962,249 @@ export const terms = [
         name: "Alibaba Cloud Marketplace — Alibaba",
         slug: "alibaba-cloud-marketplace-—-alibaba",
       },
+    ],
+  },
+  {
+    name: "Bank Reconciliation — Suger",
+    tags: ["suger", "general"],
+    def: "A Suger Revenue module feature that connects bank accounts via Plaid or Stripe Financial Connections and auto-matches incoming deposits against invoices, payouts, and disbursements. Matching combines rule-based logic with AI-assisted confidence scoring — matches at 0.94+ confidence auto-accept, the rest route to a human review queue. Bank data syncs on a 15-minute cadence to keep reconciliation current with marketplace payout activity.",
+    alias: "Related: Disbursement",
+    source: "https://doc.suger.io/revenue/bank-reconciliation/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["Suger Users", "Partner Managers"],
+    useCases: [
+      "Auto-matching marketplace payouts against actual bank deposits instead of reconciling manually",
+      "Auditing multi-channel revenue with a confidence-scored review queue for ambiguous matches",
+    ],
+    context: ["Suger Console", "Suger Revenue module"],
+    related: [{ name: "Disbursement", slug: "disbursement" }],
+  },
+  {
+    name: "Revenue Recognition — Suger",
+    tags: ["suger", "general"],
+    def: "A Suger Revenue module workflow that tracks when revenue may be recognized under ASC 606, independent of when cash actually moved. Supports straight-line, point-in-time, usage-based, and milestone recognition policies, and manages each accounting period through a three-state lifecycle — OPEN, SOFT_CLOSED, LOCKED — to control when recognized amounts can still be adjusted.",
+    alias: "Related: Disbursement",
+    source: "https://doc.suger.io/revenue/revenue-recognition/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["Suger Users", "Partner Managers"],
+    useCases: [
+      "Recognizing marketplace revenue under ASC 606 separately from cash receipt timing",
+      "Locking a closed accounting period so recognized revenue can no longer be adjusted",
+    ],
+    context: ["Suger Console", "Suger Revenue module"],
+    related: [{ name: "Disbursement", slug: "disbursement" }],
+  },
+  {
+    name: "Co-sell Leads — Suger",
+    tags: ["suger", "cosell"],
+    def: "An earlier-stage, AWS-inbound-only co-sell object in Suger's PRM, distinct from a standard co-sell Referral. A Lead requires acceptance and qualification before it converts into a regular co-sell opportunity. Leads sync from AWS Partner Central every 3 hours (offset from referral sync) and surface in the Suger Console under a dedicated \"Lead\" filter, and in Salesforce via a \"Leads V2 (Suger)\" tab.",
+    alias: "Related: Inbound Referral, Referral",
+    source: "https://doc.suger.io/cosell/cosell-leads/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["Suger Users", "Partner Managers", "AWS Sales"],
+    useCases: [
+      "Qualifying an AWS-inbound co-sell Lead before it becomes a full co-sell opportunity",
+      "Filtering the Suger Console to Leads specifically to distinguish them from accepted Referrals",
+    ],
+    context: ["Suger Console", "AWS Partner Central", "Salesforce"],
+    related: [
+      { name: "Inbound Referral", slug: "inbound-referral" },
+      { name: "Referral", slug: "referral" },
+    ],
+  },
+  {
+    name: "Purchase Order Mapping — Azure",
+    tags: ["azure", "offers"],
+    def: "A Microsoft Marketplace capability that connects marketplace purchases to a customer's internal purchase order (PO) number, letting procurement teams track and reconcile marketplace spend against their own PO-based approval process. Announced September 2026 in Partner Center.",
+    alias: "AWS equivalent: Mandatory Purchase Orders — AWS",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-september#purchase-order-mapping-in-microsoft-marketplace",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["Enterprise Buyers", "Partner Managers"],
+    useCases: [
+      "Mapping a Microsoft Marketplace purchase to an internal PO number for spend tracking",
+      "Reconciling marketplace spend against procurement's own PO-based approval workflow",
+    ],
+    context: ["Microsoft Marketplace", "Partner Center"],
+    related: [
+      {
+        name: "Mandatory Purchase Orders — AWS",
+        slug: "mandatory-purchase-orders-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Solution Matching Engine — AWS",
+    tags: ["aws", "cosell"],
+    def: "An AWS Partner Central capability that uses machine learning to help AWS sellers identify the partner solutions and Marketplace listings most relevant to a specific customer opportunity. It combines Marketplace listing content (problems solved, use cases, integrated AWS services), verified credentials (AWS Specializations and Certifications), and ACE opportunity engagement signals — covering both software listings and Consulting Partner professional services — to rank partner solutions for a seller's search. Partners cannot query the engine directly; they improve their odds of surfacing by keeping ACE opportunity records current, credentials and certifications up to date, and Marketplace listings complete and outcome-focused. Global Startup Program partners get an additional dedicated visibility track called \"Startups You Should Know.\"",
+    alias:
+      "Related: Co-sell Recommendation Score — AWS, AWS Intelligence Signals — AWS, APN Customer Engagements (ACE) — AWS",
+    source:
+      "https://aws.amazon.com/blogs/apn/solution-matching-engine-your-gateway-to-aws-sellers/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales"],
+    useCases: [
+      "Keeping AWS Marketplace listings complete and outcome-focused so the Solution Matching Engine ranks them higher for relevant customer opportunities",
+      "Maintaining current ACE opportunity records and up-to-date AWS Specializations and Certifications to improve match visibility to AWS sellers",
+      "Checking the Global Startup Program's \"Startups You Should Know\" view for dedicated visibility outside the standard matching flow",
+    ],
+    context: [
+      "AWS Partner Central",
+      "AWS Marketplace",
+      "ACE (APN Customer Engagements)",
+      "Global Startup Program",
+    ],
+    related: [
+      {
+        name: "Co-sell Recommendation Score — AWS",
+        slug: "co-sell-recommendation-score-—-aws",
+      },
+      {
+        name: "AWS Intelligence Signals — AWS",
+        slug: "aws-intelligence-signals-—-aws",
+      },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Insulin Billing — Suger",
+    tags: ["suger"],
+    def: "Insulin's usage-based billing model — no seats, no subscription tiers. Six resources are metered: AI input tokens (including cached context), AI output tokens (including reasoning tokens), sandbox processor time, sandbox memory, sandbox storage (charged even while a sandbox is stopped, until it's deleted), and object storage (billed on the month's peak volume, not the end-of-month balance). Every organization draws from a monthly free credit allowance (typically $100) before purchased or Suger-granted credit, tracked under Settings → Billing alongside spend estimates, payment methods, and configurable limits. On pay-as-you-go plans, AI requests pause once the credit balance hits zero; monthly billing instead invoices consumption after the fact for committed usage.",
+    alias: "Related: Insulin, Usage Metering, Billable Metric",
+    source: "https://doc.suger.io/insulin/billing/overview/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["Suger Users", "ISVs / Sellers"],
+    useCases: [
+      "Monitoring credit balance, month-to-date spend, and payment methods in Settings → Billing before usage runs out",
+      "Choosing between pay-as-you-go credit purchases and monthly invoiced billing depending on whether Insulin usage is variable or committed",
+      "Deleting an idle sandbox rather than just stopping it, since storage charges continue to accrue until deletion",
+      "Planning around credit expiry order — monthly free credit is spent before purchased credit — when budgeting Insulin usage",
+    ],
+    context: ["Insulin", "Suger Console", "Billing Settings"],
+    related: [
+      { name: "Insulin", slug: "insulin" },
+      { name: "Usage Metering", slug: "usage-metering" },
+      { name: "Billable Metric", slug: "billable-metric" },
+    ],
+  },
+  {
+    name: "Salesforce App Leads — Suger",
+    tags: ["suger", "cosell", "integrations"],
+    def: "A tab within the Suger Salesforce App that surfaces AWS Partner Central leads — earlier-stage, inbound-only prospects distinct from ACE opportunities — read live from Suger rather than from backfilled records. Reps accept or reject an AWS invitation, progress a lead through five statuses (Open, Research, Qualified, Disqualified, Unqualified), and convert a qualified lead into a co-sell opportunity that follows the standard referral workflow, all without leaving Salesforce. Each lead carries AI-generated readiness scoring, solution-category and marketplace-engagement signals, and customer context (industry, segment, AWS maturity) sourced from AWS. Access requires a permission set granting AWS referral read/write; Marketplace-only or non-AWS co-sell permission sets can see the Leads tab but not its contents.",
+    alias:
+      "Related: Salesforce App, Co-sell Recommendation Score — AWS, APN Customer Engagements (ACE) — AWS",
+    source: "https://doc.suger.io/salesforce-app/salesforce-app-leads/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "AWS Sales", "Partner Managers"],
+    useCases: [
+      "Accepting or rejecting an AWS Partner Central lead invitation directly from the Salesforce Leads tab",
+      "Qualifying an inbound AWS lead through Open, Research, and Qualified status before converting it into a co-sell opportunity",
+      "Reviewing AI-generated readiness scores and marketplace-engagement signals on a lead before deciding whether to pursue it",
+    ],
+    context: [
+      "Salesforce",
+      "Suger Console",
+      "AWS Partner Central",
+      "Co-sell Workflows",
+    ],
+    related: [
+      { name: "Salesforce App", slug: "salesforce-app" },
+      {
+        name: "Co-sell Recommendation Score — AWS",
+        slug: "co-sell-recommendation-score-—-aws",
+      },
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+    ],
+  },
+  {
+    name: "HubSpot App Funding — Suger",
+    tags: ["suger", "funding", "integrations"],
+    def: "A feature of the Suger HubSpot App that lets partners submit an AWS MDF or POC funding application directly from a HubSpot deal, without needing a product configured in Suger — the only action on the Suger card with that exemption. Users select a program type (MDF for marketing activities, POC for technical evaluations) and a funding type (cash paid via invoice, or credit issued as promotional codes); the form then maps the HubSpot deal's fields onto the funding application automatically, flagging mismatches for manual correction. A dedicated Funding tab on the Suger card tracks every application raised from that deal, its status, AWS program type, external AWS identifier, and last update. The feature requires an AWS ACE (Partner Central) integration — there is no Azure or GCP equivalent.",
+    alias:
+      "Related: HubSpot App, Marketing Development Funds (MDF) — AWS, Proof of Concept (POC) Funding — AWS",
+    source: "https://doc.suger.io/hubspot-app/hubspot-app-funding/",
+    difficulty: "intermediate",
+    category: "funding",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Submitting an AWS MDF or POC funding request from an existing HubSpot deal without first creating a product in Suger",
+      "Tracking every funding application raised against a deal, its status, and its AWS program type from the Funding tab on the Suger card",
+      "Choosing between cash (invoiced) and credit (promotional code) funding types before mapping a HubSpot deal onto the application form",
+    ],
+    context: ["HubSpot", "Suger Console", "AWS Partner Central", "APN Funding"],
+    related: [
+      { name: "HubSpot App", slug: "hubspot-app" },
+      {
+        name: "Marketing Development Funds (MDF) — AWS",
+        slug: "marketing-development-funds-mdf-—-aws",
+      },
+      {
+        name: "Proof of Concept (POC) Funding — AWS",
+        slug: "proof-of-concept-poc-funding-—-aws",
+      },
+    ],
+  },
+  {
+    name: "PRM Partner Events — Suger",
+    tags: ["suger"],
+    def: "A Suger PRM feature that lets partner managers publish webinars, certification/training sessions, in-person field events, and general calendar events to their partner network and track RSVP responses. Managers with Admin or Editor roles publish an event immediately (there is no draft stage) to all partners, specific partners, or partners within a given tier, optionally capping attendance with an RSVP limit that stops accepting responses once reached. Partners see only events shared with them and respond Attending or Decline from a read-only view in their portal; declines release any reserved capacity without appearing on the attendance roster.",
+    alias:
+      "Related: Partner Relationship Management (PRM) — Suger, PRM Journeys — Suger, Partner Portal — Suger",
+    source: "https://doc.suger.io/prm/partner-events/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["Partner Managers", "Channel Partners", "Suger Users"],
+    useCases: [
+      "Publishing a webinar or certification session to all partners, a specific tier, or hand-picked partners from a single event form",
+      "Capping an in-person field event's RSVP capacity so it stops accepting responses once full",
+      "Reviewing an event's attendance roster to see which partners confirmed before the session runs",
+    ],
+    context: ["Suger PRM Portal", "Partner Portal", "Partner Enablement"],
+    related: [
+      {
+        name: "Partner Relationship Management (PRM) — Suger",
+        slug: "partner-relationship-management-prm-—-suger",
+      },
+      { name: "PRM Journeys — Suger", slug: "prm-journeys-—-suger" },
+      { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
+    ],
+  },
+  {
+    name: "PRM Partner Views — Suger",
+    tags: ["suger"],
+    def: "A Suger PRM design system that lets organizations customize the Partner Overview — the default landing page a partner sees inside their portal — instead of using a fixed layout. Admins author reusable content blocks (rich text, tables, media galleries) in a content library, then combine them with built-in cards (Commissions, At a Glance, Revenue by Channel, and others) in a drag-and-drop template editor supporting 1-, 2-, or 4-column layouts; any block can be reordered, resized, hidden from partners, or removed. Templates are assigned to specific partners, with one designated as the organization-wide default, so different partner segments can see a different Overview page without separate portal instances.",
+    alias:
+      "Related: Partner Relationship Management (PRM) — Suger, Partner Portal — Suger, PRM Journeys — Suger",
+    source: "https://doc.suger.io/prm/customize-the-partner-overview/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["Partner Managers", "Suger Users"],
+    useCases: [
+      "Building a custom Partner Overview template with a drag-and-drop editor instead of using the default fixed layout",
+      "Assigning a different Partner Overview template to a specific partner segment while keeping an organization-wide default for everyone else",
+      "Hiding or resizing built-in cards like Commissions or Revenue by Channel on a partner's landing page",
+    ],
+    context: ["Suger PRM Portal", "Partner Portal", "Partner Enablement"],
+    related: [
+      {
+        name: "Partner Relationship Management (PRM) — Suger",
+        slug: "partner-relationship-management-prm-—-suger",
+      },
+      { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
+      { name: "PRM Journeys — Suger", slug: "prm-journeys-—-suger" },
     ],
   },
 ];
