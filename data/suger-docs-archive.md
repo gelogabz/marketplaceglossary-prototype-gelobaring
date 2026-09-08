@@ -2,6 +2,13 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 09/08/2026 — 2 added pages
+
+```diff
++ [Api › Adjust Entitlement Renewal Uplift](https://doc.suger.io/api/adjust-entitlement-renewal-uplift/)
++ [Api › Opt Out Entitlement Renewal](https://doc.suger.io/api/opt-out-entitlement-renewal/)
+```
+
 ## 09/03/2026 — 1 added page
 
 ```diff
