@@ -63,6 +63,17 @@ export const linkSections = [
     platformTag: "aws",
     links: [
       {
+        title: "AWS Marketplace (browse)",
+        url: "https://aws.amazon.com/marketplace/",
+        type: "portal",
+        desc: "The public-facing storefront where buyers discover and subscribe to SaaS, AMI, container, and data listings. Useful for checking how your listing appears to buyers.",
+        confusesWith: {
+          otherTitle: "AWS Marketplace Seller Central",
+          otherUrl: "https://aws.amazon.com/marketplace/management/",
+          note: "The storefront is where buyers browse and subscribe. Seller Central is where ISVs manage products and review payment status — sellers work in Seller Central, buyers shop at the storefront.",
+        },
+      },
+      {
         title: "AWS Marketplace Seller Central",
         url: "https://aws.amazon.com/marketplace/management/",
         type: "portal",
@@ -139,6 +150,17 @@ export const linkSections = [
     platformTag: "azure",
     links: [
       {
+        title: "Microsoft Marketplace (browse)",
+        url: "https://marketplace.microsoft.com/",
+        type: "portal",
+        desc: "The public-facing storefront (formerly Azure Marketplace, renamed September 2025) where buyers discover and purchase SaaS, VM, AI agent, and AppSource offers. Useful for checking how your listing appears to buyers.",
+        confusesWith: {
+          otherTitle: "Microsoft Partner Center",
+          otherUrl: "https://partner.microsoft.com/",
+          note: "The storefront is where buyers browse and buy. Partner Center is where ISVs manage listings, co-sell referrals, and incentive payouts — sellers work in Partner Center, buyers shop at the storefront.",
+        },
+      },
+      {
         title: "Microsoft Partner Center",
         url: "https://partner.microsoft.com/",
         type: "portal",
@@ -191,6 +213,17 @@ export const linkSections = [
     platform: "GCP",
     platformTag: "gcp",
     links: [
+      {
+        title: "Google Cloud Marketplace (browse)",
+        url: "https://console.cloud.google.com/marketplace",
+        type: "portal",
+        desc: "The public-facing storefront where buyers discover and deploy SaaS, VM, AI agent, and Kubernetes app listings, and where qualifying purchases can draw down against a customer's Google Cloud commitment. Useful for checking how your listing appears to buyers.",
+        confusesWith: {
+          otherTitle: "GCP Producer Portal",
+          otherUrl: "https://console.cloud.google.com/producer-portal",
+          note: "The storefront is where buyers browse and deploy. The Producer Portal is where sellers manage listings, pricing, and private offers — sellers work in the Producer Portal, buyers shop at the storefront.",
+        },
+      },
       {
         title: "GCP Producer Portal",
         url: "https://console.cloud.google.com/producer-portal",
