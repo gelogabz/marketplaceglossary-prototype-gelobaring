@@ -2,6 +2,13 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 09/11/2026 — 2 added pages
+
+```diff
++ [Api › Download Support Ticket Attachment](https://doc.suger.io/api/download-support-ticket-attachment/)
++ [Api › Update Product Targeting](https://doc.suger.io/api/update-product-targeting/)
+```
+
 ## 09/08/2026 — 2 added pages
 
 ```diff
