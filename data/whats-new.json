@@ -1,6 +1,28 @@
 {
-  "lastUpdated": "2026-09-11T10:11:36.279Z",
+  "lastUpdated": "2026-09-12T09:45:59.970Z",
   "updates": [
+    {
+      "id": "aws-2026-09-11-from-weeks-to-hours-how-a-uk-energy-retailer-trans",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-09-11",
+      "title": "From weeks to hours: How a UK energy retailer transformed residential pricebooks with Gorilla on AWS",
+      "summary": "Learn how a major UK energy retailer partnered with Gorilla, an AWS Partner, to transform its residential pricebook process from a 10 to 14 day manual workflow into an automated, cloud-native solution that delivers updated pricing in under one hour, achieving a 95% reduction in …",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/apn/from-weeks-to-hours-how-a-uk-energy-retailer-transformed-residential-pricebooks-with-gorilla-on-aws/",
+      "impact": "medium"
+    },
+    {
+      "id": "oracle-2026-09-11-export-marketplace-customer-instance-reports-as-cs",
+      "platform": "Oracle",
+      "platformTag": "oracle",
+      "date": "2026-09-11",
+      "title": "Export Marketplace Customer Instance Reports as CSV",
+      "summary": "Export Marketplace Customer Instance Reports as CSV",
+      "type": "release",
+      "sourceUrl": "https://docs.oracle.com/iaas/releasenotes/marketplace/customer-instance-report-csv-export.htm",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-09-10-implementing-saas-subscription-pricing-models-in-a",
       "platform": "AWS",
@@ -65,6 +87,17 @@
       "summary": "Nubank, one of the world’s largest digital banks, runs entirely on AWS while serving 119 million customers. Nubank achieved over $15 million in verified annualized savings by partnering with PointFive and using Amazon DynamoDB pricing economics.",
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/how-nubank-saved-15m-on-amazon-dynamodb-costs-with-pointfive/",
+      "impact": "low"
+    },
+    {
+      "id": "aws-2026-09-09-aws-marketplace-sellers-now-receive-qualified-demo",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-09-09",
+      "title": "AWS Marketplace sellers now receive qualified demo and private offer requests in minutes",
+      "summary": "AWS Marketplace sellers that activated the request demo or request private offer call-to-action buttons on their listings can now act on customer requests within minutes of submission, while customers are still actively evaluating their products.",
+      "type": "release",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-marketplace-demo-private-offer-requests-qualification",
       "impact": "low"
     },
     {
