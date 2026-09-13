@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-09-07";
+export const lastReviewed = "2026-09-14";
 
 export const terms = [
   {
@@ -1810,9 +1810,9 @@ export const terms = [
   {
     name: "Organization",
     tags: ["suger"],
-    def: "The top-level account in Suger representing your company. All Products, Offers, Entitlements, and Buyers are scoped to your Organization.",
+    def: "The top-level account in Suger representing your company — every Product, Offer, Entitlement, and Buyer is scoped to it, and every user must belong to at least one Organization. New Organizations require approval from Suger Support before becoming active. The user who creates an Organization is assigned the ADMIN role by default, and the Organization's email domain is inherited from that user — only teammates sharing that domain can be invited.",
     alias: "Related: Role-Based Access Control (RBAC), Suger Console",
-    source: "https://doc.suger.io/get-started/",
+    source: "https://doc.suger.io/get-started/account/#organization",
     difficulty: "beginner",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -2187,7 +2187,7 @@ export const terms = [
   {
     name: "Referral",
     tags: ["cosell", "suger"],
-    def: "A shared sales opportunity in a co-sell workflow. Can be outbound (ISV shares with cloud partner) or inbound (cloud partner shares with ISV). Managed in Suger with status tracking and CRM sync.",
+    def: "A shared sales opportunity in a co-sell workflow. Can be outbound (ISV shares with cloud partner) or inbound (cloud partner shares with ISV). Managed in Suger with status tracking and CRM sync. As of August 2026, unlinked referrals can also be bulk-matched to CRM opportunities via an automated pass that compares account website and name, sorting results into high-confidence matches, needs-review, and no-match.",
     alias: "Related: Inbound Referral, Outbound Referral, Co-sell",
     source: "https://doc.suger.io/cosell/",
     difficulty: "beginner",
@@ -3443,7 +3443,7 @@ export const terms = [
     group: "cloud-partner-funding",
     def: "AWS co-marketing funding provided to partners to offset demand generation costs — events, campaigns, digital ads, content creation, etc. Partners are reimbursed up to 50% of eligible expenses after submitting proof of performance (receipts). Can also be issued as AWS Promotional Credits. Requested via the AWS Partner Funding Portal. Requires an Amazon Payee Central account for cash disbursement. MDF can stack on top of Strategic Collaboration Agreement (SCA) — AWS benefits.",
     alias:
-      "Related: AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Partner Opportunity Acceleration (POA) — AWS, Partner Initiative Funding (PIF) — AWS",
+      "Related: AWS Partner Funding — AWS, Partner Opportunity Acceleration (POA) — AWS, Partner Initiative Funding (PIF) — AWS",
     source: "https://aws.amazon.com/partners/funding/",
     difficulty: "intermediate",
     category: "cosell",
@@ -3459,7 +3459,6 @@ export const terms = [
     ],
     related: [
       { name: "AWS Partner Funding — AWS", slug: "aws-partner-funding-—-aws" },
-      { name: "Plan of Action (POA) — AWS", slug: "plan-of-action-poa-—-aws" },
       {
         name: "Strategic Collaboration Agreement (SCA) — AWS",
         slug: "strategic-collaboration-agreement-sca-—-aws",
@@ -3620,7 +3619,8 @@ export const terms = [
     def: "An AWS funding type tied to specific partner agreement-based initiatives. The PIF template in the AWS Partner Funding Portal lets eligible partners self-access their initiative funds without requiring their AWS Partner Manager to be involved in every request — reducing friction and accelerating time-to-funding.",
     alias:
       "Related: AWS Partner Funding — AWS, Marketing Development Funds (MDF) — AWS, AWS Partner Funding Portal (APFP) — AWS",
-    source: "https://aws.amazon.com/partners/funding/",
+    source:
+      "https://aws.amazon.com/blogs/apn/introducing-the-new-aws-partner-initiative-funding-template/",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -3795,52 +3795,19 @@ export const terms = [
     ],
   },
   {
-    name: "Plan of Action (POA) — AWS",
-    tags: ["aws", "cosell"],
-    def: "A document AWS partners submit alongside MDF fund requests outlining the marketing activity, timeline, expected outcomes, and budget breakdown. Required for MDF claims.",
-    alias:
-      "Related: Marketing Development Funds (MDF) — AWS | See also: Partner Opportunity Acceleration (POA) — AWS",
-    source: "https://aws.amazon.com/partners/funding/",
-    difficulty: "beginner",
-    category: "cosell",
-    whoFor: ["ISVs / Sellers", "Partner Managers"],
-    useCases: [
-      "Drafting a Plan of Action document with marketing activity details, timeline, and budget to accompany an MDF fund request",
-      "Distinguishing the POA (MDF documentation requirement) from Partner Opportunity Acceleration (POA), which share the same acronym",
-    ],
-    context: [
-      "AWS Partner Funding Portal",
-      "MDF Claims",
-      "AWS Partner Central",
-    ],
-    related: [
-      {
-        name: "Marketing Development Funds (MDF) — AWS",
-        slug: "marketing-development-funds-mdf-—-aws",
-      },
-      {
-        name: "Partner Opportunity Acceleration (POA) — AWS",
-        slug: "partner-opportunity-acceleration-poa-—-aws",
-      },
-      {
-        name: "AWS Partner Funding Portal (APFP) — AWS",
-        slug: "aws-partner-funding-portal-apfp-—-aws",
-      },
-    ],
-  },
-  {
     name: "Partner Opportunity Acceleration (POA) — AWS",
     tags: ["aws", "cosell", "funding"],
     group: "cloud-partner-funding",
-    def: "AWS funding program providing cash reimbursement or promotional credits to accelerate proof-of-concept and migration projects. Available to APN Select tier and above via the AWS Partner Funding Portal. Partners must apply POA benefits to reduce customer costs — benefits may not be retained as additional partner margin. Requires an Amazon Payee Central account.",
+    def: "AWS funding program providing cash reimbursement or promotional credits to accelerate proof-of-concept and migration projects. Available to Select tier partners and above via the AWS Partner Funding Portal. Partners must apply POA benefits to reduce customer costs — benefits may not be retained as additional partner margin. Requires an Amazon Payee Central account.",
     alias:
-      "Related: Proof of Concept (POC) Funding — AWS, Migration Acceleration Program (MAP) — AWS, AWS Partner Funding — AWS, Plan of Action (POA) — AWS, Amazon Payee Central — AWS",
-    source: "https://aws.amazon.com/partners/funding/",
+      "Related: Proof of Concept (POC) Funding — AWS, Migration Acceleration Program (MAP) — AWS, AWS Partner Funding — AWS, Amazon Payee Central — AWS | Not to be confused with: CMMC Plan of Action & Milestones (POA&M), an unrelated cybersecurity compliance artifact that shares the same acronym",
+    source:
+      "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-funding.html",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
     useCases: [
-      "Applying for POA cash reimbursement or credits to offset POC or migration project costs at APN Select tier or above",
+      "Applying for POA cash reimbursement or credits to offset POC or migration project costs at Select tier or above",
       "Ensuring POA funding benefits are applied to reduce customer costs — not retained as partner margin — when submitting a POA claim",
     ],
     context: [
@@ -4744,7 +4711,7 @@ export const terms = [
   {
     name: "OpenAI Integration",
     tags: ["suger", "integrations"],
-    def: "Suger's connection to OpenAI via API key. Enables AI-powered features within Suger — such as workflow automation, intelligent suggestions, and natural language processing — billed at cost directly to the ISV's OpenAI account.",
+    def: "Suger's connection to OpenAI via API key, available at two levels: Org-Level (org-wide GPT model access) and User-Level (personal Codex access for individual developers). Enables AI-powered features within Suger — such as workflow automation, intelligent suggestions, and natural language processing — billed at cost directly to the ISV's (or individual's) OpenAI account.",
     alias: "Related: Google Gemini Integration, Anthropic Integration",
     source: "https://doc.suger.io/integrations/openai/",
     difficulty: "intermediate",
@@ -5031,19 +4998,23 @@ export const terms = [
   {
     name: "Partner Relationship Management (PRM) System",
     tags: ["suger", "general", "cosell", "aws", "azure", "gcp"],
-    def: "A platform that helps companies recruit, onboard, enable, and manage partners, while supporting collaboration, deal tracking, and performance across the partner lifecycle. Suger extends traditional PRM by acting as the execution layer for cloud marketplace and co-sell workflows—automating CPPOs, syncing CRM deal data to AWS, Azure, and GCP, and enabling partners to transact and track deals in a unified system.",
+    def: "A platform that helps companies recruit, onboard, enable, and manage partners, while supporting collaboration, deal tracking, commission and payout automation, and partner performance analytics across the partner lifecycle. A PRM system typically centers on deal registration (partners submit deals without needing full portal access), a branded partner portal, and built-in training/certification tools, distinguishing it from a general-purpose CRM.",
     alias:
-      "Related: Value Added Reseller (VAR), Global System Integrator (GSI), Learning Management System (LMS) — Suger, CRM Enrichment, Co-sell",
-    source: "https://doc.suger.io/get-started/",
+      "Related: Partner Relationship Management (PRM) — Suger, Value Added Reseller (VAR), Global System Integrator (GSI), Learning Management System (LMS) — Suger, CRM Enrichment, Co-sell",
+    source: "https://www.suger.io/prm/",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Partner Managers"],
     useCases: [
-      "Understanding how Suger extends traditional PRM to execute cloud marketplace and co-sell workflows — not just track pipeline",
-      "Positioning Suger as the execution layer that connects partner management (CPPOs, referrals, deals) to marketplace transactions",
+      "Evaluating a PRM system's deal registration and commission-automation capabilities against a channel program's existing spreadsheet-and-CRM-plugin workflow",
+      "Distinguishing a dedicated PRM platform from a general-purpose CRM by its built-in partner portal, training/certification tools, and payout automation",
     ],
     context: ["Partner Ecosystem", "Cloud GTM Strategy", "Co-sell Programs"],
     related: [
+      {
+        name: "Partner Relationship Management (PRM) — Suger",
+        slug: "partner-relationship-management-prm-—-suger",
+      },
       { name: "CRM Integration", slug: "crm-integration" },
       { name: "Co-sell", slug: "co-sell" },
     ],
@@ -10728,7 +10699,7 @@ export const terms = [
   {
     name: "Learning Management System (LMS) — Suger",
     tags: ["suger"],
-    def: "A partner enablement module built into Suger PRM that lets ISVs build training courses directly in Suger's editor — modules, lessons, and quizzes — or import existing content as SCORM 1.2 or SCORM 2004 packages. Courses can be shared with every active partner organization, a hand-picked subset, or kept private, and can optionally award a certificate that stays locked until every lesson is marked complete. Progress is tracked per course and per partner (Not Started, In Progress, Completed, Failed) for reporting and compliance visibility.",
+    def: "A partner enablement module built into Suger PRM that lets ISVs build training courses directly in Suger's editor — modules, lessons, and quizzes — or import existing content as SCORM 1.2 or SCORM 2004 packages. Courses can be shared with every active partner organization, a hand-picked subset, or kept private, and can optionally award a certificate that stays locked until every lesson is marked complete. Progress is tracked per course and per partner (Not Started, In Progress, Completed, Failed) for reporting and compliance visibility. As of September 2026, courses can also point to externally-hosted training content, version-pinned the same way as a SCORM package, with automatic partner sign-in.",
     alias:
       "Related: SCORM, Partner Portal — Suger, Partner Tiering — Suger, Partner Relationship Management (PRM) System",
     source: "https://doc.suger.io/prm/build-a-training-course/",
@@ -13206,6 +13177,67 @@ export const terms = [
       { name: "Partner Portal — Suger", slug: "partner-portal-—-suger" },
       { name: "PRM Journeys — Suger", slug: "prm-journeys-—-suger" },
     ],
+  },
+  {
+    name: "Qualified Demo & Private Offer Requests — AWS",
+    tags: ["aws", "offers"],
+    def: "An AWS Marketplace feature where buyer-initiated 'request a demo' and 'request a private offer' actions on a listing route through an agentic qualification workflow, delivering a qualified seller opportunity within minutes instead of requiring an AWS representative to manually triage each request first. Distinct from an ACE opportunity — this flow is buyer-initiated from a listing page, not partner-sourced through AWS Partner Central.",
+    alias: "Related: APN Customer Engagements (ACE) — AWS, Solution Matching Engine — AWS",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-marketplace-demo-private-offer-requests-qualification/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Receiving a pre-qualified demo or private offer request from a buyer within minutes of them submitting it on a listing page",
+      "Distinguishing buyer-initiated qualified requests from partner-sourced ACE co-sell opportunities when triaging pipeline",
+    ],
+    context: ["AWS Marketplace", "AWS Marketplace Seller Central"],
+    related: [
+      {
+        name: "APN Customer Engagements (ACE) — AWS",
+        slug: "apn-customer-engagements-ace-—-aws",
+      },
+      {
+        name: "Solution Matching Engine — AWS",
+        slug: "solution-matching-engine-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Co-sell Board View — Suger",
+    tags: ["suger", "cosell"],
+    def: "A kanban-style visualization of the Suger co-sell pipeline, shown alongside the existing list view. Columns are drawn from real co-sell pipeline stages, using the same underlying query, search, and filters as the list view, with drag-and-drop stage management and optimistic concurrency checks to prevent conflicting simultaneous updates.",
+    alias: "Related: Referral, Co-sell",
+    source: "https://www.suger.io/resources/changelog/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Dragging a referral between pipeline stages on the co-sell board instead of editing its status from the list view",
+      "Getting a visual, column-based read on co-sell pipeline distribution across stages at a glance",
+    ],
+    context: ["Suger Console", "Co-sell Pipeline"],
+    related: [
+      { name: "Referral", slug: "referral" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
+  },
+  {
+    name: "Product Tagging — Suger",
+    tags: ["suger"],
+    def: "A Suger Console feature for attaching custom tags to products, with tag-coverage displays showing which products across which cloud providers share a given tag. Automatic contact routing can be configured to direct product-related activity to the right internal contacts based on a product's tags.",
+    alias: "Related: Product",
+    source: "https://www.suger.io/resources/changelog/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Tagging products to see coverage at a glance across AWS, Azure, GCP, and other connected cloud providers",
+      "Configuring automatic contact routing so product-related activity reaches the right internal team based on its tags",
+    ],
+    context: ["Suger Console"],
+    related: [{ name: "Product", slug: "product" }],
   },
 ];
 
