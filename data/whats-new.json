@@ -1,15 +1,92 @@
 {
-  "lastUpdated": "2026-09-13T10:46:37.246Z",
+  "lastUpdated": "2026-09-14T11:12:50.948Z",
   "updates": [
+    {
+      "id": "suger-2026-09-13-prm-finding-the-partners-you-already-have-data-abo",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "PRM Finding the Partners You Already Have Data About Most partner discovery starts with a directory of companies you hav",
+      "summary": "PRM Finding the Partners You Already Have Data About Most partner discovery starts with a directory of companies you have no relationship with. The better starting point is the relationship data already sitting in your own account. Sep 13, 2026 Read article",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/finding-partners-you-already-have/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-prm-partner-certifications-that-expire-and-why-the",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "PRM Partner Certifications That Expire, and Why They Should A certificate with no expiry is a claim about who someone wa",
+      "summary": "PRM Partner Certifications That Expire, and Why They Should A certificate with no expiry is a claim about who someone was two years ago. Validity and renewal rules are what make partner certification mean something to a customer. Sep 13, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/partner-certifications-that-expire/",
+      "impact": "low"
+    },
     {
       "id": "suger-2026-09-13-cloud-gtm-what-marketplace-data-lands-in-hubspot-a",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-09-13",
       "title": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Suger app puts offers, entitlements, co-sell and ",
-      "summary": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Suger app puts offers, entitlements, co-sell and AWS funding on the HubSpot deal — but not everything belongs on a deal, and two of the boundaries surprise people. Sep 13, 2026 Read article",
+      "summary": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Suger app puts offers, entitlements, co-sell and AWS funding on the HubSpot deal — but not everything belongs on a deal, and two of the boundaries surprise people. Sep 13, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-data-in-hubspot/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-prm-the-four-ways-to-pay-a-partner-and-when-each-f",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "PRM The Four Ways to Pay a Partner, and When Each Fits Referral fee, reseller margin, co-sell revenue split, finder's fe",
+      "summary": "PRM The Four Ways to Pay a Partner, and When Each Fits Referral fee, reseller margin, co-sell revenue split, finder's fee. Most partner programs need more than one, and picking the wrong one is how a partner stops sending deals. Sep 13, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/partner-commission-plans/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-prm-your-partners-are-already-in-salesforce-use-th",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "PRM Your Partners Are Already in Salesforce. Use Them. Most partner programs start by re-typing companies that already e",
+      "summary": "PRM Your Partners Are Already in Salesforce. Use Them. Most partner programs start by re-typing companies that already exist in the CRM. A filter on the object you already store partners in does the same job and stays current. Sep 13, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/partners-already-in-salesforce/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-insulin-disable-or-disconnect-what-happens-to-your",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "Insulin: Disable or Disconnect: What Happens to Your Mail",
+      "summary": "One pauses processing and keeps everything. The other permanently deletes what was stored and clears your writing style. They sit next to each other.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/disable-or-disconnect-a-mailbox/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-insulin-where-the-approval-gate-is-armed-and-where",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "Insulin: Where the Approval Gate Is Armed, and Where It Isn't",
+      "summary": "The tool-approval card is a guardrail on one surface, not a workspace-wide guarantee. Knowing which surface is the difference between a control and a belief.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/where-the-approval-gate-is-armed/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-insulin-which-events-actually-run-a-job-and-which-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "Insulin: Which Events Actually Run a Job, and Which Get Filtered",
+      "summary": "A job with no filter runs on every event it receives. A filter expression is what turns a firehose into an automation, and skipped runs are recorded rather than lost.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/which-events-actually-run-a-job/",
       "impact": "low"
     },
     {
@@ -21,6 +98,17 @@
       "summary": "Insulin names the reason it stopped, because each one has a different fix. Adding credit will not clear a limit you set yourself — and that is the most common wasted support ticket.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/why-ai-is-paused/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-insulin-writing-an-email-rule-in-plain-english",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "Insulin: Writing an Email Rule in Plain English",
+      "summary": "Two fields, one of them optional. You describe what should happen and Save does the rest — and when the model is unavailable, Save fails rather than writing a rule that matches everything.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/writing-an-email-rule-in-plain-english/",
       "impact": "low"
     },
     {
@@ -475,17 +563,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-27-insulin-the-ai-agent-sandbox-test-before-productio",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-27",
-      "title": "Insulin: The AI Agent Sandbox: Test Before Production",
-      "summary": "Knowing what to test is half the problem. The other half is where — because an agent's first real write should not land in the system your business runs on.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-sandbox-before-production/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-27-insulin-a-90-day-enterprise-ai-adoption-plan-that-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -494,6 +571,17 @@
       "summary": "Ninety days is enough to get real work running on AI, and not enough to boil the ocean. A three-phase plan with a gate at the end of each one.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/90-day-enterprise-ai-adoption-plan/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-27-insulin-the-ai-agent-sandbox-test-before-productio",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-27",
+      "title": "Insulin: The AI Agent Sandbox: Test Before Production",
+      "summary": "Knowing what to test is half the problem. The other half is where — because an agent's first real write should not land in the system your business runs on.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-sandbox-before-production/",
       "impact": "low"
     },
     {
@@ -750,17 +838,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-24-insulin-ai-agents-for-procurement-intake-to-approv",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: AI Agents for Procurement: Intake to Approval",
-      "summary": "Procurement is document-heavy, cross-functional, and accountable — a strong fit for agents, with a hard line agents must not cross. Where they help, and where they can't.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-agents-for-procurement/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-24-insulin-building-an-ai-center-of-excellence-that-s",
       "platform": "Suger",
       "platformTag": "suger",
@@ -769,39 +846,6 @@
       "summary": "Most AI Centers of Excellence become a committee that ships slide decks. How to build one that business teams actually use — light on governance, heavy on reuse.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/ai-center-of-excellence/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-24-insulin-how-to-build-an-ai-executive-briefing-agen",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: How to Build an AI Executive-Briefing Agent",
-      "summary": "A daily brief a leader can trust has to be current, concise, and sourced. How to build one as a scheduled AI job that cites every claim it makes.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-executive-briefing-agent/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-24-insulin-byok-vs-managed-models-for-enterprise-ai",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: BYOK vs Managed Models for Enterprise AI",
-      "summary": "Use the platform's models, or bring your own provider keys? The trade is cost, control, and data path. How to decide, and what changes either way.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/byok-vs-managed-models-for-enterprise-ai/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-24-insulin-how-to-design-human-handoffs-for-ai-agents",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: How to Design Human Handoffs for AI Agents",
-      "summary": "Safe autonomy isn't an agent that never stops — it's one that stops well. How to design the moment an AI agent hands work back to a person.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/designing-human-handoffs-for-ai-agents/",
       "impact": "low"
     },
     {

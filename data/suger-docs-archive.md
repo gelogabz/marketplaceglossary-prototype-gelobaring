@@ -2,6 +2,14 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 09/14/2026 — 3 added pages
+
+```diff
++ [Aws Marketplace › Pre Authorized Auto Renewal](https://doc.suger.io/aws-marketplace/pre-authorized-auto-renewal/)
++ [Hubspot App › Hubspot App Entitlements](https://doc.suger.io/hubspot-app/hubspot-app-entitlements/)
++ [Prm › Connect An External Lms](https://doc.suger.io/prm/connect-an-external-lms/)
+```
+
 ## 09/11/2026 — 2 added pages
 
 ```diff
