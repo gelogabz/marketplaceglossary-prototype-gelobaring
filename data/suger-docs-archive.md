@@ -2,6 +2,12 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 09/19/2026 — 1 added page
+
+```diff
++ [Metering › Billing Integrations](https://doc.suger.io/metering/billing-integrations/)
+```
+
 ## 09/18/2026 — 1 added page, 1 removed page
 
 ```diff
