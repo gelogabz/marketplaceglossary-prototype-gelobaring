@@ -1,6 +1,116 @@
 {
-  "lastUpdated": "2026-09-19T09:55:29.050Z",
+  "lastUpdated": "2026-09-20T10:16:33.183Z",
   "updates": [
+    {
+      "id": "suger-2026-09-19-aws-aws-marketplace-request-private-offer-who-answ",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "AWS AWS Marketplace Request Private Offer: Who Answers? An AWS Marketplace request reaches Partner Central as an opportu",
+      "summary": "AWS AWS Marketplace Request Private Offer: Who Answers? An AWS Marketplace request reaches Partner Central as an opportunity or a lead, with five business days to answer. Where each one lands, and who answers. Sep 19, 2026 Read article",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-private-offer-requests/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-aws-aws-marketplace-private-offer-errors-why-a-buy",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "AWS AWS Marketplace Private Offer Errors: Why a Buyer Can't Accept Most AWS private offers that stall at acceptance don'",
+      "summary": "AWS AWS Marketplace Private Offer Errors: Why a Buyer Can't Accept Most AWS private offers that stall at acceptance don't need a new offer. The error the buyer sees says what broke, and who has to fix it. Sep 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/buyer-cannot-accept-aws-private-offer/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-aws-what-the-deployed-on-aws-badge-proves-and-what",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "AWS What the Deployed on AWS Badge Proves, and What It Doesn't The Deployed on AWS badge settles where your product runs",
+      "summary": "AWS What the Deployed on AWS Badge Proves, and What It Doesn't The Deployed on AWS badge settles where your product runs. Whether a purchase counts toward a buyer's AWS commitment is a separate question, answered deal by deal. Sep 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/deployed-on-aws-badge/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-azure-microsoft-resale-enabled-offers-vs-mpo-who-p",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "Azure Microsoft Resale Enabled Offers vs MPO: Who Pays You A resale enabled offer lets one Microsoft partner price and s",
+      "summary": "Azure Microsoft Resale Enabled Offers vs MPO: Who Pays You A resale enabled offer lets one Microsoft partner price and sell your product without you in each deal. Microsoft pays the partner; the partner pays you. Sep 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/microsoft-resale-enabled-offers-vs-mpo/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-marketplaces-cloud-marketplace-purchase-orders-who",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "Marketplaces Cloud Marketplace Purchase Orders: Who Sets the PO Your buyer's AP won't pay without a PO on the invoice. O",
+      "summary": "Marketplaces Cloud Marketplace Purchase Orders: Who Sets the PO Your buyer's AP won't pay without a PO on the invoice. On AWS, Microsoft and Google Cloud only the buyer can add one. Here is where, and what to send. Sep 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/purchase-order-numbers-on-cloud-marketplaces/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-insulin-ai-model-allowlist-which-vendors-see-your-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "Insulin: AI Model Allowlist: Which Vendors See Your Prompts",
+      "summary": "An AI model allowlist decides which providers may serve your prompts. In Insulin it fails closed — and one missing row removes Suger's hosted models.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-model-allowlist/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-insulin-does-an-ai-email-assistant-store-your-emai",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "Insulin: Does an AI Email Assistant Store Your Email?",
+      "summary": "Not the message body: Insulin fetches it live from Gmail or Outlook and never stores it. What it does keep is a short, exact list, and it is not nothing.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/does-an-ai-email-assistant-store-your-email/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-insulin-edit-what-your-ai-assistant-remembers-abou",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "Insulin: Edit What Your AI Assistant Remembers About You",
+      "summary": "How to edit what your AI assistant remembers in Insulin: where memories sit, how corrections work, what Clear All removes, and why wording decides recall.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/edit-what-your-ai-assistant-remembers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-insulin-scheduled-ai-job-not-running-where-to-look",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "Insulin: Scheduled AI Job Not Running? Where to Look First",
+      "summary": "A scheduled AI job that didn't fire at 09:00 usually says why on its own page: the badge, the Next timestamp, a run status, or the Steps transcript.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/why-a-scheduled-ai-job-did-not-run/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-insulin-least-privilege-for-ai-built-apps-whose-ac",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "Insulin: Least Privilege for AI-Built Apps: Whose Account?",
+      "summary": "Sharing an AI-built app settles who can open it, not whose accounts it spends. Its Salesforce and Slack calls run as the organization, never the runner.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/least-privilege-for-ai-built-apps/",
+      "impact": "low"
+    },
     {
       "id": "azure-2026-09-18-reminder-check-inventory-api-retiring-september-25",
       "platform": "Azure",
@@ -68,12 +178,34 @@
       "impact": "medium"
     },
     {
+      "id": "suger-2026-09-14-suger-as-of-sep-14-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-14",
+      "title": "Suger: As of Sep 14, 2026",
+      "summary": "An organization can now connect more than one AWS Marketplace seller account. Add the next account from the AWS Marketplace card on the Integrations page, choose which account is the default, and pick the account when you list a product; each product, offer and entitlement stays…",
+      "type": "release",
+      "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-09-14",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-09-14-insulin-as-of-sep-14-2026",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-14",
+      "title": "Insulin: As of Sep 14, 2026",
+      "summary": "Custom Apps now start from least privilege. A newly added integration has no sensitivity tier ticked until you choose the tiers its actions need, and an integration with no tiers grants nothing; apps saved under the old reading, where no tiers meant all of them, were moved to th…",
+      "type": "release",
+      "sourceUrl": "https://www.insulin.dev/changelog/#release-2026-09-14",
+      "impact": "medium"
+    },
+    {
       "id": "suger-2026-09-13-prm-finding-the-partners-you-already-have-data-abo",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-09-13",
       "title": "PRM Finding the Partners You Already Have Data About Most partner discovery starts with a directory of companies you hav",
-      "summary": "PRM Finding the Partners You Already Have Data About Most partner discovery starts with a directory of companies you have no relationship with. The better starting point is the relationship data already sitting in your own account. Sep 13, 2026 Read article",
+      "summary": "PRM Finding the Partners You Already Have Data About Most partner discovery starts with a directory of companies you have no relationship with. The better starting point is the relationship data already sitting in your own account. Sep 13, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/finding-partners-you-already-have/",
       "impact": "low"
@@ -607,17 +739,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-27-aws-turning-re-invent-conversations-into-ace-refer",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-27",
-      "title": "AWS Turning re:Invent Conversations Into ACE Referrals Badge scans are not pipeline. The discipline that turns a hallway",
-      "summary": "AWS Turning re:Invent Conversations Into ACE Referrals Badge scans are not pipeline. The discipline that turns a hallway conversation at an AWS event into a co-sell referral an AWS seller will actually work. Aug 27, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/reinvent-conversations-to-ace-referrals/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-27-cloud-gtm-planning-your-2027-cloud-gtm-strategy-a-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -626,6 +747,17 @@
       "summary": "Cloud GTM Planning Your 2027 Cloud GTM Strategy: A Framework Most cloud GTM plans are last year's plan with bigger numbers on it. A framework for writing one that survives contact with January. Aug 27, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/planning-your-2027-cloud-gtm-strategy/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-27-aws-turning-re-invent-conversations-into-ace-refer",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-27",
+      "title": "AWS Turning re:Invent Conversations Into ACE Referrals Badge scans are not pipeline. The discipline that turns a hallway",
+      "summary": "AWS Turning re:Invent Conversations Into ACE Referrals Badge scans are not pipeline. The discipline that turns a hallway conversation at an AWS event into a co-sell referral an AWS seller will actually work. Aug 27, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/reinvent-conversations-to-ace-referrals/",
       "impact": "low"
     },
     {
@@ -692,28 +824,6 @@
       "summary": "Half of a support case is assembling evidence you already have. That part an agent can do — the filing and the replying still wait for a person.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/aws-support-cases-ai-agent/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-27-insulin-the-enterprise-ai-operating-model-central-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-27",
-      "title": "Insulin: The Enterprise AI Operating Model: Central or Not",
-      "summary": "Centralize AI and it becomes a queue. Federate it and you get forty versions of the same agent. The operating model that avoids both.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/enterprise-ai-operating-model/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-27-insulin-how-an-enterprise-ai-workspace-fits-togeth",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-27",
-      "title": "Insulin: How an Enterprise AI Workspace Fits Together",
-      "summary": "Most companies now own a dozen disconnected AI tools. An enterprise AI workspace is the alternative: one place where chat, knowledge, agents and jobs share a spine.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/enterprise-ai-workspace/",
       "impact": "low"
     },
     {
@@ -827,17 +937,6 @@
       "impact": "medium"
     },
     {
-      "id": "suger-2026-08-24-aws-migrating-to-the-new-aws-partner-central-ace-a",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "AWS Migrating to the New AWS Partner Central (ACE) AWS moved Partner Central into the AWS Console and is retiring the S3",
-      "summary": "AWS Migrating to the New AWS Partner Central (ACE) AWS moved Partner Central into the AWS Console and is retiring the S3 co-sell integration. What migrating actually changes for your ACE data and CRM. Aug 24, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/migrating-to-aws-partner-central/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-24-azure-microsoft-marketplace-request-private-offer-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -846,6 +945,17 @@
       "summary": "Azure Microsoft Marketplace Request Private Offer Microsoft's Request Private Offer turns an Azure Marketplace listing into an inbound demand channel. How to enable it, route the lead, and qualify the deal. Aug 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/microsoft-marketplace-request-private-offer/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-aws-migrating-to-the-new-aws-partner-central-ace-a",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "AWS Migrating to the New AWS Partner Central (ACE) AWS moved Partner Central into the AWS Console and is retiring the S3",
+      "summary": "AWS Migrating to the New AWS Partner Central (ACE) AWS moved Partner Central into the AWS Console and is retiring the S3 co-sell integration. What migrating actually changes for your ACE data and CRM. Aug 24, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/migrating-to-aws-partner-central/",
       "impact": "low"
     },
     {
@@ -879,39 +989,6 @@
       "summary": "Billing & Metering Your Year-End Marketplace Reporting Checklist Year-end close is where a year of marketplace shortcuts comes due. The reconciliations a finance team should run before closing the books, in order. Aug 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/year-end-marketplace-reporting-checklist/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-24-insulin-ai-agent-lifecycle-ownership-to-retirement",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: AI Agent Lifecycle: Ownership to Retirement",
-      "summary": "Your first agent is easy. Your fortieth is a governance problem. How to manage an agent from request to retirement before the portfolio manages you.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-lifecycle-management/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-24-insulin-ai-agent-tools-vs-skills-vs-integrations",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: AI Agent Tools vs Skills vs Integrations",
-      "summary": "Tool, skill, integration — three words the AI agent industry uses interchangeably and shouldn't. What each one actually is in Insulin, and which your problem needs.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-agent-tools-vs-skills-vs-integrations/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-24-insulin-building-an-ai-center-of-excellence-that-s",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Insulin: Building an AI Center of Excellence That Sticks",
-      "summary": "Most AI Centers of Excellence become a committee that ships slide decks. How to build one that business teams actually use — light on governance, heavy on reuse.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-center-of-excellence/",
       "impact": "low"
     },
     {
@@ -1058,17 +1135,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-20-cloud-gtm-selling-to-government-through-marketplac",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-20",
-      "title": "Cloud GTM Selling to Government Through Marketplaces Selling to a public-sector buyer on a cloud marketplace is your com",
-      "summary": "Cloud GTM Selling to Government Through Marketplaces Selling to a public-sector buyer on a cloud marketplace is your commercial motion plus three things you have to get right: the right cloud, the right procurement vehicle, and the right contract paper.",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/selling-to-government-through-marketplaces/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-20-cloud-gtm-selling-internationally-on-cloud-marketp",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1077,6 +1143,17 @@
       "summary": "Cloud GTM Selling Internationally on Cloud Marketplaces Selling across borders through a cloud marketplace changes five things at once — currency, tax, the entity that pays you, where a listing is buyable, and how a contract localizes.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/selling-internationally-on-cloud-marketplaces/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-20-cloud-gtm-selling-to-government-through-marketplac",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Cloud GTM Selling to Government Through Marketplaces Selling to a public-sector buyer on a cloud marketplace is your com",
+      "summary": "Cloud GTM Selling to Government Through Marketplaces Selling to a public-sector buyer on a cloud marketplace is your commercial motion plus three things you have to get right: the right cloud, the right procurement vehicle, and the right contract paper.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-to-government-through-marketplaces/",
       "impact": "low"
     },
     {
@@ -1289,17 +1366,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-18-billing-metering-usage-based-renewal-risk-the-lead",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Billing & Metering Usage-Based Renewal Risk: The Leading Signals The leading indicators of renewal risk in usage-based m",
-      "summary": "Billing & Metering Usage-Based Renewal Risk: The Leading Signals The leading indicators of renewal risk in usage-based marketplace deals — declining usage, single-team concentration, commit burndown pace, ticket signals, champion departure — and where each is visible.",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/renewal-risk-signals-usage-based-deals/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-18-co-sell-microsoft-ip-co-sell-how-it-actually-works",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1308,6 +1374,17 @@
       "summary": "Co-Sell Microsoft IP Co-Sell: How It Actually Works How Microsoft IP co-sell qualification and incentive flow work for ISVs, and what changes in FY27 as Marketplace becomes the primary co-sell path. Aug 18, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/microsoft-ip-co-sell-how-it-works/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-18-billing-metering-usage-based-renewal-risk-the-lead",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Billing & Metering Usage-Based Renewal Risk: The Leading Signals The leading indicators of renewal risk in usage-based m",
+      "summary": "Billing & Metering Usage-Based Renewal Risk: The Leading Signals The leading indicators of renewal risk in usage-based marketplace deals — declining usage, single-team concentration, commit burndown pace, ticket signals, champion departure — and where each is visible.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/renewal-risk-signals-usage-based-deals/",
       "impact": "low"
     },
     {
@@ -1410,17 +1487,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-cloud-gtm-how-enterprise-buyers-buy-through-a-mark",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a ",
-      "summary": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a billing account, a role assignment and a procurement queue — and any one of them can hold the deal for a week. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/how-enterprise-buyers-buy-through-a-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-cloud-gtm-mcp-for-cloud-gtm-connecting-agents-to-d",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1440,6 +1506,17 @@
       "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-how-enterprise-buyers-buy-through-a-mark",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a ",
+      "summary": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a billing account, a role assignment and a procurement queue — and any one of them can hold the deal for a week. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/how-enterprise-buyers-buy-through-a-marketplace/",
       "impact": "low"
     },
     {
@@ -1553,17 +1630,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-14-cloud-gtm-marketplace-events-and-webhooks-a-practi",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-14",
-      "title": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, ",
-      "summary": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, and two carry a deadline. Here is the full set, and what each one obliges you to do. Aug 14, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-events-and-webhooks/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-14-cloud-gtm-marketplace-setup-steps-teams-skip-and-r",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1572,6 +1638,17 @@
       "summary": "Cloud GTM Marketplace Setup Steps Teams Skip and Regret The setup steps that cause trouble later are the ones with no visible consequence now. Seven commonly skipped, and what each one ends up costing. Aug 14, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-setup-steps-teams-skip/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-14-cloud-gtm-marketplace-events-and-webhooks-a-practi",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-14",
+      "title": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, ",
+      "summary": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, and two carry a deadline. Here is the full set, and what each one obliges you to do. Aug 14, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-events-and-webhooks/",
       "impact": "low"
     },
     {
@@ -1586,17 +1663,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-14-billing-metering-tax-and-withholding-on-marketplac",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-14",
-      "title": "Billing & Metering Tax and Withholding on Marketplace Revenue Who remits tax on a marketplace sale depends on the countr",
-      "summary": "Billing & Metering Tax and Withholding on Marketplace Revenue Who remits tax on a marketplace sale depends on the country, and the marketplace decides. The structure finance needs before the first payout. Aug 14, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/tax-and-withholding-on-marketplace-revenue/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-14-cloud-gtm-the-first-marketplace-hire-what-to-look-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1605,6 +1671,17 @@
       "summary": "Cloud GTM The First Marketplace Hire: What to Look For The first marketplace hire is not a salesperson and not an engineer. Here is the shape of the role, the four skills that matter, and how to test for them. Aug 14, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/the-first-marketplace-hire/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-14-billing-metering-tax-and-withholding-on-marketplac",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-14",
+      "title": "Billing & Metering Tax and Withholding on Marketplace Revenue Who remits tax on a marketplace sale depends on the countr",
+      "summary": "Billing & Metering Tax and Withholding on Marketplace Revenue Who remits tax on a marketplace sale depends on the country, and the marketplace decides. The structure finance needs before the first payout. Aug 14, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/tax-and-withholding-on-marketplace-revenue/",
       "impact": "low"
     },
     {
@@ -1707,17 +1784,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-12-cloud-gtm-entitlement-management-on-cloud-marketpl",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-12",
-      "title": "Cloud GTM Entitlement Management on Cloud Marketplaces A purchase event is not an entitlement, and an entitlement is not",
-      "summary": "Cloud GTM Entitlement Management on Cloud Marketplaces A purchase event is not an entitlement, and an entitlement is not access. The three-hop path between them is where marketplace products quietly break. Aug 12, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-entitlement-management/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-12-cloud-gtm-marketplace-access-who-should-have-which",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1726,6 +1792,17 @@
       "summary": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details in one console. Most teams grant everyone admin and find out at the audit. Here is a least-privilege default. Aug 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-access-roles/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-entitlement-management-on-cloud-marketpl",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM Entitlement Management on Cloud Marketplaces A purchase event is not an entitlement, and an entitlement is not",
+      "summary": "Cloud GTM Entitlement Management on Cloud Marketplaces A purchase event is not an entitlement, and an entitlement is not access. The three-hop path between them is where marketplace products quietly break. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-entitlement-management/",
       "impact": "low"
     },
     {
@@ -1806,6 +1883,17 @@
       "impact": "high"
     },
     {
+      "id": "suger-2026-08-10-aws-four-metrics-to-watch-after-you-add-buy-with-a",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website",
+      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website — which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/buy-with-aws-metrics/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1825,17 +1913,6 @@
       "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment — when two parties have already claimed the same deal. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/deal-registration-conflict-rules/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-10-aws-four-metrics-to-watch-after-you-add-buy-with-a",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website",
-      "summary": "AWS Four Metrics to Watch After You Add Buy with AWS Buy with AWS puts a marketplace purchase button on your own website — which makes your site part of the funnel AWS reports on. Here is what AWS measures, and the four ratios worth watching. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/buy-with-aws-metrics/",
       "impact": "low"
     },
     {
@@ -2114,14 +2191,14 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-06-azure-azure-marketplace-private-offers-vs-private-",
+      "id": "suger-2026-08-06-aws-refunds-and-cancellations-on-aws-marketplace-a",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-06",
-      "title": "Azure Azure Marketplace Private Offers vs Private Plans Microsoft has three things a deal desk could reasonably call a p",
-      "summary": "Azure Azure Marketplace Private Offers vs Private Plans Microsoft has three things a deal desk could reasonably call a private offer. Here's what each construct actually does, and which one fits the deal in front of you. Aug 6, 2026",
+      "title": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sell",
+      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment — and what can't be undone. Aug 6, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/azure-private-offers-vs-private-plans/",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-refunds-and-cancellations/",
       "impact": "low"
     },
     {
@@ -2136,25 +2213,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-aws-refunds-and-cancellations-on-aws-marketplace-a",
+      "id": "suger-2026-08-06-azure-azure-marketplace-private-offers-vs-private-",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-06",
-      "title": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sell",
-      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment — and what can't be undone. Aug 6, 2026",
+      "title": "Azure Azure Marketplace Private Offers vs Private Plans Microsoft has three things a deal desk could reasonably call a p",
+      "summary": "Azure Azure Marketplace Private Offers vs Private Plans Microsoft has three things a deal desk could reasonably call a private offer. Here's what each construct actually does, and which one fits the deal in front of you. Aug 6, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-refunds-and-cancellations/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
-      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
+      "sourceUrl": "https://www.suger.io/resources/blog/azure-private-offers-vs-private-plans/",
       "impact": "low"
     },
     {
@@ -2191,14 +2257,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-gcp-bringing-resellers-into-google-cloud-marketpla",
+      "id": "suger-2026-08-06-cloud-gtm-cppo-vs-mpo-reselling-on-the-cloud-marke",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-06",
-      "title": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — temp",
-      "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
+      "title": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private of",
+      "summary": "Cloud GTM CPPO vs MPO: Reselling on the Cloud Marketplaces AWS calls it CPPO, Microsoft calls it a multiparty private offer, Google calls it a reseller plan — and CSP isn't any of them. The cross-cloud resell map, side by side. Aug 6, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/resellers-on-google-cloud-marketplace/",
+      "sourceUrl": "https://www.suger.io/resources/blog/cppo-vs-mpo-multiparty-private-offers/",
       "impact": "low"
     },
     {
@@ -2210,6 +2276,17 @@
       "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-gcp-bringing-resellers-into-google-cloud-marketpla",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — temp",
+      "summary": "GCP Bringing Resellers Into Google Cloud Marketplace Google doesn't do CPPO. It does reseller private offer plans — templates you publish, a reseller accepts, and then sells from. Here's what transfers from AWS and what doesn't. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/resellers-on-google-cloud-marketplace/",
       "impact": "low"
     },
     {
@@ -2246,17 +2323,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-05-aws-aws-edp-what-marketplace-sellers-need-to-know-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — a",
-      "summary": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — and marketplace purchases can draw it down. Here's why sellers should care. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-edp-what-sellers-need-to-know/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-aws-aws-ace-a-practical-co-sell-guide-for-isvs-aws",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2265,6 +2331,17 @@
       "summary": "AWS AWS ACE: A Practical Co-Sell Guide for ISVs AWS ACE is how ISVs co-sell with AWS. Here's how APN Customer Engagements work, and how to run them without living in Partner Central. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-ace-guide-for-isv-sellers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-aws-edp-what-marketplace-sellers-need-to-know-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — a",
+      "summary": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — and marketplace purchases can draw it down. Here's why sellers should care. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-edp-what-sellers-need-to-know/",
       "impact": "low"
     },
     {
@@ -2290,6 +2367,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-05-gcp-google-cloud-marketplace-the-isv-seller-guide-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Port",
+      "summary": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Portal, listing types, private offers, resellers, and committed spend. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-marketplace-isv-seller-guide/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-05-cloud-gtm-how-to-choose-the-right-cloud-marketplac",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2312,28 +2400,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
-      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-05-gcp-google-cloud-marketplace-the-isv-seller-guide-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Port",
-      "summary": "GCP Google Cloud Marketplace: The ISV Seller Guide How ISVs list and sell on Google Cloud Marketplace: the Producer Portal, listing types, private offers, resellers, and committed spend. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-marketplace-isv-seller-guide/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-aws-what-buyers-see-when-you-send-a-private-offer-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2342,6 +2408,17 @@
       "summary": "AWS What Buyers See When You Send a Private Offer Sellers obsess over creating the offer. Here's the other side: exactly what a buyer sees and does when an AWS Marketplace private offer lands. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/what-buyers-see-when-you-send-a-private-offer/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-selling-professional-services-on-aws-marketpla",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional servic",
+      "summary": "AWS Selling Professional Services on AWS Marketplace AWS Marketplace isn't just software. Here's how professional services listings work, how they differ from SaaS, and when to use them. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/selling-professional-services-on-aws-marketplace/",
       "impact": "low"
     },
     {

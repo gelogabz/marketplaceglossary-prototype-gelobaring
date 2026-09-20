@@ -2,6 +2,14 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 09/20/2026 — 3 added pages
+
+```diff
++ [Api › Create Prm New Partner Invitation](https://doc.suger.io/api/create-prm-new-partner-invitation/)
++ [Api › Get Entitlement Renewal Draft Offer](https://doc.suger.io/api/get-entitlement-renewal-draft-offer/)
++ [Api › List Prm Invitation Linkable Files](https://doc.suger.io/api/list-prm-invitation-linkable-files/)
+```
+
 ## 09/19/2026 — 1 added page
 
 ```diff
