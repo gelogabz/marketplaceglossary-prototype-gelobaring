@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-09-14";
+export const lastReviewed = "2026-09-21";
 
 export const terms = [
   {
@@ -2170,7 +2170,7 @@ export const terms = [
     tags: ["suger", "general"],
     def: "A permission model controlling what each user can see and do within Suger. Enables different access levels for sales, finance, and engineering within the same Organization.",
     alias: "Related: Organization, Suger Console",
-    source: "https://doc.suger.io/get-started/",
+    source: "https://doc.suger.io/get-started/account/",
     difficulty: "beginner",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -2509,7 +2509,7 @@ export const terms = [
     tags: ["suger"],
     def: "A Suger feature where marketplace buyer signup URLs route through Suger first for entitlement provisioning, then redirect to the ISV's own onboarding URL. Decouples marketplace provisioning from product onboarding.",
     alias: "Related: Entitlement, Landing Page / Signup URL",
-    source: "https://doc.suger.io/get-started/",
+    source: "https://doc.suger.io/get-started/signup-url-redirect/",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -3187,7 +3187,7 @@ export const terms = [
   {
     name: "Revenue",
     tags: ["suger"],
-    def: "Suger's revenue lifecycle dashboard, tracking bookings through billing, cash collection, and disbursement across every connected marketplace and direct billing channel in one view. Distinct from Disbursement — Revenue tracks what was earned and invoiced; Disbursement tracks what has actually been paid out.",
+    def: "Suger's revenue lifecycle dashboard, tracking bookings through billing, cash collection, and disbursement across every connected marketplace and direct billing channel in one view. Distinct from Disbursement — Revenue tracks what was earned and invoiced; Disbursement tracks what has actually been paid out. As of September 2026, the dashboard is organized around four summary cards: total contract value, channel-by-channel deferred balance rollover, a 12-month recognition forecast, and a pending revenue-record queue, alongside detailed schedule tables.",
     alias: "Related: Disbursement, Invoice, Suger Analytics",
     source: "https://doc.suger.io/revenue/overview/",
     difficulty: "beginner",
@@ -3584,15 +3584,16 @@ export const terms = [
     name: "Proof of Concept (POC) Funding — AWS",
     tags: ["aws", "cosell", "funding"],
     group: "cloud-partner-funding",
-    def: "AWS funding that offsets up to 10% of the cost of building a proof of concept for a customer, capped at $25,000. Submitted through the AWS Partner Funding Portal. Requires Validated+ stage in any Partner Path. The ACE opportunity must be in Technical Validation stage or beyond.",
+    def: "AWS funding that offsets up to 10% of a deal's year-1 ARR, capped at $25,000 and further capped at the cost of the customer's Statement of Work / Project Plan (whichever is lower) — paid as cash upon completion and customer sign-off, or as AWS Promotional Credits issued upfront to offset AWS usage during the project. Submitted through the AWS Partner Funding Portal. Requires Validated stage or higher on the Software, Services, or Hardware Partner Path. The ACE opportunity must be in Technical Validation stage or beyond.",
     alias:
       "Part of: Partner Opportunity Acceleration (POA) — AWS | Related: AWS Partner Funding — AWS, AWS Partner Funding Portal (APFP) — AWS",
-    source: "https://aws.amazon.com/partners/funding/",
+    source:
+      "https://d1.awsstatic.com/events/Summits/dcsummit2024/PTN106_Build,%20market,%20and%20sell%20with%20AWS%20Partner%20funding%20101_DCSummit_20240627.pdf",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
     useCases: [
-      "Requesting POC funding to offset up to 10% of proof-of-concept build costs (max $25K) for an ACE opportunity at Technical Validation stage or beyond",
+      "Requesting POC funding to offset up to 10% of a deal's year-1 ARR (max $25K) for an ACE opportunity at Technical Validation stage or beyond",
       "Applying for POC funding through the AWS Partner Funding Portal as part of the Partner Opportunity Acceleration program",
     ],
     context: [
@@ -3994,9 +3995,10 @@ export const terms = [
   {
     name: "Private Pricing Agreement (PPA) — AWS",
     tags: ["aws", "cosell"],
-    def: "AWS's committed spend program for enterprises — essentially the same as EDP. A negotiated agreement where a customer commits to a minimum AWS spend over 1–3 years in exchange for discounts. Marketplace transactable purchases count toward PPA drawdown. Can be AWS-led or Partner-led.",
+    def: "AWS's committed spend program for enterprises — essentially the same as EDP. A negotiated agreement where a customer commits to a minimum AWS spend over 1–3 years in exchange for discounts. Marketplace transactable SaaS purchases can count toward PPA/EDP drawdown, but as of May 1, 2025 only SaaS products carrying AWS's 'Deployed on AWS' badge (fully hosted on AWS infrastructure, no hybrid or multi-cloud deployment) qualify for commitment retirement — non-qualifying products no longer count regardless of when the deal was signed. Can be AWS-led or Partner-led.",
     alias: "Also known as: EDP (Enterprise Discount Program)",
-    source: "https://aws.amazon.com/pricing/enterprise/",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2025/05/aws-marketplace-saas-products-deployment-locations/",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["Enterprise Buyers", "ISVs / Sellers", "AWS Sales"],
@@ -4056,7 +4058,7 @@ export const terms = [
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, Resale Authorization — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-isv-info.html",
     difficulty: "intermediate",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
@@ -4108,11 +4110,11 @@ export const terms = [
   {
     name: "Selling Authorization — AWS",
     tags: ["aws", "cosell", "offers"],
-    def: "AWS's term in the AMMP UI for what the API calls a Resale Authorization. An ISV creates this to authorize a specific channel partner to resell a product via CPPO. Can be single-use or reusable. Tracks statuses: Authorized, Authorized (reusable), Authorized (consumed), Expired, Deactivated.",
+    def: "AWS's term in the AMMP UI for what the API calls a Resale Authorization. An ISV creates this to authorize a specific channel partner to resell a product via CPPO. Can be single-use or reusable. Tracks statuses: Draft, Authorized, Authorized (reusable), Authorized (consumed), Expired, and Deactivated — called Restricted in the API.",
     alias:
       "Also called: Resale Authorization — AWS, Opportunity (in AWS API docs)",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-isv-info.html",
     difficulty: "intermediate",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
@@ -4468,7 +4470,7 @@ export const terms = [
   {
     name: "Salesforce Integration",
     tags: ["suger", "cosell", "integrations"],
-    def: "Suger's bi-directional connection to Salesforce CRM. Syncs marketplace entitlements, private offer status, co-sell referrals, and metering data into Salesforce opportunities and accounts. Also available as the Suger Salesforce App for a deeper embedded experience.",
+    def: "Suger's bi-directional connection to Salesforce CRM. Syncs marketplace entitlements, private offer status, co-sell referrals, and revenue records into Salesforce opportunities and accounts. Also available as the Suger Salesforce App for a deeper embedded experience.",
     alias: "Related: Salesforce App, CRM Integration, HubSpot Integration",
     source: "https://doc.suger.io/integrations/salesforce/",
     difficulty: "intermediate",
@@ -12407,7 +12409,7 @@ export const terms = [
     tags: ["aws", "procurement"],
     def: "An AWS Marketplace governance control that lets an organization's administrators require a purchase order (PO) number before a purchase can complete, and display custom guidance text to specific buyer audiences during checkout. It's enforced at the AWS Organization level, giving procurement teams a way to apply internal purchasing policy across every account in the org rather than relying on buyers to self-report a PO number after the fact. Distinct from the `UpdatePurchaseOrders` operation in the AWS Marketplace Agreements API, which only edits the PO field on an agreement that already exists — this control governs whether a purchase can be made at all.",
     alias:
-      "Azure equivalent: Purchase Order Mapping — Azure | Related: AWS Marketplace Agreements API — AWS, Private Marketplace — AWS",
+      "Azure equivalent: Purchase Order Mapping — Azure | GCP equivalent: Purchase Order Number — GCP | Related: AWS Marketplace Agreements API — AWS, Private Marketplace — AWS",
     source:
       "https://aws.amazon.com/blogs/awsmarketplace/enabling-mandatory-purchase-orders-and-custom-guidance-in-aws-marketplace/",
     difficulty: "intermediate",
@@ -12990,7 +12992,8 @@ export const terms = [
     name: "Purchase Order Mapping — Azure",
     tags: ["azure", "offers"],
     def: "A Microsoft Marketplace capability that connects marketplace purchases to a customer's internal purchase order (PO) number, letting procurement teams track and reconcile marketplace spend against their own PO-based approval process. Announced September 2026 in Partner Center.",
-    alias: "AWS equivalent: Mandatory Purchase Orders — AWS",
+    alias:
+      "AWS equivalent: Mandatory Purchase Orders — AWS | GCP equivalent: Purchase Order Number — GCP",
     source:
       "https://learn.microsoft.com/en-us/partner-center/announcements/2026-september#purchase-order-mapping-in-microsoft-marketplace",
     difficulty: "intermediate",
@@ -13238,6 +13241,71 @@ export const terms = [
     ],
     context: ["Suger Console"],
     related: [{ name: "Product", slug: "product" }],
+  },
+  {
+    name: "Multi-Account AWS Marketplace Management — Suger",
+    tags: ["suger", "aws"],
+    def: "A Suger Console feature letting an organization connect and manage more than one AWS Marketplace seller account at once. Each Product, Offer, and Entitlement stays tied to its originating account; sellers choose a default account and pick a specific account when listing a product. Distinct from AWS Partner Central's own linked-accounts feature — this is Suger's own console-side account-scoping model.",
+    alias: "Related: AWS Marketplace — AWS, Product, Offer",
+    source: "https://www.suger.io/resources/changelog/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Suger Users"],
+    useCases: [
+      "Managing products, offers, and entitlements across more than one AWS Marketplace seller account from a single Suger organization",
+      "Choosing a default AWS Marketplace account while selecting a specific account per listed product",
+    ],
+    context: ["Suger Console", "AWS Marketplace"],
+    related: [
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+      { name: "Product", slug: "product" },
+    ],
+  },
+  {
+    name: "Co-sell Email Actions — Suger",
+    tags: ["suger", "cosell"],
+    def: "One-click action buttons (Accept, Mark Closed Won, Mark Closed Lost, Approve Commission) embedded directly in Suger co-sell referral emails, letting a recipient act on a referral without opening the Suger Console. Each action link expires after 24 hours and is single-use. Emails can be sent from a user's own connected Gmail account rather than a generic system address.",
+    alias: "Related: Referral, Co-sell",
+    source: "https://www.suger.io/resources/changelog/",
+    difficulty: "beginner",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers"],
+    useCases: [
+      "Accepting or closing out a co-sell referral directly from its notification email instead of logging into the Suger Console",
+      "Sending referral action emails from a personal connected Gmail account for a more direct partner-facing touch",
+    ],
+    context: ["Suger Console", "Co-sell Pipeline", "Gmail Integration"],
+    related: [
+      { name: "Referral", slug: "referral" },
+      { name: "Co-sell", slug: "co-sell" },
+    ],
+  },
+  {
+    name: "Purchase Order Number — GCP",
+    tags: ["gcp", "billing"],
+    def: "A purchase order number Google Cloud lets a Billing Account Administrator set on an invoiced Cloud Billing account, appearing in the header of that account's invoices. Unlike AWS's per-charge PO or Azure's per-publisher/product PO mapping, GCP's PO is scoped to the entire billing account, applies only to invoiced (non-self-serve) accounts, and is forward-only — past invoices must be individually regenerated to carry it.",
+    alias:
+      "AWS equivalent: Mandatory Purchase Orders — AWS | Azure equivalent: Purchase Order Mapping — Azure",
+    source:
+      "https://www.suger.io/resources/blog/purchase-order-numbers-on-cloud-marketplaces/",
+    difficulty: "intermediate",
+    category: "billing",
+    whoFor: ["Enterprise Buyers", "Partner Managers"],
+    useCases: [
+      "Setting a purchase order number on an invoiced Cloud Billing account so it appears on every subsequent invoice",
+      "Understanding why a GCP PO applies account-wide rather than per-charge or per-product like AWS/Azure",
+    ],
+    context: ["Google Cloud Billing", "Google Cloud Marketplace"],
+    related: [
+      {
+        name: "Mandatory Purchase Orders — AWS",
+        slug: "mandatory-purchase-orders-—-aws",
+      },
+      {
+        name: "Purchase Order Mapping — Azure",
+        slug: "purchase-order-mapping-—-azure",
+      },
+    ],
   },
 ];
 
