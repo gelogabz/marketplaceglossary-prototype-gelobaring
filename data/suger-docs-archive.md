@@ -2,6 +2,12 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 09/26/2026 — 1 added page
+
+```diff
++ [Prm › Public Deal Registration Link](https://doc.suger.io/prm/public-deal-registration-link/)
+```
+
 ## 09/20/2026 — 3 added pages
 
 ```diff
