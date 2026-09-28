@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-09-21";
+export const lastReviewed = "2026-09-28";
 
 export const terms = [
   {
@@ -2484,9 +2484,10 @@ export const terms = [
   {
     name: "System Integrator (SI)",
     tags: ["general", "cosell"],
-    def: "A partner that implements, customizes, and integrates software for enterprise customers. SIs often transact ISV products through marketplace channel programs and co-sell motions.",
-    alias: "Related: Channel Partner (CP), Co-sell",
-    source: "https://aws.amazon.com/partners/",
+    def: "A partner that implements, customizes, and integrates software for enterprise customers. SIs often transact ISV products through marketplace channel programs and co-sell motions. Formally recognized as a distinct partner category by both AWS (systems integrator-specific enablement and training resources) and Microsoft's Azure partner program (Systems Integrator partner-nominated scenarios). Google Cloud does not appear to name an equivalent SI-specific program — large-scale integration partners are folded under its Global System Integrator (GSI) category instead.",
+    alias: "Related: Channel Partner (CP), Co-sell, Global System Integrator (GSI)",
+    source:
+      "https://aws.amazon.com/blogs/training-and-certification/training-resources-for-system-integrators/",
     difficulty: "beginner",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
@@ -2497,6 +2498,10 @@ export const terms = [
     context: ["Partner Ecosystem", "Channel Programs", "Co-sell Motions"],
     related: [
       { name: "Channel Partner (CP)", slug: "channel-partner-cp" },
+      {
+        name: "Global System Integrator (GSI)",
+        slug: "global-system-integrator-gsi",
+      },
       {
         name: "Managed Service Provider (MSP)",
         slug: "managed-service-provider-msp",
@@ -2591,11 +2596,11 @@ export const terms = [
   {
     name: "Solution Provider Private Offer (SPPO) — AWS",
     tags: ["aws", "cosell", "offers"],
-    def: "An AWS program enabling pre-vetted Solution Providers to create private offers at pre-negotiated ISV discounts — without needing to negotiate deal-by-deal. ISVs must be enrolled in ISV Accelerate.",
+    def: "An AWS program enabling pre-vetted Solution Providers to create private offers at pre-negotiated ISV discounts — without needing to negotiate deal-by-deal. ISVs must be enrolled in ISV Accelerate. Confirmed as an active, AWS-named program via AWS's own published Solution Provider roster as of October 2023; not independently re-confirmed against a current definitional AWS docs page, since the live channel-partner-offers.html page (previously cited here) does not mention SPPO by name.",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, ISV Accelerate — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/channel-partner-offers.html",
+      "https://aws-mp-sppo.s3-us-west-2.amazonaws.com/SPPO+SPs.pdf",
     difficulty: "intermediate",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
@@ -2619,7 +2624,7 @@ export const terms = [
   {
     name: "Suger",
     tags: ["suger"],
-    def: "A unified cloud marketplace platform enabling ISVs to list, transact, meter, and co-sell across AWS, Azure, GCP, and Snowflake from a single interface, with integrations into CRM, billing, and communication tools.",
+    def: "A unified cloud marketplace platform enabling ISVs to list, transact, meter, and co-sell across AWS, Azure, GCP, Snowflake, Alibaba Cloud, and Oracle Cloud from a single interface, with integrations into CRM, billing, and communication tools.",
     alias: "Related: Suger Analytics, Entitlement, Metering Dimension",
     source: "https://www.suger.io/",
     difficulty: "beginner",
@@ -4794,7 +4799,7 @@ export const terms = [
   {
     name: "Snowflake Integration",
     tags: ["suger", "snowflake", "integrations"],
-    def: "Suger's connection to Snowflake for real-time cloud data streaming. Distinct from Snowflake Marketplace — this integration pipes marketplace data (entitlements, usage, revenue) from Suger directly into a Snowflake data warehouse.",
+    def: "Suger's connection to Snowflake that lets ISVs automate tasks in their Snowflake account directly from Suger — executing SQL queries, inserting rows, and updating existing rows via key-pair authentication. Distinct from Snowflake Marketplace, which is for selling on Snowflake's own marketplace.",
     alias:
       "Related: Snowflake Marketplace — Snowflake, Table Export, Google BigQuery Integration",
     source: "https://doc.suger.io/integrations/snowflake/",
@@ -7238,7 +7243,7 @@ export const terms = [
     alias:
       "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure | Related: Azure Consumption Commitment (MACC) — Azure | Related: Co-sell Eligible / Incentivized — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/referrals/partner-reported-azure-consumed-revenue",
+      "https://learn.microsoft.com/en-us/partner-center/membership/solutions-partner-azure",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
@@ -7310,7 +7315,7 @@ export const terms = [
     alias:
       "Related: Azure Consumed Revenue (ACR) — Azure | Related: Deal Registration — Azure | Related: Co-sell Eligible / Incentivized — Azure | Related: Partner Center — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/referrals/partner-reported-azure-consumed-revenue",
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july#azure-ip-co-sell-updates",
     difficulty: "advanced",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -9114,7 +9119,7 @@ export const terms = [
   {
     name: "AWS Marketplace Vendor Insights",
     tags: ["aws", "general"],
-    def: "An AWS Marketplace feature that gives enterprise buyers a unified security and compliance profile for a seller's SaaS product — aggregating data from AWS Security Hub, SOC 2 reports, ISO certifications, and seller-attested questionnaire responses into a single dashboard buyers can review before purchasing. Sellers who publish a Vendor Insights profile make their security posture continuously visible to buyers without repeated manual questionnaire responses; buyers can subscribe to profile updates and use the data to accelerate procurement approvals. Vendor Insights profiles are linked directly to the product listing and can be paired with AWS Specialization badges to create a dual-validation signal for compliance-sensitive buyers.",
+    def: "An AWS Marketplace feature that gives enterprise buyers a unified security and compliance profile for a seller's SaaS product — aggregating data from AWS Security Hub, SOC 2 reports, ISO certifications, and seller-attested questionnaire responses into a single dashboard buyers can review before purchasing. Sellers who publish a Vendor Insights profile make their security posture continuously visible to buyers without repeated manual questionnaire responses; buyers can subscribe to profile updates and use the data to accelerate procurement approvals. Vendor Insights profiles are linked directly to the product listing and can be paired with AWS Specialization badges to create a dual-validation signal for compliance-sensitive buyers. As of September 2026, AWS has informed partners that Vendor Insights is being deprecated ahead of re:Invent 2026 — no new profile requests are being processed — with a successor (working name \"Trust Agent\") in development; in the interim, AWS is directing sellers toward partner-managed Trust Center solutions (e.g. Drata, Vanta). Not yet publicly announced by AWS at time of writing.",
     alias: "Related: AWS Specialization — AWS, Listing, AWS Marketplace — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/vendor-insights.html",
@@ -10369,9 +10374,9 @@ export const terms = [
   {
     name: "Deal Registration — Suger",
     tags: ["suger", "channel"],
-    def: "The act of a partner — VAR, reseller, GSI, tech partner, or distributor — formally claiming credit for a deal with an ISV before or during an active sales cycle. In Suger PRM, a partner submits a deal registration through the white-label portal; Suger automatically creates or updates a Salesforce Opportunity, routes the registration for ISV approval, and fires notifications so neither side loses track. Approved registrations protect the partner's margin and give the ISV a real-time view of partner-sourced pipeline alongside hyperscaler co-sell on the same CRM record.",
+    def: "The act of a partner — VAR, reseller, GSI, tech partner, or distributor — formally claiming credit for a deal with an ISV before or during an active sales cycle. In Suger PRM, a partner submits a deal registration through the white-label portal, or via a public link requiring no portal login; Suger automatically creates or updates a Salesforce Opportunity, routes the registration for ISV approval, and fires notifications so neither side loses track. Approved registrations protect the partner's margin and give the ISV a real-time view of partner-sourced pipeline alongside hyperscaler co-sell on the same CRM record.",
     alias:
-      "Related: Partner Relationship Management (PRM) System, Value Added Reseller (VAR), Channel Partner (CP), Commission Tracking — Suger, Deal Registration — Azure",
+      "Azure equivalent: Deal Registration — Azure | Related: Partner Relationship Management (PRM) System, Value Added Reseller (VAR), Channel Partner (CP), Commission Tracking — Suger",
     source: "https://doc.suger.io/get-started/",
     difficulty: "intermediate",
     category: "operations",
@@ -11597,7 +11602,7 @@ export const terms = [
   {
     name: "AWS EMEA SARL — AWS",
     tags: ["aws"],
-    def: "The Luxembourg-headquartered Amazon.com subsidiary (established July 1, 2018) that operates AWS Marketplace and acts as merchant of record for all EMEA transactions — covering Europe, the Middle East, and Africa except Turkey and South Africa. When an EMEA-region account purchases through AWS Marketplace, the contracting entity is AWS EMEA SARL rather than Amazon Web Services, Inc., and it issues all applicable VAT invoices and handles regional tax compliance across its 25+ branch offices. ISVs selling on AWS Marketplace receive a separate disbursement from AWS EMEA SARL for EMEA sales, distinct from non-EMEA disbursements issued by Amazon Web Services, Inc. — requiring sellers to reconcile two payout sources in financial reporting.",
+    def: "The Luxembourg-headquartered Amazon.com subsidiary (established July 1, 2018) that operates AWS Marketplace and acts as merchant of record for all EMEA transactions — covering Europe, the Middle East, and Africa except Turkey and South Africa. When an EMEA-region account purchases through AWS Marketplace, the contracting entity is AWS EMEA SARL rather than Amazon Web Services, Inc., and it issues all applicable VAT invoices and handles regional tax compliance across its 25+ branch offices. ISVs selling on AWS Marketplace receive a separate disbursement from AWS EMEA SARL for EMEA sales, distinct from non-EMEA disbursements issued by Amazon Web Services, Inc. — requiring sellers to reconcile two payout sources in financial reporting. Which entity invoices a given EMEA transaction depends on KYC status: AWS EMEA SARL invoices only once the seller's KYC has cleared — and on a Channel Partner Private Offer, only once the channel partner's KYC has also cleared — otherwise Amazon Web Services, Inc. invoices instead.",
     alias:
       "Related: Seller of Record, AWS Marketplace — AWS, Disbursement, Private Offer — AWS",
     source: "https://aws.amazon.com/legal/aws-emea/",
@@ -12141,7 +12146,7 @@ export const terms = [
     tags: ["azure", "offers"],
     def: "A self-service option ISVs can enable on a Microsoft Marketplace listing that lets buyers request a private offer with custom pricing and terms directly from the listing page, instead of starting a separate sales conversation. Requests route through existing lead-management channels — Marketplace referrals, APIs, or connected CRMs — into the ISV's normal pipeline. Available for SaaS offers, Azure application offers, Azure container offers, and Azure Virtual Machines offers; disabled by default and toggled per listing.",
     alias:
-      "Related: Multiparty Private Offer (MPO) — Azure, Private Plan — Azure",
+      "AWS equivalent: Qualified Demo & Private Offer Requests — AWS | Related: Multiparty Private Offer (MPO) — Azure, Private Plan — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/determine-your-listing-type#listing-options-by-offer-type",
     difficulty: "intermediate",
@@ -12510,7 +12515,7 @@ export const terms = [
   {
     name: "Growth Margins — Azure",
     tags: ["azure", "funding"],
-    def: "A Microsoft partner incentive mechanism launching October 2026 as part of the FY27 AI Cloud Partner Program restructuring, replacing flat run-rate rebates on Modern Work and Dynamics 365 with earnings tied to specific growth motions — new-to-offer sales, customer expansion, and adoption of strategic Microsoft solutions. Eligible Cloud Solution Provider (CSP) distributors and direct-bill partners earn an additional partner price on top of standard transaction economics when a Growth Margin applies, with rates varying by growth scenario. Growth Margins roll out alongside Frontier Accelerate for Marketplace, which unifies ISV Success, Marketplace Rewards, Azure IP Co-sell, and Certified Software Designation into one program.",
+    def: "A Microsoft partner incentive mechanism launching October 2026 as part of the FY27 AI Cloud Partner Program restructuring, replacing flat run-rate rebates on Modern Work and Dynamics 365 with earnings tied to specific growth motions — new-to-offer sales, customer expansion, and adoption of strategic Microsoft solutions. Eligible Cloud Solution Provider (CSP) distributors and direct-bill partners earn an additional partner price on top of standard transaction economics when a Growth Margin applies, with rates varying by growth scenario. Growth Margins roll out alongside Frontier Accelerate for Marketplace, which unifies ISV Success, Marketplace Rewards, Azure IP Co-sell, and Certified Software Designation into one program. As of September 2026, partners can validate Growth Margin eligibility and discover applicable margins programmatically via API, in early access.",
     alias:
       "Related: Cloud Solution Provider (CSP) — Azure, Marketplace Rewards — Azure, ISV Success Program — Azure, Frontier Accelerate for Marketplace — Azure",
     source: "https://partner.microsoft.com/asset/collection/growth-margins-partner-resources#/",
@@ -13185,7 +13190,8 @@ export const terms = [
     name: "Qualified Demo & Private Offer Requests — AWS",
     tags: ["aws", "offers"],
     def: "An AWS Marketplace feature where buyer-initiated 'request a demo' and 'request a private offer' actions on a listing route through an agentic qualification workflow, delivering a qualified seller opportunity within minutes instead of requiring an AWS representative to manually triage each request first. Distinct from an ACE opportunity — this flow is buyer-initiated from a listing page, not partner-sourced through AWS Partner Central.",
-    alias: "Related: APN Customer Engagements (ACE) — AWS, Solution Matching Engine — AWS",
+    alias:
+      "Azure equivalent: Request Private Offer — Azure | Related: APN Customer Engagements (ACE) — AWS, Solution Matching Engine — AWS",
     source:
       "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-marketplace-demo-private-offer-requests-qualification/",
     difficulty: "intermediate",
@@ -13304,6 +13310,69 @@ export const terms = [
       {
         name: "Purchase Order Mapping — Azure",
         slug: "purchase-order-mapping-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Marketplace Listing Retirement",
+    tags: ["general", "offers"],
+    def: "The process of winding down a cloud marketplace listing, a single plan within it, or one pricing dimension — treated as three distinct request types on AWS, Microsoft, and Google Cloud, each with its own mechanics, effect on existing buyers, and timeline. Retiring an entire listing typically blocks new subscriptions while existing buyers continue on their current terms; retiring a single plan or dimension can be narrower, but the exact behavior (grace periods, buyer notification, renewal handling) differs meaningfully across the three clouds.",
+    alias: "Related: Listing, Plan — Azure, Metering Dimension",
+    source: "https://www.suger.io/resources/blog/retire-marketplace-listing/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Deciding whether to retire an entire listing, a single plan, or one pricing dimension based on which cloud a product is sold on and how existing buyers should be affected",
+      "Planning a listing wind-down timeline that accounts for a specific cloud's grace period and buyer-notification requirements",
+    ],
+    context: ["AWS Marketplace", "Microsoft Marketplace", "Google Cloud Marketplace"],
+    related: [
+      { name: "Listing", slug: "listing" },
+      { name: "Plan — Azure", slug: "plan-—-azure" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+    ],
+  },
+  {
+    name: "Marketplace Usage Correction",
+    tags: ["general", "billing"],
+    def: "The recourse (if any) available to correct or reverse a usage record already accepted by a cloud marketplace. Once AWS, Microsoft, or Google Cloud accepts a submitted usage record, there is no self-service way to simply take it back — what's possible depends on the specific cloud and on whether the buyer has already been billed for that period.",
+    alias: "Related: Usage Record, Metering Dimension, Billing Period",
+    source:
+      "https://www.suger.io/resources/blog/marketplace-usage-correction/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Determining what correction options exist after realizing a usage record was submitted incorrectly to a cloud marketplace",
+      "Understanding why the recourse for a bad usage record differs depending on whether the buyer's bill for that period has already been issued",
+    ],
+    context: ["AWS Marketplace", "Microsoft Marketplace", "Google Cloud Marketplace", "Metering"],
+    related: [
+      { name: "Usage Record", slug: "usage-record" },
+      { name: "Metering Dimension", slug: "metering-dimension" },
+    ],
+  },
+  {
+    name: "Know Your Customer (KYC) — AWS",
+    tags: ["aws", "billing"],
+    def: "AWS's identity-verification process for AWS Marketplace sellers and channel partners, gating which legal entity invoices a given buyer. In the EMEA region, AWS EMEA SARL invoices a buyer only once the seller's KYC has cleared — and on a Channel Partner Private Offer, only once the channel partner's KYC has also cleared too — otherwise Amazon Web Services, Inc. invoices instead in the interim.",
+    alias: "Related: AWS EMEA SARL — AWS, Channel Partner Private Offer (CPPO) — AWS",
+    source:
+      "https://www.suger.io/resources/blog/aws-emea-sarl-marketplace-kyc/",
+    difficulty: "advanced",
+    category: "billing",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Understanding why an EMEA buyer's invoice comes from Amazon Web Services, Inc. instead of AWS EMEA SARL before a seller's KYC clears",
+      "Confirming both the ISV's and the channel partner's KYC status before assuming AWS EMEA SARL will invoice a CPPO transaction",
+    ],
+    context: ["AWS Marketplace", "AWS EMEA SARL"],
+    related: [
+      { name: "AWS EMEA SARL — AWS", slug: "aws-emea-sarl-—-aws" },
+      {
+        name: "Channel Partner Private Offer (CPPO) — AWS",
+        slug: "channel-partner-private-offer-cppo-—-aws",
       },
     ],
   },
