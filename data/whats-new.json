@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T12:02:10.240Z",
+  "lastUpdated": "2026-10-02T11:33:26.957Z",
   "updates": [
     {
       "id": "aws-2026-10-01-say-hello-to-156-new-aws-competency-service-delive",
@@ -11,6 +11,72 @@
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/say-hello-to-156-new-aws-competency-service-delivery-and-msp-partners-added-in-september/",
       "impact": "medium"
+    },
+    {
+      "id": "aws-2026-10-01-continuous-ai-security-with-f5-ai-guardrails-and-a",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-10-01",
+      "title": "Continuous AI security with F5 AI Guardrails and AWS Bedrock",
+      "summary": "F5 AI Guardrails and F5 AI Red Team deliver continuous adaptive security for AI applications on AWS Bedrock. This post introduces three capabilities for enterprise AI security: pre-deployment model evaluation, adversarial testing at scale, and adaptive runtime protection.",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/apn/continuous-ai-security-with-f5-ai-guardrails-and-aws-bedrock/",
+      "impact": "low"
+    },
+    {
+      "id": "aws-2026-10-01-new-fde-pathways-for-aws-partners-get-ready-for-pr",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-10-01",
+      "title": "New FDE Pathways For AWS Partners: Get Ready for Production Agentic AI Delivery",
+      "summary": "AWS Partners can now access three new Forward Deployed Engineering (FDE) pathways and earn credentials through AWS Skill Builder to build and validate the depth required for production-ready agentic AI delivery.",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/apn/new-fde-pathways-for-aws-partners-get-ready-for-production-agentic-ai-delivery/",
+      "impact": "high"
+    },
+    {
+      "id": "azure-2026-10-01-update-usage-based-billing-is-default-on-for-new-m",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-10-01",
+      "title": "Update: Usage-based billing is default on for new Microsoft 365 Copilot Business licenses starting November 2, 2026",
+      "summary": "The effective date for this change has been updated. Previously communicated as November 2, 2026, usage-based billing will now be enabled by default for new Microsoft 365 Copilot Business subscriptions purchased through CSP, beginning December 1, 2026.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#update-usage-based-billing-is-default-on-for-new-microsoft-365-copilot-business-licenses-starting-november-2-2026",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-10-01-enhance-business-premium-security-deals-with-a-new",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-10-01",
+      "title": "Enhance Business Premium security deals with a new CSP partner promotion",
+      "summary": "Build a 7.5% promotion into qualifying Business Premium security quotes beginning October 1, 2026.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#enhance-business-premium-security-deals-with-a-new-csp-partner-promotion",
+      "impact": "medium"
+    },
+    {
+      "id": "azure-2026-10-01-growth-margin-is-live",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-10-01",
+      "title": "Growth margin is live",
+      "summary": "Earn incremental margin on qualifying growth across strategic workloads starting October 1, 2026.",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#growth-margin-is-live",
+      "impact": "low"
+    },
+    {
+      "id": "azure-2026-10-01-dynamics-365-business-central-license-key-version-",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-10-01",
+      "title": "Dynamics 365 Business Central license key version update",
+      "summary": "Transition your customers from version-specific license keys to a single forward-compatible key for Business Central versions 28 and later.",
+      "type": "release",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#dynamics-365-business-central-license-key-version-update",
+      "impact": "high"
     },
     {
       "id": "aws-2026-09-30-partner-revenue-measurement-adds-multi-partner-sup",
@@ -90,17 +156,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-30-prm-who-can-register-partner-deals-in-suger-prm-ho",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-09-30",
-      "title": "PRM Who Can Register Partner Deals in Suger PRM How Suger controls who can register partner deals through your public li",
-      "summary": "PRM Who Can Register Partner Deals in Suger PRM How Suger controls who can register partner deals through your public link, and what accepting a held registration commits you to as the partner owner. Sep 30, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/who-can-register-partner-deals/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-30-co-sell-how-to-update-an-aws-co-sell-referral-suge",
       "platform": "Suger",
       "platformTag": "suger",
@@ -110,6 +165,17 @@
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/update-an-aws-cosell-referral/",
       "impact": "medium"
+    },
+    {
+      "id": "suger-2026-09-30-prm-who-can-register-partner-deals-in-suger-prm-ho",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-30",
+      "title": "PRM Who Can Register Partner Deals in Suger PRM How Suger controls who can register partner deals through your public li",
+      "summary": "PRM Who Can Register Partner Deals in Suger PRM How Suger controls who can register partner deals through your public link, and what accepting a held registration commits you to as the partner owner. Sep 30, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/who-can-register-partner-deals/",
+      "impact": "low"
     },
     {
       "id": "suger-2026-09-30-insulin-the-ai-email-assistant-for-outlook-vs-gmai",
@@ -167,17 +233,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-29-co-sell-aws-vs-microsoft-inbound-co-sell-referrals",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-09-29",
-      "title": "Co-Sell AWS vs Microsoft Inbound Co-Sell Referrals: Acceptance Clocks and Triage Policy AWS gives you five business days",
-      "summary": "Co-Sell AWS vs Microsoft Inbound Co-Sell Referrals: Acceptance Clocks and Triage Policy AWS gives you five business days to answer a co-sell referral and Microsoft gives you 14.",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-microsoft-co-sell-referral-triage/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-29-aws-aws-marketplace-agentcore-integration-an-api-a",
       "platform": "Suger",
       "platformTag": "suger",
@@ -186,6 +241,17 @@
       "summary": "AWS AWS Marketplace AgentCore Integration: An API and MCP Preflight Checklist Buyers can add your AWS Marketplace API or MCP server to their Amazon Bedrock AgentCore gateway, if the listing meets requirements AWS spreads across two guides.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-agentcore-preflight-checklist/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-29-co-sell-aws-vs-microsoft-inbound-co-sell-referrals",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-29",
+      "title": "Co-Sell AWS vs Microsoft Inbound Co-Sell Referrals: Acceptance Clocks and Triage Policy AWS gives you five business days",
+      "summary": "Co-Sell AWS vs Microsoft Inbound Co-Sell Referrals: Acceptance Clocks and Triage Policy AWS gives you five business days to answer a co-sell referral and Microsoft gives you 14.",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-microsoft-co-sell-referral-triage/",
       "impact": "low"
     },
     {
@@ -508,17 +574,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-24-insulin-transfer-ownership-of-ai-agents-before-som",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-09-24",
-      "title": "Insulin: Transfer Ownership of AI Agents Before Someone Moves On",
-      "summary": "Transfer ownership of AI agents, apps and channels before the owner's admin role changes: who can receive each, and what an org admin can't reach.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/transfer-ownership-of-ai-agents/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-24-insulin-import-agent-skills-skill-md-read-them-fir",
       "platform": "Suger",
       "platformTag": "suger",
@@ -527,6 +582,17 @@
       "summary": "Only a single markdown file or a raw SKILL.md URL gets a review form before it saves. A .zip or a GitHub folder imports directly, so the reading is yours.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/import-agent-skills/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-24-insulin-transfer-ownership-of-ai-agents-before-som",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-24",
+      "title": "Insulin: Transfer Ownership of AI Agents Before Someone Moves On",
+      "summary": "Transfer ownership of AI agents, apps and channels before the owner's admin role changes: who can receive each, and what an org admin can't reach.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/transfer-ownership-of-ai-agents/",
       "impact": "low"
     },
     {
@@ -726,17 +792,6 @@
       "type": "blog",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/continuous-model-adaptation-with-4minds-on-aws/",
       "impact": "low"
-    },
-    {
-      "id": "azure-2026-09-16-usage-based-billing-is-default-on-for-new-microsof",
-      "platform": "Azure",
-      "platformTag": "azure",
-      "date": "2026-09-16",
-      "title": "Usage-based billing is default on for new Microsoft 365 Copilot Business licenses starting November 2, 2026",
-      "summary": "Usage-based billing is default on for new Microsoft 365 Copilot Business licenses starting November 2, 2026",
-      "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-september#usage-based-billing-is-default-on-for-new-microsoft-365-copilot-business-licenses-starting-november-2-2026",
-      "impact": "medium"
     },
     {
       "id": "azure-2026-09-16-windows-server-2016-extended-security-updates-csp-",
@@ -1190,17 +1245,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-27-cloud-gtm-getting-your-listing-ready-for-event-tra",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-27",
-      "title": "Cloud GTM Getting Your Listing Ready for Event Traffic A conference sends the highest-intent traffic you get all year to",
-      "summary": "Cloud GTM Getting Your Listing Ready for Event Traffic A conference sends the highest-intent traffic you get all year to a page you have not read since launch. The audit worth doing before it arrives. Aug 27, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/listing-ready-for-event-traffic/",
-      "impact": "high"
-    },
-    {
       "id": "suger-2026-08-27-cloud-gtm-instrumenting-your-marketplace-motion-fo",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1210,6 +1254,17 @@
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/instrumenting-your-marketplace-motion-for-2027/",
       "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-27-cloud-gtm-getting-your-listing-ready-for-event-tra",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-27",
+      "title": "Cloud GTM Getting Your Listing Ready for Event Traffic A conference sends the highest-intent traffic you get all year to",
+      "summary": "Cloud GTM Getting Your Listing Ready for Event Traffic A conference sends the highest-intent traffic you get all year to a page you have not read since launch. The audit worth doing before it arrives. Aug 27, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/listing-ready-for-event-traffic/",
+      "impact": "high"
     },
     {
       "id": "suger-2026-08-27-aws-aws-managed-entitlements-for-foundation-models",
@@ -1806,17 +1861,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-18-marketplaces-where-a-signed-aws-marketplace-agreem",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Marketplaces Where a Signed AWS Marketplace Agreement Lives Legal asked for the executed marketplace agreement. Here is ",
-      "summary": "Marketplaces Where a Signed AWS Marketplace Agreement Lives Legal asked for the executed marketplace agreement. Here is which document exists at each deal stage, where each one lives on AWS Marketplace, and how to download the signed agreement. Aug 18, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/where-the-signed-marketplace-agreement-lives/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-18-marketplaces-snowflake-marketplace-for-data-and-ai",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1825,6 +1869,17 @@
       "summary": "Marketplaces Snowflake Marketplace for Data and AI Products How Snowflake Marketplace lists and transacts data products, native apps and AI, how it differs from the hyperscaler marketplaces, and where it fits a multi-marketplace GTM. Aug 18, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/snowflake-marketplace-for-data-and-ai-products/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-18-marketplaces-where-a-signed-aws-marketplace-agreem",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Marketplaces Where a Signed AWS Marketplace Agreement Lives Legal asked for the executed marketplace agreement. Here is ",
+      "summary": "Marketplaces Where a Signed AWS Marketplace Agreement Lives Legal asked for the executed marketplace agreement. Here is which document exists at each deal stage, where each one lives on AWS Marketplace, and how to download the signed agreement. Aug 18, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/where-the-signed-marketplace-agreement-lives/",
       "impact": "low"
     },
     {
@@ -1905,6 +1960,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
+      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-16-cloud-gtm-how-enterprise-buyers-buy-through-a-mark",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1924,17 +1990,6 @@
       "summary": "Cloud GTM MCP for Cloud GTM: Connecting Agents to Data An assistant that can read your marketplace data is useful. One that can change it needs a permission model, and MCP is where that model has to be enforced. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/mcp-for-cloud-gtm/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
-      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
       "impact": "low"
     },
     {
@@ -2202,17 +2257,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-12-cloud-gtm-marketplace-access-who-should-have-which",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-12",
-      "title": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details",
-      "summary": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details in one console. Most teams grant everyone admin and find out at the audit. Here is a least-privilege default. Aug 12, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-access-roles/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-12-cloud-gtm-entitlement-management-on-cloud-marketpl",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2224,14 +2268,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-12-cloud-gtm-what-it-takes-to-get-listed-a-readiness-",
+      "id": "suger-2026-08-12-cloud-gtm-marketplace-access-who-should-have-which",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-12",
-      "title": "Cloud GTM What It Takes to Get Listed: A Readiness Checklist Marketplace review rejections are boring: a logo at the wro",
-      "summary": "Cloud GTM What It Takes to Get Listed: A Readiness Checklist Marketplace review rejections are boring: a logo at the wrong ratio, a EULA behind a login, a default password. Here is the checklist that gets you through first time. Aug 12, 2026",
+      "title": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details",
+      "summary": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details in one console. Most teams grant everyone admin and find out at the audit. Here is a least-privilege default. Aug 12, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-listing-readiness-checklist/",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-access-roles/",
       "impact": "low"
     },
     {
@@ -2243,6 +2287,17 @@
       "summary": "Cloud GTM EULAs and Custom Terms in Marketplace Deals Every marketplace offers you a standard contract and lets you refuse it. That choice sets your close time for years, and on one cloud it is irreversible. Aug 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-eulas-and-custom-terms/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-what-it-takes-to-get-listed-a-readiness-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM What It Takes to Get Listed: A Readiness Checklist Marketplace review rejections are boring: a logo at the wro",
+      "summary": "Cloud GTM What It Takes to Get Listed: A Readiness Checklist Marketplace review rejections are boring: a logo at the wrong ratio, a EULA behind a login, a default password. Here is the checklist that gets you through first time. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-listing-readiness-checklist/",
       "impact": "low"
     },
     {
@@ -2455,17 +2510,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-09-aws-aws-marketplace-renewals-an-operating-playbook",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-09",
-      "title": "AWS AWS Marketplace Renewals: An Operating Playbook A marketplace renewal is not a renewal conversation with a purchase ",
-      "summary": "AWS AWS Marketplace Renewals: An Operating Playbook A marketplace renewal is not a renewal conversation with a purchase order at the end. It is a dated event with an automatic default, and the default fires whether or not anyone is watching. Aug 9, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-renewals/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-09-aws-what-aws-marketplace-seller-insights-actually-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2474,6 +2518,17 @@
       "summary": "AWS What AWS Marketplace Seller Insights Actually Show AWS gives sellers nine dashboards on the Insights tab, and most teams use one of them. Here is what each actually reports — and the specific blind spot each one carries. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-seller-insights/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-aws-aws-marketplace-renewals-an-operating-playbook",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS AWS Marketplace Renewals: An Operating Playbook A marketplace renewal is not a renewal conversation with a purchase ",
+      "summary": "AWS AWS Marketplace Renewals: An Operating Playbook A marketplace renewal is not a renewal conversation with a purchase order at the end. It is a dated event with an automatic default, and the default fires whether or not anyone is watching. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-renewals/",
       "impact": "low"
     },
     {
@@ -2609,17 +2664,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-06-aws-refunds-and-cancellations-on-aws-marketplace-a",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sell",
-      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment — and what can't be undone. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-refunds-and-cancellations/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-06-aws-aws-partner-funding-poc-mdf-isv-workload-pif-f",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2639,6 +2683,17 @@
       "summary": "Azure Azure Marketplace Private Offers vs Private Plans Microsoft has three things a deal desk could reasonably call a private offer. Here's what each construct actually does, and which one fits the deal in front of you. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/azure-private-offers-vs-private-plans/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-cloud-gtm-cloud-gtm-glossary-40-marketplace-terms-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "Cloud GTM Cloud GTM Glossary: 40 Marketplace Terms Defined Forty terms every Cloud GTM job depends on, grouped by the st",
+      "summary": "Cloud GTM Cloud GTM Glossary: 40 Marketplace Terms Defined Forty terms every Cloud GTM job depends on, grouped by the stage of the deal where you'll first hit them — from listing type to drawdown to disbursement. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cloud-gtm-glossary/",
       "impact": "low"
     },
     {
@@ -2664,17 +2719,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-cloud-gtm-cloud-gtm-glossary-40-marketplace-terms-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-06",
-      "title": "Cloud GTM Cloud GTM Glossary: 40 Marketplace Terms Defined Forty terms every Cloud GTM job depends on, grouped by the st",
-      "summary": "Cloud GTM Cloud GTM Glossary: 40 Marketplace Terms Defined Forty terms every Cloud GTM job depends on, grouped by the stage of the deal where you'll first hit them — from listing type to drawdown to disbursement. Aug 6, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/cloud-gtm-glossary/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-06-gcp-google-cloud-private-offers-setup-and-pitfalls",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2683,6 +2727,17 @@
       "summary": "GCP Google Cloud Private Offers: Setup and Pitfalls Most failed Google Cloud private offers fail on the buyer's billing account, not your pricing. Here's the prerequisite checklist and the errors that block acceptance. Aug 6, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/google-cloud-private-offers-setup-and-pitfalls/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-06-marketplaces-oracle-cloud-marketplace-a-guide-for-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-06",
+      "title": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committ",
+      "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
       "impact": "low"
     },
     {
@@ -2697,14 +2752,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-06-marketplaces-oracle-cloud-marketplace-a-guide-for-",
+      "id": "suger-2026-08-06-aws-refunds-and-cancellations-on-aws-marketplace-a",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-06",
-      "title": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committ",
-      "summary": "Marketplaces Oracle Cloud Marketplace: A Guide for ISV Sellers Oracle Cloud Marketplace reaches enterprises with committed Universal Credits. Here's what listing takes, how private offers qualify, and what carries over from AWS. Aug 6, 2026",
+      "title": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sell",
+      "summary": "AWS Refunds and Cancellations on AWS Marketplace AWS Marketplace refunds and cancellations are now self-service for sellers. Here's the full path from request to disbursement adjustment — and what can't be undone. Aug 6, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/oracle-cloud-marketplace-guide-for-isv-sellers/",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-refunds-and-cancellations/",
       "impact": "low"
     },
     {
