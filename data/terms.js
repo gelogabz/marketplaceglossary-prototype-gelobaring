@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-09-28";
+export const lastReviewed = "2026-10-05";
 
 export const terms = [
   {
@@ -2335,7 +2335,7 @@ export const terms = [
   {
     name: "SaaS Fulfillment API — Azure",
     tags: ["azure"],
-    def: "Microsoft's API that ISVs must implement to handle subscription lifecycle events for Azure Marketplace SaaS offers — including activation, plan changes, quantity updates, suspension, and unsubscription.",
+    def: "Microsoft's API (currently v2 — v1 was deprecated and its docs removed) that ISVs must implement to handle subscription lifecycle events for Microsoft Marketplace SaaS offers — including activation, plan and quantity changes, suspension and reinstatement, and webhook-driven cancellation notifications.",
     alias: "Related: Microsoft Marketplace — Azure, Partner Center — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/pc-saas-fulfillment-apis",
@@ -2624,9 +2624,9 @@ export const terms = [
   {
     name: "Suger",
     tags: ["suger"],
-    def: "A unified cloud marketplace platform enabling ISVs to list, transact, meter, and co-sell across AWS, Azure, GCP, Snowflake, Alibaba Cloud, and Oracle Cloud from a single interface, with integrations into CRM, billing, and communication tools.",
+    def: "A unified cloud marketplace platform enabling ISVs to list, transact, meter, and co-sell across AWS, Azure, GCP, Snowflake, Alibaba Cloud, and Oracle Cloud from a single interface, with integrations into CRM, billing, and communication tools. Formerly known as Suger — the company rebranded to Fours on October 5, 2026. The team, platform, and logo are unchanged; the legal entity remains Suger, Inc.",
     alias: "Related: Suger Analytics, Entitlement, Metering Dimension",
-    source: "https://www.suger.io/",
+    source: "https://www.fours.com/",
     difficulty: "beginner",
     category: "fundamentals",
     whoFor: ["ISVs / Sellers", "Suger Users"],
@@ -4853,7 +4853,7 @@ export const terms = [
   {
     name: "APN ID Tag (aws-apn-id) — AWS",
     tags: ["aws"],
-    def: "The AWS resource tag key used for Partner Revenue Measurement. Partners tag their AWS resources with key `aws-apn-id` and value `pc:<product-code>` (e.g. `pc:5ugbbrmu7ud3u5hsipfzug61p`) to attribute AWS service consumption to their marketplace product. Revenue attribution continues until the tag is removed or the resource is terminated. PRM measures production workloads specifically — dev/test/staging environments can be used to validate the tagging implementation before rolling out to production. A resource can only carry one `aws-apn-id` tag, so multi-partner scenarios require the User Agent String method instead of resource tagging. For IaC-managed resources (CloudFormation, Terraform, CDK), tags should be applied through the IaC tool itself — tagging via the console or CLI directly triggers drift detection on the next IaC run.",
+    def: "The AWS resource tag key used for Partner Revenue Measurement. Partners tag their AWS resources with key `aws-apn-id` and value `pc:<product-code>` (e.g. `pc:5ugbbrmu7ud3u5hsipfzug61p`) to attribute AWS service consumption to their marketplace product. Revenue attribution continues until the tag is removed or the resource is terminated. PRM measures production workloads specifically — dev/test/staging environments can be used to validate the tagging implementation before rolling out to production. As of September 30, 2026, Partner Revenue Measurement's resource tagging method directly supports multi-partner attribution — a single resource can be tagged to attribute revenue to more than one partner, no longer requiring the User Agent String workaround. For IaC-managed resources (CloudFormation, Terraform, CDK), tags should be applied through the IaC tool itself — tagging via the console or CLI directly triggers drift detection on the next IaC run.",
     alias:
       "Related: Partner Revenue Measurement (PRM) — AWS, PRM Resource Tagging — AWS, Product Code — AWS",
     source:
@@ -4885,7 +4885,7 @@ export const terms = [
   {
     name: "PRM Resource Tagging — AWS",
     tags: ["aws"],
-    def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code, using any of six supported methods — AWS Management Console, AWS Tag Editor (bulk manual), AWS CLI, CloudFormation, CDK, or Terraform. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect, and some sub-features of otherwise-supported services are excluded (e.g. Fargate under EKS, S3 Requests costs). For multi-tenant SaaS, a single product code tags all resources representing the whole solution — tagging is not done per-tenant. A resource holds only one `aws-apn-id` tag at a time, so multi-partner deployments need the User Agent String method instead; resources under IaC management should be tagged through the IaC tool to avoid drift detection. As of August 31, 2026, the User Agent String method (`APN_1.1/pc_<product-code>`, embedded in application requests rather than applied as a resource tag) expanded its service coverage to any AWS service that logs control-plane activity in AWS CloudTrail — partners already using it gain the broader coverage automatically with no re-implementation, and attributed revenue now surfaces in the Attributed Revenue Dashboard within AWS Partner Analytics.",
+    def: "The core implementation mechanism for AWS Partner Revenue Measurement. Partners tag billable AWS resources (EC2, S3, RDS, etc.) in their own or the customer's account with their Marketplace product code, using any of six supported methods — AWS Management Console, AWS Tag Editor (bulk manual), AWS CLI, CloudFormation, CDK, or Terraform. Only resources consuming chargeable AWS services generate revenue attribution — tagging free services like IAM has no effect, and some sub-features of otherwise-supported services are excluded (e.g. Fargate under EKS, S3 Requests costs). For multi-tenant SaaS, a single product code tags all resources representing the whole solution — tagging is not done per-tenant. Resources under IaC management should be tagged through the IaC tool to avoid drift detection. As of September 30, 2026, resource tagging directly supports multi-partner attribution — a single resource can be tagged to attribute revenue to more than one partner, no longer requiring the User Agent String method as a workaround. Separately, as of August 31, 2026, the User Agent String method (`APN_1.1/pc_<product-code>`, embedded in application requests rather than applied as a resource tag) expanded its service coverage to any AWS service that logs control-plane activity in AWS CloudTrail — partners already using it gain the broader coverage automatically with no re-implementation, and attributed revenue now surfaces in the Attributed Revenue Dashboard within AWS Partner Analytics.",
     alias:
       "Related: APN ID Tag (aws-apn-id) — AWS, Partner Revenue Measurement (PRM) — AWS, PRM Architecture Patterns — AWS",
     source:
@@ -7276,7 +7276,7 @@ export const terms = [
   {
     name: "Deal Registration — Azure",
     tags: ["azure", "cosell"],
-    def: "A formal record a partner creates in Microsoft Partner Center to associate a customer opportunity with their solution and claim co-sell eligibility, including PRACR reporting rights. Microsoft reviews and approves each deal registration before it becomes eligible for co-sell incentive credits or PRACR revenue attribution. Registering a deal establishes the partner-of-record for that customer opportunity, protects against channel conflict, and gives Microsoft field sellers visibility into partner-sourced pipeline. Each approved deal registration is linked to specific customer subscription GUIDs, forming the foundation for revenue attribution in the Azure partner ecosystem.",
+    def: "A formal record a partner creates in Microsoft Partner Center to register a won deal built on an Azure IP co-sell eligible solution (Azure IP co-sell, Biz Apps Premium, or Biz Apps Standard), making it eligible for co-sell incentive credits. Eligibility requires: the deal status is 'won', the deal type is partner-led or co-sell (with Microsoft having accepted the invitation or marked it won), the deal value is at least USD $25,000, and the selected customer account is Microsoft-managed. Microsoft reviews and approves each registration before it moves to closed status. Registering a deal establishes the partner-of-record for that opportunity, protects against channel conflict, and gives Microsoft field sellers visibility into partner-sourced pipeline.",
     alias:
       "Related: Partner Reported Azure Consumed Revenue (PRACR) — Azure | Related: Outbound Referral | Related: Partner Center — Azure | Related: Co-sell Eligible / Incentivized — Azure | Related: Microsoft Managed Account — Azure",
     source:
@@ -7548,7 +7548,7 @@ export const terms = [
   {
     name: "Suger Buyer Service",
     tags: ["suger"],
-    def: "A dedicated procurement management portal within Suger for enterprise buyers to manage the cloud marketplace purchasing lifecycle — separate from the ISV-facing Suger Console. It covers five stages: creating purchase requests, routing them through internal review and approval workflows, receiving and accepting vendor private offers, managing active entitlements post-purchase, and tracking invoices and payments. Supports AWS, Azure, GCP, and Alibaba marketplaces.",
+    def: "A dedicated procurement management portal within Suger for enterprise buyers to manage the cloud marketplace purchasing lifecycle — separate from the ISV-facing Suger Console. It covers five stages: creating purchase requests, routing them through internal review and approval workflows, receiving and accepting vendor private offers, managing active entitlements post-purchase, and tracking invoices and payments. Supports AWS, Azure, GCP, Alibaba, Oracle, and Snowflake marketplaces.",
     alias:
       "Related: Suger Console, Entitlement, Buyer, Buyer Wallet, Private Offer",
     source: "https://doc.suger.io/as-buyer/buyer-journey/",
@@ -7805,10 +7805,9 @@ export const terms = [
   {
     name: "AWS European Sovereign Cloud Marketplace — AWS",
     tags: ["aws", "operations"],
-    def: "A separate AWS Marketplace partition purpose-built for EU data sovereignty requirements, active as of 2026. ISVs must register independently from the standard AWS Marketplace — a separate seller account and listing are required even if the ISV is already registered on the main Marketplace. All data remains within EU borders and the partition operates under distinct regulatory guarantees.",
+    def: "A restricted-functionality version of AWS Marketplace operating within the AWS European Sovereign Cloud (ESC) Region, with documented feature-parity gaps against the standard commercial AWS Marketplace. Buyers have no public Marketplace website — all discovery, procurement, and fulfillment happens through the Marketplace Console — and several standard capabilities are unavailable, including Vendor Insights, SaaS pay-as-you-go pricing, free trials, Request Private Offer, Private Marketplace, and Managed Entitlements. Sellers access it via AWS Marketplace's Multi-Catalog capability, registering a separate ESC-partition AWS account even if already registered on the commercial AWS Marketplace. ESC data and infrastructure reside entirely within the EU under distinct regulatory guarantees.",
     alias: "Related: AWS Marketplace — AWS",
-    source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/what-is-marketplace.html",
+    source: "https://docs.aws.eu/esc/latest/userguide/marketplace.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -8375,20 +8374,20 @@ export const terms = [
     ],
   },
   {
-    name: "Account Mapping — Suger",
+    name: "Account Field Mapping — Suger",
     tags: ["suger", "cosell"],
-    def: "A Suger feature that maps ISV CRM accounts to cloud partner accounts across AWS, Azure, and GCP to identify co-sell opportunities in the ISV's existing customer and prospect base. Shipped April 2026. Account Mapping surfaces potential co-sell engagements by finding overlaps between the ISV's pipeline and cloud partner account data — a prerequisite step before co-sell referral submission in many motions.",
+    def: "Suger's configuration layer controlling how CRM data pre-fills into cloud-partner referral fields (AWS ACE, Azure, GCP) when a referral is shared — automatically via the auto-share setting, or through the Suger Connector. For each partner field, admins choose one of four mapping methods: a hard-coded Default Value; a 1:1 Direct & Picklist Mapping (including translating every active CRM stage to a partner-approved stage value); an Expression Mode using Go Templates for calculations, concatenations, and cross-field logic; or AI Generate, which drafts a field's value from a natural-language prompt referencing other CRM fields — available today on five AWS ACE fields, including Customer Business Problem.",
     alias:
       "Related: Co-sell, APN Customer Engagements (ACE) — AWS, CRM Enrichment, Suger Console",
-    source: "https://doc.suger.io/get-started/",
+    source: "https://doc.suger.io/cosell/cosell-configuration/#field-mapping",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Suger Users", "Partner Managers"],
     useCases: [
-      "Running Account Mapping in Suger to identify which existing CRM accounts also have active relationships with AWS, Azure, or GCP partner teams",
-      "Using Account Mapping as a prospecting tool to prioritize co-sell outreach by surfacing ISV accounts with cloud partner overlaps",
+      "Mapping every active CRM pipeline stage to its partner-approved equivalent so a co-sell referral doesn't fail to sync on a stage change",
+      "Using AI Generate to draft a Customer Business Problem statement for an AWS ACE referral from existing CRM field values",
     ],
-    context: ["Suger Console", "Co-sell Programs", "CRM Integration"],
+    context: ["Suger Console", "Co-sell Configuration", "CRM Integration"],
     related: [
       { name: "Co-sell", slug: "co-sell" },
       {
@@ -10314,7 +10313,7 @@ export const terms = [
     tags: ["suger", "integrations"],
     def: "An org-level API key integration connecting Suger to People Data Labs for bulk lead and account data enrichment. Enriches professional profiles with verified employment histories, person profiles, and company firmographics from People Data Labs' datasets. Unlike user-level OAuth integrations, this integration operates at the organization level, making enriched data accessible to all Suger users and workflows within the organization. Designed for systematic enrichment of marketplace buyer and prospect records rather than per-contact lookup.",
     alias:
-      "Related: CRM Enrichment, CRM Integration, Account Mapping — Suger, Integration",
+      "Related: CRM Enrichment, CRM Integration, Account Field Mapping — Suger, Integration",
     source: "https://doc.suger.io/integrations/people-data-labs/",
     difficulty: "intermediate",
     category: "operations",
@@ -10334,8 +10333,8 @@ export const terms = [
       { name: "CRM Enrichment", slug: "crm-enrichment" },
       { name: "CRM Integration", slug: "crm-integration" },
       {
-        name: "Account Mapping — Suger",
-        slug: "account-mapping-—-suger",
+        name: "Account Field Mapping — Suger",
+        slug: "account-field-mapping-—-suger",
       },
       { name: "Integration", slug: "integration" },
     ],
@@ -10549,7 +10548,7 @@ export const terms = [
   {
     name: "Forward Deployed Engineering for Partners — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS initiative (announced June 2026, backed by a $1B investment) that embeds AWS-credentialed engineering teams within select consulting partners to deliver production agentic AI systems for enterprise customers. Partner engineers must pass an AWS-defined technical bar before engaging customers; AWS provides a reusable delivery harness that compounds expertise across engagements, with the resulting delivery IP staying with the partner. Currently launching with a limited set of partners before broader network rollout.",
+    def: "An AWS initiative (announced June 2026, backed by a $1B investment) that embeds AWS-credentialed engineering teams within select consulting partners to deliver production agentic AI systems for enterprise customers. Partner engineers must pass an AWS-defined technical bar before engaging customers; AWS provides a reusable delivery harness that compounds expertise across engagements, with the resulting delivery IP staying with the partner. Launched with a limited set of partners in June 2026; as of October 2026, AWS added three self-service FDE pathways plus AWS Skill Builder credentials, broadening the program beyond its original invite-only rollout.",
     alias:
       "Related: Generative AI Innovation Center (GenAIIC) — AWS, Partner Agent Factory (PAF) — AWS",
     source:
@@ -10895,7 +10894,7 @@ export const terms = [
   {
     name: "Frontier Accelerate for Marketplace — Azure",
     tags: ["azure", "offers", "cosell"],
-    def: "Microsoft's unified ISV program for FY27 (launching fall 2026) that consolidates ISV Success, Marketplace Rewards, Azure IP co-sell, and Solutions Partner with certified software designations into a single enrollment and benefits track. Azure sponsorship within Frontier Accelerate is restructured into use-case-specific allocations: a larger dedicated allowance for customer deployments and a smaller separate allowance for no-cost trials. The program is designed to reduce administrative overhead for software companies transacting on Microsoft Marketplace by eliminating the need to manage multiple separate program enrollments.",
+    def: "Microsoft's unified ISV program for FY27, generally available as of September 28, 2026, that consolidates ISV Success, Marketplace Rewards, Azure IP co-sell, and Solutions Partner with certified software designations into a single enrollment and benefits track. Azure sponsorship within Frontier Accelerate is restructured into use-case-specific allocations: a larger dedicated allowance for customer deployments and a smaller separate allowance for no-cost trials. The program is designed to reduce administrative overhead for software companies transacting on Microsoft Marketplace by eliminating the need to manage multiple separate program enrollments; Microsoft has published a migration guide for partners moving off the legacy programs it replaces.",
     alias:
       "Related: ISV Success Program — Azure, Marketplace Rewards — Azure, Co-sell Eligible / Incentivized — Azure",
     source:
@@ -11952,7 +11951,7 @@ export const terms = [
     tags: ["suger", "cosell"],
     def: "A Suger feature (shipped June 2026) that ranks cloud partner contacts by engagement quality rather than raw activity volume, surfacing which AWS, Azure, or GCP partner-side contacts are most likely to drive a successful co-sell outcome. The score appears in the Salesforce widget, account mapping views, and cloud rep profiles, helping ISVs prioritize outreach toward the relationships most likely to convert into active co-sell engagement.",
     alias:
-      "Related: Account Mapping — Suger, Co-sell, APN Customer Engagements (ACE) — AWS",
+      "Related: Account Field Mapping — Suger, Co-sell, APN Customer Engagements (ACE) — AWS",
     source: "https://www.suger.io/resources/blog/product-updates-june-2026",
     difficulty: "intermediate",
     category: "cosell",
@@ -11969,7 +11968,7 @@ export const terms = [
       "Cloud Rep Profiles",
     ],
     related: [
-      { name: "Account Mapping — Suger", slug: "account-mapping-—-suger" },
+      { name: "Account Field Mapping — Suger", slug: "account-mapping-—-suger" },
       { name: "Co-sell", slug: "co-sell" },
       {
         name: "APN Customer Engagements (ACE) — AWS",
@@ -11981,7 +11980,7 @@ export const terms = [
     name: "Co-Sell Metrics Dashboard — Suger",
     tags: ["suger", "cosell"],
     def: "A three-tab reporting dashboard in Suger (shipped April 2026) that tracks co-sell performance across cloud providers — win rates by provider, closed-won revenue, and pipeline health. It includes AI-assisted failure and duplicate detection that flags broken co-sell referral syncs and auto-suggests fixes, plus a sync workflow log for auditing CRM-to-cloud-partner data flows. Designed to give partner managers a single reporting surface instead of stitching together per-cloud exports.",
-    alias: "Related: Account Mapping — Suger, Co-sell",
+    alias: "Related: Account Field Mapping — Suger, Co-sell",
     source: "https://www.suger.io/resources/blog/product-updates-april-2026",
     difficulty: "intermediate",
     category: "cosell",
@@ -11993,7 +11992,7 @@ export const terms = [
     ],
     context: ["Suger Console", "Co-sell Reporting", "CRM Sync"],
     related: [
-      { name: "Account Mapping — Suger", slug: "account-mapping-—-suger" },
+      { name: "Account Field Mapping — Suger", slug: "account-mapping-—-suger" },
       { name: "Co-sell", slug: "co-sell" },
     ],
   },
@@ -12087,7 +12086,7 @@ export const terms = [
     name: "Co-Sell MCP Server — Suger",
     tags: ["suger", "cosell", "integrations"],
     def: "A Model Context Protocol (MCP) server, narrower in scope than the general-purpose Suger MCP Server, that lets reps run co-sell operations in natural language directly from Claude Desktop, Cursor, or VS Code — drafting referrals, checking opportunity status, and syncing updates to Salesforce without switching tools. Shipped June 2026 as a co-sell-focused companion to Suger's broader MCP offering.",
-    alias: "Related: Suger MCP Server, Co-sell, Account Mapping — Suger",
+    alias: "Related: Suger MCP Server, Co-sell, Account Field Mapping — Suger",
     source: "https://www.suger.io/resources/blog/product-updates-june-2026",
     difficulty: "advanced",
     category: "cosell",
@@ -12104,7 +12103,7 @@ export const terms = [
     related: [
       { name: "Suger MCP Server", slug: "suger-mcp-server" },
       { name: "Co-sell", slug: "co-sell" },
-      { name: "Account Mapping — Suger", slug: "account-mapping-—-suger" },
+      { name: "Account Field Mapping — Suger", slug: "account-mapping-—-suger" },
     ],
   },
   // ── TD1 2026-08-03 additions ────────────────────────────────────────
@@ -12174,7 +12173,8 @@ export const terms = [
     name: "AI Insights — AWS",
     tags: ["aws"],
     def: "AI-generated explanations that appear directly in the pricing section of an AWS Marketplace listing, translating a product's pricing model into plain language before a buyer purchases. AI Insights clarifies what a pricing unit corresponds to and projects how a buyer's bill changes as usage scales, citing the underlying pricing data as its source. Rolled out across all AWS Marketplace commercial regions in August 2026 to reduce pre-purchase pricing confusion on usage-based and tiered listings.",
-    alias: "Related: Listing, SaaS Subscription Pricing — AWS, Buyer",
+    alias:
+      "Azure equivalent: Ask Marketplace — Azure | Related: Listing, SaaS Subscription Pricing — AWS, Buyer",
     source:
       "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-ai-insights",
     difficulty: "beginner",
@@ -12515,7 +12515,7 @@ export const terms = [
   {
     name: "Growth Margins — Azure",
     tags: ["azure", "funding"],
-    def: "A Microsoft partner incentive mechanism launching October 2026 as part of the FY27 AI Cloud Partner Program restructuring, replacing flat run-rate rebates on Modern Work and Dynamics 365 with earnings tied to specific growth motions — new-to-offer sales, customer expansion, and adoption of strategic Microsoft solutions. Eligible Cloud Solution Provider (CSP) distributors and direct-bill partners earn an additional partner price on top of standard transaction economics when a Growth Margin applies, with rates varying by growth scenario. Growth Margins roll out alongside Frontier Accelerate for Marketplace, which unifies ISV Success, Marketplace Rewards, Azure IP Co-sell, and Certified Software Designation into one program. As of September 2026, partners can validate Growth Margin eligibility and discover applicable margins programmatically via API, in early access.",
+    def: "A Microsoft partner incentive mechanism launching October 2026 as part of the FY27 AI Cloud Partner Program restructuring, replacing flat run-rate rebates on Modern Work and Dynamics 365 with earnings tied to specific growth motions — new-to-offer sales, customer expansion, and adoption of strategic Microsoft solutions. Eligible Cloud Solution Provider (CSP) distributors and direct-bill partners earn an additional partner price on top of standard transaction economics when a Growth Margin applies, with rates varying by growth scenario. Growth Margins roll out alongside Frontier Accelerate for Marketplace, which unifies ISV Success, Marketplace Rewards, Azure IP Co-sell, and Certified Software Designation into one program. As of October 1, 2026, programmatic Growth Margin eligibility validation and discovery via API reached general availability, after launching in early access the previous month.",
     alias:
       "Related: Cloud Solution Provider (CSP) — Azure, Marketplace Rewards — Azure, ISV Success Program — Azure, Frontier Accelerate for Marketplace — Azure",
     source: "https://partner.microsoft.com/asset/collection/growth-margins-partner-resources#/",
@@ -13374,6 +13374,112 @@ export const terms = [
         name: "Channel Partner Private Offer (CPPO) — AWS",
         slug: "channel-partner-private-offer-cppo-—-aws",
       },
+    ],
+  },
+  {
+    name: "AWS Marketplace for the Intelligence Community (ICMP) — AWS",
+    tags: ["aws"],
+    def: "A separate, curated AWS Marketplace catalog restricted to ISVs and authorized resellers with products approved for the U.S. Intelligence Community's classified cloud environments — running in air-gapped regions not connected to the public internet (e.g. AWS Secret and Top Secret Regions), so listed products must work entirely within that isolated infrastructure with no calls to the public internet or external resources. ISVs must already have their company and products listed in the standard AWS Marketplace, then submit a U.S. Intelligence Community Foreign Ownership, Control, or Influence (FOCI) packet and agree to ICMP-specific terms before approval.",
+    alias: "Related: AWS Marketplace — AWS, Seller of Record",
+    source:
+      "https://aws.amazon.com/blogs/publicsector/aws-marketplace-for-the-u-s-intelligence-community-is-now-open/",
+    difficulty: "advanced",
+    category: "advanced",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Determining whether a product needs separate ICMP approval to be discoverable by U.S. Intelligence Community buyers",
+      "Submitting a FOCI packet and ensuring a product makes no public-internet calls before listing in ICMP's air-gapped catalog",
+    ],
+    context: [
+      "AWS Marketplace",
+      "AWS Secret Region",
+      "U.S. Intelligence Community",
+      "Government / Public Sector",
+    ],
+    related: [{ name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" }],
+  },
+  {
+    name: "Ask Marketplace — Azure",
+    tags: ["azure"],
+    def: "An AI feature on Microsoft Marketplace that answers a buyer's questions about a listing directly on the listing page, drawing on seller-supplied content to generate its responses. Parallels AWS's AI Insights feature, though Ask Marketplace answers open-ended buyer questions generally rather than focusing specifically on pricing explanation.",
+    alias:
+      "AWS equivalent: AI Insights — AWS | Related: Microsoft Marketplace — Azure, Listing",
+    source: "https://www.suger.io/resources/blog/aws-marketplace-ai-insights/",
+    difficulty: "beginner",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Letting a buyer get an AI-generated answer to a question about a listing without contacting the seller directly",
+      "Supplying rich enough listing content so Ask Marketplace's AI-generated answers are accurate and useful to buyers",
+    ],
+    context: ["Microsoft Marketplace", "Partner Center"],
+    related: [
+      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      { name: "Listing", slug: "listing" },
+    ],
+  },
+  {
+    name: "AWS Brazil 2P Distribution Program — AWS",
+    tags: ["aws", "offers"],
+    def: "A program letting non-Brazilian ISVs grant AWS Brazil distribution authorization — via AWS Partner Central or public APIs — to sell their SaaS licenses to Brazilian customers without the ISV needing a local Brazilian entity. AWS Brazil becomes the local seller of record: it creates private offers for Brazilian buyers, sets buyer-facing pricing, and auto-generates BRL invoices (the buyer sees a USD-priced private offer, invoiced in BRL at the invoice-date exchange rate) with tax included. The program automates distribution authorizations, seller disbursements, withholding tax calculation, invoicing, and seller reporting; ISVs track performance via the Seller Insights dashboard.",
+    alias: "Related: Seller of Record, AWS Marketplace — AWS, Disbursement",
+    source:
+      "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-brazil-software-license-distribution/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Selling to Brazilian customers without establishing a local Brazilian legal entity, by granting AWS Brazil distribution authorization",
+      "Tracking BRL-invoiced Brazilian sales performance through the Seller Insights dashboard",
+    ],
+    context: ["AWS Marketplace", "AWS Brazil", "Seller Insights Dashboard"],
+    related: [
+      { name: "Seller of Record", slug: "seller-of-record" },
+      { name: "AWS Marketplace — AWS", slug: "aws-marketplace-—-aws" },
+    ],
+  },
+  {
+    name: "AWS Data Competency — AWS",
+    tags: ["aws"],
+    def: "An AWS Competency specialization for partners with proven database and data-platform expertise, spanning Services Partners and Software Partners. As of late September 2026, it added two new categories — Databases for Services Partners and Relational Databases for Software Partners — and introduced performance-based 'Signature' benefits: 2027 marketing and deal funding across three accelerators (Production Ready, AI Assessment, Database Migration), AWS Data and AI Workshop access, and recognition perks such as case studies and Partner of the Year consideration.",
+    alias:
+      "Related: AWS Competency — AWS, AWS Competency Program — AWS",
+    source:
+      "https://aws.amazon.com/blogs/apn/new-categories-and-benefits-for-aws-data-competency-partners/",
+    difficulty: "intermediate",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Channel Partners"],
+    useCases: [
+      "Pursuing AWS Data Competency's Databases or Relational Databases category to validate database/data-platform expertise",
+      "Qualifying for Signature benefits — 2027 funding accelerators, workshop access, recognition — through performance in the AWS Data Competency program",
+    ],
+    context: ["AWS Partner Network", "AWS Competency Program"],
+    related: [
+      { name: "AWS Competency — AWS", slug: "aws-competency-—-aws" },
+      {
+        name: "AWS Competency Program — AWS",
+        slug: "aws-competency-program-—-aws",
+      },
+    ],
+  },
+  {
+    name: "Future-Dated Agreements — AWS",
+    tags: ["aws", "offers"],
+    def: "An AWS Marketplace mechanism letting a buyer sign a renewal agreement before their current contract expires — for example, signing in December for a contract that starts the following January — so there's no coverage gap or re-negotiation scramble at the renewal deadline. Only available when auto-renewal is switched off for the existing agreement first; an agreement with auto-renewal enabled can't also have a future-dated renewal pending.",
+    alias: "Related: Private Offer — AWS, Agreement — AWS",
+    source:
+      "https://www.suger.io/resources/blog/aws-marketplace-future-dated-agreements/",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
+    useCases: [
+      "Signing a renewal agreement ahead of a contract's expiry date to avoid a last-minute renewal scramble",
+      "Switching off auto-renewal on an existing agreement before setting up a future-dated renewal in its place",
+    ],
+    context: ["AWS Marketplace", "AWS Marketplace Management Portal (AMMP)"],
+    related: [
+      { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
+      { name: "Agreement — AWS", slug: "agreement-—-aws" },
     ],
   },
 ];
