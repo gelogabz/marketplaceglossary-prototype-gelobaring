@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04T11:29:45.536Z",
+  "lastUpdated": "2026-10-05T11:53:22.994Z",
   "updates": [
     {
       "id": "aws-2026-10-02-aws-brazil-automates-distribution-of-non-brazilian",
@@ -145,12 +145,12 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-30-gcp-gcp-private-offers-committed-use-discounts-sug",
+      "id": "suger-2026-09-30-gcp-gcp-private-offers-committed-use-discounts-fou",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-09-30",
-      "title": "GCP GCP Private Offers: Committed Use Discounts | Suger The three private-offer pricing models for usage-priced SaaS on ",
-      "summary": "GCP GCP Private Offers: Committed Use Discounts | Suger The three private-offer pricing models for usage-priced SaaS on Google Cloud Marketplace, the overage each one bills, and the choices you can't undo later. Sep 30, 2026",
+      "title": "GCP GCP Private Offers: Committed Use Discounts | Fours The three private-offer pricing models for usage-priced SaaS on ",
+      "summary": "GCP GCP Private Offers: Committed Use Discounts | Fours The three private-offer pricing models for usage-priced SaaS on Google Cloud Marketplace, the overage each one bills, and the choices you can't undo later. Sep 30, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/gcp-private-offer-usage-pricing-models/",
       "impact": "low"
@@ -167,23 +167,23 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-30-co-sell-how-to-update-an-aws-co-sell-referral-suge",
+      "id": "suger-2026-09-30-co-sell-how-to-update-an-aws-co-sell-referral-four",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-09-30",
-      "title": "Co-Sell How to Update an AWS Co-Sell Referral | Suger A PATCH with merge=true on Suger's referral API patches only the f",
-      "summary": "Co-Sell How to Update an AWS Co-Sell Referral | Suger A PATCH with merge=true on Suger's referral API patches only the fields you send, so you can change one value on an AWS ACE referral without wiping the rest. Sep 30, 2026",
+      "title": "Co-Sell How to Update an AWS Co-Sell Referral | Fours A PATCH with merge=true on Fours' referral API patches only the fi",
+      "summary": "Co-Sell How to Update an AWS Co-Sell Referral | Fours A PATCH with merge=true on Fours' referral API patches only the fields you send, so you can change one value on an AWS ACE referral without wiping the rest. Sep 30, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/update-an-aws-cosell-referral/",
       "impact": "medium"
     },
     {
-      "id": "suger-2026-09-30-prm-who-can-register-partner-deals-in-suger-prm-ho",
+      "id": "suger-2026-09-30-prm-who-can-register-partner-deals-in-fours-prm-ho",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-09-30",
-      "title": "PRM Who Can Register Partner Deals in Suger PRM How Suger controls who can register partner deals through your public li",
-      "summary": "PRM Who Can Register Partner Deals in Suger PRM How Suger controls who can register partner deals through your public link, and what accepting a held registration commits you to as the partner owner. Sep 30, 2026",
+      "title": "PRM Who Can Register Partner Deals in Fours PRM How Fours controls who can register partner deals through your public li",
+      "summary": "PRM Who Can Register Partner Deals in Fours PRM How Fours controls who can register partner deals through your public link, and what accepting a held registration commits you to as the partner owner. Sep 30, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/who-can-register-partner-deals/",
       "impact": "low"
@@ -337,7 +337,7 @@
       "platformTag": "suger",
       "date": "2026-09-29",
       "title": "Insulin: Which Models Serve Insulin Chat and Knowledge Bases?",
-      "summary": "With no provider of your own, Insulin chat runs on a Suger-hosted pool and knowledge bases embed with BGE-M3. The documented roster, who serves it, and how to check.",
+      "summary": "With no provider of your own, Insulin chat runs on a Fours-hosted pool and knowledge bases embed with BGE-M3. The documented roster, who serves it, and how to check.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/which-models-serve-insulin/",
       "impact": "low"
@@ -442,17 +442,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-28-insulin-deprecate-replace-or-delete-a-knowledge-ba",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-09-28",
-      "title": "Insulin: Deprecate, Replace, or Delete a Knowledge-Base Document",
-      "summary": "Deprecate takes an outdated file out of AI answers but keeps it. A same-name upload replaces it, and a crawled or synced document is fixed at its source.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/deprecate-replace-or-delete-a-knowledge-base-document/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-28-insulin-what-an-inbox-crm-action-changed-and-who-a",
       "platform": "Suger",
       "platformTag": "suger",
@@ -461,6 +450,17 @@
       "summary": "An Inbox CRM action leaves a two-part record: a receipt when you click Run in chat, and an outcome when the run ends. What each part proves, and where it stops.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/inbox-crm-action-audit-trail/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-28-insulin-deprecate-replace-or-delete-a-knowledge-ba",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-09-28",
+      "title": "Insulin: Deprecate, Replace, or Delete a Knowledge-Base Document",
+      "summary": "Deprecate takes an outdated file out of AI answers but keeps it. A same-name upload replaces it, and a crawled or synced document is fixed at its source.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/deprecate-replace-or-delete-a-knowledge-base-document/",
       "impact": "low"
     },
     {
@@ -480,7 +480,7 @@
       "platformTag": "suger",
       "date": "2026-09-28",
       "title": "Suger: As of Sep 28, 2026",
-      "summary": "In the Salesforce app, you can now change the entitlement on an amendment offer directly from its form — a Change link reopens the entitlement picker — and Suger skips the picker entirely when a Cloud Partner Selection mapping already names the base entitlement.",
+      "summary": "In the Salesforce app, you can now change the entitlement on an amendment offer directly from its form — a Change link reopens the entitlement picker — and Fours skips the picker entirely when a Cloud Partner Selection mapping already names the base entitlement.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-09-28",
       "impact": "medium"
@@ -689,7 +689,7 @@
       "platformTag": "suger",
       "date": "2026-09-21",
       "title": "Suger: As of Sep 21, 2026",
-      "summary": "Partners can now reach you without an invitation. A public deal-registration link lets a partner with no Suger account register a deal through a form, and every ISV now has a default partner sign-up form.",
+      "summary": "Partners can now reach you without an invitation. A public deal-registration link lets a partner with no Fours account register a deal through a form, and every ISV now has a default partner sign-up form.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-09-21",
       "impact": "high"
@@ -766,7 +766,7 @@
       "platformTag": "suger",
       "date": "2026-09-19",
       "title": "Insulin: AI Model Allowlist: Which Vendors See Your Prompts",
-      "summary": "An AI model allowlist decides which providers may serve your prompts. In Insulin it fails closed — and one missing row removes Suger's hosted models.",
+      "summary": "An AI model allowlist decides which providers may serve your prompts. In Insulin it fails closed — and one missing row removes Fours' hosted models.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/ai-model-allowlist/",
       "impact": "low"
@@ -864,8 +864,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-09-13",
-      "title": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Suger app puts offers, entitlements, co-sell and ",
-      "summary": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Suger app puts offers, entitlements, co-sell and AWS funding on the HubSpot deal — but not everything belongs on a deal, and two of the boundaries surprise people. Sep 13, 2026",
+      "title": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Fours app puts offers, entitlements, co-sell and ",
+      "summary": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Fours app puts offers, entitlements, co-sell and AWS funding on the HubSpot deal — but not everything belongs on a deal, and two of the boundaries surprise people. Sep 13, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-data-in-hubspot/",
       "impact": "low"
@@ -1102,12 +1102,12 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-09-02-announcement-suger-selected-to-support-isv-onboard",
+      "id": "suger-2026-09-02-announcement-fours-selected-to-support-isv-onboard",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-09-02",
-      "title": "Announcement Suger Selected to Support ISV Onboarding on AWS Through AWS 3PI PDM Pilot Suger has been selected as a laun",
-      "summary": "Announcement Suger Selected to Support ISV Onboarding on AWS Through AWS 3PI PDM Pilot Suger has been selected as a launch 3rd Party Integrator (3PI) for a new AWS pilot program that scales early-stage partner onboarding and co-sell enablement across the AWS Partner Network.",
+      "title": "Announcement Fours Selected to Support ISV Onboarding on AWS Through AWS 3PI PDM Pilot Fours has been selected as a laun",
+      "summary": "Announcement Fours Selected to Support ISV Onboarding on AWS Through AWS 3PI PDM Pilot Fours has been selected as a launch 3rd Party Integrator (3PI) for a new AWS pilot program that scales early-stage partner onboarding and co-sell enablement across the AWS Partner Network.",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/suger-selected-aws-3pi-pdm-pilot/",
       "impact": "high"
@@ -1795,6 +1795,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-18-azure-azure-marketplace-renewals-and-offer-transit",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription la",
+      "summary": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription lands when a private offer expires, and the decisions a deal desk makes before it does. Aug 18, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/azure-renewals-and-offer-transitions/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-18-azure-azure-marketplace-changes-2026-what-s-new-fo",
       "platform": "Suger",
       "platformTag": "suger",
@@ -1817,14 +1828,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-18-azure-azure-marketplace-renewals-and-offer-transit",
+      "id": "suger-2026-08-18-billing-metering-the-marketplace-credit-request-at",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-08-18",
-      "title": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription la",
-      "summary": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription lands when a private offer expires, and the decisions a deal desk makes before it does. Aug 18, 2026",
+      "title": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on eve",
+      "summary": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on every cloud. Here is what AWS, Microsoft, and Google Cloud each require to issue one. Aug 18, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/azure-renewals-and-offer-transitions/",
+      "sourceUrl": "https://www.suger.io/resources/blog/credits-at-scale-bulk-adjustments/",
       "impact": "low"
     },
     {
@@ -1836,17 +1847,6 @@
       "summary": "PRM Measuring Partner Influence Without Bad Data Partner influenced revenue tracking fails on bad data before it fails on the model. Here are the common attribution models, how each breaks, and the instrumentation that keeps the number clean. Aug 18, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/measuring-partner-influence-without-bad-data/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-18-billing-metering-the-marketplace-credit-request-at",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on eve",
-      "summary": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on every cloud. Here is what AWS, Microsoft, and Google Cloud each require to issue one. Aug 18, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/credits-at-scale-bulk-adjustments/",
       "impact": "low"
     },
     {
@@ -2026,17 +2026,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-billing-metering-when-usage-records-fail-batching-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a dead",
-      "summary": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a deadline on it. The response codes tell you which failures to retry and which to fix — and they are not the same failures. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/when-usage-records-fail/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-marketplaces-selling-on-snowflake-oracle-and-aliba",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2045,6 +2034,17 @@
       "summary": "Marketplaces Selling on Snowflake, Oracle and Alibaba Cloud The marketplaces past AWS, Microsoft and Google Cloud are not smaller copies of them. Each gates sellers differently, and one of them caps how much of a customer's commitment you can take. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/selling-on-snowflake-oracle-and-alibaba-cloud/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-billing-metering-when-usage-records-fail-batching-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a dead",
+      "summary": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a deadline on it. The response codes tell you which failures to retry and which to fix — and they are not the same failures. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/when-usage-records-fail/",
       "impact": "low"
     },
     {
@@ -2279,17 +2279,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-12-cloud-gtm-eulas-and-custom-terms-in-marketplace-de",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-12",
-      "title": "Cloud GTM EULAs and Custom Terms in Marketplace Deals Every marketplace offers you a standard contract and lets you refu",
-      "summary": "Cloud GTM EULAs and Custom Terms in Marketplace Deals Every marketplace offers you a standard contract and lets you refuse it. That choice sets your close time for years, and on one cloud it is irreversible. Aug 12, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-eulas-and-custom-terms/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-12-cloud-gtm-entitlement-management-on-cloud-marketpl",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2298,6 +2287,17 @@
       "summary": "Cloud GTM Entitlement Management on Cloud Marketplaces A purchase event is not an entitlement, and an entitlement is not access. The three-hop path between them is where marketplace products quietly break. Aug 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/marketplace-entitlement-management/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-eulas-and-custom-terms-in-marketplace-de",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM EULAs and Custom Terms in Marketplace Deals Every marketplace offers you a standard contract and lets you refu",
+      "summary": "Cloud GTM EULAs and Custom Terms in Marketplace Deals Every marketplace offers you a standard contract and lets you refuse it. That choice sets your close time for years, and on one cloud it is irreversible. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/marketplace-eulas-and-custom-terms/",
       "impact": "low"
     },
     {
@@ -2411,17 +2411,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-10-cloud-gtm-your-first-90-days-selling-on-a-cloud-ma",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling",
-      "summary": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling problem disguised as a technical one. Here is the 90-day calendar, with a named owner for every milestone. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/first-90-days-cloud-marketplace/",
-      "impact": "high"
-    },
-    {
       "id": "suger-2026-08-10-co-sell-how-co-sell-works-on-aws-azure-and-google-",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2431,6 +2420,17 @@
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/how-co-sell-works/",
       "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-cloud-gtm-your-first-90-days-selling-on-a-cloud-ma",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling",
+      "summary": "Cloud GTM Your First 90 Days Selling on a Cloud Marketplace Inheriting an unlaunched marketplace listing is a scheduling problem disguised as a technical one. Here is the 90-day calendar, with a named owner for every milestone. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/first-90-days-cloud-marketplace/",
+      "impact": "high"
     },
     {
       "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
@@ -2499,17 +2499,6 @@
       "impact": "medium"
     },
     {
-      "id": "suger-2026-08-09-aws-the-aws-isv-partner-path-is-now-the-software-p",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-09",
-      "title": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is t",
-      "summary": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is the least interesting part. What matters is which stage you are at, and what each one actually unlocks. Aug 9, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-isv-partner-path/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-09-aws-aws-marketplace-contract-pricing-vs-usage-pric",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2518,6 +2507,17 @@
       "summary": "AWS AWS Marketplace Contract Pricing vs Usage Pricing The difference is not commercial, it's architectural. A contract product verifies entitlements and never meters. A subscription product meters every hour or you don't get paid. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-contract-vs-usage-pricing/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-aws-the-aws-isv-partner-path-is-now-the-software-p",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is t",
+      "summary": "AWS The AWS ISV Partner Path Is Now the Software Path AWS renamed the ISV Path to the Software Path, and the rename is the least interesting part. What matters is which stage you are at, and what each one actually unlocks. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-isv-partner-path/",
       "impact": "low"
     },
     {
@@ -2543,17 +2543,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-09-aws-how-to-cancel-an-aws-marketplace-subscription-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-09",
-      "title": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A sub",
-      "summary": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A subscription ends from a console page; a contract goes through AWS Support inside a 48-hour window most people miss. Aug 9, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/cancel-aws-marketplace-subscription/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-09-cloud-gtm-cloud-marketplace-metrics-worth-a-dashbo",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2562,6 +2551,17 @@
       "summary": "Cloud GTM Cloud Marketplace Metrics Worth a Dashboard Most marketplace dashboards report what already happened. The metrics worth building are the ones that change a decision — and each one needs a named source dataset. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/cloud-marketplace-metrics/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-aws-how-to-cancel-an-aws-marketplace-subscription-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A sub",
+      "summary": "AWS How to Cancel an AWS Marketplace Subscription The cancellation path depends entirely on what the buyer bought. A subscription ends from a console page; a contract goes through AWS Support inside a 48-hour window most people miss. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/cancel-aws-marketplace-subscription/",
       "impact": "low"
     },
     {
@@ -2818,17 +2818,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-05-aws-aws-edp-what-marketplace-sellers-need-to-know-",
-      "platform": "Suger",
-      "platformTag": "suger",
-      "date": "2026-08-05",
-      "title": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — a",
-      "summary": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — and marketplace purchases can draw it down. Here's why sellers should care. Aug 5, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.suger.io/resources/blog/aws-edp-what-sellers-need-to-know/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-05-aws-aws-marketplace-express-private-offers-explain",
       "platform": "Suger",
       "platformTag": "suger",
@@ -2837,6 +2826,17 @@
       "summary": "AWS AWS Marketplace Express Private Offers, Explained Express private offers let AWS Marketplace buyers self-serve an AI-generated offer from your pre-set rate cards. Here's what changed and how to set it up. Aug 5, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/aws-marketplace-express-private-offers/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-05-aws-aws-edp-what-marketplace-sellers-need-to-know-",
+      "platform": "Suger",
+      "platformTag": "suger",
+      "date": "2026-08-05",
+      "title": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — a",
+      "summary": "AWS AWS EDP: What Marketplace Sellers Need to Know AWS EDP is a committed-spend agreement between AWS and a customer — and marketplace purchases can draw it down. Here's why sellers should care. Aug 5, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.suger.io/resources/blog/aws-edp-what-sellers-need-to-know/",
       "impact": "low"
     },
     {
@@ -3801,8 +3801,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-06-26",
-      "title": "Product Update Product Updates: June 2026 What shipped in Suger June 2026: the Co-Sell MCP, Collaboration Score, AI fiel",
-      "summary": "Product Update Product Updates: June 2026 What shipped in Suger June 2026: the Co-Sell MCP, Collaboration Score, AI field-mapping prompts, SCA goal tracking, and AWS Bedrock, Vertex AI & Azure AI Foundry. Jun 26, 2026",
+      "title": "Product Update Product Updates: June 2026 What shipped in Fours June 2026: the Co-Sell MCP, Collaboration Score, AI fiel",
+      "summary": "Product Update Product Updates: June 2026 What shipped in Fours June 2026: the Co-Sell MCP, Collaboration Score, AI field-mapping prompts, SCA goal tracking, and AWS Bedrock, Vertex AI & Azure AI Foundry. Jun 26, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-june-2026/",
       "impact": "medium"
@@ -3813,7 +3813,7 @@
       "platformTag": "suger",
       "date": "2026-06-26",
       "title": "Suger: As of Jun 26, 2026",
-      "summary": "Launched the Suger Co-Sell MCP so co-sell referrals can be drafted, shared, and synced from inside an AI assistant — including drafting outbound referrals, listing inbound referrals pending acceptance, diagnosing stuck referrals, and syncing status back to Salesforce.",
+      "summary": "Launched the Fours Co-Sell MCP so co-sell referrals can be drafted, shared, and synced from inside an AI assistant — including drafting outbound referrals, listing inbound referrals pending acceptance, diagnosing stuck referrals, and syncing status back to Salesforce.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-06-26",
       "impact": "high"
@@ -3856,8 +3856,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-06-24",
-      "title": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes ",
-      "summary": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Suger PRM fixes the plumbing. Jun 24, 2026",
+      "title": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Fours PRM fixes ",
+      "summary": "PRM Launching a new path for partnerships Partnerships teams are constantly asked to do more with less. Fours PRM fixes the plumbing. Jun 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/partner-relationship-management/",
       "impact": "high"
@@ -4380,12 +4380,12 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-05-22-ai-meet-suger-ai-the-in-product-copilot-for-market",
+      "id": "suger-2026-05-22-ai-meet-fours-ai-the-in-product-copilot-for-market",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-05-22",
-      "title": "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers,",
-      "summary": "AI Meet Suger AI: The In-Product Copilot for Marketplace Ops Suger AI is an in-product copilot that queries your offers, diagnoses failures, fills forms, and navigates your console — without leaving the page. May 22, 2026",
+      "title": "AI Meet Fours AI: The In-Product Copilot for Marketplace Ops Fours AI is an in-product copilot that queries your offers,",
+      "summary": "AI Meet Fours AI: The In-Product Copilot for Marketplace Ops Fours AI is an in-product copilot that queries your offers, diagnoses failures, fills forms, and navigates your console — without leaving the page. May 22, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/meet-suger-ai-the-in-product-copilot/",
       "impact": "low"
@@ -4670,8 +4670,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-04-30",
-      "title": "Product Update Product Updates: April 2026 What shipped in Suger April 2026: Suger MCP, AI mapping for co-sell and fundi",
-      "summary": "Product Update Product Updates: April 2026 What shipped in Suger April 2026: Suger MCP, AI mapping for co-sell and funding, Account Mapping, AWS funding insights, and the Co-Sell Metrics Dashboard. Apr 30, 2026",
+      "title": "Product Update Product Updates: April 2026 What shipped in Fours April 2026: Fours MCP, AI mapping for co-sell and fundi",
+      "summary": "Product Update Product Updates: April 2026 What shipped in Fours April 2026: Fours MCP, AI mapping for co-sell and funding, Account Mapping, AWS funding insights, and the Co-Sell Metrics Dashboard. Apr 30, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-april-2026/",
       "impact": "medium"
@@ -4682,7 +4682,7 @@
       "platformTag": "suger",
       "date": "2026-04-30",
       "title": "Suger: As of Apr 30, 2026",
-      "summary": "Launched the Suger MCP server, letting an AI assistant run the marketplace motion in natural language — creating private offers, listing expiring entitlements, generating revenue reports, reporting usage, and checking open support tickets.",
+      "summary": "Launched the Fours MCP server, letting an AI assistant run the marketplace motion in natural language — creating private offers, listing expiring entitlements, generating revenue reports, reporting usage, and checking open support tickets.",
       "type": "release",
       "sourceUrl": "https://www.suger.io/resources/changelog/#release-2026-04-30",
       "impact": "high"
@@ -4963,12 +4963,12 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-03-26-product-update-product-updates-march-2026-suger-ma",
+      "id": "suger-2026-03-26-product-update-product-updates-march-2026-fours-ma",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-03-26",
-      "title": "Product Update Product Updates: March 2026 Suger March 2026: AWS Partner Central agents, redesigned widget, Seller Prime",
-      "summary": "Product Update Product Updates: March 2026 Suger March 2026: AWS Partner Central agents, redesigned widget, Seller Prime dashboards, three new funding types, SCABA, and more. Mar 26, 2026",
+      "title": "Product Update Product Updates: March 2026 Fours March 2026: AWS Partner Central agents, redesigned widget, Seller Prime",
+      "summary": "Product Update Product Updates: March 2026 Fours March 2026: AWS Partner Central agents, redesigned widget, Seller Prime dashboards, three new funding types, SCABA, and more. Mar 26, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-march-2026/",
       "impact": "medium"
@@ -5238,12 +5238,12 @@
       "impact": "medium"
     },
     {
-      "id": "suger-2026-02-19-product-update-product-updates-february-2026-suger",
+      "id": "suger-2026-02-19-product-update-product-updates-february-2026-fours",
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-02-19",
-      "title": "Product Update Product Updates: February 2026 Suger Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights",
-      "summary": "Product Update Product Updates: February 2026 Suger Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights, offer history in Salesforce, Azure application product offer. Feb 19, 2026",
+      "title": "Product Update Product Updates: February 2026 Fours Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights",
+      "summary": "Product Update Product Updates: February 2026 Fours Feb 2026: multi-partner AWS co-sell, Buy with AWS marketing insights, offer history in Salesforce, Azure application product offer. Feb 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-february-2026/",
       "impact": "medium"
@@ -5495,8 +5495,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-01-26",
-      "title": "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-",
-      "summary": "Product Update Product Updates: January 2026 See what’s new in Suger January 2026: multi-partner Azure referrals, cross-cloud marketplace dashboards, and co-sell partner analytics. Jan 26, 2026",
+      "title": "Product Update Product Updates: January 2026 See what’s new in Fours January 2026: multi-partner Azure referrals, cross-",
+      "summary": "Product Update Product Updates: January 2026 See what’s new in Fours January 2026: multi-partner Azure referrals, cross-cloud marketplace dashboards, and co-sell partner analytics. Jan 26, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-january-2026/",
       "impact": "medium"
@@ -5605,8 +5605,8 @@
       "platform": "Suger",
       "platformTag": "suger",
       "date": "2026-01-12",
-      "title": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS fu",
-      "summary": "Product Update Product Updates: Winter 2025 Discover what shipped in Suger’s Winter 2025 release: CRM enrichment, AWS funding, Snowflake Marketplace, and HubSpot improvements. Jan 12, 2026",
+      "title": "Product Update Product Updates: Winter 2025 Discover what shipped in Fours’ Winter 2025 release: CRM enrichment, AWS fun",
+      "summary": "Product Update Product Updates: Winter 2025 Discover what shipped in Fours’ Winter 2025 release: CRM enrichment, AWS funding, Snowflake Marketplace, and HubSpot improvements. Jan 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.suger.io/resources/blog/product-updates-winter-2025/",
       "impact": "medium"
