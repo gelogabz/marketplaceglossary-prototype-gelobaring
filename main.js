@@ -584,7 +584,7 @@ function formatReviewedDate(iso) {
 // sync with the live term count — no manual HTML edit needed when terms.js changes.
 function syncTermCountMeta() {
   const count = terms.length;
-  const text = `${count} cloud marketplace terms covering AWS, Azure, GCP, Snowflake, Alibaba, and Suger. Search, filter, and explore the complete Cloud GTM reference.`;
+  const text = `${count} cloud marketplace terms covering AWS, Azure, GCP, Snowflake, Alibaba, and Fours. Search, filter, and explore the complete Cloud GTM reference.`;
 
   const desc = document.querySelector('meta[name="description"]');
   if (desc) desc.setAttribute("content", text);
@@ -601,7 +601,7 @@ function syncTermCountMeta() {
       );
       if (definedTermSet) {
         definedTermSet.numberOfItems = count;
-        definedTermSet.description = `${count} cloud marketplace terms covering AWS, Azure, GCP, Snowflake, Alibaba, and Suger.`;
+        definedTermSet.description = `${count} cloud marketplace terms covering AWS, Azure, GCP, Snowflake, Alibaba, and Fours.`;
         jsonLd.textContent = JSON.stringify(data);
       }
     } catch {

@@ -549,8 +549,10 @@ function svgIcon(key) {
 const FLOW_ICON_BY_LABEL = {
   You: "person",
   "Suger Console": "box",
+  "Fours Console": "box",
   "Team & Stakeholders": "people",
   Suger: "box",
+  Fours: "box",
   "Your Systems": "plug",
   "ISV / Seller": "building",
   "Marketplace Review": "magnifier",
@@ -559,6 +561,7 @@ const FLOW_ICON_BY_LABEL = {
   "Cloud Partner": "cloud",
   Seller: "building",
   "Suger CPQ": "receipt",
+  "Fours CPQ": "receipt",
   "Private Offer": "document",
   Buyer: "person",
   Sandbox: "flask",
@@ -566,6 +569,7 @@ const FLOW_ICON_BY_LABEL = {
   Validation: "check",
   "Sign-off": "pen",
   "Suger API / Webhooks": "link",
+  "Fours API / Webhooks": "link",
   Marketplace: "storefront",
 };
 

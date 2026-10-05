@@ -7,10 +7,11 @@ import { terms } from "../data/terms.js";
 import { PLATFORM_SUFFIX_RE as SUFFIX_RE } from "./utils.js";
 
 export const DISPLAY_SUFFIX_RE =
-  / — (AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger)$/;
+  / — (AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger|Fours)$/;
 
 export const PLATFORM_KEYS = [
   "Suger",
+  "Fours",
   "AWS",
   "Azure",
   "GCP",
@@ -61,7 +62,7 @@ Object.values(byBase).forEach((names) => {
 
 // Pass 2: union terms linked by "X equivalent: Y" patterns in alias fields
 const EQUIV_RE =
-  /(?:(?:AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger)\s+)?[Ee]quivalent:\s*([^|]+?)(?=\s*\||$)/g;
+  /(?:(?:AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger|Fours)\s+)?[Ee]quivalent:\s*([^|]+?)(?=\s*\||$)/g;
 allComparableTerms.forEach((t) => {
   if (!t.alias) return;
   for (const m of t.alias.matchAll(EQUIV_RE)) {
@@ -72,7 +73,7 @@ allComparableTerms.forEach((t) => {
 
 // Pass 3: union terms linked by "AWS: X | Azure: Y | GCP: Z | Suger: W" patterns
 const PLATFORM_MAP_RE =
-  /\b(AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger):\s*([^|]+?)(?=\s*\||$)/g;
+  /\b(AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger|Fours):\s*([^|]+?)(?=\s*\||$)/g;
 allComparableTerms.forEach((t) => {
   if (!t.alias) return;
   for (const m of t.alias.matchAll(PLATFORM_MAP_RE)) {
@@ -80,7 +81,7 @@ allComparableTerms.forEach((t) => {
     const refBase = m[2].trim();
     if (refBase in parent) {
       union(t.name, refBase);
-    } else if (platform !== "Suger") {
+    } else if (platform !== "Suger" && platform !== "Fours") {
       const withSuffix = `${refBase} — ${platform}`;
       if (withSuffix in parent) union(t.name, withSuffix);
     }
@@ -149,6 +150,7 @@ export const CONCEPT_OVERRIDES = {
 
 const LABEL_PRIORITY = [
   "Suger",
+  "Fours",
   "AWS",
   "Azure",
   "GCP",

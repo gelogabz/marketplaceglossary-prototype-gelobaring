@@ -14,7 +14,7 @@
 // Tag order here determines display order on term cards. Platform tags first, topic tags after.
 
 export const tagMeta = {
-  suger: { label: "Suger", bg: "#ede9ff", color: "#3c3489" },
+  suger: { label: "Fours", bg: "#ede9ff", color: "#3c3489" },
   general: { label: "General", bg: "#f1efe8", color: "#444441" },
   aws: { label: "AWS", bg: "#fff3dc", color: "#8a5700" },
   azure: { label: "Azure", bg: "#e3f0ff", color: "#0b4f9e" },
