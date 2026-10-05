@@ -26,7 +26,7 @@ const PLATFORM_LABELS = {
   gcp: "GCP",
   snowflake: "Snowflake",
   oracle: "Oracle",
-  suger: "Suger",
+  suger: "Fours",
 };
 const TYPE_LABELS = {
   feature: "Feature",
@@ -141,7 +141,12 @@ function externalLinkIcon() {
 }
 
 function renderCard(e) {
-  const platformLabel = escHtml(PLATFORM_LABELS[e.platformTag] || e.platform);
+  // Prefer the entry's own stored platform name over the shared label map —
+  // each entry is a frozen historical record (an August 2026 Suger item must
+  // keep saying "Suger", not retroactively become "Fours" just because the
+  // map's current display label changed). The map is only a fallback for
+  // entries that somehow lack their own platform string.
+  const platformLabel = escHtml(e.platform || PLATFORM_LABELS[e.platformTag]);
   const typeLabel = escHtml(TYPE_LABELS[e.type] || e.type);
   const impactLabel = escHtml(IMPACT_LABELS[e.impact] || e.impact);
 
@@ -194,7 +199,7 @@ function renderDocsColumn() {
 
   if (!docsUpdates.length) {
     if (asOfEl) asOfEl.textContent = "";
-    list.innerHTML = `<p class="wn-docs-empty">No new doc pages detected yet. Checked daily against <a href="https://doc.suger.io/" target="_blank" rel="noopener">doc.suger.io</a>.</p>`;
+    list.innerHTML = `<p class="wn-docs-empty">No new doc pages detected yet. Checked daily against <a href="https://doc.fours.com/" target="_blank" rel="noopener">doc.fours.com</a>.</p>`;
     return;
   }
 

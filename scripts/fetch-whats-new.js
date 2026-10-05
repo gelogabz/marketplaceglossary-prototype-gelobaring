@@ -32,11 +32,11 @@
  *   Snowflake Release Notes https://docs.snowflake.com/en/release-notes/all-release-notes (HTML)
  *   Oracle Marketplace Release Notes https://docs.oracle.com/en-us/iaas/releasenotes/services/marketplace/index.htm (HTML)
  *   Oracle Marketplace Blog https://blogs.oracle.com/oraclemarketplace/feed (RSS)
- *   Suger Blog          https://www.suger.io/resources/blog/      (HTML)
+ *   Fours Blog          https://www.fours.com/resources/blog/      (HTML)
  *   Insulin Blog        https://www.insulin.dev/blog/             (HTML + JSON-LD)
- *   Suger Changelog     https://www.suger.io/resources/changelog/ (HTML)
+ *   Fours Changelog     https://www.fours.com/resources/changelog/ (HTML)
  *   Insulin Changelog   https://www.insulin.dev/changelog/        (HTML)
- *   Suger Docs Updates  https://doc.suger.io/sitemap-0.xml        (sitemap diff)
+ *   Fours Docs Updates  https://doc.fours.com/sitemap-0.xml        (sitemap diff)
  *
  *   AWS What's New is keyword-filtered to marketplace-relevant entries only.
  *   AWS Marketplace Blog and AWS APN Blog entries are included (no keyword filter).
@@ -677,10 +677,10 @@ async function fetchOracleBlog() {
   return results;
 }
 
-// ── Source: Suger Blog (HTML) ─────────────────────────────────────────────────
+// ── Source: Fours Blog (HTML) ─────────────────────────────────────────────────
 
 async function fetchSugerBlog() {
-  const html = await fetchText("https://www.suger.io/resources/blog/");
+  const html = await fetchText("https://www.fours.com/resources/blog/");
   const results = [];
   const seen = new Set();
 
@@ -703,7 +703,7 @@ async function fetchSugerBlog() {
     const date = parseIsoDate(dateM[0]);
     if (!date || !isRecent(date)) continue;
 
-    const url = href.startsWith("http") ? href : `https://www.suger.io${href}`;
+    const url = href.startsWith("http") ? href : `https://www.fours.com${href}`;
     // First non-date line is likely the title
     const lines = rawText
       .split(/\s{3,}/)
@@ -717,7 +717,7 @@ async function fetchSugerBlog() {
 
     results.push({
       id: stableId("suger", date, title),
-      platform: "Suger",
+      platform: "Fours",
       platformTag: "suger",
       date,
       title: title.slice(0, 120),
@@ -780,7 +780,7 @@ async function fetchInsulinBlog() {
     const title = `Insulin: ${post.headline}`;
     results.push({
       id: stableId("suger", date, title),
-      platform: "Suger",
+      platform: "Fours",
       platformTag: "suger",
       date,
       title: title.slice(0, 120),
@@ -793,16 +793,16 @@ async function fetchInsulinBlog() {
   return results;
 }
 
-// ── Source: Suger + Insulin Changelogs (HTML) ─────────────────────────────────
+// ── Source: Fours + Insulin Changelogs (HTML) ─────────────────────────────────
 //
-// Both suger.io/resources/changelog/ and insulin.dev/changelog/ share the exact
+// Both fours.com/resources/changelog/ and insulin.dev/changelog/ share the exact
 // same page template: one <div id="release-YYYY-MM-DD"> per release, containing
 // a <ul> of <li> bullets for that date. The ISO date lives directly in the id
 // attribute — no date-string parsing needed. One entry per release date (not
 // per bullet): title is "{Product}: As of {display date}", summary is all of
 // that date's bullets joined into one line. The product prefix matters because
 // both sites can ship on the same calendar date — without it, two same-day
-// entries under platform "Suger" would collide on the stable ID and one would
+// entries under platform "Fours" would collide on the stable ID and one would
 // silently overwrite the other.
 
 const MONTH_NAMES = [
@@ -859,7 +859,7 @@ async function fetchProductChangelog(pageUrl, productLabel) {
       const combined = bullets.join(" ");
       return {
         id: stableId("suger", date, title),
-        platform: "Suger",
+        platform: "Fours",
         platformTag: "suger",
         date,
         title,
@@ -874,8 +874,8 @@ async function fetchProductChangelog(pageUrl, productLabel) {
 
 async function fetchSugerChangelog() {
   return fetchProductChangelog(
-    "https://www.suger.io/resources/changelog/",
-    "Suger",
+    "https://www.fours.com/resources/changelog/",
+    "Fours",
   );
 }
 
@@ -883,9 +883,9 @@ async function fetchInsulinChangelog() {
   return fetchProductChangelog("https://www.insulin.dev/changelog/", "Insulin");
 }
 
-// ── Source: Suger Docs sitemap diff ───────────────────────────────────────────
+// ── Source: Fours Docs sitemap diff ───────────────────────────────────────────
 //
-// Tracks doc.suger.io's sitemap for published/removed pages — mirrors a manual
+// Tracks doc.fours.com's sitemap for published/removed pages — mirrors a manual
 // two-sheet Google Sheets workflow (pull today's sitemap, diff against
 // yesterday's pull) with two files instead: data/suger-docs-known-urls.json
 // holds the last-seen URL set, this fetcher diffs the live sitemap against
@@ -894,14 +894,14 @@ async function fetchInsulinChangelog() {
 // that were removed or moved. First run ever (no known-urls file yet) seeds
 // the baseline silently and emits zero entries — otherwise every one of the
 // ~470 existing doc pages would show up as "new" in one flood. Every run
-// after that only reports genuine adds/removals. Rendered in its own "Suger
+// after that only reports genuine adds/removals. Rendered in its own "Fours
 // Docs" column on the What's New page — platformTag "suger-docs" is
 // deliberately excluded from the main marketplace/blog feed and its
 // platform/type filters (see whats-new.js).
 
 const ARCHIVE_HEADER =
-  "# Suger Docs Archive\n\n" +
-  "Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.\n";
+  "# Fours Docs Archive\n\n" +
+  "Chronological record of pages added to or removed from [doc.fours.com](https://doc.fours.com/). Newest entry first.\n";
 
 const DIFF_FENCE = "```";
 
@@ -951,9 +951,9 @@ function appendDocsArchiveEntry(isoDate, newEntries, removedEntries) {
 
 function titleFromDocUrl(url) {
   const path = url
-    .replace(/^https?:\/\/doc\.suger\.io\//, "")
+    .replace(/^https?:\/\/doc\.fours\.com\//, "")
     .replace(/\/$/, "");
-  if (!path) return "Suger Docs Home";
+  if (!path) return "Fours Docs Home";
   return path
     .split("/")
     .map((seg) =>
@@ -966,7 +966,7 @@ function titleFromDocUrl(url) {
 }
 
 async function fetchSugerDocsUpdates() {
-  const xml = await fetchText("https://doc.suger.io/sitemap-0.xml");
+  const xml = await fetchText("https://doc.fours.com/sitemap-0.xml");
   const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1].trim());
 
   const isBootstrap = !existsSync(DOCS_KNOWN_URLS);
@@ -998,11 +998,11 @@ async function fetchSugerDocsUpdates() {
     const title = titleFromDocUrl(url);
     return {
       id: stableId("suger-docs", today, title),
-      platform: "Suger",
+      platform: "Fours",
       platformTag: "suger-docs",
       date: today,
       title,
-      summary: "New page published on Suger's product documentation.",
+      summary: "New page published on Fours' product documentation.",
       type: "docs",
       sourceUrl: url,
       impact: "low",
@@ -1013,11 +1013,11 @@ async function fetchSugerDocsUpdates() {
     const title = titleFromDocUrl(url);
     return {
       id: stableId("suger-docs-removed", today, title),
-      platform: "Suger",
+      platform: "Fours",
       platformTag: "suger-docs",
       date: today,
       title,
-      summary: "This page was removed or moved on Suger's product documentation.",
+      summary: "This page was removed or moved on Fours' product documentation.",
       type: "docs-removed",
       sourceUrl: url,
       impact: "low",

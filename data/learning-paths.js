@@ -45,7 +45,7 @@
  *   Onboarding (role-specific) paths live outside this sequence.
  */
 
-// Reference: https://www.suger.io/resources/guides/
+// Reference: https://www.fours.com/resources/guides/
 
 export const GLOBAL_SEQUENCE = [
   "cloud-marketplace-basics",
@@ -303,12 +303,12 @@ export const learningPaths = [
       {
         name: "Co-sell Insights — Suger",
         slug: "co-sell-insights-—-suger",
-        why: "After learning how co-sell programs work across AWS, Azure, and GCP, Co-sell Insights shows how Suger aggregates signals from all three into a unified intelligence layer. This is where cross-platform co-sell strategy becomes operationally executable — surfacing which deals to pursue and what actions to take, across all hyperscalers at once.",
+        why: "After learning how co-sell programs work across AWS, Azure, and GCP, Co-sell Insights shows how Fours aggregates signals from all three into a unified intelligence layer. This is where cross-platform co-sell strategy becomes operationally executable — surfacing which deals to pursue and what actions to take, across all hyperscalers at once.",
       },
       {
         name: "Account Mapping — Suger",
         slug: "account-mapping-—-suger",
-        why: "Account Mapping is how you turn your CRM pipeline into a co-sell targeting list. Suger maps your existing accounts against cloud partner account data across AWS, Azure, and GCP — surfacing which of your deals already have an active cloud partner relationship. These overlaps are the highest-probability co-sell engagements, because the hyperscaler already knows the account.",
+        why: "Account Mapping is how you turn your CRM pipeline into a co-sell targeting list. Fours maps your existing accounts against cloud partner account data across AWS, Azure, and GCP — surfacing which of your deals already have an active cloud partner relationship. These overlaps are the highest-probability co-sell engagements, because the hyperscaler already knows the account.",
       },
       {
         name: "Subsidiary Account Connection — AWS",
@@ -461,7 +461,7 @@ export const learningPaths = [
       {
         name: "Integration Partner",
         slug: "integration-partner",
-        why: "Platforms like Suger handle marketplace API integrations on behalf of ISVs. Understand what they abstract, what ISVs still own, and when using an integration partner is the right call.",
+        why: "Platforms like Fours handle marketplace API integrations on behalf of ISVs. Understand what they abstract, what ISVs still own, and when using an integration partner is the right call.",
       },
     ],
   },
@@ -531,11 +531,11 @@ export const learningPaths = [
   },
   {
     slug: "suger-platform-quickstart",
-    title: "Suger Platform Quickstart",
+    title: "Fours Platform Quickstart",
     category: "operations",
     level: "beginner",
     description:
-      "Core Suger concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Suger.",
+      "Core Fours concepts — what the platform does, how it connects to cloud marketplaces, and where to configure what. Start here if you're new to Fours.",
     meta: "19 terms · ~75 min",
     continuesFrom: "channel-and-partner-motions",
     next: "marketplace-integrations",
@@ -543,37 +543,37 @@ export const learningPaths = [
       {
         name: "Suger",
         slug: "suger",
-        why: "Start with what Suger is — the platform's purpose, what it connects, and why ISVs use it to manage cloud marketplace operations rather than building integrations from scratch.",
+        why: "Start with what Fours is — the platform's purpose, what it connects, and why ISVs use it to manage cloud marketplace operations rather than building integrations from scratch.",
       },
       {
         name: "Organization",
         slug: "organization",
-        why: "Your Organization is the root of your Suger account — it's where access controls, integrations, and product configurations live. Getting this right at setup prevents permission and billing attribution issues across every marketplace you connect to later.",
+        why: "Your Organization is the root of your Fours account — it's where access controls, integrations, and product configurations live. Getting this right at setup prevents permission and billing attribution issues across every marketplace you connect to later.",
       },
       {
         name: "Suger Console",
         slug: "suger-console",
-        why: "The Suger Console is your operational control plane for cloud marketplace — where you monitor entitlements, manage offers, trigger metering, and configure integrations. Understanding its structure up front saves hours of navigation time once you're live.",
+        why: "The Fours Console is your operational control plane for cloud marketplace — where you monitor entitlements, manage offers, trigger metering, and configure integrations. Understanding its structure up front saves hours of navigation time once you're live.",
       },
       {
         name: "Suger Buyer Service",
         slug: "suger-buyer-service",
-        why: "The Suger Console is the ISV's operational interface; the Suger Buyer Service is the buyer-facing portal Suger provides for procurement and entitlement management. Understanding both sides of the Suger platform explains how buyers interact with marketplace purchases that ISVs manage through the Console.",
+        why: "The Fours Console is the ISV's operational interface; the Fours Buyer Service is the buyer-facing portal Fours provides for procurement and entitlement management. Understanding both sides of the Fours platform explains how buyers interact with marketplace purchases that ISVs manage through the Console.",
       },
       {
         name: "Buyer Portal — Suger",
         slug: "buyer-portal-—-suger",
-        why: "The Buyer Portal is the white-label, embeddable self-service UI Suger provides for enterprise buyers — a five-section dashboard covering entitlements, offers, invoices, and requests that ISVs can brand and embed in their own customer portals. It's the product-facing complement to the Suger Console.",
+        why: "The Buyer Portal is the white-label, embeddable self-service UI Fours provides for enterprise buyers — a five-section dashboard covering entitlements, offers, invoices, and requests that ISVs can brand and embed in their own customer portals. It's the product-facing complement to the Fours Console.",
       },
       {
         name: "Global Search — Suger",
         slug: "global-search-—-suger",
-        why: "As your entitlement and offer volume grows, finding a specific record without drilling through module menus becomes friction. Global Search queries across entitlements, offers, buyers, organizations, and integrations from a single bar — the fastest way to navigate Suger once you're beyond initial setup.",
+        why: "As your entitlement and offer volume grows, finding a specific record without drilling through module menus becomes friction. Global Search queries across entitlements, offers, buyers, organizations, and integrations from a single bar — the fastest way to navigate Fours once you're beyond initial setup.",
       },
       {
         name: "Integration",
         slug: "integration",
-        why: "An Integration is how Suger connects to a specific cloud marketplace. Learn what an integration covers, how to set one up, and what permissions and credentials it requires.",
+        why: "An Integration is how Fours connects to a specific cloud marketplace. Learn what an integration covers, how to set one up, and what permissions and credentials it requires.",
       },
       {
         name: "Billing Integration",
@@ -583,27 +583,27 @@ export const learningPaths = [
       {
         name: "Entitlement",
         slug: "entitlement",
-        why: "Once your integration is live and a buyer purchases through marketplace, Suger creates an Entitlement record. Learn how Suger tracks entitlement state and what it syncs from the hyperscaler.",
+        why: "Once your integration is live and a buyer purchases through marketplace, Fours creates an Entitlement record. Learn how Fours tracks entitlement state and what it syncs from the hyperscaler.",
       },
       {
         name: "Provisioning",
         slug: "provisioning",
-        why: "After an entitlement is created, Suger helps trigger buyer provisioning. Learn how Suger's provisioning webhooks and callbacks work and what your product backend needs to handle.",
+        why: "After an entitlement is created, Fours helps trigger buyer provisioning. Learn how Fours' provisioning webhooks and callbacks work and what your product backend needs to handle.",
       },
       {
         name: "Offer Set — Suger",
         slug: "offer-set-—-suger",
-        why: "For deals that involve multiple products, Suger supports AWS Offer Sets — bundling multiple private offers into one buyer transaction. Learn how to create and manage Offer Sets through the Suger console or API so multi-product deals close in a single step.",
+        why: "For deals that involve multiple products, Fours supports AWS Offer Sets — bundling multiple private offers into one buyer transaction. Learn how to create and manage Offer Sets through the Fours console or API so multi-product deals close in a single step.",
       },
       {
         name: "CRM Enrichment",
         slug: "crm-enrichment",
-        why: "The PTB scores and hyperscaler engagement signals in the Suger Console are most useful when your sales team can see them without leaving their CRM. CRM Enrichment pushes all three cloud providers' signals into Salesforce or HubSpot automatically — making account prioritization happen in the tools your team already uses.",
+        why: "The PTB scores and hyperscaler engagement signals in the Fours Console are most useful when your sales team can see them without leaving their CRM. CRM Enrichment pushes all three cloud providers' signals into Salesforce or HubSpot automatically — making account prioritization happen in the tools your team already uses.",
       },
       {
         name: "Co-sell Insights — Suger",
         slug: "co-sell-insights-—-suger",
-        why: "CRM Enrichment pushes hyperscaler signals into your CRM; Co-sell Insights is Suger's AI layer that interprets those signals and recommends next actions for co-sell opportunities. Understanding this feature completes the picture of how Suger turns raw hyperscaler data into actionable co-sell guidance.",
+        why: "CRM Enrichment pushes hyperscaler signals into your CRM; Co-sell Insights is Fours' AI layer that interprets those signals and recommends next actions for co-sell opportunities. Understanding this feature completes the picture of how Fours turns raw hyperscaler data into actionable co-sell guidance.",
       },
       {
         name: "Collaboration Score — Suger",
@@ -618,22 +618,22 @@ export const learningPaths = [
       {
         name: "Co-Sell Metrics Dashboard — Suger",
         slug: "co-sell-metrics-dashboard-—-suger",
-        why: "Once you're acting on insights and prioritizing contacts by Collaboration Score, the Co-Sell Metrics Dashboard is where you track the results — win rates by cloud provider and sync health — closing the loop on Suger's co-sell tooling.",
+        why: "Once you're acting on insights and prioritizing contacts by Collaboration Score, the Co-Sell Metrics Dashboard is where you track the results — win rates by cloud provider and sync health — closing the loop on Fours' co-sell tooling.",
       },
       {
         name: "Suger MCP Server",
         slug: "suger-mcp-server",
-        why: "Once you understand what Suger does operationally, the MCP Server shows how AI agents can interact with it directly. The Suger MCP Server exposes Suger's API capabilities to AI coding assistants and automation agents — enabling teams to build, query, and manage marketplace workflows without leaving their AI toolchain.",
+        why: "Once you understand what Fours does operationally, the MCP Server shows how AI agents can interact with it directly. The Fours MCP Server exposes Fours' API capabilities to AI coding assistants and automation agents — enabling teams to build, query, and manage marketplace workflows without leaving their AI toolchain.",
       },
       {
         name: "Insulin",
         slug: "insulin",
-        why: "Insulin is Suger's built-in AI workspace — inside the Console, not a separate tool. It adds agents, team channels, and automated Watches on top of the platform you already use. Understanding Insulin completes the picture of how Suger is evolving from a management console into an agentic operations platform.",
+        why: "Insulin is Fours' built-in AI workspace — inside the Console, not a separate tool. It adds agents, team channels, and automated Watches on top of the platform you already use. Understanding Insulin completes the picture of how Fours is evolving from a management console into an agentic operations platform.",
       },
       {
         name: "Insulin Agent — Suger",
         slug: "insulin-agent-—-suger",
-        why: "Insulin Agents are the named units of work inside Insulin — each one is an AI specialist with defined tools and instructions. Suger ships 20+ pre-built agents and lets you create custom ones. Knowing what an Agent is tells you what you're configuring when you set up a Watch or assign agents to a Channel.",
+        why: "Insulin Agents are the named units of work inside Insulin — each one is an AI specialist with defined tools and instructions. Fours ships 20+ pre-built agents and lets you create custom ones. Knowing what an Agent is tells you what you're configuring when you set up a Watch or assign agents to a Channel.",
       },
       {
         name: "Insulin Jobs — Suger",
@@ -648,7 +648,7 @@ export const learningPaths = [
       {
         name: "Suger Chrome Extension",
         slug: "suger-chrome-extension",
-        why: "The Chrome Extension brings Suger into your browser's side panel, so marketplace data surfaces directly inside Salesforce deals and HubSpot contacts. It's the access point for users who spend most of their time in a CRM rather than the Suger Console — and it connects directly to Insulin for context-aware AI assistance.",
+        why: "The Chrome Extension brings Fours into your browser's side panel, so marketplace data surfaces directly inside Salesforce deals and HubSpot contacts. It's the access point for users who spend most of their time in a CRM rather than the Fours Console — and it connects directly to Insulin for context-aware AI assistance.",
       },
     ],
   },
@@ -667,7 +667,7 @@ export const learningPaths = [
       {
         name: "Integration Partner",
         slug: "integration-partner",
-        why: "Start with the big picture — integration partners like Suger exist because marketplace integrations are complex. Understand what they abstract, what APIs they wrap, and what ISVs still own.",
+        why: "Start with the big picture — integration partners like Fours exist because marketplace integrations are complex. Understand what they abstract, what APIs they wrap, and what ISVs still own.",
       },
       {
         name: "Integration",
@@ -692,7 +692,7 @@ export const learningPaths = [
       {
         name: "Webhook",
         slug: "webhook",
-        why: "Marketplace events — new entitlements, subscription changes, cancellations — are pushed to ISVs via webhook. Learn the event types, how to handle them reliably, and what Suger does to normalize these across hyperscalers.",
+        why: "Marketplace events — new entitlements, subscription changes, cancellations — are pushed to ISVs via webhook. Learn the event types, how to handle them reliably, and what Fours does to normalize these across hyperscalers.",
       },
       {
         name: "Provisioning",
@@ -717,22 +717,22 @@ export const learningPaths = [
       {
         name: "Zuora Integration — Suger",
         slug: "zuora-integration-—-suger",
-        why: "For ISVs that use Zuora for subscription billing and revenue recognition, the Suger-Zuora integration syncs marketplace entitlement events directly to Zuora subscription objects — eliminating manual reconciliation between marketplace and direct-billing channels.",
+        why: "For ISVs that use Zuora for subscription billing and revenue recognition, the Fours-Zuora integration syncs marketplace entitlement events directly to Zuora subscription objects — eliminating manual reconciliation between marketplace and direct-billing channels.",
       },
       {
         name: "DocuSign Integration — Suger",
         slug: "docusign-integration-—-suger",
-        why: "Enterprise private offer workflows typically require a signed order form before the marketplace offer is accepted. The DocuSign integration triggers the signature workflow automatically when a Suger private offer is created — streamlining the contract-to-checkout step without manual routing.",
+        why: "Enterprise private offer workflows typically require a signed order form before the marketplace offer is accepted. The DocuSign integration triggers the signature workflow automatically when a Fours private offer is created — streamlining the contract-to-checkout step without manual routing.",
       },
       {
         name: "Gong Integration — Suger",
         slug: "gong-integration-—-suger",
-        why: "Sales teams using Gong need deal context — active entitlement status, offer timelines, renewal dates — without leaving the conversation intelligence tool. The Gong integration surfaces Suger marketplace data directly in Gong deal timelines.",
+        why: "Sales teams using Gong need deal context — active entitlement status, offer timelines, renewal dates — without leaving the conversation intelligence tool. The Gong integration surfaces Fours marketplace data directly in Gong deal timelines.",
       },
       {
         name: "Suger MCP Server",
         slug: "suger-mcp-server",
-        why: "The integration patterns in this path — catalog APIs, webhooks, metering — are increasingly managed through AI agents rather than manual code. The Suger MCP Server is the protocol layer that lets AI assistants call Suger's APIs directly, making it a natural extension of any automated marketplace integration workflow.",
+        why: "The integration patterns in this path — catalog APIs, webhooks, metering — are increasingly managed through AI agents rather than manual code. The Fours MCP Server is the protocol layer that lets AI assistants call Fours' APIs directly, making it a natural extension of any automated marketplace integration workflow.",
       },
     ],
   },
@@ -766,7 +766,7 @@ export const learningPaths = [
       {
         name: "UsageRecordGroup — Suger",
         slug: "usagerecordgroup-—-suger",
-        why: "The Usage Record is the atomic unit the hyperscaler billing API expects; UsageRecordGroup is Suger's abstraction that batches multiple usage records into a single API call across customers and dimensions. Understanding this construct is essential for teams using Suger's metering API — it's what you actually build against, not the raw hyperscaler endpoints.",
+        why: "The Usage Record is the atomic unit the hyperscaler billing API expects; UsageRecordGroup is Fours' abstraction that batches multiple usage records into a single API call across customers and dimensions. Understanding this construct is essential for teams using Fours' metering API — it's what you actually build against, not the raw hyperscaler endpoints.",
       },
       {
         name: "Metered Billing",
@@ -806,7 +806,7 @@ export const learningPaths = [
       {
         name: "Service Control API — GCP",
         slug: "service-control-api-—-gcp",
-        why: "GCP routes usage reporting through the Service Control API rather than a marketplace-specific endpoint. Learn the service name and operation structure it expects, and how Suger normalizes GCP's model alongside AWS and Azure in a single metering integration.",
+        why: "GCP routes usage reporting through the Service Control API rather than a marketplace-specific endpoint. Learn the service name and operation structure it expects, and how Fours normalizes GCP's model alongside AWS and Azure in a single metering integration.",
       },
       {
         name: "Concurrent Agreements — AWS",
@@ -921,7 +921,7 @@ export const learningPaths = [
       {
         name: "Propensity to Buy (PTB) Score",
         slug: "propensity-to-buy-ptb-score",
-        why: "Every AE has more accounts than time. The PTB Score is how Suger surfaces which accounts are most likely to transact through a cloud marketplace — so you know where to focus co-sell effort before opening ACE or reaching out to a hyperscaler field team.",
+        why: "Every AE has more accounts than time. The PTB Score is how Fours surfaces which accounts are most likely to transact through a cloud marketplace — so you know where to focus co-sell effort before opening ACE or reaching out to a hyperscaler field team.",
       },
       {
         name: "Channel Partner Private Offer (CPPO) — AWS",
@@ -1178,7 +1178,7 @@ export const learningPaths = [
       {
         name: "AWS Marketplace Catalog API — AWS",
         slug: "aws-marketplace-catalog-api-—-aws",
-        why: "The Catalog API is how ISVs and integration platforms programmatically create and update listings and offers. Learn its capabilities and how integration partners like Suger use it to automate listing management.",
+        why: "The Catalog API is how ISVs and integration platforms programmatically create and update listings and offers. Learn its capabilities and how integration partners like Fours use it to automate listing management.",
       },
       {
         name: "AWS Marketplace Discovery API — AWS",
@@ -1287,7 +1287,7 @@ export const learningPaths = [
       {
         name: "Azure Intelligence Signals — Azure",
         slug: "azure-intelligence-signals-—-azure",
-        why: "Microsoft's CloudAscent system scores every account for Azure adoption propensity and classifies them into Act Now, Evaluate, Nurture, and Educate clusters. Suger surfaces these as Azure Engagement, Event, and Usage Scores — the signals that tell you which accounts are ready for a Microsoft co-sell push.",
+        why: "Microsoft's CloudAscent system scores every account for Azure adoption propensity and classifies them into Act Now, Evaluate, Nurture, and Educate clusters. Fours surfaces these as Azure Engagement, Event, and Usage Scores — the signals that tell you which accounts are ready for a Microsoft co-sell push.",
       },
       {
         name: "Marketplace Rewards — Azure",
@@ -1302,7 +1302,7 @@ export const learningPaths = [
       {
         name: "SaaS Fulfillment API — Azure",
         slug: "saas-fulfillment-api-—-azure",
-        why: "The SaaS Fulfillment API is how ISVs integrate their SaaS products with Microsoft Marketplace — handling subscription lifecycle events, activation, and plan changes. Learn the required endpoints and what Suger abstracts.",
+        why: "The SaaS Fulfillment API is how ISVs integrate their SaaS products with Microsoft Marketplace — handling subscription lifecycle events, activation, and plan changes. Learn the required endpoints and what Fours abstracts.",
       },
       {
         name: "SaaS Auto Activation — Azure",
@@ -1376,7 +1376,7 @@ export const learningPaths = [
       {
         name: "GCP Intelligence Signals — GCP",
         slug: "gcp-intelligence-signals-—-gcp",
-        why: "Google Cloud Partner Network gives ISVs access to GCP engagement and marketplace activity data per account — surfaced in Suger as GCP Engagement Score plus purchase and review metrics. Use these to identify which accounts are already active on GCP Marketplace before initiating outreach.",
+        why: "Google Cloud Partner Network gives ISVs access to GCP engagement and marketplace activity data per account — surfaced in Fours as GCP Engagement Score plus purchase and review metrics. Use these to identify which accounts are already active on GCP Marketplace before initiating outreach.",
       },
       {
         name: "Committed Use Discount (CUD) — GCP",
@@ -1401,7 +1401,7 @@ export const learningPaths = [
       {
         name: "Procurement API — GCP",
         slug: "procurement-api-—-gcp",
-        why: "The Procurement API is how ISVs integrate with GCP Marketplace — handling entitlement events, subscription approvals, and usage reporting. Learn the core endpoints and what Suger wraps for GCP integrations.",
+        why: "The Procurement API is how ISVs integrate with GCP Marketplace — handling entitlement events, subscription approvals, and usage reporting. Learn the core endpoints and what Fours wraps for GCP integrations.",
       },
       {
         name: "Cloud Commerce Producer API — GCP",
@@ -1504,12 +1504,12 @@ export const learningPaths = [
       {
         name: "Invoice",
         slug: "invoice",
-        why: "In Suger's direct billing model, invoices are how usage translates into a payment obligation. Understanding the invoice lifecycle — Draft → Finalized → payment triggered — gives you the full picture of how revenue becomes cash before it becomes a disbursement.",
+        why: "In Fours' direct billing model, invoices are how usage translates into a payment obligation. Understanding the invoice lifecycle — Draft → Finalized → payment triggered — gives you the full picture of how revenue becomes cash before it becomes a disbursement.",
       },
       {
         name: "Suger Analytics",
         slug: "suger-analytics",
-        why: "Before implementing AWS PRM tagging, understand what reporting visibility looks like in Suger. Analytics surfaces revenue, disbursements, and offer metrics across all marketplace channels — the reporting destination for the attribution data you'll configure next.",
+        why: "Before implementing AWS PRM tagging, understand what reporting visibility looks like in Fours. Analytics surfaces revenue, disbursements, and offer metrics across all marketplace channels — the reporting destination for the attribution data you'll configure next.",
       },
       {
         name: "Partner Revenue Measurement (PRM) — AWS",
@@ -1540,18 +1540,18 @@ export const learningPaths = [
   },
   {
     slug: "partner-relationship-management",
-    title: "Partner Relationship Management (Suger PRM)",
+    title: "Partner Relationship Management (Fours PRM)",
     category: "operations",
     level: "intermediate",
     description:
-      "How to run a channel partner program using Suger PRM — from portal setup and partner tiering to deal registration, commission plans, incentive programs, and multi-tier DSOR reporting. Built around Suger's native PRM capabilities at suger.io/prm.",
+      "How to run a channel partner program using Fours PRM — from portal setup and partner tiering to deal registration, commission plans, incentive programs, and multi-tier DSOR reporting. Built around Fours' native PRM capabilities at fours.com/prm.",
     meta: "15 terms · ~60 min",
     prereqs: ["channel-and-partner-motions"],
     steps: [
       {
         name: "Partner Relationship Management (PRM) — Suger",
         slug: "partner-relationship-management-prm-—-suger",
-        why: "Start with the product: Suger PRM is the purpose-built platform for managing VARs, GSIs, resellers, and tech partners alongside cloud marketplace co-sell — not a generic CRM plugin. This term establishes what it is, what it replaces (spreadsheets, email, disconnected tools), and why it's distinct from a general-purpose PRM by integrating marketplace co-sell motions natively.",
+        why: "Start with the product: Fours PRM is the purpose-built platform for managing VARs, GSIs, resellers, and tech partners alongside cloud marketplace co-sell — not a generic CRM plugin. This term establishes what it is, what it replaces (spreadsheets, email, disconnected tools), and why it's distinct from a general-purpose PRM by integrating marketplace co-sell motions natively.",
       },
       {
         name: "Integration Partner",
@@ -1576,7 +1576,7 @@ export const learningPaths = [
       {
         name: "Partner Portal — Suger",
         slug: "partner-portal-—-suger",
-        why: "The partner-facing surface of your PRM. A white-label portal under your own domain gives partners a single place to register deals, consume enablement, and check commission status — without exposing Suger branding. Set up the portal before inviting partners.",
+        why: "The partner-facing surface of your PRM. A white-label portal under your own domain gives partners a single place to register deals, consume enablement, and check commission status — without exposing Fours branding. Set up the portal before inviting partners.",
       },
       {
         name: "Learning Management System (LMS) — Suger",
@@ -1591,12 +1591,12 @@ export const learningPaths = [
       {
         name: "SCORM",
         slug: "scorm",
-        why: "Most organizations already have training content built in Articulate, iSpring, or Captivate. SCORM is the standard that lets those existing packages import directly into the Suger LMS without rebuilding. Knowing the standard means you can audit your existing library for compatibility before committing to a content migration.",
+        why: "Most organizations already have training content built in Articulate, iSpring, or Captivate. SCORM is the standard that lets those existing packages import directly into the Fours LMS without rebuilding. Knowing the standard means you can audit your existing library for compatibility before committing to a content migration.",
       },
       {
         name: "Deal Registration — Suger",
         slug: "deal-registration-—-suger",
-        why: "The core PRM workflow: partners submit deals via a public form or email alias, Suger auto-creates the opportunity in Salesforce or HubSpot, and approval routing fires based on tier and geography. This is how partner-sourced pipeline enters your CRM cleanly.",
+        why: "The core PRM workflow: partners submit deals via a public form or email alias, Fours auto-creates the opportunity in Salesforce or HubSpot, and approval routing fires based on tier and geography. This is how partner-sourced pipeline enters your CRM cleanly.",
       },
       {
         name: "Referral",
@@ -1606,7 +1606,7 @@ export const learningPaths = [
       {
         name: "CRM Enrichment",
         slug: "crm-enrichment",
-        why: "Once a deal is registered and lives in the CRM, Suger enriches the opportunity with marketplace signals, co-sell data, and partner attribution fields. This enrichment is what makes partner deals trackable through close — and what feeds commission calculation.",
+        why: "Once a deal is registered and lives in the CRM, Fours enriches the opportunity with marketplace signals, co-sell data, and partner attribution fields. This enrichment is what makes partner deals trackable through close — and what feeds commission calculation.",
       },
       {
         name: "Commission Plan — Suger",
@@ -1636,19 +1636,19 @@ export const learningPaths = [
     category: "advanced",
     level: "intermediate",
     description:
-      "Understand how cloud hyperscalers score buyer intent, how Suger normalizes those signals across AWS, Azure, and GCP, and how to operationalize them — from CRM enrichment to co-sell pipeline prioritization.",
+      "Understand how cloud hyperscalers score buyer intent, how Fours normalizes those signals across AWS, Azure, and GCP, and how to operationalize them — from CRM enrichment to co-sell pipeline prioritization.",
     meta: "10 terms · ~40 min",
     prereqs: ["cosell-fundamentals"],
     steps: [
       {
         name: "Propensity to Buy (PTB) Score",
         slug: "propensity-to-buy-ptb-score",
-        why: "Start with the core concept. PTB Score is Suger's normalized measure of how likely a given account is to purchase through a cloud marketplace. Everything else in this path feeds into or derives from this score — understand what it is before diving into where the data comes from.",
+        why: "Start with the core concept. PTB Score is Fours' normalized measure of how likely a given account is to purchase through a cloud marketplace. Everything else in this path feeds into or derives from this score — understand what it is before diving into where the data comes from.",
       },
       {
         name: "AWS Intelligence Signals — AWS",
         slug: "aws-intelligence-signals-—-aws",
-        why: "AWS is the primary PTB signal source for most ISVs. Intelligence Signals is the umbrella term covering multiple AWS-generated scores — engagement, solution fit, co-sell intent — that Suger aggregates into the PTB view. Know the bundle before examining each sub-score.",
+        why: "AWS is the primary PTB signal source for most ISVs. Intelligence Signals is the umbrella term covering multiple AWS-generated scores — engagement, solution fit, co-sell intent — that Fours aggregates into the PTB view. Know the bundle before examining each sub-score.",
       },
       {
         name: "AWS Marketplace Engagement Score — AWS",
@@ -1668,17 +1668,17 @@ export const learningPaths = [
       {
         name: "Azure Intelligence Signals — Azure",
         slug: "azure-intelligence-signals-—-azure",
-        why: "Same concept, different source. Azure signals come from Microsoft CloudAscent — a free program that classifies accounts into propensity clusters (Act Now, Evaluate, Nurture, Educate). Suger normalizes these as Azure Engagement Score, Event Score, and Usage Score. Essential if any of your pipeline runs through Microsoft's motion.",
+        why: "Same concept, different source. Azure signals come from Microsoft CloudAscent — a free program that classifies accounts into propensity clusters (Act Now, Evaluate, Nurture, Educate). Fours normalizes these as Azure Engagement Score, Event Score, and Usage Score. Essential if any of your pipeline runs through Microsoft's motion.",
       },
       {
         name: "GCP Intelligence Signals — GCP",
         slug: "gcp-intelligence-signals-—-gcp",
-        why: "GCP's equivalent signal set — engagement score, marketplace count, review count, purchase count — surfaced by Suger from Google's partner data. Completes the cross-cloud picture: a prospect with high PTB on all three clouds is a tier-1 target regardless of which marketplace you lead with.",
+        why: "GCP's equivalent signal set — engagement score, marketplace count, review count, purchase count — surfaced by Fours from Google's partner data. Completes the cross-cloud picture: a prospect with high PTB on all three clouds is a tier-1 target regardless of which marketplace you lead with.",
       },
       {
         name: "CRM Enrichment",
         slug: "crm-enrichment",
-        why: "Signals are only actionable if they reach your reps. CRM Enrichment is how Suger pushes PTB scores and intelligence signals into Salesforce and HubSpot on a 12-hour sync cycle. Understand the field mapping model so your RevOps team can build scoring views and routing rules on top of live data.",
+        why: "Signals are only actionable if they reach your reps. CRM Enrichment is how Fours pushes PTB scores and intelligence signals into Salesforce and HubSpot on a 12-hour sync cycle. Understand the field mapping model so your RevOps team can build scoring views and routing rules on top of live data.",
       },
       {
         name: "APN Customer Engagements (ACE) — AWS",
