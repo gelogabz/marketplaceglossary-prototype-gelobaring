@@ -301,8 +301,8 @@ export const learningPaths = [
         why: "GCP's co-sell program is structured differently from AWS and Azure. Google Cloud Partner Network is the framework that governs how ISVs qualify for and access GCP field co-sell support.",
       },
       {
-        name: "Co-sell Insights — Suger",
-        slug: "co-sell-insights-—-suger",
+        name: "Co-Sell Insights — Fours",
+        slug: "co-sell-insights-—-fours",
         why: "After learning how co-sell programs work across AWS, Azure, and GCP, Co-sell Insights shows how Fours aggregates signals from all three into a unified intelligence layer. This is where cross-platform co-sell strategy becomes operationally executable — surfacing which deals to pursue and what actions to take, across all hyperscalers at once.",
       },
       {
@@ -551,23 +551,23 @@ export const learningPaths = [
         why: "Your Organization is the root of your Fours account — it's where access controls, integrations, and product configurations live. Getting this right at setup prevents permission and billing attribution issues across every marketplace you connect to later.",
       },
       {
-        name: "Suger Console",
-        slug: "suger-console",
+        name: "Fours Console",
+        slug: "fours-console",
         why: "The Fours Console is your operational control plane for cloud marketplace — where you monitor entitlements, manage offers, trigger metering, and configure integrations. Understanding its structure up front saves hours of navigation time once you're live.",
       },
       {
-        name: "Suger Buyer Service",
-        slug: "suger-buyer-service",
+        name: "Fours Buyer Service",
+        slug: "fours-buyer-service",
         why: "The Fours Console is the ISV's operational interface; the Fours Buyer Service is the buyer-facing portal Fours provides for procurement and entitlement management. Understanding both sides of the Fours platform explains how buyers interact with marketplace purchases that ISVs manage through the Console.",
       },
       {
-        name: "Buyer Portal — Suger",
-        slug: "buyer-portal-—-suger",
+        name: "Buyer Portal — Fours",
+        slug: "buyer-portal-—-fours",
         why: "The Buyer Portal is the white-label, embeddable self-service UI Fours provides for enterprise buyers — a five-section dashboard covering entitlements, offers, invoices, and requests that ISVs can brand and embed in their own customer portals. It's the product-facing complement to the Fours Console.",
       },
       {
-        name: "Global Search — Suger",
-        slug: "global-search-—-suger",
+        name: "Global Search — Fours",
+        slug: "global-search-—-fours",
         why: "As your entitlement and offer volume grows, finding a specific record without drilling through module menus becomes friction. Global Search queries across entitlements, offers, buyers, organizations, and integrations from a single bar — the fastest way to navigate Fours once you're beyond initial setup.",
       },
       {
@@ -591,8 +591,8 @@ export const learningPaths = [
         why: "After an entitlement is created, Fours helps trigger buyer provisioning. Learn how Fours' provisioning webhooks and callbacks work and what your product backend needs to handle.",
       },
       {
-        name: "Offer Set — Suger",
-        slug: "offer-set-—-suger",
+        name: "Offer Set — Fours",
+        slug: "offer-set-—-fours",
         why: "For deals that involve multiple products, Fours supports AWS Offer Sets — bundling multiple private offers into one buyer transaction. Learn how to create and manage Offer Sets through the Fours console or API so multi-product deals close in a single step.",
       },
       {
@@ -601,28 +601,28 @@ export const learningPaths = [
         why: "The PTB scores and hyperscaler engagement signals in the Fours Console are most useful when your sales team can see them without leaving their CRM. CRM Enrichment pushes all three cloud providers' signals into Salesforce or HubSpot automatically — making account prioritization happen in the tools your team already uses.",
       },
       {
-        name: "Co-sell Insights — Suger",
-        slug: "co-sell-insights-—-suger",
+        name: "Co-Sell Insights — Fours",
+        slug: "co-sell-insights-—-fours",
         why: "CRM Enrichment pushes hyperscaler signals into your CRM; Co-sell Insights is Fours' AI layer that interprets those signals and recommends next actions for co-sell opportunities. Understanding this feature completes the picture of how Fours turns raw hyperscaler data into actionable co-sell guidance.",
       },
       {
-        name: "Collaboration Score — Suger",
-        slug: "collaboration-score-—-suger",
+        name: "Collaboration Score — Fours",
+        slug: "collaboration-score-—-fours",
         why: "Co-sell Insights tells you which opportunities to act on; Collaboration Score narrows further to which specific partner contacts within those opportunities are worth engaging, ranked by quality rather than raw activity.",
       },
       {
-        name: "SCA Goal Tracking — Suger",
-        slug: "sca-goal-tracking-—-suger",
+        name: "SCA Goal Tracking — Fours",
+        slug: "sca-goal-tracking-—-fours",
         why: "Collaboration Score tells you which partner contacts to prioritize; SCA Goal Tracking rolls that activity up against the formal joint business goals in an AWS Strategic Collaboration Agreement — the aggregate view before you get to the Co-Sell Metrics Dashboard.",
       },
       {
-        name: "Co-Sell Metrics Dashboard — Suger",
-        slug: "co-sell-metrics-dashboard-—-suger",
+        name: "Co-Sell Metrics Dashboard — Fours",
+        slug: "co-sell-metrics-dashboard-—-fours",
         why: "Once you're acting on insights and prioritizing contacts by Collaboration Score, the Co-Sell Metrics Dashboard is where you track the results — win rates by cloud provider and sync health — closing the loop on Fours' co-sell tooling.",
       },
       {
-        name: "Suger MCP Server",
-        slug: "suger-mcp-server",
+        name: "Fours MCP Server",
+        slug: "fours-mcp-server",
         why: "Once you understand what Fours does operationally, the MCP Server shows how AI agents can interact with it directly. The Fours MCP Server exposes Fours' API capabilities to AI coding assistants and automation agents — enabling teams to build, query, and manage marketplace workflows without leaving their AI toolchain.",
       },
       {
@@ -631,23 +631,23 @@ export const learningPaths = [
         why: "Insulin is Fours' built-in AI workspace — inside the Console, not a separate tool. It adds agents, team channels, and automated Watches on top of the platform you already use. Understanding Insulin completes the picture of how Fours is evolving from a management console into an agentic operations platform.",
       },
       {
-        name: "Insulin Agent — Suger",
-        slug: "insulin-agent-—-suger",
+        name: "Insulin Agent — Fours",
+        slug: "insulin-agent-—-fours",
         why: "Insulin Agents are the named units of work inside Insulin — each one is an AI specialist with defined tools and instructions. Fours ships 20+ pre-built agents and lets you create custom ones. Knowing what an Agent is tells you what you're configuring when you set up a Watch or assign agents to a Channel.",
       },
       {
-        name: "Insulin Jobs — Suger",
-        slug: "insulin-jobs-—-suger",
+        name: "Insulin Jobs — Fours",
+        slug: "insulin-jobs-—-fours",
         why: "Jobs are how you turn Insulin from a chat tool into a background automation layer. A Job runs an Agent on a cron schedule or event trigger — so your agents can monitor revenue changes, entitlement events, or deal activity without you having to invoke them manually.",
       },
       {
-        name: "Insulin Channel — Suger",
-        slug: "insulin-channel-—-suger",
+        name: "Insulin Channel — Fours",
+        slug: "insulin-channel-—-fours",
         why: "Channels are persistent multi-user, multi-agent workspaces inside Insulin. Where direct agent chats are session-scoped and 1:1, a Channel is designed for ongoing operations — a deal review board, a co-sell war room, a RevOps workspace. Up to 20 agents can run inside a single Channel alongside your team.",
       },
       {
-        name: "Suger Chrome Extension",
-        slug: "suger-chrome-extension",
+        name: "Fours Chrome Extension",
+        slug: "fours-chrome-extension",
         why: "The Chrome Extension brings Fours into your browser's side panel, so marketplace data surfaces directly inside Salesforce deals and HubSpot contacts. It's the access point for users who spend most of their time in a CRM rather than the Fours Console — and it connects directly to Insulin for context-aware AI assistance.",
       },
     ],
@@ -715,23 +715,23 @@ export const learningPaths = [
         why: "When a buyer's entitlement is cancelled, AWS sends a License Deprovisioned event to the Manufacturer's account — and the seller has exactly 1 hour to submit final usage records via BatchMeterUsage before billing closes. Miss the window, lose the revenue. This event type deserves its own failover logic in every AWS SaaS integration.",
       },
       {
-        name: "Zuora Integration — Suger",
-        slug: "zuora-integration-—-suger",
+        name: "Zuora Integration — Fours",
+        slug: "zuora-integration-—-fours",
         why: "For ISVs that use Zuora for subscription billing and revenue recognition, the Fours-Zuora integration syncs marketplace entitlement events directly to Zuora subscription objects — eliminating manual reconciliation between marketplace and direct-billing channels.",
       },
       {
-        name: "DocuSign Integration — Suger",
-        slug: "docusign-integration-—-suger",
+        name: "DocuSign Integration — Fours",
+        slug: "docusign-integration-—-fours",
         why: "Enterprise private offer workflows typically require a signed order form before the marketplace offer is accepted. The DocuSign integration triggers the signature workflow automatically when a Fours private offer is created — streamlining the contract-to-checkout step without manual routing.",
       },
       {
-        name: "Gong Integration — Suger",
-        slug: "gong-integration-—-suger",
+        name: "Gong Integration — Fours",
+        slug: "gong-integration-—-fours",
         why: "Sales teams using Gong need deal context — active entitlement status, offer timelines, renewal dates — without leaving the conversation intelligence tool. The Gong integration surfaces Fours marketplace data directly in Gong deal timelines.",
       },
       {
-        name: "Suger MCP Server",
-        slug: "suger-mcp-server",
+        name: "Fours MCP Server",
+        slug: "fours-mcp-server",
         why: "The integration patterns in this path — catalog APIs, webhooks, metering — are increasingly managed through AI agents rather than manual code. The Fours MCP Server is the protocol layer that lets AI assistants call Fours' APIs directly, making it a natural extension of any automated marketplace integration workflow.",
       },
     ],
@@ -764,8 +764,8 @@ export const learningPaths = [
         why: "Every usage metering report is a usage record: a bundle of dimension, quantity, customer token, and timestamp. Learn the structural rules — specifically idempotency key requirements and the submission deadline — because a rejected or duplicate record means unbilled usage or double charges.",
       },
       {
-        name: "UsageRecordGroup — Suger",
-        slug: "usagerecordgroup-—-suger",
+        name: "UsageRecordGroup — Fours",
+        slug: "usagerecordgroup-—-fours",
         why: "The Usage Record is the atomic unit the hyperscaler billing API expects; UsageRecordGroup is Fours' abstraction that batches multiple usage records into a single API call across customers and dimensions. Understanding this construct is essential for teams using Fours' metering API — it's what you actually build against, not the raw hyperscaler endpoints.",
       },
       {
@@ -1507,8 +1507,8 @@ export const learningPaths = [
         why: "In Fours' direct billing model, invoices are how usage translates into a payment obligation. Understanding the invoice lifecycle — Draft → Finalized → payment triggered — gives you the full picture of how revenue becomes cash before it becomes a disbursement.",
       },
       {
-        name: "Suger Analytics",
-        slug: "suger-analytics",
+        name: "Fours Analytics",
+        slug: "fours-analytics",
         why: "Before implementing AWS PRM tagging, understand what reporting visibility looks like in Fours. Analytics surfaces revenue, disbursements, and offer metrics across all marketplace channels — the reporting destination for the attribution data you'll configure next.",
       },
       {
@@ -1549,8 +1549,8 @@ export const learningPaths = [
     prereqs: ["channel-and-partner-motions"],
     steps: [
       {
-        name: "Partner Relationship Management (PRM) — Suger",
-        slug: "partner-relationship-management-prm-—-suger",
+        name: "Partner Relationship Management (PRM) — Fours",
+        slug: "partner-relationship-management-prm-—-fours",
         why: "Start with the product: Fours PRM is the purpose-built platform for managing VARs, GSIs, resellers, and tech partners alongside cloud marketplace co-sell — not a generic CRM plugin. This term establishes what it is, what it replaces (spreadsheets, email, disconnected tools), and why it's distinct from a general-purpose PRM by integrating marketplace co-sell motions natively.",
       },
       {
@@ -1569,23 +1569,23 @@ export const learningPaths = [
         why: "VARs are the workhorse of most ISV channel programs — they purchase at discount, bundle services, and transact via marketplace. Placing VARs here, alongside GSIs, makes the partner type taxonomy complete before you configure tier structures and commission plans around them.",
       },
       {
-        name: "Partner Tiering — Suger",
-        slug: "partner-tiering-—-suger",
+        name: "Partner Tiering — Fours",
+        slug: "partner-tiering-—-fours",
         why: "Before registering deals or configuring commissions, set up your tier structure. Tiers (Silver, Gold, Platinum) control approval routing, commission eligibility, and content access — getting this right before onboarding partners prevents retroactive commission disputes.",
       },
       {
-        name: "Partner Portal — Suger",
-        slug: "partner-portal-—-suger",
+        name: "Partner Portal — Fours",
+        slug: "partner-portal-—-fours",
         why: "The partner-facing surface of your PRM. A white-label portal under your own domain gives partners a single place to register deals, consume enablement, and check commission status — without exposing Fours branding. Set up the portal before inviting partners.",
       },
       {
-        name: "Learning Management System (LMS) — Suger",
-        slug: "learning-management-system-lms-—-suger",
+        name: "Learning Management System (LMS) — Fours",
+        slug: "learning-management-system-lms-—-fours",
         why: "Partner enablement lives inside the portal. The LMS module lets you publish certification tracks, onboarding courses, and product training — organized by tier — so partners arrive at deal registration already qualified. Completion can gate commission eligibility, turning the LMS into a program governance lever, not just a training tool.",
       },
       {
-        name: "PRM Journeys — Suger",
-        slug: "prm-journeys-—-suger",
+        name: "PRM Journeys — Fours",
+        slug: "prm-journeys-—-fours",
         why: "Portal, tiers, and LMS are the building blocks — PRM Journeys is the automation layer on top of them, sequencing partners through onboarding, certification, and tier progression automatically instead of you tracking status by hand.",
       },
       {
@@ -1594,8 +1594,8 @@ export const learningPaths = [
         why: "Most organizations already have training content built in Articulate, iSpring, or Captivate. SCORM is the standard that lets those existing packages import directly into the Fours LMS without rebuilding. Knowing the standard means you can audit your existing library for compatibility before committing to a content migration.",
       },
       {
-        name: "Deal Registration — Suger",
-        slug: "deal-registration-—-suger",
+        name: "Deal Registration — Fours",
+        slug: "deal-registration-—-fours",
         why: "The core PRM workflow: partners submit deals via a public form or email alias, Fours auto-creates the opportunity in Salesforce or HubSpot, and approval routing fires based on tier and geography. This is how partner-sourced pipeline enters your CRM cleanly.",
       },
       {
@@ -1609,18 +1609,18 @@ export const learningPaths = [
         why: "Once a deal is registered and lives in the CRM, Fours enriches the opportunity with marketplace signals, co-sell data, and partner attribution fields. This enrichment is what makes partner deals trackable through close — and what feeds commission calculation.",
       },
       {
-        name: "Commission Plan — Suger",
-        slug: "commission-plan-—-suger",
+        name: "Commission Plan — Fours",
+        slug: "commission-plan-—-fours",
         why: "With deals flowing in and the CRM enriched, configure the commission structure. A commission plan defines rate, calculation basis, and payout trigger per partner tier or deal type — and can be overridden per deal for strategic partners.",
       },
       {
-        name: "Commission Tracking — Suger",
-        slug: "commission-tracking-—-suger",
+        name: "Commission Tracking — Fours",
+        slug: "commission-tracking-—-fours",
         why: "Commission plans define the rules; commission tracking is the operational layer — calculating payouts on deal close, surfacing partner earnings in the portal, and managing the full payout lifecycle. Partners see what they've earned and when they'll be paid.",
       },
       {
-        name: "SPIFF — Suger",
-        slug: "spiff-—-suger",
+        name: "SPIFF — Fours",
+        slug: "spiff-—-fours",
         why: "Layered on top of commission plans, SPIFFs are short-term bonuses tied to a product push, quarter-end acceleration, or strategic campaign. Configure them separately from base plans so SPIFF payouts don't distort your baseline commission reporting.",
       },
       {

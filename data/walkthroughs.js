@@ -41,7 +41,7 @@ export const walkthroughs = [
       {
         title: "Sign up, turn on MFA, and create your organization",
         body: "Go to <a href='https://console.suger.io/login' target='_blank' rel='noopener'>console.suger.io/login</a> and sign up with your company email domain — not a personal email like Gmail. Suger uses Auth0 for authentication: sign up with email/password, or use <strong>Continue with Google</strong>, <strong>Continue with Microsoft</strong>, or Okta SSO (available on request). The account that creates the organization becomes its first <strong>Admin</strong>, and that email's domain becomes the organization's domain — only teammates with a matching email domain can be added later. Turn on <strong>multi-factor authentication</strong> during setup: scan the QR code in an authenticator app (Microsoft/Google Authenticator, or a password manager with OTP support like 1Password), or enter the setup key manually if scanning fails, then enter the 6-digit code. Make sure your device's clock is set to automatic date &amp; time — MFA codes are time-based and drift causes failures. You can check \"Remember this device for 30 days\" to skip MFA there.",
-        terms: [{ name: "Suger Console", slug: "suger-console" }],
+        terms: [{ name: "Fours Console", slug: "fours-console" }],
         link: {
           label: "Open Suger Console →",
           url: "https://console.suger.io/login",
@@ -65,7 +65,7 @@ export const walkthroughs = [
       {
         title: "Invite your team with the right roles",
         body: "In <strong>Settings → Users</strong>, click <strong>Add User</strong>, enter each teammate's professional email (must match your organization's approved domain), and pick a permission level. Suger emails an invitation link — this pre-approves the address but doesn't create the account; the invitee finishes signup themselves, and their status shows <strong>Pending</strong> until they do. Three built-in roles: <strong>Admin</strong> (Business Technology, Sales Ops, IT/CRM Admins — full access including user, org, API client, and webhook management), <strong>Editor</strong> (Sales, Partnerships, Alliances, Deal Desk — full access except user/org/API management), and <strong>Viewer</strong> (Finance, Accounting, Executives — read-only, with no access to Partner Management at all). If none of those fit, your organization can build <strong>custom roles</strong> with per-module Read/Write/Delete toggles (Billing, Co-Sell, Private Offers, etc.). Admins can reset a teammate's MFA or revoke access from the same Users screen.",
-        terms: [{ name: "Suger Console", slug: "suger-console" }],
+        terms: [{ name: "Fours Console", slug: "fours-console" }],
         checks: [
           "Does every invitee's email match your organization's approved domain?",
           "Are Admin/Editor/Viewer assigned by function (see the role table above), not just seniority?",
@@ -142,7 +142,7 @@ export const walkthroughs = [
       {
         title: "Install the Suger App for Slack",
         body: "In Suger Console, go to <strong>Settings → Integrations</strong>. Find the <strong>Slack</strong> card and click <strong>Connect</strong>. During install, you'll also designate a Slack channel for notifications. You'll be redirected to Slack's OAuth authorization page — select the correct workspace, review the permissions, and click <strong>Allow</strong>. Back in Suger, click <strong>Verify</strong> to confirm the connection is active — connecting alone isn't the last step. This is the org-level install; individuals can separately connect their own Slack identity (a distinct user-level connection) if they want Suger to post as themselves rather than as the shared bot.",
-        terms: [{ name: "Suger Console", slug: "suger-console" }],
+        terms: [{ name: "Fours Console", slug: "fours-console" }],
         link: {
           label: "Open Suger Console → Settings → Integrations →",
           url: "https://console.suger.io",
@@ -954,7 +954,7 @@ export const walkthroughs = [
       {
         title: "Open User Integrations under your profile settings",
         body: "In the Suger Console, go to the <strong>User Integrations</strong> section under your profile settings (this is separate from the org-wide <strong>Settings → Integrations</strong> page). Locate the <strong>Google Mail</strong> or <strong>Microsoft Outlook</strong> card, depending on which provider you use, and click <strong>Connect Now</strong>.",
-        terms: [{ name: "Suger Console", slug: "suger-console" }],
+        terms: [{ name: "Fours Console", slug: "fours-console" }],
         link: {
           label: "Open Suger Console →",
           url: "https://console.suger.io",
@@ -1159,7 +1159,7 @@ export const walkthroughs = [
       {
         title: "Connect Chargebee in Suger Console",
         body: "In Suger Console, go to <strong>Settings → Integrations</strong>, find the <strong>Chargebee</strong> card, and click <strong>Connect</strong>. Enter your <strong>Site Name</strong> and paste your <strong>API Key</strong> into the connection form, then click <strong>Create</strong> to verify and establish the connection.",
-        terms: [{ name: "Suger Console", slug: "suger-console" }],
+        terms: [{ name: "Fours Console", slug: "fours-console" }],
         link: {
           label: "Open Suger Console → Settings → Integrations →",
           url: "https://console.suger.io",
@@ -1261,7 +1261,7 @@ export const walkthroughs = [
       {
         title: "Create a QuickBooks Developer App",
         body: "In the <a href='https://developer.intuit.com/' target='_blank' rel='noopener'>QuickBooks Developer Portal</a>, create an app for the Company Account you want to sync. In the app's settings, set the <strong>Redirect URI</strong> to exactly <code>https://api.suger.cloud/public/integration/quickbooks/oauthCallback</code> — Suger's OAuth callback will fail if this doesn't match. Then open <strong>Keys & credentials</strong> and copy the <strong>Client ID</strong> and <strong>Client Secret</strong>. Treat these as sensitive — anyone with them can authorize access to your QuickBooks data.",
-        terms: [{ name: "Suger Console", slug: "suger-console" }],
+        terms: [{ name: "Fours Console", slug: "fours-console" }],
         link: {
           label: "QuickBooks Developer Portal →",
           url: "https://developer.intuit.com/",
@@ -1347,7 +1347,7 @@ export const walkthroughs = [
       {
         title: "Generate a JSON key and connect it in Suger Console",
         body: "From the service account's <strong>Keys</strong> tab in GCP, generate a new key and download it as <strong>JSON</strong>. In Suger Console, go to <strong>Settings → Integrations → BigQuery</strong> and enter the service account's email address, then upload the JSON key file. Treat the downloaded key like a credential — store it securely and don't commit it anywhere.",
-        terms: [{ name: "Suger Console", slug: "suger-console" }],
+        terms: [{ name: "Fours Console", slug: "fours-console" }],
         link: {
           label: "Open Suger Console → Settings → Integrations →",
           url: "https://console.suger.io",
@@ -2461,7 +2461,7 @@ export const walkthroughs = [
         body: "Navigate to <strong>Entitlements</strong> in Suger Console. Confirm at least one test or real entitlement has synced from your cloud marketplace. If the list is empty, check <strong>Settings → Integrations → [Your Marketplace] → Event Log</strong> before proceeding.",
         terms: [
           { name: "Entitlement", slug: "entitlement" },
-          { name: "Suger Console", slug: "suger-console" },
+          { name: "Fours Console", slug: "fours-console" },
         ],
         path: "suger-platform-quickstart",
         checks: [
@@ -2503,7 +2503,7 @@ export const walkthroughs = [
       {
         title: "Create an API client (OAuth App recommended)",
         body: "Navigate to <strong>Settings → API Client → OAuth Apps</strong> and click <strong>+ New OAuth App</strong> — this is the current recommended method, not the older API_KEY/Bearer Token option (both of those are deprecated for new integrations). Set a Name, Description, and Access Level (Viewer/Editor/custom role). Exchange for a token via <code>POST https://apiv2.suger.cloud/oauth2/token</code>, then authenticate calls with <code>Authorization: Bearer &lt;token&gt;</code> — tokens expire in 1 hour, so cache and refresh them rather than fetching per request. Organizations can create up to 5 API clients; email support@suger.io with justification if you need more.",
-        terms: [{ name: "Suger API Client", slug: "suger-api-client" }],
+        terms: [{ name: "Fours API Client", slug: "fours-api-client" }],
         link: {
           label: "Configure an OAuth App (Suger Docs) →",
           url: "https://doc.suger.io/get-started/oauth-app/",
@@ -2563,7 +2563,7 @@ export const walkthroughs = [
       {
         title: "Create an API client (OAuth App recommended)",
         body: "In Suger Console, go to <strong>Settings → API Client → OAuth Apps</strong> and click <strong>+ New OAuth App</strong> — this is the current recommended method. The older <strong>API_KEY</strong> and <strong>Bearer Token</strong> client types still exist but are explicitly deprecated for new integrations; only reach for them if you have a specific legacy compatibility need. Set a Name, Description, and Access Level (Viewer/Editor/custom role). Your org supports up to 5 API clients by default — email support@suger.io with justification to raise the limit.",
-        terms: [{ name: "Suger API Client", slug: "suger-api-client" }],
+        terms: [{ name: "Fours API Client", slug: "fours-api-client" }],
         path: "marketplace-integrations",
         link: {
           label: "Open Suger Console → Settings → API Client →",
