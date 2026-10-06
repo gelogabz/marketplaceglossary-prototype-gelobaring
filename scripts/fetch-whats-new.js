@@ -46,25 +46,25 @@
  *   Oracle's release notes page is Marketplace-specific already — no filter needed.
  *   Oracle's blog is filtered by category ("Oracle Cloud Marketplace" /
  *   "Oracle Marketplace Insights") with a keyword fallback for uncategorized posts.
- *   Azure and Suger Blog entries are included without additional filtering.
+ *   Azure and Fours Blog entries are included without additional filtering.
  *   Insulin Blog reads the page's Schema.org Blog JSON-LD block for headline/url/
  *   date (reliable, no string-parsing) and matches each post back to its
  *   `data-blog-card` excerpt attribute by URL path for the summary. Titles get
- *   an "Insulin: " prefix, tagged platform "Suger" — same collision-avoidance
+ *   an "Insulin: " prefix, tagged platform "Fours" — same collision-avoidance
  *   reason as Insulin Changelog below.
- *   Suger Changelog and Insulin Changelog are one entry per release date (not
+ *   Fours Changelog and Insulin Changelog are one entry per release date (not
  *   per bullet) — title is "{Product}: As of {date}", summary joins that
  *   date's bullets into one line.
- *   Suger Docs Updates diffs the live sitemap against data/suger-docs-known-urls.json
+ *   Fours Docs Updates diffs the live sitemap against data/suger-docs-known-urls.json
  *   (a persisted last-seen URL set) and emits one entry per genuinely new page —
- *   rendered in its own "Suger Docs" column on the What's New page, not mixed into
+ *   rendered in its own "Fours Docs" column on the What's New page, not mixed into
  *   the main feed or its platform/type filters (platformTag "suger-docs").
  *
  *   KNOWN FLAKY: Oracle Marketplace Blog returns 403 (Akamai bot mitigation) from
  *   every environment tested so far — may or may not work from GitHub Actions'
  *   IP range. A failure here is non-fatal and just logs "✗ FAILED" without
  *   affecting other sources. Alibaba is intentionally not included as a source —
- *   deprioritized (<0.1% of Suger customers use it).
+ *   deprioritized (<0.1% of Fours customers use it).
  *
  * ── ADDING A NEW SOURCE ───────────────────────────────────────────────────────
  *
@@ -740,9 +740,9 @@ async function fetchSugerBlog() {
 // on the same page: each post card is `<a href="/blog/..." data-blog-card
 // data-title="..." data-tags="..." data-excerpt="...">`, matched back to the
 // JSON-LD entries by URL path. Title gets an "Insulin: " prefix — same reason
-// as the Insulin Changelog (see below): Suger Blog and Insulin Blog both use
+// as the Insulin Changelog (see below): Fours Blog and Insulin Blog both use
 // platformTag "suger" and both fall under the replace-semantics filter, so an
-// unprefixed same-day title could collide with a same-day Suger Blog post on
+// unprefixed same-day title could collide with a same-day Fours Blog post on
 // the stable ID and silently overwrite it.
 
 async function fetchInsulinBlog() {
@@ -1017,7 +1017,8 @@ async function fetchSugerDocsUpdates() {
       platformTag: "suger-docs",
       date: today,
       title,
-      summary: "This page was removed or moved on Fours' product documentation.",
+      summary:
+        "This page was removed or moved on Fours' product documentation.",
       type: "docs-removed",
       sourceUrl: url,
       impact: "low",
@@ -1056,11 +1057,11 @@ async function main() {
     ["Snowflake Release Notes", fetchSnowflake],
     ["Oracle Marketplace Release Notes", fetchOracleMarketplace],
     ["Oracle Marketplace Blog", fetchOracleBlog],
-    ["Suger Blog", fetchSugerBlog],
+    ["Fours Blog", fetchSugerBlog],
     ["Insulin Blog", fetchInsulinBlog],
-    ["Suger Changelog", fetchSugerChangelog],
+    ["Fours Changelog", fetchSugerChangelog],
     ["Insulin Changelog", fetchInsulinChangelog],
-    ["Suger Docs Updates", fetchSugerDocsUpdates],
+    ["Fours Docs Updates", fetchSugerDocsUpdates],
   ];
 
   const fresh = [];
@@ -1074,10 +1075,10 @@ async function main() {
     }
   }
 
-  // Azure + Suger (blog/changelog): replace strategy — these fetchers scrape a full
+  // Azure + Fours (blog/changelog): replace strategy — these fetchers scrape a full
   // listing page each run, so we have complete coverage; drop stale existing entries
   // to avoid off-by-one date duplicates. Keyed on platformTag, not platform, so
-  // "suger-docs" entries (Suger Docs Updates) are excluded from this drop — that
+  // "suger-docs" entries (Fours Docs Updates) are excluded from this drop — that
   // fetcher only ever emits genuinely-new-today pages, never a full page rescan, so
   // its past entries must be preserved via the normal merge-by-id path below instead.
   existing = existing.filter(
@@ -1106,7 +1107,7 @@ async function main() {
   writeFileSync(OUT, output, "utf8");
 
   // JSON and CSV are manual-backup exports for marketplace updates only —
-  // Suger Docs entries live in data/whats-new.js (for the live "Suger Docs"
+  // Fours Docs entries live in data/whats-new.js (for the live "Fours Docs"
   // column) and in data/suger-docs-archive.md (the durable history/backup),
   // so they're deliberately excluded here to avoid a third, redundant copy.
   const marketplaceOnly = final.filter((e) => e.platformTag !== "suger-docs");

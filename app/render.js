@@ -25,17 +25,32 @@ function getTermMap() {
   return _termMap;
 }
 
+// Single combined regex (alternation, longest-name-first), built once and cached.
+// A single pass over the ORIGINAL text — rather than one `.replace()` call per term
+// name — is required for correctness, not just speed: with N sequential passes, a
+// shorter name (e.g. "Fours") that's also a prefix of a longer one ("Fours Analytics")
+// gets re-matched inside the `<a>` tag the longer name's own pass just inserted,
+// producing a nested/malformed link. One pass can't re-match its own output.
+let _termLinkRegex = null;
+function getTermLinkRegex() {
+  if (!_termLinkRegex) {
+    const map = getTermMap();
+    const alternatives = [...map.keys()].map((name) =>
+      name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+    );
+    _termLinkRegex = new RegExp(alternatives.join("|"), "g");
+  }
+  return _termLinkRegex;
+}
+
 export function linkifyAlias(text) {
   const map = getTermMap();
-  let result = text;
-  for (const [name, termSlug] of map) {
-    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    result = result.replace(
-      new RegExp(escaped, "g"),
-      `<a href="#term-${termSlug}" class="alias-link">${name}</a>`,
-    );
-  }
-  return result;
+  const regex = getTermLinkRegex();
+  return text.replace(
+    regex,
+    (match) =>
+      `<a href="#term-${map.get(match)}" class="alias-link">${match}</a>`,
+  );
 }
 
 export function highlight(text, q) {
@@ -478,9 +493,13 @@ export function buildInlinePathCallout(pathSlug, stepTermSlugs = []) {
 // HTML/CSS boxes + arrows rather than SVG so it wraps naturally on narrow
 // viewports (480px iframe) without a separate mobile layout.
 const PHASE_FLOWS = {
-  kickoff: [{ label: "You" }, { label: "Suger Console" }, { label: "Team & Stakeholders" }],
+  kickoff: [
+    { label: "You" },
+    { label: "Fours Console" },
+    { label: "Team & Stakeholders" },
+  ],
   integrations: [
-    { label: "Suger" },
+    { label: "Fours" },
     {
       label: "Your Systems",
       satellites: ["AWS", "Azure", "GCP", "Snowflake", "CRM", "Slack"],
@@ -488,18 +507,18 @@ const PHASE_FLOWS = {
   ],
   listings: [
     { label: "ISV / Seller" },
-    { label: "Suger" },
+    { label: "Fours" },
     { label: "Marketplace Review" },
     { label: "Live Listing" },
   ],
   cosell: [
     { label: "CRM" },
-    { label: "Suger" },
+    { label: "Fours" },
     { label: "Cloud Partner", satellites: ["AWS", "Azure", "GCP"] },
   ],
   cpq: [
     { label: "Seller" },
-    { label: "Suger CPQ" },
+    { label: "Fours CPQ" },
     { label: "Private Offer" },
     { label: "Buyer" },
   ],
@@ -510,7 +529,7 @@ const PHASE_FLOWS = {
     { label: "Sign-off" },
   ],
   operations: [
-    { label: "Suger API / Webhooks" },
+    { label: "Fours API / Webhooks" },
     { label: "Your Systems", satellites: ["Billing", "CRM", "Automation"] },
     { label: "Marketplace" },
   ],
@@ -543,15 +562,13 @@ function svgIcon(key) {
   return `<svg class="wt-flow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
 }
 
-// Maps each phase-flow stage label to an icon key. "Suger" consistently uses
+// Maps each phase-flow stage label to an icon key. "Fours" consistently uses
 // the same box icon across every phase so the recurring actor stays visually
 // anchored; every other label gets whatever concretely represents it.
 const FLOW_ICON_BY_LABEL = {
   You: "person",
-  "Suger Console": "box",
   "Fours Console": "box",
   "Team & Stakeholders": "people",
-  Suger: "box",
   Fours: "box",
   "Your Systems": "plug",
   "ISV / Seller": "building",
@@ -560,7 +577,6 @@ const FLOW_ICON_BY_LABEL = {
   CRM: "database",
   "Cloud Partner": "cloud",
   Seller: "building",
-  "Suger CPQ": "receipt",
   "Fours CPQ": "receipt",
   "Private Offer": "document",
   Buyer: "person",
@@ -568,7 +584,6 @@ const FLOW_ICON_BY_LABEL = {
   Production: "rocket",
   Validation: "check",
   "Sign-off": "pen",
-  "Suger API / Webhooks": "link",
   "Fours API / Webhooks": "link",
   Marketplace: "storefront",
 };

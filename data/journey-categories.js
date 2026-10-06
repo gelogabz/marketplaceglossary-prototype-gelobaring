@@ -1,5 +1,5 @@
 // Shared category metadata for the Journey hub + guide detail pages.
-// Categories follow the Suger Implementation V2 phase sequence.
+// Categories follow the Fours Implementation V2 phase sequence.
 
 export const CATEGORY_ORDER = [
   "kickoff",
@@ -14,11 +14,11 @@ export const CATEGORY_ORDER = [
 export const CATEGORY_META = {
   kickoff: {
     label: "Kickoff & Setup",
-    desc: "Get your Suger organization ready and align your team before integrations begin.",
+    desc: "Get your Fours organization ready and align your team before integrations begin.",
   },
   integrations: {
     label: "Integrations",
-    desc: "Connect cloud marketplaces (AWS, Azure, GCP, Snowflake), CRM, and notification tools to Suger.",
+    desc: "Connect cloud marketplaces (AWS, Azure, GCP, Snowflake), CRM, and notification tools to Fours.",
   },
   listings: {
     label: "Listing Setup",

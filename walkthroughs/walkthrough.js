@@ -292,7 +292,7 @@ function render(walkthrough) {
                 </div>
                 <div class="wt-kd-item">
                     <span class="wt-kd-label">Source</span>
-                    <span class="wt-kd-value">${walkthrough.sourceUrl ? `<a href="${walkthrough.sourceUrl}" target="_blank" rel="noopener">Suger Docs ↗</a>` : "—"}</span>
+                    <span class="wt-kd-value">${walkthrough.sourceUrl ? `<a href="${walkthrough.sourceUrl}" target="_blank" rel="noopener">Fours Docs ↗</a>` : "—"}</span>
                 </div>
             </div>
 

@@ -119,7 +119,7 @@
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
 }
 
-.compare-th-suger {
+.compare-th-fours {
     color: #ae530f;
 }
 .compare-th-aws {
@@ -182,7 +182,7 @@
     margin-bottom: 0.75rem;
 }
 
-.compare-cell--suger {
+.compare-cell--fours {
     background: #fff8f4;
 }
 .compare-cell--aws {

@@ -306,8 +306,8 @@ export const learningPaths = [
         why: "After learning how co-sell programs work across AWS, Azure, and GCP, Co-sell Insights shows how Fours aggregates signals from all three into a unified intelligence layer. This is where cross-platform co-sell strategy becomes operationally executable — surfacing which deals to pursue and what actions to take, across all hyperscalers at once.",
       },
       {
-        name: "Account Mapping — Suger",
-        slug: "account-mapping-—-suger",
+        name: "Account Field Mapping — Fours",
+        slug: "account-field-mapping-—-fours",
         why: "Account Mapping is how you turn your CRM pipeline into a co-sell targeting list. Fours maps your existing accounts against cloud partner account data across AWS, Azure, and GCP — surfacing which of your deals already have an active cloud partner relationship. These overlaps are the highest-probability co-sell engagements, because the hyperscaler already knows the account.",
       },
       {
@@ -1446,7 +1446,7 @@ export const learningPaths = [
         why: "POA is AWS's deal-level funding type — financial support tied to a specific ACE opportunity to accelerate close. Learn the eligibility criteria, how POA interacts with proof-of-concept funding, and the claim timeline.",
       },
       {
-        name: "Proof of Concept (POC) Funding  — AWS",
+        name: "Proof of Concept (POC) Funding — AWS",
         slug: "proof-of-concept-poc-funding-—-aws",
         why: "POC Funding offsets up to $25,000 of the cost of building a proof of concept for a customer. Learn the ACE stage requirements, how to submit through the APFP, and how POC funding fits into a broader deal acceleration strategy.",
       },

@@ -7,10 +7,9 @@ import { terms } from "../data/terms.js";
 import { PLATFORM_SUFFIX_RE as SUFFIX_RE } from "./utils.js";
 
 export const DISPLAY_SUFFIX_RE =
-  / — (AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger|Fours)$/;
+  / — (AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Fours)$/;
 
 export const PLATFORM_KEYS = [
-  "Suger",
   "Fours",
   "AWS",
   "Azure",
@@ -23,12 +22,12 @@ export const PLATFORM_KEYS = [
 // Platform-suffixed terms (all hyperscalers + Snowflake + Alibaba)
 const platformTerms = terms.filter((t) => SUFFIX_RE.test(t.name));
 
-// Suger-specific terms: tagged with "suger" but NOT platform-suffixed
-const sugerTerms = terms.filter(
+// Fours-specific terms: tagged with "suger" but NOT platform-suffixed
+const foursTerms = terms.filter(
   (t) => t.tags?.includes("suger") && !SUFFIX_RE.test(t.name),
 );
 
-const allComparableTerms = [...platformTerms, ...sugerTerms];
+const allComparableTerms = [...platformTerms, ...foursTerms];
 
 // ---- Union-Find ----
 
@@ -62,7 +61,7 @@ Object.values(byBase).forEach((names) => {
 
 // Pass 2: union terms linked by "X equivalent: Y" patterns in alias fields
 const EQUIV_RE =
-  /(?:(?:AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger|Fours)\s+)?[Ee]quivalent:\s*([^|]+?)(?=\s*\||$)/g;
+  /(?:(?:AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Fours)\s+)?[Ee]quivalent:\s*([^|]+?)(?=\s*\||$)/g;
 allComparableTerms.forEach((t) => {
   if (!t.alias) return;
   for (const m of t.alias.matchAll(EQUIV_RE)) {
@@ -71,9 +70,9 @@ allComparableTerms.forEach((t) => {
   }
 });
 
-// Pass 3: union terms linked by "AWS: X | Azure: Y | GCP: Z | Suger: W" patterns
+// Pass 3: union terms linked by "AWS: X | Azure: Y | GCP: Z | Fours: W" patterns
 const PLATFORM_MAP_RE =
-  /\b(AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Suger|Fours):\s*([^|]+?)(?=\s*\||$)/g;
+  /\b(AWS|Azure|GCP|Snowflake|Alibaba|Oracle|Fours):\s*([^|]+?)(?=\s*\||$)/g;
 allComparableTerms.forEach((t) => {
   if (!t.alias) return;
   for (const m of t.alias.matchAll(PLATFORM_MAP_RE)) {
@@ -81,7 +80,7 @@ allComparableTerms.forEach((t) => {
     const refBase = m[2].trim();
     if (refBase in parent) {
       union(t.name, refBase);
-    } else if (platform !== "Suger" && platform !== "Fours") {
+    } else if (platform !== "Fours") {
       const withSuffix = `${refBase} — ${platform}`;
       if (withSuffix in parent) union(t.name, withSuffix);
     }
@@ -104,7 +103,7 @@ allComparableTerms.forEach((t) => {
   const root = find(t.name);
   if (!groups[root]) groups[root] = {};
   const platformMatch = t.name.match(SUFFIX_RE);
-  const platformKey = platformMatch ? platformMatch[1] : "Suger";
+  const platformKey = platformMatch ? platformMatch[1] : "Fours";
   if (!groups[root][platformKey]) groups[root][platformKey] = [];
   groups[root][platformKey].push(t);
 });
@@ -135,7 +134,7 @@ export const CONCEPT_OVERRIDES = {
   "Partner Initiative Funding (PIF) — AWS": "Cloud Partner Funding",
   "Partner Opportunity Acceleration (POA) — AWS": "Cloud Partner Funding",
   "Partner-Led Opportunity — AWS": "Partner-Led Co-sell Tier",
-  "Proof of Concept (POC) Funding  — AWS": "Cloud Partner Funding",
+  "Proof of Concept (POC) Funding — AWS": "Cloud Partner Funding",
   "SaaS Co-sell Benefit (SCB) — AWS": "Field Co-sell Incentive",
   "SaaS Contracts with Pay-As-You-Go (Overages) — AWS":
     "Committed Base + Metered Overage Pricing",
@@ -143,13 +142,12 @@ export const CONCEPT_OVERRIDES = {
   "Standard Contract (SCMP) — AWS": "Standard Marketplace Contract",
   "Tax Details Dashboard — AWS": "Marketplace Tax Configuration",
   "Offer Set — AWS": "Offer Set",
-  "Offer Set — Suger": "Offer Set",
+  "Offer Set — Fours": "Offer Set",
   "AWS Marketplace Catalog API — AWS": "Marketplace Catalog & Offer API",
   Insulin: "AI Agents & Tools",
 };
 
 const LABEL_PRIORITY = [
-  "Suger",
   "Fours",
   "AWS",
   "Azure",
@@ -193,7 +191,9 @@ export function findComparisonRow(query) {
   return (
     rows.find((g) => {
       if (wordRe.test(conceptLabel(g))) return true;
-      return Object.values(g).some((arr) => arr?.some((t) => wordRe.test(t.name)));
+      return Object.values(g).some((arr) =>
+        arr?.some((t) => wordRe.test(t.name)),
+      );
     }) || null
   );
 }

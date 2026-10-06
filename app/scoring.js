@@ -61,7 +61,7 @@ export function computeDifficulty(term) {
   if (related.length >= 3) score += 0.3;
   if (related.length >= 5) score += 0.3;
 
-  // General / Suger-tagged terms without platform specificity tend to be simpler
+  // General / Fours-tagged terms without platform specificity tend to be simpler
   const isPlatformSpecific = tags.some((t) =>
     ["aws", "azure", "gcp", "snowflake", "alibaba", "oracle"].includes(t),
   );

@@ -1,7 +1,7 @@
 import { updates as allUpdates, lastUpdated } from "../data/whats-new.js";
 import { escHtml } from "../app/utils.js";
 
-// Suger Docs entries (platformTag "suger-docs") live in their own column and
+// Fours Docs entries (platformTag "suger-docs") live in their own column and
 // are deliberately excluded from the main feed, its filters, and its stats —
 // they're page-diff pointers from a sitemap scan, not scored marketplace news.
 const updates = allUpdates.filter((e) => e.platformTag !== "suger-docs");

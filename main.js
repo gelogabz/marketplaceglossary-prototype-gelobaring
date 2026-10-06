@@ -405,24 +405,29 @@ function syncToURL() {
   );
 }
 
+// Opens a term's detail view (desktop) or accordion (mobile) by slug, once
+// the DOM actually has a card to open — call after render()'s completion
+// callback fires, not on a fixed delay.
+function openPendingTermSlug(t, { scrollIntoView = false } = {}) {
+  const term = getTermBySlug(t);
+  if (!term) return;
+  const card = document.getElementById(`term-${t}`);
+  if (window.innerWidth <= MOBILE_BP) {
+    if (card) expandAccordion(card, term);
+  } else {
+    openDetail(term);
+    if (scrollIntoView)
+      card?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+// Reads ?q=/?f=/?c=/?t= from the URL and applies filter/search state.
+// Returns the slug to open via openPendingTermSlug() once rendering
+// completes (?t= takes priority over a #term- hash), or null.
 function loadFromURL() {
   const params = new URLSearchParams(window.location.search);
   const t = params.get("t");
-
-  if (t) {
-    // Open via ?t= after render completes (600ms covers the 100ms debounce + DOM build)
-    setTimeout(() => {
-      const term = getTermBySlug(t);
-      if (!term) return;
-      if (window.innerWidth <= MOBILE_BP) {
-        const card = document.getElementById(`term-${t}`);
-        if (card) expandAccordion(card, term);
-      } else {
-        openDetail(term);
-      }
-    }, 600);
-    return;
-  }
+  if (t) return t;
 
   const q = params.get("q");
   const f = params.get("f");
@@ -433,6 +438,7 @@ function loadFromURL() {
       .filter(Boolean)
       .forEach((tag) => toggleFilter(tag));
   if (c) setCategory(c);
+  return null;
 }
 
 // ---- Keyboard shortcuts -----------------------------------------------------
@@ -460,7 +466,7 @@ document.addEventListener("keydown", (e) => {
 // ---- Render -----------------------------------------------------------------
 
 let debounceTimer;
-function render() {
+function render(onDone) {
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(() => {
     const prevExpandedId = expandedCard?.id;
@@ -556,6 +562,7 @@ function render() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
     syncToURL();
+    onDone?.();
   }, 100);
 }
 
@@ -615,30 +622,18 @@ window.onload = () => {
   const badge = document.getElementById("reviewedBadge");
   if (badge) badge.textContent = formatReviewedDate(lastReviewed);
   buildLPFilterButtons();
-  loadFromURL();
+  const pendingSlug =
+    loadFromURL() ||
+    (window.location.hash
+      ? decodeURIComponent(window.location.hash.replace("#term-", ""))
+      : null);
+  const fromHash = !new URLSearchParams(window.location.search).get("t");
   renderSidebarState();
   updateFilterBadge();
-  render();
-
-  if (window.location.hash) {
-    const hashSlug = decodeURIComponent(
-      window.location.hash.replace("#term-", ""),
-    );
-    const term = getTermBySlug(hashSlug);
-    if (term) {
-      setTimeout(() => {
-        if (window.innerWidth <= MOBILE_BP) {
-          const card = document.getElementById(`term-${hashSlug}`);
-          if (card) expandAccordion(card, term);
-        } else {
-          openDetail(term);
-          document
-            .getElementById(`term-${hashSlug}`)
-            ?.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-      }, 600);
-    }
-  }
+  render(() => {
+    if (pendingSlug)
+      openPendingTermSlug(pendingSlug, { scrollIntoView: fromHash });
+  });
 };
 
 searchInput.addEventListener("input", render);
@@ -647,6 +642,8 @@ searchInput.addEventListener("input", render);
 
 window.addEventListener("popstate", () => {
   collapseAccordion();
-  loadFromURL();
-  render();
+  const pendingSlug = loadFromURL();
+  render(() => {
+    if (pendingSlug) openPendingTermSlug(pendingSlug);
+  });
 });

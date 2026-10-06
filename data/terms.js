@@ -2485,7 +2485,8 @@ export const terms = [
     name: "System Integrator (SI)",
     tags: ["general", "cosell"],
     def: "A partner that implements, customizes, and integrates software for enterprise customers. SIs often transact ISV products through marketplace channel programs and co-sell motions. Formally recognized as a distinct partner category by both AWS (systems integrator-specific enablement and training resources) and Microsoft's Azure partner program (Systems Integrator partner-nominated scenarios). Google Cloud does not appear to name an equivalent SI-specific program — large-scale integration partners are folded under its Global System Integrator (GSI) category instead.",
-    alias: "Related: Channel Partner (CP), Co-sell, Global System Integrator (GSI)",
+    alias:
+      "Related: Channel Partner (CP), Co-sell, Global System Integrator (GSI)",
     source:
       "https://aws.amazon.com/blogs/training-and-certification/training-resources-for-system-integrators/",
     difficulty: "beginner",
@@ -2599,8 +2600,7 @@ export const terms = [
     def: "An AWS program enabling pre-vetted Solution Providers to create private offers at pre-negotiated ISV discounts — without needing to negotiate deal-by-deal. ISVs must be enrolled in ISV Accelerate. Confirmed as an active, AWS-named program via AWS's own published Solution Provider roster as of October 2023; not independently re-confirmed against a current definitional AWS docs page, since the live channel-partner-offers.html page (previously cited here) does not mention SPPO by name.",
     alias:
       "Related: Channel Partner Private Offer (CPPO) — AWS, ISV Accelerate — AWS",
-    source:
-      "https://aws-mp-sppo.s3-us-west-2.amazonaws.com/SPPO+SPs.pdf",
+    source: "https://aws-mp-sppo.s3-us-west-2.amazonaws.com/SPPO+SPs.pdf",
     difficulty: "intermediate",
     category: "advanced",
     whoFor: ["ISVs / Sellers", "Channel Partners"],
@@ -9135,7 +9135,7 @@ export const terms = [
   {
     name: "AWS Marketplace Vendor Insights",
     tags: ["aws", "general"],
-    def: "An AWS Marketplace feature that gives enterprise buyers a unified security and compliance profile for a seller's SaaS product — aggregating data from AWS Security Hub, SOC 2 reports, ISO certifications, and seller-attested questionnaire responses into a single dashboard buyers can review before purchasing. Sellers who publish a Vendor Insights profile make their security posture continuously visible to buyers without repeated manual questionnaire responses; buyers can subscribe to profile updates and use the data to accelerate procurement approvals. Vendor Insights profiles are linked directly to the product listing and can be paired with AWS Specialization badges to create a dual-validation signal for compliance-sensitive buyers. As of September 2026, AWS has informed partners that Vendor Insights is being deprecated ahead of re:Invent 2026 — no new profile requests are being processed — with a successor (working name \"Trust Agent\") in development; in the interim, AWS is directing sellers toward partner-managed Trust Center solutions (e.g. Drata, Vanta). Not yet publicly announced by AWS at time of writing.",
+    def: 'An AWS Marketplace feature that gives enterprise buyers a unified security and compliance profile for a seller\'s SaaS product — aggregating data from AWS Security Hub, SOC 2 reports, ISO certifications, and seller-attested questionnaire responses into a single dashboard buyers can review before purchasing. Sellers who publish a Vendor Insights profile make their security posture continuously visible to buyers without repeated manual questionnaire responses; buyers can subscribe to profile updates and use the data to accelerate procurement approvals. Vendor Insights profiles are linked directly to the product listing and can be paired with AWS Specialization badges to create a dual-validation signal for compliance-sensitive buyers. As of September 2026, AWS has informed partners that Vendor Insights is being deprecated ahead of re:Invent 2026 — no new profile requests are being processed — with a successor (working name "Trust Agent") in development; in the interim, AWS is directing sellers toward partner-managed Trust Center solutions (e.g. Drata, Vanta). Not yet publicly announced by AWS at time of writing.',
     alias: "Related: AWS Specialization — AWS, Listing, AWS Marketplace — AWS",
     source:
       "https://docs.aws.amazon.com/marketplace/latest/userguide/vendor-insights.html",
@@ -11985,7 +11985,10 @@ export const terms = [
       "Cloud Rep Profiles",
     ],
     related: [
-      { name: "Account Field Mapping — Fours", slug: "account-mapping-—-suger" },
+      {
+        name: "Account Field Mapping — Fours",
+        slug: "account-field-mapping-—-fours",
+      },
       { name: "Co-sell", slug: "co-sell" },
       {
         name: "APN Customer Engagements (ACE) — AWS",
@@ -12009,7 +12012,10 @@ export const terms = [
     ],
     context: ["Fours Console", "Co-sell Reporting", "CRM Sync"],
     related: [
-      { name: "Account Field Mapping — Fours", slug: "account-mapping-—-suger" },
+      {
+        name: "Account Field Mapping — Fours",
+        slug: "account-field-mapping-—-fours",
+      },
       { name: "Co-sell", slug: "co-sell" },
     ],
   },
@@ -12120,7 +12126,10 @@ export const terms = [
     related: [
       { name: "Fours MCP Server", slug: "fours-mcp-server" },
       { name: "Co-sell", slug: "co-sell" },
-      { name: "Account Field Mapping — Fours", slug: "account-mapping-—-suger" },
+      {
+        name: "Account Field Mapping — Fours",
+        slug: "account-field-mapping-—-fours",
+      },
     ],
   },
   // ── TD1 2026-08-03 additions ────────────────────────────────────────
@@ -12481,8 +12490,10 @@ export const terms = [
     name: "Dragon Copilot Physician Apps and Agents — Azure",
     tags: ["azure", "operations"],
     def: "A Microsoft Copilot product surface for US healthcare that lets ISVs build physician-facing apps and agents on top of Dragon Copilot, Microsoft's clinical documentation and workflow assistant. Listings in this category are transactable through the Microsoft Marketplace like other Azure offers, but scoped narrowly to clinical use cases (e.g. ambient documentation, order entry assistance) rather than general-purpose SaaS or IaaS. Announced as part of Microsoft Partner Center's August 2026 update.",
-    alias: "Related: Professional Services Offer — Azure, Microsoft Marketplace — Azure",
-    source: "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+    alias:
+      "Related: Professional Services Offer — Azure, Microsoft Marketplace — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
     difficulty: "advanced",
     category: "advanced",
     whoFor: ["ISVs / Sellers"],
@@ -12490,11 +12501,7 @@ export const terms = [
       "Building a physician-facing clinical documentation app on Dragon Copilot and listing it as a transactable offer on the Microsoft Marketplace",
       "Evaluating whether a healthcare-vertical product fits the Dragon Copilot Physician Apps and Agents surface versus a general-purpose Azure Marketplace listing",
     ],
-    context: [
-      "Microsoft Marketplace",
-      "Azure Partner Center",
-      "US Healthcare",
-    ],
+    context: ["Microsoft Marketplace", "Azure Partner Center", "US Healthcare"],
     related: [
       {
         name: "Professional Services Offer — Azure",
@@ -12512,7 +12519,8 @@ export const terms = [
     def: "A structured evaluation of a workload's architecture against the AWS Well-Architected Framework's six pillars — operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability — conducted via the free self-service AWS Well-Architected Tool, an AWS Solutions Architect, or a certified AWS Well-Architected Partner. The review flags high-risk issues and produces a remediation plan rather than a pass/fail score. For AWS ISV partners, a WAFR that is AWS-led (not self-service or partner-led) and completed within the past 12 months, with no outstanding high-risk items, can be submitted in place of the standard Foundational Technical Review (FTR) process.",
     alias:
       "Related: Foundational Technical Review (FTR) — AWS, AWS Specialization — AWS",
-    source: "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    source:
+      "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Partner Managers"],
@@ -12520,7 +12528,11 @@ export const terms = [
       "Requesting an AWS-led Well-Architected Framework Review within the past 12 months to satisfy the FTR requirement without going through the standard review process",
       "Using the free AWS Well-Architected Tool to self-assess a workload against the six pillars before pursuing an AWS-led review",
     ],
-    context: ["AWS Partner Central", "AWS Well-Architected Tool", "ISV Accelerate Program"],
+    context: [
+      "AWS Partner Central",
+      "AWS Well-Architected Tool",
+      "ISV Accelerate Program",
+    ],
     related: [
       {
         name: "Foundational Technical Review (FTR) — AWS",
@@ -12535,7 +12547,8 @@ export const terms = [
     def: "A Microsoft partner incentive mechanism launching October 2026 as part of the FY27 AI Cloud Partner Program restructuring, replacing flat run-rate rebates on Modern Work and Dynamics 365 with earnings tied to specific growth motions — new-to-offer sales, customer expansion, and adoption of strategic Microsoft solutions. Eligible Cloud Solution Provider (CSP) distributors and direct-bill partners earn an additional partner price on top of standard transaction economics when a Growth Margin applies, with rates varying by growth scenario. Growth Margins roll out alongside Frontier Accelerate for Marketplace, which unifies ISV Success, Marketplace Rewards, Azure IP Co-sell, and Certified Software Designation into one program. As of October 1, 2026, programmatic Growth Margin eligibility validation and discovery via API reached general availability, after launching in early access the previous month.",
     alias:
       "Related: Cloud Solution Provider (CSP) — Azure, Marketplace Rewards — Azure, ISV Success Program — Azure, Frontier Accelerate for Marketplace — Azure",
-    source: "https://partner.microsoft.com/asset/collection/growth-margins-partner-resources#/",
+    source:
+      "https://partner.microsoft.com/asset/collection/growth-margins-partner-resources#/",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Channel Partners", "Distributors"],
@@ -12543,11 +12556,24 @@ export const terms = [
       "Evaluating whether a CSP deal qualifies for a Growth Margin instead of the prior flat run-rate rebate structure",
       "Positioning a new-to-offer or expansion sale to capture the added partner price a Growth Margin provides",
     ],
-    context: ["Microsoft Partner Center", "Cloud Solution Provider Program", "Frontier Accelerate for Marketplace"],
+    context: [
+      "Microsoft Partner Center",
+      "Cloud Solution Provider Program",
+      "Frontier Accelerate for Marketplace",
+    ],
     related: [
-      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
-      { name: "Marketplace Rewards — Azure", slug: "marketplace-rewards-—-azure" },
-      { name: "ISV Success Program — Azure", slug: "isv-success-program-—-azure" },
+      {
+        name: "Cloud Solution Provider (CSP) — Azure",
+        slug: "cloud-solution-provider-csp-—-azure",
+      },
+      {
+        name: "Marketplace Rewards — Azure",
+        slug: "marketplace-rewards-—-azure",
+      },
+      {
+        name: "ISV Success Program — Azure",
+        slug: "isv-success-program-—-azure",
+      },
       {
         name: "Frontier Accelerate for Marketplace — Azure",
         slug: "frontier-accelerate-for-marketplace-—-azure",
@@ -12571,7 +12597,10 @@ export const terms = [
     ],
     context: ["Microsoft Partner Center", "Cloud Solution Provider Program"],
     related: [
-      { name: "Cloud Solution Provider (CSP) — Azure", slug: "cloud-solution-provider-csp-—-azure" },
+      {
+        name: "Cloud Solution Provider (CSP) — Azure",
+        slug: "cloud-solution-provider-csp-—-azure",
+      },
       {
         name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
         slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
@@ -12585,7 +12614,8 @@ export const terms = [
     alias:
       "AWS equivalent: Private Offer — AWS | Azure equivalent: Private Offer — Azure | GCP equivalent: Private Offer — GCP | Oracle equivalent: Private Offer — Oracle | Related: Alibaba Cloud Marketplace — Alibaba",
     group: "private-offer",
-    source: "https://help.aliyun.com/en/marketplace/alibaba-cloud-marketplace-private-offer",
+    source:
+      "https://help.aliyun.com/en/marketplace/alibaba-cloud-marketplace-private-offer",
     difficulty: "intermediate",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -12620,9 +12650,18 @@ export const terms = [
     ],
     context: ["Oracle Cloud Marketplace", "Oracle Cloud Infrastructure"],
     related: [
-      { name: "Cloud Committed Spend (CCS)", slug: "cloud-committed-spend-ccs" },
-      { name: "Oracle Cloud Marketplace — Oracle", slug: "oracle-cloud-marketplace-—-oracle" },
-      { name: "Enterprise Discount Program (EDP) — AWS", slug: "enterprise-discount-program-edp-—-aws" },
+      {
+        name: "Cloud Committed Spend (CCS)",
+        slug: "cloud-committed-spend-ccs",
+      },
+      {
+        name: "Oracle Cloud Marketplace — Oracle",
+        slug: "oracle-cloud-marketplace-—-oracle",
+      },
+      {
+        name: "Enterprise Discount Program (EDP) — AWS",
+        slug: "enterprise-discount-program-edp-—-aws",
+      },
     ],
   },
   {
@@ -12640,11 +12679,21 @@ export const terms = [
       "Embedding a Cortex Agent in a Snowflake Native App listing so buyers get a conversational interface over the app's data without building one from scratch",
       "Exposing an app's semantic views and procedures as MCP tools so another app's agent can call them via inter-app communication",
     ],
-    context: ["Snowflake Marketplace", "Snowflake Native App Framework", "Snowpark Container Services"],
+    context: [
+      "Snowflake Marketplace",
+      "Snowflake Native App Framework",
+      "Snowpark Container Services",
+    ],
     related: [
-      { name: "Snowflake Marketplace — Snowflake", slug: "snowflake-marketplace-—-snowflake" },
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
       { name: "Fours MCP Server", slug: "fours-mcp-server" },
-      { name: "AWS Marketplace MCP Server — AWS", slug: "aws-marketplace-mcp-server-—-aws" },
+      {
+        name: "AWS Marketplace MCP Server — AWS",
+        slug: "aws-marketplace-mcp-server-—-aws",
+      },
     ],
   },
   {
@@ -12760,7 +12809,10 @@ export const terms = [
     context: ["Fours Console", "Ironclad", "Fours Integrations"],
     related: [
       { name: "Integration", slug: "integration" },
-      { name: "DocuSign Integration — Fours", slug: "docusign-integration-—-fours" },
+      {
+        name: "DocuSign Integration — Fours",
+        slug: "docusign-integration-—-fours",
+      },
     ],
   },
   {
@@ -12818,7 +12870,8 @@ export const terms = [
     name: "Baseten Integration",
     tags: ["suger", "integrations"],
     def: "Fours' bring-your-own-key (BYOK) connection to Baseten, an AI model hosting platform for custom-deployed models. Users generate a Baseten API key and add it in Fours' console — validated against Baseten before storage — at either the organization level (shared, admin-managed) or the user level (personal). Once connected, Baseten-hosted models appear in Fours' model picker for Insulin agents, chat, and inference, with usage billed directly by Baseten rather than through Fours. Baseten doesn't provide embedding models, so knowledge-base embeddings still require a different provider.",
-    alias: "Related: OpenAI Integration, Fireworks AI Integration, Together AI Integration",
+    alias:
+      "Related: OpenAI Integration, Fireworks AI Integration, Together AI Integration",
     source: "https://doc.fours.com/integrations/baseten/",
     difficulty: "intermediate",
     category: "operations",
@@ -12838,7 +12891,8 @@ export const terms = [
     name: "DeepInfra Integration",
     tags: ["suger", "integrations"],
     def: "Fours' bring-your-own-key (BYOK) connection to DeepInfra, an AI model provider. Users generate a DeepInfra API key and add it in Fours' console — validated against DeepInfra before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected DeepInfra models, including its BGE-M3 and Qwen3 Embedding 0.6B embedding models, become selectable across Fours' Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by DeepInfra rather than through Fours.",
-    alias: "Related: OpenAI Integration, OpenRouter Integration, Together AI Integration",
+    alias:
+      "Related: OpenAI Integration, OpenRouter Integration, Together AI Integration",
     source: "https://doc.fours.com/integrations/deepinfra-byok/",
     difficulty: "intermediate",
     category: "operations",
@@ -12847,7 +12901,12 @@ export const terms = [
       "Generating knowledge-base embeddings using DeepInfra's BGE-M3 or Qwen3 embedding models instead of a default provider",
       "Choosing DeepInfra as the model provider for an Insulin agent's inference without routing usage through Fours' own billing",
     ],
-    context: ["Fours Console", "AI Features", "Model Picker", "Knowledge Bases"],
+    context: [
+      "Fours Console",
+      "AI Features",
+      "Model Picker",
+      "Knowledge Bases",
+    ],
     related: [
       { name: "OpenAI Integration", slug: "openai-integration" },
       { name: "OpenRouter Integration", slug: "openrouter-integration" },
@@ -12858,7 +12917,8 @@ export const terms = [
     name: "Fireworks AI Integration",
     tags: ["suger", "integrations"],
     def: "Fours' bring-your-own-key (BYOK) connection to Fireworks AI, an AI model provider. Users generate a Fireworks API key and add it in Fours' console — validated against Fireworks before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected Fireworks models, including embedding options like Nomic Embed v1.5, become selectable across Fours' Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by Fireworks rather than through Fours.",
-    alias: "Related: OpenAI Integration, Baseten Integration, Together AI Integration",
+    alias:
+      "Related: OpenAI Integration, Baseten Integration, Together AI Integration",
     source: "https://doc.fours.com/integrations/fireworks/",
     difficulty: "intermediate",
     category: "operations",
@@ -12878,7 +12938,8 @@ export const terms = [
     name: "OpenRouter Integration",
     tags: ["suger", "integrations"],
     def: "Fours' bring-your-own-key (BYOK) connection to OpenRouter, an AI model provider that routes requests to multiple underlying language models through one API. Users generate an OpenRouter API key and add it in Fours' console — validated against OpenRouter before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected OpenRouter models, including its BGE-M3 embedding model, become selectable across Fours' Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by OpenRouter rather than through Fours.",
-    alias: "Related: OpenAI Integration, DeepInfra Integration, Together AI Integration",
+    alias:
+      "Related: OpenAI Integration, DeepInfra Integration, Together AI Integration",
     source: "https://doc.fours.com/integrations/openrouter/",
     difficulty: "intermediate",
     category: "operations",
@@ -12898,7 +12959,8 @@ export const terms = [
     name: "Together AI Integration",
     tags: ["suger", "integrations"],
     def: "Fours' bring-your-own-key (BYOK) connection to Together AI, an AI model provider. Users generate a Together API key and add it in Fours' console — validated against Together before storage — at either the organization level (shared, admin-managed) or the user level (personal). Connected Together models, including its multilingual-e5-large-instruct embedding model, become selectable across Fours' Insulin agents, chat, inference, and knowledge-base embeddings, with usage billed directly by Together rather than through Fours.",
-    alias: "Related: OpenAI Integration, Baseten Integration, OpenRouter Integration",
+    alias:
+      "Related: OpenAI Integration, Baseten Integration, OpenRouter Integration",
     source: "https://doc.fours.com/integrations/together/",
     difficulty: "intermediate",
     category: "operations",
@@ -12920,7 +12982,8 @@ export const terms = [
     def: "Oracle's OCI Console-native workflow for Marketplace publishers to create and manage listings, artifacts, terms, and private offers. It replaced the standalone Partner Portal, which Oracle has deprecated and no longer makes accessible — publishers authenticate with their existing OCI tenancy credentials instead of a separate login, and manage the full listing lifecycle (creation, artifacts, terms, private offers) from within the OCI Console itself.",
     alias:
       "AWS equivalent: AWS Marketplace Management Portal (AMMP) — AWS | Related: Oracle Cloud Marketplace — Oracle, Private Offer — Oracle",
-    source: "https://docs.oracle.com/en-us/iaas/Content/Marketplace/console-publishing.htm",
+    source:
+      "https://docs.oracle.com/en-us/iaas/Content/Marketplace/console-publishing.htm",
     difficulty: "intermediate",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
@@ -12994,7 +13057,7 @@ export const terms = [
   {
     name: "Co-sell Leads — Fours",
     tags: ["suger", "cosell"],
-    def: "An earlier-stage, AWS-inbound-only co-sell object in Fours' PRM, distinct from a standard co-sell Referral. A Lead requires acceptance and qualification before it converts into a regular co-sell opportunity. Leads sync from AWS Partner Central every 3 hours (offset from referral sync) and surface in the Fours Console under a dedicated \"Lead\" filter, and in Salesforce via a \"Leads V2 (Fours)\" tab.",
+    def: 'An earlier-stage, AWS-inbound-only co-sell object in Fours\' PRM, distinct from a standard co-sell Referral. A Lead requires acceptance and qualification before it converts into a regular co-sell opportunity. Leads sync from AWS Partner Central every 3 hours (offset from referral sync) and surface in the Fours Console under a dedicated "Lead" filter, and in Salesforce via a "Leads V2 (Fours)" tab.',
     alias: "Related: Inbound Referral, Referral",
     source: "https://doc.fours.com/cosell/cosell-leads/",
     difficulty: "intermediate",
@@ -13036,7 +13099,7 @@ export const terms = [
   {
     name: "Solution Matching Engine — AWS",
     tags: ["aws", "cosell"],
-    def: "An AWS Partner Central capability that uses machine learning to help AWS sellers identify the partner solutions and Marketplace listings most relevant to a specific customer opportunity. It combines Marketplace listing content (problems solved, use cases, integrated AWS services), verified credentials (AWS Specializations and Certifications), and ACE opportunity engagement signals — covering both software listings and Consulting Partner professional services — to rank partner solutions for a seller's search. Partners cannot query the engine directly; they improve their odds of surfacing by keeping ACE opportunity records current, credentials and certifications up to date, and Marketplace listings complete and outcome-focused. Global Startup Program partners get an additional dedicated visibility track called \"Startups You Should Know.\"",
+    def: 'An AWS Partner Central capability that uses machine learning to help AWS sellers identify the partner solutions and Marketplace listings most relevant to a specific customer opportunity. It combines Marketplace listing content (problems solved, use cases, integrated AWS services), verified credentials (AWS Specializations and Certifications), and ACE opportunity engagement signals — covering both software listings and Consulting Partner professional services — to rank partner solutions for a seller\'s search. Partners cannot query the engine directly; they improve their odds of surfacing by keeping ACE opportunity records current, credentials and certifications up to date, and Marketplace listings complete and outcome-focused. Global Startup Program partners get an additional dedicated visibility track called "Startups You Should Know."',
     alias:
       "Related: Co-sell Recommendation Score — AWS, AWS Intelligence Signals — AWS, APN Customer Engagements (ACE) — AWS",
     source:
@@ -13047,7 +13110,7 @@ export const terms = [
     useCases: [
       "Keeping AWS Marketplace listings complete and outcome-focused so the Solution Matching Engine ranks them higher for relevant customer opportunities",
       "Maintaining current ACE opportunity records and up-to-date AWS Specializations and Certifications to improve match visibility to AWS sellers",
-      "Checking the Global Startup Program's \"Startups You Should Know\" view for dedicated visibility outside the standard matching flow",
+      'Checking the Global Startup Program\'s "Startups You Should Know" view for dedicated visibility outside the standard matching flow',
     ],
     context: [
       "AWS Partner Central",
@@ -13343,7 +13406,11 @@ export const terms = [
       "Deciding whether to retire an entire listing, a single plan, or one pricing dimension based on which cloud a product is sold on and how existing buyers should be affected",
       "Planning a listing wind-down timeline that accounts for a specific cloud's grace period and buyer-notification requirements",
     ],
-    context: ["AWS Marketplace", "Microsoft Marketplace", "Google Cloud Marketplace"],
+    context: [
+      "AWS Marketplace",
+      "Microsoft Marketplace",
+      "Google Cloud Marketplace",
+    ],
     related: [
       { name: "Listing", slug: "listing" },
       { name: "Plan — Azure", slug: "plan-—-azure" },
@@ -13364,7 +13431,12 @@ export const terms = [
       "Determining what correction options exist after realizing a usage record was submitted incorrectly to a cloud marketplace",
       "Understanding why the recourse for a bad usage record differs depending on whether the buyer's bill for that period has already been issued",
     ],
-    context: ["AWS Marketplace", "Microsoft Marketplace", "Google Cloud Marketplace", "Metering"],
+    context: [
+      "AWS Marketplace",
+      "Microsoft Marketplace",
+      "Google Cloud Marketplace",
+      "Metering",
+    ],
     related: [
       { name: "Usage Record", slug: "usage-record" },
       { name: "Metering Dimension", slug: "metering-dimension" },
@@ -13374,7 +13446,8 @@ export const terms = [
     name: "Know Your Customer (KYC) — AWS",
     tags: ["aws", "billing"],
     def: "AWS's identity-verification process for AWS Marketplace sellers and channel partners, gating which legal entity invoices a given buyer. In the EMEA region, AWS EMEA SARL invoices a buyer only once the seller's KYC has cleared — and on a Channel Partner Private Offer, only once the channel partner's KYC has also cleared too — otherwise Amazon Web Services, Inc. invoices instead in the interim.",
-    alias: "Related: AWS EMEA SARL — AWS, Channel Partner Private Offer (CPPO) — AWS",
+    alias:
+      "Related: AWS EMEA SARL — AWS, Channel Partner Private Offer (CPPO) — AWS",
     source:
       "https://www.fours.com/resources/blog/aws-emea-sarl-marketplace-kyc/",
     difficulty: "advanced",
@@ -13431,7 +13504,10 @@ export const terms = [
     ],
     context: ["Microsoft Marketplace", "Partner Center"],
     related: [
-      { name: "Microsoft Marketplace — Azure", slug: "microsoft-marketplace-—-azure" },
+      {
+        name: "Microsoft Marketplace — Azure",
+        slug: "microsoft-marketplace-—-azure",
+      },
       { name: "Listing", slug: "listing" },
     ],
   },
@@ -13459,8 +13535,7 @@ export const terms = [
     name: "AWS Data Competency — AWS",
     tags: ["aws"],
     def: "An AWS Competency specialization for partners with proven database and data-platform expertise, spanning Services Partners and Software Partners. As of late September 2026, it added two new categories — Databases for Services Partners and Relational Databases for Software Partners — and introduced performance-based 'Signature' benefits: 2027 marketing and deal funding across three accelerators (Production Ready, AI Assessment, Database Migration), AWS Data and AI Workshop access, and recognition perks such as case studies and Partner of the Year consideration.",
-    alias:
-      "Related: AWS Competency — AWS, AWS Competency Program — AWS",
+    alias: "Related: AWS Competency — AWS, AWS Competency Program — AWS",
     source:
       "https://aws.amazon.com/blogs/apn/new-categories-and-benefits-for-aws-data-competency-partners/",
     difficulty: "intermediate",

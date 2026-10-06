@@ -3,7 +3,7 @@ import { escHtml } from "../app/utils.js";
 import { rows, conceptLabel, DISPLAY_SUFFIX_RE } from "../app/compare-data.js";
 
 const PLATFORMS = [
-  { key: "Suger" },
+  { key: "Fours" },
   { key: "AWS" },
   { key: "Azure" },
   { key: "GCP" },
@@ -17,7 +17,7 @@ const PLATFORMS = [
 // CONCEPT_OVERRIDES entry and its raw term name is platform-branded, warn loudly
 // instead of letting it silently ship (e.g. "AWS Marketplace Catalog API — AWS").
 const BRAND_LEAK_RE =
-  /\b(AWS|Amazon|Azure|Microsoft|GCP|Google Cloud|Google|Snowflake|Alibaba|Oracle|Suger)\b/i;
+  /\b(AWS|Amazon|Azure|Microsoft|GCP|Google Cloud|Google|Snowflake|Alibaba|Oracle|Fours)\b/i;
 rows.forEach((g) => {
   const label = conceptLabel(g);
   if (BRAND_LEAK_RE.test(label)) {
@@ -72,7 +72,7 @@ function buildTable(filter) {
   return `
     <div class="compare-table-wrap">
       <table class="compare-table" aria-label="Cross-platform marketplace concept comparison">
-        <caption class="sr-only">Cross-platform concept comparison across Suger, AWS, Azure, GCP, Snowflake, and Alibaba Cloud marketplaces.</caption>
+        <caption class="sr-only">Cross-platform concept comparison across Fours, AWS, Azure, GCP, Snowflake, and Alibaba Cloud marketplaces.</caption>
         <thead>
           <tr>
             <th class="compare-th compare-th-concept" scope="col">Concept</th>

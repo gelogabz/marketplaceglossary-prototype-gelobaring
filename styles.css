@@ -557,8 +557,7 @@ mark {
 }
 
 .term-card.dimmed {
-    opacity: 0.25;
-    filter: blur(1px);
+    opacity: 0.4;
 }
 
 .term-name {
