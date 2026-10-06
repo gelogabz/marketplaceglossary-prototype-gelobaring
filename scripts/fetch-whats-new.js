@@ -100,7 +100,7 @@
  */
 
 import { readFileSync, writeFileSync, existsSync } from "fs";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -679,6 +679,36 @@ async function fetchOracleBlog() {
 
 // ── Source: Fours Blog (HTML) ─────────────────────────────────────────────────
 
+const BLOG_DATE_RE =
+  /\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{1,2},?\s+\d{4}/i;
+
+// Featured/pinned posts (e.g. a permanent "Suger is now Fours" banner) show no
+// date in the index card itself, so the regular card-text scrape finds nothing
+// to go on. Rather than silently dropping them, fetch the article page and
+// pull its real publish date from JSON-LD `datePublished` (falls back to a
+// visible date string in the rendered body if the page has no JSON-LD).
+async function fetchArticlePublishDate(url) {
+  try {
+    const html = await fetchText(url);
+    for (const m of html.matchAll(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi,
+    )) {
+      try {
+        const data = JSON.parse(m[1]);
+        for (const d of Array.isArray(data) ? data : [data]) {
+          if (d.datePublished) return parseIsoDate(d.datePublished);
+        }
+      } catch {
+        // not valid JSON or no datePublished — try the next block
+      }
+    }
+    const bodyMatch = scrub(html).match(BLOG_DATE_RE);
+    return bodyMatch ? parseIsoDate(bodyMatch[0]) : null;
+  } catch {
+    return null;
+  }
+}
+
 async function fetchSugerBlog() {
   const html = await fetchText("https://www.fours.com/resources/blog/");
   const results = [];
@@ -695,15 +725,16 @@ async function fetchSugerBlog() {
     if (rawText.length < 20 || seen.has(href)) continue;
     seen.add(href);
 
-    // Look for a date pattern inside the card
-    const dateM = rawText.match(
-      /\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{1,2},?\s+\d{4}/i,
-    );
-    if (!dateM) continue;
-    const date = parseIsoDate(dateM[0]);
+    const url = href.startsWith("http") ? href : `https://www.fours.com${href}`;
+
+    // Look for a date pattern inside the card; featured/pinned posts carry no
+    // date in the index listing, so fall back to the article page itself.
+    const dateM = rawText.match(BLOG_DATE_RE);
+    const date = dateM
+      ? parseIsoDate(dateM[0])
+      : await fetchArticlePublishDate(url);
     if (!date || !isRecent(date)) continue;
 
-    const url = href.startsWith("http") ? href : `https://www.fours.com${href}`;
     // First non-date line is likely the title
     const lines = rawText
       .split(/\s{3,}/)
@@ -712,7 +743,9 @@ async function fetchSugerBlog() {
     const title =
       lines.find(
         (l) =>
-          l.length > 5 && !/^\d/.test(l) && !dateM[0].includes(l.slice(0, 5)),
+          l.length > 5 &&
+          !/^\d/.test(l) &&
+          !(dateM && dateM[0].includes(l.slice(0, 5))),
       ) || rawText.slice(0, 80);
 
     results.push({
@@ -1036,15 +1069,34 @@ async function fetchSugerDocsUpdates() {
 async function main() {
   console.log("Fetching What's New data…\n");
 
-  // Load existing entries for merge
+  // Load existing entries for merge — import the file as the real ES module
+  // it is, rather than regex-extracting the array text and JSON.parse-ing it.
+  // The written output is always valid JSON (quoted keys, via
+  // JSON.stringify), but anything that might touch the committed file in
+  // between runs (an editor's format-on-save, a future formatter, a manual
+  // edit) only has to keep it valid JavaScript, not valid JSON — e.g.
+  // reformatting `"id": "x"` to `id: "x"` is a no-op for any JS tool but
+  // breaks JSON.parse outright. A failed parse here used to fall back to an
+  // empty array, silently discarding every historical entry on the next
+  // write — importing the module instead tolerates any valid-JS reformatting.
   let existing = [];
   if (existsSync(OUT)) {
     try {
-      const raw = readFileSync(OUT, "utf8");
-      const m = raw.match(/export const updates = (\[[\s\S]*\]);/);
-      if (m) existing = JSON.parse(m[1]);
+      const mod = await import(pathToFileURL(OUT).href);
+      existing = mod.updates || [];
     } catch (e) {
-      console.warn("  Could not parse existing data.whats-new.js:", e.message);
+      console.warn("  Could not load existing data/whats-new.js:", e.message);
+    }
+    // Hard stop rather than silently proceeding with an empty `existing` —
+    // that's exactly how a parse failure used to turn into mass data loss
+    // (every historical entry dropped, replaced with just this run's fresh
+    // fetch). A non-trivial file that loads to 0 entries means something's
+    // wrong with the load, not that the archive is actually empty.
+    if (existing.length === 0) {
+      console.error(
+        "  ABORTING: data/whats-new.js exists but loaded 0 entries — refusing to overwrite what may be a parse failure with an empty merge base. Investigate before re-running.",
+      );
+      process.exit(1);
     }
   }
 
