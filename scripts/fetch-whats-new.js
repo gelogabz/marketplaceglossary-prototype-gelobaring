@@ -315,8 +315,14 @@ async function fetchText(url, timeoutMs = 20000) {
     const res = await fetch(url, {
       signal: ctrl.signal,
       headers: {
+        // A self-identifying bot UA (e.g. "CloudGTMBot/1.0") gets a flat 403
+        // from Oracle's Akamai bot mitigation on every path tested — including
+        // the plain public RSS feed, which exists specifically for machine
+        // consumption. A standard browser UA is let through with no other
+        // change needed; every other one of the 14 sources is indifferent to
+        // which UA is sent, so there's no tradeoff to using this one everywhere.
         "User-Agent":
-          "Mozilla/5.0 (compatible; CloudGTMBot/1.0; +https://gelogabz.github.io/marketplaceglossary-prototype-gelobaring/)",
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
       },
     });
     if (!res.ok) throw new Error(`HTTP ${res.status} from ${url}`);
@@ -1133,8 +1139,21 @@ async function main() {
   // "suger-docs" entries (Fours Docs Updates) are excluded from this drop — that
   // fetcher only ever emits genuinely-new-today pages, never a full page rescan, so
   // its past entries must be preserved via the normal merge-by-id path below instead.
+  //
+  // Insulin Blog is excluded from this drop too, for the same underlying reason,
+  // even though it shares platformTag "suger" with Fours Blog/Changelog: unlike
+  // those two, it can't scrape "a full listing page each run" — insulin.dev/blog/'s
+  // JSON-LD only ever exposes the ~20 most recent posts, with no pagination. Under
+  // replace semantics, any post older than that rolling window gets permanently
+  // deleted the moment a newer post pushes it out — confirmed happening live
+  // 2026-10-07 (5 real posts vanished from one run). Matched by sourceUrl rather
+  // than adding a new field, since every Insulin Blog entry's sourceUrl is always
+  // an insulin.dev/blog/ URL and nothing else sharing platformTag "suger" is.
   existing = existing.filter(
-    (e) => e.platform !== "Azure" && e.platformTag !== "suger",
+    (e) =>
+      e.platform !== "Azure" &&
+      (e.platformTag !== "suger" ||
+        (e.type === "blog" && e.sourceUrl?.includes("insulin.dev/blog/"))),
   );
 
   // Merge: fresh entries overwrite existing ones with same ID

@@ -2,6 +2,17 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 10/07/2026 — 6 added pages
+
+```diff
++ [Gcp Marketplace › Signed Buyer Handoff](https://doc.fours.com/gcp-marketplace/signed-buyer-handoff/)
++ [Revenue › Tax](https://doc.fours.com/revenue/tax/)
++ [Revenue › Tax › Amended Returns](https://doc.fours.com/revenue/tax/amended-returns/)
++ [Revenue › Tax › Audits And Findings](https://doc.fours.com/revenue/tax/audits-and-findings/)
++ [Revenue › Tax › Corrections](https://doc.fours.com/revenue/tax/corrections/)
++ [Revenue › Tax › Set Up Tax](https://doc.fours.com/revenue/tax/set-up-tax/)
+```
+
 ## 10/05/2026 — 494 added pages, 494 removed pages
 
 ```diff
