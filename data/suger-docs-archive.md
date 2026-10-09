@@ -2,6 +2,14 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 10/09/2026 — 3 added pages
+
+```diff
++ [Insulin › Slack Bot](https://doc.fours.com/insulin/slack-bot/)
++ [Integrations › Google Workspace Sso](https://doc.fours.com/integrations/google-workspace-sso/)
++ [Prm › Partner Program Dashboard](https://doc.fours.com/prm/partner-program-dashboard/)
+```
+
 ## 10/07/2026 — 6 added pages
 
 ```diff

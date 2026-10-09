@@ -1,6 +1,138 @@
 {
-  "lastUpdated": "2026-10-08T12:26:43.228Z",
+  "lastUpdated": "2026-10-09T12:15:59.111Z",
   "updates": [
+    {
+      "id": "snowflake-2026-10-09-agentic-marketplace-discovery-public-preview",
+      "platform": "Snowflake",
+      "platformTag": "snowflake",
+      "date": "2026-10-09",
+      "title": "Agentic Marketplace Discovery (Public preview)",
+      "summary": "Agentic Marketplace Discovery is now available in public preview. On the public Snowflake Marketplace Discover page in Snowsight, you can switch between Agentic discovery and Marketplace search .",
+      "type": "release",
+      "sourceUrl": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-09-agentic-marketplace-discovery-preview",
+      "impact": "high"
+    },
+    {
+      "id": "azure-2026-10-08-multiparty-private-offers-expand-to-hong-kong-sar",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-10-08",
+      "title": "Multiparty private offers expand to Hong Kong SAR",
+      "summary": "Microsoft Marketplace has expanded multiparty private offers to Hong Kong SAR, in addition to current markets.",
+      "type": "blog",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#multiparty-private-offers-expand-to-hong-kong-sar",
+      "impact": "medium"
+    },
+    {
+      "id": "suger-2026-10-08-co-sell-aws-multi-partner-opportunities-invite-a-p",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Co-Sell AWS Multi-Partner Opportunities: Invite a Partner Your reseller or SI is on the AWS deal too. Here's what must b",
+      "summary": "Co-Sell AWS Multi-Partner Opportunities: Invite a Partner Your reseller or SI is on the AWS deal too. Here's what must be in place before you invite them into the ACE opportunity, how many partners can join, how long each has to answer, and what their copy of the opportunity loo…",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/aws-multi-partner-opportunities/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-marketplaces-cloud-marketplace-search-optimization",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Marketplaces Cloud Marketplace Search Optimization, by Cloud Buyers search AWS, Microsoft and Google Cloud for your cate",
+      "summary": "Marketplaces Cloud Marketplace Search Optimization, by Cloud Buyers search AWS, Microsoft and Google Cloud for your category and find someone else. Each marketplace reads different fields, reports on its own clock, and publishes neither its ranking formula nor what buyers type.",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/cloud-marketplace-search-optimization/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-aws-edit-aws-marketplace-listings-without-overwrit",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "AWS Edit AWS Marketplace Listings Without Overwrites Every edit to an AWS Marketplace listing is a change request that o",
+      "summary": "AWS Edit AWS Marketplace Listings Without Overwrites Every edit to an AWS Marketplace listing is a change request that overwrites what was there. When a person in the portal and a tool both edit one listing, the second save can quietly undo the first.",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/edit-aws-marketplace-listings/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-gcp-google-cloud-private-offer-proration-and-deadl",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "GCP Google Cloud Private Offer Proration and Deadlines Why a Google Cloud private offer seems to end a day after the con",
+      "summary": "GCP Google Cloud Private Offer Proration and Deadlines Why a Google Cloud private offer seems to end a day after the contract, how far out the acceptance deadline can go, and what proration does to the first installment: every date rule, in Google's own words. Oct 8, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/google-cloud-private-offer-proration/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-billing-metering-prepaid-commit-with-monthly-overa",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Billing & Metering Prepaid Commit With Monthly Overage, Cloud by Cloud A year paid up front, a usage allowance that rese",
+      "summary": "Billing & Metering Prepaid Commit With Monthly Overage, Cloud by Cloud A year paid up front, a usage allowance that resets every month, overage billed monthly. Here's what AWS, Microsoft and Google Cloud bill natively, where each one stops, and how to sell the rest. Oct 8, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/prepaid-commit-with-monthly-overage/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-insulin-ai-email-rule-templates-exact-text-word-fo",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Insulin: AI Email Rule Templates: Exact Text, Word for Word",
+      "summary": "A booking link or a required legal sentence has to arrive exactly as written. Insulin's Inbox rules offer three ways to send text, and a rule older than email templates has none until you change its description and save it.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-email-rule-templates/",
+      "impact": "high"
+    },
+    {
+      "id": "suger-2026-10-08-insulin-ai-workspace-admin-checklist-set-up-insuli",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Insulin: AI Workspace Admin Checklist: Set Up Insulin",
+      "summary": "Two of Insulin's admin settings fail closed, the spending limit blocks rather than warns, and the wrong org role stops a new member from starting a chat. Nine steps, in the order that keeps each one from breaking the next.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-workspace-admin-checklist/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-insulin-ews-retirement-and-your-ai-email-assistant",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Insulin: EWS Retirement and Your AI Email Assistant",
+      "summary": "Microsoft starts disabling Exchange Web Services in October 2026 and asks admins to check every third-party app. What Insulin's docs say about its Outlook connection, and the report in your tenant that settles it.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ews-retirement-ai-email-assistant/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-insulin-owasp-agentic-top-10-an-ai-workspace-check",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Insulin: OWASP Agentic Top 10: An AI Workspace Checklist",
+      "summary": "The OWASP Agentic Top 10 as a security reviewer's checklist: for each risk, the control Insulin's docs describe and what they don't promise. Fours' reading of its own docs, not OWASP's assessment.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/owasp-agentic-top-10-checklist/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-08-insulin-read-only-access-for-ai-agents-where-it-s-",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-08",
+      "title": "Insulin: Read-Only Access for AI Agents: Where It's Set",
+      "summary": "Insulin's allowlist decides which systems an agent can reach, not which tools. Read-only is set in each system's own credential, and for two of them the documented setup can't hold an agent to reading.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/read-only-access-for-ai-agents/",
+      "impact": "low"
+    },
     {
       "id": "suger-2026-10-07-insulin-use-notion-docs-with-ai-agents-and-conflue",
       "platform": "Fours",
@@ -112,17 +244,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-10-07-billing-metering-marketplace-usage-report-failed-a",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-07",
-      "title": "Billing & Metering Marketplace Usage Report Failed After Acceptance The buyer accepted, your usage passed validation, an",
-      "summary": "Billing & Metering Marketplace Usage Report Failed After Acceptance The buyer accepted, your usage passed validation, and the marketplace still refused it. Here's what AWS, Microsoft and Google Cloud mean when they say a customer isn't billable, and what you can still bill.",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/usage-report-failed-after-acceptance/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-10-07-azure-microsoft-marketplace-refunds-and-cancellati",
       "platform": "Fours",
       "platformTag": "suger",
@@ -131,6 +252,17 @@
       "summary": "Azure Microsoft Marketplace Refunds and Cancellations Inside the refund window, a Microsoft Marketplace buyer can cancel and be refunded without you.",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/microsoft-marketplace-refunds-and-cancellations/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-07-billing-metering-marketplace-usage-report-failed-a",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-07",
+      "title": "Billing & Metering Marketplace Usage Report Failed After Acceptance The buyer accepted, your usage passed validation, an",
+      "summary": "Billing & Metering Marketplace Usage Report Failed After Acceptance The buyer accepted, your usage passed validation, and the marketplace still refused it. Here's what AWS, Microsoft and Google Cloud mean when they say a customer isn't billable, and what you can still bill.",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/usage-report-failed-after-acceptance/",
       "impact": "low"
     },
     {
@@ -315,7 +447,7 @@
       "platformTag": "suger",
       "date": "2026-09-30",
       "title": "Insulin: The AI Email Assistant for Outlook vs Gmail",
-      "summary": "Most of Insulin's Inbox works the same on Outlook and Gmail. Two things don't: attachments, and where AI drafts live. Here is the documented list for an M365 team.",
+      "summary": "Most of Insulin's Inbox works the same on Outlook and Gmail. Three things don't: attachments, where AI drafts live, and editing mailbox drafts in Inbox. Here is the documented list for an M365 team.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/ai-email-assistant-on-outlook-vs-gmail/",
       "impact": "low"
@@ -728,17 +860,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-24-billing-metering-marketplace-usage-correction-what",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-09-24",
-      "title": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a us",
-      "summary": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a usage record, there is no self-service way to take it back. What you can do depends on the cloud, and on whether the bill has gone out. Sep 24, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-usage-correction/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-24-co-sell-aws-partner-central-leads-from-salesforce-",
       "platform": "Fours",
       "platformTag": "suger",
@@ -747,6 +868,17 @@
       "summary": "Co-Sell AWS Partner Central Leads from Salesforce Accounts Creating an AWS Partner Central lead and enriching it are two steps with different rules. What each needs, what AWS returns, and how Salesforce feeds both. Sep 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/aws-partner-central-leads-from-salesforce/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-24-billing-metering-marketplace-usage-correction-what",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-09-24",
+      "title": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a us",
+      "summary": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a usage record, there is no self-service way to take it back. What you can do depends on the cloud, and on whether the bill has gone out. Sep 24, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-usage-correction/",
       "impact": "low"
     },
     {
@@ -849,17 +981,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-19-aws-aws-marketplace-request-private-offer-who-answ",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-09-19",
-      "title": "AWS AWS Marketplace Request Private Offer: Who Answers? An AWS Marketplace request reaches Partner Central as an opportu",
-      "summary": "AWS AWS Marketplace Request Private Offer: Who Answers? An AWS Marketplace request reaches Partner Central as an opportunity or a lead, with five business days to answer. Where each one lands, and who answers. Sep 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/aws-marketplace-private-offer-requests/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-19-aws-aws-marketplace-private-offer-errors-why-a-buy",
       "platform": "Fours",
       "platformTag": "suger",
@@ -901,6 +1022,17 @@
       "summary": "Marketplaces Cloud Marketplace Purchase Orders: Who Sets the PO Your buyer's AP won't pay without a PO on the invoice. On AWS, Microsoft and Google Cloud only the buyer can add one. Here is where, and what to send. Sep 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/purchase-order-numbers-on-cloud-marketplaces/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-aws-aws-marketplace-request-private-offer-who-answ",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "AWS AWS Marketplace Request Private Offer: Who Answers? An AWS Marketplace request reaches Partner Central as an opportu",
+      "summary": "AWS AWS Marketplace Request Private Offer: Who Answers? An AWS Marketplace request reaches Partner Central as an opportunity or a lead, with five business days to answer. Where each one lands, and who answers. Sep 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/aws-marketplace-private-offer-requests/",
       "impact": "low"
     },
     {
@@ -1498,17 +1630,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-24-marketplaces-alibaba-marketplace-private-offers-vs",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-24",
-      "title": "Marketplaces Alibaba Marketplace: Private Offers vs Promotions On Alibaba Cloud Marketplace, a private offer and a Promo",
-      "summary": "Marketplaces Alibaba Marketplace: Private Offers vs Promotions On Alibaba Cloud Marketplace, a private offer and a Promotion Center discount solve different deals. How to tell which one a given deal actually needs. Aug 24, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/alibaba-marketplace-private-offers-vs-promotions/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-24-aws-aws-marketplace-storefront-vs-buy-with-aws-aws",
       "platform": "Fours",
       "platformTag": "suger",
@@ -1520,14 +1641,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-24-cloud-gtm-closing-cloud-marketplace-deals-before-y",
+      "id": "suger-2026-08-24-marketplaces-alibaba-marketplace-private-offers-vs",
       "platform": "Fours",
       "platformTag": "suger",
       "date": "2026-08-24",
-      "title": "Cloud GTM Closing Cloud Marketplace Deals Before Year-End Year-end is a marketplace seller's best window: committed-spen",
-      "summary": "Cloud GTM Closing Cloud Marketplace Deals Before Year-End Year-end is a marketplace seller's best window: committed-spend clocks and budget flush align. How to use them, and the fastest compliant path to close. Aug 24, 2026",
+      "title": "Marketplaces Alibaba Marketplace: Private Offers vs Promotions On Alibaba Cloud Marketplace, a private offer and a Promo",
+      "summary": "Marketplaces Alibaba Marketplace: Private Offers vs Promotions On Alibaba Cloud Marketplace, a private offer and a Promotion Center discount solve different deals. How to tell which one a given deal actually needs. Aug 24, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/closing-marketplace-deals-before-year-end/",
+      "sourceUrl": "https://www.fours.com/resources/blog/alibaba-marketplace-private-offers-vs-promotions/",
       "impact": "low"
     },
     {
@@ -1553,14 +1674,25 @@
       "impact": "medium"
     },
     {
-      "id": "suger-2026-08-24-azure-microsoft-marketplace-request-private-offer-",
+      "id": "suger-2026-08-24-cloud-gtm-closing-cloud-marketplace-deals-before-y",
       "platform": "Fours",
       "platformTag": "suger",
       "date": "2026-08-24",
-      "title": "Azure Microsoft Marketplace Request Private Offer Microsoft's Request Private Offer turns an Azure Marketplace listing i",
-      "summary": "Azure Microsoft Marketplace Request Private Offer Microsoft's Request Private Offer turns an Azure Marketplace listing into an inbound demand channel. How to enable it, route the lead, and qualify the deal. Aug 24, 2026",
+      "title": "Cloud GTM Closing Cloud Marketplace Deals Before Year-End Year-end is a marketplace seller's best window: committed-spen",
+      "summary": "Cloud GTM Closing Cloud Marketplace Deals Before Year-End Year-end is a marketplace seller's best window: committed-spend clocks and budget flush align. How to use them, and the fastest compliant path to close. Aug 24, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/microsoft-marketplace-request-private-offer/",
+      "sourceUrl": "https://www.fours.com/resources/blog/closing-marketplace-deals-before-year-end/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-24-security-security-questions-buyers-ask-about-your-",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-24",
+      "title": "Security Security Questions Buyers Ask About Your Ops When a buyer's IT team reviews the tools you run their transaction",
+      "summary": "Security Security Questions Buyers Ask About Your Ops When a buyer's IT team reviews the tools you run their transaction data through, the questions are predictable. The checklist to be ready for, grouped by theme. Aug 24, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/security-questions-buyers-ask/",
       "impact": "low"
     },
     {
@@ -1575,14 +1707,14 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-24-security-security-questions-buyers-ask-about-your-",
+      "id": "suger-2026-08-24-azure-microsoft-marketplace-request-private-offer-",
       "platform": "Fours",
       "platformTag": "suger",
       "date": "2026-08-24",
-      "title": "Security Security Questions Buyers Ask About Your Ops When a buyer's IT team reviews the tools you run their transaction",
-      "summary": "Security Security Questions Buyers Ask About Your Ops When a buyer's IT team reviews the tools you run their transaction data through, the questions are predictable. The checklist to be ready for, grouped by theme. Aug 24, 2026",
+      "title": "Azure Microsoft Marketplace Request Private Offer Microsoft's Request Private Offer turns an Azure Marketplace listing i",
+      "summary": "Azure Microsoft Marketplace Request Private Offer Microsoft's Request Private Offer turns an Azure Marketplace listing into an inbound demand channel. How to enable it, route the lead, and qualify the deal. Aug 24, 2026",
       "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/security-questions-buyers-ask/",
+      "sourceUrl": "https://www.fours.com/resources/blog/microsoft-marketplace-request-private-offer/",
       "impact": "low"
     },
     {
@@ -1696,6 +1828,17 @@
       "impact": "low"
     },
     {
+      "id": "suger-2026-08-20-security-fedramp-and-your-cloud-marketplace-listin",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-20",
+      "title": "Security FedRAMP and Your Cloud Marketplace Listing FedRAMP decides whether a US agency may run your software; your mark",
+      "summary": "Security FedRAMP and Your Cloud Marketplace Listing FedRAMP decides whether a US agency may run your software; your marketplace listing decides how they buy it. Here is how the authorization and the listing actually connect. Aug 20, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/fedramp-and-your-marketplace-listing/",
+      "impact": "low"
+    },
+    {
       "id": "suger-2026-08-20-gcp-google-cloud-commitments-and-marketplace-drawd",
       "platform": "Fours",
       "platformTag": "suger",
@@ -1715,17 +1858,6 @@
       "summary": "GCP Google Cloud Partner Network Tiers Explained Google Cloud replaced Partner Advantage with the Google Cloud Partner Network: three tiers — Select, Premier, and Diamond — and a competency framework in place of specializations. Here is how the structure works for an ISV.",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/google-cloud-partner-network-tiers/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-08-20-security-fedramp-and-your-cloud-marketplace-listin",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-20",
-      "title": "Security FedRAMP and Your Cloud Marketplace Listing FedRAMP decides whether a US agency may run your software; your mark",
-      "summary": "Security FedRAMP and Your Cloud Marketplace Listing FedRAMP decides whether a US agency may run your software; your marketplace listing decides how they buy it. Here is how the authorization and the listing actually connect. Aug 20, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/fedramp-and-your-marketplace-listing/",
       "impact": "low"
     },
     {
@@ -1927,17 +2059,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-18-billing-metering-the-aws-marketplace-professional-",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Billing & Metering The AWS Marketplace Professional Services Listing Fee Cut AWS cut the professional services listing f",
-      "summary": "Billing & Metering The AWS Marketplace Professional Services Listing Fee Cut AWS cut the professional services listing fee from 2.5% to 0.5% in June 2026. Here's the exact before/after and the new margin math on a services attach. Aug 18, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/aws-marketplace-professional-services-fee-cut/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-18-azure-azure-marketplace-changes-2026-what-s-new-fo",
       "platform": "Fours",
       "platformTag": "suger",
@@ -1949,17 +2070,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-18-azure-azure-marketplace-renewals-and-offer-transit",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription la",
-      "summary": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription lands when a private offer expires, and the decisions a deal desk makes before it does. Aug 18, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/azure-renewals-and-offer-transitions/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-18-cloud-gtm-cloud-marketplace-platform-migration-a-c",
       "platform": "Fours",
       "platformTag": "suger",
@@ -1968,6 +2078,28 @@
       "summary": "Cloud GTM Cloud Marketplace Platform Migration: A Checklist Switching cloud marketplace platforms without breaking live revenue: what to check before, during and after a migration, and the risks to retire first. Aug 18, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/cloud-marketplace-platform-migration/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-18-billing-metering-the-aws-marketplace-professional-",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Billing & Metering The AWS Marketplace Professional Services Listing Fee Cut AWS cut the professional services listing f",
+      "summary": "Billing & Metering The AWS Marketplace Professional Services Listing Fee Cut AWS cut the professional services listing fee from 2.5% to 0.5% in June 2026. Here's the exact before/after and the new margin math on a services attach. Aug 18, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/aws-marketplace-professional-services-fee-cut/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-18-azure-azure-marketplace-renewals-and-offer-transit",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription la",
+      "summary": "Azure Azure Marketplace Renewals and Offer Transitions How an Azure Marketplace renewal works: where the subscription lands when a private offer expires, and the decisions a deal desk makes before it does. Aug 18, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/azure-renewals-and-offer-transitions/",
       "impact": "low"
     },
     {
@@ -2136,17 +2268,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
-      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-aws-packaging-software-and-services-in-one-offer-a",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2155,6 +2276,17 @@
       "summary": "AWS Packaging Software and Services in One Offer AWS offer sets let a buyer accept licence and implementation together in one action. The constraints on getting there are strict, and most of them cannot be fixed after release. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/packaging-software-and-services-in-one-offer/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-one-gtm-motion-across-aws-azure-and-goog",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and won",
+      "summary": "Cloud GTM One GTM Motion Across AWS, Azure and Google Cloud Most teams run each marketplace as its own programme and wonder why the third one costs as much as the first. The fix is knowing precisely which parts are the same. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/one-gtm-motion-across-aws-azure-google-cloud/",
       "impact": "low"
     },
     {
@@ -2213,17 +2345,6 @@
       "impact": "medium"
     },
     {
-      "id": "suger-2026-08-14-cloud-gtm-how-authentication-works-for-marketplace",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-14",
-      "title": "Cloud GTM How Authentication Works for Marketplace APIs Marketplace API access is machine-to-machine, long-lived and org",
-      "summary": "Cloud GTM How Authentication Works for Marketplace APIs Marketplace API access is machine-to-machine, long-lived and organisation-scoped. That combination breaks most of the credential habits teams bring to it. Aug 14, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/authentication-for-marketplace-apis/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-14-billing-metering-designing-metering-dimensions-you",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2233,6 +2354,17 @@
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/designing-metering-dimensions/",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-08-14-cloud-gtm-how-authentication-works-for-marketplace",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-14",
+      "title": "Cloud GTM How Authentication Works for Marketplace APIs Marketplace API access is machine-to-machine, long-lived and org",
+      "summary": "Cloud GTM How Authentication Works for Marketplace APIs Marketplace API access is machine-to-machine, long-lived and organisation-scoped. That combination breaks most of the credential habits teams bring to it. Aug 14, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/authentication-for-marketplace-apis/",
+      "impact": "low"
     },
     {
       "id": "suger-2026-08-14-cloud-gtm-exporting-marketplace-data-to-your-wareh",
@@ -2367,17 +2499,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-12-cloud-gtm-ai-agents-on-aws-marketplace-a-seller-s-",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-12",
-      "title": "Cloud GTM AI Agents on AWS Marketplace: A Seller's Guide AWS now has a category for AI agents and agentic tools, with tw",
-      "summary": "Cloud GTM AI Agents on AWS Marketplace: A Seller's Guide AWS now has a category for AI agents and agentic tools, with two deployment options and a quality bar attached. The mechanics are familiar; the pricing question is not. Aug 12, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/ai-agents-on-aws-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-12-cloud-gtm-the-aws-standard-contract-or-your-own-pa",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2419,6 +2540,17 @@
       "summary": "Cloud GTM Marketplace Access: Who Should Have Which Role Marketplace tooling touches pricing, contracts and bank details in one console. Most teams grant everyone admin and find out at the audit. Here is a least-privilege default. Aug 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/marketplace-access-roles/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-12-cloud-gtm-ai-agents-on-aws-marketplace-a-seller-s-",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-12",
+      "title": "Cloud GTM AI Agents on AWS Marketplace: A Seller's Guide AWS now has a category for AI agents and agentic tools, with tw",
+      "summary": "Cloud GTM AI Agents on AWS Marketplace: A Seller's Guide AWS now has a category for AI agents and agentic tools, with two deployment options and a quality bar attached. The mechanics are familiar; the pricing question is not. Aug 12, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/ai-agents-on-aws-marketplace/",
       "impact": "low"
     },
     {
@@ -2719,17 +2851,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-09-cloud-gtm-marketplace-vs-direct-sales-when-each-wi",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-09",
-      "title": "Cloud GTM Marketplace vs Direct Sales: When Each Wins Most writing on this question is produced by companies paid when y",
-      "summary": "Cloud GTM Marketplace vs Direct Sales: When Each Wins Most writing on this question is produced by companies paid when you choose the marketplace. Here is the honest version, including the deals where direct is plainly the better channel. Aug 9, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-vs-direct-sales/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-09-prm-partner-sourced-vs-partner-influenced-revenue-",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2738,6 +2859,17 @@
       "summary": "PRM Partner-Sourced vs Partner-Influenced Revenue Every partnerships leader has been asked to prove partner revenue is real. The answer depends on a distinction most teams have never written down — and cannot defend when a CFO pushes. Aug 9, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/partner-sourced-vs-partner-influenced/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-09-cloud-gtm-marketplace-vs-direct-sales-when-each-wi",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-09",
+      "title": "Cloud GTM Marketplace vs Direct Sales: When Each Wins Most writing on this question is produced by companies paid when y",
+      "summary": "Cloud GTM Marketplace vs Direct Sales: When Each Wins Most writing on this question is produced by companies paid when you choose the marketplace. Here is the honest version, including the deals where direct is plainly the better channel. Aug 9, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-vs-direct-sales/",
       "impact": "low"
     },
     {
