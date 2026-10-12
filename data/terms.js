@@ -291,7 +291,7 @@ export const terms = [
     tags: ["aws"],
     def: 'The web-based portal where AWS Marketplace sellers create and manage listings, private offers, agreements, and reports. Also known as Seller Central for marketplace. Accessible at <a href="https://aws.amazon.com/marketplace/management/" target="_blank" rel="noopener">aws.amazon.com/marketplace/management</a>.',
     alias:
-      "Azure equivalent: Partner Center — Azure | GCP equivalent: Producer Portal — GCP | Related: AWS Marketplace Catalog API — AWS, Fours Console",
+      "Azure equivalent: Partner Center — Azure | GCP equivalent: Producer Portal — GCP | Snowflake equivalent: Provider Studio — Snowflake | Related: AWS Marketplace Catalog API — AWS, Fours Console",
     source: "https://docs.aws.amazon.com/marketplace/latest/userguide/",
     difficulty: "intermediate",
     category: "operations",
@@ -308,6 +308,30 @@ export const terms = [
       },
       { name: "Private Offer", slug: "private-offer" },
       { name: "Fours Console", slug: "fours-console" },
+    ],
+  },
+  // ── TD1 2026-10-12 batch (2) ──
+  {
+    name: "Provider Studio — Snowflake",
+    tags: ["snowflake"],
+    def: "Snowflake's console for managing Marketplace listings, found in Snowsight under Marketplace > Provider Studio. Providers use it to create and manage listings, create and manage provider profiles, review analytics on how their data products perform (engagement, usage, reach), and track consumer, profile, and listing requests.",
+    alias:
+      "AWS equivalent: AWS Marketplace Management Portal (AMMP) — AWS | Azure equivalent: Partner Center — Azure | GCP equivalent: Producer Portal — GCP | Related: Snowflake Marketplace — Snowflake",
+    source: "https://docs.snowflake.com/en/collaboration/provider-studio-accessing",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Creating and publishing a new Snowflake Marketplace listing from Provider Studio",
+      "Reviewing engagement, usage, and reach analytics for a published data product listing",
+      "Managing a provider profile and tracking incoming consumer and listing requests",
+    ],
+    context: ["Snowflake Marketplace", "Snowsight"],
+    related: [
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
     ],
   },
   {
@@ -2567,6 +2591,10 @@ export const terms = [
         slug: "snowflake-data-appreciation-sda-—-snowflake",
       },
       { name: "Listing", slug: "listing" },
+      {
+        name: "Provider Studio — Snowflake",
+        slug: "provider-studio-—-snowflake",
+      },
     ],
   },
   {

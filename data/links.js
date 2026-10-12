@@ -272,6 +272,12 @@ export const linkSections = [
         desc: "The public-facing Snowflake Marketplace where buyers discover and install data products and Native Apps. Useful for checking how your listing appears to buyers.",
       },
       {
+        title: "Provider Studio",
+        url: "https://app.snowflake.com/#/provider-studio",
+        type: "portal",
+        desc: "Snowflake's seller-side console (in Snowsight, under Marketplace > Provider Studio) for creating and managing listings, provider profiles, and performance analytics — the Snowflake equivalent of AWS's AMMP, Azure's Partner Center, and GCP's Producer Portal.",
+      },
+      {
         title: "Snowflake Marketplace — Provider Docs",
         url: "https://docs.snowflake.com/en/collaboration/collaboration-listings-about",
         type: "doc",
