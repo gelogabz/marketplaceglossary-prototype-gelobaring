@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-10-06";
+export const lastReviewed = "2026-10-12";
 
 export const terms = [
   {
@@ -115,7 +115,7 @@ export const terms = [
     def: "An AWS Marketplace feature that lets sellers create a new offer on top of an existing buyer agreement — used for renewals, upgrades, or amendments without requiring the buyer to start a new subscription from scratch. ABOs are only supported for SaaS Contract and SaaS Contract with Consumption products — AMI, container, SaaS Subscription, and professional services offers do not support amendments. Amended offers become active immediately upon buyer acceptance; no future start date is possible.",
     alias: "Related: Agreement — AWS, Future Dated Agreement — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-overview.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/private-offers-upgrades-and-renewals.html",
     difficulty: "advanced",
     category: "procurement",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -534,17 +534,17 @@ export const terms = [
   {
     name: "Co-sell Eligible / Incentivized — Azure",
     tags: ["azure", "cosell"],
-    def: "Microsoft's three-tier co-sell status system for Microsoft Marketplace offers: In-market (live transactable listing required), Co-sell Ready (In-market plus solution one-pager and pitch deck in Partner Center), and Azure IP Co-sell Eligible (Co-sell Ready plus ≥$100K Azure Consumed Revenue or Marketplace Billed Sales in the trailing 12 months at the org level, Azure-based technical validation, a transactable offer, and a reference architecture diagram for most offer types). Azure IP Co-sell Eligible status unlocks MACC eligibility and prioritized Microsoft seller engagement. Microsoft field sellers earn incentive credit (via MCI) for selling Azure IP Co-sell Eligible offers.",
+    def: 'Microsoft\'s three-tier co-sell status system for Microsoft Marketplace offers: In-market (live transactable listing required), Co-sell Ready (In-market plus solution one-pager and pitch deck in Partner Center), and Azure IP Co-sell Eligible (Co-sell Ready plus ≥$100K Azure Consumed Revenue or Marketplace Billed Sales in the trailing 12 months at the org level, Azure-based technical validation, a transactable offer, and a reference architecture diagram for most offer types). Azure IP Co-sell Eligible status unlocks MACC eligibility, and Microsoft field sellers earn MCI incentive credit for selling Azure IP Co-sell Eligible offers — that incentive mechanism is this term\'s "Incentivized" half, not a distinct fourth status. A separately named "Co-sell Incentivized" tier does exist, but only within the Dynamics 365/Power Apps-specific Business Applications Co-sell Incentive track — it isn\'t part of this three-tier IP co-sell ladder.',
     alias:
-      "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure",
+      "Related: Azure Consumption Commitment (MACC) — Azure, Microsoft Marketplace — Azure, Business Applications Co-sell Incentive — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/referrals/co-sell-requirements",
     difficulty: "intermediate",
     category: "cosell",
     whoFor: ["ISVs / Sellers", "Azure Sales", "Partner Managers"],
     useCases: [
-      "Achieving Azure IP Co-sell status to make your listing MACC-eligible for enterprise buyers",
-      "Qualifying for Co-sell Incentivized status so Microsoft sellers earn quota credit on deals involving your product",
+      "Achieving Azure IP Co-sell Eligible status to make your listing MACC-eligible for enterprise buyers",
+      "Tracking MCI incentive credit Microsoft field sellers earn for selling your Azure IP Co-sell Eligible offer",
     ],
     context: [
       "Partner Center — Azure",
@@ -563,6 +563,10 @@ export const terms = [
       {
         name: "Marketplace Rewards — Azure",
         slug: "marketplace-rewards-—-azure",
+      },
+      {
+        name: "Business Applications Co-sell Incentive — Azure",
+        slug: "business-applications-co-sell-incentive-—-azure",
       },
     ],
   },
@@ -1354,7 +1358,7 @@ export const terms = [
     alias:
       "AWS equivalent: Enterprise Discount Program (EDP) — AWS | GCP equivalent: Committed Use Discount (CUD) — GCP",
     source:
-      "https://learn.microsoft.com/en-us/marketplace/azure-consumption-commitment-benefit",
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-consumption-commitment-enrollment",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Azure Sales"],
@@ -7777,7 +7781,7 @@ export const terms = [
     def: "A container product delivery type that allows ISVs to list their software as an installable add-on directly within the Amazon EKS console. Buyers discover, purchase, and deploy the add-on from EKS cluster management without navigating the Marketplace catalog separately. Updates and versioning are managed through the EKS add-on lifecycle, not the standard container image pull workflow.",
     alias: "Related: AWS Marketplace — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/container-based-products.html",
+      "https://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-container-products.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
@@ -7791,11 +7795,11 @@ export const terms = [
   {
     name: "Change Set — AWS",
     tags: ["aws", "operations", "integrations"],
-    def: "The core operational unit of the AWS Marketplace Catalog API — a batch of one or more change requests (e.g., updating listing details, adding pricing tiers, adding versions) submitted as an atomic transaction. Amazon EventBridge emits change set lifecycle events — ChangeSetSucceeded, ChangeSetFailed, ChangeSetCancelled — from the aws.marketplace-catalog source, enabling automated pipeline monitoring of publish and update operations.",
+    def: 'The core operational unit of the AWS Marketplace Catalog API — a batch of one or more change requests (e.g., updating listing details, adding pricing tiers, adding versions) submitted as an atomic transaction. Amazon EventBridge emits change set lifecycle events from the aws.marketplacecatalog source (no hyphen) — detail-types "Change Set Succeeded", "Change Set Failed", and "Change Set Cancelled" — enabling automated pipeline monitoring of publish and update operations without continuously polling DescribeChangeSet.',
     alias:
       "Related: AWS Marketplace Catalog API — AWS, Amazon EventBridge Marketplace Integration — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/APIReference/welcome.html",
+      "https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-marketplacecatalog.html",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Fours Users"],
@@ -7865,11 +7869,11 @@ export const terms = [
   {
     name: "Billing Adjustment — AWS",
     tags: ["aws", "billing", "operations"],
-    def: "A post-transaction correction mechanism in AWS Marketplace that allows sellers to modify charges after a transaction has been processed. Used to correct mispriced deals, apply credits, or adjust usage records after the billing cycle. Amazon EventBridge emits Billing Adjustment Completed and Billing Adjustment Failed events from the aws.marketplace-catalog source to notify ISVs of adjustment outcomes.",
+    def: 'A post-transaction correction (refund) a seller initiates on an existing AWS Marketplace agreement. AWS processes the adjustment automatically with no buyer approval required, then notifies the buyer by email and emits a role-suffixed EventBridge event — e.g. "Purchase Agreement Billing Adjustment Completed - Acceptor" — from the aws.agreement-marketplace source. Sellers can view and manage adjustment requests via the ListBillingAdjustmentRequests and GetBillingAdjustmentRequest APIs, whose status field is PENDING, VALIDATION_FAILED, or COMPLETED.',
     alias:
       "Related: Amazon EventBridge Marketplace Integration — AWS, Disbursement",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/buyer-private-offers.html",
+      "https://docs.aws.amazon.com/marketplace/latest/buyerguide/cancellation-adjustment-eventbridge.html",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Fours Users"],
@@ -8132,17 +8136,18 @@ export const terms = [
   {
     name: "Agency Fee Discount for Renewals — Azure",
     tags: ["azure", "billing"],
-    def: "A Microsoft Marketplace transaction fee reduction for private offer renewals. Standard private offers carry a 3% Microsoft agency fee; qualifying renewal private offers are discounted to 1.5% — a 50% reduction. The discount applies when an ISV renews an existing private offer for the same customer at renewal rather than creating a net-new private offer.",
+    def: "A 50% reduction to the Microsoft Marketplace transaction fee, applied to the full term of a qualifying private offer or multiparty private offer renewal. A deal qualifies as a renewal if it's a renewal of a current private offer or paid marketplace deal, a renewal of an existing paid agreement still in effect outside the commercial marketplace that's migrating onto it, or an upsell to an existing paid customer — new-customer opportunities don't qualify. Publishers self-attest to renewal status when creating the private offer, and the discounted fee then applies automatically. Private offers created before October 1, 2024 aren't eligible; for those, the customer must turn off auto-renewal (or cancel) and the publisher must set up a new private offer with the renewal attestation checked.",
     alias:
       "Related: Private Offer — Azure, Marketplace Rewards — Azure, Microsoft Marketplace — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/isv-customer-private-offers",
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/agency-fee-discount-for-renewals",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers"],
     useCases: [
-      "Structuring enterprise SaaS renewals as private offer renewals to qualify for the 1.5% agency fee instead of the standard 3%",
-      "Calculating ISV net payout on renewal deals accounting for the reduced agency fee discount",
+      "Self-attesting renewal status when creating a private offer so the 50% discounted agency fee applies automatically",
+      "Migrating an existing paid agreement from outside the commercial marketplace onto it as a qualifying renewal",
+      "Turning off auto-renewal on a pre-October 2024 private offer so a new, discount-eligible renewal offer can be created",
     ],
     context: [
       "Microsoft Marketplace",
@@ -8237,7 +8242,7 @@ export const terms = [
     def: "A JSON specification file required to list an AI agent on Google Cloud Marketplace. The Agent Card describes the agent's capabilities, input/output schemas, authentication requirements, and supported protocols (including A2A). It is the discovery and interoperability artifact for AI agent listings — analogous to an OpenAPI spec for REST APIs.",
     alias:
       "Related: AI Agent Listing — GCP, Agent2Agent (A2A) Protocol — GCP, GCP Marketplace — GCP",
-    source: "https://docs.cloud.google.com/marketplace/docs",
+    source: "https://docs.cloud.google.com/marketplace/docs/partners/ai-agents",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
@@ -8260,7 +8265,7 @@ export const terms = [
     def: "Google's open protocol for AI agent interoperability, enabling ISV-built agents to communicate and collaborate with Gemini Enterprise and other Google AI agents in the same ecosystem. A2A agents are discoverable via Agent Cards and can participate in multi-agent workflows. ISV agents that support A2A can integrate with Google Agentspace, Vertex AI Agent Builder, and enterprise orchestration pipelines via a standardized communication interface.",
     alias:
       "Related: Agent Card — GCP, AI Agent Listing — GCP, Agentic Earnings Hub — GCP",
-    source: "https://docs.cloud.google.com/marketplace/docs",
+    source: "https://docs.cloud.google.com/marketplace/docs/partners/ai-agents",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers"],
@@ -8285,17 +8290,18 @@ export const terms = [
   {
     name: "App Lifecycle Manager — GCP",
     tags: ["gcp", "integrations"],
-    def: "An optional Google Cloud Marketplace integration layer that automates tenant provisioning, configuration, and deprovisioning for SaaS ISV backends. When a buyer purchases a listing with App Lifecycle Manager enabled, GCP sends structured lifecycle events to the ISV's registered endpoint — replacing manual Procurement API polling. Reduces integration complexity for multi-tenant SaaS architectures.",
+    def: "A Google Cloud product (previously offered under the name SaaS Runtime) for provisioning and managing per-customer tenant infrastructure for a GCP Marketplace SaaS listing. The producer supplies a Terraform configuration and an artifact in Artifact Registry, sets up a separate GCP project per tenant with the required IAM grants, then creates a tenant resource and associates it with a purchased unit in the App Lifecycle Manager console. Clicking Provision triggers Infrastructure Manager to deploy the Terraform-defined resources into that tenant's project. This isn't one-click or fully automated — the producer must have already published a Terraform-based release and pre-configured each tenant project before provisioning can run.",
     alias:
       "Related: Procurement API — GCP, GCP Marketplace — GCP, Producer Portal — GCP",
     source:
-      "https://docs.cloud.google.com/marketplace/docs/partners/integrated-saas/backend-integration",
+      "https://docs.cloud.google.com/app-lifecycle-manager/create-tenants",
     difficulty: "advanced",
     category: "operations",
     whoFor: ["ISVs / Sellers", "Fours Users"],
     useCases: [
-      "Configuring App Lifecycle Manager to receive structured provisioning events instead of polling the Procurement API for entitlement state changes",
-      "Evaluating App Lifecycle Manager versus direct Procurement API integration for a new GCP Marketplace SaaS backend",
+      "Creating a tenant resource in App Lifecycle Manager and associating it with a purchased unit after a customer buys a GCP Marketplace SaaS listing",
+      "Provisioning a Terraform-defined release into an isolated per-tenant GCP project via Infrastructure Manager",
+      "Pre-configuring a tenant project's IAM grants and Terraform input variables before the first provisioning run for a new customer",
     ],
     context: [
       "GCP Marketplace",
@@ -8860,7 +8866,7 @@ export const terms = [
     tags: ["azure", "offers"],
     def: "A non-transactable Azure Marketplace and AppSource offer type for listing consulting, implementation, assessment, training, and briefing services from Microsoft certified partners. Unlike SaaS or VM offers, Professional Services offers cannot be purchased directly through the marketplace checkout — they generate a contact request or lead, which initiates an offline sales engagement. Listing is available to partners with a Microsoft AI Cloud Partner Program (MPN) membership and at least one Solutions Partner Designation; co-sell eligibility for Professional Services engagements follows the Azure IP co-sell motion.",
     alias:
-      "AWS equivalent: Professional Services Listing — AWS | Related: Listing, Partner Center — Azure, Solutions Partner Designation — Azure",
+      "AWS equivalent: Professional Services Listing — AWS | GCP equivalent: Professional Services Listing — GCP | Related: Listing, Partner Center — Azure, Solutions Partner Designation — Azure",
     source:
       "https://learn.microsoft.com/en-us/partner-center/marketplace/professional-services-offer-listing-best-practices",
     difficulty: "intermediate",
@@ -8887,6 +8893,10 @@ export const terms = [
       {
         name: "Co-sell Eligible / Incentivized — Azure",
         slug: "co-sell-eligible-/-incentivized-—-azure",
+      },
+      {
+        name: "Professional Services Listing — GCP",
+        slug: "professional-services-listing-—-gcp",
       },
     ],
   },
@@ -8938,7 +8948,7 @@ export const terms = [
     tags: ["aws", "offers"],
     def: "A distinct AWS Marketplace product type for selling time-bound, deliverable-based consulting, implementation, training, and managed services engagements. Unlike SaaS or AMI listings, Professional Services products do not provision software entitlements — instead, the buyer receives a statement of work or engagement scope. Private Offers for Professional Services support both Flexible Payment Schedules and Variable Payments as billing mechanisms, making them the primary vehicle for bundling advisory work alongside software on a single marketplace transaction. As of June 16, 2026, AWS reduced the listing fee for Professional Services private offers from 2.5% to 0.5%, applying to all new private offers across all AWS Regions and currencies. As of September 2026, professional services sold as part of a qualifying multi-product solution carry a further-reduced 0% listing fee, on top of the flat 0.5% rate for standalone professional-services private offers. As of March 2026, AWS first-party Professional Services are also available as transactable listings in AWS Marketplace, marking the first time Amazon itself has offered consulting services for purchase through the marketplace alongside third-party ISV and SI listings.",
     alias:
-      "Azure equivalent: Professional Services Offer — Azure | Related: Variable Payments — AWS, Flexible Payment Schedule / Installment Plan, Private Offer",
+      "Azure equivalent: Professional Services Offer — Azure | GCP equivalent: Professional Services Listing — GCP | Related: Variable Payments — AWS, Flexible Payment Schedule / Installment Plan, Private Offer",
     source:
       "https://aws.amazon.com/about-aws/whats-new/2026/06/reduce-listing-fee-professional-services-aws-marketplace/",
     difficulty: "intermediate",
@@ -8963,6 +8973,40 @@ export const terms = [
       },
       { name: "Private Offer", slug: "private-offer" },
       { name: "Listing", slug: "listing" },
+      {
+        name: "Professional Services Listing — GCP",
+        slug: "professional-services-listing-—-gcp",
+      },
+    ],
+  },
+  // ── TD1 2026-10-12 batch ──
+  {
+    name: "Professional Services Listing — GCP",
+    tags: ["gcp", "offers"],
+    def: "A GCP Marketplace listing type for selling consulting, implementation, and other services rather than software, priced through a pricing plan that sets the Marketplace list price. The seller can choose to hide that list price from the public listing page. Actual custom pricing for a given buyer is negotiated separately through a Private Offer, created by the seller or a Google Cloud reseller, rather than being paid at the listed price. Supported pricing models include a flat fee for access to the services.",
+    alias:
+      "AWS equivalent: Professional Services Listing — AWS | Azure equivalent: Professional Services Offer — Azure | Related: Private Offer — GCP",
+    source:
+      "https://docs.cloud.google.com/marketplace/docs/partners/professional-services/choose-pricing",
+    difficulty: "intermediate",
+    category: "procurement",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Choosing a flat-fee or custom pricing model when listing a professional services product on GCP Marketplace",
+      "Hiding the public list price on a professional services listing and routing interested buyers to a private offer for a custom quote",
+      "Using the Producer Portal to generate a private offer with buyer-specific pricing for a services engagement",
+    ],
+    context: ["GCP Marketplace", "Producer Portal — GCP"],
+    related: [
+      {
+        name: "Professional Services Listing — AWS",
+        slug: "professional-services-listing-—-aws",
+      },
+      {
+        name: "Professional Services Offer — Azure",
+        slug: "professional-services-offer-—-azure",
+      },
+      { name: "Private Offer — GCP", slug: "private-offer-—-gcp" },
     ],
   },
   {
@@ -12257,7 +12301,7 @@ export const terms = [
   {
     name: "AI Agents & Tools — AWS",
     tags: ["aws", "offers"],
-    def: "A dedicated AWS Marketplace listing category for AI agents (autonomous systems that reason, plan, and act on a buyer's behalf) and AI tools (guardrails, knowledge bases, integration protocols, and business-logic components that support them). Listings support two deployment options — API-based access to a vendor-hosted agent, or container deployment into the buyer's own AWS environment — and many integrate with Amazon Bedrock AgentCore and the Model Context Protocol (MCP) for use in agentic workflows. Buyers discover listings via semantic search or category browsing, distinct from the standard SaaS/AMI/container catalog structure.",
+    def: "A dedicated AWS Marketplace listing category for AI agents (autonomous systems that reason, plan, and act on a buyer's behalf) and AI tools (guardrails, knowledge bases, integration protocols, and business-logic components that support them). Listings support two deployment options — API-based access to a vendor-hosted agent, or container deployment into the buyer's own AWS environment — and many integrate with Amazon Bedrock AgentCore and the Model Context Protocol (MCP) for use in agentic workflows. A container deployed for use with Bedrock AgentCore Runtime must expose a GET /ping health check and a POST /invocations endpoint, be built for ARM64, and listen on port 8080. Buyers discover listings via semantic search or category browsing, distinct from the standard SaaS/AMI/container catalog structure.",
     alias:
       "GCP equivalent: AI Agent Listing — GCP | Azure equivalent: AI Apps and Agents — Azure | Fours equivalent: Insulin | Related: Agent Mode — AWS, AWS AI Competency — Agentic AI Categories — AWS",
     source:
