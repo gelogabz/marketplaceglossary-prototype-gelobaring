@@ -2,6 +2,13 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 10/13/2026 — 2 added pages
+
+```diff
++ [Api › List Users By Organization](https://doc.fours.com/api/list-users-by-organization/)
++ [Api › Propose Cosell Referral Update](https://doc.fours.com/api/propose-cosell-referral-update/)
+```
+
 ## 10/09/2026 — 3 added pages
 
 ```diff
