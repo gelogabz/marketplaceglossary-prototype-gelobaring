@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-10-13T13:08:57.620Z",
+  "lastUpdated": "2026-10-14T10:49:44.900Z",
   "updates": [
+    {
+      "id": "aws-2026-10-13-build-aws-marketplace-saas-metering-with-the-meter",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-10-13",
+      "title": "Build AWS Marketplace SaaS metering with the metering agent skill",
+      "summary": "In this post, I show how to use the metering agent skill to generate a usage-based metering integration for a SaaS product, then deploy and verify it in your own account. It runs in AI-assisted coding IDEs that support Model Context Protocol (MCP).",
+      "type": "blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/awsmarketplace/build-aws-marketplace-saas-metering-with-the-metering-agent-skill/",
+      "impact": "low"
+    },
     {
       "id": "aws-2026-10-12-designing-governance-first-ai-agents-with-fenergo-",
       "platform": "AWS",
@@ -13,17 +24,6 @@
       "impact": "low"
     },
     {
-      "id": "azure-2026-10-12-azure-csp-promotions-a-new-growth-and-profitabilit",
-      "platform": "Azure",
-      "platformTag": "azure",
-      "date": "2026-10-12",
-      "title": "Azure CSP promotions: A new growth and profitability lever for partners",
-      "summary": "Azure CSP promotions: A new growth and profitability lever for partners",
-      "type": "pricing",
-      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#azure-csp-promotions-a-new-growth-and-profitability-lever-for-partners",
-      "impact": "low"
-    },
-    {
       "id": "snowflake-2026-10-12-listing-access-history-improvements-general-availa",
       "platform": "Snowflake",
       "platformTag": "snowflake",
@@ -33,6 +33,50 @@
       "type": "feature",
       "sourceUrl": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-12-listing-access-history-improvements-ga",
       "impact": "high"
+    },
+    {
+      "id": "suger-2026-10-12-insulin-ai-acceptable-use-policy-for-an-ai-workspa",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-12",
+      "title": "Insulin: AI Acceptable Use Policy for an AI Workspace",
+      "summary": "A policy clause is only as firm as the setting behind it. Here are thirteen clauses for an AI acceptable use policy, each marked enforced, partly enforced or on paper in Insulin.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/ai-acceptable-use-policy/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-12-insulin-owasp-llm-top-10-mapping-an-ai-workspace",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-12",
+      "title": "Insulin: OWASP LLM Top 10: Mapping an AI Workspace",
+      "summary": "The OWASP Top 10 for LLM Applications as a reviewer's map: each 2025 risk with its 2026 number, the Insulin control and setting behind it, and what the docs don't promise. Fours' reading of its own docs, not OWASP's assessment.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/owasp-llm-top-10-ai-workspace/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-12-insulin-who-can-read-your-ai-agent-s-system-prompt",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-12",
+      "title": "Insulin: Who Can Read Your AI Agent's System Prompt?",
+      "summary": "Everyone you share an Insulin agent with can read its system prompt, and an org-wide share makes that the whole organization, including people who can't chat with it. What each role sees, and what to take out of the prompt first.",
+      "type": "blog",
+      "sourceUrl": "https://www.insulin.dev/blog/who-can-read-your-ai-agent-system-prompt/",
+      "impact": "low"
+    },
+    {
+      "id": "azure-2026-10-12-azure-csp-promotions-a-new-growth-and-profitabilit",
+      "platform": "Azure",
+      "platformTag": "azure",
+      "date": "2026-10-12",
+      "title": "Azure CSP promotions: A new growth and profitability lever for partners",
+      "summary": "Azure CSP promotions: A new growth and profitability lever for partners",
+      "type": "pricing",
+      "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#azure-csp-promotions-a-new-growth-and-profitability-lever-for-partners",
+      "impact": "low"
     },
     {
       "id": "suger-2026-10-12-aws-aws-private-offer-for-multiple-buyer-accounts-",
@@ -76,39 +120,6 @@
       "summary": "Azure Sell Professional Services on Microsoft Marketplace Microsoft and Google Cloud both sell professional services through their marketplaces, and only by private offer. Who can sell them, what qualifies, what each excludes and what each charges, rule by rule. Oct 12, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/sell-professional-services-on-microsoft-marketplace/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-10-12-insulin-ai-acceptable-use-policy-for-an-ai-workspa",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-12",
-      "title": "Insulin: AI Acceptable Use Policy for an AI Workspace",
-      "summary": "A policy clause is only as firm as the setting behind it. Here are thirteen clauses for an AI acceptable use policy, each marked enforced, partly enforced or on paper in Insulin.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/ai-acceptable-use-policy/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-10-12-insulin-owasp-llm-top-10-mapping-an-ai-workspace",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-12",
-      "title": "Insulin: OWASP LLM Top 10: Mapping an AI Workspace",
-      "summary": "The OWASP Top 10 for LLM Applications as a reviewer's map: each 2025 risk with its 2026 number, the Insulin control and setting behind it, and what the docs don't promise. Fours' reading of its own docs, not OWASP's assessment.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/owasp-llm-top-10-ai-workspace/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-10-12-insulin-who-can-read-your-ai-agent-s-system-prompt",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-12",
-      "title": "Insulin: Who Can Read Your AI Agent's System Prompt?",
-      "summary": "Everyone you share an Insulin agent with can read its system prompt, and an org-wide share makes that the whole organization, including people who can't chat with it. What each role sees, and what to take out of the prompt first.",
-      "type": "blog",
-      "sourceUrl": "https://www.insulin.dev/blog/who-can-read-your-ai-agent-system-prompt/",
       "impact": "low"
     },
     {
