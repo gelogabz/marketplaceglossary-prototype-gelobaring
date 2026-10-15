@@ -2,6 +2,13 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 10/15/2026 — 1 added page, 1 removed page
+
+```diff
++ [Api › Get Offer Pdf](https://doc.fours.com/api/get-offer-pdf/)
+- [Integrations › Auth0](https://doc.fours.com/integrations/auth0/)
+```
+
 ## 10/13/2026 — 2 added pages
 
 ```diff
