@@ -2,6 +2,21 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 10/17/2026 — 10 added pages
+
+```diff
++ [Dynamics365 App](https://doc.fours.com/dynamics365-app/)
++ [Dynamics365 App › Dynamics365 App Cosell](https://doc.fours.com/dynamics365-app/dynamics365-app-cosell/)
++ [Dynamics365 App › Dynamics365 App Cppo](https://doc.fours.com/dynamics365-app/dynamics365-app-cppo/)
++ [Dynamics365 App › Dynamics365 App Faq](https://doc.fours.com/dynamics365-app/dynamics365-app-faq/)
++ [Dynamics365 App › Dynamics365 App Install](https://doc.fours.com/dynamics365-app/dynamics365-app-install/)
++ [Dynamics365 App › Dynamics365 App Offer Approval](https://doc.fours.com/dynamics365-app/dynamics365-app-offer-approval/)
++ [Dynamics365 App › Dynamics365 App Offer](https://doc.fours.com/dynamics365-app/dynamics365-app-offer/)
++ [Dynamics365 App › Dynamics365 App Security Roles](https://doc.fours.com/dynamics365-app/dynamics365-app-security-roles/)
++ [Dynamics365 App › Dynamics365 App Side Pane](https://doc.fours.com/dynamics365-app/dynamics365-app-side-pane/)
++ [Dynamics365 App › Dynamics365 App Update](https://doc.fours.com/dynamics365-app/dynamics365-app-update/)
+```
+
 ## 10/15/2026 — 1 added page, 1 removed page
 
 ```diff
