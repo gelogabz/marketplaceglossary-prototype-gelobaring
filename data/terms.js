@@ -75,7 +75,7 @@
  *   },
  */
 
-export const lastReviewed = "2026-10-12";
+export const lastReviewed = "2026-10-19";
 
 export const terms = [
   {
@@ -4342,7 +4342,7 @@ export const terms = [
   {
     name: "Resale-Enabled Offer — Azure",
     tags: ["azure", "cosell", "offers"],
-    def: "A Microsoft Marketplace channel motion where ISVs designate authorized channel partners to resell their solutions on a geographic basis — without creating a separate private offer per customer deal. Available for transactable SaaS and Azure VM with software reservation pricing offers; available in 30+ markets as of May 2026. Resale-enabled offers that are also Azure benefit-eligible count toward the customer's MACC.",
+    def: "A Microsoft Marketplace channel motion where ISVs designate authorized channel partners to resell their solutions on a geographic basis — without creating a separate private offer per customer deal. Available for transactable SaaS, Azure VM with software reservation pricing (VMSR), and Dragon Copilot offers; supported in all Microsoft Marketplace geographies except a short list of excluded markets (including Belarus, Brazil, China, India, Mexico, Russia, Singapore, and South Korea). Resale-enabled offers that are also Azure benefit-eligible count toward the customer's MACC.",
     alias:
       "Related: Multiparty Private Offer (MPO) — Azure, Azure Consumption Commitment (MACC) — Azure, Cloud Solution Provider (CSP) — Azure, Microsoft Marketplace — Azure",
     source:
@@ -7748,7 +7748,7 @@ export const terms = [
     def: "An enterprise governance feature that allows AWS administrators to restrict which AWS Marketplace listings employees can purchase. IT and procurement teams curate an approved catalog; any listing not on the approved list is blocked at purchase time regardless of whether the employee can find it in Marketplace. Sellers can request inclusion on a buyer's Private Marketplace through the standard AWS Marketplace listing process.",
     alias: "Related: AWS Marketplace — AWS, Private Offer",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace.html",
+      "https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace-current.html",
     difficulty: "intermediate",
     category: "procurement",
     whoFor: ["Enterprise Buyers", "AWS Sales"],
@@ -7874,7 +7874,7 @@ export const terms = [
     alias:
       "Related: SaaS Subscription Pricing — AWS, SaaS Contract Pricing — AWS",
     source:
-      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-product-customer-experience.html",
+      "https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html",
     difficulty: "intermediate",
     category: "billing",
     whoFor: ["ISVs / Sellers"],
@@ -7957,7 +7957,7 @@ export const terms = [
     alias:
       "Related: Azure Virtual Machine Offer — Azure, Resale-Enabled Offer — Azure, Microsoft Marketplace — Azure",
     source:
-      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/azure-vm-software-reservations",
+      "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-virtual-machines",
     difficulty: "advanced",
     category: "billing",
     whoFor: ["ISVs / Sellers", "Enterprise Buyers", "Channel Partners"],
@@ -8046,7 +8046,7 @@ export const terms = [
   {
     name: "Product Ingestion API — Azure",
     tags: ["azure", "operations", "integrations"],
-    def: "Microsoft's unified REST API for programmatic offer management in Partner Center, replacing the legacy Cloud Partner Portal (CPP) API. Enables ISVs to create, update, and publish Microsoft Marketplace offers without using the Partner Center UI. Supports all transactable offer types including SaaS, Azure VM, Azure Application, and Container. The Azure equivalent of the AWS Marketplace Catalog API.",
+    def: "Microsoft's unified REST API for programmatic offer management in Partner Center, replacing the legacy Cloud Partner Portal (CPP) API. Uses a declarative, desired-state submission pattern rather than step-by-step calls. Supports all transactable offer types — SaaS, Azure VM, Container, Azure Application, Professional Service, the three Dynamics 365 offer variants (Business Central, Dataverse/Power Apps, Operations), Power BI app and visual, Microsoft 365 and Copilot apps/agents, Office Add-ins, SharePoint Solutions, and private offers. The Azure equivalent of the AWS Marketplace Catalog API.",
     alias:
       "AWS equivalent: AWS Marketplace Catalog API — AWS | Related: Partner Center — Azure, Microsoft Marketplace — Azure",
     source:
@@ -8104,7 +8104,7 @@ export const terms = [
   {
     name: "Metered Billing — Azure",
     tags: ["azure", "billing", "integrations"],
-    def: "Microsoft Marketplace's consumption-based billing model for SaaS and Azure Managed Application offers. ISVs define up to 30 custom metering dimensions (e.g., API calls, active users, processed GB) and report usage via the Marketplace Metering Service API. Reported usage is billed directly to the buyer's Azure subscription. Metered billing cannot be combined with free trial offers, and dimension overage reporting must be submitted within 24 hours of the billing period end.",
+    def: "Microsoft Marketplace's consumption-based billing model for SaaS and Azure Managed Application offers. ISVs define up to 30 custom metering dimensions (e.g., API calls, active users, processed GB) and report usage via the Marketplace Metering Service API. Reported usage is billed directly to the buyer's Azure subscription. Metered and flat-rate SaaS plans can include a free trial of 1-180 days — the trial period and metered billing are not mutually exclusive — and usage events can only be submitted for activity within the past 24 hours; older events are rejected as expired.",
     alias:
       "AWS equivalent: BatchMeterUsage API — AWS | GCP equivalent: Service Control API — GCP | Related: Marketplace Metering Service API — Azure, Metering Dimension",
     source:
@@ -10431,9 +10431,9 @@ export const terms = [
   {
     name: "Microsoft Dynamics 365 Integration — Fours",
     tags: ["suger", "integrations"],
-    def: "An org-level integration connecting Fours to Microsoft Dynamics 365 to provide CRM and ERP capabilities within the Fours platform. Enables organizations to synchronize and automate processes between Fours' cloud marketplace operations — entitlements, offers, co-sell pipelines — and Dynamics 365 sales and operations data. Complements existing Microsoft integrations (Teams, Outlook) by adding the full CRM and ERP data layer for enterprise sellers who run Dynamics 365 as their system of record.",
+    def: "An org-level integration connecting Fours to Microsoft Dynamics 365 to provide CRM and ERP capabilities within the Fours platform. Enables organizations to synchronize and automate processes between Fours' cloud marketplace operations — entitlements, offers, co-sell pipelines — and Dynamics 365 sales and operations data. Complements existing Microsoft integrations (Teams, Outlook) by adding the full CRM and ERP data layer for enterprise sellers who run Dynamics 365 as their system of record. Also available as the Fours Dynamics 365 App for a deeper embedded experience managing AWS Marketplace deals directly from the opportunity record.",
     alias:
-      "Related: CRM Integration, Salesforce Integration, HubSpot Integration, Microsoft Teams Integration",
+      "Related: Dynamics 365 App, CRM Integration, Salesforce Integration, HubSpot Integration, Microsoft Teams Integration",
     source: "https://doc.fours.com/integrations/microsoft-dynamics365/",
     difficulty: "intermediate",
     category: "operations",
@@ -10450,6 +10450,7 @@ export const terms = [
       "Microsoft Ecosystem",
     ],
     related: [
+      { name: "Dynamics 365 App", slug: "dynamics-365-app" },
       { name: "CRM Integration", slug: "crm-integration" },
       { name: "Salesforce Integration", slug: "salesforce-integration" },
       {
@@ -11539,7 +11540,7 @@ export const terms = [
   {
     name: "GCP Marketplace Integration — Fours",
     tags: ["suger", "gcp", "integrations"],
-    def: "Fours' organization-level connection to Google Cloud Marketplace for unified billing, procurement, and usage tracking across an ISV's GCP SaaS listings. Setup requires an active Google Cloud Marketplace seller account with completed seller onboarding and a GCP organization with billing enabled; authorization runs through Google Cloud OAuth with selectable GCP projects. Cannot be edited after creation — deleting the integration may affect active marketplace subscriptions and billing relationships.",
+    def: "Fours' organization-level connection to Google Cloud Marketplace for unified billing, procurement, and usage tracking across an ISV's GCP SaaS listings. Setup requires an active Google Cloud Marketplace seller account with completed seller onboarding and a GCP organization with billing enabled; authorization runs through Google Cloud OAuth with selectable GCP projects. Cannot be edited after creation — deleting the integration may affect active marketplace subscriptions and billing relationships. An opt-in Signed Buyer Handoff setting (per integration, under Integrations > GCP > Edit) replaces the plain entitlement ID, GCP account ID, and offer type query parameters in the buyer signup redirect with a short-lived (5-minute) signed JWT whose claims carry those same values — closing a spoofing risk where a plain entitlement ID could be reused by someone other than the real buyer. It's off by default; enabling it before the ISV's signup page can verify the token causes every buyer redirect to be rejected.",
     alias: "Related: GCP Marketplace — GCP, Producer Portal — GCP",
     source: "https://doc.fours.com/gcp-marketplace/integration/",
     difficulty: "intermediate",
@@ -13644,6 +13645,192 @@ export const terms = [
     related: [
       { name: "Private Offer — AWS", slug: "private-offer-—-aws" },
       { name: "Agreement — AWS", slug: "agreement-—-aws" },
+    ],
+  },
+  // ── TD1 2026-10-19 batch ──
+  {
+    name: "Metering Agent Skill — AWS",
+    tags: ["aws", "operations"],
+    def: "An AI-guided skill, available through the AWS MCP Server (part of the Agent Toolkit for AWS) in MCP-compatible IDEs like Amazon Q Developer and Kiro, that helps AWS Marketplace sellers build, deploy, and validate usage-based SaaS metering integrations. It walks the seller through product type, pricing model, and usage-dimension configuration, recommends the appropriate metering API (ResolveCustomer, BatchMeterUsage), generates a CloudFormation stack, and runs sandbox validation tests that don't trigger real billing before the integration goes to production.",
+    alias: "Related: BatchMeterUsage API, Usage Metering, Metering Dimension",
+    source:
+      "https://aws.amazon.com/blogs/awsmarketplace/build-aws-marketplace-saas-metering-with-the-metering-agent-skill/",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Using an MCP-compatible IDE's metering agent skill to scaffold a new usage-based metering integration for an AWS Marketplace SaaS listing",
+      "Running the skill's sandbox validation tests to confirm a metering integration works before it goes live and triggers real billing",
+    ],
+    context: ["AWS Marketplace", "Agent Toolkit for AWS", "MCP"],
+    related: [],
+  },
+  {
+    name: "Frontier Partner — Azure",
+    tags: ["azure", "cosell"],
+    def: "A cross-solution-area Microsoft specialization, live as of September 30, 2026, that validates end-to-end capability to design, build, deploy, govern, and secure AI agents across the Microsoft Frontier stack — Microsoft 365 Copilot, Azure AI Foundry, Microsoft Fabric, GitHub, and Microsoft security. Unlike a standard Azure, Business Applications, Modern Work, or Security specialization (each tied to one solution area), Frontier Partner requires active enrollment in prerequisite specializations or Solutions Partner designations across more than one solution area, plus specialization-specific Performance and Skilling requirements, before a partner can schedule and pass the qualifying audit. Reported benefits include a customer-facing badge, Frontier-aligned co-sell eligibility, Microsoft Agent pre-purchase plan (P3) credits, and Microsoft 365 E7 licensing.",
+    alias:
+      "Related: Solutions Partner Designation — Azure, Microsoft AI Cloud Partner Program (MPN) — Azure",
+    source:
+      "https://learn.microsoft.com/en-us/partner-center/membership/specializations",
+    difficulty: "advanced",
+    category: "cosell",
+    whoFor: ["ISVs / Sellers", "Partner Managers", "Azure Sales"],
+    useCases: [
+      "Enrolling existing specializations or Solutions Partner designations across multiple solution areas as prerequisites toward Frontier Partner qualification",
+      "Using Frontier Partner's co-sell eligibility and Agent pre-purchase plan (P3) credits to fund agentic AI solution development",
+    ],
+    context: ["Microsoft AI Cloud Partner Program", "Partner Center — Azure"],
+    related: [
+      {
+        name: "Solutions Partner Designation — Azure",
+        slug: "solutions-partner-designation-—-azure",
+      },
+      {
+        name: "Microsoft AI Cloud Partner Program (MPN) — Azure",
+        slug: "microsoft-ai-cloud-partner-program-mpn-—-azure",
+      },
+    ],
+  },
+  {
+    name: "Agentic Marketplace Discovery — Snowflake",
+    tags: ["snowflake"],
+    def: "An AI-agent-driven discovery mode (internally called 'CoCo'), in Public Preview as of October 9, 2026, on the public Snowflake Marketplace's Discover page in Snowsight. Buyers describe what they need in natural language instead of keyword search; the agent finds and compares matching listings and can, from the same conversation, install a listing, start a trial, or submit a sales request where the listing and the user's role support it. Scoped to the public Snowflake Marketplace only — not the Internal Marketplace.",
+    alias: "Related: Snowflake Marketplace — Snowflake, Listing",
+    source:
+      "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-09-agentic-marketplace-discovery-preview",
+    difficulty: "intermediate",
+    category: "fundamentals",
+    whoFor: ["Enterprise Buyers"],
+    useCases: [
+      "Describing a data or app need in natural language on Snowflake Marketplace instead of using keyword search",
+      "Installing a listing or starting a trial directly from an Agentic Marketplace Discovery conversation",
+    ],
+    context: ["Snowflake Marketplace", "Snowsight", "Public Preview"],
+    related: [
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
+      { name: "Listing", slug: "listing" },
+    ],
+  },
+  {
+    name: "Listing Access History — Snowflake",
+    tags: ["snowflake", "operations"],
+    def: "A Snowflake provider-side analytics view (`LISTING_ACCESS_HISTORY`) that shows how consumers query a provider's shared Marketplace listings. As of a general-availability update on October 12, 2026, the view gained predicate-level detail and query-type information, giving providers substantially more visibility into consumer usage patterns than the prior version offered.",
+    alias: "Related: Snowflake Marketplace — Snowflake, Listing",
+    source:
+      "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-12-listing-access-history-improvements-ga",
+    difficulty: "advanced",
+    category: "operations",
+    whoFor: ["ISVs / Sellers"],
+    useCases: [
+      "Querying LISTING_ACCESS_HISTORY to see predicate-level detail on how consumers are using a shared data product",
+      "Using query-type information from LISTING_ACCESS_HISTORY to understand which parts of a listing's data consumers access most",
+    ],
+    context: ["Snowflake Marketplace", "Snowflake Provider Studio"],
+    related: [
+      {
+        name: "Snowflake Marketplace — Snowflake",
+        slug: "snowflake-marketplace-—-snowflake",
+      },
+      { name: "Listing", slug: "listing" },
+    ],
+  },
+  {
+    name: "Cloudflare Workers AI Integration",
+    tags: ["suger", "integrations"],
+    def: "Fours' bring-your-own-key (BYOK) connection to Cloudflare Workers AI. Users generate a Workers AI API token (requiring both Read and Edit permissions) and their Cloudflare Account ID, then add them in Fours' console — validated against Cloudflare before storage — at either the organization level (one shared token, Admin-managed) or the user level (personal, used only by that user's Personal agents). Once connected, five supported Workers AI chat models become selectable in Fours' model picker, with usage billed directly to the customer's Cloudflare account. Workers AI provides no embedding model, so this integration adds nothing to knowledge-base embedding options, and token validity is only checked at connect/reconnect time — rotating or revoking the token in Cloudflare requires manually reconnecting in Fours.",
+    alias: "Related: OpenAI Integration, DigitalOcean GradientAI Integration",
+    source: "https://doc.fours.com/integrations/cloudflare/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Fours Users"],
+    useCases: [
+      "Running Fours' Insulin agents on a Cloudflare Workers AI model instead of Fours' default provider",
+      "Connecting a personal Cloudflare Workers AI token so only the user's own Personal agents use it, without affecting org-wide model defaults",
+    ],
+    context: ["Fours Console", "AI Features", "Model Picker"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      {
+        name: "DigitalOcean GradientAI Integration",
+        slug: "digitalocean-gradientai-integration",
+      },
+    ],
+  },
+  {
+    name: "DigitalOcean GradientAI Integration",
+    tags: ["suger", "integrations"],
+    def: "Fours' bring-your-own-key (BYOK) connection to DigitalOcean's GradientAI model platform. Users create a model access key in the DigitalOcean control panel (granted access to all models, not restricted to a VPC network) and add it in Fours' console — verified against DigitalOcean's model list before storage — at either the organization level (one shared key, Admin-managed) or the user level (personal). Once connected, five supported GradientAI chat models become selectable in Fours' model picker, with usage billed directly to the customer's DigitalOcean account. GradientAI provides no embedding model, so this integration adds nothing to knowledge-base embedding options, and key validity is only checked at connect/reconnect time.",
+    alias: "Related: OpenAI Integration, Cloudflare Workers AI Integration",
+    source: "https://doc.fours.com/integrations/digitalocean/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Fours Users"],
+    useCases: [
+      "Running Fours' Insulin agents on a DigitalOcean GradientAI model instead of Fours' default provider",
+      "Choosing GradientAI as an alternative model provider for chat or inference without routing usage or billing through Fours",
+    ],
+    context: ["Fours Console", "AI Features", "Model Picker"],
+    related: [
+      { name: "OpenAI Integration", slug: "openai-integration" },
+      {
+        name: "Cloudflare Workers AI Integration",
+        slug: "cloudflare-workers-ai-integration",
+      },
+    ],
+  },
+  {
+    name: "Google Workspace SSO Integration",
+    tags: ["suger", "integrations"],
+    def: "Fours' Single Sign-On integration with Google Workspace, with optional Directory Sync. Employees sign in through a dedicated employee login link tied to a Google OAuth client; with Directory Sync enabled, membership in three Google groups (Fours Admins, Fours Editors, Fours Viewers) determines who belongs to the Fours organization and what role they hold, refreshed roughly every 90 minutes (or faster via a manual Sync now). Directory-managed members can't be edited or removed directly in Fours — changes must be made in Google. A safety stop blocks any sync run that would remove more than 5 members and more than a fifth of Directory Sync-managed members in one pass, until the removals are confirmed.",
+    alias: "Related: Okta Single Sign-On (SSO) Integration, Role-Based Access Control (RBAC), Fours Console",
+    source: "https://doc.fours.com/integrations/google-workspace-sso/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Fours Users"],
+    useCases: [
+      "Enforcing centralized authentication for Fours Console access via an existing Google Workspace account",
+      "Using Directory Sync group membership (Fours Admins/Editors/Viewers) to manage Fours org access from Google instead of inviting users individually",
+    ],
+    context: ["Fours Console", "Google Workspace", "Identity Management"],
+    related: [
+      {
+        name: "Okta Single Sign-On (SSO) Integration",
+        slug: "okta-single-sign-on-sso-integration",
+      },
+      {
+        name: "Role-Based Access Control (RBAC)",
+        slug: "role-based-access-control-rbac",
+      },
+      { name: "Fours Console", slug: "fours-console" },
+    ],
+  },
+  {
+    name: "Dynamics 365 App",
+    tags: ["suger", "cosell", "integrations"],
+    def: "Fours' managed Dynamics 365 Sales application (in preview, not yet listed on AppSource) that lets sales teams manage AWS Marketplace deals directly from an opportunity record, beyond the standard Microsoft Dynamics 365 Integration's CRM data sync. A Fours button on the opportunity page opens a side pane to view co-sells, offers, and agreements; create AWS private offers (SaaS, Container, AMI, Professional Services, Machine Learning) or save them as drafts; create resale authorizations and CPPOs for channel partners; build offer sets of 2-7 products; amend, cancel, extend, or clone active agreements; and share an opportunity to AWS as a co-sell using an AI-assisted fill. Requires the org-level Microsoft Dynamics 365 Integration to already be connected, and each user needs an assigned Fours security role in Dynamics 365 to use it. AWS is the only supported marketplace; Azure and GCP aren't yet available.",
+    alias:
+      "Related: Microsoft Dynamics 365 Integration — Fours, Salesforce App, HubSpot App",
+    source: "https://doc.fours.com/dynamics365-app/",
+    difficulty: "intermediate",
+    category: "operations",
+    whoFor: ["ISVs / Sellers", "Fours Users", "Enterprise Buyers"],
+    useCases: [
+      "Creating an AWS private offer directly from a Dynamics 365 opportunity record without switching to the Fours Console",
+      "Building a 2-7 product AWS offer set from the opportunity side pane for a multi-product enterprise deal",
+      "Sharing a Dynamics 365 opportunity to AWS as a co-sell using AI-assisted form fill",
+    ],
+    context: ["Fours Console", "Microsoft Dynamics 365", "AWS Marketplace"],
+    related: [
+      {
+        name: "Microsoft Dynamics 365 Integration — Fours",
+        slug: "microsoft-dynamics-365-integration-—-fours",
+      },
+      { name: "Salesforce App", slug: "salesforce-app" },
+      { name: "HubSpot App", slug: "hubspot-app" },
     ],
   },
 ];
