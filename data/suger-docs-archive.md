@@ -2,6 +2,17 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 10/20/2026 — 6 added pages
+
+```diff
++ [Api › Accept Lead](https://doc.fours.com/api/accept-lead/)
++ [Api › Get Lead](https://doc.fours.com/api/get-lead/)
++ [Api › Get Referral Funding Recommendation](https://doc.fours.com/api/get-referral-funding-recommendation/)
++ [Api › List Daily Revenue Records](https://doc.fours.com/api/list-daily-revenue-records/)
++ [Api › List Funding Benefits](https://doc.fours.com/api/list-funding-benefits/)
++ [Api › List Leads](https://doc.fours.com/api/list-leads/)
+```
+
 ## 10/17/2026 — 10 added pages
 
 ```diff
