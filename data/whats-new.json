@@ -1,60 +1,27 @@
 {
-  "lastUpdated": "2026-10-20T10:37:15.331Z",
+  "lastUpdated": "2026-10-21T10:48:38.279Z",
   "updates": [
     {
-      "id": "suger-2026-10-19-aws-aws-credits-for-marketplace-purchases-what-cou",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-19",
-      "title": "AWS AWS Credits for Marketplace Purchases: What Counts A buyer with AWS credits wants to spend them on your Marketplace ",
-      "summary": "AWS AWS Credits for Marketplace Purchases: What Counts A buyer with AWS credits wants to spend them on your Marketplace deal, but AWS's terms exclude AWS Marketplace unless AWS authorizes it.",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/aws-credits-marketplace-purchases/",
-      "impact": "low"
+      "id": "aws-2026-10-20-aws-partner-central-launches-program-navigator-cas",
+      "platform": "AWS",
+      "platformTag": "aws",
+      "date": "2026-10-20",
+      "title": "AWS Partner Central launches Program Navigator, Case Study Generator, and streamlined specialization review",
+      "summary": "AWS Partner Central now features Program Navigator, a unified experience that lets partners discover, apply for, and track AWS Specialization program applications in one place.",
+      "type": "program",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/10/partner-central-program-navigator/",
+      "impact": "high"
     },
     {
-      "id": "suger-2026-10-19-aws-aws-marketplace-engagement-score-vs-quality-sc",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-19",
-      "title": "AWS AWS Marketplace Engagement Score vs Quality Score ACE shows a High engagement score beside a quality score of 35, an",
-      "summary": "AWS AWS Marketplace Engagement Score vs Quality Score ACE shows a High engagement score beside a quality score of 35, and Partner Analytics now adds Solution Matching Engine numbers. What each AWS number predicts, and which one feeds the co-sell motion. Oct 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/aws-engagement-score-vs-quality-score/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-10-19-aws-aws-marketplace-private-offer-types-compared-a",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-19",
-      "title": "AWS AWS Marketplace Private Offer Types, Compared AWS gives a deal desk seven ways to paper a negotiated deal, from a st",
-      "summary": "AWS AWS Marketplace Private Offer Types, Compared AWS gives a deal desk seven ways to paper a negotiated deal, from a standard private offer to an offer set, and each one rules something out. Here is which fits which deal, the AWS rule behind each, and which ones combine.",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/aws-marketplace-private-offer-types/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-10-19-marketplaces-cloud-marketplace-buyer-data-and-how-",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-19",
-      "title": "Marketplaces Cloud Marketplace Buyer Data and How You May Use It Marketing wants the marketplace buyer list for a Q4 cam",
-      "summary": "Marketplaces Cloud Marketplace Buyer Data and How You May Use It Marketing wants the marketplace buyer list for a Q4 campaign. Here is what AWS, Microsoft and Google Cloud actually send about who bought, and the clauses that decide whether you may email them. Oct 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/cloud-marketplace-buyer-data/",
-      "impact": "low"
-    },
-    {
-      "id": "suger-2026-10-19-gcp-google-cloud-marketplace-disbursement-report-g",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-10-19",
-      "title": "GCP Google Cloud Marketplace Disbursement Report Google typically pays you on the 21st, and its reports explain the gap ",
-      "summary": "GCP Google Cloud Marketplace Disbursement Report Google typically pays you on the 21st, and its reports explain the gap between a customer's charge and your payout in fields most finance teams never open.",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/google-cloud-marketplace-disbursement-report/",
-      "impact": "low"
+      "id": "snowflake-2026-10-20-sensitive-data-entitlement-and-access-reports-gene",
+      "platform": "Snowflake",
+      "platformTag": "snowflake",
+      "date": "2026-10-20",
+      "title": "Sensitive Data Entitlement and Access reports (General availability)",
+      "summary": "With this release, the following Trust Center reports are generally available. These reports require Enterprise Edition or higher .",
+      "type": "feature",
+      "sourceUrl": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-20-sensitive-data-entitlement-access-reports-ga",
+      "impact": "high"
     },
     {
       "id": "suger-2026-10-19-insulin-ai-agent-for-jira-in-slack-what-waits-for-",
@@ -109,6 +76,61 @@
       "summary": "A job run in Insulin never waits for an Allow, and a goal keeps working after you leave. So the controls for background AI agents come in an order: the boundary set before a run, the record every run leaves, and a stop for each kind of work.",
       "type": "blog",
       "sourceUrl": "https://www.insulin.dev/blog/background-ai-agents-controls/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-19-aws-aws-credits-for-marketplace-purchases-what-cou",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-19",
+      "title": "AWS AWS Credits for Marketplace Purchases: What Counts A buyer with AWS credits wants to spend them on your Marketplace ",
+      "summary": "AWS AWS Credits for Marketplace Purchases: What Counts A buyer with AWS credits wants to spend them on your Marketplace deal, but AWS's terms exclude AWS Marketplace unless AWS authorizes it.",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/aws-credits-marketplace-purchases/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-19-aws-aws-marketplace-engagement-score-vs-quality-sc",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-19",
+      "title": "AWS AWS Marketplace Engagement Score vs Quality Score ACE shows a High engagement score beside a quality score of 35, an",
+      "summary": "AWS AWS Marketplace Engagement Score vs Quality Score ACE shows a High engagement score beside a quality score of 35, and Partner Analytics now adds Solution Matching Engine numbers. What each AWS number predicts, and which one feeds the co-sell motion. Oct 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/aws-engagement-score-vs-quality-score/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-19-aws-aws-marketplace-private-offer-types-compared-a",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-19",
+      "title": "AWS AWS Marketplace Private Offer Types, Compared AWS gives a deal desk seven ways to paper a negotiated deal, from a st",
+      "summary": "AWS AWS Marketplace Private Offer Types, Compared AWS gives a deal desk seven ways to paper a negotiated deal, from a standard private offer to an offer set, and each one rules something out. Here is which fits which deal, the AWS rule behind each, and which ones combine.",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/aws-marketplace-private-offer-types/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-19-gcp-google-cloud-marketplace-disbursement-report-g",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-19",
+      "title": "GCP Google Cloud Marketplace Disbursement Report Google typically pays you on the 21st, and its reports explain the gap ",
+      "summary": "GCP Google Cloud Marketplace Disbursement Report Google typically pays you on the 21st, and its reports explain the gap between a customer's charge and your payout in fields most finance teams never open.",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/google-cloud-marketplace-disbursement-report/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-10-19-marketplaces-cloud-marketplace-buyer-data-and-how-",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-10-19",
+      "title": "Marketplaces Cloud Marketplace Buyer Data and How You May Use It Marketing wants the marketplace buyer list for a Q4 cam",
+      "summary": "Marketplaces Cloud Marketplace Buyer Data and How You May Use It Marketing wants the marketplace buyer list for a Q4 campaign. Here is what AWS, Microsoft and Google Cloud actually send about who bought, and the clauses that decide whether you may email them. Oct 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/cloud-marketplace-buyer-data/",
       "impact": "low"
     },
     {
@@ -1443,17 +1465,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-24-billing-metering-marketplace-usage-correction-what",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-09-24",
-      "title": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a us",
-      "summary": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a usage record, there is no self-service way to take it back. What you can do depends on the cloud, and on whether the bill has gone out. Sep 24, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-usage-correction/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-24-co-sell-aws-partner-central-leads-from-salesforce-",
       "platform": "Fours",
       "platformTag": "suger",
@@ -1462,6 +1473,17 @@
       "summary": "Co-Sell AWS Partner Central Leads from Salesforce Accounts Creating an AWS Partner Central lead and enriching it are two steps with different rules. What each needs, what AWS returns, and how Salesforce feeds both. Sep 24, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/aws-partner-central-leads-from-salesforce/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-24-billing-metering-marketplace-usage-correction-what",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-09-24",
+      "title": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a us",
+      "summary": "Billing & Metering Marketplace Usage Correction: What Each Cloud Allows Once AWS, Microsoft or Google Cloud accepts a usage record, there is no self-service way to take it back. What you can do depends on the cloud, and on whether the bill has gone out. Sep 24, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-usage-correction/",
       "impact": "low"
     },
     {
@@ -1586,17 +1608,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-19-aws-what-the-deployed-on-aws-badge-proves-and-what",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-09-19",
-      "title": "AWS What the Deployed on AWS Badge Proves, and What It Doesn't The Deployed on AWS badge settles where your product runs",
-      "summary": "AWS What the Deployed on AWS Badge Proves, and What It Doesn't The Deployed on AWS badge settles where your product runs. Whether a purchase counts toward a buyer's AWS commitment is a separate question, answered deal by deal. Sep 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/deployed-on-aws-badge/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-19-azure-microsoft-resale-enabled-offers-vs-mpo-who-p",
       "platform": "Fours",
       "platformTag": "suger",
@@ -1605,6 +1616,17 @@
       "summary": "Azure Microsoft Resale Enabled Offers vs MPO: Who Pays You A resale enabled offer lets one Microsoft partner price and sell your product without you in each deal. Microsoft pays the partner; the partner pays you. Sep 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/microsoft-resale-enabled-offers-vs-mpo/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-19-aws-what-the-deployed-on-aws-badge-proves-and-what",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-09-19",
+      "title": "AWS What the Deployed on AWS Badge Proves, and What It Doesn't The Deployed on AWS badge settles where your product runs",
+      "summary": "AWS What the Deployed on AWS Badge Proves, and What It Doesn't The Deployed on AWS badge settles where your product runs. Whether a purchase counts toward a buyer's AWS commitment is a separate question, answered deal by deal. Sep 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/deployed-on-aws-badge/",
       "impact": "low"
     },
     {
@@ -1707,17 +1729,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-09-13-cloud-gtm-what-marketplace-data-lands-in-hubspot-a",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-09-13",
-      "title": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Fours app puts offers, entitlements, co-sell and ",
-      "summary": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Fours app puts offers, entitlements, co-sell and AWS funding on the HubSpot deal — but not everything belongs on a deal, and two of the boundaries surprise people. Sep 13, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-data-in-hubspot/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-09-13-prm-partner-certifications-that-expire-and-why-the",
       "platform": "Fours",
       "platformTag": "suger",
@@ -1726,6 +1737,17 @@
       "summary": "PRM Partner Certifications That Expire, and Why They Should A certificate with no expiry is a claim about who someone was two years ago. Validity and renewal rules are what make partner certification mean something to a customer. Sep 13, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/partner-certifications-that-expire/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-09-13-cloud-gtm-what-marketplace-data-lands-in-hubspot-a",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-09-13",
+      "title": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Fours app puts offers, entitlements, co-sell and ",
+      "summary": "Cloud GTM What Marketplace Data Lands in HubSpot, and What Doesn't The Fours app puts offers, entitlements, co-sell and AWS funding on the HubSpot deal — but not everything belongs on a deal, and two of the boundaries surprise people. Sep 13, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-data-in-hubspot/",
       "impact": "low"
     },
     {
@@ -2543,17 +2565,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-19-azure-per-market-pricing-on-azure-marketplace-expl",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-19",
-      "title": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketpla",
-      "summary": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketplace. You set one USD price, or upload local ones, and Microsoft's fixed currency-per-market map does the rest. Here is the mechanic. Aug 19, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/per-market-pricing-on-azure-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-19-cloud-gtm-public-sector-vs-commercial-marketplace-",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2573,6 +2584,17 @@
       "summary": "Cloud GTM The Cloud Marketplace Operations Runbook The recurring work of running a marketplace business, sorted by how often it comes due — daily, weekly, monthly, quarterly — with a link to the deep dive for each. Aug 19, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/the-cloud-marketplace-operations-runbook/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-19-azure-per-market-pricing-on-azure-marketplace-expl",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-19",
+      "title": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketpla",
+      "summary": "Azure Per-Market Pricing on Azure Marketplace, Explained You don't set an arbitrary price per country on Azure Marketplace. You set one USD price, or upload local ones, and Microsoft's fixed currency-per-market map does the rest. Here is the mechanic. Aug 19, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/per-market-pricing-on-azure-marketplace/",
       "impact": "low"
     },
     {
@@ -2686,17 +2708,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-18-billing-metering-the-marketplace-credit-request-at",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-18",
-      "title": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on eve",
-      "summary": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on every cloud. Here is what AWS, Microsoft, and Google Cloud each require to issue one. Aug 18, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/credits-at-scale-bulk-adjustments/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-18-prm-measuring-partner-influence-without-bad-data-p",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2705,6 +2716,17 @@
       "summary": "PRM Measuring Partner Influence Without Bad Data Partner influenced revenue tracking fails on bad data before it fails on the model. Here are the common attribution models, how each breaks, and the instrumentation that keeps the number clean. Aug 18, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/measuring-partner-influence-without-bad-data/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-18-billing-metering-the-marketplace-credit-request-at",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-18",
+      "title": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on eve",
+      "summary": "Billing & Metering The Marketplace Credit Request, at Scale A marketplace credit request needs different evidence on every cloud. Here is what AWS, Microsoft, and Google Cloud each require to issue one. Aug 18, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/credits-at-scale-bulk-adjustments/",
       "impact": "low"
     },
     {
@@ -2829,17 +2851,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-cloud-gtm-how-enterprise-buyers-buy-through-a-mark",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a ",
-      "summary": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a billing account, a role assignment and a procurement queue — and any one of them can hold the deal for a week. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/how-enterprise-buyers-buy-through-a-marketplace/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-cloud-gtm-mcp-for-cloud-gtm-connecting-agents-to-d",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2848,6 +2859,17 @@
       "summary": "Cloud GTM MCP for Cloud GTM: Connecting Agents to Data An assistant that can read your marketplace data is useful. One that can change it needs a permission model, and MCP is where that model has to be enforced. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/mcp-for-cloud-gtm/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-cloud-gtm-how-enterprise-buyers-buy-through-a-mark",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a ",
+      "summary": "Cloud GTM How Enterprise Buyers Buy Through a Marketplace The seller sends an offer and waits. On the other side sits a billing account, a role assignment and a procurement queue — and any one of them can hold the deal for a week. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/how-enterprise-buyers-buy-through-a-marketplace/",
       "impact": "low"
     },
     {
@@ -2884,17 +2906,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-16-marketplaces-selling-on-snowflake-oracle-and-aliba",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-16",
-      "title": "Marketplaces Selling on Snowflake, Oracle and Alibaba Cloud The marketplaces past AWS, Microsoft and Google Cloud are no",
-      "summary": "Marketplaces Selling on Snowflake, Oracle and Alibaba Cloud The marketplaces past AWS, Microsoft and Google Cloud are not smaller copies of them. Each gates sellers differently, and one of them caps how much of a customer's commitment you can take. Aug 16, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/selling-on-snowflake-oracle-and-alibaba-cloud/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-16-billing-metering-when-usage-records-fail-batching-",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2903,6 +2914,17 @@
       "summary": "Billing & Metering When Usage Records Fail: Batching and Retries A rejected usage record is unbilled revenue with a deadline on it. The response codes tell you which failures to retry and which to fix — and they are not the same failures. Aug 16, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/when-usage-records-fail/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-16-marketplaces-selling-on-snowflake-oracle-and-aliba",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-16",
+      "title": "Marketplaces Selling on Snowflake, Oracle and Alibaba Cloud The marketplaces past AWS, Microsoft and Google Cloud are no",
+      "summary": "Marketplaces Selling on Snowflake, Oracle and Alibaba Cloud The marketplaces past AWS, Microsoft and Google Cloud are not smaller copies of them. Each gates sellers differently, and one of them caps how much of a customer's commitment you can take. Aug 16, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/selling-on-snowflake-oracle-and-alibaba-cloud/",
       "impact": "low"
     },
     {
@@ -2961,17 +2983,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-14-cloud-gtm-marketplace-data-in-salesforce-what-to-s",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-14",
-      "title": "Cloud GTM Marketplace Data in Salesforce: What to Sync Syncing everything from a marketplace into Salesforce creates a s",
-      "summary": "Cloud GTM Marketplace Data in Salesforce: What to Sync Syncing everything from a marketplace into Salesforce creates a second source of truth that disagrees with the first. Here is the boundary that holds. Aug 14, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-data-in-salesforce/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-14-cloud-gtm-marketplace-events-and-webhooks-a-practi",
       "platform": "Fours",
       "platformTag": "suger",
@@ -2980,6 +2991,17 @@
       "summary": "Cloud GTM Marketplace Events and Webhooks: A Practical Guide Every marketplace subscription change arrives as an event, and two carry a deadline. Here is the full set, and what each one obliges you to do. Aug 14, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/marketplace-events-and-webhooks/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-14-cloud-gtm-marketplace-data-in-salesforce-what-to-s",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-14",
+      "title": "Cloud GTM Marketplace Data in Salesforce: What to Sync Syncing everything from a marketplace into Salesforce creates a s",
+      "summary": "Cloud GTM Marketplace Data in Salesforce: What to Sync Syncing everything from a marketplace into Salesforce creates a second source of truth that disagrees with the first. Here is the boundary that holds. Aug 14, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/marketplace-data-in-salesforce/",
       "impact": "low"
     },
     {
@@ -3236,17 +3258,6 @@
       "impact": "low"
     },
     {
-      "id": "suger-2026-08-10-prm-attribution-rules-that-stop-channel-conflict-c",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule",
-      "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment — when two parties have already claimed the same deal. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/deal-registration-conflict-rules/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-10-prm-channel-partner-relationship-management-explai",
       "platform": "Fours",
       "platformTag": "suger",
@@ -3255,6 +3266,17 @@
       "summary": "PRM Channel Partner Relationship Management, Explained Most channel programs are a tier chart nobody can qualify against and a commission rate nobody can compute. Here is what channel PRM has to hold, and how to design tiers that survive an audit. Aug 10, 2026",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/channel-partner-relationship-management/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-prm-attribution-rules-that-stop-channel-conflict-c",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule",
+      "summary": "PRM Attribution Rules That Stop Channel Conflict Channel conflict is not a relationship problem. It is an unwritten rule discovered at the worst possible moment — when two parties have already claimed the same deal. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/deal-registration-conflict-rules/",
       "impact": "low"
     },
     {
@@ -3280,17 +3302,6 @@
       "impact": "high"
     },
     {
-      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
-      "platform": "Fours",
-      "platformTag": "suger",
-      "date": "2026-08-10",
-      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
-      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
-      "type": "blog",
-      "sourceUrl": "https://www.fours.com/resources/blog/how-long-marketplace-integration-takes/",
-      "impact": "low"
-    },
-    {
       "id": "suger-2026-08-10-co-sell-how-co-sell-works-on-aws-azure-and-google-",
       "platform": "Fours",
       "platformTag": "suger",
@@ -3299,6 +3310,17 @@
       "summary": "Co-Sell How Co-Sell Works on AWS, Azure, and Google Cloud Every co-sell article tells you to build relationships. None tell you what actually happens to the record after you submit it. This is the mechanics — the statuses, the gates, and the fields that get you rejected.",
       "type": "blog",
       "sourceUrl": "https://www.fours.com/resources/blog/how-co-sell-works/",
+      "impact": "low"
+    },
+    {
+      "id": "suger-2026-08-10-cloud-gtm-how-long-does-a-marketplace-integration-",
+      "platform": "Fours",
+      "platformTag": "suger",
+      "date": "2026-08-10",
+      "title": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes",
+      "summary": "Cloud GTM How Long Does a Marketplace Integration Take? The connector takes about twenty minutes. The review queue takes weeks. Here is the honest breakdown of a marketplace integration, step by step, and which steps block which. Aug 10, 2026",
+      "type": "blog",
+      "sourceUrl": "https://www.fours.com/resources/blog/how-long-marketplace-integration-takes/",
       "impact": "low"
     },
     {
