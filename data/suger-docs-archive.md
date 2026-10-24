@@ -2,6 +2,16 @@
 
 Chronological record of pages added to or removed from [doc.suger.io](https://doc.suger.io/). Newest entry first.
 
+## 10/24/2026 — 5 added pages
+
+```diff
++ [Api › Create Deal Registration Draft](https://doc.fours.com/api/create-deal-registration-draft/)
++ [Api › Get Deal Registration Draft](https://doc.fours.com/api/get-deal-registration-draft/)
++ [Api › List Deal Registration Drafts](https://doc.fours.com/api/list-deal-registration-drafts/)
++ [Api › Update Deal Registration Draft](https://doc.fours.com/api/update-deal-registration-draft/)
++ [Metering › Report Failed](https://doc.fours.com/metering/report-failed/)
+```
+
 ## 10/20/2026 — 6 added pages
 
 ```diff
